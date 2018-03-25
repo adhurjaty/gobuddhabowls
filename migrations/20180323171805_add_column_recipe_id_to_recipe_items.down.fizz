@@ -1,0 +1,1 @@
+drop_column("recipe_items", "recipe_id")

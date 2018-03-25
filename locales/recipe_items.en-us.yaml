@@ -1,0 +1,6 @@
+- id: "recipe_item.created.success"
+  translation: "RecipeItem was successfully created."
+- id: "recipe_item.updated.success"
+  translation: "RecipeItem was successfully updated."
+- id: "recipe_item.destroyed.success"
+  translation: "RecipeItem was successfully destroyed."

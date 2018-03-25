@@ -1,0 +1,41 @@
+<div class="page-header">
+  <h1>OrderItems</h1>
+</div>
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= newOrderItemsPath() %>" class="btn btn-primary">Create New OrderItem</a></li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+  <th>InventoryItemID</th>
+    <th>InventoryItem</th>
+    <th>OrderID</th>
+    <th>Order</th>
+    <th>Price</th>
+    <th>Count</th>
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (orderItem) in orderItems { %>
+      <tr>
+      <td><%= orderItem.InventoryItemID %></td>
+        <td><%= orderItem.InventoryItem %></td>
+        <td><%= orderItem.OrderID %></td>
+        <td><%= orderItem.Order %></td>
+        <td><%= orderItem.Price %></td>
+        <td><%= orderItem.Count %></td>
+        <td>
+          <div class="pull-right">
+            <a href="<%= orderItemPath({ order_item_id: orderItem.ID }) %>" class="btn btn-info">View</a>
+            <a href="<%= editOrderItemPath({ order_item_id: orderItem.ID }) %>" class="btn btn-warning">Edit</a>
+            <a href="<%= orderItemPath({ order_item_id: orderItem.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>

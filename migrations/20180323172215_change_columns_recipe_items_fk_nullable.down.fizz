@@ -1,0 +1,2 @@
+change_column("recipe_items", "inventory_item_id", "uuid", {"null": false})
+change_column("recipe_items", "batch_recipe_id", "uuid", {"null": false})

@@ -1,0 +1,6 @@
+create_table("count_prep_items", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("prep_item_id", "uuid", {})
+	t.Column("line_count", "decimal", {})
+	t.Column("walk_in_count", "decimal", {})
+})

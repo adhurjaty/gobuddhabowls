@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>Edit VendorItem</h1>
+</div>
+
+<%= form_for(vendorItem, {action: vendorItemPath({ vendor_item_id: vendorItem.ID }), method: "PUT"}) { %>
+  <%= partial("vendor_items/form.html") %>
+  <a href="<%= vendorItemPath({ vendor_item_id: vendorItem.ID }) %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>

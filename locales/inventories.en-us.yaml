@@ -1,0 +1,6 @@
+- id: "inventory.created.success"
+  translation: "Inventory was successfully created."
+- id: "inventory.updated.success"
+  translation: "Inventory was successfully updated."
+- id: "inventory.destroyed.success"
+  translation: "Inventory was successfully destroyed."

@@ -1,0 +1,25 @@
+<div class="page-header">
+  <h1>Vendor#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= vendorsPath() %>" class="btn btn-info">Back to all Vendors</a></li>
+  <li><a href="<%= editVendorPath({ vendor_id: vendor.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= vendorPath({ vendor_id: vendor.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>Name</strong>: <%= vendor.Name %>
+</p>
+<p>
+  <strong>Email</strong>: <%= vendor.Email %>
+</p>
+<p>
+  <strong>PhoneNumber</strong>: <%= vendor.PhoneNumber %>
+</p>
+<p>
+  <strong>Contact</strong>: <%= vendor.Contact %>
+</p>
+<p>
+  <strong>ShippingCost</strong>: <%= vendor.ShippingCost %>
+</p>

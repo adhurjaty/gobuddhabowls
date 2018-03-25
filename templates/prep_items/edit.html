@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>Edit PrepItem</h1>
+</div>
+
+<%= form_for(prepItem, {action: prepItemPath({ prep_item_id: prepItem.ID }), method: "PUT"}) { %>
+  <%= partial("prep_items/form.html") %>
+  <a href="<%= prepItemPath({ prep_item_id: prepItem.ID }) %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>

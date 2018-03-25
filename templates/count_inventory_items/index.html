@@ -1,0 +1,37 @@
+<div class="page-header">
+  <h1>CountInventoryItems</h1>
+</div>
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= newCountInventoryItemsPath() %>" class="btn btn-primary">Create New CountInventoryItem</a></li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+  <th>Count</th>
+    <th>Inventory</th>
+    <th>SelectedVendor</th>
+    <th>InventoryItem</th>
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (countInventoryItem) in countInventoryItems { %>
+      <tr>
+      <td><%= countInventoryItem.Count %></td>
+        <td><%= countInventoryItem.Inventory %></td>
+        <td><%= countInventoryItem.SelectedVendor %></td>
+        <td><%= countInventoryItem.InventoryItem %></td>
+        <td>
+          <div class="pull-right">
+            <a href="<%= countInventoryItemPath({ count_inventory_item_id: countInventoryItem.ID }) %>" class="btn btn-info">View</a>
+            <a href="<%= editCountInventoryItemPath({ count_inventory_item_id: countInventoryItem.ID }) %>" class="btn btn-warning">Edit</a>
+            <a href="<%= countInventoryItemPath({ count_inventory_item_id: countInventoryItem.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>

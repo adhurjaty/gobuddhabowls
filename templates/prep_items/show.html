@@ -1,0 +1,34 @@
+<div class="page-header">
+  <h1>PrepItem#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= prepItemsPath() %>" class="btn btn-info">Back to all PrepItems</a></li>
+  <li><a href="<%= editPrepItemPath({ prep_item_id: prepItem.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= prepItemPath({ prep_item_id: prepItem.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>InventoryItemID</strong>: <%= prepItem.InventoryItemID %>
+</p>
+<p>
+  <strong>BatchRecipeID</strong>: <%= prepItem.BatchRecipeID %>
+</p>
+<p>
+  <strong>BatchRecipe</strong>: <%= prepItem.BatchRecipe %>
+</p>
+<p>
+  <strong>Conversion</strong>: <%= prepItem.Conversion %>
+</p>
+<p>
+  <strong>CountUnit</strong>: <%= prepItem.CountUnit %>
+</p>
+<p>
+  <strong>LineCount</strong>: <%= prepItem.LineCount %>
+</p>
+<p>
+  <strong>WalkInCount</strong>: <%= prepItem.WalkInCount %>
+</p>
+<p>
+  <strong>Index</strong>: <%= prepItem.Index %>
+</p>

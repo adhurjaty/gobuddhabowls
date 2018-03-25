@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>Edit OrderItem</h1>
+</div>
+
+<%= form_for(orderItem, {action: orderItemPath({ order_item_id: orderItem.ID }), method: "PUT"}) { %>
+  <%= partial("order_items/form.html") %>
+  <a href="<%= orderItemPath({ order_item_id: orderItem.ID }) %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>

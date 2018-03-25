@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>Edit RecipeItem</h1>
+</div>
+
+<%= form_for(recipeItem, {action: recipeItemPath({ recipe_item_id: recipeItem.ID }), method: "PUT"}) { %>
+  <%= partial("recipe_items/form.html") %>
+  <a href="<%= recipeItemPath({ recipe_item_id: recipeItem.ID }) %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>

@@ -1,0 +1,1 @@
+drop_table("count_inventory_items")

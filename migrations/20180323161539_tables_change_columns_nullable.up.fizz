@@ -1,0 +1,1 @@
+change_column("vendor_items", "purchased_unit", "string", {"null": true})

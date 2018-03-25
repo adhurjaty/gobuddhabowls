@@ -1,0 +1,1 @@
+drop_column("inventories", "date")

@@ -1,0 +1,4 @@
+change_column("vendors", "email", "string", {"null": true})
+change_column("vendors", "phone_number", "string", {"null": true})
+change_column("vendors", "contact", "string", {"null": true})
+change_column("vendors", "shipping_cost", "float", {"null": true})

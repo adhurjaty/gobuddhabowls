@@ -1,0 +1,3 @@
+change_column("prep_items", "inventory_item_id", "uuid", {"null": true})
+change_column("prep_items", "batch_recipe_id", "uuid", {"null": true})
+change_column("prep_items", "count_unit", "string", {"null": true})

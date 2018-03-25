@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h1>OrderItem#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= orderItemsPath() %>" class="btn btn-info">Back to all OrderItems</a></li>
+  <li><a href="<%= editOrderItemPath({ order_item_id: orderItem.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= orderItemPath({ order_item_id: orderItem.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>InventoryItemID</strong>: <%= orderItem.InventoryItemID %>
+</p>
+<p>
+  <strong>InventoryItem</strong>: <%= orderItem.InventoryItem %>
+</p>
+<p>
+  <strong>OrderID</strong>: <%= orderItem.OrderID %>
+</p>
+<p>
+  <strong>Order</strong>: <%= orderItem.Order %>
+</p>
+<p>
+  <strong>Price</strong>: <%= orderItem.Price %>
+</p>
+<p>
+  <strong>Count</strong>: <%= orderItem.Count %>
+</p>

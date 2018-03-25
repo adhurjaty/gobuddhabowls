@@ -1,0 +1,9 @@
+create_table("recipes", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("name", "string", {})
+	t.Column("recipe_unit", "string", {})
+	t.Column("recipe_unit_conversion", "string", {})
+	t.Column("category", "string", {})
+	t.Column("is_batch", "bool", {})
+	t.Column("index", "integer", {})
+})

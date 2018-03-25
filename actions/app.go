@@ -56,7 +56,18 @@ func App() *buffalo.App {
 		app.Use(T.Middleware())
 
 		app.GET("/", HomeHandler)
-
+		app.GET("/routes", RoutesHandler)
+		app.Resource("/inventory_items", InventoryItemsResource{})
+		app.Resource("/inventories", InventoriesResource{})
+		app.Resource("/vendors", VendorsResource{})
+		app.Resource("/count_inventory_items", CountInventoryItemsResource{})
+		app.Resource("/purchase_orders", PurchaseOrdersResource{})
+		app.Resource("/order_items", OrderItemsResource{})
+		app.Resource("/prep_items", PrepItemsResource{})
+		app.Resource("/recipes", RecipesResource{})
+		app.Resource("/recipe_items", RecipeItemsResource{})
+		app.Resource("/vendor_items", VendorItemsResource{})
+		app.Resource("/count_prep_items", CountPrepItemsResource{})
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
 

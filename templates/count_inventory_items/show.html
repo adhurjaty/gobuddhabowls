@@ -1,0 +1,22 @@
+<div class="page-header">
+  <h1>CountInventoryItem#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= countInventoryItemsPath() %>" class="btn btn-info">Back to all CountInventoryItems</a></li>
+  <li><a href="<%= editCountInventoryItemPath({ count_inventory_item_id: countInventoryItem.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= countInventoryItemPath({ count_inventory_item_id: countInventoryItem.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>Count</strong>: <%= countInventoryItem.Count %>
+</p>
+<p>
+  <strong>Inventory</strong>: <%= countInventoryItem.Inventory %>
+</p>
+<p>
+  <strong>SelectedVendor</strong>: <%= countInventoryItem.SelectedVendor %>
+</p>
+<p>
+  <strong>InventoryItem</strong>: <%= countInventoryItem.InventoryItem %>
+</p>

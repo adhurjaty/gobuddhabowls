@@ -1,0 +1,6 @@
+- id: "test_camel.created.success"
+  translation: "TestCamel was successfully created."
+- id: "test_camel.updated.success"
+  translation: "TestCamel was successfully updated."
+- id: "test_camel.destroyed.success"
+  translation: "TestCamel was successfully destroyed."

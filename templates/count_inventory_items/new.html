@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>New CountInventoryItem</h1>
+</div>
+
+<%= form_for(countInventoryItem, {action: countInventoryItemsPath(), method: "POST"}) { %>
+  <%= partial("count_inventory_items/form.html") %>
+  <a href="<%= countInventoryItemsPath() %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>

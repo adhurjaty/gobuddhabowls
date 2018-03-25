@@ -1,0 +1,41 @@
+<div class="page-header">
+  <h1>RecipeItems</h1>
+</div>
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= newRecipeItemsPath() %>" class="btn btn-primary">Create New RecipeItem</a></li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+  <th>InventoryItemID</th>
+    <th>InventoryItem</th>
+    <th>BatchRecipeID</th>
+    <th>BatchRecipe</th>
+    <th>Measure</th>
+    <th>Count</th>
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (recipeItem) in recipeItems { %>
+      <tr>
+      <td><%= recipeItem.InventoryItemID %></td>
+        <td><%= recipeItem.InventoryItem %></td>
+        <td><%= recipeItem.BatchRecipeID %></td>
+        <td><%= recipeItem.BatchRecipe %></td>
+        <td><%= recipeItem.Measure %></td>
+        <td><%= recipeItem.Count %></td>
+        <td>
+          <div class="pull-right">
+            <a href="<%= recipeItemPath({ recipe_item_id: recipeItem.ID }) %>" class="btn btn-info">View</a>
+            <a href="<%= editRecipeItemPath({ recipe_item_id: recipeItem.ID }) %>" class="btn btn-warning">Edit</a>
+            <a href="<%= recipeItemPath({ recipe_item_id: recipeItem.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>

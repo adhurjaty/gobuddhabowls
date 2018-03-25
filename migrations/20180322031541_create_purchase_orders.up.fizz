@@ -1,0 +1,6 @@
+create_table("purchase_orders", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("vendor_id", "uuid", {})
+	t.Column("order_date", "timestamp", {})
+	t.Column("received_date", "timestamp", {})
+})

@@ -1,0 +1,6 @@
+- id: "vendor_item.created.success"
+  translation: "VendorItem was successfully created."
+- id: "vendor_item.updated.success"
+  translation: "VendorItem was successfully updated."
+- id: "vendor_item.destroyed.success"
+  translation: "VendorItem was successfully destroyed."

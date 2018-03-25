@@ -1,0 +1,39 @@
+<div class="page-header">
+  <h1>PurchaseOrders</h1>
+</div>
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= newPurchaseOrdersPath() %>" class="btn btn-primary">Create New PurchaseOrder</a></li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+  <th>VendorID</th>
+    <th>Vendor</th>
+    <th>OrderDate</th>
+    <th>ReceivedDate</th>
+    <th>Items</th>
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (purchaseOrder) in purchaseOrders { %>
+      <tr>
+      <td><%= purchaseOrder.VendorID %></td>
+        <td><%= purchaseOrder.Vendor %></td>
+        <td><%= purchaseOrder.OrderDate %></td>
+        <td><%= purchaseOrder.ReceivedDate %></td>
+        <td><%= purchaseOrder.Items %></td>
+        <td>
+          <div class="pull-right">
+            <a href="<%= purchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="btn btn-info">View</a>
+            <a href="<%= editPurchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="btn btn-warning">Edit</a>
+            <a href="<%= purchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>

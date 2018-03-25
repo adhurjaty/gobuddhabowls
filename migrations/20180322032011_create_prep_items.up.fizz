@@ -1,0 +1,8 @@
+create_table("prep_items", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("inventory_item_id", "uuid", {})
+	t.Column("batch_recipe_id", "uuid", {})
+	t.Column("conversion", "decimal", {})
+	t.Column("count_unit", "string", {})
+	t.Column("index", "integer", {})
+})

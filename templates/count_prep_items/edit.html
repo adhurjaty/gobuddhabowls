@@ -1,0 +1,8 @@
+<div class="page-header">
+  <h1>Edit CountPrepItem</h1>
+</div>
+
+<%= form_for(countPrepItem, {action: countPrepItemPath({ count_prep_item_id: countPrepItem.ID }), method: "PUT"}) { %>
+  <%= partial("count_prep_items/form.html") %>
+  <a href="<%= countPrepItemPath({ count_prep_item_id: countPrepItem.ID }) %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>

@@ -1,0 +1,6 @@
+- id: "count_prep_item.created.success"
+  translation: "CountPrepItem was successfully created."
+- id: "count_prep_item.updated.success"
+  translation: "CountPrepItem was successfully updated."
+- id: "count_prep_item.destroyed.success"
+  translation: "CountPrepItem was successfully destroyed."

@@ -1,0 +1,43 @@
+<div class="page-header">
+  <h1>VendorItems</h1>
+</div>
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= newVendorItemsPath() %>" class="btn btn-primary">Create New VendorItem</a></li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+  <th>InventoryItemID</th>
+    <th>InventoryItem</th>
+    <th>VendorID</th>
+    <th>Vendor</th>
+    <th>PurchasedUnit</th>
+    <th>Conversion</th>
+    <th>Price</th>
+    <th>&nbsp;</th>
+  </thead>
+  <tbody>
+    <%= for (vendorItem) in vendorItems { %>
+      <tr>
+      <td><%= vendorItem.InventoryItemID %></td>
+        <td><%= vendorItem.InventoryItem %></td>
+        <td><%= vendorItem.VendorID %></td>
+        <td><%= vendorItem.Vendor %></td>
+        <td><%= vendorItem.PurchasedUnit %></td>
+        <td><%= vendorItem.Conversion %></td>
+        <td><%= vendorItem.Price %></td>
+        <td>
+          <div class="pull-right">
+            <a href="<%= vendorItemPath({ vendor_item_id: vendorItem.ID }) %>" class="btn btn-info">View</a>
+            <a href="<%= editVendorItemPath({ vendor_item_id: vendorItem.ID }) %>" class="btn btn-warning">Edit</a>
+            <a href="<%= vendorItemPath({ vendor_item_id: vendorItem.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+          </div>
+        </td>
+      </tr>
+    <% } %>
+  </tbody>
+</table>
+
+<div class="text-center">
+  <%= paginator(pagination) %>
+</div>

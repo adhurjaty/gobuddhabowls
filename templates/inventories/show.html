@@ -1,0 +1,13 @@
+<div class="page-header">
+  <h1>Inventory#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= inventoriesPath() %>" class="btn btn-info">Back to all Inventories</a></li>
+  <li><a href="<%= editInventoryPath({ inventory_id: inventory.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= inventoryPath({ inventory_id: inventory.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>Date</strong>: <%= inventory.Date %>
+</p>

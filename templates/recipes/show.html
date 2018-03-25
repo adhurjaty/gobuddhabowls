@@ -1,0 +1,31 @@
+<div class="page-header">
+  <h1>Recipe#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= recipesPath() %>" class="btn btn-info">Back to all Recipes</a></li>
+  <li><a href="<%= editRecipePath({ recipe_id: recipe.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= recipePath({ recipe_id: recipe.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>Name</strong>: <%= recipe.Name %>
+</p>
+<p>
+  <strong>RecipeUnit</strong>: <%= recipe.RecipeUnit %>
+</p>
+<p>
+  <strong>RecipeUnitConversion</strong>: <%= recipe.RecipeUnitConversion %>
+</p>
+<p>
+  <strong>Category</strong>: <%= recipe.Category %>
+</p>
+<p>
+  <strong>IsBatch</strong>: <%= recipe.IsBatch %>
+</p>
+<p>
+  <strong>Index</strong>: <%= recipe.Index %>
+</p>
+<p>
+  <strong>Items</strong>: <%= recipe.Items %>
+</p>

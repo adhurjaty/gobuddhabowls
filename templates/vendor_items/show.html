@@ -1,0 +1,31 @@
+<div class="page-header">
+  <h1>VendorItem#Show</h1>
+</div>
+
+<ul class="list-unstyled list-inline">
+  <li><a href="<%= vendorItemsPath() %>" class="btn btn-info">Back to all VendorItems</a></li>
+  <li><a href="<%= editVendorItemPath({ vendor_item_id: vendorItem.ID })%>" class="btn btn-warning">Edit</a></li>
+  <li><a href="<%= vendorItemPath({ vendor_item_id: vendorItem.ID })%>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
+</ul>
+
+<p>
+  <strong>InventoryItemID</strong>: <%= vendorItem.InventoryItemID %>
+</p>
+<p>
+  <strong>InventoryItem</strong>: <%= vendorItem.InventoryItem %>
+</p>
+<p>
+  <strong>VendorID</strong>: <%= vendorItem.VendorID %>
+</p>
+<p>
+  <strong>Vendor</strong>: <%= vendorItem.Vendor %>
+</p>
+<p>
+  <strong>PurchasedUnit</strong>: <%= vendorItem.PurchasedUnit %>
+</p>
+<p>
+  <strong>Conversion</strong>: <%= vendorItem.Conversion %>
+</p>
+<p>
+  <strong>Price</strong>: <%= vendorItem.Price %>
+</p>

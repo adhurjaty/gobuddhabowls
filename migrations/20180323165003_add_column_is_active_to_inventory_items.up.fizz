@@ -1,0 +1,1 @@
+add_column("inventory_items", "is_active", "bool", {"default": true})
