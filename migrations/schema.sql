@@ -146,7 +146,8 @@ CREATE TABLE public.purchase_orders (
     order_date timestamp without time zone NOT NULL,
     received_date timestamp without time zone,
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    shipping_cost numeric DEFAULT '0'::numeric NOT NULL
 );
 
 

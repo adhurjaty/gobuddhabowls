@@ -7,26 +7,20 @@
 
 <table class="table table-striped">
   <thead>
-  <th>InventoryItemID</th>
-    <th>BatchRecipeID</th>
+  <th>InventoryItem</th>
     <th>BatchRecipe</th>
     <th>Conversion</th>
     <th>CountUnit</th>
-    <th>LineCount</th>
-    <th>WalkInCount</th>
     <th>Index</th>
     <th>&nbsp;</th>
   </thead>
   <tbody>
     <%= for (prepItem) in prepItems { %>
       <tr>
-      <td><%= prepItem.InventoryItemID %></td>
-        <td><%= prepItem.BatchRecipeID %></td>
+      <td><%= prepItem.InventoryItem %></td>
         <td><%= prepItem.BatchRecipe %></td>
         <td><%= prepItem.Conversion %></td>
         <td><%= prepItem.CountUnit %></td>
-        <td><%= prepItem.LineCount %></td>
-        <td><%= prepItem.WalkInCount %></td>
         <td><%= prepItem.Index %></td>
         <td>
           <div class="pull-right">

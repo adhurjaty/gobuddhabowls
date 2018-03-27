@@ -16,9 +16,9 @@ type RecipeItem struct {
 	UpdatedAt       time.Time     `json:"updated_at" db:"updated_at"`
 	RecipeID        uuid.UUID     `json:"recipe_id" db:"recipe_id"`
 	Recipe          Recipe        `belongs_to:"recipes" db:"-"`
-	InventoryItemID uuid.UUID     `json:"inventory_item_id" db:"inventory_item_id"`
+	InventoryItemID uuid.NullUUID `json:"inventory_item_id" db:"inventory_item_id"`
 	InventoryItem   InventoryItem `belongs_to:"inventory_items" db:"-"`
-	BatchRecipeID   uuid.UUID     `json:"batch_recipe_id" db:"batch_recipe_id"`
+	BatchRecipeID   uuid.NullUUID `json:"batch_recipe_id" db:"batch_recipe_id"`
 	BatchRecipe     Recipe        `belongs_to:"recipes" db:"-"`
 	Measure         string        `json:"measure" db:"measure"`
 	Count           float64       `json:"count" db:"count"`

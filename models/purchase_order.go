@@ -18,7 +18,8 @@ type PurchaseOrder struct {
 	Vendor       Vendor     `belongs_to:"vendors" db:"-"`
 	OrderDate    time.Time  `json:"order_date" db:"order_date"`
 	ReceivedDate time.Time  `json:"received_date" db:"received_date"`
-	Items        OrderItems `has_many:"order_items" db:"-"`
+	ShippingCost float64    `json:"shipping_cost" db:"shipping_cost"`
+	Items        OrderItems `has_many:"order_items" db:"-" fk_id:"order_id"`
 }
 
 // String is not required by pop and may be deleted
@@ -55,4 +56,14 @@ func (p *PurchaseOrder) ValidateCreate(tx *pop.Connection) (*validate.Errors, er
 // This method is not required and may be deleted.
 func (p *PurchaseOrder) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+// GetCost gets the total cost of the purchase order
+func (p PurchaseOrder) GetCost() float64 {
+	var cost float64
+	for _, item := range p.Items {
+		cost += item.Price
+	}
+
+	return cost + p.ShippingCost
 }

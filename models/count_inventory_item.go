@@ -15,17 +15,11 @@ type CountInventoryItem struct {
 	UpdatedAt        time.Time     `json:"updated_at" db:"updated_at"`
 	Count            float64       `json:"count" db:"count"`
 	InventoryID      uuid.UUID     `json:"inventory_id" db:"inventory_id"`
-	SelectedVendorID uuid.UUID     `json:"selected_vendor_id" db:"selected_vendor_id"`
+	SelectedVendorID uuid.NullUUID `json:"selected_vendor_id" db:"selected_vendor_id"`
 	InventoryItemID  uuid.UUID     `json:"inventory_item_id" db:"inventory_item_id"`
 	Inventory        Inventory     `belongs_to:"inventories" db:"-"`
 	SelectedVendor   Vendor        `belongs_to:"vendors" db:"-"`
 	InventoryItem    InventoryItem `belongs_to:"inventory_items" db:"-"`
-}
-
-// String is not required by pop and may be deleted
-func (c CountInventoryItem) String() string {
-	jc, _ := json.Marshal(c)
-	return string(jc)
 }
 
 // CountInventoryItems is not required by pop and may be deleted

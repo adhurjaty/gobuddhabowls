@@ -1,8 +1,11 @@
 package actions
 
 import (
+	"fmt"
 	"github.com/gobuffalo/buffalo/render"
 	"github.com/gobuffalo/packr"
+	"math"
+	"time"
 )
 
 var r *render.Engine
@@ -19,9 +22,13 @@ func init() {
 
 		// Add template helpers here:
 		Helpers: render.Helpers{
-			// uncomment for non-Bootstrap form helpers:
-			// "form":     plush.FormHelper,
-			// "form_for": plush.FormForHelper,
+			"format_money": func(val float64) string {
+				return fmt.Sprintf("$%.2f", math.Round(val*100)/100)
+			},
+			"format_date": func(d time.Time) string {
+				year, month, day := d.Date()
+				return fmt.Sprintf("%d/%d/%d", month, day, year)
+			},
 		},
 	})
 }

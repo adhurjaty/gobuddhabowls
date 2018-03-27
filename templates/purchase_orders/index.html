@@ -1,28 +1,26 @@
 <div class="page-header">
-  <h1>PurchaseOrders</h1>
+  <h1 class="text-center">Orders</h1>
 </div>
 <ul class="list-unstyled list-inline">
   <li><a href="<%= newPurchaseOrdersPath() %>" class="btn btn-primary">Create New PurchaseOrder</a></li>
 </ul>
 
-<table class="table table-striped">
+<table id="datagrid" data-toggle="table" class="table table-bordered" data-provide="datagrid">
   <thead>
-  <th>VendorID</th>
     <th>Vendor</th>
-    <th>OrderDate</th>
-    <th>ReceivedDate</th>
-    <th>Items</th>
+    <th>Order Date</th>
+    <th>Received Date</th>
+    <th>Cost</th>
     <th>&nbsp;</th>
   </thead>
   <tbody>
     <%= for (purchaseOrder) in purchaseOrders { %>
       <tr>
-      <td><%= purchaseOrder.VendorID %></td>
-        <td><%= purchaseOrder.Vendor %></td>
-        <td><%= purchaseOrder.OrderDate %></td>
-        <td><%= purchaseOrder.ReceivedDate %></td>
-        <td><%= purchaseOrder.Items %></td>
-        <td>
+        <td data-editable="false"><%= purchaseOrder.Vendor.Name %></td>
+        <td data-type="date"><%= format_date(purchaseOrder.OrderDate) %></td>
+        <td data-type="date"><%= format_date(purchaseOrder.ReceivedDate) %></td>
+        <td data-editable="false"><%= format_money(purchaseOrder.GetCost()) %></td>
+        <td data-editable="false">
           <div class="pull-right">
             <a href="<%= purchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="btn btn-info">View</a>
             <a href="<%= editPurchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="btn btn-warning">Edit</a>

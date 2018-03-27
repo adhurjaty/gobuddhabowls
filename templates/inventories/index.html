@@ -8,12 +8,14 @@
 <table class="table table-striped">
   <thead>
   <th>Date</th>
+  <th>Inventory Items</th>
     <th>&nbsp;</th>
   </thead>
   <tbody>
     <%= for (inventory) in inventories { %>
       <tr>
       <td><%= inventory.Date %></td>
+      <td><%= inventory.Items %></td>
         <td>
           <div class="pull-right">
             <a href="<%= inventoryPath({ inventory_id: inventory.ID }) %>" class="btn btn-info">View</a>

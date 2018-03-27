@@ -1,0 +1,1 @@
+add_column("purchase_orders", "shipping_cost", "decimal", {"default": 0})
