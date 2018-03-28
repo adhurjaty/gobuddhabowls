@@ -2,6 +2,7 @@ package actions
 
 import (
 	"buddhabowls/models"
+	"fmt"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -23,6 +24,48 @@ import (
 // PurchaseOrdersResource is the resource for the PurchaseOrder model
 type PurchaseOrdersResource struct {
 	buffalo.Resource
+}
+
+// RowEdited handles updating a model when a datagrid row is modified
+func (v PurchaseOrdersResource) RowEdited(c buffalo.Context) error {
+	res := c.Response()
+	// data := c.Request().Form
+
+	// dateFields := []string{"order_date", "received_date"}
+
+	// for field := range dateFields {
+	// 	data[field]
+	// }
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	// Allocate an empty PurchaseOrder
+	purchaseOrder := &models.PurchaseOrder{}
+
+	if err := tx.Find(purchaseOrder, c.Param("purchase_order_id")); err != nil {
+		return c.Error(404, err)
+	}
+
+	// Bind PurchaseOrder to the html form elements
+	if err := c.Bind(purchaseOrder); err != nil {
+		fmt.Println(fmt.Errorf("Could not bind PurchaseOrder"))
+		res.WriteHeader(422)
+		res.Write([]byte("Could not bind PurchaseOrder " + err.Error()))
+		return nil
+	}
+
+	verrs, err := tx.ValidateAndUpdate(purchaseOrder)
+	if err != nil || verrs.HasAny() {
+		fmt.Println(fmt.Errorf("Invalid data"))
+		res.WriteHeader(422)
+		res.Write([]byte("Invalid data " + err.Error()))
+		return nil
+	}
+
+	return c.Render(200, r.String("success"))
 }
 
 // List gets all PurchaseOrders. This function is mapped to the path
@@ -47,6 +90,7 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 
 	// Add the paginator to the context so it can be used in the template.
 	c.Set("pagination", q.Paginator)
+	// c.Set("commitChange", c.updatePurchaseOrderPath)
 
 	return c.Render(200, r.Auto(c, purchaseOrders))
 }
@@ -82,7 +126,8 @@ func (v PurchaseOrdersResource) New(c buffalo.Context) error {
 func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	// Allocate an empty PurchaseOrder
 	purchaseOrder := &models.PurchaseOrder{}
-
+	a := c.Request().Form
+	fmt.Println(a)
 	// Bind purchaseOrder to the html form elements
 	if err := c.Bind(purchaseOrder); err != nil {
 		return errors.WithStack(err)

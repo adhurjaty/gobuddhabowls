@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"github.com/gobuffalo/buffalo/render"
 	"github.com/gobuffalo/packr"
+	"github.com/gobuffalo/pop/nulls"
 	"math"
-	"time"
 )
 
 var r *render.Engine
@@ -25,9 +25,12 @@ func init() {
 			"format_money": func(val float64) string {
 				return fmt.Sprintf("$%.2f", math.Round(val*100)/100)
 			},
-			"format_date": func(d time.Time) string {
-				year, month, day := d.Date()
-				return fmt.Sprintf("%d/%d/%d", month, day, year)
+			"format_date": func(d nulls.Time) string {
+				if !d.Valid {
+					return ""
+				}
+				year, month, day := d.Time.Date()
+				return fmt.Sprintf("%02d/%02d/%d", month, day, year)
 			},
 		},
 	})

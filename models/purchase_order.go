@@ -2,12 +2,13 @@ package models
 
 import (
 	"encoding/json"
+	"github.com/gobuffalo/pop/nulls"
+	"github.com/gobuffalo/validate/validators"
 	"time"
 
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
-	"github.com/gobuffalo/validate/validators"
 )
 
 type PurchaseOrder struct {
@@ -16,8 +17,8 @@ type PurchaseOrder struct {
 	UpdatedAt    time.Time  `json:"updated_at" db:"updated_at"`
 	VendorID     uuid.UUID  `json:"vendor_id" db:"vendor_id"`
 	Vendor       Vendor     `belongs_to:"vendors" db:"-"`
-	OrderDate    time.Time  `json:"order_date" db:"order_date"`
-	ReceivedDate time.Time  `json:"received_date" db:"received_date"`
+	OrderDate    nulls.Time `json:"order_date" db:"order_date"`
+	ReceivedDate nulls.Time `json:"received_date" db:"received_date"`
 	ShippingCost float64    `json:"shipping_cost" db:"shipping_cost"`
 	Items        OrderItems `has_many:"order_items" db:"-" fk_id:"order_id"`
 }
@@ -41,8 +42,17 @@ func (p PurchaseOrders) String() string {
 // This method is not required and may be deleted.
 func (p *PurchaseOrder) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
-		&validators.TimeIsPresent{Field: p.OrderDate, Name: "OrderDate"},
-		&validators.TimeIsPresent{Field: p.ReceivedDate, Name: "ReceivedDate"},
+		validate.ValidatorFunc(func(errors *validate.Errors) {
+			if !p.OrderDate.Valid {
+				errors.Add(validators.GenerateKey(p.Vendor.Name), "Must have order date")
+			}
+		}),
+		validate.ValidatorFunc(func(errors *validate.Errors) {
+			if p.OrderDate.Valid && p.ReceivedDate.Valid && p.OrderDate.Time.Unix() > p.ReceivedDate.Time.Unix() {
+				errors.Add(validators.GenerateKey(p.Vendor.Name+" "+p.OrderDate.Time.String()),
+					"Received date must be after order date")
+			}
+		}),
 	), nil
 }
 

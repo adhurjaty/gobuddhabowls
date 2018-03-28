@@ -61,7 +61,11 @@ func App() *buffalo.App {
 		app.Resource("/inventories", InventoriesResource{})
 		app.Resource("/vendors", VendorsResource{})
 		app.Resource("/count_inventory_items", CountInventoryItemsResource{})
-		app.Resource("/purchase_orders", PurchaseOrdersResource{})
+
+		poResource := &PurchaseOrdersResource{}
+		app.Resource("/purchase_orders", *poResource)
+		app.POST("/purchase_orders/row_edited/{purchase_order_id}", poResource.RowEdited)
+
 		app.Resource("/order_items", OrderItemsResource{})
 		app.Resource("/prep_items", PrepItemsResource{})
 		app.Resource("/recipes", RecipesResource{})

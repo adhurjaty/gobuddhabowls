@@ -38,7 +38,7 @@ func (v VendorsResource) List(c buffalo.Context) error {
 
 	// Paginate results. Params "page" and "per_page" control pagination.
 	// Default values are "page=1" and "per_page=20".
-	q := tx.PaginateFromParams(c.Params())
+	q := tx.PaginateFromParams(c.Params()).Eager()
 
 	// Retrieve all Vendors from the DB
 	if err := q.All(vendors); err != nil {

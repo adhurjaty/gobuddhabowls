@@ -2,75 +2,78 @@ require("expose-loader?$!expose-loader?jQuery!jquery");
 require("bootstrap-sass/assets/javascripts/bootstrap.js");
 require("bootstrap-table/src/bootstrap-table.js");
 require("bootstrap");
-require("bootstrap-datepicker");
-require("bootstrap-datagrid/js/bootstrap-datagrid.js"); // must be at the bottom
+require("bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js");
+
 $(() => {
-    
-    $('#datagrid').datagrid({
-        inputs: {
-            select: {
-                el : $('<select class="form-control datagrid-input">'),
-                onShow:function(cell) {
-                // Set the options
-                if (!$(this).find('option').length) {
-                    $(this).append($('<option disabled="disabled">Select a category</option>'))
-                    $(this).append($('<option value="shoe">Shoe</option>'))
-                    $(this).append($('<option value="t-shirt">T-Shirt</option>'))
-                    $(this).append($('<option value="pants">Pants</option>'))
-                }
-        
-                var inputPadding = parseInt(cell.data('padding'))-1
-                $(this).css('padding', inputPadding+'px')
-                $(this).css('width', '100%')
-                $(this).css('height', '100%')
-                $(this).css('top', cell.offset().top.toString+'px')
-                $(this).css('left', cell.offset().left.toString+'px')
-        
-                $(this).val(cell.data('value'))
-                },
-                onChange:function(cell) {
-                cell.data('value', $(this).val())
-                cell.text($(this).find('option[value='+$(this).val()+']').text())
-                },
-                isChanged:function(cell) {
-                return $(this).val() != cell.data('value')
-                }
-            },
-            money: {
-                el : $('<input type="text" class="form-control datagrid-input">'),
-                onShow:function(cell) {
-                    var inputPadding = parseInt(cell.data('padding'))-1
-                    $(this).css('padding', inputPadding+'px')
-                    $(this).css('width', '100%')
-                    $(this).css('height', '100%')
-                    $(this).css('top', cell.offset().top.toString+'px')
-                    $(this).css('left', cell.offset().left.toString+'px')
-            
-                    $(this).val(cell.data('value'))
-                },
-                onChange:function(cell) {
-                    cell.data('value', $(this).val())
-                    cell.text('$'+$(this).val())
-                },
-                isChanged:function(cell) {
-                    return $(this).val() != cell.data('value')
-                }
-            },
-            date: {
-                el: $('<input class="datepicker" data-date-format="mm/dd/yyyy">'),
-                onShow: function(cell) {
-                    $('.datepicker').datepicker({
-                        startDate: "-3d"
-                    })
-                },
-                onChange: function(cell) {
-                    cell.text($(this).val())
-                },
-                isChanged: function(cell) {
-                    return true
-                }
-            }
-        }
-    });
+      
 });
 
+// DATAGRID
+
+$.each($('.datagrid').find('td[contenteditable="true"]'), function(i, el) {
+    var type = $(el).attr('data-type');
+
+    var sendUpdate = function(po_id, field, contents) {
+        var data = {};
+        data[field] = contents;
+        $.ajax({
+            url: "/purchase_orders/row_edited/" + po_id,
+            data: data,
+            method: "POST"
+        });
+    };
+
+    switch(type) {
+        case 'date':
+            $(el).on('focus', function(event) {
+                var date_str = $(this).text();
+                var $date = $('<input data-provide="datepicker" value="' + date_str + '">');
+                $(this).empty();
+                $(this).append($date);
+                var $td = $(this)
+                $date.datepicker({
+                    autoclose: 'true',
+                    format: 'mm/dd/yyyy',
+                    defaultViewDate: date_str
+                }).on('changeDate', function(event) {
+                    var po_id = $td.parent().attr('item-id');
+                    var field = $td.attr('field');
+                    var contents = event.format();
+
+                    sendUpdate(po_id, field, contents);
+                    
+                    $td.text(contents);
+                }).on('hide', function(event) {
+                    $td.text(date_str);
+                });
+                $date.focus();
+            });
+            break;
+        case 'money':
+            break;
+        case 'selector':
+            break;
+        default:    // type 'text'
+            $(el).on('blur', function(event) {
+                var po_id = $(this).parent().attr('item-id');
+                var field = $(this).attr('field');
+                sendUpdate(po_id, field, $(this).text());
+            });
+            break;
+    }
+    
+    
+    // switch(type) {
+    //     case 'date':
+    //         el = '<input data-provide="datepicker" format="mm/dd/yyyy" startDate="' + $td.text + '">'
+    //         break;
+    //     case 'money':
+    //         break;
+    //     case 'selector':
+    //         break;
+    //     default:    // type 'text'
+    //         el = '<input type="text" class="form-control" value="' + prevValue + '" onfocus="this.select()">'
+    //         $td.append(el);
+    //         $(el).focus().select();
+    // }
+});

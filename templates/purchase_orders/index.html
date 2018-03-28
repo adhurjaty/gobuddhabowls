@@ -5,7 +5,7 @@
   <li><a href="<%= newPurchaseOrdersPath() %>" class="btn btn-primary">Create New PurchaseOrder</a></li>
 </ul>
 
-<table id="datagrid" data-toggle="table" class="table table-bordered" data-provide="datagrid">
+<table class="table table-bordered datagrid">
   <thead>
     <th>Vendor</th>
     <th>Order Date</th>
@@ -15,12 +15,12 @@
   </thead>
   <tbody>
     <%= for (purchaseOrder) in purchaseOrders { %>
-      <tr>
-        <td data-editable="false"><%= purchaseOrder.Vendor.Name %></td>
-        <td data-type="date"><%= format_date(purchaseOrder.OrderDate) %></td>
-        <td data-type="date"><%= format_date(purchaseOrder.ReceivedDate) %></td>
-        <td data-editable="false"><%= format_money(purchaseOrder.GetCost()) %></td>
-        <td data-editable="false">
+      <tr item-id="<%= purchaseOrder.ID %>">
+        <td><%= purchaseOrder.Vendor.Name %></td>
+        <td contenteditable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
+        <td contenteditable="true" data-type="date" field="ReceivedDate"><%= format_date(purchaseOrder.ReceivedDate) %></td>
+        <td><%= format_money(purchaseOrder.GetCost()) %></td>
+        <td>
           <div class="pull-right">
             <a href="<%= purchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="btn btn-info">View</a>
             <a href="<%= editPurchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="btn btn-warning">Edit</a>
