@@ -5,7 +5,7 @@
   <li><a href="<%= newPurchaseOrdersPath() %>" class="btn btn-primary">Create New PurchaseOrder</a></li>
 </ul>
 
-<table class="table table-bordered datagrid">
+<table class="datagrid" onchange-href="/purchase_orders/row_edited">
   <thead>
     <th>Vendor</th>
     <th>Order Date</th>
@@ -17,8 +17,8 @@
     <%= for (purchaseOrder) in purchaseOrders { %>
       <tr item-id="<%= purchaseOrder.ID %>">
         <td><%= purchaseOrder.Vendor.Name %></td>
-        <td contenteditable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
-        <td contenteditable="true" data-type="date" field="ReceivedDate"><%= format_date(purchaseOrder.ReceivedDate) %></td>
+        <td editable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
+        <td editable="true" data-type="date" field="ReceivedDate"><%= format_date(purchaseOrder.ReceivedDate) %></td>
         <td><%= format_money(purchaseOrder.GetCost()) %></td>
         <td>
           <div class="pull-right">

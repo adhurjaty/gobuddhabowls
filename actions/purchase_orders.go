@@ -3,6 +3,7 @@ package actions
 import (
 	"buddhabowls/models"
 	"fmt"
+	"strings"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -28,14 +29,6 @@ type PurchaseOrdersResource struct {
 
 // RowEdited handles updating a model when a datagrid row is modified
 func (v PurchaseOrdersResource) RowEdited(c buffalo.Context) error {
-	res := c.Response()
-	// data := c.Request().Form
-
-	// dateFields := []string{"order_date", "received_date"}
-
-	// for field := range dateFields {
-	// 	data[field]
-	// }
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
@@ -52,17 +45,24 @@ func (v PurchaseOrdersResource) RowEdited(c buffalo.Context) error {
 	// Bind PurchaseOrder to the html form elements
 	if err := c.Bind(purchaseOrder); err != nil {
 		fmt.Println(fmt.Errorf("Could not bind PurchaseOrder"))
-		res.WriteHeader(422)
-		res.Write([]byte("Could not bind PurchaseOrder " + err.Error()))
-		return nil
+		return c.Error(422, err)
 	}
 
 	verrs, err := tx.ValidateAndUpdate(purchaseOrder)
-	if err != nil || verrs.HasAny() {
+	if err != nil {
 		fmt.Println(fmt.Errorf("Invalid data"))
-		res.WriteHeader(422)
-		res.Write([]byte("Invalid data " + err.Error()))
-		return nil
+		return c.Error(422, err)
+	}
+	if verrs.HasAny() {
+		fmt.Println(fmt.Errorf("Invalid data"))
+		errorMsgs := []string{}
+		for _, verr := range verrs.Errors {
+			for _, v := range verr {
+				errorMsgs = append(errorMsgs, v)
+			}
+		}
+
+		return c.Render(422, r.String(strings.Join(errorMsgs, "\n")))
 	}
 
 	return c.Render(200, r.String("success"))
@@ -81,7 +81,7 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 
 	// Paginate results. Params "page" and "per_page" control pagination.
 	// Default values are "page=1" and "per_page=20".
-	q := tx.PaginateFromParams(c.Params()).Eager()
+	q := tx.PaginateFromParams(c.Params()).Eager().Order("order_date DESC")
 
 	// Retrieve all PurchaseOrders from the DB
 	if err := q.All(purchaseOrders); err != nil {
@@ -90,7 +90,7 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 
 	// Add the paginator to the context so it can be used in the template.
 	c.Set("pagination", q.Paginator)
-	// c.Set("commitChange", c.updatePurchaseOrderPath)
+	c.Set("rowEditedAction", "/purchase_orders/row_edited/")
 
 	return c.Render(200, r.Auto(c, purchaseOrders))
 }

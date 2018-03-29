@@ -6,3 +6,15 @@
 @import "bootstrap-grid.min.css";
 @import "dashboard.css";
 @import "~bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css";
+
+table.datagrid {
+    @extend .table;
+    @extend .table-bordered;
+    @extend .table-hover;
+
+    tbody>tr.active>td,
+    tbody>tr.active:hover>td,
+    tbody>tr.active:focus>td {
+        background-color:rgb(156, 218, 247);
+    }
+}
