@@ -87,10 +87,10 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 	if err := q.All(purchaseOrders); err != nil {
 		return errors.WithStack(err)
 	}
+	fmt.Println((*purchaseOrders)[0])
 
 	// Add the paginator to the context so it can be used in the template.
 	c.Set("pagination", q.Paginator)
-	c.Set("rowEditedAction", "/purchase_orders/row_edited/")
 
 	return c.Render(200, r.Auto(c, purchaseOrders))
 }

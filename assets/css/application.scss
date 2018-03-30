@@ -2,10 +2,10 @@
 @import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "~font-awesome/css/font-awesome.css";
 @import "~bootstrap-table/src/bootstrap-table.css";
-@import "bootstrap.min.css";
-@import "bootstrap-grid.min.css";
 @import "dashboard.css";
 @import "~bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~bootstrap/dist/css/bootstrap-grid.min.css";
 
 table.datagrid {
     @extend .table;
@@ -14,6 +14,7 @@ table.datagrid {
 
     tbody>tr.active>td,
     tbody>tr.active:hover>td,
+    tbody>tr.active>td>input,
     tbody>tr.active:focus>td {
         background-color:rgb(156, 218, 247);
     }

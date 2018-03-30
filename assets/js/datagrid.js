@@ -84,6 +84,9 @@ class DataGrid {
         this.grid = grid;
         this.on_change_url = $(grid).attr('onchange-href').replace(/\/+$/, "") + "/";
         this.initRows();
+        // $(grid).on('focusout', function(event) {
+        //     $(this).find('tr.active').removeClass('active');
+        // });
     }
 
     initRows() {

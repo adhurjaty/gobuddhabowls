@@ -6,6 +6,7 @@ import (
 	"github.com/gobuffalo/validate/validators"
 	"time"
 
+	"buddhabowls/helpers"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
@@ -72,8 +73,20 @@ func (p *PurchaseOrder) ValidateUpdate(tx *pop.Connection) (*validate.Errors, er
 func (p PurchaseOrder) GetCost() float64 {
 	var cost float64
 	for _, item := range p.Items {
-		cost += item.Price
+		cost += item.Price * item.Count
 	}
 
 	return cost + p.ShippingCost
+}
+
+// GetCategoryCosts gets a map of category -> cost map for the order
+func (p PurchaseOrder) GetCategoryCosts() map[string]float64 {
+	catCosts := map[string]float64{}
+
+	for _, item := range p.Items {
+		// fmt.Println(item)
+		catCosts = helpers.AddToMap(catCosts, item.InventoryItem.Category, item.Price*item.Count)
+	}
+
+	return catCosts
 }
