@@ -1,3 +1,6 @@
+var collapsedCaret = 'fa-caret-right';
+var expandedCaret = 'fa-caret-down';
+
 class EditItem {
     constructor(datagrid, $td) {
         this.datagrid = datagrid;
@@ -84,9 +87,10 @@ class DataGrid {
         this.grid = grid;
         this.on_change_url = $(grid).attr('onchange-href').replace(/\/+$/, "") + "/";
         this.initRows();
-        // $(grid).on('focusout', function(event) {
-        //     $(this).find('tr.active').removeClass('active');
-        // });
+
+        if($(grid).find('td.expander') != undefined) {
+            this.initCollapse();
+        }
     }
 
     initRows() {
@@ -100,6 +104,32 @@ class DataGrid {
                 }
             })
         });
+    }
+
+    initCollapse() {
+        self = this;
+        $.each($(this.grid).find('td.expander'), function(i, el) {
+            $(el).click(function(event) {
+                var $span = $(this).find('span');
+                if($span.hasClass(collapsedCaret)) {
+                    $span.removeClass(collapsedCaret);
+                    $span.addClass(expandedCaret);
+                    self.expandInfo($(this).parent().next());
+                } else if($span.hasClass(expandedCaret)) {
+                    $span.removeClass(expandedCaret);
+                    $span.addClass(collapsedCaret);
+                    self.collapseInfo($(this).parent().next());                    
+                }
+            });
+        });
+    }
+
+    expandInfo($tr) {
+        $tr.show();
+    }
+
+    collapseInfo($tr) {
+        $tr.hide();
     }
 
     clearSelectedRow() {

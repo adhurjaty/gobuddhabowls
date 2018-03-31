@@ -1,9 +1,11 @@
 package actions
 
 import (
+	"buddhabowls/componentcontexts"
 	"buddhabowls/models"
 	"fmt"
 	"strings"
+	"time"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -87,10 +89,20 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 	if err := q.All(purchaseOrders); err != nil {
 		return errors.WithStack(err)
 	}
-	fmt.Println((*purchaseOrders)[0])
+
+	years := []int{
+		2016,
+		2017,
+		2018,
+	}
+
+	periodSelectorContext := *new(componentcontexts.PeriodSelectorContext)
+	periodSelectorContext.Init(time.Now())
 
 	// Add the paginator to the context so it can be used in the template.
 	c.Set("pagination", q.Paginator)
+	c.Set("pSelectorContext", periodSelectorContext)
+	c.Set("years", years)
 
 	return c.Render(200, r.Auto(c, purchaseOrders))
 }

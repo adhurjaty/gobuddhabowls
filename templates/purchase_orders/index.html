@@ -4,7 +4,11 @@
 <ul class="list-unstyled list-inline">
   <li><a href="<%= newPurchaseOrdersPath() %>" class="btn btn-primary">Create New PurchaseOrder</a></li>
 </ul>
-
+<div class="row">
+  <div class="col-8" id="period-selector-component">
+    <%= partial("partials/period_selector.html") %>
+  </div>
+</div>
 <table class="datagrid" onchange-href="/purchase_orders/row_edited">
   <thead>
     <th></th>
@@ -17,7 +21,7 @@
   <tbody>
     <%= for (purchaseOrder) in purchaseOrders { %>
       <tr item-id="<%= purchaseOrder.ID %>">
-        <td><span class="glyphicon glyphicon-menu-right"></span></td>
+        <td class="expander"><span class="fa fa-caret-right"></span></td>
         <td><%= purchaseOrder.Vendor.Name %></td>
         <td editable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
         <td editable="true" data-type="date" field="ReceivedDate"><%= format_date(purchaseOrder.ReceivedDate) %></td>

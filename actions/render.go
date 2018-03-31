@@ -1,6 +1,7 @@
 package actions
 
 import (
+	"buddhabowls/helpers"
 	"fmt"
 	"github.com/gobuffalo/buffalo/render"
 	"github.com/gobuffalo/packr"
@@ -29,8 +30,7 @@ func init() {
 				if !d.Valid {
 					return ""
 				}
-				year, month, day := d.Time.Date()
-				return fmt.Sprintf("%02d/%02d/%d", month, day, year)
+				return helpers.FormatDate(d.Time)
 			},
 		},
 	})

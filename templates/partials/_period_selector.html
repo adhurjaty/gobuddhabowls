@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col">
+        <label for="period-selector">Period</label>
+        <select class="form-control" id="period-selector">
+            <!-- <option></option> -->
+            <%= for (period) in pSelectorContext.PeriodSelector.Periods { %>
+                <option start-date="<%= period.StartDateStr() %>" end-date="<%= period.EndDateStr() %>" <%= if (period.Equals(pSelectorContext.SelectedPeriod)) { %>selected<% } %>><%= period.String() %></option>
+            <% } %>
+            <option>Show All</option>            
+        </select>
+    </div>
+    <div class="col">
+        <label for="week-selector">Week</label>
+        <select class="form-control" id="week-selector">
+            <!-- <option></option> -->
+            <%= for (week) in pSelectorContext.SelectedPeriod.Weeks { %>
+                <option start-date="<%= week.StartDateStr() %>" end-date="<%= week.EndDateStr() %>" <%= if (week.Equals(pSelectorContext.SelectedWeek)) { %>selected<% } %>><%= week.String() %></option>
+            <% } %>
+            <option>Show All</option>
+        </select>
+    </div>
+    <div class="col">
+        <label for="year-selector">Year</label>
+        <select class="form-control" id="year-selector">
+            <!-- <option></option> -->
+            <%= for (year) in years { %>
+                <option <%= if (year == pSelectorContext.SelectedYear) { %>selected<% } %>><%= year %></option>
+            <% } %>
+            <option>Show All</option>            
+        </select>
+    </div>
+    <div class="col">
+        <label
+        <div class="input-group input-daterange">
+            <input type="text" class="form-control" value="<%= pSelectorContext.SelectedWeek.StartDateStr() %>">
+            <div class="input-group-addon">to</div>
+            <input type="text" class="form-control" value="<%= pSelectorContext.SelectedWeek.EndDateStr() %>">
+        </div>
+    </div>
+</div>

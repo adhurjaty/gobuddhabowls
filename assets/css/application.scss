@@ -18,4 +18,15 @@ table.datagrid {
     tbody>tr.active:focus>td {
         background-color:rgb(156, 218, 247);
     }
+
+    th,
+    td {
+        text-align: center;
+        vertical-align: middle;
+
+        span.fa {
+            font-size: 30px;
+            width: 20px;
+        }
+    }
 }
