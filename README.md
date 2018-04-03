@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Welcome to Buffalo!
 
 Thank you for choosing Buffalo for your web development needs.
@@ -36,4 +35,3 @@ Good luck!
 =======
 # gobuddhabowls
 Buddha Bowls app v2 using gobuffalo
->>>>>>> b0bcd7895df8b71506d8da9641000f32c80b807e
