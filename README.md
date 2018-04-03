@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to Buffalo!
 
 Thank you for choosing Buffalo for your web development needs.
@@ -32,3 +33,7 @@ We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and 
 Good luck!
 
 [Powered by Buffalo](http://gobuffalo.io)
+=======
+# gobuddhabowls
+Buddha Bowls app v2 using gobuffalo
+>>>>>>> b0bcd7895df8b71506d8da9641000f32c80b807e
