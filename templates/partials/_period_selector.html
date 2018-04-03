@@ -1,25 +1,25 @@
-<div class="row">
-    <div class="col">
+<div class="row period-selector">
+    <div class="col-3">
         <label for="period-selector">Period</label>
         <select class="form-control" id="period-selector">
             <!-- <option></option> -->
             <%= for (period) in pSelectorContext.PeriodSelector.Periods { %>
-                <option start-date="<%= period.StartDateStr() %>" end-date="<%= period.EndDateStr() %>" <%= if (period.Equals(pSelectorContext.SelectedPeriod)) { %>selected<% } %>><%= period.String() %></option>
+                <option start-date="<%= parseable_date(period.StartTime()) %>" end-date="<%= parseable_date(period.EndTime()) %>" <%= if (period.Equals(pSelectorContext.SelectedPeriod)) { %>selected<% } %>><%= period.String() %></option>
             <% } %>
             <option>Show All</option>            
         </select>
     </div>
-    <div class="col">
+    <div class="col-3">
         <label for="week-selector">Week</label>
         <select class="form-control" id="week-selector">
             <!-- <option></option> -->
             <%= for (week) in pSelectorContext.SelectedPeriod.Weeks { %>
-                <option start-date="<%= week.StartDateStr() %>" end-date="<%= week.EndDateStr() %>" <%= if (week.Equals(pSelectorContext.SelectedWeek)) { %>selected<% } %>><%= week.String() %></option>
+                <option start-date="<%= parseable_date(week.StartTime) %>" end-date="<%= parseable_date(week.EndTime) %>" <%= if (week.Equals(pSelectorContext.SelectedWeek)) { %>selected<% } %>><%= week.String() %></option>
             <% } %>
             <option>Show All</option>
         </select>
     </div>
-    <div class="col">
+    <div class="col-2">
         <label for="year-selector">Year</label>
         <select class="form-control" id="year-selector">
             <!-- <option></option> -->
@@ -30,11 +30,12 @@
         </select>
     </div>
     <div class="col">
-        <label
-        <div class="input-group input-daterange">
+        <div class="input-group input-daterange align-bottom">
             <input type="text" class="form-control" value="<%= pSelectorContext.SelectedWeek.StartDateStr() %>">
             <div class="input-group-addon">to</div>
             <input type="text" class="form-control" value="<%= pSelectorContext.SelectedWeek.EndDateStr() %>">
         </div>
     </div>
 </div>
+
+<!-- <%= javascriptTag("period_selector.js") %> -->

@@ -4,7 +4,6 @@ require("bootstrap-table/src/bootstrap-table.js");
 require("bootstrap");
 require("bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js");
 require("./helpers.js");
-require("./datagrid.js");
 require("./period_selector.js");
 
 $(() => {

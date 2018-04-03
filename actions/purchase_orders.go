@@ -4,6 +4,8 @@ import (
 	"buddhabowls/componentcontexts"
 	"buddhabowls/models"
 	"fmt"
+	"net/url"
+	"strconv"
 	"strings"
 	"time"
 
@@ -29,7 +31,75 @@ type PurchaseOrdersResource struct {
 	buffalo.Resource
 }
 
+const _poStartTimeKey = "poStartTime"
+const _poEndTimeKey = "poEndTime"
+
+// DateChanged updates visible purchase orders table
+// GET /purchase_orders/date_changed
+func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
+	store := c.Session()
+
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	paramsMap, ok := c.Params().(url.Values)
+	if !ok {
+		fmt.Println(fmt.Errorf("Could not find params"))
+		return c.Error(500, errors.New("Could not parse params"))
+	}
+
+	if yearStr, found := paramsMap["Year"]; found {
+		year, err := strconv.Atoi(yearStr[0])
+		if err != nil {
+			return c.Error(500, errors.New("Could not get year from params"))
+		}
+		startTime := time.Date(year, 0, 0, 0, 0, 0, 0, time.UTC)
+
+		if startTimeStr, ok := paramsMap["StartTime"]; ok {
+			startTime, err = time.Parse(time.RFC3339, startTimeStr[0])
+			if err != nil {
+				fmt.Println(fmt.Errorf("Could not parse start time: %s", startTimeStr[0]))
+				return c.Error(500, errors.New("Could not parse start time"))
+			}
+		}
+
+		periodSelectorContext := componentcontexts.PeriodSelectorContext{}
+		periodSelectorContext.Init(startTime)
+
+		// put period selector context in the UI
+		c.Set("pSelectorContext", periodSelectorContext)
+
+		startVal := periodSelectorContext.SelectedWeek.StartTime.Format(time.RFC3339)
+		endVal := periodSelectorContext.SelectedWeek.EndTime.Format(time.RFC3339)
+
+		// change selected PO dates in session
+		store.Set(_poStartTimeKey, startVal)
+		store.Set(_poEndTimeKey, endVal)
+
+		purchaseOrders := &models.PurchaseOrders{}
+		q := tx.Eager().Where(fmt.Sprintf("order_date >= '%s' AND order_date < '%s'",
+			startVal, endVal)).Order("order_date DESC")
+
+		if err := q.All(purchaseOrders); err != nil {
+			errors.WithStack(err)
+		}
+
+		c.Set("purchaseOrders", *purchaseOrders)
+
+		years := store.Get("years").([]int)
+		c.Set("years", years)
+
+		return c.Render(200, r.JavaScript("purchase_orders/replace_table"))
+	}
+
+	return c.Error(422, errors.New("No year supplied"))
+}
+
 // RowEdited handles updating a model when a datagrid row is modified
+// POST /purchase_orders/row_edited/{purchase_order_id}
 func (v PurchaseOrdersResource) RowEdited(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
@@ -79,32 +149,43 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	purchaseOrders := &models.PurchaseOrders{}
-
-	// Paginate results. Params "page" and "per_page" control pagination.
-	// Default values are "page=1" and "per_page=20".
-	q := tx.PaginateFromParams(c.Params()).Eager().Order("order_date DESC")
+	yearResult := make([]int, 5)
+	q := tx.RawQuery("SELECT DISTINCT EXTRACT(YEAR FROM order_date) FROM purchase_orders ORDER BY EXTRACT(YEAR FROM order_date) ASC")
 
 	// Retrieve all PurchaseOrders from the DB
-	if err := q.All(purchaseOrders); err != nil {
+	// if err := q.All(purchaseOrders); err != nil {
+	if err := q.All(&yearResult); err != nil {
 		return errors.WithStack(err)
 	}
 
-	years := []int{
-		2016,
-		2017,
-		2018,
+	store := c.Session()
+
+	years := []int{}
+	for _, val := range yearResult {
+		if val > 2000 {
+			years = append(years, val)
+		}
+	}
+	store.Set("years", years)
+
+	periodSelectorContext := componentcontexts.PeriodSelectorContext{}
+	if store.Get(_poStartTimeKey) == nil || store.Get(_poEndTimeKey) == nil {
+		periodSelectorContext.Init(time.Now())
+		store.Set(_poStartTimeKey, periodSelectorContext.SelectedWeek.StartTime.Format(time.RFC3339))
+		store.Set(_poEndTimeKey, periodSelectorContext.SelectedWeek.EndTime.Format(time.RFC3339))
+	} else {
+		startTime := store.Get(_poStartTimeKey).(string)
+		t, err := time.Parse(time.RFC3339, startTime)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+		periodSelectorContext.Init(t)
 	}
 
-	periodSelectorContext := *new(componentcontexts.PeriodSelectorContext)
-	periodSelectorContext.Init(time.Now())
-
-	// Add the paginator to the context so it can be used in the template.
-	c.Set("pagination", q.Paginator)
 	c.Set("pSelectorContext", periodSelectorContext)
 	c.Set("years", years)
 
-	return c.Render(200, r.Auto(c, purchaseOrders))
+	return c.Render(200, r.HTML("purchase_orders/index"))
 }
 
 // Show gets the data for one PurchaseOrder. This function is mapped to

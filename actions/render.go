@@ -7,6 +7,7 @@ import (
 	"github.com/gobuffalo/packr"
 	"github.com/gobuffalo/pop/nulls"
 	"math"
+	"time"
 )
 
 var r *render.Engine
@@ -31,6 +32,9 @@ func init() {
 					return ""
 				}
 				return helpers.FormatDate(d.Time)
+			},
+			"parseable_date": func(d time.Time) string {
+				return helpers.RFC3339Date(d)
 			},
 		},
 	})

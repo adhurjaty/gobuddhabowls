@@ -164,12 +164,13 @@ class DataGrid {
     }
 }
 
-$.each($('.datagrid'), function(i, grid) {
-    // ensure that url has only 1 / at the end
-    var datagrid = new DataGrid(grid);
+$(() => {
+    $.each($('.datagrid'), function(i, grid) {
+        var datagrid = new DataGrid(grid);
 
-    $.each($(this).find('td[editable="true"]'), function(j, el) {
-        var ei = new EditItem(datagrid, $(el));
-        var type = $(el).attr('data-type');
+        $.each($(this).find('td[editable="true"]'), function(j, el) {
+            var ei = new EditItem(datagrid, $(el));
+            var type = $(el).attr('data-type');
+        });
     });
 });

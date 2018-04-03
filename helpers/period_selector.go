@@ -7,7 +7,7 @@ import (
 )
 
 const weekStart = 1
-const dayStart = time.Hour * 4
+const DayStart = time.Hour * 4
 
 // PeriodSelector holds values for periods of the year
 type PeriodSelector struct {
@@ -23,7 +23,7 @@ func (p *PeriodSelector) Init(year int) {
 	fmt.Println(firstWeekStartDiff)
 
 	p.Periods = []Period{}
-	startTime := theFirst.Add(dayStart)
+	startTime := theFirst.Add(DayStart)
 	endTime := startTime
 	index := 1
 	var period Period
@@ -43,7 +43,7 @@ func (p *PeriodSelector) Init(year int) {
 
 		// if the period goes to the end of the year
 		if endTime.YearDay() < startTime.YearDay() {
-			endTime = time.Date(year+1, 1, 1, 0, 0, 0, 0, time.UTC).Add(dayStart)
+			endTime = time.Date(year+1, 1, 1, 0, 0, 0, 0, time.UTC).Add(DayStart)
 		}
 		period.Init(startTime, endTime)
 		period.Index = index
@@ -56,7 +56,7 @@ func (p *PeriodSelector) Init(year int) {
 // GetPeriod gets the period that contains the date provided
 func (p PeriodSelector) GetPeriod(date time.Time) Period {
 	for _, period := range p.Periods {
-		if date.Unix() >= period.StartTime().Unix() && date.Unix() < period.EndTime().Unix() {
+		if date.Unix() >= period.UnoffsetStart().Unix() && date.Unix() < period.UnoffsetEnd().Unix() {
 			return period
 		}
 	}
@@ -101,7 +101,7 @@ func (p *Period) Init(startTime time.Time, endTime time.Time) {
 // GetWeek get the week that contains the date
 func (p Period) GetWeek(date time.Time) Week {
 	for _, week := range p.Weeks {
-		if date.Unix() >= week.StartTime.Unix() && date.Unix() < week.EndTime.Unix() {
+		if date.Unix() >= week.UnoffsetStart().Unix() && date.Unix() < week.UnoffsetEnd().Unix() {
 			return week
 		}
 	}
@@ -135,11 +135,11 @@ func (p Period) EndDateStr() string {
 }
 
 func (p Period) UnoffsetStart() time.Time {
-	return p.StartTime().Add(-dayStart)
+	return p.StartTime().Add(-DayStart)
 }
 
 func (p Period) UnoffsetEnd() time.Time {
-	return p.EndTime().Add(-dayStart - time.Nanosecond)
+	return p.EndTime().Add(-DayStart - time.Nanosecond)
 }
 
 func (p Period) Equals(other Period) bool {
@@ -161,19 +161,19 @@ func (w Week) String() string {
 }
 
 func (w Week) StartDateStr() string {
-	return FormatDate(w.StartTime.Add(-dayStart))
+	return FormatDate(w.StartTime.Add(-DayStart))
 }
 
 func (w Week) EndDateStr() string {
-	return FormatDate(w.EndTime.Add(-dayStart - time.Nanosecond))
+	return FormatDate(w.EndTime.Add(-DayStart - time.Nanosecond))
 }
 
 func (w Week) UnoffsetStart() time.Time {
-	return w.StartTime.Add(-dayStart)
+	return w.StartTime.Add(-DayStart)
 }
 
 func (w Week) UnoffsetEnd() time.Time {
-	return w.EndTime.Add(-dayStart - time.Nanosecond)
+	return w.EndTime.Add(-DayStart - time.Nanosecond)
 }
 
 func (w Week) Equals(other Week) bool {

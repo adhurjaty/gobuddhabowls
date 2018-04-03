@@ -21,3 +21,8 @@ func FormatDate(date time.Time) string {
 	year, month, day := date.Date()
 	return fmt.Sprintf("%02d/%02d/%d", month, day, year)
 }
+
+// RFC3339Date converts date to a parseable format
+func RFC3339Date(date time.Time) string {
+	return date.Format(time.RFC3339)
+}

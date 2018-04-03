@@ -7,3 +7,7 @@ function dblclickEdit(element) {
         }
     }, 300);
 }
+
+function stripSlash(s) {
+    return s.replace(/\/+$/, "") + "/";
+}

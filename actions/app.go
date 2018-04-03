@@ -63,6 +63,7 @@ func App() *buffalo.App {
 		app.Resource("/count_inventory_items", CountInventoryItemsResource{})
 
 		poResource := &PurchaseOrdersResource{}
+		app.GET("/purchase_orders/date_changed", poResource.DateChanged)
 		app.Resource("/purchase_orders", *poResource)
 		app.POST("/purchase_orders/row_edited/{purchase_order_id}", poResource.RowEdited)
 
