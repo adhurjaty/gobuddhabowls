@@ -4,6 +4,7 @@ import (
 	"buddhabowls/componentcontexts"
 	"buddhabowls/models"
 	"fmt"
+	"github.com/gobuffalo/pop/nulls"
 	"net/url"
 	"strconv"
 	"strings"
@@ -39,12 +40,16 @@ const _poEndTimeKey = "poEndTime"
 func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 	store := c.Session()
 
+	// indicates whether user used the custome date range
+	customDateRange := false
+
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
+	// get the parameters from URL
 	paramsMap, ok := c.Params().(url.Values)
 	if !ok {
 		fmt.Println(fmt.Errorf("Could not find params"))
@@ -56,24 +61,41 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 		if err != nil {
 			return c.Error(500, errors.New("Could not get year from params"))
 		}
-		startTime := time.Date(year, 0, 0, 0, 0, 0, 0, time.UTC)
+		// if user selects the year option, then go to 1/1/year
+		startTime := time.Date(year, 1, 1, 0, 0, 0, 0, time.UTC)
+		endTime := startTime
 
+		// if user selected period, week or daterange
 		if startTimeStr, ok := paramsMap["StartTime"]; ok {
 			startTime, err = time.Parse(time.RFC3339, startTimeStr[0])
 			if err != nil {
 				fmt.Println(fmt.Errorf("Could not parse start time: %s", startTimeStr[0]))
 				return c.Error(500, errors.New("Could not parse start time"))
 			}
+
+			// if user selected daterange
+			if endTimeStr, ok := paramsMap["EndTime"]; ok {
+				endTime, err = time.Parse(time.RFC3339, endTimeStr[0])
+				if err != nil {
+					fmt.Println(fmt.Errorf("Could not parse end time: %s", endTimeStr[0]))
+					return c.Error(500, errors.New("Could not parse end time"))
+				}
+
+				customDateRange = true
+			}
 		}
 
 		periodSelectorContext := componentcontexts.PeriodSelectorContext{}
 		periodSelectorContext.Init(startTime)
 
-		// put period selector context in the UI
-		c.Set("pSelectorContext", periodSelectorContext)
+		// only get the week if the date range was not selected
+		if !customDateRange {
+			startTime = periodSelectorContext.SelectedWeek.StartTime
+			endTime = periodSelectorContext.SelectedWeek.EndTime
+		}
 
-		startVal := periodSelectorContext.SelectedWeek.StartTime.Format(time.RFC3339)
-		endVal := periodSelectorContext.SelectedWeek.EndTime.Format(time.RFC3339)
+		startVal := startTime.Format(time.RFC3339)
+		endVal := endTime.Format(time.RFC3339)
 
 		// change selected PO dates in session
 		store.Set(_poStartTimeKey, startVal)
@@ -87,7 +109,11 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 			errors.WithStack(err)
 		}
 
+		c.Set("pSelectorContext", periodSelectorContext)
 		c.Set("purchaseOrders", *purchaseOrders)
+		c.Set("startTime", nulls.Time{Valid: true, Time: startTime})
+		c.Set("endTime", nulls.Time{Valid: true, Time: endTime})
+		c.Set("customDateRange", customDateRange)
 
 		years := store.Get("years").([]int)
 		c.Set("years", years)
@@ -143,47 +169,66 @@ func (v PurchaseOrdersResource) RowEdited(c buffalo.Context) error {
 // List gets all PurchaseOrders. This function is mapped to the path
 // GET /purchase_orders
 func (v PurchaseOrdersResource) List(c buffalo.Context) error {
+
+	// indicates whether user used the custome date range
+	customDateRange := false
+
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	yearResult := make([]int, 5)
+	yearResult := make([]int, 50)
+	// Search for just the years in purchase orders
 	q := tx.RawQuery("SELECT DISTINCT EXTRACT(YEAR FROM order_date) FROM purchase_orders ORDER BY EXTRACT(YEAR FROM order_date) ASC")
 
-	// Retrieve all PurchaseOrders from the DB
-	// if err := q.All(purchaseOrders); err != nil {
 	if err := q.All(&yearResult); err != nil {
 		return errors.WithStack(err)
 	}
 
 	store := c.Session()
 
+	// throw away extra allocated data. Probably a better way to do this
 	years := []int{}
 	for _, val := range yearResult {
 		if val > 2000 {
 			years = append(years, val)
 		}
 	}
-	store.Set("years", years)
 
 	periodSelectorContext := componentcontexts.PeriodSelectorContext{}
+	startTime := time.Time{}
+	endTime := startTime
 	if store.Get(_poStartTimeKey) == nil || store.Get(_poEndTimeKey) == nil {
 		periodSelectorContext.Init(time.Now())
-		store.Set(_poStartTimeKey, periodSelectorContext.SelectedWeek.StartTime.Format(time.RFC3339))
-		store.Set(_poEndTimeKey, periodSelectorContext.SelectedWeek.EndTime.Format(time.RFC3339))
+		startTime = periodSelectorContext.SelectedWeek.StartTime
+		endTime = periodSelectorContext.SelectedWeek.EndTime
+		store.Set(_poStartTimeKey, startTime.Format(time.RFC3339))
+		store.Set(_poEndTimeKey, endTime.Format(time.RFC3339))
 	} else {
-		startTime := store.Get(_poStartTimeKey).(string)
-		t, err := time.Parse(time.RFC3339, startTime)
+		fmt.Println("SAVED DATES:", store.Get(_poStartTimeKey).(string), store.Get(_poEndTimeKey).(string))
+		t, err := time.Parse(time.RFC3339, store.Get(_poStartTimeKey).(string))
 		if err != nil {
 			return errors.WithStack(err)
 		}
-		periodSelectorContext.Init(t)
+		startTime = t
+		endTime, err = time.Parse(time.RFC3339, store.Get(_poEndTimeKey).(string))
+		if err != nil {
+			return errors.WithStack(err)
+		}
+		periodSelectorContext.Init(startTime)
+
+		customDateRange = startTime != periodSelectorContext.SelectedWeek.StartTime ||
+			endTime != periodSelectorContext.SelectedWeek.EndTime
+
 	}
 
 	c.Set("pSelectorContext", periodSelectorContext)
+	c.Set("startTime", nulls.Time{Valid: true, Time: startTime})
+	c.Set("endTime", nulls.Time{Valid: true, Time: endTime})
 	c.Set("years", years)
+	c.Set("customDateRange", customDateRange)
 
 	return c.Render(200, r.HTML("purchase_orders/index"))
 }

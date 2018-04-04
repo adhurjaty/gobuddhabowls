@@ -1,3 +1,5 @@
+// require("bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js");
+
 var collapsedCaret = 'fa-caret-right';
 var expandedCaret = 'fa-caret-down';
 
@@ -164,7 +166,7 @@ class DataGrid {
     }
 }
 
-$(() => {
+$('#datagrid-holder').on('DOMNodeInserted', function(event) {
     $.each($('.datagrid'), function(i, grid) {
         var datagrid = new DataGrid(grid);
 
