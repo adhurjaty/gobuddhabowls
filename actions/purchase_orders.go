@@ -102,6 +102,7 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 		store.Set(_poEndTimeKey, endVal)
 
 		purchaseOrders := &models.PurchaseOrders{}
+
 		q := tx.Eager().Where(fmt.Sprintf("order_date >= '%s' AND order_date < '%s'",
 			startVal, endVal)).Order("order_date DESC")
 
@@ -109,11 +110,32 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 			errors.WithStack(err)
 		}
 
+		var openPos []models.PurchaseOrder
+		var recPos []models.PurchaseOrder
+
+		for _, po := range *purchaseOrders {
+			if po.ReceivedDate.Valid {
+				recPos = append(recPos, po)
+			} else {
+				openPos = append(openPos, po)
+			}
+		}
+
+		// period selector view information
 		c.Set("pSelectorContext", periodSelectorContext)
-		c.Set("purchaseOrders", *purchaseOrders)
 		c.Set("startTime", nulls.Time{Valid: true, Time: startTime})
 		c.Set("endTime", nulls.Time{Valid: true, Time: endTime})
 		c.Set("customDateRange", customDateRange)
+
+		// purchase order view information
+		c.Set("openPurchaseOrders", openPos)
+		c.Set("recPurchaseOrders", recPos)
+
+		// trend chart view information
+
+		// summary table view information
+		c.Set("categoryDetails", nil)
+		c.Set("totalItemsValue", nil)
 
 		years := store.Get("years").([]int)
 		c.Set("years", years)

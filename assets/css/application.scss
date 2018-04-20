@@ -12,6 +12,10 @@ table.datagrid {
     @extend .table-bordered;
     @extend .table-hover;
 
+    // tbody {
+    //     overflow-y: auto;
+    //     height: 1000px;
+    // }
     tbody>tr.active>td,
     tbody>tr.active:hover>td,
     tbody>tr.active>td>input,
@@ -44,3 +48,16 @@ div.period-selector {
     
 }
 
+.three-dot-button {
+    content: '\2807';
+    font-size: 20px;
+}
+
+div.placeholder {
+    background: gray;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border: 1px solid green;
+}

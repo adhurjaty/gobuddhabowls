@@ -1,50 +1,135 @@
-<table class="datagrid" onchange-href="/purchase_orders/row_edited">
-    <thead>
-      <th></th>
-      <th>Vendor</th>
-      <th>Order Date</th>
-      <th>Received Date</th>
-      <th>Cost</th>
-      <th>&nbsp;</th>
-    </thead>
-    <tbody>
-      <%= for (purchaseOrder) in purchaseOrders { %>
-        <tr item-id="<%= purchaseOrder.ID %>">
-          <td class="expander"><span class="fa fa-caret-right"></span></td>
-          <td><%= purchaseOrder.Vendor.Name %></td>
-          <td editable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
-          <td editable="true" data-type="date" field="ReceivedDate"><%= format_date(purchaseOrder.ReceivedDate) %></td>
-          <td><%= format_money(purchaseOrder.GetCost()) %></td>
-          <td>
-            <div class="pull-right">
-              <a href="<%= purchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="btn btn-info">View</a>
-              <a href="<%= editPurchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="btn btn-warning">Edit</a>
-              <a href="<%= purchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
-            </div>
-          </td>
-        </tr>
-        <tr class="items-list" style="display: none;">
-          <td></td>
-          <td colspan="100">
-            <table class="table">
-              <thead>
-                <th>Category</th>
-                <th>Cost</th>
-              </thead>
-              <tbody>
-                <%= for (category, cost) in purchaseOrder.GetCategoryCosts() { %>
-                  <tr>
-                    <td><%= category %></td>
-                    <td><%= format_money(cost) %></td>
-                  </tr>
-                <% } %>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        </tr>
-      <% } %>
-    </tbody>
-</table>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+      <div class="col-6 text-center">
+          <h4>Open Orders</h4>
+      </div>
+  </div>
+  <div class="row">
+    <table class="datagrid" onchange-href="/purchase_orders/row_edited">
+        <thead>
+          <th></th>
+          <th>Vendor</th>
+          <th>Order Date</th>
+          <th>Cost</th>
+          <th>&nbsp;</th>
+        </thead>
+        <tbody>
+          <%= for (purchaseOrder) in openPurchaseOrders { %>
+            <tr item-id="<%= purchaseOrder.ID %>">
+              <td class="expander"><span class="fa fa-caret-right"></span></td>
+              <td><%= purchaseOrder.Vendor.Name %></td>
+              <td editable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
+              <td><%= format_money(purchaseOrder.GetCost()) %></td>
+              <td>
+                <div class="dropdown show">
+                  <button type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    ...
+                  </button>
+                  <div class="dropdown-menu">
+                    <span class="dropdown-item" onclick="receiveItem(<%= purchaseOrder.ID %>)">Received</span>
+                    <a href="<%= editPurchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="dropdown-item">Edit</a>
+                    <span class="dropdown-item text-danger" onclick="deleteItem(<%= purchaseOrder.ID %>)">Delete</span>
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr class="items-list" style="display: none;">
+              <td></td>
+              <td colspan="100">
+                <table class="table">
+                  <thead>
+                    <th>Category</th>
+                    <th>Cost</th>
+                  </thead>
+                  <tbody>
+                    <%= for (category, cost) in purchaseOrder.GetCategoryCosts() { %>
+                      <tr>
+                        <td><%= category %></td>
+                        <td><%= format_money(cost) %></td>
+                      </tr>
+                    <% } %>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            </tr>
+          <% } %>
+        </tbody>
+    </table>
+  </div>
+  <div class="row" item-height="20px"></div>
+  <div class="row justify-content-center">
+      <div class="col-6 text-center">
+          <h4>Received Orders</h4>
+      </div>
+  </div>
+  <div class="row">
+      <table class="datagrid" onchange-href="/purchase_orders/row_edited">
+          <thead>
+            <th></th>
+            <th>Vendor</th>
+            <th>Order Date</th>
+            <th>Received Date</th>
+            <th>Cost</th>
+            <th>&nbsp;</th>
+          </thead>
+          <tbody>
+            <%= for (purchaseOrder) in recPurchaseOrders { %>
+              <tr item-id="<%= purchaseOrder.ID %>">
+                <td class="expander"><span class="fa fa-caret-right"></span></td>
+                <td><%= purchaseOrder.Vendor.Name %></td>
+                <td editable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
+                <td editable="true" data-type="date" field="ReceivedDate"><%= format_date(purchaseOrder.ReceivedDate) %></td>
+                <td><%= format_money(purchaseOrder.GetCost()) %></td>
+                <td>
+                  <div class="dropdown show">
+                    <button type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      ...
+                    </button>
+                    <div class="dropdown-menu">
+                      <span class="dropdown-item" onclick="receiveItem(<%= purchaseOrder.ID %>)">Received</span>
+                      <a href="<%= editPurchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>" class="dropdown-item">Edit</a>
+                      <span class="dropdown-item text-danger" onclick="deleteItem(<%= purchaseOrder.ID %>)">Delete</span>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+              <tr class="items-list" style="display: none;">
+                <td></td>
+                <td colspan="100">
+                  <table class="table">
+                    <thead>
+                      <th>Category</th>
+                      <th>Cost</th>
+                    </thead>
+                    <tbody>
+                      <%= for (category, cost) in purchaseOrder.GetCategoryCosts() { %>
+                        <tr>
+                          <td><%= category %></td>
+                          <td><%= format_money(cost) %></td>
+                        </tr>
+                      <% } %>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+              </tr>
+            <% } %>
+          </tbody>
+      </table>
+    </div>
+</div>
 
-<!-- <%= javascriptTag("datagrid.js") %> -->
+<script type="text/javascript">
+  function deleteItem(id) {
+    debugger;
+  }
+
+  function receivedItem(id) {
+    debugger;
+  }
+
+  function reOpenItem(id) {
+    debugger;
+  }
+</script>

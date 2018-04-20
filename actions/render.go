@@ -36,6 +36,9 @@ func init() {
 			"parseable_date": func(d time.Time) string {
 				return helpers.RFC3339Date(d)
 			},
+			"get_percentage": func(num float64, total float64) float64 {
+				return math.Round(100 * num / total)
+			},
 		},
 	})
 }

@@ -90,3 +90,7 @@ func (p PurchaseOrder) GetCategoryCosts() map[string]float64 {
 
 	return catCosts
 }
+
+// func (p *PurchaseOrder) GetYears() []int {
+
+// }

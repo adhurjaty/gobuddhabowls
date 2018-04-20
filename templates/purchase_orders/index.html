@@ -1,13 +1,22 @@
 <div class="page-header">
   <h1 class="text-center">Orders</h1>
 </div>
-<ul class="list-unstyled list-inline">
-  <li><a href="<%= newPurchaseOrdersPath() %>" class="btn btn-primary">Create New PurchaseOrder</a></li>
-</ul>
+<div class="row">
+  <div class="col-12 float-right">
+    <a href="<%= newPurchaseOrdersPath() %>" class="btn btn-primary float-right">New Purchase Order</a>
+  </div>
+</div>
 <div class="row" id="period-selector-component" onchange-href="/purchase_orders/date_changed">
     <%= partial("partials/period_selector.html") %>
 </div>
 
+<div class="row" id="trend-chart">
+  <!-- _trend_chart parial is put in here -->
+</div>
+<div class="row" id="summary-table">
+  <!-- _summary_table partial is put in here -->
+</div>
+<br/>
 <div id="datagrid-holder">
     <!-- _datagrid partial is put in here -->
 </div>
