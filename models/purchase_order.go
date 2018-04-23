@@ -91,6 +91,26 @@ func (p PurchaseOrder) GetCategoryCosts() map[string]float64 {
 	return catCosts
 }
 
+// LoadPurchaseOrders gets the purchase orders with the specified query
+// including all sub-components
+func LoadPurchaseOrders(q *pop.Query) (*PurchaseOrders, error) {
+	poList := &PurchaseOrders{}
+
+	if err := q.All(poList); err != nil {
+		return nil, err
+	}
+
+	for _, po := range *poList {
+		for i := 0; i < len(po.Items); i++ {
+			if err := q.Connection.Eager().Find(&po.Items[i], po.Items[i].ID); err != nil {
+				return nil, err
+			}
+		}
+	}
+
+	return poList, nil
+}
+
 // func (p *PurchaseOrder) GetYears() []int {
 
 // }

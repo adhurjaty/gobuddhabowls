@@ -101,17 +101,16 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 		store.Set(_poStartTimeKey, startVal)
 		store.Set(_poEndTimeKey, endVal)
 
-		purchaseOrders := &models.PurchaseOrders{}
-
 		q := tx.Eager().Where(fmt.Sprintf("order_date >= '%s' AND order_date < '%s'",
 			startVal, endVal)).Order("order_date DESC")
 
-		if err := q.All(purchaseOrders); err != nil {
-			errors.WithStack(err)
+		purchaseOrders, err := models.LoadPurchaseOrders(q)
+		if err != nil {
+			return errors.WithStack(err)
 		}
 
-		var openPos []models.PurchaseOrder
-		var recPos []models.PurchaseOrder
+		var openPos models.PurchaseOrders
+		var recPos models.PurchaseOrders
 
 		for _, po := range *purchaseOrders {
 			if po.ReceivedDate.Valid {
