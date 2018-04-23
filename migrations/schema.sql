@@ -29,6 +29,20 @@ CREATE EXTENSION IF NOT EXISTS plpgsql WITH SCHEMA pg_catalog;
 COMMENT ON EXTENSION plpgsql IS 'PL/pgSQL procedural language';
 
 
+--
+-- Name: uuid-ossp; Type: EXTENSION; Schema: -; Owner: 
+--
+
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp" WITH SCHEMA public;
+
+
+--
+-- Name: EXTENSION "uuid-ossp"; Type: COMMENT; Schema: -; Owner: 
+--
+
+COMMENT ON EXTENSION "uuid-ossp" IS 'generate universally unique identifiers (UUIDs)';
+
+
 SET default_tablespace = '';
 
 SET default_with_oids = false;
@@ -81,13 +95,28 @@ CREATE TABLE public.inventories (
 ALTER TABLE public.inventories OWNER TO postgres;
 
 --
+-- Name: inventory_item_categories; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.inventory_item_categories (
+    id uuid NOT NULL,
+    name character varying(255) NOT NULL,
+    background character varying(255) NOT NULL,
+    index integer NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+ALTER TABLE public.inventory_item_categories OWNER TO postgres;
+
+--
 -- Name: inventory_items; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.inventory_items (
     id uuid NOT NULL,
     name character varying(255) NOT NULL,
-    category character varying(255) NOT NULL,
     count_unit character varying(255) NOT NULL,
     recipe_unit character varying(255) NOT NULL,
     recipe_unit_conversion numeric NOT NULL,
@@ -95,7 +124,8 @@ CREATE TABLE public.inventory_items (
     index integer NOT NULL,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
-    is_active boolean DEFAULT true NOT NULL
+    is_active boolean DEFAULT true NOT NULL,
+    inventory_item_category_id uuid
 );
 
 
@@ -259,6 +289,14 @@ ALTER TABLE ONLY public.count_prep_items
 
 ALTER TABLE ONLY public.inventories
     ADD CONSTRAINT inventories_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: inventory_item_categories inventory_item_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.inventory_item_categories
+    ADD CONSTRAINT inventory_item_categories_pkey PRIMARY KEY (id);
 
 
 --
