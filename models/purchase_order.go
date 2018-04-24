@@ -6,7 +6,6 @@ import (
 	"github.com/gobuffalo/validate/validators"
 	"time"
 
-	"buddhabowls/helpers"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
@@ -80,12 +79,12 @@ func (p PurchaseOrder) GetCost() float64 {
 }
 
 // GetCategoryCosts gets a map of category -> cost map for the order
-func (p PurchaseOrder) GetCategoryCosts() map[string]float64 {
-	catCosts := map[string]float64{}
+func (p PurchaseOrder) GetCategoryCosts() map[InventoryItemCategory]float64 {
+	catCosts := map[InventoryItemCategory]float64{}
 
 	for _, item := range p.Items {
 		// fmt.Println(item)
-		catCosts = helpers.AddToMap(catCosts, item.InventoryItem.Category, item.Price*item.Count)
+		catCosts = AddToCategoryMap(catCosts, item.InventoryItem.Category, item.Price*item.Count)
 	}
 
 	return catCosts
@@ -100,9 +99,14 @@ func LoadPurchaseOrders(q *pop.Query) (*PurchaseOrders, error) {
 		return nil, err
 	}
 
+	// I don't love the fact that I need to load the nested models manually
+	// TODO: look for a solution to eager loading nested objects
 	for _, po := range *poList {
 		for i := 0; i < len(po.Items); i++ {
 			if err := q.Connection.Eager().Find(&po.Items[i], po.Items[i].ID); err != nil {
+				return nil, err
+			}
+			if err := q.Connection.Eager().Find(&po.Items[i].InventoryItem, po.Items[i].InventoryItemID); err != nil {
 				return nil, err
 			}
 		}

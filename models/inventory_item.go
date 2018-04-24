@@ -11,18 +11,18 @@ import (
 )
 
 type InventoryItem struct {
-	ID                      uuid.UUID             `json:"id" db:"id"`
-	CreatedAt               time.Time             `json:"created_at" db:"created_at"`
-	UpdatedAt               time.Time             `json:"updated_at" db:"updated_at"`
-	Name                    string                `json:"name" db:"name"`
-	Category                InventoryItemCategory `belongs_to:"inventory_item_categories" db:"-"`
-	InventoryItemCategoryID uuid.UUID             `json:"inventory_item_category_id" db:"inventory_item_category_id"`
-	CountUnit               string                `json:"count_unit" db:"count_unit"`
-	RecipeUnit              string                `json:"recipe_unit" db:"recipe_unit"`
-	RecipeUnitConversion    float64               `json:"recipe_unit_conversion" db:"recipe_unit_conversion"`
-	Yield                   float64               `json:"yield" db:"yield"`
-	Index                   int                   `json:"index" db:"index"`
-	IsActive                bool                  `json:"is_active" db:"is_active"`
+	ID                   uuid.UUID             `json:"id" db:"id"`
+	CreatedAt            time.Time             `json:"created_at" db:"created_at"`
+	UpdatedAt            time.Time             `json:"updated_at" db:"updated_at"`
+	Name                 string                `json:"name" db:"name"`
+	Category             InventoryItemCategory `belongs_to:"inventory_item_categories" db:"-"`
+	CategoryID           uuid.UUID             `json:"inventory_item_category_id" db:"inventory_item_category_id"`
+	CountUnit            string                `json:"count_unit" db:"count_unit"`
+	RecipeUnit           string                `json:"recipe_unit" db:"recipe_unit"`
+	RecipeUnitConversion float64               `json:"recipe_unit_conversion" db:"recipe_unit_conversion"`
+	Yield                float64               `json:"yield" db:"yield"`
+	Index                int                   `json:"index" db:"index"`
+	IsActive             bool                  `json:"is_active" db:"is_active"`
 }
 
 // String is not required by pop and may be deleted
@@ -45,7 +45,6 @@ func (i InventoryItems) String() string {
 func (i *InventoryItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
 		&validators.StringIsPresent{Field: i.Name, Name: "Name"},
-		&validators.StringIsPresent{Field: i.Category, Name: "Category"},
 		&validators.StringIsPresent{Field: i.CountUnit, Name: "CountUnit"},
 		&validators.StringIsPresent{Field: i.RecipeUnit, Name: "RecipeUnit"},
 		&validators.IntIsPresent{Field: i.Index, Name: "Index"},

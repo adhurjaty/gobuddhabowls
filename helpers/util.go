@@ -7,7 +7,7 @@ import (
 
 // AddToMap adds a float value to the map at key, if no key is present, create a
 // new entry with value as the value
-func AddToMap(m map[string]float64, key string, value float64) map[string]float64 {
+func AddToMap(m map[interface{}]float64, key interface{}, value float64) map[interface{}]float64 {
 	if v, ok := m[key]; ok {
 		m[key] = v + value
 	} else {

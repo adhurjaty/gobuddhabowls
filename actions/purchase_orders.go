@@ -114,7 +114,7 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	// categoryDetails, totalItemsValue, err := presentationlayer.GetCategoryDetailsAndTotal(&openPos, &recPos)
+	categoryDetails := presentationlayer.GetAllCategoryDetails(openPos, recPos)
 
 	// period selector view information
 	c.Set("pSelectorContext", periodSelectorContext)
@@ -129,8 +129,7 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 	// trend chart view information
 
 	// summary table view information
-	c.Set("categoryDetails", nil)
-	c.Set("totalItemsValue", nil)
+	c.Set("categoryDetails", categoryDetails)
 
 	years := store.Get("years").([]int)
 	c.Set("years", years)

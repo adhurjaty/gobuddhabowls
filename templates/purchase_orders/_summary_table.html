@@ -1,16 +1,1 @@
-<div class="placeholder" style="height: 200px">
-    Summary Table
-</div>
-
-<!-- <div class="pareto-table">
-    <%#= for (category) in categoryDetails %>
-        <div>
-            <div class="bar" style="background: <%#= category.Background %>;width: <%#= get_percentage(category.Value, totalItemsValue) %>%;">
-
-            </div>
-            <div class="label">
-                <%#= category.Name %>
-            </div>
-        </div>
-    <%# end %>
-</div> -->
+<%= partial("partials/horizontal_percentage_chart.html", {categoryDetails: categoryDetails, title: "Category Values"}) %>
