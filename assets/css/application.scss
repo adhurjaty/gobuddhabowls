@@ -6,6 +6,7 @@
 @import "~bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css";
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~bootstrap/dist/css/bootstrap-grid.min.css";
+@import "~bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css";
 
 table.datagrid {
     @extend .table;
@@ -60,4 +61,8 @@ div.placeholder {
     justify-content:center;
     align-items:center;
     border: 1px solid green;
+}
+
+.colorpicker-component {
+    width: 20px;
 }

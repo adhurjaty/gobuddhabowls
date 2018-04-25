@@ -4,6 +4,7 @@ require("bootstrap-table/src/bootstrap-table.js");
 require("bootstrap");
 require("bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js");
 window.Sortable = require("sortablejs");
+require("bootstrap-colorpicker");
 require("./helpers.js");
 require("./period_selector.js");
 require("./datagrid.js");
@@ -25,4 +26,6 @@ $(() => {
             handle: '.drag-handle'
         });
     }
+
+    $('.colorpicker-component').colorpicker();
 });

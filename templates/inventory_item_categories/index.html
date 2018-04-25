@@ -9,9 +9,22 @@
                 <span>
                     <%= category.Name %>
                 </span>
-                <span>something</span>
-                <span class="drag-handle">☰</span>
+                <div class="input-group colorpicker-component" title="Using input value">
+                    <input type="text" class="form-control input-lg" value="<%= category.Background %>" style="visibility: collapse;"/>
+                    <span class="input-group-addon"><i></i></span>
+                </div>
+                      
+                <span class="drag-handle" style="font-size: 20px;">☰</span>
             </li>
         <% } %>
     </ul>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <a class="btn btn-primary" href="<%= settingsPath() %>">Cancel</a>
+    </div>
+    <div class="col-md-3">
+        <!-- create a way to save the info -->
+    </div>
 </div>

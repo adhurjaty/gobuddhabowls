@@ -9,6 +9,7 @@
     "babel-loader": "~7.1.2",
     "babel-preset-env": "~1.5.2",
     "bootstrap": "^4.0.0",
+    "bootstrap-colorpicker": "^2.5.2",
     "bootstrap-datepicker": "^1.7.1",
     "bootstrap-sass": "^3.3.7",
     "bootstrap-table": "^1.12.1",
