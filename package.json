@@ -28,6 +28,7 @@
     "path": "~0.12.7",
     "popper.js": "^1.14.1",
     "sass-loader": "~6.0.6",
+    "sortablejs": "^1.7.0",
     "style-loader": "~0.20.1",
     "uglifyjs-webpack-plugin": "~0.4.6",
     "url-loader": "~0.6.2",

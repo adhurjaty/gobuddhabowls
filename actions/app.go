@@ -62,9 +62,9 @@ func App() *buffalo.App {
 		app.Resource("/vendors", VendorsResource{})
 		app.Resource("/count_inventory_items", CountInventoryItemsResource{})
 
-		poResource := &PurchaseOrdersResource{}
+		poResource := PurchaseOrdersResource{}
 		app.GET("/purchase_orders/date_changed", poResource.DateChanged)
-		app.Resource("/purchase_orders", *poResource)
+		app.Resource("/purchase_orders", poResource)
 		app.POST("/purchase_orders/row_edited/{purchase_order_id}", poResource.RowEdited)
 
 		app.Resource("/order_items", OrderItemsResource{})
@@ -73,6 +73,10 @@ func App() *buffalo.App {
 		app.Resource("/recipe_items", RecipeItemsResource{})
 		app.Resource("/vendor_items", VendorItemsResource{})
 		app.Resource("/count_prep_items", CountPrepItemsResource{})
+
+		app.GET("/settings", SettingsHandler)
+		app.Resource("/inventory_item_categories", InventoryItemCategoriesResource{})
+
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
 

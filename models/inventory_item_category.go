@@ -26,7 +26,7 @@ func (i InventoryItemCategory) String() string {
 }
 
 // InventoryItemCategories is not required by pop and may be deleted
-type InventoryItemCategories []InventoryItem
+type InventoryItemCategories []InventoryItemCategory
 
 // String is not required by pop and may be deleted
 func (i InventoryItemCategories) String() string {

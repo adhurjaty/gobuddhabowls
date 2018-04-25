@@ -91,6 +91,7 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 	}
 
 	periodSelectorContext := componentcontexts.PeriodSelectorContext{}
+	// TODO: make a new period selector function
 	periodSelectorContext.Init(startTime)
 
 	// only get the week if the date range was not selected
@@ -140,6 +141,7 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 
 // RowEdited handles updating a model when a datagrid row is modified
 // POST /purchase_orders/row_edited/{purchase_order_id}
+// TODO: see if this can be done with the Update method
 func (v PurchaseOrdersResource) RowEdited(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
