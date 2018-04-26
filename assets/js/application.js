@@ -8,24 +8,8 @@ require("bootstrap-colorpicker");
 require("./helpers.js");
 require("./period_selector.js");
 require("./datagrid.js");
+require("./inventory_item_categories.js");
 
 $(() => {
-    var el = document.getElementById('categories-movable');
-    if(el != undefined) {
-        var sortable = Sortable.create(el, {
-            group: {
-                name: "components",
-                pull: function(to, from, dragEl, evt) {
-                  if(evt.type === 'dragstart') {
-                    return false;
-                  }
-                  return true;
-                }
-            },
-            animation: 150,
-            handle: '.drag-handle'
-        });
-    }
-
-    $('.colorpicker-component').colorpicker();
+    
 });

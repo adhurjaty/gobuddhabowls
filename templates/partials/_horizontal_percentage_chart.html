@@ -82,7 +82,7 @@
         <div class="bar-holder">
             <div class="percentage-bar horizontal">
                 <div class="progress-track">
-                    <div class="progress-fill" style="background: #666;width: <%= percentage %>%;">
+                    <div class="progress-fill" style="background: <%= breakdownItem.Category.Background %>;width: <%= percentage %>%;">
                     <!-- style="background: <%= breakdownItem.Category.Background %>;width: <%= get_percentage(breakdownItem.Value, categoryDetails.Total) %>%;"> -->
                         <%= if(percentage >= 50.0) { %>
                             <span><%= breakdownItem.Category.Name %></span>

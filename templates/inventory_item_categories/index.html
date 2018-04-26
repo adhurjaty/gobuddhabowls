@@ -3,14 +3,14 @@
 </div>
 
 <div class="row">
-    <ul class="list-group" id="categories-movable" style="width: 400px;">
+    <ul class="list-group" id="categories-movable" style="width: 400px;" on-save-url="<%= inventoryItemCategoriesPath() %>">
         <%= for (category) in inventoryItemCategories { %>
-            <li class="list-group-item d-flex justify-content-between align-items-center">
+            <li itemid="<%= category.ID %>" class="list-group-item d-flex justify-content-between align-items-center">
                 <span>
                     <%= category.Name %>
                 </span>
                 <div class="input-group colorpicker-component" title="Using input value">
-                    <input type="text" class="form-control input-lg" value="<%= category.Background %>" style="visibility: collapse;"/>
+                    <input name="Background" type="text" class="form-control input-lg" style="visibility: collapse" value="<%= category.Background %>" />
                     <span class="input-group-addon"><i></i></span>
                 </div>
                       
@@ -25,6 +25,6 @@
         <a class="btn btn-primary" href="<%= settingsPath() %>">Cancel</a>
     </div>
     <div class="col-md-3">
-        <!-- create a way to save the info -->
+        <input id="save-inv-item-categories" type="button" class="btn btn-primary" value="Save">
     </div>
 </div>
