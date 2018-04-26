@@ -12,6 +12,12 @@ export function stripSlash(s) {
     return s.replace(/\/+$/, "") + "/";
 }
 
+// replaces the id field with the id
+// e.g. /purchase_orders/{purchase_order_id} -> /purchase_orders/a5382f-448bc...
+export function replaceUrlId(url, id) {
+    return url.replace(/\{.*\}/, id);
+}
+
 export function dateStringToISO(d) {
     var s = d.split('/');
     var month = s[0];

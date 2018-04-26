@@ -5,7 +5,7 @@
       </div>
   </div>
   <div class="row">
-    <table class="datagrid" onchange-href="/purchase_orders/row_edited">
+    <table class="datagrid" onchange-href="<%= purchaseOrderPath() %>">
         <thead>
           <th></th>
           <th>Vendor</th>
@@ -34,24 +34,9 @@
               </td>
             </tr>
             <tr class="items-list" style="display: none;">
-              <td></td>
               <td colspan="100">
-                <table class="table">
-                  <thead>
-                    <th>Category</th>
-                    <th>Cost</th>
-                  </thead>
-                  <tbody>
-                    <%= for (category, cost) in purchaseOrder.GetCategoryCosts() { %>
-                      <tr>
-                        <td><%= category.Name %></td>
-                        <td><%= format_money(cost) %></td>
-                      </tr>
-                    <% } %>
-                  </tbody>
-                </table>
-              </td>
-            </tr>
+                  <%= partial("partials/horizontal_percentage_chart.html", {categoryDetails: purchaseOrder.GetCategoryCosts(), title: ""}) %>              
+              </td> 
             </tr>
           <% } %>
         </tbody>
@@ -64,7 +49,8 @@
       </div>
   </div>
   <div class="row">
-      <table class="datagrid" onchange-href="/purchase_orders/row_edited">
+      <table class="datagrid" onchange-href="<%= purchaseOrderPath() %>">
+        <!-- <table class="datagrid" onchange-href="/purchase_orders/row_edited"> -->
           <thead>
             <th></th>
             <th>Vendor</th>
@@ -95,24 +81,9 @@
                 </td>
               </tr>
               <tr class="items-list" style="display: none;">
-                <td></td>
                 <td colspan="100">
-                  <table class="table">
-                    <thead>
-                      <th>Category</th>
-                      <th>Cost</th>
-                    </thead>
-                    <tbody>
-                      <%= for (category, cost) in purchaseOrder.GetCategoryCosts() { %>
-                        <tr>
-                          <td><%= category.Name %></td>
-                          <td><%= format_money(cost) %></td>
-                        </tr>
-                      <% } %>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
+                    <%= partial("partials/horizontal_percentage_chart.html", {categoryDetails: purchaseOrder.GetCategoryCosts(), title: ""}) %>                              
+                </td> 
               </tr>
             <% } %>
           </tbody>

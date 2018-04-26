@@ -1,3 +1,5 @@
+import { replaceUrlId } from "./helpers";
+
 // require("bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js");
 
 var collapsedCaret = 'fa-caret-right';
@@ -87,7 +89,7 @@ class EditItem {
 class DataGrid {
     constructor(grid) {
         this.grid = grid;
-        this.on_change_url = $(grid).attr('onchange-href').replace(/\/+$/, "") + "/";
+        this.on_change_url = $(grid).attr('onchange-href');
         this.initRows();
 
         if($(grid).find('td.expander') != undefined) {
@@ -152,9 +154,9 @@ class DataGrid {
         var data = {};
         data[editItem.field] = editItem.contents;
         $.ajax({
-            url: this.on_change_url + editItem.id,
+            url: replaceUrlId(this.on_change_url, editItem.id),
             data: data,
-            method: "POST",
+            method: "PUT",
             error: function(xhr, status, err) {
                 var errMessage = xhr.responseText;
                 editItem.showError(errMessage);

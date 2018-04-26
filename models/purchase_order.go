@@ -79,7 +79,7 @@ func (p PurchaseOrder) GetCost() float64 {
 }
 
 // GetCategoryCosts gets a map of category -> cost map for the order
-func (p PurchaseOrder) GetCategoryCosts() map[InventoryItemCategory]float64 {
+func (p PurchaseOrder) GetCategoryCosts() CategoryBreakdown {
 	catCosts := map[InventoryItemCategory]float64{}
 
 	for _, item := range p.Items {
@@ -87,7 +87,7 @@ func (p PurchaseOrder) GetCategoryCosts() map[InventoryItemCategory]float64 {
 		catCosts = AddToCategoryMap(catCosts, item.InventoryItem.Category, item.Price*item.Count)
 	}
 
-	return catCosts
+	return FromCategoryMap(catCosts)
 }
 
 // LoadPurchaseOrders gets the purchase orders with the specified query

@@ -139,49 +139,6 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 
 }
 
-// RowEdited handles updating a model when a datagrid row is modified
-// POST /purchase_orders/row_edited/{purchase_order_id}
-// TODO: see if this can be done with the Update method
-func (v PurchaseOrdersResource) RowEdited(c buffalo.Context) error {
-	// Get the DB connection from the context
-	tx, ok := c.Value("tx").(*pop.Connection)
-	if !ok {
-		return errors.WithStack(errors.New("no transaction found"))
-	}
-
-	// Allocate an empty PurchaseOrder
-	purchaseOrder := &models.PurchaseOrder{}
-
-	if err := tx.Find(purchaseOrder, c.Param("purchase_order_id")); err != nil {
-		return c.Error(404, err)
-	}
-
-	// Bind PurchaseOrder to the html form elements
-	if err := c.Bind(purchaseOrder); err != nil {
-		fmt.Println(fmt.Errorf("Could not bind PurchaseOrder"))
-		return c.Error(422, err)
-	}
-
-	verrs, err := tx.ValidateAndUpdate(purchaseOrder)
-	if err != nil {
-		fmt.Println(fmt.Errorf("Invalid data"))
-		return c.Error(422, err)
-	}
-	if verrs.HasAny() {
-		fmt.Println(fmt.Errorf("Invalid data"))
-		errorMsgs := []string{}
-		for _, verr := range verrs.Errors {
-			for _, v := range verr {
-				errorMsgs = append(errorMsgs, v)
-			}
-		}
-
-		return c.Render(422, r.String(strings.Join(errorMsgs, "\n")))
-	}
-
-	return c.Render(200, r.String("success"))
-}
-
 // List gets all PurchaseOrders. This function is mapped to the path
 // GET /purchase_orders
 func (v PurchaseOrdersResource) List(c buffalo.Context) error {
@@ -341,28 +298,34 @@ func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
 
 	// Bind PurchaseOrder to the html form elements
 	if err := c.Bind(purchaseOrder); err != nil {
+		fmt.Println(err)
 		return errors.WithStack(err)
 	}
 
 	verrs, err := tx.ValidateAndUpdate(purchaseOrder)
 	if err != nil {
-		return errors.WithStack(err)
+		fmt.Println(fmt.Errorf("Invalid data"))
+		return c.Error(422, err)
 	}
-
 	if verrs.HasAny() {
-		// Make the errors available inside the html template
-		c.Set("errors", verrs)
+		fmt.Println(fmt.Errorf("Invalid data"))
+		errorMsgs := []string{}
+		for _, verr := range verrs.Errors {
+			for _, v := range verr {
+				errorMsgs = append(errorMsgs, v)
+			}
+		}
 
-		// Render again the edit.html template that the user can
-		// correct the input.
-		return c.Render(422, r.Auto(c, purchaseOrder))
+		return c.Render(422, r.String(strings.Join(errorMsgs, "\n")))
 	}
 
 	// If there are no errors set a success message
-	c.Flash().Add("success", "PurchaseOrder was updated successfully")
+	// c.Flash().Add("success", "PurchaseOrder was updated successfully")
 
 	// and redirect to the purchase_orders index page
-	return c.Render(200, r.Auto(c, purchaseOrder))
+	// return c.Render(200, r.Auto(c, purchaseOrder))
+	return c.Render(200, r.String("success"))
+
 }
 
 // Destroy deletes a PurchaseOrder from the DB. This function is mapped
