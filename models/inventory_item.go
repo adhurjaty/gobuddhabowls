@@ -62,3 +62,9 @@ func (i *InventoryItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, er
 func (i *InventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
 }
+
+// GetSortValue returns a value for sorting where Category is highest prcedence
+// and item index is second
+func (i InventoryItem) GetSortValue() int {
+	return i.Category.Index*1000 + i.Index
+}

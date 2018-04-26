@@ -110,6 +110,8 @@ func LoadPurchaseOrders(q *pop.Query) (*PurchaseOrders, error) {
 				return nil, err
 			}
 		}
+
+		po.Items.Sort()
 	}
 
 	return poList, nil
