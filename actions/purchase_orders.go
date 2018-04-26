@@ -36,9 +36,9 @@ type PurchaseOrdersResource struct {
 const _poStartTimeKey = "poStartTime"
 const _poEndTimeKey = "poEndTime"
 
-// DateChanged updates visible purchase orders table
+// PurchaseOrderDateChanged updates visible purchase orders table
 // GET /purchase_orders/date_changed
-func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
+func PurchaseOrderDateChanged(c buffalo.Context) error {
 	store := c.Session()
 
 	// indicates whether user used the custome date range
@@ -115,8 +115,6 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	categoryDetails := presentationlayer.GetAllCategoryDetails(openPos, recPos)
-
 	// period selector view information
 	c.Set("pSelectorContext", periodSelectorContext)
 	c.Set("startTime", nulls.Time{Valid: true, Time: startTime})
@@ -130,7 +128,8 @@ func (v PurchaseOrdersResource) DateChanged(c buffalo.Context) error {
 	// trend chart view information
 
 	// summary table view information
-	c.Set("categoryDetails", categoryDetails)
+	barChartData := presentationlayer.GetBarChartJSONData(openPos, recPos)
+	c.Set("barChartData", barChartData)
 
 	years := store.Get("years").([]int)
 	c.Set("years", years)

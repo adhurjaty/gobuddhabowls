@@ -1,8 +1,8 @@
 require("expose-loader?$!expose-loader?jQuery!jquery");
 require("bootstrap-sass/assets/javascripts/bootstrap.js");
-require("bootstrap-table/src/bootstrap-table.js");
+require("bootstrap-table");
 require("bootstrap");
-require("bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js");
+require("bootstrap-datepicker");
 window.Sortable = require("sortablejs");
 require("bootstrap-colorpicker");
 require("./helpers.js");

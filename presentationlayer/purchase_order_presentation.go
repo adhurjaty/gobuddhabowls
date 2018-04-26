@@ -2,7 +2,9 @@ package presentationlayer
 
 import (
 	"buddhabowls/models"
+	"fmt"
 	"github.com/gobuffalo/pop"
+	"strings"
 )
 
 // GetOpenRecPurchaseOrders gets the purchase orders give a query and returns
@@ -27,13 +29,6 @@ func GetOpenRecPurchaseOrders(q *pop.Query) (models.PurchaseOrders, models.Purch
 	return openPos, recPos, nil
 }
 
-// GetOrderCategoryDetails gets a CategoryBreakdown from a purchase order
-// func GetOrderCategoryDetails(po models.PurchaseOrder) models.CategoryBreakdown {
-// 	breakdownMap := po.GetCategoryCosts()
-
-// 	return fromCategoryMap(breakdownMap)
-// }
-
 // GetAllCategoryDetails gets a category breakdown of all orders
 // may expand to return open, rec and total
 func GetAllCategoryDetails(open models.PurchaseOrders, rec models.PurchaseOrders) models.CategoryBreakdown {
@@ -48,4 +43,17 @@ func GetAllCategoryDetails(open models.PurchaseOrders, rec models.PurchaseOrders
 	}
 
 	return returnBreakdown
+}
+
+// GetBarChartJSONData gets a JSON string for showing bar chart category breakdown
+func GetBarChartJSONData(open models.PurchaseOrders, rec models.PurchaseOrders) string {
+	breakdown := GetAllCategoryDetails(open, rec)
+	jsonItems := make([]string, len(breakdown.Categories))
+
+	for i, item := range breakdown.Categories {
+		jsonItems[i] = fmt.Sprintf("{\"Name\":\"%s\",\"Value\":%f,\"Background\":\"%s\"}",
+			item.Category.Name, item.Value, item.Category.Background)
+	}
+
+	return "[" + strings.Join(jsonItems, ",") + "]"
 }
