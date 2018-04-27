@@ -5,7 +5,7 @@ import { replaceUrlId } from "./helpers";
 var collapsedCaret = 'fa-caret-right';
 var expandedCaret = 'fa-caret-down';
 
-class EditItem {
+export class EditItem {
     constructor(datagrid, $td) {
         this.datagrid = datagrid;
         this.$td = $td;
@@ -86,7 +86,7 @@ class EditItem {
     }
 }
 
-class DataGrid {
+export class DataGrid {
     constructor(grid) {
         this.grid = grid;
         this.on_change_url = $(grid).attr('onchange-href');
@@ -167,14 +167,3 @@ class DataGrid {
         });
     }
 }
-
-$('#datagrid-holder').on('DOMNodeInserted', function(event) {
-    $.each($('.datagrid'), function(i, grid) {
-        var datagrid = new DataGrid(grid);
-
-        $.each($(this).find('td[editable="true"]'), function(j, el) {
-            var ei = new EditItem(datagrid, $(el));
-            var type = $(el).attr('data-type');
-        });
-    });
-});
