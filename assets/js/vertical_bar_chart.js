@@ -41,14 +41,6 @@ export class VerticalBarChart {
 
         var y = d3.scaleLinear()
             .range([height, 0]);
-        
-        // var xAxis = d3.svg.axis()
-        //     .scale(x)
-        //     .orient("bottom");
-
-        // var yAxis = d3.svg.axis()
-        //     .scale(y)
-        //     .orient("left");
 
         var tip = d3.tip()
             .attr('class', 'd3-tip')
@@ -84,21 +76,6 @@ export class VerticalBarChart {
             .attr("dy", ".71em")
             .style("text-anchor", "end")
             .text("Cost");
-        // this.svg.append("g")
-        //     .attr("class", "x axis")
-        //     .attr("transform", "translate(" + margin.right + "," + (height + margin.top) + ")")
-        //     .call(xAxis);
-
-        // this.svg.append("g")
-        //     .attr("class", "y axis")
-        //     .attr("transform", "translate(" + margin.right + "," + margin.top + ")")            
-        //     .call(yAxis)
-        //     .append("text")
-        //     .attr("transform", "rotate(-90)")
-        //     .attr("y", 6)
-        //     .attr("dy", ".71em")
-        //     .style("text-anchor", "end")
-        //     .text("Cost");
 
         this.svg.selectAll(".bar")
             .data(this.data)
@@ -122,7 +99,3 @@ export class VerticalBarChart {
             });
     }
 }
-// function type(d) {
-//     d.Value = +d.Value;
-//     return d;
-// }

@@ -1,3 +1,5 @@
+import * as d3 from 'd3';
+
 // code from http://bl.ocks.org/bobmonteverde/2070123
 
 export function d3Line() {
@@ -5,10 +7,10 @@ export function d3Line() {
         width = 960,
         height = 500,
         dotRadius = function() { return 2.5 },
-        color = d3.scale.category10().range(),
+        color = d3.scaleOrdinal(d3.schemeCategory10).range(),
         id = Math.floor(Math.random() * 10000), //Create semi-unique ID incase user doesn't select one
-        x = d3.scale.linear(),
-        y = d3.scale.linear(),
+        x = d3.scaleLinear(),
+        y = d3.scaleLinear(),
         dispatch = d3.dispatch("pointMouseover", "pointMouseout"),
         x0, y0;
   

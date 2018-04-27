@@ -1,3 +1,21 @@
+import * as d3 from 'd3';
+import { d3Legend } from './d3legend.js';
+import { d3Line } from './d3line.js';
+
+// Copies a variable number of methods from source to target.
+d3.rebind = function(target, source) {
+  var i = 1, n = arguments.length, method;
+  while (++i < n) target[method = arguments[i]] = d3_rebind(target, source, source[method]);
+  return target;
+};
+
+function d3_rebind(target, source, method) {
+  return function() {
+    var value = method.apply(source, arguments);
+    return value === source ? target : value;
+  };
+}
+
 // code from http://bl.ocks.org/bobmonteverde/2070123
 
 export function d3LineWithLegend() {
@@ -7,13 +25,13 @@ export function d3LineWithLegend() {
         dotRadius = function() { return 2.5 },
         xAxisLabelText = false,
         yAxisLabelText = false,
-        color = d3.scale.category10().range(),
+        color = d3.scaleOrdinal(d3.schemeCategory10).range(),
         dispatch = d3.dispatch('showTooltip', 'hideTooltip');
   
-    var x = d3.scale.linear(),
-        y = d3.scale.linear(),
-        xAxis = d3.svg.axis().scale(x).orient('bottom'),
-        yAxis = d3.svg.axis().scale(y).orient('left'),
+    var x = d3.scaleLinear(),
+        y = d3.scaleLinear(),
+        xAxis = d3.axisBottom(x),
+        yAxis = d3.axisLeft(y),
         legend = d3Legend().height(30).color(color),
         lines = d3Line();
   

@@ -1,10 +1,12 @@
+import * as d3 from 'd3';
+
 // code from http://bl.ocks.org/bobmonteverde/2070123
 
 export function d3Legend() {
     var margin = {top: 5, right: 0, bottom: 5, left: 10},
         width = 400,
         height = 20,
-        color = d3.scale.category10().range(),
+        color = d3.scaleOrdinal(d3.schemeCategory10).range(),
         dispatch = d3.dispatch('legendClick', 'legendMouseover', 'legendMouseout');
   
   

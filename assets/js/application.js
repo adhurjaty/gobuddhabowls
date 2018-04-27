@@ -8,10 +8,6 @@ require("bootstrap-colorpicker");
 require("./helpers.js");
 require("./period_selector.js");
 require("./inventory_item_categories.js");
-require("./d3legend.js");
-require("./d3line.js");
-require("./d3linewithlegend.js");
-require("./multiline_graph.js");
 require("./purchase_orders_index.js");
 
 $(() => {
