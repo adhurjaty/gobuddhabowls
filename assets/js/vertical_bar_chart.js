@@ -1,5 +1,8 @@
-// code from http://bl.ocks.org/Caged/6476579
+import * as d3 from 'd3';
+import d3Tip from '@lix/d3-tip';
+d3.tip = d3Tip;
 
+// code from http://bl.ocks.org/Caged/6476579
 
 // Creates a bar chart for category breakdown. May expand use case for the future
 export class VerticalBarChart {
@@ -19,7 +22,10 @@ export class VerticalBarChart {
         this.svg = this.divContainer.append('svg');
 
         this.redraw();
-        window.addEventListener('resize', this.redraw);
+        self = this;
+        window.addEventListener('resize', function() {
+            self.redraw();
+        });
     }
 
     redraw() {
@@ -30,19 +36,19 @@ export class VerticalBarChart {
             height = this.height - margin.top - margin.bottom;
 
         var formatDollar = d3.format("$0");
-        var x = d3.scale.ordinal()
-            .rangeRoundBands([0, width], .1);
+        var x = d3.scaleBand()
+            .rangeRound([0, width], .1);
 
-        var y = d3.scale.linear()
+        var y = d3.scaleLinear()
             .range([height, 0]);
+        
+        // var xAxis = d3.svg.axis()
+        //     .scale(x)
+        //     .orient("bottom");
 
-        var xAxis = d3.svg.axis()
-            .scale(x)
-            .orient("bottom");
-
-        var yAxis = d3.svg.axis()
-            .scale(y)
-            .orient("left");
+        // var yAxis = d3.svg.axis()
+        //     .scale(y)
+        //     .orient("left");
 
         var tip = d3.tip()
             .attr('class', 'd3-tip')
@@ -61,28 +67,45 @@ export class VerticalBarChart {
         x.domain(this.data.map(function (d) { return d.Name; }));
         y.domain([0, d3.max(this.data, function (d) { return d.Value; })]);
 
+        // Add the x Axis
         this.svg.append("g")
             .attr("class", "x axis")
             .attr("transform", "translate(" + margin.right + "," + (height + margin.top) + ")")
-            .call(xAxis);
+            .call(d3.axisBottom(x));
 
+        // Add the y Axis
         this.svg.append("g")
             .attr("class", "y axis")
             .attr("transform", "translate(" + margin.right + "," + margin.top + ")")            
-            .call(yAxis)
+            .call(d3.axisLeft(y))
             .append("text")
             .attr("transform", "rotate(-90)")
             .attr("y", 6)
             .attr("dy", ".71em")
             .style("text-anchor", "end")
             .text("Cost");
+        // this.svg.append("g")
+        //     .attr("class", "x axis")
+        //     .attr("transform", "translate(" + margin.right + "," + (height + margin.top) + ")")
+        //     .call(xAxis);
+
+        // this.svg.append("g")
+        //     .attr("class", "y axis")
+        //     .attr("transform", "translate(" + margin.right + "," + margin.top + ")")            
+        //     .call(yAxis)
+        //     .append("text")
+        //     .attr("transform", "rotate(-90)")
+        //     .attr("y", 6)
+        //     .attr("dy", ".71em")
+        //     .style("text-anchor", "end")
+        //     .text("Cost");
 
         this.svg.selectAll(".bar")
             .data(this.data)
             .enter().append("rect")
             .attr("class", "bar")
             .attr("x", function (d) { return x(d.Name); })
-            .attr("width", x.rangeBand())
+            .attr("width", x.bandwidth())
             .attr("y", function (d) { return y(d.Value); })
             .attr("height", function (d) { return height - y(d.Value); })
             .attr("fill", function(d) { return d.Background; })
