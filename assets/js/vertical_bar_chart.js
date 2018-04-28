@@ -22,10 +22,11 @@ export class VerticalBarChart {
         this.svg = this.divContainer.append('svg');
 
         this.redraw();
-        self = this;
-        window.addEventListener('resize', function() {
-            self.redraw();
-        });
+        window.addEventListener('resize', function(context) {
+            return function() {
+                context.redraw()
+            };
+        }(this));
     }
 
     redraw() {

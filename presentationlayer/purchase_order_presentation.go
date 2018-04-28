@@ -4,6 +4,7 @@ import (
 	"buddhabowls/models"
 	"fmt"
 	"github.com/gobuffalo/pop"
+	"sort"
 	"strings"
 )
 
@@ -53,6 +54,54 @@ func GetBarChartJSONData(open models.PurchaseOrders, rec models.PurchaseOrders) 
 	for i, item := range breakdown.Categories {
 		jsonItems[i] = fmt.Sprintf("{\"Name\":\"%s\",\"Value\":%f,\"Background\":\"%s\"}",
 			item.Category.Name, item.Value, item.Category.Background)
+	}
+
+	return "[" + strings.Join(jsonItems, ",") + "]"
+}
+
+// GetLineChartJSONData gets a JSON string for showing the line chart category breakdown
+func GetLineChartJSONData(open models.PurchaseOrders, rec models.PurchaseOrders) string {
+	var jsonItems []string
+	var categoryBreakdownCache []models.CategoryBreakdown
+
+	combinedSortedPos := append(open, rec...)
+	sort.Slice(combinedSortedPos, func(i, j int) bool {
+		return combinedSortedPos[i].OrderDate.Time.Unix() < combinedSortedPos[j].OrderDate.Time.Unix()
+	})
+
+	// only show categories that are in the provided purchase orders
+	// show 0 category value for unused ones in particular po's
+	categoriesMap := make(map[models.InventoryItemCategory]bool)
+	for _, po := range combinedSortedPos {
+		breakdown := po.GetCategoryCosts()
+		categoryBreakdownCache = append(categoryBreakdownCache, breakdown)
+		for _, item := range breakdown.Categories {
+			categoriesMap[item.Category] = true
+		}
+	}
+
+	// extract and sort categories
+	categories := make(models.InventoryItemCategories, len(categoriesMap))
+	for category := range categoriesMap {
+		categories = append(categories, category)
+	}
+	sort.Slice(categories, func(i, j int) bool {
+		return categories[i].Index < categories[j].Index
+	})
+
+	for i, po := range combinedSortedPos {
+		breakdownMap := categoryBreakdownCache[i].ToCategoryMap()
+		for _, category := range categories {
+
+			value, ok := breakdownMap[category]
+			if !ok {
+				value = 0
+			}
+
+			jsonItems = append(jsonItems,
+				fmt.Sprintf("{\"Name\":\"%s\",\"Date\":\"%s\",\"Value\":%f,\"Background\":\"%s\"}",
+					category.Name, po.OrderDate.Time.UTC(), value, category.Background))
+		}
 	}
 
 	return "[" + strings.Join(jsonItems, ",") + "]"

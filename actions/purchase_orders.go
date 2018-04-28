@@ -125,7 +125,8 @@ func PurchaseOrderDateChanged(c buffalo.Context) error {
 	c.Set("openPurchaseOrders", openPos)
 	c.Set("recPurchaseOrders", recPos)
 
-	// trend chart view information
+	lineChartData := presentationlayer.GetLineChartJSONData(openPos, recPos)
+	c.Set("trendChartData", lineChartData)
 
 	// summary table view information
 	barChartData := presentationlayer.GetBarChartJSONData(openPos, recPos)

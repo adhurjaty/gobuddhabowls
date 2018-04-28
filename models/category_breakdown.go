@@ -19,12 +19,13 @@ type CategoryBreakdownItem struct {
 
 // Add adds CategoryBreakdown by combining the totals for each category
 func (cb *CategoryBreakdown) Add(otherCb CategoryBreakdown) {
-	combinedMaps := CombineCategoryMaps(cb.toCategoryMap(), otherCb.toCategoryMap())
+	combinedMaps := CombineCategoryMaps(cb.ToCategoryMap(), otherCb.ToCategoryMap())
 	newCb := FromCategoryMap(combinedMaps)
 	*cb = newCb
 }
 
-func (cb CategoryBreakdown) toCategoryMap() map[InventoryItemCategory]float64 {
+// ToCategoryMap converts the breakdown to a map of category to value
+func (cb CategoryBreakdown) ToCategoryMap() map[InventoryItemCategory]float64 {
 	cbMap := make(map[InventoryItemCategory]float64)
 	for _, item := range cb.Categories {
 		cbMap = AddToCategoryMap(cbMap, item.Category, item.Value)
