@@ -30,10 +30,10 @@ export class MultilineGraph {
     }
 
     redraw() {
-        self = this;
+        var self = this;
         this.svg.selectAll('*').remove();        
         // Set the dimensions of the canvas / graph
-        var margin = {top: 30, right: 100, bottom: 70, left: 50},
+        var margin = {top: 30, right: 120, bottom: 70, left: 50},
         width = this.divContainer.node().getBoundingClientRect().width - margin.left - margin.right,
         height = this.height - margin.top - margin.bottom;
         
@@ -60,31 +60,56 @@ export class MultilineGraph {
         // Scale the range of the data
         x.domain(d3.extent(this.data, function(d) { return d.Date; }));
         y.domain([0, d3.max(this.data, function(d) { return d.Value; })]);
+        
         // Nest the entries by symbol
         var dataNest = d3.nest()
             .key(function(d) {return d.Name;})
             .entries(this.data);
-        // set the colour scale
-        var color = d3.scaleOrdinal(d3.schemeCategory10);
 
-        var legendSpace = width/dataNest.length; // spacing for the legend
         // Loop through each symbol / key
         dataNest.forEach(function(d,i) { 
-            self.svg.append("path")
+            self.svg
+                .append("path")
+                .attr("data-legend", d.key)
                 .attr("class", "line")
-                .style("stroke", function() { // Add the colours dynamically
-                    return d.color = d.values[0].Background; })
                 .attr("d", priceline(d.values))
+                .style("stroke", function() { // Add the colors dynamically
+                    return d.color = d.values[0].Background;
+                })
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
             // Add the Legend
-            self.svg.append("text")
-                .attr("x", legendInfo.left)  // space legend
-                .attr("y", legendInfo.top + i * legendInfo.spacing)
+            var legend = self.svg.append("g")
+                .attr("class", "legend")
+                .attr("transform", "translate(" + legendInfo.left + "," + (legendInfo.top+ i * legendInfo.spacing) + ")");
+            legend.append("rect")
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("width", 10)
+                .attr("height", 10)
+                .style("fill", d.values[0].Background);
+            legend.append("text")
+                .attr("x", 20) 
+                .attr("y", 10)
                 .attr("class", "legend")    // style the legend
-                .style("fill", function() { // Add the colours dynamically
-                    return d.color = d.values[0].Background; })
                 .text(d.key); 
         });
+
+        // move the legend to the intended location
+
+        // Add the legend
+        // var legend = this.svg.append("g")
+        //                 .attr("class","legend")
+        //                 .attr("transform","translate(50,30)")
+        //                 .style("font-size","12px")
+        //                 .call(d3.legend)
+
+        // setTimeout(function() { 
+        //     legend
+        //     .style("font-size","20px")
+        //     .attr("data-style-padding",10)
+        //     .call(d3.legend)
+        // },1000)
+
         // Add the X Axis
         this.svg.append("g")
             .attr("class", "axis")

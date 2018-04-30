@@ -62,7 +62,7 @@ func GetBarChartJSONData(open models.PurchaseOrders, rec models.PurchaseOrders) 
 // GetLineChartJSONData gets a JSON string for showing the line chart category breakdown
 func GetLineChartJSONData(open models.PurchaseOrders, rec models.PurchaseOrders) string {
 	var jsonItems []string
-	var categoryBreakdownCache []models.CategoryBreakdown
+	categoryBreakdownCache := make([]models.CategoryBreakdown, len(open)+len(rec))
 
 	combinedSortedPos := append(open, rec...)
 	sort.Slice(combinedSortedPos, func(i, j int) bool {
@@ -72,16 +72,16 @@ func GetLineChartJSONData(open models.PurchaseOrders, rec models.PurchaseOrders)
 	// only show categories that are in the provided purchase orders
 	// show 0 category value for unused ones in particular po's
 	categoriesMap := make(map[models.InventoryItemCategory]bool)
-	for _, po := range combinedSortedPos {
+	for i, po := range combinedSortedPos {
 		breakdown := po.GetCategoryCosts()
-		categoryBreakdownCache = append(categoryBreakdownCache, breakdown)
+		categoryBreakdownCache[i] = breakdown
 		for _, item := range breakdown.Categories {
 			categoriesMap[item.Category] = true
 		}
 	}
 
 	// extract and sort categories
-	categories := make(models.InventoryItemCategories, len(categoriesMap))
+	var categories models.InventoryItemCategories
 	for category := range categoriesMap {
 		categories = append(categories, category)
 	}

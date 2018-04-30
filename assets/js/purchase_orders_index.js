@@ -5,7 +5,7 @@ import { MultilineGraph } from './multiline_graph.js';
 $(() => {
     $('#datagrid-holder').on('DOMNodeInserted', function(event) {
         // only run if a node has been inserted at the top level
-        if(event.target.parentNode.id == 'datagrid-holder') {
+        if(event.target.nodeName == 'DIV' && event.target.parentNode.id == 'datagrid-holder') {
             $.each($('.datagrid'), function(i, grid) {
                 var dg = new DataGrid(grid);
         
@@ -39,6 +39,4 @@ $(() => {
             }
         }
     });
-
-
 });
