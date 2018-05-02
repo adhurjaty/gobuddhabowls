@@ -1,50 +1,49 @@
 <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-6 text-center">
-                <h4>Inventory Items</h4>
-            </div>
-        </div>
-        <div class="row">
-            <table>
-                <thead>
-                    <th>Name</th>
-                    <th>Cost</th>
-                    <th>Count</th>
-                    <th>Total Cost</th>
-                </thead>
-                <tbody>
-                    <%= for (Items) in categoryGroups { %>
-                        <tr class="category-header">
-                            <td colspan="100">
-                                <span style="background-color: <%= Items[0].Category.Background %>">
-                                    <%= Items.Category.Name %>
-                                </span>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="100">
-                                <table class="datagrid">
-                                    <thead style="display: none;">
-                                        <th>Name</th>
-                                        <th>Cost</th>
-                                        <th>Count</th>
-                                        <th>Total Cost</th>
-                                    </thead>
-                                    <tbody>
-                                        <!-- list VendorItem -->
-                                        <%= for (Item) in Items { %>
-                                            <tr>
-                                                <td><%= Item.InventoryItem.Name %></td>
-                                                <td><%= Item.Price %></td>
-                                                <td>0</td>
-                                                <td>$0.00</td>
-                                            </tr>
-                                        <% } %>
-                                    </tbody>
-                                </table>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
+    <div class="row justify-content-center">
+        <div class="col-6 text-center">
+            <h4>Vendor Items</h4>
         </div>
     </div>
+    <div class="row">
+        <table class="datagrid">
+            <thead id="sticky-header">
+                <th width="40%">Name</th>
+                <th width="22%">Cost</th>
+                <th width="15%">Count</th>
+                <th width="22%">Total Cost</th>
+            </thead>
+            <tbody>
+                <%= for (category) in sortedCategories { %>
+                    <tr class="category-header" style="background-color: <%= category.Background %>">
+                        <td colspan="100">
+                            <%= category.Name %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="100" style="padding: 0;">
+                            <table class="datagrid">
+                                <thead style="display: none;">
+                                    <th>Name</th>
+                                    <th>Cost</th>
+                                    <th>Count</th>
+                                    <th>Total Cost</th>
+                                </thead>
+                                <tbody>
+                                    <!-- list VendorItem -->
+                                    <%= for (Item) in categoryGroups[category] { %>
+                                        <tr>
+                                            <td width="40%"><%= Item.InventoryItem.Name %></td>
+                                            <td width="22%"><%= format_money(Item.Price) %></td>
+                                            <td width="15%">0</td>
+                                            <td width="22%">$0.00</td>
+                                        </tr>
+                                    <% } %>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+</div>

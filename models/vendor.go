@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"fmt"
 	"time"
 
 	"database/sql"
@@ -62,6 +63,8 @@ func (v *Vendor) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 func (v Vendor) GetCategoryGroups() map[InventoryItemCategory]VendorItems {
 	outMap := make(map[InventoryItemCategory]VendorItems)
 
+	fmt.Println(v)
+
 	for _, item := range v.Items {
 		itemList, ok := outMap[item.InventoryItem.Category]
 		if ok {
@@ -69,6 +72,64 @@ func (v Vendor) GetCategoryGroups() map[InventoryItemCategory]VendorItems {
 		} else {
 			outMap[item.InventoryItem.Category] = VendorItems{item}
 		}
+		fmt.Println(outMap)
 	}
 	return outMap
+}
+
+// SelectValue returns the ID for select input tags
+func (v Vendor) SelectValue() interface{} {
+	return v.ID
+}
+
+// SelectLabel returs the name for select input tags
+func (v Vendor) SelectLabel() string {
+	return v.Name
+}
+
+// LoadVendor gets a vendor given ID
+func LoadVendor(tx *pop.Connection, id string) (Vendor, error) {
+	vendor := Vendor{}
+	if err := tx.Eager().Find(&vendor, id); err != nil {
+		return vendor, err
+	}
+
+	for i := 0; i < len(vendor.Items); i++ {
+		if err := tx.Eager().Find(&vendor.Items[i], vendor.Items[i].ID); err != nil {
+			return vendor, err
+		}
+		if err := tx.Eager().Find(&vendor.Items[i].InventoryItem, vendor.Items[i].InventoryItemID); err != nil {
+			return vendor, err
+		}
+	}
+
+	vendor.Items.Sort()
+
+	return vendor, nil
+}
+
+// LoadVendors loads vendors and sub-models
+func LoadVendors(q *pop.Query) (Vendors, error) {
+	vendList := Vendors{}
+
+	if err := q.All(&vendList); err != nil {
+		return nil, err
+	}
+
+	// I don't love the fact that I need to load the nested models manually
+	// TODO: look for a solution to eager loading nested objects
+	for _, v := range vendList {
+		for i := 0; i < len(v.Items); i++ {
+			if err := q.Connection.Eager().Find(&v.Items[i], v.Items[i].ID); err != nil {
+				return nil, err
+			}
+			if err := q.Connection.Eager().Find(&v.Items[i].InventoryItem, v.Items[i].InventoryItemID); err != nil {
+				return nil, err
+			}
+		}
+
+		v.Items.Sort()
+	}
+
+	return vendList, nil
 }

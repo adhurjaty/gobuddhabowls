@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"sort"
 	"time"
 
 	"database/sql"
@@ -57,4 +58,11 @@ func (v *VendorItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, error
 // This method is not required and may be deleted.
 func (v *VendorItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+// Sort sorts the items based on category then inventory item indices
+func (v *VendorItems) Sort() {
+	sort.Slice(*v, func(i, j int) bool {
+		return (*v)[i].InventoryItem.GetSortValue() < (*v)[j].InventoryItem.GetSortValue()
+	})
 }

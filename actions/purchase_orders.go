@@ -2,7 +2,6 @@ package actions
 
 import (
 	"buddhabowls/componentcontexts"
-	"buddhabowls/helpers"
 	"buddhabowls/models"
 	"buddhabowls/presentationlayer"
 	"fmt"
@@ -243,9 +242,8 @@ func NewOrderVendorChanged(c buffalo.Context) error {
 	}
 
 	// get the vendor from params
-	selectedVendor := models.Vendor{}
-
-	if err := tx.Find(&selectedVendor, c.Param("vendor_id")); err != nil {
+	selectedVendor, err := models.LoadVendor(tx, c.Param("vendor_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
@@ -261,11 +259,12 @@ func NewOrderVendorChanged(c buffalo.Context) error {
 		return sortedCategories[i].Index < sortedCategories[j].Index
 	})
 
+	fmt.Println(sortedCategories)
 	// pass variables to UI
 	c.Set("sortedCategories", sortedCategories)
 	c.Set("categoryGroups", categoryGroups)
 
-	return c.Render(200, r.JavaScript())
+	return c.Render(200, r.JavaScript("purchase_orders/replace_new_vendor_items"))
 }
 
 // Create adds a PurchaseOrder to the DB. This function is mapped to the

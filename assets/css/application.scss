@@ -125,3 +125,11 @@ div.placeholder {
     top: 10px;
     left: 0;
 }
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    // padding-top: 102px;  
+  }
