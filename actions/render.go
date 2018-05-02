@@ -39,6 +39,9 @@ func init() {
 			"get_percentage": func(num float64, total float64) float64 {
 				return math.Round(100 * num / total)
 			},
+			"today": func() string {
+				return helpers.FormatDate(time.Now())
+			},
 		},
 	})
 }

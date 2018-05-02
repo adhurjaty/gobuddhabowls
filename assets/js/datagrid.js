@@ -56,7 +56,7 @@ export class EditItem {
                 $(el).on('blur', function(event) {
                     var id = $(this).parent().attr('item-id');
                     var field = $(this).attr('field');
-                    sendUpdate(self);
+                    self.datagrid.sendUpdate(self);
                 });
                 break;
         }
@@ -151,19 +151,21 @@ export class DataGrid {
     }
 
     sendUpdate(editItem) {
-        var data = {};
-        data[editItem.field] = editItem.contents;
-        $.ajax({
-            url: replaceUrlId(this.on_change_url, editItem.id),
-            data: data,
-            method: "PUT",
-            error: function(xhr, status, err) {
-                var errMessage = xhr.responseText;
-                editItem.showError(errMessage);
-            },
-            success: function(data, status, xhr) {
-                editItem.onUpdateSuccess();
-            }
-        });
+        if(this.on_change_url != undefined) {
+            var data = {};
+            data[editItem.field] = editItem.contents;
+            $.ajax({
+                url: replaceUrlId(this.on_change_url, editItem.id),
+                data: data,
+                method: "PUT",
+                error: function(xhr, status, err) {
+                    var errMessage = xhr.responseText;
+                    editItem.showError(errMessage);
+                },
+                success: function(data, status, xhr) {
+                    editItem.onUpdateSuccess();
+                }
+            });
+        }
     }
 }

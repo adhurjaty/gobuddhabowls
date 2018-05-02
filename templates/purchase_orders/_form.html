@@ -1,6 +1,4 @@
-<%= f.InputTag("VendorID") %>
-<%= f.InputTag("Vendor") %>
-<%= f.InputTag("OrderDate") %>
-<%= f.InputTag("ReceivedDate") %>
-<%= f.InputTag("Items") %>
+<%= f.InputTag("OrderDate", {data-provide: "datepicker", id: "new-order-date", value: today()}) %>
+<%= f.SelectTag("Vendor", {options: vendors}) %>
+<%= partial("purchase_orders/inventory_items_datagrid.html") %>
 <button class="btn btn-success" role="submit">Save</button>

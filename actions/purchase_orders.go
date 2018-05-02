@@ -2,11 +2,13 @@ package actions
 
 import (
 	"buddhabowls/componentcontexts"
+	"buddhabowls/helpers"
 	"buddhabowls/models"
 	"buddhabowls/presentationlayer"
 	"fmt"
 	"github.com/gobuffalo/pop/nulls"
 	"net/url"
+	"sort"
 	"strconv"
 	"strings"
 	"time"
@@ -218,7 +220,52 @@ func (v PurchaseOrdersResource) Show(c buffalo.Context) error {
 // New renders the form for creating a new PurchaseOrder.
 // This function is mapped to the path GET /purchase_orders/new
 func (v PurchaseOrdersResource) New(c buffalo.Context) error {
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	vendors := models.Vendors{}
+	tx.Eager().All(&vendors)
+
+	c.Set("vendors", vendors)
+
 	return c.Render(200, r.Auto(c, &models.PurchaseOrder{}))
+}
+
+// NewOrderVendorChanged updates the new PO page when vendor has been selected
+// This function is mapped to the path GET /purchase_orders/order_vendor_changed/{vendor_id}
+func NewOrderVendorChanged(c buffalo.Context) error {
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	// get the vendor from params
+	selectedVendor := models.Vendor{}
+
+	if err := tx.Find(&selectedVendor, c.Param("vendor_id")); err != nil {
+		return c.Error(404, err)
+	}
+
+	// format vendor items to be shown in the UI
+	categoryGroups := selectedVendor.GetCategoryGroups()
+
+	// get and sort keys from the map
+	sortedCategories := models.InventoryItemCategories{}
+	for k := range categoryGroups {
+		sortedCategories = append(sortedCategories, k)
+	}
+	sort.Slice(sortedCategories, func(i, j int) bool {
+		return sortedCategories[i].Index < sortedCategories[j].Index
+	})
+
+	// pass variables to UI
+	c.Set("sortedCategories", sortedCategories)
+	c.Set("categoryGroups", categoryGroups)
+
+	return c.Render(200, r.JavaScript())
 }
 
 // Create adds a PurchaseOrder to the DB. This function is mapped to the
