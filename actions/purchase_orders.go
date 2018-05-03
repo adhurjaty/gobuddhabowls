@@ -170,7 +170,6 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 		store.Set(_poStartTimeKey, startTime.Format(time.RFC3339))
 		store.Set(_poEndTimeKey, endTime.Format(time.RFC3339))
 	} else {
-		fmt.Println("SAVED DATES:", store.Get(_poStartTimeKey).(string), store.Get(_poEndTimeKey).(string))
 		t, err := time.Parse(time.RFC3339, store.Get(_poStartTimeKey).(string))
 		if err != nil {
 			return errors.WithStack(err)
@@ -233,7 +232,7 @@ func (v PurchaseOrdersResource) New(c buffalo.Context) error {
 }
 
 // NewOrderVendorChanged updates the new PO page when vendor has been selected
-// This function is mapped to the path GET /purchase_orders/order_vendor_changed/{vendor_id}
+// GET /purchase_orders/order_vendor_changed/{vendor_id}
 func NewOrderVendorChanged(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
@@ -259,7 +258,6 @@ func NewOrderVendorChanged(c buffalo.Context) error {
 		return sortedCategories[i].Index < sortedCategories[j].Index
 	})
 
-	fmt.Println(sortedCategories)
 	// pass variables to UI
 	c.Set("sortedCategories", sortedCategories)
 	c.Set("categoryGroups", categoryGroups)
@@ -272,8 +270,8 @@ func NewOrderVendorChanged(c buffalo.Context) error {
 func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	// Allocate an empty PurchaseOrder
 	purchaseOrder := &models.PurchaseOrder{}
-	a := c.Request().Form
-	fmt.Println(a)
+	// a := c.Request().Form
+
 	// Bind purchaseOrder to the html form elements
 	if err := c.Bind(purchaseOrder); err != nil {
 		return errors.WithStack(err)

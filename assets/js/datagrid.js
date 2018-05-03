@@ -50,10 +50,10 @@ export class EditItem {
             case 'selector':
                 break;
             default:    // type 'text'
-                $(el).on('focus', function(event) {
+                self.$td.on('focus', function(event) {
                     self.clearError($(this));
                 });
-                $(el).on('blur', function(event) {
+                self.$td.on('blur', function(event) {
                     var id = $(this).parent().attr('item-id');
                     var field = $(this).attr('field');
                     self.datagrid.sendUpdate(self);

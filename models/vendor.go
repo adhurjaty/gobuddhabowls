@@ -2,7 +2,6 @@ package models
 
 import (
 	"encoding/json"
-	"fmt"
 	"time"
 
 	"database/sql"
@@ -63,8 +62,6 @@ func (v *Vendor) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 func (v Vendor) GetCategoryGroups() map[InventoryItemCategory]VendorItems {
 	outMap := make(map[InventoryItemCategory]VendorItems)
 
-	fmt.Println(v)
-
 	for _, item := range v.Items {
 		itemList, ok := outMap[item.InventoryItem.Category]
 		if ok {
@@ -72,7 +69,7 @@ func (v Vendor) GetCategoryGroups() map[InventoryItemCategory]VendorItems {
 		} else {
 			outMap[item.InventoryItem.Category] = VendorItems{item}
 		}
-		fmt.Println(outMap)
+
 	}
 	return outMap
 }
