@@ -226,6 +226,12 @@ func (v PurchaseOrdersResource) New(c buffalo.Context) error {
 	vendors := models.Vendors{}
 	tx.Eager().All(&vendors)
 
+	// sort and add empty option
+	sort.Slice(vendors, func(i, j int) bool {
+		return vendors[i].Name < vendors[j].Name
+	})
+	vendors = append(models.Vendors{models.Vendor{}}, vendors...)
+
 	c.Set("vendors", vendors)
 
 	return c.Render(200, r.Auto(c, &models.PurchaseOrder{}))

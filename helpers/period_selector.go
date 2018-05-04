@@ -20,7 +20,6 @@ func (p *PeriodSelector) Init(year int) {
 	p.Year = year
 	theFirst := time.Date(year, 1, 1, 0, 0, 0, 0, time.UTC)
 	firstWeekStartDiff := ((7 + weekStart) - int(theFirst.Weekday())) % 7
-	fmt.Println(firstWeekStartDiff)
 
 	p.Periods = []Period{}
 	startTime := theFirst.Add(DayStart)

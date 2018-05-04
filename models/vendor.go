@@ -76,6 +76,9 @@ func (v Vendor) GetCategoryGroups() map[InventoryItemCategory]VendorItems {
 
 // SelectValue returns the ID for select input tags
 func (v Vendor) SelectValue() interface{} {
+	if v.ID.String() == (uuid.UUID{}).String() {
+		return ""
+	}
 	return v.ID
 }
 

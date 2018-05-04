@@ -8,6 +8,8 @@ $(() => {
     });
 
     $('#new-order-vendor').change(function(d) {
+        // remove none option
+        $('#new-order-vendor option[value=""]').remove();
         var id = $(this).val();
         $.ajax({
             url: '/purchase_orders/order_vendor_changed/' + id,
@@ -22,15 +24,15 @@ $(() => {
         });
     });
 
-    // $('#vendor-items-table').on('DOMNodeInserted', function(event) {
-    //     if(event.target.parentNode.id == 'vendor-items-table') {
-    //         $.each($('.datagrid'), function(i, grid) {
-    //             var dg = new DataGrid(grid);
+    $('#vendor-items-table').on('DOMNodeInserted', function(event) {
+        if(event.target.parentNode.id == 'vendor-items-table') {
+            $.each($('.datagrid'), function(i, grid) {
+                var dg = new DataGrid(grid);
         
-    //             $.each($(this).find('td[editable="true"]'), function(j, el) {
-    //                 var ei = new EditItem(dg, $(el));
-    //             });
-    //         });
-    //     }
-    // });
+                $.each($(this).find('td[editable="true"]'), function(j, el) {
+                    var ei = new EditItem(dg, $(el));
+                });
+            });
+        }
+    });
 });
