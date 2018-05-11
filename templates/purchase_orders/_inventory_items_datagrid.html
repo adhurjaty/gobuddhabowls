@@ -6,7 +6,7 @@
     </div>
     <div class="row">
         <table class="datagrid">
-            <thead id="sticky-header">
+            <thead>
                 <th width="40%">Name</th>
                 <th width="22%">Cost</th>
                 <th width="15%">Count</th>
@@ -31,11 +31,11 @@
                                 <tbody>
                                     <!-- list VendorItem -->
                                     <%= for (Item) in categoryGroups[category] { %>
-                                        <tr>
-                                            <td width="40%"><%= Item.InventoryItem.Name %></td>
-                                            <td width="22%"><%= format_money(Item.Price) %></td>
-                                            <td width="15%" editable="true">0</td>
-                                            <td width="22%">$0.00</td>
+                                        <tr item-id="<%= Item.InventoryItem.ID %>">
+                                            <td name="name" width="40%"><%= Item.InventoryItem.Name %></td>
+                                            <td name="price" width="22%" value="<%= Item.Price %>"><%= format_money(Item.Price) %></td>
+                                            <td name="count" width="15%" editable="true" data-type="number">0</td>
+                                            <td name="Extension" width="22%">$0.00</td>
                                         </tr>
                                     <% } %>
                                 </tbody>

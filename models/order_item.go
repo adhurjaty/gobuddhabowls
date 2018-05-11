@@ -18,8 +18,8 @@ type OrderItem struct {
 	InventoryItem   InventoryItem `belongs_to:"inventory_items" db:"-"`
 	OrderID         uuid.UUID     `json:"order_id" db:"order_id"`
 	Order           PurchaseOrder `belongs_to:"purchase_orders" db:"-"`
-	Price           float64       `json:"price" db:"price"`
-	Count           float64       `json:"count" db:"count"`
+	Count           float64       `json:"count,string,omitempty" db:"count"`
+	Price           float64       `json:"price,string,omitempty" db:"price"`
 }
 
 // String is not required by pop and may be deleted

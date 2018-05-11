@@ -4,6 +4,7 @@ import (
 	"buddhabowls/componentcontexts"
 	"buddhabowls/models"
 	"buddhabowls/presentationlayer"
+	"encoding/json"
 	"fmt"
 	"github.com/gobuffalo/pop/nulls"
 	"net/url"
@@ -223,14 +224,7 @@ func (v PurchaseOrdersResource) New(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	vendors := models.Vendors{}
-	tx.Eager().All(&vendors)
-
-	// sort and add empty option
-	sort.Slice(vendors, func(i, j int) bool {
-		return vendors[i].Name < vendors[j].Name
-	})
-	vendors = append(models.Vendors{models.Vendor{}}, vendors...)
+	vendors := getSortedVendors(tx)
 
 	c.Set("vendors", vendors)
 
@@ -274,9 +268,9 @@ func NewOrderVendorChanged(c buffalo.Context) error {
 // Create adds a PurchaseOrder to the DB. This function is mapped to the
 // path POST /purchase_orders
 func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
+
 	// Allocate an empty PurchaseOrder
 	purchaseOrder := &models.PurchaseOrder{}
-	// a := c.Request().Form
 
 	// Bind purchaseOrder to the html form elements
 	if err := c.Bind(purchaseOrder); err != nil {
@@ -296,14 +290,60 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	}
 
 	if verrs.HasAny() {
+		vendors := getSortedVendors(tx)
+
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
+		c.Set("vendors", vendors)
 
 		// Render again the new.html template that the user can
 		// correct the input.
 		return c.Render(422, r.Auto(c, purchaseOrder))
 	}
 
+	// Create the OrderItems as well
+	orderItems := models.OrderItems{}
+	itemsParamJSON, ok := c.Request().Form["Items"]
+
+	if ok {
+		err := json.Unmarshal([]byte(itemsParamJSON[0]), &orderItems)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+
+		purchaseOrder.Items = models.OrderItems{}
+		for _, item := range orderItems {
+			if item.Count > 0 {
+				item.OrderID = purchaseOrder.ID
+				purchaseOrder.Items = append(purchaseOrder.Items, item)
+			}
+		}
+
+		for _, item := range purchaseOrder.Items {
+
+			verrs, err := tx.ValidateAndCreate(&item)
+			if err != nil {
+				return errors.WithStack(err)
+			}
+
+			if verrs != nil {
+				fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!!!!")
+				fmt.Println(verrs)
+			}
+			// need to check whether this is the most recent order from this vendor
+			// TODO: move this to when order is received
+			// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
+			// for _, vendorItem := range selectedVendor.Items {
+			// 	if vendorItem.InventoryItemID == item.InventoryItemID {
+			// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
+			// 			vendorItem.Price = item.Price
+			// 			tx.ValidateAndUpdate(vendorItem)
+			// 		}
+			// 		break
+			// 	}
+			// }
+		}
+	}
 	// If there are no errors set a success message
 	c.Flash().Add("success", "PurchaseOrder was created successfully")
 
@@ -387,15 +427,21 @@ func (v PurchaseOrdersResource) Destroy(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty PurchaseOrder
-	purchaseOrder := &models.PurchaseOrder{}
-
 	// To find the PurchaseOrder the parameter purchase_order_id is used.
-	if err := tx.Find(purchaseOrder, c.Param("purchase_order_id")); err != nil {
+	purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
+
+	if err != nil {
 		return c.Error(404, err)
 	}
 
-	if err := tx.Destroy(purchaseOrder); err != nil {
+	// destroy associated order items
+	for _, item := range purchaseOrder.Items {
+		if err = tx.Destroy(&item); err != nil {
+			return errors.WithStack(err)
+		}
+	}
+
+	if err := tx.Destroy(&purchaseOrder); err != nil {
 		return errors.WithStack(err)
 	}
 
@@ -404,4 +450,17 @@ func (v PurchaseOrdersResource) Destroy(c buffalo.Context) error {
 
 	// Redirect to the purchase_orders index page
 	return c.Render(200, r.Auto(c, purchaseOrder))
+}
+
+func getSortedVendors(tx *pop.Connection) models.Vendors {
+	vendors := models.Vendors{}
+	tx.Eager().All(&vendors)
+
+	// sort and add empty option
+	sort.Slice(vendors, func(i, j int) bool {
+		return vendors[i].Name < vendors[j].Name
+	})
+	vendors = append(models.Vendors{models.Vendor{}}, vendors...)
+
+	return vendors
 }

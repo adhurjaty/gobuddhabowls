@@ -53,6 +53,12 @@ func (p *PurchaseOrder) Validate(tx *pop.Connection) (*validate.Errors, error) {
 					"Received date must be after order date")
 			}
 		}),
+		validate.ValidatorFunc(func(errors *validate.Errors) {
+			if p.Items == nil || len(p.Items) == 0 {
+				errors.Add(validators.GenerateKey(p.Vendor.Name+" Items"),
+					"Must have items with count > 0")
+			}
+		}),
 	), nil
 }
 
@@ -88,6 +94,26 @@ func (p PurchaseOrder) GetCategoryCosts() CategoryBreakdown {
 	}
 
 	return FromCategoryMap(catCosts)
+}
+
+// LoadPurchaseOrder gets purchase order and sub-components matching the given ID
+func LoadPurchaseOrder(tx *pop.Connection, id string) (PurchaseOrder, error) {
+	po := PurchaseOrder{}
+
+	if err := tx.Eager().Find(&po, id); err != nil {
+		return po, err
+	}
+
+	for i := 0; i < len(po.Items); i++ {
+		if err := tx.Eager().Find(&po.Items[i], po.Items[i].ID); err != nil {
+			return po, err
+		}
+		if err := tx.Eager().Find(&po.Items[i].InventoryItem, po.Items[i].InventoryItemID); err != nil {
+			return po, err
+		}
+	}
+
+	return po, nil
 }
 
 // LoadPurchaseOrders gets the purchase orders with the specified query

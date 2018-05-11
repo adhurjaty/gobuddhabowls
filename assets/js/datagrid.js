@@ -1,10 +1,9 @@
 import { replaceUrlId } from "./helpers";
 
-// require("bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js");
-
 var collapsedCaret = 'fa-caret-right';
 var expandedCaret = 'fa-caret-down';
 
+// EditItem represents an editable cell in a Datagrid. 
 export class EditItem {
     constructor(datagrid, $td) {
         this.datagrid = datagrid;
@@ -17,6 +16,7 @@ export class EditItem {
         this.setListener();
     }
 
+    // setListener initializes the behaviors of the different types of cell data types
     setListener() {
         var self = this;
 
@@ -45,17 +45,33 @@ export class EditItem {
                     $date.focus();
                 });
                 break;
+            // TODO: fill these options in
             case 'money':
                 break;
             case 'selector':
+                break;
+            case 'number':
+                self.$td.on('focus', function(event) {
+                    self.clearError($(this));
+                    document.execCommand('selectAll',false,null)                    
+                });
+                self.$td.on('blur', function(event) {
+                    if(!isNaN($(this).text())) {
+                        self.contents = $(this).text();
+                        self.datagrid.sendUpdate(self);
+                    } else {
+                        $(this).text("0");
+                    }
+                });
                 break;
             default:    // type 'text'
                 self.$td.on('focus', function(event) {
                     self.clearError($(this));
                 });
                 self.$td.on('blur', function(event) {
-                    var id = $(this).parent().attr('item-id');
-                    var field = $(this).attr('field');
+                    // var id = $(this).parent().attr('item-id');
+                    // var field = $(this).attr('field');
+                    self.content = $(this).text();
                     self.datagrid.sendUpdate(self);
                 });
                 break;
@@ -86,6 +102,8 @@ export class EditItem {
     }
 }
 
+// DataGrid is a class for creating a table that has editable cells that
+// may update models on edit
 export class DataGrid {
     constructor(grid) {
         this.grid = grid;
@@ -97,9 +115,11 @@ export class DataGrid {
         }
     }
 
+    // initRows sets click highlighting for rows
+    // TODO: remove highlighting when clicking off the table
     initRows() {
         self = this;
-        $.each($(self.grid).find('tr'), function(i, tr) {
+        $.each($(self.grid).find('tbody>tr'), function(i, tr) {
             $(tr).click(function(event) {
                 if(!$(this).hasClass('active')) {
                     self.clearSelectedRow();
@@ -108,8 +128,17 @@ export class DataGrid {
                 }
             })
         });
+
+        $(this.grid).on('focusout', function(event) {
+            debugger;
+            $(this).find('tr').each(function(i, tr) {
+                $(tr).removeClass('active');
+            });
+        });
     }
 
+    // initCollapse sets up tables with hidden rows to enable showing
+    // row detail content. Add 'expander' class to the caret td tag
     initCollapse() {
         self = this;
         $.each($(this.grid).find('td.expander'), function(i, el) {
@@ -136,6 +165,7 @@ export class DataGrid {
         $tr.hide();
     }
 
+    // clearSelectedRow unhighlighs a row
     clearSelectedRow() {
         var row = $(this.grid).find('tr.active');
         row.removeClass('active');
@@ -150,6 +180,7 @@ export class DataGrid {
         row.find('td[editable="true"]').removeAttr('contenteditable');
     }
 
+    // sendUpdate updates the model if an 'on_change_url' atrribute is defined
     sendUpdate(editItem) {
         if(this.on_change_url != undefined) {
             var data = {};

@@ -84,6 +84,9 @@ func (v Vendor) SelectValue() interface{} {
 
 // SelectLabel returs the name for select input tags
 func (v Vendor) SelectLabel() string {
+	if v.ID.String() == (uuid.UUID{}).String() {
+		return "- Select a vendor -"
+	}
 	return v.Name
 }
 
