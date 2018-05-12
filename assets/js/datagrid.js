@@ -105,9 +105,11 @@ export class EditItem {
 // DataGrid is a class for creating a table that has editable cells that
 // may update models on edit
 export class DataGrid {
-    constructor(grid) {
+    // add data grid to grid (usually div tag). Give it a function to execute when a value is changed
+    constructor(grid, updateFnc) {
         this.grid = grid;
         this.on_change_url = $(grid).attr('onchange-href');
+        this.sendUpdate = updateFnc || this.defaultSendUpdate;
         this.initRows();
 
         if($(grid).find('td.expander') != undefined) {
@@ -130,7 +132,6 @@ export class DataGrid {
         });
 
         $(this.grid).on('focusout', function(event) {
-            debugger;
             $(this).find('tr').each(function(i, tr) {
                 $(tr).removeClass('active');
             });
@@ -180,23 +181,26 @@ export class DataGrid {
         row.find('td[editable="true"]').removeAttr('contenteditable');
     }
 
-    // sendUpdate updates the model if an 'on_change_url' atrribute is defined
-    sendUpdate(editItem) {
-        if(this.on_change_url != undefined) {
-            var data = {};
-            data[editItem.field] = editItem.contents;
-            $.ajax({
-                url: replaceUrlId(this.on_change_url, editItem.id),
-                data: data,
-                method: "PUT",
-                error: function(xhr, status, err) {
-                    var errMessage = xhr.responseText;
-                    editItem.showError(errMessage);
-                },
-                success: function(data, status, xhr) {
-                    editItem.onUpdateSuccess();
-                }
-            });
-        }
+    defaultSendUpdate(editItem) {
+        console.log('default send update');
     }
+    // sendUpdate updates the model if an 'onchange-url' atrribute is defined
+    // sendUpdate(editItem) {
+    //     if(this.on_change_url != undefined) {
+    //         var data = {};
+    //         data[editItem.field] = editItem.contents;
+    //         $.ajax({
+    //             url: replaceUrlId(this.on_change_url, editItem.id),
+    //             data: data,
+    //             method: this.method,
+    //             error: function(xhr, status, err) {
+    //                 var errMessage = xhr.responseText;
+    //                 editItem.showError(errMessage);
+    //             },
+    //             success: function(data, status, xhr) {
+    //                 editItem.onUpdateSuccess();
+    //             }
+    //         });
+    //     }
+    // }
 }

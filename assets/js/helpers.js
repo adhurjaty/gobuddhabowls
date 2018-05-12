@@ -32,3 +32,7 @@ export function dateStringToISO(d) {
 export function getYearFromDateString(d) {
     return parseInt(d.split('/').pop());
 }
+
+export function formatMoney(amt) {
+    return '$' + amt.toFixed(2);
+}

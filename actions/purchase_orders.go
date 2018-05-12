@@ -351,6 +351,14 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	return c.Render(201, r.Auto(c, purchaseOrder))
 }
 
+// CountChanged updates the UI for new and edit orders when the count
+// or price change. It displays a category price breakdown and updates
+// the price extension
+// mapped to the path GET /purchase_orders/count_changed/{inventory_item_id}
+// func CountChanged(c buffalo.Context) error {
+// 	return c.Render(200, r.JavaScript("purchase_orders/count_changed"))
+// }
+
 // Edit renders a edit form for a PurchaseOrder. This function is
 // mapped to the path GET /purchase_orders/{purchase_order_id}/edit
 func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {

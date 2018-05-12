@@ -53,12 +53,6 @@ func (p *PurchaseOrder) Validate(tx *pop.Connection) (*validate.Errors, error) {
 					"Received date must be after order date")
 			}
 		}),
-		validate.ValidatorFunc(func(errors *validate.Errors) {
-			if p.Items == nil || len(p.Items) == 0 {
-				errors.Add(validators.GenerateKey(p.Vendor.Name+" Items"),
-					"Must have items with count > 0")
-			}
-		}),
 	), nil
 }
 

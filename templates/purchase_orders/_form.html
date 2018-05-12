@@ -1,40 +1,20 @@
 <div class="row">
-    <div class="col-md-6">
         <%= f.InputTag("OrderDate", {data-provide: "datepicker", id: "new-order-date", value: today() }) %>
-    </div>
 </div>
 <div class="row">
-    <div class="col-md-6">
         <%= f.SelectTag("Vendor", {options: vendors, id: "new-order-vendor", name: "VendorID" }) %>
-    </div>
 </div>
 <input type="text" name="Items" style="visibility: collapse;"/>
 <div class="row">
-    <div class="col-md-6">
-        <div id="vendor-items-table">
+    <div id="vendor-items-table">
 
-        </div>
     </div>
-    <div class="col-md-6">
-        <div id="category-breakdown">
+    <div id="category-breakdown">
 
-        </div>
     </div>
 </div>
-<button class="btn btn-success" role="submit" onclick="test()">Save</button>
+<button class="btn btn-success" role="submit" onclick="sendOrderItems()">Save</button>
 
 <script>
-    function test() {
-        var $input = $('form>input[name="Items"]');
-        var data = $('#vendor-items-table').find('tr[item-id]').map(function(i, el) {
-            return {
-                'inventory_item_id': $(el).attr('item-id'),
-                'price': $(el).find('td[name="price"]').attr('value'),
-                'count': $(el).find('td[name="count"]').text()
-            };
-        }).get();
-        data = JSON.stringify(data);
-        $input.val(data);
-        debugger;
-    }
+    
 </script>
