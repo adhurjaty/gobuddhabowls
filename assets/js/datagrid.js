@@ -13,6 +13,7 @@ export class EditItem {
         this.field = $td.attr('field');
         this.contents = $td.text();
         this.errorMessage = "";
+        this.isEditable = $td.attr('editable');
         this.setListener();
     }
 

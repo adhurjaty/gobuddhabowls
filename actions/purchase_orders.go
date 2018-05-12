@@ -302,48 +302,41 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	}
 
 	// Create the OrderItems as well
-	orderItems := models.OrderItems{}
 	itemsParamJSON, ok := c.Request().Form["Items"]
+	if !ok {
+		return c.Error(500, errors.New("Could not get items from form params"))
+	}
+	fmt.Println(itemsParamJSON)
+	err = getItemsFromParams(itemsParamJSON[0], purchaseOrder)
+	if err != nil {
+		return errors.WithStack(err)
+	}
 
-	if ok {
-		err := json.Unmarshal([]byte(itemsParamJSON[0]), &orderItems)
+	for _, item := range purchaseOrder.Items {
+
+		verrs, err := tx.ValidateAndCreate(&item)
 		if err != nil {
 			return errors.WithStack(err)
 		}
 
-		purchaseOrder.Items = models.OrderItems{}
-		for _, item := range orderItems {
-			if item.Count > 0 {
-				item.OrderID = purchaseOrder.ID
-				purchaseOrder.Items = append(purchaseOrder.Items, item)
-			}
+		if verrs != nil {
+			fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!!!!")
+			fmt.Println(verrs)
 		}
-
-		for _, item := range purchaseOrder.Items {
-
-			verrs, err := tx.ValidateAndCreate(&item)
-			if err != nil {
-				return errors.WithStack(err)
-			}
-
-			if verrs != nil {
-				fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!!!!")
-				fmt.Println(verrs)
-			}
-			// need to check whether this is the most recent order from this vendor
-			// TODO: move this to when order is received
-			// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
-			// for _, vendorItem := range selectedVendor.Items {
-			// 	if vendorItem.InventoryItemID == item.InventoryItemID {
-			// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
-			// 			vendorItem.Price = item.Price
-			// 			tx.ValidateAndUpdate(vendorItem)
-			// 		}
-			// 		break
-			// 	}
-			// }
-		}
+		// need to check whether this is the most recent order from this vendor
+		// TODO: move this to when order is received
+		// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
+		// for _, vendorItem := range selectedVendor.Items {
+		// 	if vendorItem.InventoryItemID == item.InventoryItemID {
+		// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
+		// 			vendorItem.Price = item.Price
+		// 			tx.ValidateAndUpdate(vendorItem)
+		// 		}
+		// 		break
+		// 	}
+		// }
 	}
+
 	// If there are no errors set a success message
 	c.Flash().Add("success", "PurchaseOrder was created successfully")
 
@@ -351,13 +344,61 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	return c.Render(201, r.Auto(c, purchaseOrder))
 }
 
-// CountChanged updates the UI for new and edit orders when the count
+func getItemsFromParams(itemsParamJSON string, purchaseOrder *models.PurchaseOrder) error {
+	orderItems := models.OrderItems{}
+	// itemsParamJSON, ok := form["Items"]
+
+	err := json.Unmarshal([]byte(itemsParamJSON), &orderItems)
+	if err != nil {
+		return err
+	}
+
+	purchaseOrder.Items = models.OrderItems{}
+	for _, item := range orderItems {
+		if item.Count > 0 {
+			item.OrderID = purchaseOrder.ID
+			purchaseOrder.Items = append(purchaseOrder.Items, item)
+		}
+	}
+
+	return nil
+}
+
+// PurchaseOrdersCountChanged updates the UI for new and edit orders when the count
 // or price change. It displays a category price breakdown and updates
 // the price extension
-// mapped to the path GET /purchase_orders/count_changed/{inventory_item_id}
-// func CountChanged(c buffalo.Context) error {
-// 	return c.Render(200, r.JavaScript("purchase_orders/count_changed"))
-// }
+// mapped to the path POST /purchase_orders/count_changed
+func PurchaseOrdersCountChanged(c buffalo.Context) error {
+	purchaseOrder := &models.PurchaseOrder{}
+	itemsJSON, ok := c.Request().Form["Items"]
+	if !ok {
+		return c.Error(500, errors.New("Could not get items from form"))
+	}
+	err := getItemsFromParams(itemsJSON[0], purchaseOrder)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return c.Error(500, errors.New("Could not open database connection"))
+	}
+
+	for i, item := range purchaseOrder.Items {
+		invItem := &models.InventoryItem{}
+		err = tx.Eager().Find(invItem, item.InventoryItemID)
+		if err != nil {
+			return c.Error(500, errors.New("invalid inventory item ID"))
+		}
+		purchaseOrder.Items[i].InventoryItem = *invItem
+	}
+
+	categoryDetails := purchaseOrder.GetCategoryCosts()
+	c.Set("categoryDetails", categoryDetails)
+	c.Set("title", "Category Breakdown")
+
+	return c.Render(200, r.JavaScript("purchase_orders/count_changed"))
+}
 
 // Edit renders a edit form for a PurchaseOrder. This function is
 // mapped to the path GET /purchase_orders/{purchase_order_id}/edit

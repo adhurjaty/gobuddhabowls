@@ -1,0 +1,1 @@
+$('#order-category-breakdown').html('<%= partial("partials/horizontal_percentage_chart.html", {categoryDetails: categoryDetails, title: title}) %>  ');

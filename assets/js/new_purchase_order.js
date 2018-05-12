@@ -36,6 +36,10 @@ $(() => {
             });
         }
     });
+
+    $('#new-order-form>button[role="submit"]').click(function(event) {
+        sendOrderItems();
+    })
 });
 
 export function sendOrderItems() {
@@ -49,10 +53,15 @@ export function sendOrderItems() {
     }).get();
     data = JSON.stringify(data);
     $input.val(data);
-    debugger;
 }
 
-export function orderCountChanged(editItem) {
+function orderCountChanged(editItem) {
+    // TODO: fix the fact that this gets called twice per edit
+    // this solution does not work
+    // if(!editItem.isEditable) {
+    //     return;
+    // }
+
     // change price extension for row
     var $tr = editItem.$td.parent();
     var price = parseFloat($tr.find('td[name="price"]').attr('value')),
@@ -61,4 +70,28 @@ export function orderCountChanged(editItem) {
     $tr.find('td[name="extension"]').text(formatMoney(extension));
 
     // generate/update category breakdown
+    // use backend to generate percentage chart
+    var on_change_url = '/purchase_orders/count_changed'
+    var itemsJSON = $('#vendor-items-table').find('tr[item-id]').map(function(i, el) {
+        return {
+            'inventory_item_id': $(el).attr('item-id'),
+            'price': $(el).find('td[name="price"]').attr('value'),
+            'count': $(el).find('td[name="count"]').text()
+        };
+    }).get();
+    var data = {};
+    data['Items'] = JSON.stringify(itemsJSON);
+
+    $.ajax({
+        url: on_change_url,
+        data: data,
+        method: 'POST',
+        error: function(xhr, status, err) {
+            var errMessage = xhr.responseText;
+            debugger;
+        },
+        success: function(data, status, xhr) {
+            
+        }
+    });
 }
