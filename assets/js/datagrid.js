@@ -278,7 +278,10 @@ function focusPrevColumn($el) {
     var cols = $el.parent().children();
     var colNum = cols.length;
     var colIdx = $el.index();
-    var i = colIdx+1;
+    var i = colIdx-1;
+    if(i < 0) {
+        i = colNum - 1;
+    }
     while(i != colIdx) {
         if(cols.eq(i).attr('editable') == 'true') {
             $el.blur();
@@ -296,7 +299,7 @@ function focusNextColumn($el) {
     var cols = $el.parent().children();
     var colNum = cols.length;
     var colIdx = $el.index();
-    var i = colIdx+1;
+    var i = colIdx+1 % colNum;
     while(i != colIdx) {
         if(cols.eq(i).attr('editable') == 'true') {
             $el.blur();
