@@ -283,6 +283,14 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
+	// get shipping cost from vendor
+	vendor := &models.Vendor{}
+
+	if err := tx.Find(vendor, purchaseOrder.VendorID); err != nil {
+		return errors.WithStack(err)
+	}
+	purchaseOrder.ShippingCost = vendor.ShippingCost
+
 	// Validate the data from the html form
 	verrs, err := tx.ValidateAndCreate(purchaseOrder)
 	if err != nil {

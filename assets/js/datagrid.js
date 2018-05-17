@@ -54,7 +54,7 @@ export class EditItem {
             case 'number':
                 self.$td.on('focus', function(event) {
                     self.clearError($(this));
-                    document.execCommand('selectAll',false,null)                    
+                    $(this).selectText();
                 });
                 self.$td.on('blur', function(event) {
                     if(!isNaN($(this).text())) {
@@ -68,6 +68,7 @@ export class EditItem {
             default:    // type 'text'
                 self.$td.on('focus', function(event) {
                     self.clearError($(this));
+                    $(this).selectText();                    
                 });
                 self.$td.on('blur', function(event) {
                     // var id = $(this).parent().attr('item-id');
@@ -175,7 +176,25 @@ export class DataGrid {
     }
 
     setEditable(row) {
-        row.find('td[editable="true"]').attr('contenteditable', true);
+        var editableRows = row.find('td[editable="true"]');
+        editableRows.attr('contenteditable', true);
+
+        editableRows.keydown(function(e) {
+            if(e.keyCode == 13) {
+                $(this).blur();
+                if(e.getModifierState("Shift")) {
+                    focusPrevRow($(this));
+                } else {
+                    focusNextRow($(this));
+                }
+                return false;
+            }
+            if(e.keyCode == 9) {
+                $(this).blur();
+                focusNextColumn($(this));
+                return false;
+            }
+        })
     }
 
     removeEditable(row) {
@@ -185,23 +204,49 @@ export class DataGrid {
     defaultSendUpdate(editItem) {
         console.log('default send update');
     }
-    // sendUpdate updates the model if an 'onchange-url' atrribute is defined
-    // sendUpdate(editItem) {
-    //     if(this.on_change_url != undefined) {
-    //         var data = {};
-    //         data[editItem.field] = editItem.contents;
-    //         $.ajax({
-    //             url: replaceUrlId(this.on_change_url, editItem.id),
-    //             data: data,
-    //             method: this.method,
-    //             error: function(xhr, status, err) {
-    //                 var errMessage = xhr.responseText;
-    //                 editItem.showError(errMessage);
-    //             },
-    //             success: function(data, status, xhr) {
-    //                 editItem.onUpdateSuccess();
-    //             }
-    //         });
-    //     }
-    // }
 }
+
+function focusNextRow($el) {
+    var colIdx = $el.index();
+    var nextRow = $el.parent().next();
+    if(nextRow.length == 0) {
+        // $($el.parents('tr')[2]).blur();
+        var $td = $el.parents('.datagrid')
+                     .first()
+                     .parents('tr')
+                     .next().next()
+                     .find('td')
+                     .first();
+        $td.click();
+        nextRow = $td.find('.datagrid')
+                     .find('tr')
+                     .eq(1);
+        
+        // nextRow.parents('tr').first().focus();
+        // nextRow.focus();
+        // debugger;
+    }
+    // debugger;
+    nextRow.children().eq(colIdx).focus();
+}
+
+function focusNextColumn($el) {
+
+}
+
+// code from https://stackoverflow.com/questions/12243898/how-to-select-all-text-in-contenteditable-div/12244703
+$.fn.selectText = function(){
+    var doc = document;
+    var element = this[0];
+    if (doc.body.createTextRange) {
+        var range = document.body.createTextRange();
+        range.moveToElementText(element);
+        range.select();
+    } else if (window.getSelection) {
+        var selection = window.getSelection();        
+        var range = document.createRange();
+        range.selectNodeContents(element);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+ };
