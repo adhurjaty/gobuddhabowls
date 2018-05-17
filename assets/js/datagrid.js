@@ -1,4 +1,4 @@
-import { replaceUrlId } from "./helpers";
+import { replaceUrlId, formatMoney, unFormatMoney } from "./helpers";
 
 var collapsedCaret = 'fa-caret-right';
 var expandedCaret = 'fa-caret-down';
@@ -48,6 +48,24 @@ export class EditItem {
                 break;
             // TODO: fill these options in
             case 'money':
+                self.$td.on('focus', function(event) {
+                    self.clearError($(this));
+                    $(this).text(unFormatMoney($(this).text()));
+                    $(this).selectText();
+                });
+                self.$td.on('blur', function(event) {
+                    debugger;
+                    if(!isNaN($(this).text())) {
+                        var amt = parseFloat($(this).text());
+                        $(this).attr('value', amt);
+                        self.contents = formatMoney(amt);
+                        // debugger;
+                        $(this).text(self.contents);
+                        self.datagrid.sendUpdate(self);
+                    } else {
+                        $(this).text("$0.00");
+                    }
+                });
                 break;
             case 'selector':
                 break;
@@ -73,7 +91,7 @@ export class EditItem {
                 self.$td.on('blur', function(event) {
                     // var id = $(this).parent().attr('item-id');
                     // var field = $(this).attr('field');
-                    self.content = $(this).text();
+                    self.contents = $(this).text();
                     self.datagrid.sendUpdate(self);
                 });
                 break;
@@ -182,7 +200,7 @@ export class DataGrid {
         editableRows.keydown(function(e) {
             if(e.keyCode == 13) {
                 $(this).blur();
-                if(e.getModifierState("Shift")) {
+                if(window.event.getModifierState("Shift")) {
                     focusPrevRow($(this));
                 } else {
                     focusNextRow($(this));
@@ -191,7 +209,11 @@ export class DataGrid {
             }
             if(e.keyCode == 9) {
                 $(this).blur();
-                focusNextColumn($(this));
+                if(window.event.getModifierState("Shift")) {
+                    focusPrevColumn($(this));
+                } else {
+                    focusNextColumn($(this));
+                }
                 return false;
             }
         })
@@ -206,11 +228,34 @@ export class DataGrid {
     }
 }
 
+function focusPrevRow($el) {
+    var colIdx = $el.index();
+    var nextRow = $el.parent().prev();
+    if(nextRow.length == 0) {
+        var $td = $el.parents('.datagrid')
+                     .first()
+                     .parents('tr')
+                     .prev().prev()
+                     .find('td')
+                     .first();
+
+        $td.click();
+        nextRow = $td.find('.datagrid')
+                        .find('tr')
+                        .last();
+
+    }
+    if(nextRow.length == 0) {
+        $el.focus();
+    } else {
+        nextRow.children().eq(colIdx).focus();
+    }
+}
+
 function focusNextRow($el) {
     var colIdx = $el.index();
     var nextRow = $el.parent().next();
     if(nextRow.length == 0) {
-        // $($el.parents('tr')[2]).blur();
         var $td = $el.parents('.datagrid')
                      .first()
                      .parents('tr')
@@ -221,17 +266,46 @@ function focusNextRow($el) {
         nextRow = $td.find('.datagrid')
                      .find('tr')
                      .eq(1);
-        
-        // nextRow.parents('tr').first().focus();
-        // nextRow.focus();
-        // debugger;
     }
-    // debugger;
-    nextRow.children().eq(colIdx).focus();
+    if(nextRow.length == 0) {
+        $el.focus();
+    } else {
+        nextRow.children().eq(colIdx).focus();
+    }
+}
+
+function focusPrevColumn($el) {
+    var cols = $el.parent().children();
+    var colNum = cols.length;
+    var colIdx = $el.index();
+    var i = colIdx+1;
+    while(i != colIdx) {
+        if(cols.eq(i).attr('editable') == 'true') {
+            $el.blur();
+            cols.eq(i).focus();
+            break;
+        }
+        i--;
+        if(i < 0) {
+            i = colNum - 1;
+        }
+    }
 }
 
 function focusNextColumn($el) {
-
+    var cols = $el.parent().children();
+    var colNum = cols.length;
+    var colIdx = $el.index();
+    var i = colIdx+1;
+    while(i != colIdx) {
+        if(cols.eq(i).attr('editable') == 'true') {
+            $el.blur();
+            cols.eq(i).focus();
+            break;
+        }
+        i++;
+        i %= colNum;
+    }
 }
 
 // code from https://stackoverflow.com/questions/12243898/how-to-select-all-text-in-contenteditable-div/12244703

@@ -36,3 +36,7 @@ export function getYearFromDateString(d) {
 export function formatMoney(amt) {
     return '$' + amt.toFixed(2);
 }
+
+export function unFormatMoney(s) {
+    return parseFloat(s.replace('$', ''));
+}
