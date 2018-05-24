@@ -48,12 +48,12 @@ export class EditItem {
                 break;
             // TODO: fill these options in
             case 'money':
-                self.$td.on('focus', function(event) {
+                self.$td.on('focusin', function(event) {
                     self.clearError($(this));
                     $(this).text(unFormatMoney($(this).text()));
                     $(this).selectText();
                 });
-                self.$td.on('blur', function(event) {
+                self.$td.on('focusout', function(event) {
                     debugger;
                     if(!isNaN($(this).text())) {
                         var amt = parseFloat($(this).text());
@@ -70,11 +70,11 @@ export class EditItem {
             case 'selector':
                 break;
             case 'number':
-                self.$td.on('focus', function(event) {
+                self.$td.on('focusin', function(event) {
                     self.clearError($(this));
                     $(this).selectText();
                 });
-                self.$td.on('blur', function(event) {
+                self.$td.on('focusout', function(event) {
                     if(!isNaN($(this).text())) {
                         self.contents = $(this).text();
                         self.datagrid.sendUpdate(self);
@@ -84,11 +84,11 @@ export class EditItem {
                 });
                 break;
             default:    // type 'text'
-                self.$td.on('focus', function(event) {
+                self.$td.on('focusin', function(event) {
                     self.clearError($(this));
                     $(this).selectText();                    
                 });
-                self.$td.on('blur', function(event) {
+                self.$td.on('focusout', function(event) {
                     // var id = $(this).parent().attr('item-id');
                     // var field = $(this).attr('field');
                     self.contents = $(this).text();
@@ -196,9 +196,17 @@ export class DataGrid {
     setEditable(row) {
         var editableRows = row.find('td[editable="true"]');
         editableRows.attr('contenteditable', true);
+        var fired = false;
 
         editableRows.keydown(function(e) {
+            if(fired) {
+                return;
+            }
+            fired = true;
+            setTimeout(function() { fired = false; }, 500);
+            // ENTER key
             if(e.keyCode == 13) {
+                debugger;
                 $(this).blur();
                 if(window.event.getModifierState("Shift")) {
                     focusPrevRow($(this));
@@ -207,6 +215,7 @@ export class DataGrid {
                 }
                 return false;
             }
+            // TAB key
             if(e.keyCode == 9) {
                 $(this).blur();
                 if(window.event.getModifierState("Shift")) {
@@ -216,7 +225,7 @@ export class DataGrid {
                 }
                 return false;
             }
-        })
+        });
     }
 
     removeEditable(row) {
@@ -248,6 +257,7 @@ function focusPrevRow($el) {
     if(nextRow.length == 0) {
         $el.focus();
     } else {
+        nextRow.children().eq(colIdx).click();
         nextRow.children().eq(colIdx).focus();
     }
 }
@@ -270,6 +280,7 @@ function focusNextRow($el) {
     if(nextRow.length == 0) {
         $el.focus();
     } else {
+        nextRow.children().eq(colIdx).click();
         nextRow.children().eq(colIdx).focus();
     }
 }
@@ -282,10 +293,11 @@ function focusPrevColumn($el) {
     if(i < 0) {
         i = colNum - 1;
     }
+    
     while(i != colIdx) {
         if(cols.eq(i).attr('editable') == 'true') {
-            $el.blur();
             cols.eq(i).focus();
+            cols.eq(i).focusin();
             break;
         }
         i--;
@@ -302,8 +314,8 @@ function focusNextColumn($el) {
     var i = colIdx+1 % colNum;
     while(i != colIdx) {
         if(cols.eq(i).attr('editable') == 'true') {
-            $el.blur();
             cols.eq(i).focus();
+            cols.eq(i).focusin();
             break;
         }
         i++;
