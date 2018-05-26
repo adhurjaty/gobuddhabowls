@@ -54,15 +54,22 @@ export class EditItem {
                     $(this).selectText();
                 });
                 self.$td.on('focusout', function(event) {
-                    debugger;
-                    if(!isNaN($(this).text())) {
-                        var amt = parseFloat($(this).text());
+                    // HACK: event firing multiple times causes
+                    // text to go to $0.00 without this
+                    var text = $(this).text().replace('$', '')
+                    if(text == undefined) {
+                        return;
+                    }
+                    // debugger;
+
+                    if(!isNaN(text)) {
+                        var amt = parseFloat(text);
                         $(this).attr('value', amt);
                         self.contents = formatMoney(amt);
-                        // debugger;
                         $(this).text(self.contents);
                         self.datagrid.sendUpdate(self);
                     } else {
+                        debugger;
                         $(this).text("$0.00");
                     }
                 });
@@ -199,32 +206,34 @@ export class DataGrid {
         var fired = false;
 
         editableRows.keydown(function(e) {
-            if(fired) {
-                return;
-            }
-            fired = true;
-            setTimeout(function() { fired = false; }, 500);
-            // ENTER key
-            if(e.keyCode == 13) {
-                debugger;
-                $(this).blur();
-                if(window.event.getModifierState("Shift")) {
-                    focusPrevRow($(this));
-                } else {
-                    focusNextRow($(this));
+            if(e.keyCode == 13 || e.keyCode == 9) {
+                if(fired) {
+                    return false;
                 }
-                return false;
-            }
-            // TAB key
-            if(e.keyCode == 9) {
+                fired = true;
+                setTimeout(function() { fired = false; }, 200);
                 $(this).blur();
-                if(window.event.getModifierState("Shift")) {
-                    focusPrevColumn($(this));
-                } else {
-                    focusNextColumn($(this));
+
+                // ENTER key
+                if(e.keyCode == 13) {
+                    if(window.event.getModifierState("Shift")) {
+                        focusPrevRow($(this));
+                    } else {
+                        focusNextRow($(this));
+                    }
+                    return false;
                 }
-                return false;
+                // TAB key
+                if(e.keyCode == 9) {
+                    if(window.event.getModifierState("Shift")) {
+                        focusPrevColumn($(this));
+                    } else {
+                        focusNextColumn($(this));
+                    }
+                    return false;
+                }
             }
+            
         });
     }
 
