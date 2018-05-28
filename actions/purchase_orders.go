@@ -301,6 +301,7 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 		vendors := getSortedVendors(tx)
 
 		// Make the errors available inside the html template
+		fmt.Println(verrs)
 		c.Set("errors", verrs)
 		c.Set("vendors", vendors)
 

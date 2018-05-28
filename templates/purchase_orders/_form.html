@@ -1,8 +1,18 @@
 <div class="row">
-        <%= f.InputTag("OrderDate", {data-provide: "datepicker", id: "new-order-date", value: today() }) %>
+    <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="received-order-checkbox">
+        <label class="form-check-label offset-md-3">Received order</label>
+    </div>
+</div>
+
+<div class="row">
+    <%= f.InputTag("OrderDate", {data-provide: "datepicker", id: "new-order-date", value: today() }) %>
+</div>
+<div class="row" id="received-date-input" style="display: none">
+    <%= f.InputTag("ReceivedDate", {data-provide: "datepicker", id: "new-received-date", value: today() }) %>
 </div>
 <div class="row">
-        <%= f.SelectTag("Vendor", {options: vendors, id: "new-order-vendor", name: "VendorID" }) %>
+    <%= f.SelectTag("Vendor", {options: vendors, id: "new-order-vendor", name: "VendorID" }) %>
 </div>
 <input type="text" name="Items" style="visibility: collapse;"/>
 <div class="row">
@@ -13,8 +23,10 @@
 
     </div>
 </div>
-<button class="btn btn-success" role="submit">Save</button>
+<%= if (errors) { %>
+    <div class="row alert alert-danger">
+        <%= errors %>
+    </div>
+<% } %>
 
-<script>
-    
-</script>
+<button class="btn btn-success" role="submit">Save</button>

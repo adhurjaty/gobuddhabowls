@@ -39,7 +39,20 @@ $(() => {
     });
 
     $('#new-order-form>button[role="submit"]').click(function(event) {
+        debugger;
+        if(!$('#received-order-checkbox').is(':checked')) {
+            $('#received-date-input').remove();
+        }
         sendOrderItems();
+    })
+
+    // $('#received-date-input').hide();
+    $('#received-order-checkbox').change(function() {
+        if(this.checked) {
+            $('#received-date-input').show();
+        } else {
+            $('#received-date-input').hide();
+        }
     })
 });
 
