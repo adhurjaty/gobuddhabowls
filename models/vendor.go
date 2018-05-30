@@ -59,19 +59,8 @@ func (v *Vendor) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 }
 
 // GetCategoryGroups gets all items the vendor sells grouped by category
-func (v Vendor) GetCategoryGroups() map[InventoryItemCategory]VendorItems {
-	outMap := make(map[InventoryItemCategory]VendorItems)
-
-	for _, item := range v.Items {
-		itemList, ok := outMap[item.InventoryItem.Category]
-		if ok {
-			outMap[item.InventoryItem.Category] = append(itemList, item)
-		} else {
-			outMap[item.InventoryItem.Category] = VendorItems{item}
-		}
-
-	}
-	return outMap
+func (v Vendor) GetCategoryGroups() map[InventoryItemCategory][]CountItem {
+	return GetCategoryGroups(v.Items.ToCountItems())
 }
 
 // SelectValue returns the ID for select input tags

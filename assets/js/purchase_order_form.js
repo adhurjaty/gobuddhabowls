@@ -38,13 +38,12 @@ $(() => {
         }
     });
 
-    $('#new-order-form>button[role="submit"]').click(function(event) {
-        debugger;
+    $('#purchase-order-form>button[role="submit"]').click(function(event) {
         if(!$('#received-order-checkbox').is(':checked')) {
             $('#received-date-input').remove();
         }
         sendOrderItems();
-    })
+    });
 
     // $('#received-date-input').hide();
     $('#received-order-checkbox').change(function() {
@@ -53,10 +52,10 @@ $(() => {
         } else {
             $('#received-date-input').hide();
         }
-    })
+    });
 });
 
-export function sendOrderItems() {
+function sendOrderItems() {
     var $input = $('form>input[name="Items"]');
     var data = $('#vendor-items-table').find('tr[item-id]').map(function(i, el) {
         return {
@@ -70,12 +69,6 @@ export function sendOrderItems() {
 }
 
 function orderCountChanged(editItem) {
-    // TODO: fix the fact that this gets called twice per edit
-    // this solution does not work
-    // if(!editItem.isEditable) {
-    //     return;
-    // }
-
     // change price extension for row
     var $tr = editItem.$td.parent();
     var price = parseFloat($tr.find('td[name="price"]').attr('value')),

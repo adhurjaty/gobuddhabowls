@@ -9,7 +9,7 @@ require("./helpers.js");
 require("./period_selector.js");
 require("./inventory_item_categories.js");
 require("./purchase_orders_index.js");
-require("./new_purchase_order.js");
+require("./purchase_order_form.js");
 
 $(() => {
     

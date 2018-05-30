@@ -60,6 +60,21 @@ func (v *VendorItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 	return validate.NewErrors(), nil
 }
 
+// GetCategory returns the inventory item category of the vendor item
+func (v *VendorItem) GetCategory() InventoryItemCategory {
+	return v.InventoryItem.Category
+}
+
+// ToCountItems converts the VendorItems to a CountItem slice
+func (v *VendorItems) ToCountItems() []CountItem {
+	items := make([]CountItem, len(*v))
+	for i := 0; i < len(*v); i++ {
+		items[i] = &(*v)[i]
+	}
+
+	return items
+}
+
 // Sort sorts the items based on category then inventory item indices
 func (v *VendorItems) Sort() {
 	sort.Slice(*v, func(i, j int) bool {

@@ -227,6 +227,7 @@ func (v PurchaseOrdersResource) New(c buffalo.Context) error {
 	vendors := getSortedVendors(tx)
 
 	c.Set("vendors", vendors)
+	c.Set("purchaseOrder", models.PurchaseOrder{})
 
 	return c.Render(200, r.Auto(c, &models.PurchaseOrder{}))
 }
@@ -418,12 +419,29 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty PurchaseOrder
-	purchaseOrder := &models.PurchaseOrder{}
-
-	if err := tx.Find(purchaseOrder, c.Param("purchase_order_id")); err != nil {
+	purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
+
+	c.Set("vendors", models.Vendors{purchaseOrder.Vendor})
+	c.Set("purchaseOrder", purchaseOrder)
+
+	categoryDetails := purchaseOrder.GetCategoryCosts()
+	c.Set("categoryDetails", categoryDetails)
+	c.Set("title", "Category Breakdown")
+
+	categoryGroups := models.GetCategoryGroups(purchaseOrder.Items.ToCountItems())
+	// get and sort keys from the map
+	sortedCategories := models.InventoryItemCategories{}
+	for k := range categoryGroups {
+		sortedCategories = append(sortedCategories, k)
+	}
+	sort.Slice(sortedCategories, func(i, j int) bool {
+		return sortedCategories[i].Index < sortedCategories[j].Index
+	})
+	c.Set("sortedCategories", sortedCategories)
+	c.Set("categoryGroups", categoryGroups)
 
 	return c.Render(200, r.Auto(c, purchaseOrder))
 }
