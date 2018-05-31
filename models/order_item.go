@@ -70,6 +70,11 @@ func (o *OrderItems) ToCountItems() []CountItem {
 	return items
 }
 
+// Extension returns the total cost (price * count) of item
+func (o *OrderItem) Extension() float64 {
+	return o.Price * o.Count
+}
+
 // Sort sorts the items based on category then inventory item indices
 func (o *OrderItems) Sort() {
 	sort.Slice(*o, func(i, j int) bool {

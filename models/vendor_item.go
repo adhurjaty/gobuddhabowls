@@ -65,6 +65,16 @@ func (v *VendorItem) GetCategory() InventoryItemCategory {
 	return v.InventoryItem.Category
 }
 
+// ToOrderItem converts a vendor item to an order item (0 count and no order ID)
+func (v *VendorItem) ToOrderItem() *OrderItem {
+	return &OrderItem{
+		InventoryItem:   v.InventoryItem,
+		InventoryItemID: v.InventoryItemID,
+		Count:           0,
+		Price:           v.Price,
+	}
+}
+
 // ToCountItems converts the VendorItems to a CountItem slice
 func (v *VendorItems) ToCountItems() []CountItem {
 	items := make([]CountItem, len(*v))
@@ -80,4 +90,15 @@ func (v *VendorItems) Sort() {
 	sort.Slice(*v, func(i, j int) bool {
 		return (*v)[i].InventoryItem.GetSortValue() < (*v)[j].InventoryItem.GetSortValue()
 	})
+}
+
+// ToOrderItems converts list vendor items to order items
+func (v *VendorItems) ToOrderItems() *OrderItems {
+	items := OrderItems{}
+	for _, vi := range *v {
+		oItem := vi.ToOrderItem()
+		items = append(items, *oItem)
+	}
+
+	return &items
 }

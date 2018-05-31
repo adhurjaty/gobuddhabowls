@@ -248,7 +248,8 @@ func NewOrderVendorChanged(c buffalo.Context) error {
 	}
 
 	// format vendor items to be shown in the UI
-	categoryGroups := selectedVendor.GetCategoryGroups()
+	vendOrderItems := selectedVendor.Items.ToOrderItems()
+	categoryGroups := models.GetCategoryGroups(vendOrderItems.ToCountItems())
 
 	// get and sort keys from the map
 	sortedCategories := models.InventoryItemCategories{}
