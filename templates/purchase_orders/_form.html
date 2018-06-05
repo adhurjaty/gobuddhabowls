@@ -28,12 +28,12 @@
 
 <input type="text" name="Items" style="visibility: collapse;"/>
 <div class="row">
-    <div id="vendor-items-table">
+    <div id="vendor-items-table" class="col-md-6">
         <%= if (len(purchaseOrder.Items) > 0) { %>
             <%= partial("purchase_orders/inventory_items_datagrid.html") %>
         <% } %>    
     </div>
-    <div id="category-breakdown">
+    <div id="category-breakdown" class="col-md-6">
         <%= if (len(purchaseOrder.Items) > 0) { %>
             <%= partial("partials/horizontal_percentage_chart.html", {categoryDetails: categoryDetails, title: title}) %>
         <% } %> 

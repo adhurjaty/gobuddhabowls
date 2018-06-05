@@ -18,25 +18,16 @@ $(() => {
             error: function(xhr, status, err) {
                 var errMessage = xhr.responseText;
                 debugger;
+            },
+            success: function(data, status, xhr) {
+                initDatagrid();
             }
-            // success: function(data, status, xhr) {
-            //     editItem.onUpdateSuccess();
-            // }
         });
     });
 
-    $('#vendor-items-table').on('DOMNodeInserted', function(event) {
-        if(event.target.parentNode.id == 'vendor-items-table') {
-            var grid = $('.datagrid .datagrid').get();
-            // $.each($('.datagrid'), function(i, grid) {
-            var dg = new DataGrid(grid, orderCountChanged);
-
-            $.each($('.datagrid td[editable="true"]'), function(j, el) {
-                var ei = new EditItem(dg, $(el));
-            });
-            // });
-        }
-    });
+    if($('#vendor-items-table').children().length > 0) {
+        initDatagrid();
+    }
 
     $('#purchase-order-form>button[role="submit"]').click(function(event) {
         if(!$('#received-order-checkbox').is(':checked')) {
@@ -55,11 +46,22 @@ $(() => {
     });
 });
 
+function initDatagrid() {
+    var grid = $('.datagrid .datagrid').get();
+    // $.each($('.datagrid'), function(i, grid) {
+    var dg = new DataGrid(grid, orderCountChanged);
+
+    $.each($('.datagrid td[editable="true"]'), function(j, el) {
+        var ei = new EditItem(dg, $(el));
+    });
+}
+
 function sendOrderItems() {
     var $input = $('form>input[name="Items"]');
     var data = $('#vendor-items-table').find('tr[item-id]').map(function(i, el) {
         return {
-            'inventory_item_id': $(el).attr('item-id'),
+            'id': $(el).attr('item-id'),
+            'inventory_item_id': $(el).attr('inv-item-id'),
             'price': $(el).find('td[name="price"]').attr('value'),
             'count': $(el).find('td[name="count"]').text()
         };
@@ -81,7 +83,7 @@ function orderCountChanged(editItem) {
     var on_change_url = '/purchase_orders/count_changed'
     var itemsJSON = $('#vendor-items-table').find('tr[item-id]').map(function(i, el) {
         return {
-            'inventory_item_id': $(el).attr('item-id'),
+            'inventory_item_id': $(el).attr('inv-item-id'),
             'price': $(el).find('td[name="price"]').attr('value'),
             'count': $(el).find('td[name="count"]').text()
         };

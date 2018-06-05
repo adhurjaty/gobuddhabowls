@@ -81,3 +81,21 @@ func (o *OrderItems) Sort() {
 		return (*o)[i].InventoryItem.GetSortValue() < (*o)[j].InventoryItem.GetSortValue()
 	})
 }
+
+// LoadOrderItems populates the nested objects in a purchase order's items
+func LoadOrderItems(tx *pop.Connection, po *PurchaseOrder) error {
+	for i := 0; i < len(po.Items); i++ {
+		count := po.Items[i].Count
+		if err := tx.Eager().Find(&po.Items[i], po.Items[i].ID); err != nil {
+			return err
+		}
+		if err := tx.Eager().Find(&po.Items[i].InventoryItem, po.Items[i].InventoryItemID); err != nil {
+			return err
+		}
+		po.Items[i].Count = count
+	}
+
+	po.Items.Sort()
+
+	return nil
+}

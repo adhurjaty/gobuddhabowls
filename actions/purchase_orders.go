@@ -303,7 +303,6 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 		vendors := getSortedVendors(tx)
 
 		// Make the errors available inside the html template
-		fmt.Println(verrs)
 		c.Set("errors", verrs)
 		c.Set("vendors", vendors)
 
@@ -317,8 +316,8 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	if !ok {
 		return c.Error(500, errors.New("Could not get items from form params"))
 	}
-	fmt.Println(itemsParamJSON)
-	err = getItemsFromParams(itemsParamJSON[0], purchaseOrder)
+
+	err = setItemsFromParams(itemsParamJSON[0], purchaseOrder)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -330,9 +329,16 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 			return errors.WithStack(err)
 		}
 
-		if verrs != nil {
-			fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!!!!")
-			fmt.Println(verrs)
+		if verrs.HasAny() {
+			vendors := getSortedVendors(tx)
+
+			// Make the errors available inside the html template
+			c.Set("errors", verrs)
+			c.Set("vendors", vendors)
+
+			// Render again the new.html template that the user can
+			// correct the input.
+			return c.Render(422, r.Auto(c, purchaseOrder))
 		}
 		// need to check whether this is the most recent order from this vendor
 		// TODO: move this to when order is received
@@ -355,26 +361,6 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	return c.Render(201, r.Auto(c, purchaseOrder))
 }
 
-func getItemsFromParams(itemsParamJSON string, purchaseOrder *models.PurchaseOrder) error {
-	orderItems := models.OrderItems{}
-	// itemsParamJSON, ok := form["Items"]
-
-	err := json.Unmarshal([]byte(itemsParamJSON), &orderItems)
-	if err != nil {
-		return err
-	}
-
-	purchaseOrder.Items = models.OrderItems{}
-	for _, item := range orderItems {
-		if item.Count > 0 {
-			item.OrderID = purchaseOrder.ID
-			purchaseOrder.Items = append(purchaseOrder.Items, item)
-		}
-	}
-
-	return nil
-}
-
 // PurchaseOrdersCountChanged updates the UI for new and edit orders when the count
 // or price change. It displays a category price breakdown and updates
 // the price extension
@@ -385,7 +371,7 @@ func PurchaseOrdersCountChanged(c buffalo.Context) error {
 	if !ok {
 		return c.Error(500, errors.New("Could not get items from form"))
 	}
-	err := getItemsFromParams(itemsJSON[0], purchaseOrder)
+	err := setItemsFromParams(itemsJSON[0], purchaseOrder)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -425,24 +411,7 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 		return c.Error(404, err)
 	}
 
-	c.Set("vendors", models.Vendors{purchaseOrder.Vendor})
-	c.Set("purchaseOrder", purchaseOrder)
-
-	categoryDetails := purchaseOrder.GetCategoryCosts()
-	c.Set("categoryDetails", categoryDetails)
-	c.Set("title", "Category Breakdown")
-
-	categoryGroups := models.GetCategoryGroups(purchaseOrder.Items.ToCountItems())
-	// get and sort keys from the map
-	sortedCategories := models.InventoryItemCategories{}
-	for k := range categoryGroups {
-		sortedCategories = append(sortedCategories, k)
-	}
-	sort.Slice(sortedCategories, func(i, j int) bool {
-		return sortedCategories[i].Index < sortedCategories[j].Index
-	})
-	c.Set("sortedCategories", sortedCategories)
-	c.Set("categoryGroups", categoryGroups)
+	setEditPOView(c, &purchaseOrder)
 
 	return c.Render(200, r.Auto(c, purchaseOrder))
 }
@@ -486,13 +455,56 @@ func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
 		return c.Render(422, r.String(strings.Join(errorMsgs, "\n")))
 	}
 
+	// Create the OrderItems as well
+	itemsParamJSON, ok := c.Request().Form["Items"]
+	if !ok {
+		// case for editing item within main datagrid
+		return c.Render(200, r.String("success"))
+	}
+
+	err = setItemsFromParams(itemsParamJSON[0], purchaseOrder)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	for _, item := range purchaseOrder.Items {
+
+		verrs, err := tx.ValidateAndUpdate(&item)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+
+		if verrs.HasAny() {
+			// models.LoadOrderItems(tx, purchaseOrder)
+			po, err := models.LoadPurchaseOrder(tx, purchaseOrder.ID.String())
+			if err != nil {
+				return errors.WithStack(err)
+			}
+			setEditPOView(c, &po)
+
+			// Render again the edit.html template that the user can
+			// correct the input.
+			return c.Render(422, r.Auto(c, &po))
+		}
+		// need to check whether this is the most recent order from this vendor
+		// TODO: move this to when order is received
+		// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
+		// for _, vendorItem := range selectedVendor.Items {
+		// 	if vendorItem.InventoryItemID == item.InventoryItemID {
+		// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
+		// 			vendorItem.Price = item.Price
+		// 			tx.ValidateAndUpdate(vendorItem)
+		// 		}
+		// 		break
+		// 	}
+		// }
+	}
+
 	// If there are no errors set a success message
-	// c.Flash().Add("success", "PurchaseOrder was updated successfully")
+	c.Flash().Add("success", "PurchaseOrder was updated successfully")
 
 	// and redirect to the purchase_orders index page
-	// return c.Render(200, r.Auto(c, purchaseOrder))
-	return c.Render(200, r.String("success"))
-
+	return c.Render(200, r.Auto(c, purchaseOrder))
 }
 
 // Destroy deletes a PurchaseOrder from the DB. This function is mapped
@@ -540,4 +552,44 @@ func getSortedVendors(tx *pop.Connection) models.Vendors {
 	vendors = append(models.Vendors{models.Vendor{}}, vendors...)
 
 	return vendors
+}
+
+func setEditPOView(c buffalo.Context, purchaseOrder *models.PurchaseOrder) {
+	c.Set("vendors", models.Vendors{purchaseOrder.Vendor})
+	c.Set("purchaseOrder", purchaseOrder)
+
+	categoryDetails := purchaseOrder.GetCategoryCosts()
+	c.Set("categoryDetails", categoryDetails)
+	c.Set("title", "Category Breakdown")
+
+	categoryGroups := models.GetCategoryGroups(purchaseOrder.Items.ToCountItems())
+	// get and sort keys from the map
+	sortedCategories := models.InventoryItemCategories{}
+	for k := range categoryGroups {
+		sortedCategories = append(sortedCategories, k)
+	}
+	sort.Slice(sortedCategories, func(i, j int) bool {
+		return sortedCategories[i].Index < sortedCategories[j].Index
+	})
+	c.Set("sortedCategories", sortedCategories)
+	c.Set("categoryGroups", categoryGroups)
+}
+
+func setItemsFromParams(itemsParamJSON string, purchaseOrder *models.PurchaseOrder) error {
+	orderItems := models.OrderItems{}
+
+	err := json.Unmarshal([]byte(itemsParamJSON), &orderItems)
+	if err != nil {
+		return err
+	}
+
+	purchaseOrder.Items = models.OrderItems{}
+	for _, item := range orderItems {
+		if item.Count > 0 {
+			item.OrderID = purchaseOrder.ID
+			purchaseOrder.Items = append(purchaseOrder.Items, item)
+		}
+	}
+
+	return nil
 }

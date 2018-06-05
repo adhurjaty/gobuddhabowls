@@ -31,7 +31,7 @@
                                 <tbody>
                                     <!-- list OrderItem -->
                                     <%= for (Item) in categoryGroups[category] { %>
-                                        <tr item-id="<%= Item.InventoryItem.ID %>">
+                                        <tr item-id="<%= Item.ID %>" inv-item-id="<%= Item.InventoryItem.ID %>">
                                             <td name="name" width="40%"><%= Item.InventoryItem.Name %></td>
                                             <td name="price" width="22%" editable="true" data-type="money" value="<%= Item.Price %>"><%= format_money(Item.Price) %></td>
                                             <td name="count" width="15%" editable="true" data-type="number"><%= Item.Count %></td>

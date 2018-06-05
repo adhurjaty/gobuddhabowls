@@ -98,14 +98,7 @@ func LoadPurchaseOrder(tx *pop.Connection, id string) (PurchaseOrder, error) {
 		return po, err
 	}
 
-	for i := 0; i < len(po.Items); i++ {
-		if err := tx.Eager().Find(&po.Items[i], po.Items[i].ID); err != nil {
-			return po, err
-		}
-		if err := tx.Eager().Find(&po.Items[i].InventoryItem, po.Items[i].InventoryItemID); err != nil {
-			return po, err
-		}
-	}
+	LoadOrderItems(tx, &po)
 
 	return po, nil
 }
@@ -122,16 +115,7 @@ func LoadPurchaseOrders(q *pop.Query) (*PurchaseOrders, error) {
 	// I don't love the fact that I need to load the nested models manually
 	// TODO: look for a solution to eager loading nested objects
 	for _, po := range *poList {
-		for i := 0; i < len(po.Items); i++ {
-			if err := q.Connection.Eager().Find(&po.Items[i], po.Items[i].ID); err != nil {
-				return nil, err
-			}
-			if err := q.Connection.Eager().Find(&po.Items[i].InventoryItem, po.Items[i].InventoryItemID); err != nil {
-				return nil, err
-			}
-		}
-
-		po.Items.Sort()
+		LoadOrderItems(q.Connection, &po)
 	}
 
 	return poList, nil
