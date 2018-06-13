@@ -1,5 +1,9 @@
 package actions
 
+// TODO: Change this to Presenter-ViewModel pattern
+// each handler should get a presenter object and c.Set() all
+// appropriate variables
+
 import (
 	"buddhabowls/componentcontexts"
 	"buddhabowls/models"

@@ -28,10 +28,22 @@
 
 <input type="text" name="Items" style="visibility: collapse;"/>
 <div class="row">
-    <div id="vendor-items-table" class="col-md-6">
+    <div class="col-md-6">
         <%= if (len(purchaseOrder.Items) > 0) { %>
-            <%= partial("purchase_orders/inventory_items_datagrid.html") %>
-        <% } %>    
+            <div class="input-group d-flex justify-content-end">
+                <button class="btn btn-default" type="button" id="add-po-item">
+                    <span class="fa fa-plus"/>
+                </button>
+                <button class="btn btn-default" type="button" id="remove-po-item" disabled>
+                    <span class="fa fa-minus"/>
+                </button>
+            </div>
+        <% } %>
+        <div id="vendor-items-table">
+            <%= if (len(purchaseOrder.Items) > 0) { %>
+                <%= partial("purchase_orders/inventory_items_datagrid.html") %>
+            <% } %>    
+        </div>
     </div>
     <div id="category-breakdown" class="col-md-6">
         <%= if (len(purchaseOrder.Items) > 0) { %>

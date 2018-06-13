@@ -44,6 +44,16 @@ $(() => {
             $('#received-date-input').hide();
         }
     });
+
+    
+    $('#add-po-item').click(function(event) {
+        $('#add-po-modal').show();
+    });
+
+    $('#remove-po-item').click(function(event) {
+        var selected = $('.datagrid .datagrid .tr:active');
+        selected.remove();
+    });
 });
 
 function initDatagrid() {
@@ -54,6 +64,13 @@ function initDatagrid() {
     $.each($('.datagrid td[editable="true"]'), function(j, el) {
         var ei = new EditItem(dg, $(el));
     });
+
+    $.each($('.datagrid .datagrid tr'), function(i, el) {
+        $(el).click(function(event) {
+            $('#remove-po-item').removeAttr('disabled');
+        })
+    });
+
 }
 
 function sendOrderItems() {
