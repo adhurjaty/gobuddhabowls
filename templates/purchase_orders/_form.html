@@ -31,7 +31,7 @@
     <div class="col-md-6">
         <%= if (len(purchaseOrder.Items) > 0) { %>
             <div class="input-group d-flex justify-content-end">
-                <button class="btn btn-default" type="button" id="add-po-item">
+                <button class="btn btn-default" type="button" id="add-po-item" data-toggle="modal" data-target="#add-item-modal">
                     <span class="fa fa-plus"/>
                 </button>
                 <button class="btn btn-default" type="button" id="remove-po-item" disabled>

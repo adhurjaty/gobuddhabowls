@@ -138,7 +138,10 @@ func PurchaseOrderDateChanged(c buffalo.Context) error {
 	barChartData := presentationlayer.GetBarChartJSONData(openPos, recPos)
 	c.Set("barChartData", barChartData)
 
-	years := store.Get("years").([]int)
+	years, ok := store.Get("years").([]int)
+	if !ok {
+		years, _ = models.GetYears(tx)
+	}
 	c.Set("years", years)
 
 	return c.Render(200, r.JavaScript("purchase_orders/replace_table"))
@@ -420,6 +423,42 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 	return c.Render(200, r.Auto(c, purchaseOrder))
 }
 
+// AddPurchaseOrderItem adds an order item to the order item list
+// mapped to /purchase_orders/add_item/{purchase_order_id}
+func AddPurchaseOrderItem(c buffalo.Context) error {
+	fmt.Println("HERE")
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	vendorItem := &models.VendorItem{}
+	vendorItemID := c.Request().Form["VendorItemID"][0]
+	fmt.Println(c.Request().Form["VendorItemID"])
+
+	if err := tx.Find(vendorItem, vendorItemID); err != nil {
+		return c.Error(500, err)
+	}
+
+	purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
+	if err != nil {
+		return c.Error(404, err)
+	}
+
+	// Bind PurchaseOrder to the html form elements
+	if err := c.Bind(purchaseOrder); err != nil {
+		fmt.Println(err)
+		return errors.WithStack(err)
+	}
+
+	purchaseOrder.Items = append(purchaseOrder.Items, *vendorItem.ToOrderItem())
+	purchaseOrder.Items.Sort()
+
+	setEditPOView(c, &purchaseOrder)
+
+	return c.Render(200, r.JavaScript("purchase_orders/replace_new_vendor_items"))
+}
+
 // Update changes a PurchaseOrder in the DB. This function is mapped to
 // the path PUT /purchase_orders/{purchase_order_id}
 func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
@@ -577,6 +616,9 @@ func setEditPOView(c buffalo.Context, purchaseOrder *models.PurchaseOrder) {
 	})
 	c.Set("sortedCategories", sortedCategories)
 	c.Set("categoryGroups", categoryGroups)
+
+	tx := c.Value("tx").(*pop.Connection)
+	c.Set("remainingVendorItems", *getRemainingVendorItems(purchaseOrder, tx))
 }
 
 func setItemsFromParams(itemsParamJSON string, purchaseOrder *models.PurchaseOrder) error {
@@ -596,4 +638,28 @@ func setItemsFromParams(itemsParamJSON string, purchaseOrder *models.PurchaseOrd
 	}
 
 	return nil
+}
+
+func getRemainingVendorItems(po *models.PurchaseOrder, tx *pop.Connection) *models.VendorItems {
+	vendorItems := models.VendorItems{}
+	vendor, err := models.LoadVendor(tx, po.VendorID.String())
+	if err != nil {
+		return nil
+	}
+
+	for _, vendorItem := range vendor.Items {
+		contains := func(vendorItem models.VendorItem) bool {
+			for _, orderItem := range po.Items {
+				if orderItem.InventoryItemID == vendorItem.InventoryItemID {
+					return true
+				}
+			}
+			return false
+		}(vendorItem)
+		if !contains {
+			vendorItems = append(vendorItems, vendorItem)
+		}
+	}
+
+	return &vendorItems
 }

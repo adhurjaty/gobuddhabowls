@@ -75,6 +75,22 @@ func (v *VendorItem) ToOrderItem() *OrderItem {
 	}
 }
 
+// SelectValue returns the ID for select input tags
+func (v VendorItem) SelectValue() interface{} {
+	if v.ID.String() == (uuid.UUID{}).String() {
+		return ""
+	}
+	return v.ID
+}
+
+// SelectLabel returs the name for select input tags
+func (v VendorItem) SelectLabel() string {
+	if v.ID.String() == (uuid.UUID{}).String() {
+		return "- Select an item -"
+	}
+	return v.InventoryItem.Name
+}
+
 // ToCountItems converts the VendorItems to a CountItem slice
 func (v *VendorItems) ToCountItems() []CountItem {
 	items := make([]CountItem, len(*v))

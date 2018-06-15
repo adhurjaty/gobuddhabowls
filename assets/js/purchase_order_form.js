@@ -44,11 +44,10 @@ $(() => {
             $('#received-date-input').hide();
         }
     });
-
     
-    $('#add-po-item').click(function(event) {
-        $('#add-po-modal').show();
-    });
+    // $('#add-po-item').click(function(event) {
+    //     $('#add-po-modal').show();
+    // });
 
     $('#remove-po-item').click(function(event) {
         var selected = $('.datagrid .datagrid .tr:active');

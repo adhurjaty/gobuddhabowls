@@ -1,4 +1,4 @@
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="add-item-modal" tabindex="-1" role="dialog" aria-labelledby="AddItem" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -7,15 +7,18 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <%= form_for(purchaseOrder, {action: purchaseOrderPath({ purchase_order_id: purchaseOrder.ID }), method: "PUT", id: "purchase-order-form"}) { %>
+      <%= form_for(purchaseOrder, {action: purchaseOrderAddItemPath({ purchase_order_id: purchaseOrder.ID }), method: "GET" }) { %>
 
         <div class="modal-body">
+          <div class="hidden-items">
+            <%= f.InputTag("Items", {name: "Items", value: json(purchaseOrder.Items) }) %>
+          </div>
           <%= f.SelectTag("Item", {options: remainingVendorItems, name: "VendorItemID" }) %>
           
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success" data-dismiss="modal" role="submit">OK</button>
+          <button class="btn btn-success" data-dismiss="modal" role="submit">OK</button>
         </div>
       <% } %>
     </div>
