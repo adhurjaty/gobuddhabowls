@@ -20,6 +20,7 @@ $(() => {
     $('#summary-table').on('DOMNodeInserted', function(event) {
         if(event.target.parentNode.id == 'summary-table') {
             var $el = $(this).children().first();
+            var $el = $('#summary-table').children().first();
             if($el.length > 0) {
                 var height = parseInt($el.attr('height'));
                 var data = unescape($el.attr('data'));
@@ -32,6 +33,7 @@ $(() => {
     $('#trend-chart').on('DOMNodeInserted', function(event) {
         if(event.target.parentNode.id == 'trend-chart') {
             var $el = $(this).children().first();
+            var $el = $('#trend-chart').children().first();
             if($el.length > 0) {
                 var height = parseInt($el.attr('height'));
                 var data = unescape($el.attr('data'));

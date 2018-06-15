@@ -1,4 +1,4 @@
-// import { datepicker } from 'bootstrap-datepicker';
+import "bootstrap-datepicker";
 import { EditItem, DataGrid } from './datagrid.js';
 import { formatMoney } from './helpers';
 
