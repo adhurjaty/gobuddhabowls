@@ -49,10 +49,10 @@ $(() => {
         $('#modal-form').submit();
     });
 
-    $('#remove-po-item').click(function(event) {
-        var selected = $('.datagrid .datagrid .tr:active');
-        selected.remove();
-    });
+    // $('#remove-po-item').click(function(event) {
+    //     var selected = $('.datagrid .datagrid .tr:active');
+    //     selected.remove();
+    // });
 });
 
 function initDatagrid() {

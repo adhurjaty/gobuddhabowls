@@ -1,3 +1,4 @@
+import "bootstrap-datepicker";
 import { replaceUrlId, formatMoney, unFormatMoney } from "./helpers";
 
 var collapsedCaret = 'fa-caret-right';
