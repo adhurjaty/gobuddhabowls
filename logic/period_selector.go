@@ -1,13 +1,16 @@
-package helpers
+package logic
 
 import (
+	"buddhabowls/helpers"
 	"errors"
 	"fmt"
 	"time"
 )
 
-const weekStart = 1
-const DayStart = time.Hour * 4
+const (
+	weekStart = 1
+	dayStart  = time.Hour * 4
+)
 
 // PeriodSelector holds values for periods of the year
 type PeriodSelector struct {
@@ -15,21 +18,21 @@ type PeriodSelector struct {
 	Year    int
 }
 
-// Init populates a new period selector given a year
-func (p *PeriodSelector) Init(year int) {
+// NewPeriodSelector creates a new period selector given a year
+func NewPeriodSelector(year int) PeriodSelector {
+	p := PeriodSelector{}
 	p.Year = year
 	theFirst := time.Date(year, 1, 1, 0, 0, 0, 0, time.UTC)
 	firstWeekStartDiff := ((7 + weekStart) - int(theFirst.Weekday())) % 7
 
 	p.Periods = []Period{}
-	startTime := theFirst.Add(DayStart)
+	startTime := theFirst.Add(dayStart)
 	endTime := startTime
 	index := 1
-	var period Period
+
 	if firstWeekStartDiff != 0 {
-		period := *new(Period)
 		endTime = startTime.AddDate(0, 0, firstWeekStartDiff)
-		period.Init(startTime, endTime)
+		period := NewPeriod(startTime, endTime)
 		period.Index = index
 		index++
 		p.Periods = append(p.Periods, period)
@@ -37,19 +40,20 @@ func (p *PeriodSelector) Init(year int) {
 	}
 
 	for i := 0; i < 13; i++ {
-		period = *new(Period)
 		endTime = startTime.AddDate(0, 0, 28)
 
 		// if the period goes to the end of the year
 		if endTime.YearDay() < startTime.YearDay() {
-			endTime = time.Date(year+1, 1, 1, 0, 0, 0, 0, time.UTC).Add(DayStart)
+			endTime = time.Date(year+1, 1, 1, 0, 0, 0, 0, time.UTC).Add(dayStart)
 		}
-		period.Init(startTime, endTime)
+		period := NewPeriod(startTime, endTime)
 		period.Index = index
 		p.Periods = append(p.Periods, period)
 		startTime = endTime
 		index++
 	}
+
+	return p
 }
 
 // GetPeriod gets the period that contains the date provided
@@ -76,8 +80,9 @@ type Period struct {
 	Weeks []Week
 }
 
-// Init populates a period
-func (p *Period) Init(startTime time.Time, endTime time.Time) {
+// NewPeriod creates a new period
+func NewPeriod(startTime time.Time, endTime time.Time) Period {
+	p := Period{}
 	dayDiff := int(endTime.Sub(startTime).Hours() / 24)
 	fullWeeks := int(dayDiff / 7)
 	p.Weeks = []Week{}
@@ -95,6 +100,8 @@ func (p *Period) Init(startTime time.Time, endTime time.Time) {
 		week = Week{StartTime: startTime, EndTime: endTime, Index: fullWeeks + 1}
 		p.Weeks = append(p.Weeks, week)
 	}
+
+	return p
 }
 
 // GetWeek get the week that contains the date
@@ -126,19 +133,19 @@ func (p Period) String() string {
 }
 
 func (p Period) StartDateStr() string {
-	return FormatDate(p.UnoffsetStart())
+	return helpers.FormatDate(p.UnoffsetStart())
 }
 
 func (p Period) EndDateStr() string {
-	return FormatDate(p.UnoffsetEnd())
+	return helpers.FormatDate(p.UnoffsetEnd())
 }
 
 func (p Period) UnoffsetStart() time.Time {
-	return p.StartTime().Add(-DayStart)
+	return p.StartTime().Add(-dayStart)
 }
 
 func (p Period) UnoffsetEnd() time.Time {
-	return p.EndTime().Add(-DayStart - time.Nanosecond)
+	return p.EndTime().Add(-dayStart - time.Nanosecond)
 }
 
 func (p Period) Equals(other Period) bool {
@@ -160,19 +167,19 @@ func (w Week) String() string {
 }
 
 func (w Week) StartDateStr() string {
-	return FormatDate(w.StartTime.Add(-DayStart))
+	return helpers.FormatDate(w.StartTime.Add(-dayStart))
 }
 
 func (w Week) EndDateStr() string {
-	return FormatDate(w.EndTime.Add(-DayStart - time.Nanosecond))
+	return helpers.FormatDate(w.EndTime.Add(-dayStart - time.Nanosecond))
 }
 
 func (w Week) UnoffsetStart() time.Time {
-	return w.StartTime.Add(-DayStart)
+	return w.StartTime.Add(-dayStart)
 }
 
 func (w Week) UnoffsetEnd() time.Time {
-	return w.EndTime.Add(-DayStart - time.Nanosecond)
+	return w.EndTime.Add(-dayStart - time.Nanosecond)
 }
 
 func (w Week) Equals(other Week) bool {
