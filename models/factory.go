@@ -28,6 +28,7 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 		}
 		return nil
 	}
+
 	return errors.New("unimplemented type")
 }
 

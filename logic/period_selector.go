@@ -59,7 +59,7 @@ func NewPeriodSelector(year int) PeriodSelector {
 // GetPeriod gets the period that contains the date provided
 func (p PeriodSelector) GetPeriod(date time.Time) Period {
 	for _, period := range p.Periods {
-		if date.Unix() >= period.UnoffsetStart().Unix() && date.Unix() < period.UnoffsetEnd().Unix() {
+		if date.Unix() >= UnoffsetStart(period.StartTime()).Unix() && date.Unix() < UnoffsetEnd(period.EndTime()).Unix() {
 			return period
 		}
 	}
@@ -126,26 +126,18 @@ func (p Period) EndTime() time.Time {
 }
 
 func (p Period) String() string {
-	start := p.UnoffsetStart()
-	end := p.UnoffsetEnd()
+	start := UnoffsetStart(p.StartTime())
+	end := UnoffsetEnd(p.EndTime())
 	return fmt.Sprintf("P%d %d/%d-%d/%d", p.Index, start.Month(), start.Day(),
 		end.Month(), end.Day())
 }
 
 func (p Period) StartDateStr() string {
-	return helpers.FormatDate(p.UnoffsetStart())
+	return helpers.FormatDate(UnoffsetStart(p.StartTime()))
 }
 
 func (p Period) EndDateStr() string {
-	return helpers.FormatDate(p.UnoffsetEnd())
-}
-
-func (p Period) UnoffsetStart() time.Time {
-	return p.StartTime().Add(-dayStart)
-}
-
-func (p Period) UnoffsetEnd() time.Time {
-	return p.EndTime().Add(-dayStart - time.Nanosecond)
+	return helpers.FormatDate(UnoffsetEnd(p.EndTime()))
 }
 
 func (p Period) Equals(other Period) bool {
@@ -184,4 +176,12 @@ func (w Week) UnoffsetEnd() time.Time {
 
 func (w Week) Equals(other Week) bool {
 	return w.StartTime.Unix() == other.StartTime.Unix()
+}
+
+func UnoffsetStart(t time.Time) time.Time {
+	return t.Add(-dayStart)
+}
+
+func UnoffsetEnd(t time.Time) time.Time {
+	return t.Add(-dayStart - time.Nanosecond)
 }

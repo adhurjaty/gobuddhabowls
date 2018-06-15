@@ -61,7 +61,6 @@ func PurchaseOrderDateChanged(c buffalo.Context) error {
 	// get the parameters from URL
 	paramsMap, ok := c.Params().(url.Values)
 	if !ok {
-		fmt.Println(fmt.Errorf("Could not find params"))
 		return c.Error(500, errors.New("Could not parse params"))
 	}
 
@@ -196,6 +195,12 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 
 	}
 
+	presenter := presentation.Presenter{}
+	periodData, err := presenter.GetPeriodData(tx)
+	if err != nil {
+		return err
+	}
+	c.Set("periodData", periodData)
 	c.Set("pSelectorContext", periodSelectorContext)
 	c.Set("startTime", nulls.Time{Valid: true, Time: startTime})
 	c.Set("endTime", nulls.Time{Valid: true, Time: endTime})
