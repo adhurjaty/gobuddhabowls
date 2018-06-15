@@ -90,37 +90,6 @@ func (p PurchaseOrder) GetCategoryCosts() CategoryBreakdown {
 	return FromCategoryMap(catCosts)
 }
 
-// LoadPurchaseOrder gets purchase order and sub-components matching the given ID
-func LoadPurchaseOrder(tx *pop.Connection, id string) (PurchaseOrder, error) {
-	po := PurchaseOrder{}
-
-	if err := tx.Eager().Find(&po, id); err != nil {
-		return po, err
-	}
-
-	LoadOrderItems(tx, &po)
-
-	return po, nil
-}
-
-// LoadPurchaseOrders gets the purchase orders with the specified query
-// including all sub-components
-func LoadPurchaseOrders(q *pop.Query) (*PurchaseOrders, error) {
-	poList := &PurchaseOrders{}
-
-	if err := q.All(poList); err != nil {
-		return nil, err
-	}
-
-	// I don't love the fact that I need to load the nested models manually
-	// TODO: look for a solution to eager loading nested objects
-	for _, po := range *poList {
-		LoadOrderItems(q.Connection, &po)
-	}
-
-	return poList, nil
-}
-
 // GetYears gets the years for which there is company data
 func GetYears(tx *pop.Connection) ([]int, error) {
 	yearResult := make([]int, 50)

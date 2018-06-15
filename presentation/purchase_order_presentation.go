@@ -1,4 +1,4 @@
-package presentationlayer
+package presentation
 
 import (
 	"buddhabowls/models"

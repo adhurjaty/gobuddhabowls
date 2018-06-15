@@ -7,7 +7,7 @@ package actions
 import (
 	"buddhabowls/componentcontexts"
 	"buddhabowls/models"
-	"buddhabowls/presentationlayer"
+	"buddhabowls/presentation"
 	"encoding/json"
 	"fmt"
 	"github.com/gobuffalo/pop/nulls"
@@ -39,8 +39,10 @@ type PurchaseOrdersResource struct {
 	buffalo.Resource
 }
 
-const _poStartTimeKey = "poStartTime"
-const _poEndTimeKey = "poEndTime"
+const (
+	_poStartTimeKey = "poStartTime"
+	_poEndTimeKey   = "poEndTime"
+)
 
 // PurchaseOrderDateChanged updates visible purchase orders table
 // GET /purchase_orders/date_changed
@@ -116,7 +118,7 @@ func PurchaseOrderDateChanged(c buffalo.Context) error {
 	q := tx.Eager().Where("order_date >= ? AND order_date < ?",
 		startVal, endVal).Order("order_date DESC")
 
-	openPos, recPos, err := presentationlayer.GetOpenRecPurchaseOrders(q)
+	openPos, recPos, err := presentation.GetOpenRecPurchaseOrders(q)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -131,11 +133,11 @@ func PurchaseOrderDateChanged(c buffalo.Context) error {
 	c.Set("openPurchaseOrders", openPos)
 	c.Set("recPurchaseOrders", recPos)
 
-	lineChartData := presentationlayer.GetLineChartJSONData(openPos, recPos)
+	lineChartData := presentation.GetLineChartJSONData(openPos, recPos)
 	c.Set("trendChartData", lineChartData)
 
 	// summary table view information
-	barChartData := presentationlayer.GetBarChartJSONData(openPos, recPos)
+	barChartData := presentation.GetBarChartJSONData(openPos, recPos)
 	c.Set("barChartData", barChartData)
 
 	years, ok := store.Get("years").([]int)

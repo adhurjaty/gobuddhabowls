@@ -1,4 +1,4 @@
-package presentationlayer_test
+package presentation_test
 
 import (
 	"testing"
