@@ -5,7 +5,7 @@
       </div>
   </div>
   <div class="row">
-    <table class="datagrid">
+    <table class="datagrid" update-url="<%= purchaseOrdersPath() %>">
         <thead>
           <th></th>
           <th>Vendor</th>
@@ -49,7 +49,7 @@
       </div>
   </div>
   <div class="row">
-      <table class="datagrid" onchange-href="<%= purchaseOrderPath() %>">
+      <table class="datagrid">
         <!-- <table class="datagrid" onchange-href="/purchase_orders/row_edited"> -->
           <thead>
             <th></th>
@@ -61,7 +61,7 @@
           </thead>
           <tbody>
             <%= for (purchaseOrder) in recPurchaseOrders { %>
-              <tr item-id="<%= purchaseOrder.ID %>">
+              <tr onchange-href="<%= purchaseOrderPath({ purchase_order_id: purchaseOrder.ID }) %>">
                 <td class="expander"><span class="fa fa-caret-right"></span></td>
                 <td><%= purchaseOrder.Vendor.Name %></td>
                 <td editable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
@@ -104,3 +104,5 @@
     debugger;
   }
 </script>
+
+<%= javascriptTag("datagrid.js") %>

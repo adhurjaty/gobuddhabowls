@@ -1,5 +1,5 @@
-import "bootstrap-datepicker";
-import { replaceUrlId, formatMoney, unFormatMoney } from "./helpers";
+import { formatMoney, unFormatMoney } from "./helpers";
+import { datepicker } from "./datepicker";
 
 var collapsedCaret = 'fa-caret-right';
 var expandedCaret = 'fa-caret-down';
@@ -10,7 +10,8 @@ export class EditItem {
         this.datagrid = datagrid;
         this.$td = $td;
         this.type = $td.attr('data-type');
-        this.id = $td.parent().attr('item-id');
+        // this.id = $td.parent().attr('item-id');
+        this.onchange_url = $td.attr('onchange-href');
         this.field = $td.attr('field');
         this.contents = $td.text();
         this.errorMessage = "";
@@ -31,11 +32,14 @@ export class EditItem {
                     $(this).empty();
                     $(this).append($date);
                     var startDate = self.contents ? self.contents : new Date().toLocaleDateString("en-US");
-                    $date.datepicker({
+                    // debugger;
+                    // $date.datepicker({
+                    datepicker($date, {
                         autoclose: 'true',
                         format: 'mm/dd/yyyy',
                         defaultViewDate: startDate
                     }).on('changeDate', function(event) {
+                        debugger;
                         self.contents = event.format();
                         self.datagrid.sendUpdate(self);
                     }).on('hide', function(event) {
@@ -128,16 +132,37 @@ export class EditItem {
                 break;
         }
     }
+
+    sendUpdate() {
+        if(!this.onchange_url) {
+            return;
+        }
+        var self = this;
+        var data = {};
+        data[editItem.field] = editItem.contents;
+        $.ajax({
+            url: self.onchange_url,
+            data: data,
+            method: 'PUT',
+            error: function(xhr, status, err) {
+                var errMessage = xhr.responseText;
+                editItem.showError(errMessage);
+            },
+            success: function(data, status, xhr) {
+                editItem.onUpdateSuccess();
+            }
+        });
+    }
 }
 
 // DataGrid is a class for creating a table that has editable cells that
 // may update models on edit
 export class DataGrid {
     // add data grid to grid (usually div tag). Give it a function to execute when a value is changed
-    constructor(grid, updateFnc) {
+    constructor(grid) {
         this.grid = grid;
-        this.on_change_url = $(grid).attr('onchange-href');
-        this.sendUpdate = updateFnc || this.defaultSendUpdate;
+        // this.on_change_url = $(grid).attr('onchange-href');
+        // this.sendUpdate = updateFnc || this.defaultSendUpdate;
         this.initRows();
 
         if($(grid).find('td.expander') != undefined) {
@@ -242,9 +267,9 @@ export class DataGrid {
         row.find('td[editable="true"]').removeAttr('contenteditable');
     }
 
-    defaultSendUpdate(editItem) {
-        console.log('default send update');
-    }
+    // defaultSendUpdate(editItem) {
+    //     console.log('default send update');
+    // }
 }
 
 function focusPrevRow($el) {
@@ -334,6 +359,7 @@ function focusNextColumn($el) {
 }
 
 // code from https://stackoverflow.com/questions/12243898/how-to-select-all-text-in-contenteditable-div/12244703
+// for highlighting all text when clicking in a cell
 $.fn.selectText = function(){
     var doc = document;
     var element = this[0];
@@ -349,3 +375,13 @@ $.fn.selectText = function(){
         selection.addRange(range);
     }
  };
+
+ $(() => {
+    $.each($('.datagrid'), function(i, grid) {
+        var dg = new DataGrid(grid);
+
+        $.each($(this).find('td[editable="true"]'), function(j, el) {
+            var ei = new EditItem(dg, $(el));
+        });
+    });
+ });

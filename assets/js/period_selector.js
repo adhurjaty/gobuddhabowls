@@ -1,4 +1,5 @@
-import "bootstrap-datepicker";
+// import "bootstrap-datepicker";
+import { datepicker } from "./datepicker";
 import { dateStringToISO, getYearFromDateString } from './helpers.js';
 
 var endpoint = $('#period-selector-component').attr('onchange-href');
@@ -59,7 +60,7 @@ $('#year-selector').change(function() {
     });
 });
 
-$('.input-daterange').datepicker({
+datepicker($('.input-daterange'), {
     autoclose: true,
     format: "mm/dd/yyyy",
 });

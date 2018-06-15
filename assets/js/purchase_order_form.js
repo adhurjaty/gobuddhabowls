@@ -1,9 +1,9 @@
-import "bootstrap-datepicker";
+import { datepicker } from './datepicker.js';
 import { EditItem, DataGrid } from './datagrid.js';
 import { formatMoney } from './helpers';
 
 $(() => {
-    $('#new-order-date').datepicker({
+    datepicker($('#new-order-date'), {
         autoclose: 'true',
         format: 'mm/dd/yyyy'
     });
