@@ -45,9 +45,9 @@ $(() => {
         }
     });
     
-    // $('#add-po-item').click(function(event) {
-    //     $('#add-po-modal').show();
-    // });
+    $('#modal-form button[role="submit"]').click(function(event) {
+        $('#modal-form').submit();
+    });
 
     $('#remove-po-item').click(function(event) {
         var selected = $('.datagrid .datagrid .tr:active');

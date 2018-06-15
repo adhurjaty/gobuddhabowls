@@ -426,17 +426,16 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 // AddPurchaseOrderItem adds an order item to the order item list
 // mapped to /purchase_orders/add_item/{purchase_order_id}
 func AddPurchaseOrderItem(c buffalo.Context) error {
-	fmt.Println("HERE")
+
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	vendorItem := &models.VendorItem{}
 	vendorItemID := c.Request().Form["VendorItemID"][0]
-	fmt.Println(c.Request().Form["VendorItemID"])
 
-	if err := tx.Find(vendorItem, vendorItemID); err != nil {
+	vendorItem, err := models.LoadVendorItem(tx, vendorItemID)
+	if err != nil {
 		return c.Error(500, err)
 	}
 
@@ -446,7 +445,7 @@ func AddPurchaseOrderItem(c buffalo.Context) error {
 	}
 
 	// Bind PurchaseOrder to the html form elements
-	if err := c.Bind(purchaseOrder); err != nil {
+	if err := c.Bind(&purchaseOrder); err != nil {
 		fmt.Println(err)
 		return errors.WithStack(err)
 	}
@@ -456,7 +455,7 @@ func AddPurchaseOrderItem(c buffalo.Context) error {
 
 	setEditPOView(c, &purchaseOrder)
 
-	return c.Render(200, r.JavaScript("purchase_orders/replace_new_vendor_items"))
+	return c.Render(200, r.HTML("purchase_orders/edit"))
 }
 
 // Update changes a PurchaseOrder in the DB. This function is mapped to
