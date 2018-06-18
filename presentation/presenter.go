@@ -1,9 +1,11 @@
 package presentation
 
 import (
+	"buddhabowls/componentcontexts"
 	"buddhabowls/logic"
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop"
+	"time"
 )
 
 // Presenter readies values for ViewModel consumption
@@ -22,4 +24,9 @@ func (p *Presenter) GetPeriodData(tx *pop.Connection) ([]logic.PeriodSelector, e
 	}
 
 	return periods, nil
+}
+
+// GetPeriodContext gets a period selector context for using the period selector UI
+func (p *Presenter) GetPeriodContext(date time.Time) *componentcontexts.PeriodSelectorContext {
+	return componentcontexts.NewPeriodSelectorContext(date)
 }

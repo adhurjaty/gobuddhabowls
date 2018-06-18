@@ -46,6 +46,7 @@ const (
 
 // PurchaseOrderDateChanged updates visible purchase orders table
 // GET /purchase_orders/date_changed
+// TODO: remove this and put into List
 func PurchaseOrderDateChanged(c buffalo.Context) error {
 	store := c.Session()
 
@@ -151,7 +152,38 @@ func PurchaseOrderDateChanged(c buffalo.Context) error {
 
 // List gets all PurchaseOrders. This function is mapped to the path
 // GET /purchase_orders
+// optional params: StartTime, [EndTime]
 func (v PurchaseOrdersResource) List(c buffalo.Context) error {
+
+	// get the parameters from URL
+	paramsMap, ok := c.Params().(url.Values)
+	if !ok {
+		return c.Error(500, errors.New("Could not parse params"))
+	}
+
+	startVal, startTimeExists := paramsMap["StartTime"]
+	endVal, endTimeExists := paramsMap["EndTime"]
+	startTime := time.Time{}
+	endTime := time.Time{}
+
+	// indicates whether user used the custome date range
+	customDateRange := !endTimeExists
+
+	presenter := presentation.Presenter{}
+	if !startTimeExists && !endTimeExists {
+		startTime := time.Now()
+	}
+
+	periodSelector := presenter.GetPeriodContext(startTime)
+	c.Set("pSelectorContext", periodSelector)
+	c.Set("customDateRange", customDateRange)
+
+	startTime = periodSelector.SelectedWeek.StartTime
+	endTime = periodSelector.SelectedWeek.EndTime
+	purchaseOrders := presenter.GetPurchaseOrders(startTime, endTime)
+	c.Set("purchaseOrders", purchaseOrders)
+
+	// EDIT POINT
 
 	// indicates whether user used the custome date range
 	customDateRange := false

@@ -13,12 +13,15 @@ type PeriodSelectorContext struct {
 	SelectedWeek   logic.Week
 }
 
-// Init initializes the context based on the date supplied
-func (p *PeriodSelectorContext) Init(date time.Time) {
+// NewPeriodSelectorContext initializes the context based on the date supplied
+func NewPeriodSelectorContext(date time.Time) *PeriodSelectorContext {
+	p := &PeriodSelectorContext{}
 	p.PeriodSelector = logic.NewPeriodSelector(date.Year())
 	p.SelectedPeriod = p.PeriodSelector.GetPeriod(date)
 	p.SelectedWeek = p.SelectedPeriod.GetWeek(date)
 	p.SelectedYear = date.Year()
+
+	return p
 }
 
 // func (p *PeriodSelectorContext) SetWeek(week helpers.Week) {

@@ -40,3 +40,9 @@ export function formatMoney(amt) {
 export function unFormatMoney(s) {
     return parseFloat(s.replace('$', ''));
 }
+
+export function getPurchaseOrderCost(po) {
+    return po.items.reduce((total, item) => {
+        return total + item.price * item.count;
+    }) + po.shipping_cost;
+}
