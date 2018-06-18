@@ -9,23 +9,22 @@ $(() => {
     var $yearSelector = $form.find('select[name="Year"]');
 
     $periodSelector.change(function(event) {
-        var unixDate = $periodSelector.val();
+        var date = getFormattedTime($periodSelector.val());
         clearFormAndEnd($form);
-        $form.find('input[name="StartTime"]').val(unixDate);
+        $form.find('input[name="StartTime"]').val(date);
         $form.submit();
     });
     $weekSelector.change(function() {
-        var unixDate = $weekSelector.val();
+        var date = getFormattedTime($weekSelector.val());
         clearFormAndEnd($form);
-        $form.find('input[name="StartTime"]').val(unixDate);
+        $form.find('input[name="StartTime"]').val(date);
         $form.submit();
     });
     $yearSelector.change(function() {
         var year = parseInt($yearSelector.val());
-        var date = new Date(year, 1)
-        var unixDate = date.getTime() / 1000;
+        var date = new Date(year, 1).toISOString();
         clearFormAndEnd($form);
-        $form.find('input[name="StartTime"]').val(unixDate);
+        $form.find('input[name="StartTime"]').val(date);
         $form.submit();
     });
 
@@ -36,27 +35,31 @@ $(() => {
     $.each($('.input-daterange'), function(i, d) {
         $(this).on('changeDate', function(event) {
             var startTime = $form.find('input[name="StartTime"]').val();
-            var endTime = $form.find('input[name="StartTime"]').val();
-            startTime = new Date(startTime).getTime() / 1000;
-            endTime = new Date(endTime).getTime() / 1000;
+            var endTime = $form.find('input[name="EndTime"]').val();
+            startTime = new Date(startTime).toISOString();
+            endTime = new Date(endTime).toISOString();
 
             clearForm($form);
             $form.find('input[name="StartTime"]').val(startTime);
             $form.find('input[name="EndTime"]').val(endTime);
 
             $form.submit();
-
+            $('.input-daterange').remove();
         });
     });
 });
 
 function clearForm($form) {
-    $form.find('select[name="Week"]').remove();
-    $form.find('select[name="Period"]').remove();
-    $form.find('select[name="Year"]').remove();
+    $form.find('select[name="Week"]').val(null);
+    $form.find('select[name="Period"]').val(null);
+    $form.find('select[name="Year"]').val(null);
 }
 
 function clearFormAndEnd($form) {
     $form.find('input[name="EndTime"]').remove();
     clearForm($form);
+}
+
+function getFormattedTime(dateStr) {
+    return (new Date(dateStr)).toISOString()
 }

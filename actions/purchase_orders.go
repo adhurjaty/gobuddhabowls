@@ -5,12 +5,12 @@ package actions
 // appropriate variables
 
 import (
+	"buddhabowls/logic"
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"encoding/json"
 	"net/url"
 	"sort"
-	"strconv"
 	"time"
 
 	"github.com/gobuffalo/buffalo"
@@ -167,12 +167,12 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
+	var err error
 	if startTimeExists {
-		unixTime, err := strconv.ParseInt(startVal[0], 10, 64)
+		startTime, err = time.Parse(time.RFC3339, startVal[0])
 		if err != nil {
 			return errors.WithStack(err)
 		}
-		startTime = time.Unix(unixTime, 0)
 	}
 
 	presenter := presentation.NewPresenter(tx)
@@ -183,17 +183,19 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 	periods := presenter.GetPeriods(startTime)
 	weeks := presenter.GetWeeks(startTime)
 	years := presenter.GetYears()
-	c.Set("Periods", periods)
-	c.Set("Weeks", weeks)
-	c.Set("Years", years)
 
 	if endTimeExists {
-		unixTime, err := strconv.ParseInt(endVal[0], 10, 64)
+		endTime, err = time.Parse(time.RFC3339, endVal[0])
 		if err != nil {
 			return errors.WithStack(err)
 		}
+		periods = append([]logic.Period{logic.Period{}}, periods...)
+		weeks = append([]logic.Week{logic.Week{}}, weeks...)
+		years = append([]int{0}, years...)
 
-		endTime = time.Unix(unixTime, 0)
+		c.Set("SelectedPeriod", periods[0])
+		c.Set("SelectedWeek", weeks[0])
+		c.Set("SelectedYear", startTime.Year())
 	} else {
 		selectedPeriod := presenter.GetSelectedPeriod(startTime)
 		selectedWeek := presenter.GetSelectedWeek(startTime)
@@ -204,6 +206,9 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 		endTime = selectedWeek.EndTime
 	}
 
+	c.Set("Periods", periods)
+	c.Set("Weeks", weeks)
+	c.Set("Years", years)
 	c.Set("StartTime", startTime)
 	c.Set("EndTime", endTime)
 

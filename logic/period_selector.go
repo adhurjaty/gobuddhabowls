@@ -39,7 +39,7 @@ func NewPeriodSelector(year int) PeriodSelector {
 		startTime = endTime
 	}
 
-	for i := 0; i < 13; i++ {
+	for index < 15 {
 		endTime = startTime.AddDate(0, 0, 28)
 
 		// if the period goes to the end of the year
@@ -74,7 +74,7 @@ func (p PeriodSelector) GetWeek(date time.Time) Week {
 	return period.GetWeek(date)
 }
 
-// Period represents the 4 week business period (13 per year)
+// Period represents the 4 week business period (14 per year)
 type Period struct {
 	Index int
 	Weeks []Week
@@ -85,19 +85,18 @@ func NewPeriod(startTime time.Time, endTime time.Time) Period {
 	p := Period{}
 	dayDiff := int(endTime.Sub(startTime).Hours() / 24)
 	fullWeeks := int(dayDiff / 7)
-	p.Weeks = []Week{}
+	p.Weeks = make([]Week, fullWeeks)
 
-	var week Week
 	weekEnd := startTime
 	for i := 0; i < fullWeeks; i++ {
 		weekEnd = startTime.AddDate(0, 0, 7)
-		week = Week{StartTime: startTime, EndTime: weekEnd.Add(-time.Nanosecond), Index: i + 1}
-		p.Weeks = append(p.Weeks, week)
+		week := Week{StartTime: startTime, EndTime: weekEnd.Add(-time.Nanosecond), Index: i + 1}
+		p.Weeks[i] = week
 		startTime = weekEnd
 	}
 
 	if dayDiff%7 > 0 {
-		week = Week{StartTime: startTime, EndTime: endTime, Index: fullWeeks + 1}
+		week := Week{StartTime: startTime, EndTime: endTime, Index: fullWeeks + 1}
 		p.Weeks = append(p.Weeks, week)
 	}
 
@@ -132,19 +131,17 @@ func (p Period) String() string {
 		end.Month(), end.Day())
 }
 
-// func (p Period) StartDateStr() string {
-// 	return helpers.FormatDate(UnoffsetStart(p.StartTime()))
-// }
-
-// func (p Period) EndDateStr() string {
-// 	return helpers.FormatDate(UnoffsetEnd(p.EndTime()))
-// }
-
 func (p Period) SelectValue() interface{} {
-	return p.StartTime().Unix()
+	if p.Weeks == nil {
+		return ""
+	}
+	return p.StartTime().Format(time.RFC3339)
 }
 
 func (p Period) SelectLabel() string {
+	if p.Weeks == nil {
+		return ""
+	}
 	return p.String()
 }
 
@@ -162,26 +159,13 @@ func (w Week) String() string {
 		end.Month(), end.Day())
 }
 
-// func (w Week) StartDateStr() string {
-// 	return helpers.FormatDate(w.StartTime.Add(-dayStart))
-// }
-
-// func (w Week) EndDateStr() string {
-// 	return helpers.FormatDate(w.EndTime.Add(-dayStart - time.Nanosecond))
-// }
-
 func (w Week) SelectValue() interface{} {
-	return w.StartTime.Unix()
+	return w.StartTime.Format(time.RFC3339)
 }
 
 func (w Week) SelectLabel() string {
+	if w.Index == 0 {
+		return ""
+	}
 	return w.String()
 }
-
-// func UnoffsetStart(t time.Time) time.Time {
-// 	return t.Add(-dayStart)
-// }
-
-// func UnoffsetEnd(t time.Time) time.Time {
-// 	return t.Add(-dayStart - time.Nanosecond)
-// }

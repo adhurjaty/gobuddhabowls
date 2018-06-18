@@ -1,46 +1,22 @@
 <div class="row period-selector" id="period-selector">
     <%= form({action: purchaseOrdersPath(), method: "GET", id: "period-selector-form"}) { %>
-    <div class="col-3">
+    <div class="col-md-3">
         <label for="period-selector">Period</label>
-        <%= f.SelectTag({name: "Period", value: pSelectorContext.SelectedPeriod, options: pSelectorContext.PeriodSelector.Periods }) %>
-        <!-- <select class="form-control" id="period-selector">
-            <%= if (customDateRange) { %>
-                <option class="empty-option" selected></option>
-            <% } %>
-            <%= for (period) in pSelectorContext.PeriodSelector.Periods { %>
-                <option start-date="<%= parseable_date(period.StartTime()) %>" end-date="<%= parseable_date(period.EndTime()) %>" <%= if (period.Equals(pSelectorContext.SelectedPeriod) && !customDateRange) { %>selected<% } %>><%= period.String() %></option>
-            <% } %>
-            <option>Show All</option>            
-        </select> -->
+        <%= f.SelectTag({name: "Period", value: SelectedPeriod, options: Periods }) %>
     </div>
-    <div class="col-3">
+    <div class="col-md-3">
         <label for="week-selector">Week</label>
-        <%= f.SelectTag({name: "Week", value: pSelectorContext.SelectedWeek, options: pSelectorContext.SelectedPeriod.Weeks }) %>
-        <!-- <select class="form-control" id="week-selector">
-            <%= if (customDateRange) { %>
-                <option class="empty-option" selected></option>
-            <% } %>
-            <%= for (week) in pSelectorContext.SelectedPeriod.Weeks { %>
-                <option start-date="<%= parseable_date(week.StartTime) %>" end-date="<%= parseable_date(week.EndTime) %>" <%= if (week.Equals(pSelectorContext.SelectedWeek) && !customDateRange) { %>selected<% } %>><%= week.String() %></option>
-            <% } %>
-            <option>Show All</option>
-        </select> -->
+        <%= f.SelectTag({name: "Week", value: SelectedWeek, options: Weeks }) %>
     </div>
-    <div class="col-2">
+    <div class="col-md-2">
         <label for="year-selector">Year</label>
-        <%= f.SelectTag({name: "Year", value: pSelectorContext.SelectedYear, options: pSelectorContext.Years }) %>
-        <!-- <select class="form-control" id="year-selector">
-            <%= for (year) in pSelectorContext.Years { %>
-                <option <%= if (year == pSelectorContext.SelectedYear) { %>selected<% } %>><%= year %></option>
-            <% } %>
-            <option>Show All</option>            
-        </select> -->
+        <%= f.SelectTag({name: "Year", value: SelectedYear, options: Years }) %>
     </div>
-    <div class="col">
+    <div class="col-md-4">
         <div class="input-group input-daterange align-bottom">
-            <input type="text" class="form-control" name="StartTime" value="<%= format_date(pSelectorContext.SelectedWeek.StartTime) %>">
+            <input type="text" class="form-control" name="StartTime" value="<%= format_date(StartTime) %>">
             <div class="input-group-addon">to</div>
-            <input type="text" class="form-control" name="EndTime" value="<%= format_date(pSelectorContext.SelectedWeek.EndTime) %>">
+            <input type="text" class="form-control" name="EndTime" value="<%= format_date(EndTime) %>">
         </div>
         <!-- <input class="input-daterange" -->
     </div>

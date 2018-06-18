@@ -1,4 +1,4 @@
-package helpers
+package logic
 
 import (
 	"testing"
@@ -8,35 +8,34 @@ import (
 // TestInitPeriodSelector tests various aspects of the PeriodSelector
 func TestInitPeriodSelector(t *testing.T) {
 	periodStartDates := []time.Time{
-		time.Date(2017, 1, 1, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 1, 2, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 1, 30, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 2, 27, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 3, 27, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 4, 24, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 5, 22, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 6, 19, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 7, 17, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 8, 14, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 9, 11, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 10, 9, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 11, 6, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 12, 4, 4, 0, 0, 0, time.UTC),
+		time.Date(2017, 1, 1, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 1, 2, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 1, 30, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 2, 27, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 3, 27, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 4, 24, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 5, 22, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 6, 19, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 7, 17, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 8, 14, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 9, 11, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 10, 9, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 11, 6, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 12, 4, 0, 0, 0, 0, time.UTC),
 	}
 
 	firstPeriod := []time.Time{
-		time.Date(2017, 1, 1, 4, 0, 0, 0, time.UTC),
+		time.Date(2017, 1, 1, 0, 0, 0, 0, time.UTC),
 	}
 
 	thirdPeriod := []time.Time{
-		time.Date(2017, 1, 30, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 2, 6, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 2, 13, 4, 0, 0, 0, time.UTC),
-		time.Date(2017, 2, 20, 4, 0, 0, 0, time.UTC),
+		time.Date(2017, 1, 30, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 2, 6, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 2, 13, 0, 0, 0, 0, time.UTC),
+		time.Date(2017, 2, 20, 0, 0, 0, 0, time.UTC),
 	}
 
-	periodSelector := PeriodSelector{}
-	periodSelector.Init(2017)
+	periodSelector := NewPeriodSelector(2017)
 
 	t.Run("A=1", func(t *testing.T) {
 		for i, date := range periodStartDates {
@@ -65,8 +64,7 @@ func TestInitPeriodSelector(t *testing.T) {
 
 func TestGetPeriodAndWeek(t *testing.T) {
 	date := time.Date(2018, 3, 31, 0, 0, 0, 0, time.UTC)
-	periodSelector := PeriodSelector{}
-	periodSelector.Init(2018)
+	periodSelector := NewPeriodSelector(2018)
 
 	t.Run("A=1", func(t *testing.T) {
 		period := periodSelector.GetPeriod(date)
