@@ -8,8 +8,8 @@ import (
 
 // GetPurchaseOrders retrieves purchase orders from within the given start and end dates
 func GetPurchaseOrders(startTime, endTime time.Time, tx *pop.Connection) (*models.PurchaseOrders, error) {
-	startTime = UnoffsetStart(startTime)
-	endTime = UnoffsetEnd(endTime)
+	startTime = OffsetStart(startTime)
+	endTime = OffsetEnd(endTime)
 
 	startVal := startTime.Format(time.RFC3339)
 	endVal := endTime.Format(time.RFC3339)

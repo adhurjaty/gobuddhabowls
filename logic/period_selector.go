@@ -1,7 +1,6 @@
 package logic
 
 import (
-	"buddhabowls/helpers"
 	"errors"
 	"fmt"
 	"time"
@@ -9,7 +8,7 @@ import (
 
 const (
 	weekStart = 1
-	dayStart  = time.Hour * 4
+	// dayStart  = time.Hour * 4
 )
 
 // PeriodSelector holds values for periods of the year
@@ -26,7 +25,8 @@ func NewPeriodSelector(year int) PeriodSelector {
 	firstWeekStartDiff := ((7 + weekStart) - int(theFirst.Weekday())) % 7
 
 	p.Periods = []Period{}
-	startTime := theFirst.Add(dayStart)
+	// startTime := theFirst.Add(dayStart)
+	startTime := theFirst
 	endTime := startTime
 	index := 1
 
@@ -44,7 +44,7 @@ func NewPeriodSelector(year int) PeriodSelector {
 
 		// if the period goes to the end of the year
 		if endTime.YearDay() < startTime.YearDay() {
-			endTime = time.Date(year+1, 1, 1, 0, 0, 0, 0, time.UTC).Add(dayStart)
+			endTime = time.Date(year+1, 1, 1, 0, 0, 0, 0, time.UTC)
 		}
 		period := NewPeriod(startTime, endTime)
 		period.Index = index
@@ -59,7 +59,7 @@ func NewPeriodSelector(year int) PeriodSelector {
 // GetPeriod gets the period that contains the date provided
 func (p PeriodSelector) GetPeriod(date time.Time) Period {
 	for _, period := range p.Periods {
-		if date.Unix() >= UnoffsetStart(period.StartTime()).Unix() && date.Unix() < UnoffsetEnd(period.EndTime()).Unix() {
+		if date.Unix() >= period.StartTime().Unix() && date.Unix() < period.EndTime().Unix() {
 			return period
 		}
 	}
@@ -91,7 +91,7 @@ func NewPeriod(startTime time.Time, endTime time.Time) Period {
 	weekEnd := startTime
 	for i := 0; i < fullWeeks; i++ {
 		weekEnd = startTime.AddDate(0, 0, 7)
-		week = Week{StartTime: startTime, EndTime: weekEnd, Index: i + 1}
+		week = Week{StartTime: startTime, EndTime: weekEnd.Add(-time.Nanosecond), Index: i + 1}
 		p.Weeks = append(p.Weeks, week)
 		startTime = weekEnd
 	}
@@ -107,7 +107,7 @@ func NewPeriod(startTime time.Time, endTime time.Time) Period {
 // GetWeek get the week that contains the date
 func (p Period) GetWeek(date time.Time) Week {
 	for _, week := range p.Weeks {
-		if date.Unix() >= week.UnoffsetStart().Unix() && date.Unix() < week.UnoffsetEnd().Unix() {
+		if date.Unix() >= week.StartTime.Unix() && date.Unix() < week.EndTime.Unix() {
 			return week
 		}
 	}
@@ -126,22 +126,26 @@ func (p Period) EndTime() time.Time {
 }
 
 func (p Period) String() string {
-	start := UnoffsetStart(p.StartTime())
-	end := UnoffsetEnd(p.EndTime())
+	start := p.StartTime()
+	end := p.EndTime()
 	return fmt.Sprintf("P%d %d/%d-%d/%d", p.Index, start.Month(), start.Day(),
 		end.Month(), end.Day())
 }
 
-func (p Period) StartDateStr() string {
-	return helpers.FormatDate(UnoffsetStart(p.StartTime()))
+// func (p Period) StartDateStr() string {
+// 	return helpers.FormatDate(UnoffsetStart(p.StartTime()))
+// }
+
+// func (p Period) EndDateStr() string {
+// 	return helpers.FormatDate(UnoffsetEnd(p.EndTime()))
+// }
+
+func (p Period) SelectValue() interface{} {
+	return p.StartTime().Unix()
 }
 
-func (p Period) EndDateStr() string {
-	return helpers.FormatDate(UnoffsetEnd(p.EndTime()))
-}
-
-func (p Period) Equals(other Period) bool {
-	return p.StartTime().Unix() == other.StartTime().Unix()
+func (p Period) SelectLabel() string {
+	return p.String()
 }
 
 // Week represents a business week (Monday to Sunday)
@@ -152,47 +156,19 @@ type Week struct {
 }
 
 func (w Week) String() string {
-	start := w.UnoffsetStart()
-	end := w.UnoffsetEnd()
+	start := w.StartTime
+	end := w.EndTime
 	return fmt.Sprintf("WK%d %d/%d-%d/%d", w.Index, start.Month(), start.Day(),
 		end.Month(), end.Day())
 }
 
-func (w Week) StartDateStr() string {
-	return helpers.FormatDate(w.StartTime.Add(-dayStart))
-}
+// func (w Week) StartDateStr() string {
+// 	return helpers.FormatDate(w.StartTime.Add(-dayStart))
+// }
 
-func (w Week) EndDateStr() string {
-	return helpers.FormatDate(w.EndTime.Add(-dayStart - time.Nanosecond))
-}
-
-func (w Week) UnoffsetStart() time.Time {
-	return w.StartTime.Add(-dayStart)
-}
-
-func (w Week) UnoffsetEnd() time.Time {
-	return w.EndTime.Add(-dayStart - time.Nanosecond)
-}
-
-func (w Week) Equals(other Week) bool {
-	return w.StartTime.Unix() == other.StartTime.Unix()
-}
-
-func UnoffsetStart(t time.Time) time.Time {
-	return t.Add(-dayStart)
-}
-
-func UnoffsetEnd(t time.Time) time.Time {
-	return t.Add(-dayStart - time.Nanosecond)
-}
-
-func (p Period) SelectValue() interface{} {
-	return p.StartTime().Unix()
-}
-
-func (p Period) SelectLabel() string {
-	return p.String()
-}
+// func (w Week) EndDateStr() string {
+// 	return helpers.FormatDate(w.EndTime.Add(-dayStart - time.Nanosecond))
+// }
 
 func (w Week) SelectValue() interface{} {
 	return w.StartTime.Unix()
@@ -201,3 +177,11 @@ func (w Week) SelectValue() interface{} {
 func (w Week) SelectLabel() string {
 	return w.String()
 }
+
+// func UnoffsetStart(t time.Time) time.Time {
+// 	return t.Add(-dayStart)
+// }
+
+// func UnoffsetEnd(t time.Time) time.Time {
+// 	return t.Add(-dayStart - time.Nanosecond)
+// }

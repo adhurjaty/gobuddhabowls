@@ -162,19 +162,11 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 	startTime := time.Time{}
 	endTime := time.Time{}
 
-	// indicates whether user used the custome date range
-	customDateRange := !endTimeExists
-
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
-	presenter := presentation.NewPresenter(tx)
-	if !startTimeExists && !endTimeExists {
-		startTime = time.Now()
-	}
 
-	var err error
 	if startTimeExists {
 		unixTime, err := strconv.ParseInt(startVal[0], 10, 64)
 		if err != nil {
@@ -182,20 +174,39 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 		}
 		startTime = time.Unix(unixTime, 0)
 	}
+
+	presenter := presentation.NewPresenter(tx)
+	if !startTimeExists && !endTimeExists {
+		startTime = time.Now()
+	}
+
+	periods := presenter.GetPeriods(startTime)
+	weeks := presenter.GetWeeks(startTime)
+	years := presenter.GetYears()
+	c.Set("Periods", periods)
+	c.Set("Weeks", weeks)
+	c.Set("Years", years)
+
 	if endTimeExists {
 		unixTime, err := strconv.ParseInt(endVal[0], 10, 64)
 		if err != nil {
 			return errors.WithStack(err)
 		}
+
 		endTime = time.Unix(unixTime, 0)
+	} else {
+		selectedPeriod := presenter.GetSelectedPeriod(startTime)
+		selectedWeek := presenter.GetSelectedWeek(startTime)
+		c.Set("SelectedPeriod", selectedPeriod)
+		c.Set("SelectedWeek", selectedWeek)
+		c.Set("SelectedYear", startTime.Year())
+		startTime = selectedWeek.StartTime
+		endTime = selectedWeek.EndTime
 	}
 
-	periodSelector := presenter.GetPeriodContext(startTime)
-	c.Set("pSelectorContext", periodSelector)
-	c.Set("customDateRange", customDateRange)
+	c.Set("StartTime", startTime)
+	c.Set("EndTime", endTime)
 
-	startTime = periodSelector.SelectedWeek.StartTime
-	endTime = periodSelector.SelectedWeek.EndTime
 	purchaseOrders, err := presenter.GetPurchaseOrders(startTime, endTime)
 	if err != nil {
 		return errors.WithStack(err)

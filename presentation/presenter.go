@@ -7,8 +7,8 @@ import (
 	"time"
 )
 
-// PeriodSelectorContext context for the _period_selector.html template
-type PeriodSelectorContext struct {
+// periodSelectorContext context for the _period_selector.html template
+type periodSelectorContext struct {
 	PeriodSelector logic.PeriodSelector
 	SelectedYear   int
 	SelectedPeriod logic.Period
@@ -18,11 +18,12 @@ type PeriodSelectorContext struct {
 
 // Presenter readies values for ViewModel consumption
 type Presenter struct {
-	tx *pop.Connection
+	tx            *pop.Connection
+	PeriodContext *periodSelectorContext
 }
 
 func NewPresenter(tx *pop.Connection) *Presenter {
-	p := &Presenter{tx}
+	p := &Presenter{tx, nil}
 	return p
 }
 
@@ -41,26 +42,65 @@ func NewPresenter(tx *pop.Connection) *Presenter {
 // 	return periods, nil
 // }
 
-// GetPeriodContext gets a period selector context for using the period selector UI
-func (p *Presenter) GetPeriodContext(date time.Time) *PeriodSelectorContext {
-	ps := &PeriodSelectorContext{}
-	ps.PeriodSelector = logic.NewPeriodSelector(date.Year())
-	ps.SelectedPeriod = ps.PeriodSelector.GetPeriod(date)
-	ps.SelectedWeek = ps.SelectedPeriod.GetWeek(date)
-	ps.SelectedYear = date.Year()
-	ps.Years, _ = models.GetYears(p.tx)
-
-	return ps
-}
-
 // GetPurchaseOrders gets the purchase orders from the given date interval
 func (p *Presenter) GetPurchaseOrders(startTime time.Time, endTime time.Time) (*models.PurchaseOrders, error) {
-	q := p.tx.Eager().Where("order_date >= ? AND order_date < ?",
-		startTime.Format(time.RFC3339), endTime.Format(time.RFC3339)).Order("order_date DESC")
+	return logic.GetPurchaseOrders(startTime, endTime, p.tx)
+}
 
-	factory := models.ModelFactory{}
-	pos := &models.PurchaseOrders{}
-	err := factory.CreateModelSlice(pos, q)
+// GetPeriods gets the list of periods available to the user
+func (p *Presenter) GetPeriods(startTime time.Time) []logic.Period {
+	if p.PeriodContext == nil {
+		p.setPeriodContext(startTime)
+	}
 
-	return pos, err
+	return p.PeriodContext.PeriodSelector.Periods
+}
+
+// GetSelectedPeriod gets the period that contains the startTime
+func (p *Presenter) GetSelectedPeriod(startTime time.Time) logic.Period {
+	if p.PeriodContext == nil {
+		p.setPeriodContext(startTime)
+	}
+
+	return p.PeriodContext.PeriodSelector.GetPeriod(startTime)
+}
+
+// GetWeeks gets the list of weeks available to the user
+func (p *Presenter) GetWeeks(startTime time.Time) []logic.Week {
+	if p.PeriodContext == nil {
+		p.setPeriodContext(startTime)
+	}
+
+	return p.PeriodContext.SelectedPeriod.Weeks
+}
+
+// GetSelectedWeek gets the week that contains the startTime
+func (p *Presenter) GetSelectedWeek(startTime time.Time) logic.Week {
+	if p.PeriodContext == nil {
+		p.setPeriodContext(startTime)
+	}
+
+	return p.PeriodContext.PeriodSelector.GetWeek(startTime)
+}
+
+// GetYears gets the list of years available to the user
+func (p *Presenter) GetYears() []int {
+	if p.PeriodContext == nil {
+		years, err := models.GetYears(p.tx)
+		if err != nil {
+			return []int{1989}
+		}
+		return years
+	}
+	return p.PeriodContext.Years
+}
+
+// setPeriodContext sets a period selector context for using the period selector UI
+func (p *Presenter) setPeriodContext(date time.Time) {
+	p.PeriodContext = &periodSelectorContext{}
+	p.PeriodContext.PeriodSelector = logic.NewPeriodSelector(date.Year())
+	p.PeriodContext.SelectedPeriod = p.PeriodContext.PeriodSelector.GetPeriod(date)
+	p.PeriodContext.SelectedWeek = p.PeriodContext.SelectedPeriod.GetWeek(date)
+	p.PeriodContext.SelectedYear = date.Year()
+	p.PeriodContext.Years, _ = models.GetYears(p.tx)
 }

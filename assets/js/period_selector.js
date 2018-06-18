@@ -51,7 +51,6 @@ $(() => {
 });
 
 function clearForm($form) {
-    $form.find('input[name="StartTime"]').val(null);
     $form.find('select[name="Week"]').remove();
     $form.find('select[name="Period"]').remove();
     $form.find('select[name="Year"]').remove();
