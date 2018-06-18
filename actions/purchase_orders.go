@@ -10,6 +10,7 @@ import (
 	"encoding/json"
 	"net/url"
 	"sort"
+	"strconv"
 	"time"
 
 	"github.com/gobuffalo/buffalo"
@@ -164,23 +165,29 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 	// indicates whether user used the custome date range
 	customDateRange := !endTimeExists
 
-	presenter := presentation.Presenter{}
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+	presenter := presentation.NewPresenter(tx)
 	if !startTimeExists && !endTimeExists {
 		startTime = time.Now()
 	}
 
 	var err error
 	if startTimeExists {
-		startTime, err = time.Parse(time.RFC3339, startVal[0])
+		unixTime, err := strconv.ParseInt(startVal[0], 10, 64)
 		if err != nil {
 			return errors.WithStack(err)
 		}
+		startTime = time.Unix(unixTime, 0)
 	}
 	if endTimeExists {
-		endTime, err = time.Parse(time.RFC3339, endVal[0])
+		unixTime, err := strconv.ParseInt(endVal[0], 10, 64)
 		if err != nil {
 			return errors.WithStack(err)
 		}
+		endTime = time.Unix(unixTime, 0)
 	}
 
 	periodSelector := presenter.GetPeriodContext(startTime)

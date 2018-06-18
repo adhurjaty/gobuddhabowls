@@ -185,3 +185,19 @@ func UnoffsetStart(t time.Time) time.Time {
 func UnoffsetEnd(t time.Time) time.Time {
 	return t.Add(-dayStart - time.Nanosecond)
 }
+
+func (p Period) SelectValue() interface{} {
+	return p.StartTime().Unix()
+}
+
+func (p Period) SelectLabel() string {
+	return p.String()
+}
+
+func (w Week) SelectValue() interface{} {
+	return w.StartTime.Unix()
+}
+
+func (w Week) SelectLabel() string {
+	return w.String()
+}

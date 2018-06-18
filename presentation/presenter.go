@@ -60,7 +60,7 @@ func (p *Presenter) GetPurchaseOrders(startTime time.Time, endTime time.Time) (*
 
 	factory := models.ModelFactory{}
 	pos := &models.PurchaseOrders{}
-	err := factory.CreateModelSlice(&pos, q)
+	err := factory.CreateModelSlice(pos, q)
 
 	return pos, err
 }
