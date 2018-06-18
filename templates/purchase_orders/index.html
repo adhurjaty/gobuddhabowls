@@ -6,7 +6,7 @@
     <a href="<%= newPurchaseOrdersPath() %>" class="btn btn-primary float-right">New Purchase Order</a>
   </div>
 </div>
-<div class="row" id="period-selector-component" onchange-href="/purchase_orders/date_changed">
+<div class="row" id="period-selector-component" onchange-href="<%= purchaseOrdersPath() %>">
     <%= partial("partials/period_selector.html") %>
 </div>
 

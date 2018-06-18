@@ -1,6 +1,8 @@
-<div class="row period-selector" id="period-selector" data="<%= periodData %>">
+<div class="row period-selector" id="period-selector">
+    <%= form({action: purchaseOrdersPath(), method: "GET"}) { %>
     <div class="col-3">
-        <label for="period-selector">Period</label>
+        <%= f.SelectTag({name: "Period", value: pSelectorContext.SelectedPeriod, options: pSelectorContext.PeriodSelector.Periods }) %>
+        <!-- <label for="period-selector">Period</label>
         <select class="form-control" id="period-selector">
             <%= if (customDateRange) { %>
                 <option class="empty-option" selected></option>
@@ -9,10 +11,11 @@
                 <option start-date="<%= parseable_date(period.StartTime()) %>" end-date="<%= parseable_date(period.EndTime()) %>" <%= if (period.Equals(pSelectorContext.SelectedPeriod) && !customDateRange) { %>selected<% } %>><%= period.String() %></option>
             <% } %>
             <option>Show All</option>            
-        </select>
+        </select> -->
     </div>
     <div class="col-3">
-        <label for="week-selector">Week</label>
+        <%= f.SelectTag({name: "Week", value: pSelectorContext.SelectedWeek, options: pSelectorContext.SelectedPeriod.Weeks }) %>
+        <!-- <label for="week-selector">Week</label>
         <select class="form-control" id="week-selector">
             <%= if (customDateRange) { %>
                 <option class="empty-option" selected></option>
@@ -21,16 +24,17 @@
                 <option start-date="<%= parseable_date(week.StartTime) %>" end-date="<%= parseable_date(week.EndTime) %>" <%= if (week.Equals(pSelectorContext.SelectedWeek) && !customDateRange) { %>selected<% } %>><%= week.String() %></option>
             <% } %>
             <option>Show All</option>
-        </select>
+        </select> -->
     </div>
     <div class="col-2">
-        <label for="year-selector">Year</label>
+        <%= f.SelectTag({name: "Year", value: pSelectorContext.SelectedYear, options: pSelectorContext.Years }) %>
+        <!-- <label for="year-selector">Year</label>
         <select class="form-control" id="year-selector">
-            <%= for (year) in years { %>
+            <%= for (year) in pSelectoryContext.Years { %>
                 <option <%= if (year == pSelectorContext.SelectedYear) { %>selected<% } %>><%= year %></option>
             <% } %>
             <option>Show All</option>            
-        </select>
+        </select> -->
     </div>
     <div class="col">
         <div class="input-group input-daterange align-bottom">
@@ -40,6 +44,7 @@
         </div>
         <!-- <input class="input-daterange" -->
     </div>
+    <% } %>
 </div>
 
 <%= javascriptTag("period_selector.js") %>
