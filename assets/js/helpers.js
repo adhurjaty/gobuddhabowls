@@ -42,7 +42,7 @@ export function unFormatMoney(s) {
 }
 
 export function getPurchaseOrderCost(po) {
-    return po.items.reduce((total, item) => {
+    return po.Items.reduce((total, item) => {
         return total + item.price * item.count;
-    }) + po.shipping_cost;
+    }, 0) + po.shipping_cost;
 }

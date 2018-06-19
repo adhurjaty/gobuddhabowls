@@ -1,10 +1,11 @@
 import { DataGrid, EditItem } from './datagrid';
 import { getPurchaseOrderCost } from './helpers';
+import { horizontalPercentageChart } from './horizontal_percentage_chart';
 
 $(() => {
-    var purchaseOrders = $('#purchase-orders-holder').data();
-    var openOrders = purchaseOrders.filter(x => !x.ReceivedDate.Valid);
-    var recOrders = purchaseOrders.filter(x => x.ReceivedDate.Valid);
+    var purchaseOrders = JSON.parse($('#purchase-orders-holder').val());
+    var openOrders = purchaseOrders.filter(x => !x.received_date);
+    var recOrders = purchaseOrders.filter(x => x.received_date);
     var table = "";
 
     if(openOrders.length > 0) {
@@ -29,7 +30,7 @@ function getDataGrid(title, purchaseOrders) {
     var head = `
     <div class="row justify-content-center">
         <div class="col-6 text-center">
-            <h4>{0}</h4>
+            <h4>${title}</h4>
         </div>
     </div>
     <div class="row">
@@ -41,7 +42,7 @@ function getDataGrid(title, purchaseOrders) {
             <th>Cost</th>
             <th>&nbsp;</th>
         </thead>
-    <tbody>`.format(title);
+    <tbody>`;
 
     var foot = `
     </tbody>
@@ -49,30 +50,31 @@ function getDataGrid(title, purchaseOrders) {
     </div>`;
     
     var rows = purchaseOrders.map(po => {
+        var total = getPurchaseOrderCost(po)
         return `
-        <tr item-id="{0}">
+        <tr item-id="${po.id}">
             <td class="expander"><span class="fa fa-caret-right"></span></td>
-            <td>{1}</td>
+            <td>${po.Vendor.name}</td>
             <td editable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
-            <td>{2}</td>
+            <td>${total}</td>
             <td>
                 <div class="dropdown show">
                 <button type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     ...
                 </button>
                 <div class="dropdown-menu">
-                    <span class="dropdown-item" onclick="receiveItem({0})">Received</span>
-                    <a href="<%= editPurchaseOrderPath({ purchase_order_id: {0}}) %>" class="dropdown-item">Edit</a>
-                    <span class="dropdown-item text-danger" onclick="deleteItem({0})">Delete</span>
+                    <span class="dropdown-item" onclick="receiveItem(${po.id})">Received</span>
+                    <a href="<%= editPurchaseOrderPath({ purchase_order_id: ${po.id}}) %>" class="dropdown-item">Edit</a>
+                    <span class="dropdown-item text-danger" onclick="deleteItem(${po.id})">Delete</span>
                 </div>
                 </div>
             </td>
         </tr>
         <tr class="items-list" style="display: none;">
             <td colspan="100">
-                <%= partial("partials/horizontal_percentage_chart.html", {categoryDetails: purchaseOrder.GetCategoryCosts(), title: ""}) %>              
+                ${horizontalPercentageChart(title, po.Items, total)}            
             </td> 
-        </tr>`.format(po.id, po.vendor.name, getPurchaseOrderCost(po));
+        </tr>`;
     });
     
     return head + rows + foot;

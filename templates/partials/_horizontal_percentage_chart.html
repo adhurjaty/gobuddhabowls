@@ -63,9 +63,10 @@
     }
 </style>
 
+<data data-items='<%= json(Items) %>' data-total='<%= Total %>' id="horizontal-percentage-items"/>
 <div class="container horizontal rounded" style="width: 100%">
 
-    <h4><%= title %></h4>
+    <h4><%= Title %></h4>
     <div class="bar-holder">
         <div class="percentage-bar horizontal">
             <div class="progress-track">
@@ -75,30 +76,33 @@
             </div>
         </div>
         <div class="bar-label">
-            <span><%= format_money(categoryDetails.Total) %></span>
+            <span><%= format_money(Total) %></span>
         </div>
     </div>
-    <%= for (breakdownItem) in categoryDetails.Categories { %>
-        <% let percentage = get_percentage(breakdownItem.Value, categoryDetails.Total) %>
+    <div id="horizontal-percentage-bars">
+    <!-- <%#= for (breakdownItem) in categoryDetails.Categories { %>
+        <%# let percentage = get_percentage(breakdownItem.Value, categoryDetails.Total) %>
         <div class="bar-holder">
             <div class="percentage-bar horizontal">
                 <div class="progress-track">
-                    <div class="progress-fill" style="background: <%= breakdownItem.Category.Background %>;width: <%= percentage %>%;">
-                    <!-- style="background: <%= breakdownItem.Category.Background %>;width: <%= get_percentage(breakdownItem.Value, categoryDetails.Total) %>%;"> -->
-                        <%= if(percentage >= 50.0) { %>
-                            <span><%= breakdownItem.Category.Name %></span>
-                        <% } %>
+                    <div class="progress-fill" style="background: <%#= breakdownItem.Category.Background %>;width: <%#= percentage %>%;">
+                        <%#= if(percentage >= 50.0) { %>
+                            <span><%#= breakdownItem.Category.Name %></span>
+                        <%# } %>
                     </div>
                     <div class="progress-empty">
-                        <%= if(percentage < 50.0) { %>
-                            <span><%= breakdownItem.Category.Name %></span>
-                        <% } %>
+                        <%#= if(percentage < 50.0) { %>
+                            <span><%#= breakdownItem.Category.Name %></span>
+                        <%# } %>
                     </div>
                 </div>
             </div>
             <div class="bar-label">
-                <span><%= format_money(breakdownItem.Value) %></span>
+                <span><%#= format_money(breakdownItem.Value) %></span>
             </div>
         </div>
-    <% } %>
+    </div>
+    <% } %> -->
 </div>
+
+<%= javascriptTag("horizontal_percentage_chart.js") %>
