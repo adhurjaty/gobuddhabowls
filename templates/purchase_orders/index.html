@@ -11,15 +11,14 @@
 </div>
 <data id="purchase-orders-holder" value='<%= json(purchaseOrders) %>'></data>
 <div class="row" id="trend-chart">
-  <!-- _trend_chart parial is put in here -->
+  <%= partial("purchase_orders/trend_chart.html") %>
 </div>
 <div class="row" id="summary-table">
-  <!-- _summary_table partial is put in here -->
+  <%#= partial("purchase_orders/summary_table.html") %>
 </div>
 <br/>
 <div id="datagrid-holder">
     
 </div>
-
 <%= javascriptTag("purchase_orders_index.js") %>
 <%= javascriptTag("purchase_orders_datagrid.js") %>
