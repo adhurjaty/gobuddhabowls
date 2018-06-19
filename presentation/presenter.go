@@ -43,8 +43,12 @@ func NewPresenter(tx *pop.Connection) *Presenter {
 // }
 
 // GetPurchaseOrders gets the purchase orders from the given date interval
-func (p *Presenter) GetPurchaseOrders(startTime time.Time, endTime time.Time) (*models.PurchaseOrders, error) {
-	return logic.GetPurchaseOrders(startTime, endTime, p.tx)
+func (p *Presenter) GetPurchaseOrders(startTime time.Time, endTime time.Time) (*[]PurchaseOrderAPI, error) {
+	purchaseOrders, err := logic.GetPurchaseOrders(startTime, endTime, p.tx)
+	if err != nil {
+		return nil, err
+	}
+
 }
 
 // GetPeriods gets the list of periods available to the user
