@@ -37,6 +37,11 @@ export function formatMoney(amt) {
     return '$' + amt.toFixed(2);
 }
 
+export function formatSlashDate(dateStr) {
+    var date = (new Date(dateStr)).toLocaleDateString();
+    return date;
+}
+
 export function unFormatMoney(s) {
     return parseFloat(s.replace('$', ''));
 }

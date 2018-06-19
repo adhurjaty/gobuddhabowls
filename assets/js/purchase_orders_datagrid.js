@@ -1,5 +1,5 @@
 import { DataGrid, EditItem } from './datagrid';
-import { getPurchaseOrderCost } from './helpers';
+import { getPurchaseOrderCost, formatMoney, formatSlashDate } from './helpers';
 import { horizontalPercentageChart } from './horizontal_percentage_chart';
 
 $(() => {
@@ -55,8 +55,8 @@ function getDataGrid(title, purchaseOrders) {
         <tr item-id="${po.id}">
             <td class="expander"><span class="fa fa-caret-right"></span></td>
             <td>${po.Vendor.name}</td>
-            <td editable="true" data-type="date" field="OrderDate"><%= format_date(purchaseOrder.OrderDate) %></td>
-            <td>${total}</td>
+            <td editable="true" data-type="date" field="OrderDate">${formatSlashDate(po.order_date)}</td>
+            <td>${formatMoney(total)}</td>
             <td>
                 <div class="dropdown show">
                 <button type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
