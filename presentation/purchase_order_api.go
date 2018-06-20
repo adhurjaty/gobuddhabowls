@@ -11,7 +11,7 @@ type PurchaseOrderAPI struct {
 	ID           string     `json:"id"`
 	Vendor       VendorAPI  `json:"Vendor"`
 	OrderDate    nulls.Time `json:"order_date"`
-	ReceivedDate nulls.Time `json:"received_date"`
+	ReceivedDate nulls.Time `json:"received_date,time,omitempty"`
 	ShippingCost float64    `json:"shipping_cost" db:"shipping_cost"`
 	Items        ItemsAPI   `json:"Items"`
 }
@@ -45,7 +45,7 @@ func (p *PurchaseOrdersAPI) ConvertToAPI(m interface{}) error {
 	}
 
 	apis := PurchaseOrdersAPI{}
-	for i, po := range purchaseOrders {
+	for _, po := range purchaseOrders {
 		api := PurchaseOrderAPI{}
 		if err := api.ConvertToAPI(po); err != nil {
 			return err

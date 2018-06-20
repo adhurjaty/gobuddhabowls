@@ -20,7 +20,7 @@ type ItemsAPI []ItemAPI
 
 // ConvertToAPI converts an order/vendor/inventory item to an api item
 func (item *ItemAPI) ConvertToAPI(m interface{}) error {
-	switch t := m.(type) {
+	switch m.(type) {
 	case models.OrderItem:
 		orderItem, _ := m.(models.OrderItem)
 		item.ID = orderItem.ID.String()
@@ -46,39 +46,26 @@ func (item *ItemAPI) ConvertToAPI(m interface{}) error {
 	default:
 		errors.New("Must supply OrderItem, VendorItem or InventoryItem type")
 	}
-	vendor, ok := m.(models.Vendor)
-	if !ok {
-		return errors.New("Must supply Vendor type")
-	}
-
-	v.ID = vendor.ID.String()
-	v.Name = vendor.Name
-	v.Email = vendor.Email.String
-	v.PhoneNumber = vendor.PhoneNumber.String
-	v.Contact = vendor.Contact.String
-	v.ShippingCost = vendor.ShippingCost
-	v.Items = ItemsAPI{}
-	v.Items.ConvertToAPI(vendor.Items)
 
 	return nil
 }
 
 // ConvertToAPI converts an order/vendor/inventory item slice to an api item slice
-func (v *VendorsAPI) ConvertToAPI(m interface{}) error {
-	vendors, ok := m.(models.Vendors)
+func (items *ItemsAPI) ConvertToAPI(m interface{}) error {
+	modelItems, ok := m.(models.InventoryItems)
 	if !ok {
-		return errors.New("Must supply Vendors type")
+		return errors.New("Must supply OrderItem, VendorItem or InventoryItem type")
 	}
 
-	apis := VendorsAPI{}
-	for i, vendor := range vendors {
-		api := VendorAPI{}
-		if err := api.ConvertToAPI(vendor); err != nil {
+	apis := ItemsAPI{}
+	for _, modelItem := range modelItems {
+		api := ItemAPI{}
+		if err := api.ConvertToAPI(modelItem); err != nil {
 			return err
 		}
 		apis = append(apis, api)
 	}
 
-	v = &apis
+	items = &apis
 	return nil
 }

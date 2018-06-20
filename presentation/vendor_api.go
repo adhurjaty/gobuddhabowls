@@ -18,7 +18,7 @@ type VendorAPI struct {
 
 type VendorsAPI []VendorAPI
 
-// ConvertToAPI converts a purchase order to an api purchase order
+// ConvertToAPI converts a vendor to an api vendor
 func (v *VendorAPI) ConvertToAPI(m interface{}) error {
 	vendor, ok := m.(models.Vendor)
 	if !ok {
@@ -37,7 +37,7 @@ func (v *VendorAPI) ConvertToAPI(m interface{}) error {
 	return nil
 }
 
-// ConvertToAPI converts a purchase order slice to an api purchase order slice
+// ConvertToAPI converts a vendor slice to an api vendor slice
 func (v *VendorsAPI) ConvertToAPI(m interface{}) error {
 	vendors, ok := m.(models.Vendors)
 	if !ok {
@@ -45,7 +45,7 @@ func (v *VendorsAPI) ConvertToAPI(m interface{}) error {
 	}
 
 	apis := VendorsAPI{}
-	for i, vendor := range vendors {
+	for _, vendor := range vendors {
 		api := VendorAPI{}
 		if err := api.ConvertToAPI(vendor); err != nil {
 			return err
