@@ -2,7 +2,7 @@ package presentation
 
 import (
 	"buddhabowls/models"
-	"errors"
+	"fmt"
 )
 
 // ItemAPI is an object for serving order and vendor items to UI
@@ -20,48 +20,55 @@ type ItemsAPI []ItemAPI
 
 // NewItemAPI converts an order/vendor/inventory item to an api item
 // TODO: create interface for these ^ types of items
-func NewItemAPI(m interface{}) ItemAPI {
-	item := ItemAPI{}
-	switch m.(type) {
-	case models.OrderItem:
-		orderItem, _ := m.(models.OrderItem)
-		return ItemAPI{
-			ID:       orderItem.ID.String(),
-			Name:     orderItem.InventoryItem.Name,
-			Category: NewCategoryAPI(orderItem.InventoryItem.Category),
-			Count:    orderItem.Count,
-			Price:    orderItem.Price,
-		}
-
-	case models.VendorItem:
-		vendorItem, _ := m.(models.VendorItem)
-		return ItemAPI{
-			ID:            vendorItem.ID.String(),
-			Name:          vendorItem.InventoryItem.Name,
-			Category:      NewCategoryAPI(vendorItem.InventoryItem.Category),
-			Price:         vendorItem.Price,
-			PurchasedUnit: vendorItem.PurchasedUnit.String,
-		}
-	case models.InventoryItem:
-		invItem, _ := m.(models.InventoryItem)
-		return ItemAPI{
-			ID:       invItem.ID.String(),
-			Name:     invItem.Name,
-			Category: NewCategoryAPI(invItem.Category),
-		}
-	default:
-		errors.New("Must supply OrderItem, VendorItem or InventoryItem type")
+func NewItemAPI(item models.GenericItem) ItemAPI {
+	// fmt.Println(item)
+	itemApi := ItemAPI{
+		ID:       item.GetID().String(),
+		Name:     item.GetName(),
+		Category: NewCategoryAPI(item.GetCategory()),
+		Index:    item.GetIndex(),
 	}
 
-	return item
+	switch item.(type) {
+	case models.OrderItem:
+		orderItem, _ := item.(models.OrderItem)
+		itemApi.Count = orderItem.Count
+		itemApi.Price = orderItem.Price
+
+	case models.VendorItem:
+		vendorItem, _ := item.(models.VendorItem)
+		itemApi.Price = vendorItem.Price
+		itemApi.PurchasedUnit = vendorItem.PurchasedUnit.String
+	}
+
+	fmt.Println(itemApi)
+
+	return itemApi
 }
 
 // NewItemsAPI converts an order/vendor/inventory item slice to an api item slice
 func NewItemsAPI(modelItems interface{}) ItemsAPI {
-	modelSlice := modelItems.([]interface{})
-	apis := make([]ItemAPI, len(modelSlice))
-	for i, modelItem := range modelSlice {
-		apis[i] = NewItemAPI(modelItem)
+	var apis []ItemAPI
+	// TODO: gotta be a better way to do this
+	switch modelItems.(type) {
+	case models.OrderItems:
+		modelSlice := modelItems.(models.OrderItems)
+		apis = make([]ItemAPI, len(modelSlice))
+		for i, modelItem := range modelSlice {
+			apis[i] = NewItemAPI(modelItem)
+		}
+	case models.VendorItems:
+		modelSlice := modelItems.(models.VendorItems)
+		apis = make([]ItemAPI, len(modelSlice))
+		for i, modelItem := range modelSlice {
+			apis[i] = NewItemAPI(modelItem)
+		}
+	case models.InventoryItems:
+		modelSlice := modelItems.(models.InventoryItems)
+		apis = make([]ItemAPI, len(modelSlice))
+		for i, modelItem := range modelSlice {
+			apis[i] = NewItemAPI(modelItem)
+		}
 	}
 
 	return apis

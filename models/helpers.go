@@ -24,15 +24,15 @@ func CombineCategoryMaps(m1 map[InventoryItemCategory]float64, m2 map[InventoryI
 }
 
 // GetCategoryGroups sections items by category and returns a category-indexed map
-func GetCategoryGroups(items []CountItem) map[InventoryItemCategory][]CountItem {
-	outMap := make(map[InventoryItemCategory][]CountItem)
+func GetCategoryGroups(items GenericItems) map[InventoryItemCategory]GenericItems {
+	outMap := make(map[InventoryItemCategory]GenericItems)
 
 	for _, item := range items {
 		itemList, ok := outMap[item.GetCategory()]
 		if ok {
 			outMap[item.GetCategory()] = append(itemList, item)
 		} else {
-			outMap[item.GetCategory()] = []CountItem{item}
+			outMap[item.GetCategory()] = GenericItems{item}
 		}
 
 	}

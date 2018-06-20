@@ -63,6 +63,22 @@ func (i *InventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, er
 	return validate.NewErrors(), nil
 }
 
+func (i InventoryItem) GetID() uuid.UUID {
+	return i.ID
+}
+
+func (i InventoryItem) GetName() string {
+	return i.Name
+}
+
+func (i InventoryItem) GetCategory() InventoryItemCategory {
+	return i.Category
+}
+
+func (i InventoryItem) GetIndex() int {
+	return i.Index
+}
+
 // GetSortValue returns a value for sorting where Category is highest prcedence
 // and item index is second
 func (i InventoryItem) GetSortValue() int {

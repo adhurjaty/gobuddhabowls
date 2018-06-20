@@ -55,20 +55,32 @@ func (o *OrderItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error)
 	return validate.NewErrors(), nil
 }
 
+func (o OrderItem) GetID() uuid.UUID {
+	return o.ID
+}
+
+func (o OrderItem) GetName() string {
+	return o.InventoryItem.Name
+}
+
 // GetCategory returns the inventory item category of the vendor item
-func (o *OrderItem) GetCategory() InventoryItemCategory {
+func (o OrderItem) GetCategory() InventoryItemCategory {
 	return o.InventoryItem.Category
 }
 
-// ToCountItems converts the VendorItems to a CountItem slice
-func (o *OrderItems) ToCountItems() []CountItem {
-	items := make([]CountItem, len(*o))
-	for i := 0; i < len(*o); i++ {
-		items[i] = &(*o)[i]
-	}
-
-	return items
+func (o OrderItem) GetIndex() int {
+	return o.InventoryItem.Index
 }
+
+// ToCountItems converts the VendorItems to a CountItem slice
+// func (o *OrderItems) ToGenericItems() GenericItems {
+// 	items := make([]GenericItem, len(*o))
+// 	for i := 0; i < len(*o); i++ {
+// 		items[i] = &(*o)[i]
+// 	}
+
+// 	return items
+// }
 
 // Extension returns the total cost (price * count) of item
 func (o *OrderItem) Extension() float64 {

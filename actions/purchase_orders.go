@@ -675,29 +675,29 @@ func getSortedVendors(tx *pop.Connection) models.Vendors {
 	return vendors
 }
 
-func setEditPOView(c buffalo.Context, purchaseOrder *models.PurchaseOrder) {
-	c.Set("vendors", models.Vendors{purchaseOrder.Vendor})
-	c.Set("purchaseOrder", purchaseOrder)
+// func setEditPOView(c buffalo.Context, purchaseOrder *models.PurchaseOrder) {
+// 	c.Set("vendors", models.Vendors{purchaseOrder.Vendor})
+// 	c.Set("purchaseOrder", purchaseOrder)
 
-	categoryDetails := purchaseOrder.GetCategoryCosts()
-	c.Set("categoryDetails", categoryDetails)
-	c.Set("title", "Category Breakdown")
+// 	categoryDetails := purchaseOrder.GetCategoryCosts()
+// 	c.Set("categoryDetails", categoryDetails)
+// 	c.Set("title", "Category Breakdown")
 
-	categoryGroups := models.GetCategoryGroups(purchaseOrder.Items.ToCountItems())
-	// get and sort keys from the map
-	sortedCategories := models.InventoryItemCategories{}
-	for k := range categoryGroups {
-		sortedCategories = append(sortedCategories, k)
-	}
-	sort.Slice(sortedCategories, func(i, j int) bool {
-		return sortedCategories[i].Index < sortedCategories[j].Index
-	})
-	c.Set("sortedCategories", sortedCategories)
-	c.Set("categoryGroups", categoryGroups)
+// 	categoryGroups := models.GetCategoryGroups(purchaseOrder.Items.ToGenericItems())
+// 	// get and sort keys from the map
+// 	sortedCategories := models.InventoryItemCategories{}
+// 	for k := range categoryGroups {
+// 		sortedCategories = append(sortedCategories, k)
+// 	}
+// 	sort.Slice(sortedCategories, func(i, j int) bool {
+// 		return sortedCategories[i].Index < sortedCategories[j].Index
+// 	})
+// 	c.Set("sortedCategories", sortedCategories)
+// 	c.Set("categoryGroups", categoryGroups)
 
-	tx := c.Value("tx").(*pop.Connection)
-	c.Set("remainingVendorItems", *getRemainingVendorItems(purchaseOrder, tx))
-}
+// 	tx := c.Value("tx").(*pop.Connection)
+// 	c.Set("remainingVendorItems", *getRemainingVendorItems(purchaseOrder, tx))
+// }
 
 func setItemsFromParams(itemsParamJSON string, purchaseOrder *models.PurchaseOrder) error {
 	orderItems := models.OrderItems{}

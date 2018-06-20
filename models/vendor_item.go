@@ -60,9 +60,21 @@ func (v *VendorItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 	return validate.NewErrors(), nil
 }
 
+func (v VendorItem) GetID() uuid.UUID {
+	return v.ID
+}
+
+func (v VendorItem) GetName() string {
+	return v.InventoryItem.Name
+}
+
 // GetCategory returns the inventory item category of the vendor item
-func (v *VendorItem) GetCategory() InventoryItemCategory {
+func (v VendorItem) GetCategory() InventoryItemCategory {
 	return v.InventoryItem.Category
+}
+
+func (v VendorItem) GetIndex() int {
+	return v.InventoryItem.Index
 }
 
 // ToOrderItem converts a vendor item to an order item (0 count and no order ID)
@@ -91,15 +103,15 @@ func (v VendorItem) SelectLabel() string {
 	return v.InventoryItem.Name
 }
 
-// ToCountItems converts the VendorItems to a CountItem slice
-func (v *VendorItems) ToCountItems() []CountItem {
-	items := make([]CountItem, len(*v))
-	for i := 0; i < len(*v); i++ {
-		items[i] = &(*v)[i]
-	}
+// ToGenericItems converts the VendorItems to a CountItem slice
+// func (v *VendorItems) ToGenericItems() GenericItems {
+// 	items := make([]GenericItem, len(*v))
+// 	for i := 0; i < len(*v); i++ {
+// 		items[i] = &(*v)[i]
+// 	}
 
-	return items
-}
+// 	return items
+// }
 
 // Sort sorts the items based on category then inventory item indices
 func (v *VendorItems) Sort() {
