@@ -14,7 +14,7 @@ $(() => {
     if(recOrders.length > 0) {
         tableArea += getDataGrid("Received Orders", recOrders);
     }
-    debugger;
+
     $('#datagrid-holder').html(tableArea);
     
     $.each($('.datagrid'), function(i, grid) {

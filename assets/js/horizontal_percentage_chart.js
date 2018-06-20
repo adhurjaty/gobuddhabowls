@@ -1,4 +1,4 @@
-import { formatMoney } from "./helpers";
+import { formatMoney, categorize } from "./helpers";
 
 export function horizontalPercentageChart(title, items, total) {
     var head = `
@@ -98,7 +98,6 @@ function getStyle() {
 function getBars(categorizedItems, total) {
     return categorizedItems.map((category) => {
         var proportion = category.value / total * 100;
-        debugger;
         return `
         <div class="bar-holder">
             <div class="percentage-bar horizontal">
@@ -116,26 +115,4 @@ function getBars(categorizedItems, total) {
             </div>
         </div>`
     }).join('');
-}
-
-function categorize(items) {
-    return items.reduce((categorizedItems, item) => {
-        var value = item.price * item.count;
-        var category = categorizedItems.find((x) => x.name == item.Category.name);
-
-        if(category) {
-            category.value += value;
-        } else {
-            categorizedItems.push({
-                index: item.Category.index,
-                name: item.Category.name,
-                value: value,
-                background: item.Category.background
-            });
-        }
-
-        return categorizedItems;
-    }, []).sort((a, b) => {
-        return a.index - b.index;
-    });
 }

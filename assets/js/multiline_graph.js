@@ -7,7 +7,7 @@ d3.tip = d3Tip;
 export class MultilineGraph {
     constructor(height, data, id) {
         this.height = height;
-        this.data = this.parseData(data);
+        this.data = data;
 
         // assume that html is structured:
         // <div id="<id>">
@@ -15,7 +15,6 @@ export class MultilineGraph {
         //   </div>
         // </div>
         this.divContainer = d3.select('#' + id)
-                              .select('div')
                               .attr('class', 'multiline-graph')
                               .style('height', height);
         this.svg = this.divContainer.append('svg');
@@ -31,7 +30,8 @@ export class MultilineGraph {
 
     redraw() {
         var self = this;
-        this.svg.selectAll('*').remove();        
+        this.svg.selectAll('*').remove();     
+        debugger;   
         // Set the dimensions of the canvas / graph
         var margin = {top: 30, right: 120, bottom: 70, left: 50},
         width = this.divContainer.node().getBoundingClientRect().width - margin.left - margin.right,
@@ -45,8 +45,8 @@ export class MultilineGraph {
         var y = d3.scaleLinear().range([height, 0]);
         // Define the line
         var priceline = d3.line()	
-                            .x(function(d) { return x(d.Date); })
-                            .y(function(d) { return y(d.Value); });
+                            .x(function(d) { return x(d.date); })
+                            .y(function(d) { return y(d.value); });
 
         // Adds the svg canvas
         this.svg
@@ -58,23 +58,24 @@ export class MultilineGraph {
 
         
         // Scale the range of the data
-        x.domain(d3.extent(this.data, function(d) { return d.Date; }));
-        y.domain([0, d3.max(this.data, function(d) { return d.Value; })]);
+        x.domain(d3.extent(this.data, function(d) { return d.date; }));
+        y.domain([0, d3.max(this.data, function(d) { return d.value; })]);
         
         // Nest the entries by symbol
         var dataNest = d3.nest()
-            .key(function(d) {return d.Name;})
+            .key(function(d) {return d.name;})
             .entries(this.data);
 
         // Loop through each symbol / key
         dataNest.forEach(function(d,i) { 
+            debugger;
             self.svg
                 .append("path")
                 .attr("data-legend", d.key)
                 .attr("class", "line")
                 .attr("d", priceline(d.values))
                 .style("stroke", function() { // Add the colors dynamically
-                    return d.color = d.values[0].Background;
+                    return d.color = d.values[0].background;
                 })
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
             // Add the Legend
@@ -86,7 +87,7 @@ export class MultilineGraph {
                 .attr("y", 0)
                 .attr("width", 10)
                 .attr("height", 10)
-                .style("fill", d.values[0].Background);
+                .style("fill", d.values[0].background);
             legend.append("text")
                 .attr("x", 20) 
                 .attr("y", 10)
@@ -120,15 +121,6 @@ export class MultilineGraph {
             .attr("class", "axis")
             .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
             .call(d3.axisLeft(y));
-    }
-
-    parseData(dataStr) {
-        var data = JSON.parse(dataStr);
-
-        data.forEach(function(d) {
-            d.Date = Date.parse(d.Date);
-        });
-        return data;
     }
 
     // TODO: add method to return data for a line that is the aggregate of all lines shown

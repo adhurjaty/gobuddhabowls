@@ -10,8 +10,8 @@
     <%= partial("partials/period_selector.html") %>
 </div>
 <data id="purchase-orders-holder" value='<%= json(purchaseOrders) %>'></data>
-<div class="row" id="trend-chart">
-  <%#= partial("purchase_orders/trend_chart.html") %>
+<div class="row">
+  <%= partial("purchase_orders/trend_chart.html", { Data: purchaseOrders, Height: 400 }) %>
 </div>
 <div class="row" id="summary-table">
   <%#= partial("purchase_orders/summary_table.html") %>

@@ -1,5 +1,5 @@
 import { VerticalBarChart } from './vertical_bar_chart.js';
-import { MultilineGraph } from './multiline_graph.js';
+// import { MultilineGraph } from './multiline_graph.js';
 
 $(() => {
     // $('#datagrid-holder').on('DOMNodeInserted', function(event) {
@@ -28,16 +28,16 @@ $(() => {
         }
     });
 
-    $('#trend-chart').on('DOMNodeInserted', function(event) {
-        if(event.target.parentNode.id == 'trend-chart') {
-            var $el = $(this).children().first();
-            var $el = $('#trend-chart').children().first();
-            if($el.length > 0) {
-                var height = parseInt($el.attr('height'));
-                var data = unescape($el.attr('data'));
+    // $('#trend-chart').on('DOMNodeInserted', function(event) {
+    //     if(event.target.parentNode.id == 'trend-chart') {
+    //         var $el = $(this).children().first();
+    //         var $el = $('#trend-chart').children().first();
+    //         if($el.length > 0) {
+    //             var height = parseInt($el.attr('height'));
+    //             var data = unescape($el.attr('data'));
 
-                var graph = new MultilineGraph(height, data, 'trend-chart');
-            }
-        }
-    });
+    //             var graph = new MultilineGraph(height, data, 'trend-chart');
+    //         }
+    //     }
+    // });
 });

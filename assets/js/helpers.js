@@ -51,3 +51,33 @@ export function getPurchaseOrderCost(po) {
         return total + item.price * item.count;
     }, 0) + po.shipping_cost;
 }
+
+// categorize groups item objects by category and sums value for each category
+export function categorize(items, catItems = []) {
+    return items.reduce((categorizedItems, item) => {
+        var value = item.price * item.count;
+        var category = categorizedItems.find((x) => x.name == item.Category.name);
+
+        if(category) {
+            category.value += value;
+        } else {
+            categorizedItems.push({
+                index: item.Category.index,
+                name: item.Category.name,
+                value: value,
+                background: item.Category.background
+            });
+        }
+
+        return categorizedItems;
+    }, catItems).sort((a, b) => {
+        return a.index - b.index;
+    });
+}
+
+// getDate gets the date from a string object. Returns the beginning of the day
+// i.e getDate(2018-6-20 11:40) == getDate(2018-6-20 21:12)
+export function getDate(dateStr) {
+    var date = new Date(dateStr);
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+}
