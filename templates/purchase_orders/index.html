@@ -13,8 +13,8 @@
 <div class="row">
   <%= partial("purchase_orders/trend_chart.html", { Data: purchaseOrders, Height: 400 }) %>
 </div>
-<div class="row" id="summary-table">
-  <%#= partial("purchase_orders/summary_table.html") %>
+<div class="row">
+  <%= partial("purchase_orders/summary_table.html", { Data: purchaseOrders, Height: 250 }) %>
 </div>
 <br/>
 <div id="datagrid-holder">

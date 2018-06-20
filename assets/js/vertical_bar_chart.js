@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
 import d3Tip from '@lix/d3-tip';
+import { categorize } from './helpers';
 d3.tip = d3Tip;
 
 // code from http://bl.ocks.org/Caged/6476579
@@ -9,14 +10,9 @@ export class VerticalBarChart {
     // pass height of container, data to graph and ID string of the element on the main page (not the partial)
     constructor(height, data, id) {
         this.height = height;
-        this.data = JSON.parse(data);
-        // assume that html is structured:
-        // <div id="<id>">
-        //   <div style="width:100%">
-        //   </div>
-        // </div>
+        this.data = data;
+        
         this.divContainer = d3.select('#' + id)
-                              .select('div')
                               .attr('class', 'vertical-bar-chart')
                               .style('height', height);
         this.svg = this.divContainer.append('svg');
@@ -47,7 +43,7 @@ export class VerticalBarChart {
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(function (d) {
-                return "<strong>Cost:</strong> <span style='color:red'>" + d.Value + "</span>";
+                return `<strong>Cost:</strong> <span style='color:red'>${d.value}</span>`;
             })
 
         this.svg.style("width", "100%")
@@ -57,8 +53,8 @@ export class VerticalBarChart {
 
         this.svg.call(tip);
 
-        x.domain(this.data.map(function (d) { return d.Name; }));
-        y.domain([0, d3.max(this.data, function (d) { return d.Value; })]);
+        x.domain(this.data.map(function (d) { return d.name; }));
+        y.domain([0, d3.max(this.data, function (d) { return d.value; })]);
 
         // Add the x Axis
         this.svg.append("g")
@@ -82,11 +78,11 @@ export class VerticalBarChart {
             .data(this.data)
             .enter().append("rect")
             .attr("class", "bar")
-            .attr("x", function (d) { return x(d.Name); })
+            .attr("x", function (d) { return x(d.name); })
             .attr("width", x.bandwidth())
-            .attr("y", function (d) { return y(d.Value); })
-            .attr("height", function (d) { return height - y(d.Value); })
-            .attr("fill", function(d) { return d.Background; })
+            .attr("y", function (d) { return y(d.value); })
+            .attr("height", function (d) { return height - y(d.value); })
+            .attr("fill", function(d) { return d.background; })
             .attr("transform", "translate(" + margin.right + "," + margin.top + ")")            
             .on('mouseover', function(d) {
                 tip.show(d);
@@ -96,7 +92,19 @@ export class VerticalBarChart {
             })
             .on('mouseout', function(d) {
                 tip.hide(d);
-                d3.select(this).style("fill", d.Background);
+                d3.select(this).style("fill", d.background);
             });
     }
 }
+
+$(() => {
+    var $el = $('#summary-table');
+    var height = parseInt($el.attr('data-height'));
+    var purchaseOrders = JSON.parse($el.attr('data-items'));
+
+    var categorizedData = purchaseOrders.reduce((cat, po) => {
+        return categorize(po.Items, cat);
+    }, []);
+
+    new VerticalBarChart(height, categorizedData, 'summary-table');
+});

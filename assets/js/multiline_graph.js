@@ -31,7 +31,6 @@ export class MultilineGraph {
     redraw() {
         var self = this;
         this.svg.selectAll('*').remove();     
-        debugger;   
         // Set the dimensions of the canvas / graph
         var margin = {top: 30, right: 120, bottom: 70, left: 50},
         width = this.divContainer.node().getBoundingClientRect().width - margin.left - margin.right,
@@ -68,7 +67,6 @@ export class MultilineGraph {
 
         // Loop through each symbol / key
         dataNest.forEach(function(d,i) { 
-            debugger;
             self.svg
                 .append("path")
                 .attr("data-legend", d.key)
