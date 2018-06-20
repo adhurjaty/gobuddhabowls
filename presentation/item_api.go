@@ -18,54 +18,51 @@ type ItemAPI struct {
 
 type ItemsAPI []ItemAPI
 
-// ConvertToAPI converts an order/vendor/inventory item to an api item
-func (item *ItemAPI) ConvertToAPI(m interface{}) error {
+// NewItemAPI converts an order/vendor/inventory item to an api item
+// TODO: create interface for these ^ types of items
+func NewItemAPI(m interface{}) ItemAPI {
+	item := ItemAPI{}
 	switch m.(type) {
 	case models.OrderItem:
 		orderItem, _ := m.(models.OrderItem)
-		item.ID = orderItem.ID.String()
-		item.Name = orderItem.InventoryItem.Name
-		item.Category = CategoryAPI{}
-		item.Category.ConvertToAPI(orderItem.GetCategory())
-		item.Count = orderItem.Count
-		item.Price = orderItem.Price
+		return ItemAPI{
+			ID:       orderItem.ID.String(),
+			Name:     orderItem.InventoryItem.Name,
+			Category: NewCategoryAPI(orderItem.InventoryItem.Category),
+			Count:    orderItem.Count,
+			Price:    orderItem.Price,
+		}
+
 	case models.VendorItem:
 		vendorItem, _ := m.(models.VendorItem)
-		item.ID = vendorItem.ID.String()
-		item.Name = vendorItem.InventoryItem.Name
-		item.Category = CategoryAPI{}
-		item.Category.ConvertToAPI(vendorItem.GetCategory())
-		item.Price = vendorItem.Price
-		item.PurchasedUnit = vendorItem.PurchasedUnit.String
+		return ItemAPI{
+			ID:            vendorItem.ID.String(),
+			Name:          vendorItem.InventoryItem.Name,
+			Category:      NewCategoryAPI(vendorItem.InventoryItem.Category),
+			Price:         vendorItem.Price,
+			PurchasedUnit: vendorItem.PurchasedUnit.String,
+		}
 	case models.InventoryItem:
 		invItem, _ := m.(models.InventoryItem)
-		item.ID = invItem.ID.String()
-		item.Name = invItem.Name
-		item.Category = CategoryAPI{}
-		item.Category.ConvertToAPI(invItem.Category)
+		return ItemAPI{
+			ID:       invItem.ID.String(),
+			Name:     invItem.Name,
+			Category: NewCategoryAPI(invItem.Category),
+		}
 	default:
 		errors.New("Must supply OrderItem, VendorItem or InventoryItem type")
 	}
 
-	return nil
+	return item
 }
 
-// ConvertToAPI converts an order/vendor/inventory item slice to an api item slice
-func (items *ItemsAPI) ConvertToAPI(m interface{}) error {
-	modelItems, ok := m.(models.InventoryItems)
-	if !ok {
-		return errors.New("Must supply OrderItem, VendorItem or InventoryItem type")
+// NewItemsAPI converts an order/vendor/inventory item slice to an api item slice
+func NewItemsAPI(modelItems interface{}) ItemsAPI {
+	modelSlice := modelItems.([]interface{})
+	apis := make([]ItemAPI, len(modelSlice))
+	for i, modelItem := range modelSlice {
+		apis[i] = NewItemAPI(modelItem)
 	}
 
-	apis := ItemsAPI{}
-	for _, modelItem := range modelItems {
-		api := ItemAPI{}
-		if err := api.ConvertToAPI(modelItem); err != nil {
-			return err
-		}
-		apis = append(apis, api)
-	}
-
-	items = &apis
-	return nil
+	return apis
 }

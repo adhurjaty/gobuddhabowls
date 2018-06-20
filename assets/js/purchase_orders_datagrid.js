@@ -6,16 +6,16 @@ $(() => {
     var purchaseOrders = JSON.parse($('#purchase-orders-holder').val());
     var openOrders = purchaseOrders.filter(x => !x.received_date);
     var recOrders = purchaseOrders.filter(x => x.received_date);
-    var table = "";
+    var tableArea = "";
 
     if(openOrders.length > 0) {
-        table = getDataGrid("Open Orders", openOrders);
+        tableArea = getDataGrid("Open Orders", openOrders);
     }
     if(recOrders.length > 0) {
-        table += getDataGrid("Received Orders", recOrders);
+        tableArea += getDataGrid("Received Orders", recOrders);
     }
-
-    $('#datagrid-holder').html(table);
+    debugger;
+    $('#datagrid-holder').html(tableArea);
     
     $.each($('.datagrid'), function(i, grid) {
         var dg = new DataGrid(grid);

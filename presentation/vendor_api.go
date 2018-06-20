@@ -2,7 +2,6 @@ package presentation
 
 import (
 	"buddhabowls/models"
-	"errors"
 )
 
 // VendorAPI is a struct for serving vendor information to the ui
@@ -18,41 +17,25 @@ type VendorAPI struct {
 
 type VendorsAPI []VendorAPI
 
-// ConvertToAPI converts a vendor to an api vendor
-func (v *VendorAPI) ConvertToAPI(m interface{}) error {
-	vendor, ok := m.(models.Vendor)
-	if !ok {
-		return errors.New("Must supply Vendor type")
+// NewVendorAPI converts a vendor to an api vendor
+func NewVendorAPI(vendor *models.Vendor) VendorAPI {
+	return VendorAPI{
+		ID:           vendor.ID.String(),
+		Name:         vendor.Name,
+		Email:        vendor.Email.String,
+		PhoneNumber:  vendor.PhoneNumber.String,
+		Contact:      vendor.Contact.String,
+		ShippingCost: vendor.ShippingCost,
+		Items:        NewItemsAPI(vendor.Items),
 	}
-
-	v.ID = vendor.ID.String()
-	v.Name = vendor.Name
-	v.Email = vendor.Email.String
-	v.PhoneNumber = vendor.PhoneNumber.String
-	v.Contact = vendor.Contact.String
-	v.ShippingCost = vendor.ShippingCost
-	v.Items = ItemsAPI{}
-	v.Items.ConvertToAPI(vendor.Items)
-
-	return nil
 }
 
-// ConvertToAPI converts a vendor slice to an api vendor slice
-func (v *VendorsAPI) ConvertToAPI(m interface{}) error {
-	vendors, ok := m.(models.Vendors)
-	if !ok {
-		return errors.New("Must supply Vendors type")
+// NewVendorsAPI converts a vendor slice to an api vendor slice
+func NewVendorsAPI(vendors *models.Vendors) VendorsAPI {
+	apis := make([]VendorAPI, len(*vendors))
+	for i, vendor := range *vendors {
+		apis[i] = NewVendorAPI(&vendor)
 	}
 
-	apis := VendorsAPI{}
-	for _, vendor := range vendors {
-		api := VendorAPI{}
-		if err := api.ConvertToAPI(vendor); err != nil {
-			return err
-		}
-		apis = append(apis, api)
-	}
-
-	v = &apis
-	return nil
+	return apis
 }

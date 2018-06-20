@@ -121,16 +121,16 @@ function getBars(categorizedItems, total) {
 function categorize(items) {
     return items.reduce((categorizedItems, item) => {
         var value = item.price * item.count;
-        var category = categorizedItems.find((x) => x.name == item.InventoryItem.Category.name);
+        var category = categorizedItems.find((x) => x.name == item.Category.name);
 
         if(category) {
             category.value += value;
         } else {
             categorizedItems.push({
-                index: item.InventoryItem.Category.index,
-                name: item.InventoryItem.Category.name,
+                index: item.Category.index,
+                name: item.Category.name,
                 value: value,
-                background: item.InventoryItem.Category.background
+                background: item.Category.background
             });
         }
 

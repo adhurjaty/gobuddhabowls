@@ -2,7 +2,6 @@ package presentation
 
 import (
 	"buddhabowls/models"
-	"errors"
 	"github.com/gobuffalo/pop/nulls"
 )
 
@@ -18,41 +17,24 @@ type PurchaseOrderAPI struct {
 
 type PurchaseOrdersAPI []PurchaseOrderAPI
 
-// ConvertToAPI converts a purchase order to an api purchase order
-func (p *PurchaseOrderAPI) ConvertToAPI(m interface{}) error {
-	purchaseOrder, ok := m.(models.PurchaseOrder)
-	if !ok {
-		return errors.New("Must supply PurchaseOrder type")
+// NewPurchaseOrderAPI converts a purchase order to an api purchase order
+func NewPurchaseOrderAPI(purchaseOrder *models.PurchaseOrder) PurchaseOrderAPI {
+	return PurchaseOrderAPI{
+		ID:           purchaseOrder.ID.String(),
+		Vendor:       NewVendorAPI(&purchaseOrder.Vendor),
+		OrderDate:    purchaseOrder.OrderDate,
+		ReceivedDate: purchaseOrder.ReceivedDate,
+		ShippingCost: purchaseOrder.ShippingCost,
+		Items:        NewItemsAPI(purchaseOrder.Items),
 	}
-
-	p.ID = purchaseOrder.ID.String()
-	p.Vendor = VendorAPI{}
-	p.Vendor.ConvertToAPI(purchaseOrder.Vendor)
-	p.OrderDate = purchaseOrder.OrderDate
-	p.ReceivedDate = purchaseOrder.ReceivedDate
-	p.ShippingCost = purchaseOrder.ShippingCost
-	p.Items = ItemsAPI{}
-	p.Items.ConvertToAPI(purchaseOrder.Items)
-
-	return nil
 }
 
-// ConvertToAPI converts a purchase order slice to an api purchase order slice
-func (p *PurchaseOrdersAPI) ConvertToAPI(m interface{}) error {
-	purchaseOrders, ok := m.(models.PurchaseOrders)
-	if !ok {
-		return errors.New("Must supply PurchaseOrders type")
+// NewPurchaseOrdersAPI converts a purchase order slice to an api purchase order slice
+func NewPurchaseOrdersAPI(purchaseOrders *models.PurchaseOrders) PurchaseOrdersAPI {
+	apis := make([]PurchaseOrderAPI, len(*purchaseOrders))
+	for i, po := range *purchaseOrders {
+		apis[i] = NewPurchaseOrderAPI(&po)
 	}
 
-	apis := PurchaseOrdersAPI{}
-	for _, po := range purchaseOrders {
-		api := PurchaseOrderAPI{}
-		if err := api.ConvertToAPI(po); err != nil {
-			return err
-		}
-		apis = append(apis, api)
-	}
-
-	p = &apis
-	return nil
+	return apis
 }

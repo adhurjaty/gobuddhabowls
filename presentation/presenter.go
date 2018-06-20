@@ -48,10 +48,10 @@ func (p *Presenter) GetPurchaseOrders(startTime time.Time, endTime time.Time) (*
 	if err != nil {
 		return nil, err
 	}
-	apiPurchaseOrders := &PurchaseOrdersAPI{}
-	apiPurchaseOrders.ConvertToAPI(purchaseOrders)
 
-	return apiPurchaseOrders, nil
+	apiPurchaseOrders := NewPurchaseOrdersAPI(purchaseOrders)
+
+	return &apiPurchaseOrders, nil
 }
 
 // GetPeriods gets the list of periods available to the user
