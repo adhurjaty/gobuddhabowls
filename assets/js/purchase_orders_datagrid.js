@@ -1,18 +1,20 @@
 import { DataGrid, EditItem } from './datagrid';
-import { getPurchaseOrderCost, formatMoney, formatSlashDate } from './helpers';
+import { getPurchaseOrderCost, formatMoney, formatSlashDate, replaceUrlId } from './helpers';
 import { horizontalPercentageChart } from './horizontal_percentage_chart';
 
 $(() => {
-    var purchaseOrders = JSON.parse($('#purchase-orders-holder').val());
+    var $container = $('#datagrid-holder');
+    var purchaseOrders = JSON.parse($container.attr('data'));
+    var editOrderPath = $container.attr('data-url');
     var openOrders = purchaseOrders.filter(x => !x.received_date);
     var recOrders = purchaseOrders.filter(x => x.received_date);
     var tableArea = "";
 
     if(openOrders.length > 0) {
-        tableArea = getDataGrid("Open Orders", openOrders);
+        tableArea = getDataGrid("Open Orders", openOrders, editOrderPath);
     }
     if(recOrders.length > 0) {
-        tableArea += getDataGrid("Received Orders", recOrders);
+        tableArea += getDataGrid("Received Orders", recOrders, editOrderPath);
     }
 
     $('#datagrid-holder').html(tableArea);
@@ -26,7 +28,7 @@ $(() => {
     });
 });
 
-function getDataGrid(title, purchaseOrders) {
+function getDataGrid(title, purchaseOrders, editOrderPath) {
     var head = `
     <div class="row justify-content-center">
         <div class="col-6 text-center">
@@ -59,14 +61,14 @@ function getDataGrid(title, purchaseOrders) {
             <td>${formatMoney(total)}</td>
             <td>
                 <div class="dropdown show">
-                <button type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    ...
-                </button>
-                <div class="dropdown-menu">
-                    <span class="dropdown-item" onclick="receiveItem(${po.id})">Received</span>
-                    <a href="<%= editPurchaseOrderPath({ purchase_order_id: ${po.id}}) %>" class="dropdown-item">Edit</a>
-                    <span class="dropdown-item text-danger" onclick="deleteItem(${po.id})">Delete</span>
-                </div>
+                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ...
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" onclick="receiveItem(${po.id})">Received</span>
+                        <a href="${replaceUrlId(editOrderPath, po.id)}" class="dropdown-item">Edit</a>
+                        <span class="dropdown-item text-danger" onclick="deleteItem(${po.id})">Delete</span>
+                    </div>
                 </div>
             </td>
         </tr>

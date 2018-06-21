@@ -9,7 +9,6 @@
 <div class="row" id="period-selector-component" onchange-href="<%= purchaseOrdersPath() %>">
     <%= partial("partials/period_selector.html") %>
 </div>
-<data id="purchase-orders-holder" value='<%= json(purchaseOrders) %>'></data>
 <div class="row">
   <%= partial("purchase_orders/trend_chart.html", { Data: purchaseOrders, Height: 400 }) %>
 </div>
@@ -17,8 +16,5 @@
   <%= partial("purchase_orders/summary_table.html", { Data: purchaseOrders, Height: 250 }) %>
 </div>
 <br/>
-<div id="datagrid-holder">
-    
-</div>
-<%= javascriptTag("purchase_orders_index.js") %>
-<%= javascriptTag("purchase_orders_datagrid.js") %>
+
+<%= partial("purchase_orders/datagrid.html", { Data: purchaseOrders }) %>

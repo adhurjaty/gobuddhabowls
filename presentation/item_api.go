@@ -2,7 +2,6 @@ package presentation
 
 import (
 	"buddhabowls/models"
-	"fmt"
 )
 
 // ItemAPI is an object for serving order and vendor items to UI
@@ -19,10 +18,8 @@ type ItemAPI struct {
 type ItemsAPI []ItemAPI
 
 // NewItemAPI converts an order/vendor/inventory item to an api item
-// TODO: create interface for these ^ types of items
 func NewItemAPI(item models.GenericItem) ItemAPI {
-	// fmt.Println(item)
-	itemApi := ItemAPI{
+	itemAPI := ItemAPI{
 		ID:       item.GetID().String(),
 		Name:     item.GetName(),
 		Category: NewCategoryAPI(item.GetCategory()),
@@ -32,18 +29,16 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 	switch item.(type) {
 	case models.OrderItem:
 		orderItem, _ := item.(models.OrderItem)
-		itemApi.Count = orderItem.Count
-		itemApi.Price = orderItem.Price
+		itemAPI.Count = orderItem.Count
+		itemAPI.Price = orderItem.Price
 
 	case models.VendorItem:
 		vendorItem, _ := item.(models.VendorItem)
-		itemApi.Price = vendorItem.Price
-		itemApi.PurchasedUnit = vendorItem.PurchasedUnit.String
+		itemAPI.Price = vendorItem.Price
+		itemAPI.PurchasedUnit = vendorItem.PurchasedUnit.String
 	}
 
-	fmt.Println(itemApi)
-
-	return itemApi
+	return itemAPI
 }
 
 // NewItemsAPI converts an order/vendor/inventory item slice to an api item slice

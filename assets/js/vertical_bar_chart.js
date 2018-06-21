@@ -1,6 +1,6 @@
 import * as d3 from 'd3';
 import d3Tip from '@lix/d3-tip';
-import { categorize } from './helpers';
+import { categorize, formatMoney } from './helpers';
 d3.tip = d3Tip;
 
 // code from http://bl.ocks.org/Caged/6476579
@@ -43,7 +43,7 @@ export class VerticalBarChart {
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(function (d) {
-                return `<strong>Cost:</strong> <span style='color:red'>${d.value}</span>`;
+                return `<strong>Cost:</strong> <span style='color:red'>${formatMoney(d.value)}</span>`;
             })
 
         this.svg.style("width", "100%")
