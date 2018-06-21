@@ -1,49 +1,5 @@
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-6 text-center">
-            <h4>Vendor Items</h4>
-        </div>
-    </div>
-    <div class="row">
-        <table class="datagrid">
-            <thead>
-                <th width="40%">Name</th>
-                <th width="22%">Cost</th>
-                <th width="15%">Count</th>
-                <th width="22%">Total Cost</th>
-            </thead>
-            <tbody>
-                <%= for (category) in sortedCategories { %>
-                    <tr class="category-header" style="background-color: <%= category.Background %>">
-                        <td colspan="100">
-                            <%= category.Name %>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="100" style="padding: 0;">
-                            <table class="datagrid">
-                                <thead style="display: none;">
-                                    <th>Name</th>
-                                    <th>Cost</th>
-                                    <th>Count</th>
-                                    <th>Total Cost</th>
-                                </thead>
-                                <tbody>
-                                    <!-- list OrderItem -->
-                                    <%= for (Item) in categoryGroups[category] { %>
-                                        <tr item-id="<%= Item.ID %>" inv-item-id="<%= Item.InventoryItem.ID %>">
-                                            <td name="name" width="40%"><%= Item.InventoryItem.Name %></td>
-                                            <td name="price" width="22%" editable="true" data-type="money" value="<%= Item.Price %>"><%= format_money(Item.Price) %></td>
-                                            <td name="count" width="15%" editable="true" data-type="number"><%= Item.Count %></td>
-                                            <td name="extension" width="22%"><%= format_money(Item.Extension()) %></td>
-                                        </tr>
-                                    <% } %>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                <% } %>
-            </tbody>
-        </table>
-    </div>
+<div class="container-fluid" id="vendor-items-table" data='<%= json(Items) %>'>
+
 </div>
+
+<%= javascriptTag("inventory_items_datagrid.js") %>

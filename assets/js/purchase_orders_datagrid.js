@@ -77,7 +77,7 @@ function getDataGrid(title, purchaseOrders, editOrderPath) {
                 ${horizontalPercentageChart(title, po.Items, total)}            
             </td> 
         </tr>`;
-    });
+    }).join('');
     
     return head + rows + foot;
 }

@@ -326,15 +326,26 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	factory := models.ModelFactory{}
-	purchaseOrder := &models.PurchaseOrder{}
-	if err := factory.CreateModel(purchaseOrder, tx, c.Param("purchase_order_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	purchaseOrder, err := presenter.GetPurchaseOrder(c.Param("purchase_order_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
+	// factory := models.ModelFactory{}
+	// purchaseOrder := &models.PurchaseOrder{}
+	// if err := factory.CreateModel(purchaseOrder, tx, c.Param("purchase_order_id")); err != nil {
+	// 	return c.Error(404, err)
+	// }
 
-	c.Set("purchaseOrder", purchaseOrder)
-	c.Set("vendors", models.Vendors{purchaseOrder.Vendor})
+	// fmt.Println(purchaseOrder.Items)
+	c.Set("po", purchaseOrder)
+	c.Set("vendors", presentation.VendorsAPI{purchaseOrder.Vendor})
 
+	// map from vendor ID to vendor items
+	vendorItemsMap := map[string]presentation.ItemsAPI{
+		purchaseOrder.Vendor.ID: purchaseOrder.Vendor.Items,
+	}
+	c.Set("vendorItemsMap", vendorItemsMap)
 	// EDIT POINT
 
 	// purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
@@ -344,7 +355,7 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 
 	// setEditPOView(c, &purchaseOrder)
 
-	return c.Render(200, r.Auto(c, purchaseOrder))
+	return c.Render(200, r.Auto(c, models.PurchaseOrder{}))
 }
 
 // AddPurchaseOrderItem adds an order item to the order item list

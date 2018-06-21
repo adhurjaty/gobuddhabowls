@@ -1,35 +1,35 @@
 <div class="row">
     <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="received-order-checkbox" <%= if (purchaseOrder.ReceivedDate.Valid) { %>checked<% } %>>
+        <input type="checkbox" class="form-check-input" id="received-order-checkbox" <%= if (po.ReceivedDate.Valid) { %>checked<% } %>>
         <label class="form-check-label offset-md-3">Received order</label>
     </div>
 </div>
 
-
 <%
     let orderDate = today()
     let recDate = today()
-    if (purchaseOrder.OrderDate.Valid) {
-        orderDate = format_date(purchaseOrder.OrderDate.Time)
+    if (po.OrderDate.Valid) {
+        orderDate = format_date(po.OrderDate.Time)
     }
-    if (purchaseOrder.ReceivedDate.Valid) {
-        recDate = format_date(purchaseOrder.ReceivedDate.Time)
+    if (po.ReceivedDate.Valid) {
+        recDate = format_date(po.ReceivedDate.Time)
     }
 %>
 <div class="row">
     <%= f.InputTag("OrderDate", {data-provide: "datepicker", id: "new-order-date", value: orderDate }) %>
 </div>
-<div class="row" id="received-date-input" <%= if (!purchaseOrder.ReceivedDate.Valid) { %>style="display: none"<% } %>>
+<div class="row" id="received-date-input" <%= if (!po.ReceivedDate.Valid) { %>style="display: none"<% } %>>
     <%= f.InputTag("ReceivedDate", {data-provide: "datepicker", id: "new-received-date", value: recDate }) %>
 </div>
 <div class="row">
     <%= f.SelectTag("Vendor", {options: vendors, id: "new-order-vendor", name: "VendorID" }) %>
 </div>
 
+<div id="vendor-items-map" data='<%= json(vendorItemsMap) %>' />
 <input type="text" name="Items" style="visibility: collapse;"/>
 <div class="row">
     <div class="col-md-6">
-        <%= if (len(purchaseOrder.Items) > 0) { %>
+        <%= if (len(po.Items) > 0) { %>
             <div class="input-group d-flex justify-content-end">
                 <button class="btn btn-default" type="button" id="add-po-item" data-toggle="modal" data-target="#add-item-modal">
                     <span class="fa fa-plus"/>
@@ -39,14 +39,14 @@
                 </button>
             </div>
         <% } %>
-        <div id="vendor-items-table">
-            <%= if (len(purchaseOrder.Items) > 0) { %>
-                <%#= partial("purchase_orders/inventory_items_datagrid.html") %>
-            <% } %>    
-        </div>
+        <!-- <div id="vendor-items-tables"> -->
+        <%= if (len(po.Items) > 0) { %>
+            <%= partial("purchase_orders/inventory_items_datagrid.html", { Items: po.Items }) %>
+        <% } %>    
+        <!-- </div> -->
     </div>
     <div id="category-breakdown" class="col-md-6">
-        <%= if (len(purchaseOrder.Items) > 0) { %>
+        <%= if (len(po.Items) > 0) { %>
             <%#= partial("partials/horizontal_percentage_chart.html", {categoryDetails: categoryDetails, title: title}) %>
         <% } %> 
     </div>

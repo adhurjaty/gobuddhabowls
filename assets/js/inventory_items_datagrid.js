@@ -1,0 +1,124 @@
+import { groupByCategory, formatMoney } from './helpers';
+
+function initDatagrid() {
+    var grid = $('.datagrid .datagrid').get();
+    // $.each($('.datagrid'), function(i, grid) {
+    var dg = new DataGrid(grid, orderCountChanged);
+
+    $.each($('.datagrid td[editable="true"]'), function(j, el) {
+        var ei = new EditItem(dg, $(el));
+    });
+
+    $.each($('.datagrid .datagrid tr'), function(i, el) {
+        $(el).click(function(event) {
+            $('#remove-po-item').removeAttr('disabled');
+        })
+    });
+
+}
+
+function orderCountChanged(editItem) {
+    // change price extension for row
+    var $tr = editItem.$td.parent();
+    var price = parseFloat($tr.find('td[name="price"]').attr('value')),
+      count = parseFloat($tr.find('td[name="count"]').text());
+    var extension = price * count;
+    $tr.find('td[name="extension"]').text(formatMoney(extension));
+
+    // generate/update category breakdown
+    // use backend to generate percentage chart
+    // var on_change_url = '/purchase_orders/count_changed'
+    // var itemsJSON = $('#vendor-items-table').find('tr[item-id]').map(function(i, el) {
+    //     return {
+    //         'inventory_item_id': $(el).attr('inv-item-id'),
+    //         'price': $(el).find('td[name="price"]').attr('value'),
+    //         'count': $(el).find('td[name="count"]').text()
+    //     };
+    // }).get();
+    // var data = {};
+    // data['Items'] = JSON.stringify(itemsJSON);
+
+    // $.ajax({
+    //     url: on_change_url,
+    //     data: data,
+    //     method: 'POST',
+    //     error: function(xhr, status, err) {
+    //         var errMessage = xhr.responseText;
+    //         debugger;
+    //     },
+    //     success: function(data, status, xhr) {
+            
+    //     }
+    // });
+}
+
+function createDatagrid(items) {
+    var head = `
+    <div class="row justify-content-center">
+        <div class="col-6 text-center">
+            <h4>Order Items</h4>
+        </div>
+    </div>
+    <div class="row">
+        <table class="datagrid">
+            <thead>
+                <th width="40%">Name</th>
+                <th width="22%">Cost</th>
+                <th width="15%">Count</th>
+                <th width="22%">Total Cost</th>
+            </thead>
+            <tbody>`;
+    var foot = `
+            </tbody>
+        </table>
+    </div>`
+
+    var categorized = groupByCategory(items);
+
+    var categoryRows = categorized.map((categoryGroup) => {
+        return `
+        <tr class="category-header" style="background-color: ${categoryGroup.background}">
+            <td colspan="100">
+                ${categoryGroup.name}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="100" style="padding: 0;">
+                <table class="datagrid">
+                    <thead style="display: none;">
+                        <th>Name</th>
+                        <th>Cost</th>
+                        <th>Count</th>
+                        <th>Total Cost</th>
+                    </thead>
+                    <tbody>
+                        <!-- list OrderItem -->
+                        ${categoryGroup.value.map((item) => {
+                            var price = parseFloat(item.price);
+                            var count = parseFloat(item.count);
+                            return `
+                            <tr item-id="${item.id}"">
+                                <td name="name" width="40%">${item.name}</td>
+                                <td name="price" width="22%" editable="true" data-type="money" value="<%= Item.Price %>">${formatMoney(price)}</td>
+                                <td name="count" width="15%" editable="true" data-type="number">${count}</td>
+                                <td name="extension" width="22%">${formatMoney(price * count)}</td>
+                            </tr>`;
+                        }).join('')}
+                    </tbody>
+                </table>
+            </td>
+        </tr>`
+    }).join('');
+
+    return head + categoryRows + foot;
+}
+
+$(() => {
+    var $container = $('#vendor-items-table');
+    var items = JSON.parse($container.attr('data'));
+
+    $container.html(createDatagrid(items));
+    initDatagrid();
+
+});
+
