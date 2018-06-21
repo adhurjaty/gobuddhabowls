@@ -7,20 +7,20 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <%= form_for(purchaseOrder, {action: purchaseOrderAddItemPath({ purchase_order_id: purchaseOrder.ID }), method: "POST", id: "modal-form" }) { %>
+      <%#= form_for(purchaseOrder, {action: purchaseOrderAddItemPath({ purchase_order_id: purchaseOrder.ID }), method: "POST", id: "modal-form" }) { %>
 
         <div class="modal-body" id="add-order-modal">
           <div class="hidden-items">
-            <%= f.InputTag("Items", {name: "Items", value: json(purchaseOrder.Items) }) %>
+            <%#= f.InputTag("Items", {name: "Items", value: json(purchaseOrder.Items) }) %>
           </div>
-          <%= f.SelectTag("Item", {options: remainingVendorItems, name: "VendorItemID" }) %>
+          <%#= f.SelectTag("Item", {options: remainingVendorItems, name: "VendorItemID" }) %>
           
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           <button type="button" class="btn btn-success" data-dismiss="modal" role="submit">OK</button>
         </div>
-      <% } %>
+      <%# } %>
     </div>
   </div>
 </div>

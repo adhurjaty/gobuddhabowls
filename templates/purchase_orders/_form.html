@@ -10,10 +10,10 @@
     let orderDate = today()
     let recDate = today()
     if (purchaseOrder.OrderDate.Valid) {
-        orderDate = format_date(purchaseOrder.OrderDate)
+        orderDate = format_date(purchaseOrder.OrderDate.Time)
     }
     if (purchaseOrder.ReceivedDate.Valid) {
-        recDate = format_date(purchaseOrder.ReceivedDate)
+        recDate = format_date(purchaseOrder.ReceivedDate.Time)
     }
 %>
 <div class="row">
@@ -41,13 +41,13 @@
         <% } %>
         <div id="vendor-items-table">
             <%= if (len(purchaseOrder.Items) > 0) { %>
-                <%= partial("purchase_orders/inventory_items_datagrid.html") %>
+                <%#= partial("purchase_orders/inventory_items_datagrid.html") %>
             <% } %>    
         </div>
     </div>
     <div id="category-breakdown" class="col-md-6">
         <%= if (len(purchaseOrder.Items) > 0) { %>
-            <%= partial("partials/horizontal_percentage_chart.html", {categoryDetails: categoryDetails, title: title}) %>
+            <%#= partial("partials/horizontal_percentage_chart.html", {categoryDetails: categoryDetails, title: title}) %>
         <% } %> 
     </div>
 </div>

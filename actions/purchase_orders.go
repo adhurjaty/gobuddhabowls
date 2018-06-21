@@ -40,112 +40,6 @@ const (
 	_poEndTimeKey   = "poEndTime"
 )
 
-// PurchaseOrderDateChanged updates visible purchase orders table
-// GET /purchase_orders/date_changed
-// TODO: remove this and put into List
-func PurchaseOrderDateChanged(c buffalo.Context) error {
-	// store := c.Session()
-
-	// // indicates whether user used the custome date range
-	// customDateRange := false
-
-	// // Get the DB connection from the context
-	// tx, ok := c.Value("tx").(*pop.Connection)
-	// if !ok {
-	// 	return c.Error(500, errors.New("no transaction found"))
-	// }
-
-	// // get the parameters from URL
-	// paramsMap, ok := c.Params().(url.Values)
-	// if !ok {
-	// 	return c.Error(500, errors.New("Could not parse params"))
-	// }
-
-	// yearStr, found := paramsMap["Year"]
-	// if !found {
-	// 	return c.Error(422, errors.New("No year supplied"))
-	// }
-
-	// year, err := strconv.Atoi(yearStr[0])
-	// if err != nil {
-	// 	return c.Error(500, errors.New("Could not get year from params"))
-	// }
-	// // if user selects the year option, then go to 1/1/year
-	// startTime := time.Date(year, 1, 1, 0, 0, 0, 0, time.UTC)
-	// endTime := startTime
-
-	// // if user selected period, week or daterange
-	// if startTimeStr, ok := paramsMap["StartTime"]; ok {
-	// 	startTime, err = time.Parse(time.RFC3339, startTimeStr[0])
-	// 	if err != nil {
-	// 		fmt.Println(fmt.Errorf("Could not parse start time: %s", startTimeStr[0]))
-	// 		return c.Error(500, errors.New("Could not parse start time"))
-	// 	}
-
-	// 	// if user selected daterange
-	// 	if endTimeStr, ok := paramsMap["EndTime"]; ok {
-	// 		endTime, err = time.Parse(time.RFC3339, endTimeStr[0])
-	// 		if err != nil {
-	// 			fmt.Println(fmt.Errorf("Could not parse end time: %s", endTimeStr[0]))
-	// 			return c.Error(500, errors.New("Could not parse end time"))
-	// 		}
-
-	// 		customDateRange = true
-	// 	}
-	// }
-
-	// periodSelectorContext := componentcontexts.PeriodSelectorContext{}
-	// // TODO: make a new period selector function
-	// periodSelectorContext.Init(startTime)
-
-	// // only get the week if the date range was not selected
-	// if !customDateRange {
-	// 	startTime = periodSelectorContext.SelectedWeek.StartTime
-	// 	endTime = periodSelectorContext.SelectedWeek.EndTime
-	// }
-
-	// startVal := startTime.Format(time.RFC3339)
-	// endVal := endTime.Format(time.RFC3339)
-
-	// // change selected PO dates in session
-	// store.Set(_poStartTimeKey, startVal)
-	// store.Set(_poEndTimeKey, endVal)
-
-	// q := tx.Eager().Where("order_date >= ? AND order_date < ?",
-	// 	startVal, endVal).Order("order_date DESC")
-
-	// openPos, recPos, err := presentation.GetOpenRecPurchaseOrders(q)
-	// if err != nil {
-	// 	return errors.WithStack(err)
-	// }
-
-	// // period selector view information
-	// c.Set("pSelectorContext", periodSelectorContext)
-	// c.Set("startTime", nulls.Time{Valid: true, Time: startTime})
-	// c.Set("endTime", nulls.Time{Valid: true, Time: endTime})
-	// c.Set("customDateRange", customDateRange)
-
-	// // purchase order view information
-	// c.Set("openPurchaseOrders", openPos)
-	// c.Set("recPurchaseOrders", recPos)
-
-	// lineChartData := presentation.GetLineChartJSONData(openPos, recPos)
-	// c.Set("trendChartData", lineChartData)
-
-	// // summary table view information
-	// barChartData := presentation.GetBarChartJSONData(openPos, recPos)
-	// c.Set("barChartData", barChartData)
-
-	// years, ok := store.Get("years").([]int)
-	// if !ok {
-	// 	years, _ = models.GetYears(tx)
-	// }
-	// c.Set("years", years)
-
-	return c.Render(200, r.JavaScript("purchase_orders/replace_table"))
-
-}
-
 // List gets all PurchaseOrders. This function is mapped to the path
 // GET /purchase_orders
 // optional params: StartTime, [EndTime]
@@ -219,64 +113,6 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 	c.Set("purchaseOrders", purchaseOrders)
 
 	return c.Render(200, r.HTML("purchase_orders/index"))
-
-	// EDIT POINT
-
-	// indicates whether user used the custome date range
-	// customDateRange := false
-
-	// // Get the DB connection from the context
-	// tx, ok := c.Value("tx").(*pop.Connection)
-	// if !ok {
-	// 	return errors.WithStack(errors.New("no transaction found"))
-	// }
-
-	// years, err := models.GetYears(tx)
-	// if err != nil {
-	// 	return errors.WithStack(err)
-	// }
-
-	// store := c.Session()
-
-	// periodSelectorContext := componentcontexts.PeriodSelectorContext{}
-	// startTime := time.Time{}
-	// endTime := startTime
-	// if store.Get(_poStartTimeKey) == nil || store.Get(_poEndTimeKey) == nil {
-	// 	periodSelectorContext.Init(time.Now())
-	// 	startTime = periodSelectorContext.SelectedWeek.StartTime
-	// 	endTime = periodSelectorContext.SelectedWeek.EndTime
-	// 	store.Set(_poStartTimeKey, startTime.Format(time.RFC3339))
-	// 	store.Set(_poEndTimeKey, endTime.Format(time.RFC3339))
-	// } else {
-	// 	t, err := time.Parse(time.RFC3339, store.Get(_poStartTimeKey).(string))
-	// 	if err != nil {
-	// 		return errors.WithStack(err)
-	// 	}
-	// 	startTime = t
-	// 	endTime, err = time.Parse(time.RFC3339, store.Get(_poEndTimeKey).(string))
-	// 	if err != nil {
-	// 		return errors.WithStack(err)
-	// 	}
-	// 	periodSelectorContext.Init(startTime)
-
-	// 	customDateRange = startTime != periodSelectorContext.SelectedWeek.StartTime ||
-	// 		endTime != periodSelectorContext.SelectedWeek.EndTime
-
-	// }
-
-	// presenter := presentation.Presenter{}
-	// periodData, err := presenter.GetPeriodData(tx)
-	// if err != nil {
-	// 	return err
-	// }
-	// c.Set("periodData", periodData)
-	// c.Set("pSelectorContext", periodSelectorContext)
-	// c.Set("startTime", nulls.Time{Valid: true, Time: startTime})
-	// c.Set("endTime", nulls.Time{Valid: true, Time: endTime})
-	// c.Set("years", years)
-	// c.Set("customDateRange", customDateRange)
-
-	// return c.Render(200, r.HTML("purchase_orders/index"))
 }
 
 // Show gets the data for one PurchaseOrder. This function is mapped to
@@ -448,46 +284,58 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 // or price change. It displays a category price breakdown and updates
 // the price extension
 // mapped to the path POST /purchase_orders/count_changed
-func PurchaseOrdersCountChanged(c buffalo.Context) error {
-	purchaseOrder := &models.PurchaseOrder{}
-	itemsJSON, ok := c.Request().Form["Items"]
-	if !ok {
-		return c.Error(500, errors.New("Could not get items from form"))
-	}
-	err := setItemsFromParams(itemsJSON[0], purchaseOrder)
-	if err != nil {
-		return errors.WithStack(err)
-	}
+// func PurchaseOrdersCountChanged(c buffalo.Context) error {
+// 	purchaseOrder := &models.PurchaseOrder{}
+// 	itemsJSON, ok := c.Request().Form["Items"]
+// 	if !ok {
+// 		return c.Error(500, errors.New("Could not get items from form"))
+// 	}
+// 	err := setItemsFromParams(itemsJSON[0], purchaseOrder)
+// 	if err != nil {
+// 		return errors.WithStack(err)
+// 	}
 
-	tx, ok := c.Value("tx").(*pop.Connection)
-	if !ok {
-		return c.Error(500, errors.New("Could not open database connection"))
-	}
+// 	tx, ok := c.Value("tx").(*pop.Connection)
+// 	if !ok {
+// 		return c.Error(500, errors.New("Could not open database connection"))
+// 	}
 
-	for i, item := range purchaseOrder.Items {
-		invItem := &models.InventoryItem{}
-		err = tx.Eager().Find(invItem, item.InventoryItemID)
-		if err != nil {
-			return c.Error(500, errors.New("invalid inventory item ID"))
-		}
-		purchaseOrder.Items[i].InventoryItem = *invItem
-	}
+// 	for i, item := range purchaseOrder.Items {
+// 		invItem := &models.InventoryItem{}
+// 		err = tx.Eager().Find(invItem, item.InventoryItemID)
+// 		if err != nil {
+// 			return c.Error(500, errors.New("invalid inventory item ID"))
+// 		}
+// 		purchaseOrder.Items[i].InventoryItem = *invItem
+// 	}
 
-	categoryDetails := purchaseOrder.GetCategoryCosts()
-	c.Set("categoryDetails", categoryDetails)
-	c.Set("title", "Category Breakdown")
+// 	categoryDetails := purchaseOrder.GetCategoryCosts()
+// 	c.Set("categoryDetails", categoryDetails)
+// 	c.Set("title", "Category Breakdown")
 
-	return c.Render(200, r.JavaScript("purchase_orders/count_changed"))
-}
+// 	return c.Render(200, r.JavaScript("purchase_orders/count_changed"))
+// }
 
 // Edit renders a edit form for a PurchaseOrder. This function is
 // mapped to the path GET /purchase_orders/{purchase_order_id}/edit
 func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
+
 	// Get the DB connection from the context
-	// tx, ok := c.Value("tx").(*pop.Connection)
-	// if !ok {
-	// 	return errors.WithStack(errors.New("no transaction found"))
-	// }
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	factory := models.ModelFactory{}
+	purchaseOrder := &models.PurchaseOrder{}
+	if err := factory.CreateModel(purchaseOrder, tx, c.Param("purchase_order_id")); err != nil {
+		return c.Error(404, err)
+	}
+
+	c.Set("purchaseOrder", purchaseOrder)
+	c.Set("vendors", models.Vendors{purchaseOrder.Vendor})
+
+	// EDIT POINT
 
 	// purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
 	// if err != nil {
@@ -496,44 +344,43 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 
 	// setEditPOView(c, &purchaseOrder)
 
-	// return c.Render(200, r.Auto(c, purchaseOrder))
-	return c.Render(200, r.Auto(c, nil))
+	return c.Render(200, r.Auto(c, purchaseOrder))
 }
 
 // AddPurchaseOrderItem adds an order item to the order item list
 // mapped to /purchase_orders/add_item/{purchase_order_id}
-func AddPurchaseOrderItem(c buffalo.Context) error {
+// func AddPurchaseOrderItem(c buffalo.Context) error {
 
-	// tx, ok := c.Value("tx").(*pop.Connection)
-	// if !ok {
-	// 	return errors.WithStack(errors.New("no transaction found"))
-	// }
+// tx, ok := c.Value("tx").(*pop.Connection)
+// if !ok {
+// 	return errors.WithStack(errors.New("no transaction found"))
+// }
 
-	// vendorItemID := c.Request().Form["VendorItemID"][0]
+// vendorItemID := c.Request().Form["VendorItemID"][0]
 
-	// vendorItem, err := models.LoadVendorItem(tx, vendorItemID)
-	// if err != nil {
-	// 	return c.Error(500, err)
-	// }
+// vendorItem, err := models.LoadVendorItem(tx, vendorItemID)
+// if err != nil {
+// 	return c.Error(500, err)
+// }
 
-	// purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
-	// if err != nil {
-	// 	return c.Error(404, err)
-	// }
+// purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
+// if err != nil {
+// 	return c.Error(404, err)
+// }
 
-	// // Bind PurchaseOrder to the html form elements
-	// if err := c.Bind(&purchaseOrder); err != nil {
-	// 	fmt.Println(err)
-	// 	return errors.WithStack(err)
-	// }
+// // Bind PurchaseOrder to the html form elements
+// if err := c.Bind(&purchaseOrder); err != nil {
+// 	fmt.Println(err)
+// 	return errors.WithStack(err)
+// }
 
-	// purchaseOrder.Items = append(purchaseOrder.Items, *vendorItem.ToOrderItem())
-	// purchaseOrder.Items.Sort()
+// purchaseOrder.Items = append(purchaseOrder.Items, *vendorItem.ToOrderItem())
+// purchaseOrder.Items.Sort()
 
-	// setEditPOView(c, &purchaseOrder)
+// setEditPOView(c, &purchaseOrder)
 
-	return c.Render(200, r.HTML("purchase_orders/edit"))
-}
+// 	return c.Render(200, r.HTML("purchase_orders/edit"))
+// }
 
 // Update changes a PurchaseOrder in the DB. This function is mapped to
 // the path PUT /purchase_orders/{purchase_order_id}

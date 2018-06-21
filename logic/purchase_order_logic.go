@@ -24,3 +24,12 @@ func GetPurchaseOrders(startTime, endTime time.Time, tx *pop.Connection) (*model
 
 	return pos, err
 }
+
+// GetPurchaseOrder returns a PurchaseOrder model
+func GetPurchaseOrder(id string, tx *pop.Connection) (*models.PurchaseOrder, error) {
+	factory := models.ModelFactory{}
+	po := &models.PurchaseOrder{}
+	err := factory.CreateModel(po, tx, id)
+
+	return po, err
+}

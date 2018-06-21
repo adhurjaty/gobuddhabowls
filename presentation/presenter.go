@@ -54,6 +54,17 @@ func (p *Presenter) GetPurchaseOrders(startTime time.Time, endTime time.Time) (*
 	return &apiPurchaseOrders, nil
 }
 
+// GetPurchaseOrder retrieves a purchase order by ID to display to the user
+func (p *Presenter) GetPurchaseOrder(id string) (*PurchaseOrderAPI, error) {
+	purchaseOrder, err := logic.GetPurchaseOrder(id, p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	apiPO := NewPurchaseOrderAPI(purchaseOrder)
+	return &apiPO, nil
+}
+
 // GetPeriods gets the list of periods available to the user
 func (p *Presenter) GetPeriods(startTime time.Time) []logic.Period {
 	if p.PeriodContext == nil {

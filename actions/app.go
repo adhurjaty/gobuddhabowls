@@ -62,10 +62,6 @@ func App() *buffalo.App {
 		app.Resource("/vendors", VendorsResource{})
 		app.Resource("/count_inventory_items", CountInventoryItemsResource{})
 
-		app.GET("/purchase_orders/date_changed", PurchaseOrderDateChanged)
-		app.GET("/purchase_orders/order_vendor_changed/{vendor_id}", NewOrderVendorChanged)
-		app.POST("/purchase_orders/count_changed", PurchaseOrdersCountChanged)
-		app.POST("/purchase_order/add_item/{purchase_order_id}", AddPurchaseOrderItem)
 		app.Resource("/purchase_orders", PurchaseOrdersResource{})
 
 		app.Resource("/order_items", OrderItemsResource{})
