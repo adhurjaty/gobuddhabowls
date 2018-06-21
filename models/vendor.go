@@ -57,24 +57,3 @@ func (v *Vendor) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
 func (v *Vendor) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
 }
-
-// GetCategoryGroups gets all items the vendor sells grouped by category
-// func (v Vendor) GetCategoryGroups() map[InventoryItemCategory]GenericItems {
-// 	return GetCategoryGroups(v.Items.ToGenericItems())
-// }
-
-// SelectValue returns the ID for select input tags
-func (v Vendor) SelectValue() interface{} {
-	if v.ID.String() == (uuid.UUID{}).String() {
-		return ""
-	}
-	return v.ID
-}
-
-// SelectLabel returs the name for select input tags
-func (v Vendor) SelectLabel() string {
-	if v.ID.String() == (uuid.UUID{}).String() {
-		return "- Select a vendor -"
-	}
-	return v.Name
-}

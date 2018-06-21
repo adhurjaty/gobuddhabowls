@@ -71,7 +71,7 @@ function createDatagrid(items) {
                             var price = parseFloat(item.price);
                             var count = parseFloat(item.count);
                             return `
-                            <tr item-id="${item.id}"">
+                            <tr item-id="${item.id}" inv-item-id="${item.inventory_item_id}">
                                 <td name="name" width="40%">${item.name}</td>
                                 <td name="price" width="22%" editable="true" data-type="money" value="${price}">${formatMoney(price)}</td>
                                 <td name="count" width="15%" editable="true" data-type="number">${count}</td>

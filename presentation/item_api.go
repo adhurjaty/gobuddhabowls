@@ -6,13 +6,14 @@ import (
 
 // ItemAPI is an object for serving order and vendor items to UI
 type ItemAPI struct {
-	ID            string      `json:"id"`
-	Name          string      `json:"name"`
-	Category      CategoryAPI `json:"Category"`
-	Index         int         `json:"index"`
-	Count         float64     `json:"count,string,omitempty"`
-	Price         float64     `json:"price,string,omitempty"`
-	PurchasedUnit string      `json:"purchased_unit,string,omitempty"`
+	ID              string      `json:"id"`
+	Name            string      `json:"name"`
+	Category        CategoryAPI `json:"Category"`
+	Index           int         `json:"index"`
+	InventoryItemID string      `json:"inventory_item_id,omitempty"`
+	Count           float64     `json:"count,string,omitempty"`
+	Price           float64     `json:"price,string,omitempty"`
+	PurchasedUnit   string      `json:"purchased_unit,string,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
@@ -29,11 +30,13 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 	switch item.(type) {
 	case models.OrderItem:
 		orderItem, _ := item.(models.OrderItem)
+		itemAPI.InventoryItemID = orderItem.InventoryItemID.String()
 		itemAPI.Count = orderItem.Count
 		itemAPI.Price = orderItem.Price
 
 	case models.VendorItem:
 		vendorItem, _ := item.(models.VendorItem)
+		itemAPI.InventoryItemID = vendorItem.InventoryItemID.String()
 		itemAPI.Price = vendorItem.Price
 		itemAPI.PurchasedUnit = vendorItem.PurchasedUnit.String
 	}
@@ -67,4 +70,17 @@ func NewItemsAPI(modelItems interface{}) ItemsAPI {
 	}
 
 	return apis
+}
+
+// SelectValue returns the ID for select input tags
+func (item ItemAPI) SelectValue() interface{} {
+	return item.ID
+}
+
+// SelectLabel returs the name for select input tags
+func (item ItemAPI) SelectLabel() string {
+	if item.ID == "" {
+		return "- Select an item -"
+	}
+	return item.Name
 }

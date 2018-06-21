@@ -39,3 +39,16 @@ func NewVendorsAPI(vendors *models.Vendors) VendorsAPI {
 
 	return apis
 }
+
+// SelectValue returns the ID for select input tags
+func (v VendorAPI) SelectValue() interface{} {
+	return v.ID
+}
+
+// SelectLabel returs the name for select input tags
+func (v VendorAPI) SelectLabel() string {
+	if v.ID == "" {
+		return "- Select a vendor -"
+	}
+	return v.Name
+}
