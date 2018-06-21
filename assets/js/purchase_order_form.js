@@ -25,9 +25,9 @@ $(() => {
         });
     });
 
-    if($('#vendor-items-table').children().length > 0) {
-        initDatagrid();
-    }
+    // if($('#vendor-items-table').children().length > 0) {
+    //     initDatagrid();
+    // }
 
     $('#purchase-order-form>button[role="submit"]').click(function(event) {
         if(!$('#received-order-checkbox').is(':checked')) {

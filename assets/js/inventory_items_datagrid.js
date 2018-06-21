@@ -1,4 +1,5 @@
 import { groupByCategory, formatMoney } from './helpers';
+import { DataGrid, EditItem } from './datagrid';
 
 function initDatagrid() {
     var grid = $('.datagrid .datagrid').get();
@@ -14,7 +15,6 @@ function initDatagrid() {
             $('#remove-po-item').removeAttr('disabled');
         })
     });
-
 }
 
 function orderCountChanged(editItem) {
@@ -24,32 +24,6 @@ function orderCountChanged(editItem) {
       count = parseFloat($tr.find('td[name="count"]').text());
     var extension = price * count;
     $tr.find('td[name="extension"]').text(formatMoney(extension));
-
-    // generate/update category breakdown
-    // use backend to generate percentage chart
-    // var on_change_url = '/purchase_orders/count_changed'
-    // var itemsJSON = $('#vendor-items-table').find('tr[item-id]').map(function(i, el) {
-    //     return {
-    //         'inventory_item_id': $(el).attr('inv-item-id'),
-    //         'price': $(el).find('td[name="price"]').attr('value'),
-    //         'count': $(el).find('td[name="count"]').text()
-    //     };
-    // }).get();
-    // var data = {};
-    // data['Items'] = JSON.stringify(itemsJSON);
-
-    // $.ajax({
-    //     url: on_change_url,
-    //     data: data,
-    //     method: 'POST',
-    //     error: function(xhr, status, err) {
-    //         var errMessage = xhr.responseText;
-    //         debugger;
-    //     },
-    //     success: function(data, status, xhr) {
-            
-    //     }
-    // });
 }
 
 function createDatagrid(items) {
@@ -99,7 +73,7 @@ function createDatagrid(items) {
                             return `
                             <tr item-id="${item.id}"">
                                 <td name="name" width="40%">${item.name}</td>
-                                <td name="price" width="22%" editable="true" data-type="money" value="<%= Item.Price %>">${formatMoney(price)}</td>
+                                <td name="price" width="22%" editable="true" data-type="money" value="${price}">${formatMoney(price)}</td>
                                 <td name="count" width="15%" editable="true" data-type="number">${count}</td>
                                 <td name="extension" width="22%">${formatMoney(price * count)}</td>
                             </tr>`;

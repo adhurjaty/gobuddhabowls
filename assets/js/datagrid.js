@@ -159,10 +159,11 @@ export class EditItem {
 // may update models on edit
 export class DataGrid {
     // add data grid to grid (usually div tag). Give it a function to execute when a value is changed
-    constructor(grid) {
+    constructor(grid, updateFnc) {
         this.grid = grid;
         // this.on_change_url = $(grid).attr('onchange-href');
-        // this.sendUpdate = updateFnc || this.defaultSendUpdate;
+
+        this.sendUpdate = updateFnc || this.defaultSendUpdate;
         this.initRows();
 
         if($(grid).find('td.expander') != undefined) {
@@ -375,13 +376,3 @@ $.fn.selectText = function(){
         selection.addRange(range);
     }
  };
-
- $(() => {
-    $.each($('.datagrid'), function(i, grid) {
-        var dg = new DataGrid(grid);
-
-        $.each($(this).find('td[editable="true"]'), function(j, el) {
-            var ei = new EditItem(dg, $(el));
-        });
-    });
- });
