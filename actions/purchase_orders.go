@@ -331,29 +331,37 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 	if err != nil {
 		return c.Error(404, err)
 	}
-	// factory := models.ModelFactory{}
-	// purchaseOrder := &models.PurchaseOrder{}
-	// if err := factory.CreateModel(purchaseOrder, tx, c.Param("purchase_order_id")); err != nil {
-	// 	return c.Error(404, err)
-	// }
 
-	// fmt.Println(purchaseOrder.Items)
 	c.Set("po", purchaseOrder)
+
+	vendor, err := presenter.GetVendor(purchaseOrder.Vendor.ID)
+	if err != nil {
+		return c.Error(500, err)
+	}
+	purchaseOrder.Vendor = *vendor
 	c.Set("vendors", presentation.VendorsAPI{purchaseOrder.Vendor})
 
 	// map from vendor ID to vendor items
 	vendorItemsMap := map[string]presentation.ItemsAPI{
-		purchaseOrder.Vendor.ID: purchaseOrder.Vendor.Items,
+		vendor.ID: purchaseOrder.Vendor.Items,
 	}
 	c.Set("vendorItemsMap", vendorItemsMap)
-	// EDIT POINT
 
-	// purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
-	// if err != nil {
-	// 	return c.Error(404, err)
-	// }
+	remainingItems := presentation.ItemsAPI{}
+	for _, vendorItem := range purchaseOrder.Vendor.Items {
+		contains := false
+		for _, poItem := range purchaseOrder.Items {
+			if vendorItem.InventoryItemID == poItem.InventoryItemID {
+				contains = true
+				break
+			}
+		}
+		if !contains {
+			remainingItems = append(remainingItems, vendorItem)
+		}
+	}
 
-	// setEditPOView(c, &purchaseOrder)
+	c.Set("remainingItems", remainingItems)
 
 	return c.Render(200, r.Auto(c, models.PurchaseOrder{}))
 }

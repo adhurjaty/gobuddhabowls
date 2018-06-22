@@ -169,6 +169,11 @@ export class DataGrid {
         if($(grid).find('td.expander') != undefined) {
             this.initCollapse();
         }
+
+        var self = this;
+        $.each($(grid).find('td[editable="true"]'), function(i, el) {
+            return new EditItem(self, $(el));
+        });
     }
 
     // initRows sets click highlighting for rows
@@ -266,6 +271,10 @@ export class DataGrid {
 
     removeEditable(row) {
         row.find('td[editable="true"]').removeAttr('contenteditable');
+    }
+
+    removeItem($row) {
+        $row.remove();
     }
 
     // defaultSendUpdate(editItem) {

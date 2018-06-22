@@ -1,20 +1,10 @@
 import { groupByCategory, formatMoney } from './helpers';
-import { DataGrid, EditItem } from './datagrid';
+import { DataGrid } from './datagrid';
 
 function initDatagrid() {
     var grid = $('.datagrid .datagrid').get();
-    // $.each($('.datagrid'), function(i, grid) {
-    var dg = new DataGrid(grid, orderCountChanged);
 
-    $.each($('.datagrid td[editable="true"]'), function(j, el) {
-        var ei = new EditItem(dg, $(el));
-    });
-
-    $.each($('.datagrid .datagrid tr'), function(i, el) {
-        $(el).click(function(event) {
-            $('#remove-po-item').removeAttr('disabled');
-        })
-    });
+    new DataGrid(grid, orderCountChanged);
 }
 
 function orderCountChanged(editItem) {
@@ -66,7 +56,6 @@ function createDatagrid(items) {
                         <th>Total Cost</th>
                     </thead>
                     <tbody>
-                        <!-- list OrderItem -->
                         ${categoryGroup.value.map((item) => {
                             var price = parseFloat(item.price);
                             var count = parseFloat(item.count);
@@ -87,12 +76,15 @@ function createDatagrid(items) {
     return head + categoryRows + foot;
 }
 
+function removeItem() {
+    _datagrid.removeItem(_selected_tr);
+}
+
 $(() => {
     var $container = $('#vendor-items-table');
     var items = JSON.parse($container.attr('data'));
 
     $container.html(createDatagrid(items));
     initDatagrid();
-
 });
 

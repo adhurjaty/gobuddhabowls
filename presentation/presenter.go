@@ -65,6 +65,16 @@ func (p *Presenter) GetPurchaseOrder(id string) (*PurchaseOrderAPI, error) {
 	return &apiPO, nil
 }
 
+func (p *Presenter) GetVendor(id string) (*VendorAPI, error) {
+	vendor, err := logic.GetVendor(id, p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	apiVendor := NewVendorAPI(vendor)
+	return &apiVendor, nil
+}
+
 // GetPeriods gets the list of periods available to the user
 func (p *Presenter) GetPeriods(startTime time.Time) []logic.Period {
 	if p.PeriodContext == nil {

@@ -20,11 +20,7 @@ $(() => {
     $('#datagrid-holder').html(tableArea);
     
     $.each($('.datagrid'), function(i, grid) {
-        var dg = new DataGrid(grid);
-
-        $.each($(this).find('td[editable="true"]'), function(j, el) {
-            var ei = new EditItem(dg, $(el));
-        });
+        new DataGrid(grid);
     });
 });
 
