@@ -174,6 +174,7 @@ export class DataGrid {
         $.each($(grid).find('td[editable="true"]'), function(i, el) {
             return new EditItem(self, $(el));
         });
+        // this.rows = $(grid).find('tr');
     }
 
     // initRows sets click highlighting for rows
@@ -181,19 +182,24 @@ export class DataGrid {
     initRows() {
         self = this;
         $.each($(self.grid).find('tbody>tr'), function(i, tr) {
-            $(tr).click(function(event) {
-                if(!$(this).hasClass('active')) {
-                    self.clearSelectedRow();
-                    $(this).addClass('active');
-                    self.setEditable($(this));
-                }
-            })
+            self.initRow(tr);
         });
 
         $(this.grid).on('focusout', function(event) {
             $(this).find('tr').each(function(i, tr) {
                 $(tr).removeClass('active');
             });
+        });
+    }
+
+    initRow(row) {
+        var self = this;
+        $(row).click(function(event) {
+            if(!$(this).hasClass('active')) {
+                self.clearSelectedRow();
+                $(this).addClass('active');
+                self.setEditable($(this));
+            }
         });
     }
 
@@ -275,6 +281,13 @@ export class DataGrid {
 
     removeItem($row) {
         $row.remove();
+    }
+
+    addItem($row, idx) {
+        $.each($row.find('td[editable="true"]'), function(i, el) {
+            return new EditItem(self, $(el));
+        });
+
     }
 
     // defaultSendUpdate(editItem) {

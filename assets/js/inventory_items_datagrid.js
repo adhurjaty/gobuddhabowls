@@ -1,10 +1,10 @@
 import { groupByCategory, formatMoney } from './helpers';
-import { DataGrid } from './datagrid';
+import { DataGrid, EditItem } from './datagrid';
 
-function initDatagrid() {
+export function initDatagrid() {
     var grid = $('.datagrid .datagrid').get();
 
-    new DataGrid(grid, orderCountChanged);
+    return new DataGrid(grid, orderCountChanged);
 }
 
 function orderCountChanged(editItem) {
@@ -57,15 +57,7 @@ function createDatagrid(items) {
                     </thead>
                     <tbody>
                         ${categoryGroup.value.map((item) => {
-                            var price = parseFloat(item.price);
-                            var count = parseFloat(item.count);
-                            return `
-                            <tr item-id="${item.id}" inv-item-id="${item.inventory_item_id}">
-                                <td name="name" width="40%">${item.name}</td>
-                                <td name="price" width="22%" editable="true" data-type="money" value="${price}">${formatMoney(price)}</td>
-                                <td name="count" width="15%" editable="true" data-type="number">${count}</td>
-                                <td name="extension" width="22%">${formatMoney(price * count)}</td>
-                            </tr>`;
+                            return createRow(item);
                         }).join('')}
                     </tbody>
                 </table>
@@ -76,8 +68,45 @@ function createDatagrid(items) {
     return head + categoryRows + foot;
 }
 
-function removeItem() {
-    _datagrid.removeItem(_selected_tr);
+export function addToDatagrid(item, datagrid) {
+    // move this stuff to datagrid
+    var tr = createRow(item);
+    var $rows = $('.datagrid .datagrid tr')
+
+    var idx = -1;
+    $.each($rows, (i, x) => {
+        if(parseInt(item.index) < parseInt($(x).attr('data-index'))) {
+            idx = i;
+            return false;
+        }
+    });
+
+    // check whether this is the first item of its category
+    // add new category
+    // add row to datagrid
+
+    datagrid.initRow(tr);
+    $.each($(tr).find('td[editable="true"]'), function(i, el) {
+        new EditItem(datagrid, $(el));
+    });
+
+    if(idx == -1) {
+        $rows.parent().append(tr)
+    } else {
+        $(tr).insertBefore($rows.get(idx));
+    }
+}
+
+function createRow(item) {
+    var price = parseFloat(item.price);
+    var count = parseFloat(item.count);
+    return `
+    <tr item-id="${item.id}" inv-item-id="${item.inventory_item_id}" data-index="${item.index}">
+        <td name="name" width="40%">${item.name}</td>
+        <td name="price" width="22%" editable="true" data-type="money" value="${price}">${formatMoney(price)}</td>
+        <td name="count" width="15%" editable="true" data-type="number">${count}</td>
+        <td name="extension" width="22%">${formatMoney(price * count)}</td>
+    </tr>`
 }
 
 $(() => {
@@ -85,6 +114,5 @@ $(() => {
     var items = JSON.parse($container.attr('data'));
 
     $container.html(createDatagrid(items));
-    initDatagrid();
 });
 
