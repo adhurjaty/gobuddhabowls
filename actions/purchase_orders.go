@@ -112,6 +112,19 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 	}
 	c.Set("purchaseOrders", purchaseOrders)
 
+	openPos := presentation.PurchaseOrdersAPI{}
+	recPos := presentation.PurchaseOrdersAPI{}
+	for _, po := range *purchaseOrders {
+		if po.ReceivedDate.Valid {
+			recPos = append(recPos, po)
+		} else {
+			openPos = append(openPos, po)
+		}
+	}
+
+	c.Set("openPurchaseOrders", openPos)
+	c.Set("recPurchaseOrders", recPos)
+
 	return c.Render(200, r.HTML("purchase_orders/index"))
 }
 

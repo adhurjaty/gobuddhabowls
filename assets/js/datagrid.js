@@ -123,113 +123,163 @@ export class EditItem {
         this.$td.find('span').remove();
     }
 
-    onUpdateSuccess() {
-        switch(this.type) {
-            case 'date':
-                this.$td.text(this.contents);
-                break;
-            default:
-                break;
-        }
+    // onUpdateSuccess() {
+    //     switch(this.type) {
+    //         case 'date':
+    //             this.$td.text(this.contents);
+    //             break;
+    //         default:
+    //             break;
+    //     }
+    // }
+
+    // sendUpdate() {
+    //     if(!this.onchange_url) {
+    //         return;
+    //     }
+    //     var self = this;
+    //     var data = {};
+    //     data[editItem.field] = editItem.contents;
+    //     $.ajax({
+    //         url: self.onchange_url,
+    //         data: data,
+    //         method: 'PUT',
+    //         error: function(xhr, status, err) {
+    //             var errMessage = xhr.responseText;
+    //             editItem.showError(errMessage);
+    //         },
+    //         success: function(data, status, xhr) {
+    //             editItem.onUpdateSuccess();
+    //         }
+    //     });
+    // }
+}
+
+class Cell {
+    constructor($cell) {
+        this.$cell = $cell;
+    }
+    getCell() {
+        return this.$cell;
+    }
+}
+
+class Row {
+    constructor(cells) {
+        this.cells = cells;
+        initRow();
     }
 
-    sendUpdate() {
-        if(!this.onchange_url) {
-            return;
-        }
+    intiRow() {
         var self = this;
-        var data = {};
-        data[editItem.field] = editItem.contents;
-        $.ajax({
-            url: self.onchange_url,
-            data: data,
-            method: 'PUT',
-            error: function(xhr, status, err) {
-                var errMessage = xhr.responseText;
-                editItem.showError(errMessage);
-            },
-            success: function(data, status, xhr) {
-                editItem.onUpdateSuccess();
-            }
+        this.$row = $(`<tr></tr>`);
+        this.cells.forEach((cell) => {
+            cell.getCell().appendTo(self.$row);
         });
+    }
+
+    getRow() {
+        return this.$row;
     }
 }
 
 // DataGrid is a class for creating a table that has editable cells that
 // may update models on edit
 export class DataGrid {
-    // add data grid to grid (usually div tag). Give it a function to execute when a value is changed
-    constructor(grid, updateFnc) {
-        this.grid = grid;
-        // this.on_change_url = $(grid).attr('onchange-href');
-
-        this.sendUpdate = updateFnc || this.defaultSendUpdate;
+    // table: table to make a datgrid
+    // columnFactory: array of objects that maps column names to functions that return cell html
+    //  [{name: vendor, colFunc: function(purchaseOrder) {}, expander [optional]}, ...]
+    // updateFnc: function to execute after updating an editable cell
+    constructor(table, columnFactory, updateFnc) {
+        this.table = table;
+        this.data = JSON.parse($(table).attr('data'));
+        this.columnFactory = columnFactory;
+        this.$rows = null;
         this.initRows();
+        this.sendUpdate = updateFnc || this.defaultSendUpdate;
+        
+        // this.on_change_url = $(grid).attr('onchange-href');
+        // // this.initRows();
 
-        if($(grid).find('td.expander') != undefined) {
-            this.initCollapse();
-        }
+        // if($(grid).find('td.expander') != undefined) {
+        //     this.initCollapse();
+        // }
 
-        var self = this;
-        $.each($(grid).find('td[editable="true"]'), function(i, el) {
-            return new EditItem(self, $(el));
-        });
+        // var self = this;
+        // $.each($(grid).find('td[editable="true"]'), function(i, el) {
+        //     return new EditItem(self, $(el));
+        // });
         // this.rows = $(grid).find('tr');
     }
 
     // initRows sets click highlighting for rows
     // TODO: remove highlighting when clicking off the table
     initRows() {
-        self = this;
-        $.each($(self.grid).find('tbody>tr'), function(i, tr) {
-            self.initRow(tr);
-        });
-
-        $(this.grid).on('focusout', function(event) {
-            $(this).find('tr').each(function(i, tr) {
-                $(tr).removeClass('active');
-            });
-        });
-    }
-
-    initRow(row) {
         var self = this;
-        $(row).click(function(event) {
-            if(!$(this).hasClass('active')) {
-                self.clearSelectedRow();
-                $(this).addClass('active');
-                self.setEditable($(this));
-            }
+        var $headers = $(this.table).find('th');
+        this.$rows = this.data.map((item) => {
+            var cells = $headers.map(($header) => {
+                var name = $header.attr('name');
+                return new Cell($(`<td>
+                    ${self.columnFactory[name](item)}
+                </td>`));
+            });
+            return new Row(cells);
         });
+        var $tbody = $('<tbody></tbody>')
+        this.$rows.forEach(($row) => {
+            $row.appendTo($tbody);
+        })
+        $tbody.appendTo($(this.table));
+        // $.each($(self.grid).find('tbody>tr'), function(i, tr) {
+        //     self.initRow(tr);
+        // });
+
+        // $(this.grid).on('focusout', function(event) {
+        //     $(this).find('tr').each(function(i, tr) {
+        //         $(tr).removeClass('active');
+        //     });
+        // });
     }
+
+    // initRow(row) {
+    //     var self = this;
+    //     $(row).click(function(event) {
+    //         if(!$(this).hasClass('active')) {
+    //             self.clearSelectedRow();
+    //             $(this).addClass('active');
+    //             self.setEditable($(this));
+    //         }
+    //     });
+    // }
 
     // initCollapse sets up tables with hidden rows to enable showing
     // row detail content. Add 'expander' class to the caret td tag
-    initCollapse() {
-        self = this;
-        $.each($(this.grid).find('td.expander'), function(i, el) {
-            $(el).click(function(event) {
-                var $span = $(this).find('span');
-                if($span.hasClass(collapsedCaret)) {
-                    $span.removeClass(collapsedCaret);
-                    $span.addClass(expandedCaret);
-                    self.expandInfo($(this).parent().next());
-                } else if($span.hasClass(expandedCaret)) {
-                    $span.removeClass(expandedCaret);
-                    $span.addClass(collapsedCaret);
-                    self.collapseInfo($(this).parent().next());                    
-                }
-            });
-        });
-    }
+    // initCollapse() {
+    //     self = this;
+    //     $.each($(this.grid).find('td.expander'), function(i, el) {
+    //         $(el).click(function(event) {
+    //             var $span = $(this).find('span');
+    //             if($span.hasClass(collapsedCaret)) {
+    //                 $span.removeClass(collapsedCaret);
+    //                 $span.addClass(expandedCaret);
+    //                 self.expandInfo($(this).parent().next());
+    //             } else if($span.hasClass(expandedCaret)) {
+    //                 $span.removeClass(expandedCaret);
+    //                 $span.addClass(collapsedCaret);
+    //                 self.collapseInfo($(this).parent().next());                    
+    //             }
+    //         });
+    //     });
+    // }
 
-    expandInfo($tr) {
-        $tr.show();
-    }
+    // expandInfo($tr) {
+    //     $tr.show();
+    // }
 
-    collapseInfo($tr) {
-        $tr.hide();
-    }
+    // collapseInfo($tr) {
+    //     $tr.hide();
+    // }
 
     // clearSelectedRow unhighlighs a row
     clearSelectedRow() {

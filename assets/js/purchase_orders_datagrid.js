@@ -1,27 +1,83 @@
-import { DataGrid, EditItem } from './datagrid';
+import { DataGrid } from './datagrid';
 import { getPurchaseOrderCost, formatMoney, formatSlashDate, replaceUrlId } from './helpers';
 import { horizontalPercentageChart } from './horizontal_percentage_chart';
 
 $(() => {
+
     var $container = $('#datagrid-holder');
-    var purchaseOrders = JSON.parse($container.attr('data'));
+    // var purchaseOrders = JSON.parse($container.attr('data'));
     var editOrderPath = $container.attr('data-url');
-    var openOrders = purchaseOrders.filter(x => !x.received_date);
-    var recOrders = purchaseOrders.filter(x => x.received_date);
-    var tableArea = "";
+    var openOrders = JSON.parse($('open-order-datagrid').attr('data'));
+    var recOrders = JSON.parse($('rec-order-datagrid').attr('data'));
 
-    if(openOrders.length > 0) {
-        tableArea = getDataGrid("Open Orders", openOrders, editOrderPath);
-    }
-    if(recOrders.length > 0) {
-        tableArea += getDataGrid("Received Orders", recOrders, editOrderPath);
-    }
+    baseColumnObjects = [
+        {
+            name: 'id',
+            hidden: true,
+            column_func: (purchaseOrder) => {
+                return purchaseOrder.id;
+            }
+        },
+        {
+            name: 'vendor',
+            header: 'Vendor',
+            column_func: (purchaseOrder) => {
+                return purchaseOrder.Vendor.name;
+            }
+        },
+        {
+            name: 'order_date',
+            header: 'Order Date',
+            editable: true,
+            data_type: 'date',
+            column_func: (purchaseOrder) => {
+                return formatSlashDate(purchaseOrder.order_date);
+            }
+        },
+        {
+            name: 'cost',
+            header: 'Cost',
+            column_func: (purchaseOrder) => {
+                return formatMoney(getPurchaseOrderCost(purchaseOrder));
+            }
+        }
+    ];
 
-    $('#datagrid-holder').html(tableArea);
+    openColumnObjects = baseColumnObjects.concat([
+        {
+            name: 'dropdown',
+            column_func: ((editOrderPath) => {
+                return (purchaseOrder) => {
+                    return `<div class="dropdown show">
+                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ...
+                        </button>
+                        <div class="dropdown-menu">
+                            <span class="dropdown-item" onclick="receiveItem(${purchaseOrder.id})">Received</span>
+                            <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
+                            <span class="dropdown-item text-danger" onclick="deleteItem(${purchaseOrder.id})">Delete</span>
+                        </div>
+                    </div>`
+                }
+            })(editOrderPath)
+        }
+    ]);
+    // var openOrders = purchaseOrders.filter(x => !x.received_date);
+    // var recOrders = purchaseOrders.filter(x => x.received_date);
+    // var tableArea = "";
+
+    // if(openOrders.length > 0) {
+    //     tableArea = getDataGrid("Open Orders", openOrders, editOrderPath);
+    // }
+    // if(recOrders.length > 0) {
+    //     tableArea += getDataGrid("Received Orders", recOrders, editOrderPath);
+    // }
+
+    // $('#datagrid-holder').html(tableArea);
     
-    $.each($('.datagrid'), function(i, grid) {
-        new DataGrid(grid);
-    });
+    // $.each($('.datagrid'), function(i, grid) {
+    //     new DataGrid(grid);
+    // });
 });
 
 function getDataGrid(title, purchaseOrders, editOrderPath) {

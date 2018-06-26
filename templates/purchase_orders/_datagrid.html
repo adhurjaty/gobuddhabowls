@@ -1,5 +1,42 @@
-<div id="datagrid-holder" data='<%= json(Data) %>' data-url="<%= editPurchaseOrderPath() %>">
-    
+<div id="datagrid-holder" data-url="<%= editPurchaseOrderPath() %>">
+  <%= if (len(openPurchaseOrders) > 0) { %>
+    <div class="row justify-content-center">
+      <div class="col-6 text-center">
+          <h4>Open Orders</h4>
+      </div>
+    </div> 
+    <div class="row">
+      <table id="open-order-datagrid" class="datagrid" data="<%= json(openPurchaseOrders) %>" update-url="<%= purchaseOrdersPath() %>">
+        <thead>
+          <th name="id" style"display: none"></th>
+          <th name="expander"></th>
+          <th name="vendor">Vendor</th>
+          <th name="order_date" editable="true" data-type="date">Order Date</th>
+          <th name="price">Cost</th>
+          <th name="open_dropdown">&nbsp;</th>
+        </thead>
+      </table>
+    </div>
+  <% } %>
+  <%= if (len(recPurchaseOrders) > 0) { %>
+    <div class="row justify-content-center">
+      <div class="col-6 text-center">
+          <h4>Received Orders</h4>
+      </div>
+    </div> 
+    <div class="row">
+      <table id="rec-order-datagrid" class="datagrid" data="<%= json(recPurchaseOrders) %>" update-url="<%= purchaseOrdersPath() %>">
+        <thead>
+          <th name="expander"></th>
+          <th name="vendor">Vendor</th>
+          <th name="order_date" editable="true" data-type="date">Order Date</th>
+          <th name="received_date" editable="true" data-type="date">Received Date</th>
+          <th name="price">Cost</th>
+          <th name="rec_dropdown">&nbsp;</th>
+        </thead>
+      </table>
+    </div>
+  <% } %>
 </div>
 
 <%= javascriptTag("purchase_orders_datagrid.js") %>
