@@ -3,14 +3,15 @@ import { getPurchaseOrderCost, formatMoney, formatSlashDate, replaceUrlId } from
 import { horizontalPercentageChart } from './horizontal_percentage_chart';
 
 $(() => {
-
     var $container = $('#datagrid-holder');
     // var purchaseOrders = JSON.parse($container.attr('data'));
     var editOrderPath = $container.attr('data-url');
-    var openOrders = JSON.parse($('open-order-datagrid').attr('data'));
-    var recOrders = JSON.parse($('rec-order-datagrid').attr('data'));
+    var $openDatagridContainer = $('#open-order-datagrid')
+    var openOrders = JSON.parse($openDatagridContainer.attr('data'));
+    var $recDatagridContainer = $('#rec-order-datagrid');
+    var recOrders = JSON.parse($recDatagridContainer.attr('data'));
 
-    baseColumnObjects = [
+    var baseColumnObjects = [
         {
             name: 'id',
             hidden: true,
@@ -43,7 +44,7 @@ $(() => {
         }
     ];
 
-    openColumnObjects = baseColumnObjects.concat([
+    var openColumnObjects = baseColumnObjects.concat([
         {
             name: 'dropdown',
             column_func: ((editOrderPath) => {
@@ -62,6 +63,41 @@ $(() => {
             })(editOrderPath)
         }
     ]);
+
+    var recColumnObjects = baseColumnObjects.slice();
+    recColumnObjects.splice(3, 0, {
+        name: 'received_date',
+        header: 'Received Date',
+        editable: true,
+        data_type: 'date',
+        column_func: (purchaseOrder) => {
+            return formatSlashDate(purchaseOrder.received_date);
+        }
+    });
+    recColumnObjects.push({
+        name: 'dropdown',
+        column_func: ((editOrderPath) => {
+            return (purchaseOrder) => {
+                return `<div class="dropdown show">
+                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ...
+                    </button>
+                    <div class="dropdown-menu">
+                        <span class="dropdown-item" onclick="reopen(${purchaseOrder.id})">Re-open</span>
+                        <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
+                        <span class="dropdown-item text-danger" onclick="deleteItem(${purchaseOrder.id})">Delete</span>
+                    </div>
+                </div>`
+            }
+        })(editOrderPath)
+    });
+
+    var openDatagrid = new DataGrid(openOrders, openColumnObjects)
+    var recDatagrid = new DataGrid(recOrders, recColumnObjects);
+
+    $openDatagridContainer.html(openDatagrid.getTable());
+    $recDatagridContainer.html(recDatagrid.getTable());
+
     // var openOrders = purchaseOrders.filter(x => !x.received_date);
     // var recOrders = purchaseOrders.filter(x => x.received_date);
     // var tableArea = "";

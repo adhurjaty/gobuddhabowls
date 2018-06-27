@@ -155,48 +155,58 @@ export class EditItem {
     // }
 }
 
-class Cell {
-    constructor($cell) {
-        this.$cell = $cell;
-    }
-    getCell() {
-        return this.$cell;
-    }
-}
+// class Cell {
+//     constructor($cell) {
+//         this.$cell = $cell;
+//     }
+//     getCell() {
+//         return this.$cell;
+//     }
+// }
 
-class Row {
-    constructor(cells) {
-        this.cells = cells;
-        initRow();
-    }
+// class Row {
+//     constructor($cells) {
+//         this.$cells = $cells;
+//         this.$row = null;
+//         this.initRow();
+//     }
 
-    intiRow() {
-        var self = this;
-        this.$row = $(`<tr></tr>`);
-        this.cells.forEach((cell) => {
-            cell.getCell().appendTo(self.$row);
-        });
-    }
+//     initRow() {
+//         var self = this;
+//         this.$row = $(`<tr></tr>`);
+//         this.$cells.forEach(($cell) => {
+//             $cell.appendTo(self.$row);
+//         });
+//     }
 
-    getRow() {
-        return this.$row;
-    }
-}
+//     getRow() {
+//         return this.$row;
+//     }
+// }
 
 // DataGrid is a class for creating a table that has editable cells that
 // may update models on edit
 export class DataGrid {
-    // table: table to make a datgrid
-    // columnFactory: array of objects that maps column names to functions that return cell html
-    //  [{name: vendor, colFunc: function(purchaseOrder) {}, expander [optional]}, ...]
+    // data: data for the datagrid
+    // columnInfo: array of objects that describe the columns of the form
+    // {
+    //     header: 'header',
+    //     name: 'name',
+    //     editable: optional, default false,
+    //     data_type: 'text',
+    //     hidden: optional, default false
+    //     column_func: function(data_item)
+    // }
     // updateFnc: function to execute after updating an editable cell
-    constructor(table, columnFactory, updateFnc) {
-        this.table = table;
-        this.data = JSON.parse($(table).attr('data'));
-        this.columnFactory = columnFactory;
-        this.$rows = null;
-        this.initRows();
+    constructor(data, columnInfo, updateFnc) {
+        this.data = data;
+        this.columnInfo = columnInfo;
         this.sendUpdate = updateFnc || this.defaultSendUpdate;
+        // this.table = table;
+        // this.columnFactory = columnFactory;
+        this.$table = null;
+        this.$rows = null;
+        this.initTable();
         
         // this.on_change_url = $(grid).attr('onchange-href');
         // // this.initRows();
@@ -212,25 +222,72 @@ export class DataGrid {
         // this.rows = $(grid).find('tr');
     }
 
-    // initRows sets click highlighting for rows
-    // TODO: remove highlighting when clicking off the table
-    initRows() {
+    initTable() {
         var self = this;
-        var $headers = $(this.table).find('th');
-        this.$rows = this.data.map((item) => {
-            var cells = $headers.map(($header) => {
-                var name = $header.attr('name');
-                return new Cell($(`<td>
-                    ${self.columnFactory[name](item)}
-                </td>`));
-            });
-            return new Row(cells);
+        this.$table = $('<table class="datagrid"></table>');
+        var headersArr = this.columnInfo.map((info) => {
+            var $header = $('<th></th>');
+            if(info.hidden) {
+                $header.hide();
+            }
+            if(info.header) {
+                $header.text(info.header);
+            }
+            return $header;
         });
-        var $tbody = $('<tbody></tbody>')
+        var $header = $('<tr></tr>');
+        headersArr.forEach(($h) => {
+            $h.appendTo($header);
+        });
+        $header.appendTo(this.$table);
+        var self = this;
+        this.$rows = this.data.map((item) => {
+            var $row = $('<tr></tr>');
+            self.columnInfo.forEach((info) => {
+                var $td = $('<td></td>');
+                $td.attr('name', info.name);
+                if(info.hidden) {
+                    $td.hide();
+                }
+                if(info.editable) {
+                    $td.attr('data-type', info.data_type);
+                }
+                $td.html(info.column_func(item));
+                $td.appendTo($row);
+            });
+            return $row;
+        });
+
+        var $tbody = $('<tbody></tbody>');
         this.$rows.forEach(($row) => {
             $row.appendTo($tbody);
-        })
-        $tbody.appendTo($(this.table));
+        });
+        $tbody.appendTo(this.$table);
+    }
+
+    getTable() {
+        return this.$table;
+    }
+
+    // initRows sets click highlighting for rows
+    // TODO: remove highlighting when clicking off the table
+    // initRows() {
+    //     var self = this;
+    //     var $headers = $(this.table).find('th');
+    //     this.$rows = this.data.map(() => {
+    //         var cells = $headers.map(($header) => {
+    //             var name = $header.attr('name');
+    //             return new Cell($(`<td>
+    //                 ${self.columnFactory[name](item)}
+    //             </td>`));
+    //         });
+    //         return new Row(cells);
+    //     });
+    //     var $tbody = $('<tbody></tbody>')
+    //     this.$rows.forEach(($row) => {
+    //         $row.appendTo($tbody);
+    //     })
+    //     $tbody.appendTo($(this.table));
         // $.each($(self.grid).find('tbody>tr'), function(i, tr) {
         //     self.initRow(tr);
         // });
@@ -240,7 +297,7 @@ export class DataGrid {
         //         $(tr).removeClass('active');
         //     });
         // });
-    }
+    // }
 
     // initRow(row) {
     //     var self = this;
@@ -340,9 +397,9 @@ export class DataGrid {
 
     }
 
-    // defaultSendUpdate(editItem) {
-    //     console.log('default send update');
-    // }
+    defaultSendUpdate(editItem) {
+        console.log('default send update');
+    }
 }
 
 function focusPrevRow($el) {
