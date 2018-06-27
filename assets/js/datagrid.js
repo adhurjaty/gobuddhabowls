@@ -1,21 +1,14 @@
 import { formatMoney, unFormatMoney } from "./helpers";
 import { datepicker } from "./datepicker";
 
-var collapsedCaret = 'fa-caret-right';
-var expandedCaret = 'fa-caret-down';
-
-// EditItem represents an editable cell in a Datagrid. 
-export class EditItem {
-    constructor(datagrid, $td) {
-        this.datagrid = datagrid;
+// EditCell represents an editable cell in a Datagrid. 
+class EditCell {
+    constructor($td, sendUpdate) {
         this.$td = $td;
+        this.sendUpdate = sendUpdate;
         this.type = $td.attr('data-type');
-        // this.id = $td.parent().attr('item-id');
-        this.onchange_url = $td.attr('onchange-href');
-        this.field = $td.attr('field');
         this.contents = $td.text();
         this.errorMessage = "";
-        this.isEditable = $td.attr('editable');
         this.setListener();
     }
 
@@ -24,93 +17,93 @@ export class EditItem {
         var self = this;
 
         switch(self.type) {
-            case 'date':
-                self.$td.on('focus', function(event) {
-                    self.clearError($(this));
-                    var $date = $('<input data-provide="datepicker" value="' + self.contents + '">');
-                    $date.css('width', '85px');
-                    $(this).empty();
-                    $(this).append($date);
-                    var startDate = self.contents ? self.contents : new Date().toLocaleDateString("en-US");
-                    // debugger;
-                    // $date.datepicker({
-                    datepicker($date, {
-                        autoclose: 'true',
-                        format: 'mm/dd/yyyy',
-                        defaultViewDate: startDate
-                    }).on('changeDate', function(event) {
-                        debugger;
-                        self.contents = event.format();
-                        self.datagrid.sendUpdate(self);
-                    }).on('hide', function(event) {
-                        self.$td.text(self.contents);
-                        if(self.errorMessage) {
-                            self.showError(self.errorMessage);
-                        }
-                    });
-                    $date.focus();
-                });
-                break;
-            // TODO: fill these options in
-            case 'money':
-                self.$td.on('focusin', function(event) {
-                    self.clearError($(this));
-                    $(this).text(unFormatMoney($(this).text()));
-                    $(this).selectText();
-                });
-                self.$td.on('focusout', function(event) {
-                    // HACK: event firing multiple times causes
-                    // text to go to $0.00 without this
-                    var text = $(this).text().replace('$', '')
-                    if(text == undefined) {
-                        return;
+        case 'date':
+            self.$td.on('focus', function(event) {
+                self.clearError($(this));
+                var $date = $('<input data-provide="datepicker" value="' + self.contents + '">');
+                $date.css('width', '85px');
+                $(this).empty();
+                $(this).append($date);
+                var startDate = self.contents ? self.contents : new Date().toLocaleDateString("en-US");
+                // debugger;
+                // $date.datepicker({
+                datepicker($date, {
+                    autoclose: 'true',
+                    format: 'mm/dd/yyyy',
+                    defaultViewDate: startDate
+                }).on('changeDate', function(event) {
+                    self.contents = event.format();
+                    self.$td.text(self.contents);
+                    self.sendUpdate(self);
+                }).on('hide', function(event) {
+                    self.$td.text(self.contents);
+                    if(self.errorMessage) {
+                        self.showError(self.errorMessage);
                     }
-                    // debugger;
+                });
+                $date.focus();
+            });
+            break;
+        // TODO: fill these options in
+        case 'money':
+            self.$td.on('focusin', function(event) {
+                self.clearError($(this));
+                $(this).text(unFormatMoney($(this).text()));
+                $(this).selectText();
+            });
+            self.$td.on('focusout', function(event) {
+                // HACK: event firing multiple times causes
+                // text to go to $0.00 without this
+                var text = $(this).text().replace('$', '')
+                if(text == undefined) {
+                    return;
+                }
+                // debugger;
 
-                    if(!isNaN(text)) {
-                        var amt = parseFloat(text);
-                        $(this).attr('value', amt);
-                        self.contents = formatMoney(amt);
-                        $(this).text(self.contents);
-                        self.datagrid.sendUpdate(self);
-                    } else {
-                        debugger;
-                        $(this).text("$0.00");
-                    }
-                });
-                break;
-            case 'selector':
-                break;
-            case 'number':
-                self.$td.on('focusin', function(event) {
-                    self.clearError($(this));
-                    $(this).selectText();
-                });
-                self.$td.on('focusout', function(event) {
-                    if(!isNaN($(this).text())) {
-                        self.contents = $(this).text();
-                        self.datagrid.sendUpdate(self);
-                    } else {
-                        $(this).text("0");
-                    }
-                });
-                break;
-            default:    // type 'text'
-                self.$td.on('focusin', function(event) {
-                    self.clearError($(this));
-                    $(this).selectText();                    
-                });
-                self.$td.on('focusout', function(event) {
-                    // var id = $(this).parent().attr('item-id');
-                    // var field = $(this).attr('field');
+                if(!isNaN(text)) {
+                    var amt = parseFloat(text);
+                    $(this).attr('value', amt);
+                    self.contents = formatMoney(amt);
+                    $(this).text(self.contents);
+                    self.sendUpdate(self);
+                } else {
+                    debugger;
+                    $(this).text("$0.00");
+                }
+            });
+            break;
+        case 'selector':
+            break;
+        case 'number':
+            self.$td.on('focusin', function(event) {
+                self.clearError($(this));
+                $(this).selectText();
+            });
+            self.$td.on('focusout', function(event) {
+                if(!isNaN($(this).text())) {
                     self.contents = $(this).text();
-                    self.datagrid.sendUpdate(self);
-                });
-                break;
+                    self.sendUpdate(self);
+                } else {
+                    $(this).text("0");
+                }
+            });
+            break;
+        default:    // type 'text'
+            self.$td.on('focusin', function(event) {
+                self.clearError($(this));
+                $(this).selectText();                    
+            });
+            self.$td.on('focusout', function(event) {
+                // var id = $(this).parent().attr('item-id');
+                // var field = $(this).attr('field');
+                self.contents = $(this).text();
+                self.sendUpdate(self);
+            });
+            break;
         }
     }
 
-    showError(msg) {
+    onError(msg) {
         this.errorMessage = msg;
         var $span = $('<span></span>');
         $span.text(msg);
@@ -123,15 +116,15 @@ export class EditItem {
         this.$td.find('span').remove();
     }
 
-    // onUpdateSuccess() {
-    //     switch(this.type) {
-    //         case 'date':
-    //             this.$td.text(this.contents);
-    //             break;
-    //         default:
-    //             break;
-    //     }
-    // }
+    onSuccess() {
+        switch(this.type) {
+            case 'date':
+                this.$td.text(this.contents);
+                break;
+            default:
+                break;
+        }
+    }
 
     // sendUpdate() {
     //     if(!this.onchange_url) {
@@ -222,6 +215,10 @@ export class DataGrid {
         // this.rows = $(grid).find('tr');
     }
 
+    getTable() {
+        return this.$table;
+    }
+
     initTable() {
         var self = this;
         this.$table = $('<table class="datagrid"></table>');
@@ -235,24 +232,38 @@ export class DataGrid {
             }
             return $header;
         });
-        var $header = $('<tr></tr>');
+        var $header = $('<thead></thead>');
         headersArr.forEach(($h) => {
             $h.appendTo($header);
         });
         $header.appendTo(this.$table);
-        var self = this;
+
         this.$rows = this.data.map((item) => {
             var $row = $('<tr></tr>');
             self.columnInfo.forEach((info) => {
                 var $td = $('<td></td>');
                 $td.attr('name', info.name);
+                $td.html(info.column_func(item));
+
                 if(info.hidden) {
                     $td.hide();
                 }
                 if(info.editable) {
+                    $td.attr('editable', true);
                     $td.attr('data-type', info.data_type);
+                    new EditCell($td, ((item, info) => {
+                        var updateObj = {
+                            id: item.id,
+                            name: info.name,
+                        }
+                        return (editCell) => {
+                            updateObj.value = editCell.contents;
+                            updateObj.onError = editCell.onError;
+                            updateObj.onSuccess = editCell.onSuccess;
+                            return self.sendUpdate(updateObj);
+                        }
+                    })(item, info));
                 }
-                $td.html(info.column_func(item));
                 $td.appendTo($row);
             });
             return $row;
@@ -260,17 +271,25 @@ export class DataGrid {
 
         var $tbody = $('<tbody></tbody>');
         this.$rows.forEach(($row) => {
+            self.setRowClick($row);
+            // TODO: remove highlighting when clicking off the table
             $row.appendTo($tbody);
         });
         $tbody.appendTo(this.$table);
     }
 
-    getTable() {
-        return this.$table;
+    setRowClick($row) {
+        var self = this;
+        $row.click(function() {
+            if(!$(this).hasClass('active')) {
+                self.clearSelectedRow();
+                $(this).addClass('active');
+                self.setEditable($(this));
+            }
+        });
     }
 
     // initRows sets click highlighting for rows
-    // TODO: remove highlighting when clicking off the table
     // initRows() {
     //     var self = this;
     //     var $headers = $(this.table).find('th');
@@ -340,17 +359,17 @@ export class DataGrid {
 
     // clearSelectedRow unhighlighs a row
     clearSelectedRow() {
-        var row = $(this.grid).find('tr.active');
-        row.removeClass('active');
-        this.removeEditable(row);
+        var $row = this.$table.find('tr.active');
+        $row.removeClass('active');
+        this.removeEditable($row);
     }
 
-    setEditable(row) {
-        var editableRows = row.find('td[editable="true"]');
-        editableRows.attr('contenteditable', true);
+    setEditable($row) {
+        var editableCells = $row.find('td[editable="true"]');
+        editableCells.attr('contenteditable', true);
         var fired = false;
 
-        editableRows.keydown(function(e) {
+        editableCells.keydown(function(e) {
             if(e.keyCode == 13 || e.keyCode == 9) {
                 if(fired) {
                     return false;
@@ -382,8 +401,8 @@ export class DataGrid {
         });
     }
 
-    removeEditable(row) {
-        row.find('td[editable="true"]').removeAttr('contenteditable');
+    removeEditable($row) {
+        $row.find('td[editable="true"]').removeAttr('contenteditable');
     }
 
     removeItem($row) {
@@ -397,7 +416,7 @@ export class DataGrid {
 
     }
 
-    defaultSendUpdate(editItem) {
+    defaultSendUpdate($row, editCell) {
         console.log('default send update');
     }
 }

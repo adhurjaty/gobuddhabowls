@@ -1,5 +1,5 @@
 import { groupByCategory, formatMoney } from './helpers';
-import { DataGrid, EditItem } from './datagrid';
+import { DataGrid } from './datagrid';
 
 export function initDatagrid() {
     var grid = $('.datagrid .datagrid').get();
@@ -85,10 +85,10 @@ export function addToDatagrid(item, datagrid) {
     // add new category
     // add row to datagrid
 
-    datagrid.initRow(tr);
-    $.each($(tr).find('td[editable="true"]'), function(i, el) {
-        new EditItem(datagrid, $(el));
-    });
+    // datagrid.initRow(tr);
+    // $.each($(tr).find('td[editable="true"]'), function(i, el) {
+    //     new EditItem(datagrid, $(el));
+    // });
 
     if(idx == -1) {
         $rows.parent().append(tr)
