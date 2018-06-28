@@ -7,8 +7,40 @@ var _selected_$tr;
 var _$container;
 var _items;
 
-function addToDatagrid(item) {
-    _datagrid.addRow(item);
+export function addToDatagrid(item) {
+    // need to re-initialize globals because this is called from outside
+    _$container = $('#vendor-items-table');
+    _items = JSON.parse(_$container.attr('data'));
+
+    // add item to datagrid data
+    _items.push(item);
+    _items.sort((a, b) => a.index - b.index);
+    writeItemsToDOM();
+
+    // reinitialize datagrid
+    initDatagrid();
+
+    // reinitialize category chart
+    // remove item from modal remaining
+    removeFromRemaining(item);
+}
+
+function removeFromDatagrid(item) {
+    // remove item from datagrid data
+    var idx = _items.indexOf(item);
+    _items.splice(idx, 1);
+    writeItemsToDOM();
+
+    // reinitialize datagrid
+    initDatagrid();
+
+    // reinitailize category chart
+
+    // add item to modal remaining
+    addToRemaining(item);
+
+    $('#add-po-item').removeAttr('disabled');
+    $('#remove-po-item').attr('disabled', true);
 }
 
 function datagridUpdated(updateObj) {
@@ -19,13 +51,6 @@ function datagridUpdated(updateObj) {
 }
 
 function initAddRemoveButtons() {
-    $('#add-po-item').click(() => {
-        // add item from datagrid data
-        // reinitialize datagrid
-        // reinitialize category chart
-        // remove item from modal remaining
-
-    });
     $('#remove-po-item').click(() => {
         // sometimes triggers multiple times from UI
         // this check ensures this function happens once
@@ -34,22 +59,7 @@ function initAddRemoveButtons() {
         }
         var selectedItem = _datagrid.getItem(_selected_$tr);
         _selected_$tr = null;
-
-        // remove item from datagrid data
-        var idx = _items.indexOf(selectedItem);
-        _items.splice(idx, 1);
-        writeItemsToDOM();
-
-        // reinitialize datagrid
-        initDatagrid();
-
-        // reinitailize category chart
-
-        // add item to modal remaining
-        addToRemaining(selectedItem);
-
-        $('#add-po-item').removeAttr('disabled');
-        $('#remove-po-item').attr('disabled', true);
+        removeFromDatagrid(selectedItem);
     });
 }
 

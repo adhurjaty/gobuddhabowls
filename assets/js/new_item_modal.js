@@ -1,3 +1,5 @@
+import { addToDatagrid } from "./inventory_items_datagrid";
+
 export function addToRemaining(item) {
     var $container = $('#add-order-modal');
     var remainingItems = JSON.parse($container.attr('data'));
@@ -29,3 +31,14 @@ function populateRemaining() {
         $('<option/>').val(item.id).html(item.name).appendTo($select);
     });
 }
+
+$(() => {
+    var $container = $('#add-order-modal');
+    
+    $('#add-po-item-submit').click(() => {
+        var id = $('#add-order-modal option:selected').val();
+        var remainingItems = JSON.parse($container.attr('data'));
+        var item = remainingItems.find((x) => x.id == id);
+        addToDatagrid(item);
+    });
+});

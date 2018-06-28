@@ -42,10 +42,7 @@ $(() => {
     // $('#remove-po-item').click((event) => {
     //     removeItem();
     // });
-    $('#add-po-item-submit').click((event) => {
-        var id = $('#add-order-modal option:selected').val();
-        addItem(id);
-    });
+    
 });
 
 function sendOrderItems() {
