@@ -30,20 +30,8 @@
 <div class="row">
     <div class="col-md-6">
         <%= if (len(po.Items) > 0) { %>
-            <div class="input-group d-flex justify-content-end">
-                <button class="btn btn-default" type="button" id="add-po-item" data-toggle="modal" data-target="#add-item-modal" <%= if (len(remainingItems) == 0) { %> disabled <% } %>>
-                    <span class="fa fa-plus"/>
-                </button>
-                <button class="btn btn-default" type="button" id="remove-po-item" disabled>
-                    <span class="fa fa-minus"/>
-                </button>
-            </div>
-        <% } %>
-        <!-- <div id="vendor-items-tables"> -->
-        <%= if (len(po.Items) > 0) { %>
-            <%= partial("purchase_orders/inventory_items_datagrid.html", { Items: po.Items }) %>
+            <%= partial("purchase_orders/inventory_items_datagrid.html") %>
         <% } %>    
-        <!-- </div> -->
     </div>
     <div id="category-breakdown" class="col-md-6">
         <%= if (len(po.Items) > 0) { %>

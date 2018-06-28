@@ -172,11 +172,16 @@ class Row {
     }
 
     sendUpdate() {
+        var updateObj = this.getInfo();
+        this.updateFnc(updateObj);
+    }
+
+    getInfo() {
         var updateObj = {}
         this.$tr.find('td[name]').each((_, td) => {
             updateObj[$(td).attr('name')] = $(td).text()
         });
-        this.updateFnc(updateObj);
+        return updateObj;
     }
 
     getEditableCells() {
@@ -211,6 +216,14 @@ export class DataGrid {
         return this.$table;
     }
 
+    getItem($tr) {
+        var idx = this.rows.findIndex((row) => row.getRow() == $tr);
+        if(idx == -1) {
+            return null;
+        }
+        return this.data[idx];
+    }
+
     initTable() {
         var self = this;
         this.$table = $('<table class="datagrid"></table>');
@@ -231,23 +244,7 @@ export class DataGrid {
         $header.appendTo(this.$table);
 
         this.rows = this.data.map((item) => {
-            var cells = self.columnInfo.map((info) => {
-                var $td = $('<td></td>');
-                $td.attr('name', info.name);
-                $td.html(info.column_func(item));
-
-                if(info.hidden) {
-                    $td.hide();
-                }
-                if(info.editable) {
-                    $td.attr('editable', true);
-                    $td.attr('data-type', info.data_type);
-                    return new EditCell($td);
-                }
-
-                return new Cell($td);
-            });
-            return new Row(cells, this.sendUpdate);
+            return self.createRow(item);
         });
 
         var $tbody = $('<tbody></tbody>');
@@ -258,6 +255,26 @@ export class DataGrid {
             $row.appendTo($tbody);
         });
         $tbody.appendTo(this.$table);
+    }
+
+    createRow(item) {
+        var cells = this.columnInfo.map((info) => {
+            var $td = $('<td></td>');
+            $td.attr('name', info.name);
+            $td.html(info.column_func(item));
+
+            if(info.hidden) {
+                $td.hide();
+            }
+            if(info.editable) {
+                $td.attr('editable', true);
+                $td.attr('data-type', info.data_type);
+                return new EditCell($td);
+            }
+
+            return new Cell($td);
+        });
+        return new Row(cells, this.sendUpdate);
     }
 
     setRowClick(row) {
@@ -327,14 +344,14 @@ export class DataGrid {
         $row.remove();
     }
 
-    addItem($row, idx) {
-        $.each($row.find('td[editable="true"]'), function(i, el) {
-            return new EditItem(self, $(el));
-        });
+    // insertRow(item, idx) {
+    //     var row = this.createRow(item);
+    //     this.rows.splice(index, 0, row);
+        
 
-    }
+    // }
 
-    defaultSendUpdate($row, editCell) {
+    defaultSendUpdate(updateObj) {
         console.log('default send update');
     }
 

@@ -1,18 +1,11 @@
 import { datepicker } from './datepicker';
 import { addToDatagrid, initDatagrid } from './inventory_items_datagrid'
-import { CategorizedDatagrid } from './categorized_datagrid';
-
-var _selected_tr;
-var _datagrid;
 
 $(() => {
     datepicker($('#new-order-date'), {
         autoclose: 'true',
         format: 'mm/dd/yyyy'
     });
-
-    // _datagrid = initDatagrid();
-    // _datagrid = new CategorizedDatagrid()
 
     $('#new-order-vendor').change(function(d) {
         // remove none option
@@ -46,16 +39,9 @@ $(() => {
         }
     });
 
-    // $.each($('.datagrid .datagrid tr'), function(i, el) {
-    //     $(el).click(function(event) {
-    //         $('#remove-po-item').removeAttr('disabled');
-    //         _selected_tr = $(this);
-    //     })
+    // $('#remove-po-item').click((event) => {
+    //     removeItem();
     // });
-
-    $('#remove-po-item').click((event) => {
-        removeItem();
-    });
     $('#add-po-item-submit').click((event) => {
         var id = $('#add-order-modal option:selected').val();
         addItem(id);
@@ -71,79 +57,79 @@ function sendOrderItems() {
     $input.val(data);
 }
 
-function removeItem() {
-    var item = createItemFromRow(_selected_tr);
-    // remove item from display
-    if(_selected_tr.siblings().length == 0) {
-        // remove entire category if necessary
-        var $categoryTable = _selected_tr.parent().closest('tr');
+// function removeItem() {
+//     var item = createItemFromRow(_selected_tr);
+//     // remove item from display
+//     if(_selected_tr.siblings().length == 0) {
+//         // remove entire category if necessary
+//         var $categoryTable = _selected_tr.parent().closest('tr');
 
-        // remove category header
-        $categoryTable.prev().remove();
-        $categoryTable.remove();
-    } else {
-        _selected_tr.remove();
-    }
+//         // remove category header
+//         $categoryTable.prev().remove();
+//         $categoryTable.remove();
+//     } else {
+//         _selected_tr.remove();
+//     }
 
-    // add item to the remaining items holder
-    addToRemaining(item)
+//     // add item to the remaining items holder
+//     addToRemaining(item)
     
-    $('#add-po-item').removeAttr('disabled');
-    $('#remove-po-item').attr('disabled', true);
-}
+//     $('#add-po-item').removeAttr('disabled');
+//     $('#remove-po-item').attr('disabled', true);
+// }
 
-function addItem(id) {
-    var itemToAdd = removeFromRemaining(id);
-    addToDatagrid(itemToAdd, _datagrid);
+// function addItem(id) {
+//     var itemToAdd = removeFromRemaining(id);
+//     addToDatagrid(itemToAdd, _datagrid);
 
-    if(JSON.parse($('#add-order-modal').attr('data')).length == 0) {
-        $('#add-po-item').attr('disabled', true)
-    }
-}
+//     if(JSON.parse($('#add-order-modal').attr('data')).length == 0) {
+//         $('#add-po-item').attr('disabled', true)
+//     }
+// }
 
-function addToRemaining(item) {
-    var $container = $('#add-order-modal');
-    var remainingItems = JSON.parse($container.attr('data'));
+// function addToRemaining(item) {
+//     var $container = $('#add-order-modal');
+//     var remainingItems = JSON.parse($container.attr('data'));
 
-    remainingItems.push(item);
-    var newRemainingString = JSON.stringify(remainingItems.sort((a, b) => {
-        return a.index - b.index;
-    }));
-    $container.attr('data', newRemainingString);
-    populateRemaining();
-}
+//     remainingItems.push(item);
+//     var newRemainingString = JSON.stringify(remainingItems.sort((a, b) => {
+//         return a.index - b.index;
+//     }));
+//     $container.attr('data', newRemainingString);
+//     populateRemaining();
+// }
 
-function removeFromRemaining(id) {
-    var $container = $('#add-order-modal');
-    var remainingItems = JSON.parse($container.attr('data'));
-    var idx = remainingItems.findIndex((x) => x.id == id);
+// function removeFromRemaining(id) {
+//     var $container = $('#add-order-modal');
+//     var remainingItems = JSON.parse($container.attr('data'));
+//     var idx = remainingItems.findIndex((x) => x.id == id);
 
-    var itemToRemove = remainingItems[idx]
+//     var itemToRemove = remainingItems[idx]
 
-    remainingItems.splice(idx, 1);
-    $container.attr('data', JSON.stringify(remainingItems));
-    populateRemaining();
+//     remainingItems.splice(idx, 1);
+//     $container.attr('data', JSON.stringify(remainingItems));
+//     populateRemaining();
 
-    return itemToRemove;
-}
+//     return itemToRemove;
+// }
 
-function populateRemaining() {
-    var $container = $('#add-order-modal');
-    var remainingItems = JSON.parse($container.attr('data'));
-    var $select = $container.find('select');
+// function populateRemaining() {
+//     var $container = $('#add-order-modal');
+//     var remainingItems = JSON.parse($container.attr('data'));
+//     var $select = $container.find('select');
 
-    remainingItems.forEach((item) => {
-        $('<option/>').val(item.id).html(item.name).appendTo($select);
-    });
-}
+//     remainingItems.forEach((item) => {
+//         $('<option/>').val(item.id).html(item.name).appendTo($select);
+//     });
+// }
 
-function createItemFromRow($tr) {
-    return {
-        'id': $tr.attr('item-id'),
-        'inventory_item_id': $tr.attr('inv-item-id'),
-        'name': $tr.find('td[name="name"]').html(),
-        'price': $tr.find('td[name="price"]').attr('value'),
-        'count': $tr.find('td[name="count"]').text(),
-        'index': $tr.attr('data-index')
-    };
-}
+// function createItemFromRow($tr) {
+//     return {
+//         'id': $tr.attr('item-id'),
+//         'inventory_item_id': $tr.attr('inv-item-id'),
+//         'name': $tr.find('td[name="name"]').html(),
+//         'price': $tr.find('td[name="price"]').attr('value'),
+//         'count': $tr.find('td[name="count"]').text(),
+//         'index': $tr.attr('data-index')
+//     };
+// }
