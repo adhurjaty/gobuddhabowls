@@ -1,5 +1,6 @@
 import { groupByCategory, formatMoney } from './helpers';
 import { DataGrid } from './datagrid';
+import { CategorizedDatagrid } from './categorized_datagrid';
 
 export function initDatagrid() {
     var grid = $('.datagrid .datagrid').get();
@@ -109,10 +110,63 @@ function createRow(item) {
     </tr>`
 }
 
+function datagridUpdated(updateObj) {
+
+}
+
 $(() => {
     var $container = $('#vendor-items-table');
     var items = JSON.parse($container.attr('data'));
 
-    $container.html(createDatagrid(items));
+    var columnInfo = [
+        {
+            name: 'id',
+            hidden: true,
+            column_func: (item) => {
+                return item.id;
+            }
+        },
+        {
+            name: 'inventory_item_id',
+            hidden: true,
+            column_func: (item) => {
+                return item.inventory_item_id;
+            }
+        },
+        {
+            name: 'name',
+            header: 'Name',
+            column_func: (item) => {
+                return item.name;
+            }
+        },
+        {
+            name: 'price',
+            header: 'Price',
+            editable: true,
+            data_type: 'money',
+            column_func: (item) => {
+                return formatMoney(parseFloat(item.price));
+            }
+        },
+        {
+            name: 'count',
+            header: 'Count',
+            editable: true,
+            data_type: 'number',
+            column_func: (item) => {
+                return item.count;
+            }
+        },
+        {
+            name: 'total_cost',
+            header: 'Total Cost',
+            column_func: (item) => {
+                return formatMoney(parseFloat(item.price * item.count));
+            }
+        }
+    ];
+    var datagrid = new CategorizedDatagrid(items, columnInfo, datagridUpdated);
+    $container.html(datagrid.getTable());
 });
 

@@ -1,5 +1,6 @@
 import { datepicker } from './datepicker';
 import { addToDatagrid, initDatagrid } from './inventory_items_datagrid'
+import { CategorizedDatagrid } from './categorized_datagrid';
 
 var _selected_tr;
 var _datagrid;
@@ -10,7 +11,8 @@ $(() => {
         format: 'mm/dd/yyyy'
     });
 
-    _datagrid = initDatagrid();
+    // _datagrid = initDatagrid();
+    // _datagrid = new CategorizedDatagrid()
 
     $('#new-order-vendor').change(function(d) {
         // remove none option
@@ -44,12 +46,12 @@ $(() => {
         }
     });
 
-    $.each($('.datagrid .datagrid tr'), function(i, el) {
-        $(el).click(function(event) {
-            $('#remove-po-item').removeAttr('disabled');
-            _selected_tr = $(this);
-        })
-    });
+    // $.each($('.datagrid .datagrid tr'), function(i, el) {
+    //     $(el).click(function(event) {
+    //         $('#remove-po-item').removeAttr('disabled');
+    //         _selected_tr = $(this);
+    //     })
+    // });
 
     $('#remove-po-item').click((event) => {
         removeItem();

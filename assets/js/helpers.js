@@ -57,25 +57,6 @@ export function categorize(items, catItems = []) {
     return genericCategorize(items, catItems, (item, existingValue = 0) => {
         return existingValue + item.price * item.count;
     });
-    // return items.reduce((categorizedItems, item) => {
-    //     var value = item.price * item.count;
-    //     var category = categorizedItems.find((x) => x.name == item.Category.name);
-
-    //     if(category) {
-    //         category.value += value;
-    //     } else {
-    //         categorizedItems.push({
-    //             index: item.Category.index,
-    //             name: item.Category.name,
-    //             value: value,
-    //             background: item.Category.background
-    //         });
-    //     }
-
-    //     return categorizedItems;
-    // }, catItems).sort((a, b) => {
-    //     return a.index - b.index;
-    // });
 }
 
 export function groupByCategory(items, catItems = []) {
@@ -86,7 +67,6 @@ export function groupByCategory(items, catItems = []) {
 
 function genericCategorize(items, catItems, combineFnc) {
     return items.reduce((categorizedItems, item) => {
-        var value = item.price * item.count;
         var category = categorizedItems.find((x) => x.name == item.Category.name);
 
         if(category) {

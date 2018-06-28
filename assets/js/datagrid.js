@@ -125,29 +125,9 @@ class EditCell {
                 break;
         }
     }
-
-    // sendUpdate() {
-    //     if(!this.onchange_url) {
-    //         return;
-    //     }
-    //     var self = this;
-    //     var data = {};
-    //     data[editItem.field] = editItem.contents;
-    //     $.ajax({
-    //         url: self.onchange_url,
-    //         data: data,
-    //         method: 'PUT',
-    //         error: function(xhr, status, err) {
-    //             var errMessage = xhr.responseText;
-    //             editItem.showError(errMessage);
-    //         },
-    //         success: function(data, status, xhr) {
-    //             editItem.onUpdateSuccess();
-    //         }
-    //     });
-    // }
 }
 
+// may want to store cells and rows as classes, not sure yet
 // class Cell {
 //     constructor($cell) {
 //         this.$cell = $cell;
@@ -195,24 +175,9 @@ export class DataGrid {
         this.data = data;
         this.columnInfo = columnInfo;
         this.sendUpdate = updateFnc || this.defaultSendUpdate;
-        // this.table = table;
-        // this.columnFactory = columnFactory;
         this.$table = null;
         this.$rows = null;
         this.initTable();
-        
-        // this.on_change_url = $(grid).attr('onchange-href');
-        // // this.initRows();
-
-        // if($(grid).find('td.expander') != undefined) {
-        //     this.initCollapse();
-        // }
-
-        // var self = this;
-        // $.each($(grid).find('td[editable="true"]'), function(i, el) {
-        //     return new EditItem(self, $(el));
-        // });
-        // this.rows = $(grid).find('tr');
     }
 
     getTable() {
@@ -288,74 +253,6 @@ export class DataGrid {
             }
         });
     }
-
-    // initRows sets click highlighting for rows
-    // initRows() {
-    //     var self = this;
-    //     var $headers = $(this.table).find('th');
-    //     this.$rows = this.data.map(() => {
-    //         var cells = $headers.map(($header) => {
-    //             var name = $header.attr('name');
-    //             return new Cell($(`<td>
-    //                 ${self.columnFactory[name](item)}
-    //             </td>`));
-    //         });
-    //         return new Row(cells);
-    //     });
-    //     var $tbody = $('<tbody></tbody>')
-    //     this.$rows.forEach(($row) => {
-    //         $row.appendTo($tbody);
-    //     })
-    //     $tbody.appendTo($(this.table));
-        // $.each($(self.grid).find('tbody>tr'), function(i, tr) {
-        //     self.initRow(tr);
-        // });
-
-        // $(this.grid).on('focusout', function(event) {
-        //     $(this).find('tr').each(function(i, tr) {
-        //         $(tr).removeClass('active');
-        //     });
-        // });
-    // }
-
-    // initRow(row) {
-    //     var self = this;
-    //     $(row).click(function(event) {
-    //         if(!$(this).hasClass('active')) {
-    //             self.clearSelectedRow();
-    //             $(this).addClass('active');
-    //             self.setEditable($(this));
-    //         }
-    //     });
-    // }
-
-    // initCollapse sets up tables with hidden rows to enable showing
-    // row detail content. Add 'expander' class to the caret td tag
-    // initCollapse() {
-    //     self = this;
-    //     $.each($(this.grid).find('td.expander'), function(i, el) {
-    //         $(el).click(function(event) {
-    //             var $span = $(this).find('span');
-    //             if($span.hasClass(collapsedCaret)) {
-    //                 $span.removeClass(collapsedCaret);
-    //                 $span.addClass(expandedCaret);
-    //                 self.expandInfo($(this).parent().next());
-    //             } else if($span.hasClass(expandedCaret)) {
-    //                 $span.removeClass(expandedCaret);
-    //                 $span.addClass(collapsedCaret);
-    //                 self.collapseInfo($(this).parent().next());                    
-    //             }
-    //         });
-    //     });
-    // }
-
-    // expandInfo($tr) {
-    //     $tr.show();
-    // }
-
-    // collapseInfo($tr) {
-    //     $tr.hide();
-    // }
 
     // clearSelectedRow unhighlighs a row
     clearSelectedRow() {
