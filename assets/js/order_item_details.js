@@ -1,6 +1,7 @@
-import { formatMoney, unFormatMoney, sortItems } from './helpers';
+import { formatMoney, unFormatMoney, sortItems, getPurchaseOrderCost } from './helpers';
 import { CategorizedDatagrid } from './categorized_datagrid';
 import { addToRemaining, removeFromRemaining } from './new_item_modal';
+import { horizontalPercentageChart } from './horizontal_percentage_chart';
 
 var _datagrid;
 var _selected_$tr;
@@ -17,10 +18,9 @@ export function addToDatagrid(item) {
     _items = sortItems(_items);
     writeItemsToDOM();
 
-    // reinitialize datagrid
     initDatagrid();
+    initBreakdown();
 
-    // reinitialize category chart
     // remove item from modal remaining
     removeFromRemaining(item);
 }
@@ -31,10 +31,8 @@ function removeFromDatagrid(item) {
     _items.splice(idx, 1);
     writeItemsToDOM();
 
-    // reinitialize datagrid
     initDatagrid();
-
-    // reinitailize category chart
+    initBreakdown();
 
     // add item to modal remaining
     addToRemaining(item);
@@ -48,6 +46,14 @@ function datagridUpdated(updateObj) {
     var count = parseFloat(updateObj.count);
     var $tr = $('.datagrid').find(`tr td:contains(${updateObj.id})`).parent();
     $tr.find('td[name="total_cost"]').text(formatMoney(price * count));
+
+    // update items and breakdown
+    var idx = _items.findIndex((x) => x.id == updateObj.id);
+    _items[idx].price = price;
+    _items[idx].count = count;
+    writeItemsToDOM();
+
+    initBreakdown();
 }
 
 function initAddRemoveButtons() {
@@ -77,8 +83,13 @@ function initSelection() {
     });
 }
 
-function initDatagrid() {
+function initBreakdown() {
+    var title = 'Order Breakdown';
+    var total = _items.reduce((total, item) => total + item.count * item.price, 0);
+    $('#category-breakdown').html(horizontalPercentageChart(title, _items, total));
+}
 
+function initDatagrid() {
     var columnInfo = [
         {
             name: 'id',
@@ -144,6 +155,7 @@ $(() => {
     _items = JSON.parse(_$container.attr('data'));
 
     initDatagrid();
+    initBreakdown();
     initAddRemoveButtons();
 });
 

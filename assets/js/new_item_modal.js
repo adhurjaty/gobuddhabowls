@@ -1,4 +1,4 @@
-import { addToDatagrid } from "./inventory_items_datagrid";
+import { addToDatagrid } from "./order_item_details";
 
 export function addToRemaining(item) {
     var $container = $('#add-order-modal');

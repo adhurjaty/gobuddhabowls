@@ -28,16 +28,7 @@
 <div id="vendor-items-map" data='<%= json(vendorItemsMap) %>' />
 <input type="text" name="Items" style="visibility: collapse;"/>
 <div class="row">
-    <div class="col-md-6">
-        <%= if (len(po.Items) > 0) { %>
-            <%= partial("purchase_orders/inventory_items_datagrid.html") %>
-        <% } %>    
-    </div>
-    <div id="category-breakdown" class="col-md-6">
-        <%= if (len(po.Items) > 0) { %>
-            <%#= partial("partials/horizontal_percentage_chart.html", {categoryDetails: categoryDetails, title: title}) %>
-        <% } %> 
-    </div>
+    <%= partial("purchase_orders/order_item_details.html") %>
 </div>
 <%= if (errors) { %>
     <div class="row alert alert-danger">
