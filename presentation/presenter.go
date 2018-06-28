@@ -65,6 +65,16 @@ func (p *Presenter) GetPurchaseOrder(id string) (*PurchaseOrderAPI, error) {
 	return &apiPO, nil
 }
 
+func (p *Presenter) GetVendors() (*VendorsAPI, error) {
+	vendors, err := logic.GetAllVendors(p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	apiVendors := NewVendorsAPI(vendors)
+	return &apiVendors, nil
+}
+
 func (p *Presenter) GetVendor(id string) (*VendorAPI, error) {
 	vendor, err := logic.GetVendor(id, p.tx)
 	if err != nil {

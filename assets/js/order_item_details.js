@@ -8,6 +8,21 @@ var _selected_$tr;
 var _$container;
 var _items;
 
+export function initOrderItemsArea(items) {
+    _$container = $('#vendor-items-table');
+    _items = items;
+    _items.forEach((item) => {
+        if(!item.count) {
+            item.count = 0;
+        }
+    });
+    writeItemsToDOM();
+
+    initDatagrid();
+    initBreakdown();
+    initAddRemoveButtons();
+}
+
 export function addToDatagrid(item) {
     // need to re-initialize globals because this is called from outside
     _$container = $('#vendor-items-table');
@@ -86,7 +101,11 @@ function initSelection() {
 function initBreakdown() {
     var title = 'Order Breakdown';
     var total = _items.reduce((total, item) => total + item.count * item.price, 0);
-    $('#category-breakdown').html(horizontalPercentageChart(title, _items, total));
+    if(total != 0) {
+        $('#category-breakdown').html(horizontalPercentageChart(title, _items, total));
+    } else {
+        $('#category-breakdown').html('');
+    }
 }
 
 function initDatagrid() {
@@ -154,8 +173,10 @@ $(() => {
     _$container = $('#vendor-items-table');
     _items = JSON.parse(_$container.attr('data'));
 
-    initDatagrid();
-    initBreakdown();
-    initAddRemoveButtons();
+    if(_items && _items.length > 0) {
+        initDatagrid();
+        initBreakdown();
+        initAddRemoveButtons();
+    }
 });
 

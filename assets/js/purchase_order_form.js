@@ -1,6 +1,11 @@
 import { datepicker } from './datepicker';
+import { initOrderItemsArea } from './order_item_details';
+
+var _vendorItemsMap;
 
 $(() => {
+    _vendorItemsMap = JSON.parse($('#vendor-items-map').attr('data'));
+
     datepicker($('#new-order-date'), {
         autoclose: 'true',
         format: 'mm/dd/yyyy'
@@ -8,19 +13,17 @@ $(() => {
 
     $('#new-order-vendor').change(function(d) {
         // remove none option
-        // $('#new-order-vendor option[value=""]').remove();
-        // var id = $(this).val();
-        // $.ajax({
-        //     url: '/purchase_orders/order_vendor_changed/' + id,
-        //     method: 'GET',
-        //     error: function(xhr, status, err) {
-        //         var errMessage = xhr.responseText;
-        //         debugger;
-        //     },
-        //     success: function(data, status, xhr) {
-        //         initDatagrid();
-        //     }
-        // });
+        $('#new-order-vendor option[value=""]').remove();
+        var id = $(this).val();
+        
+        var items = _vendorItemsMap[id];
+
+        // put the existing item edits in the vendor map
+        // TODO: see if this is useful
+        // cacheItemValues(lastID);
+
+        // initialize grid and breakdown
+        initOrderItemsArea(items);
     });
 
     $('#purchase-order-form>button[role="submit"]').click(function(event) {
@@ -46,4 +49,10 @@ function sendOrderItems() {
     }).get();
     data = JSON.stringify(data);
     $input.val(data);
+}
+
+function cacheItemValues(id) {
+    var items = JSON.parse($('#vendor-items-table').attr('data'));
+    _vendorItemsMap[id] = items;
+    $('#vendor-items-map').attr('data', JSON.stringify(items));
 }

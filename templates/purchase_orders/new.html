@@ -2,16 +2,7 @@
   <h1>New PurchaseOrder</h1>
 </div>
 
-<div class="row">
-  <div class="col-md-6">
-    <%= form_for(purchaseOrder, {action: purchaseOrdersPath(), method: "POST", id: "purchase-order-form"}) { %>
-      <%= partial("purchase_orders/form.html") %>
-      <a href="<%= purchaseOrdersPath() %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
-    <% } %>
-  </div>
-  <div class="col-md-6">
-    <div id="order-category-breakdown">
-
-    </div>
-  </div>
-</div>
+<%= form_for(purchaseOrder, {action: purchaseOrdersPath(), method: "POST", id: "purchase-order-form"}) { %>
+  <%= partial("purchase_orders/form.html") %>
+  <a href="<%= purchaseOrdersPath() %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+<% } %>

@@ -100,17 +100,10 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 		endTime = selectedWeek.EndTime
 	}
 
-	c.Set("Periods", periods)
-	c.Set("Weeks", weeks)
-	c.Set("Years", years)
-	c.Set("StartTime", startTime)
-	c.Set("EndTime", endTime)
-
 	purchaseOrders, err := presenter.GetPurchaseOrders(startTime, endTime)
 	if err != nil {
 		return errors.WithStack(err)
 	}
-	c.Set("purchaseOrders", purchaseOrders)
 
 	openPos := presentation.PurchaseOrdersAPI{}
 	recPos := presentation.PurchaseOrdersAPI{}
@@ -122,6 +115,12 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 		}
 	}
 
+	c.Set("Periods", periods)
+	c.Set("Weeks", weeks)
+	c.Set("Years", years)
+	c.Set("StartTime", startTime)
+	c.Set("EndTime", endTime)
+	c.Set("purchaseOrders", purchaseOrders)
 	c.Set("openPurchaseOrders", openPos)
 	c.Set("recPurchaseOrders", recPos)
 
@@ -156,10 +155,26 @@ func (v PurchaseOrdersResource) New(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	vendors := getSortedVendors(tx)
+	presenter := presentation.NewPresenter(tx)
+	purchaseOrder := presentation.PurchaseOrderAPI{}
 
+	vendors, err := presenter.GetVendors()
+	if err != nil {
+		return c.Error(500, err)
+	}
+	// add a blank vendor at the beginning so user is prompted to select a vendor
+	vendorList := append(presentation.VendorsAPI{presentation.VendorAPI{}}, *vendors...)
+	vendors = &vendorList
+
+	// map from vendor ID to vendor items
+	vendorItemsMap := map[string]presentation.ItemsAPI{}
+	for _, vendor := range *vendors {
+		vendorItemsMap[vendor.ID] = vendor.Items
+	}
+
+	c.Set("po", purchaseOrder)
 	c.Set("vendors", vendors)
-	c.Set("purchaseOrder", models.PurchaseOrder{})
+	c.Set("vendorItemsMap", vendorItemsMap)
 
 	return c.Render(200, r.Auto(c, &models.PurchaseOrder{}))
 }
@@ -345,20 +360,16 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 		return c.Error(404, err)
 	}
 
-	c.Set("po", purchaseOrder)
-
 	vendor, err := presenter.GetVendor(purchaseOrder.Vendor.ID)
 	if err != nil {
 		return c.Error(500, err)
 	}
 	purchaseOrder.Vendor = *vendor
-	c.Set("vendors", presentation.VendorsAPI{purchaseOrder.Vendor})
 
 	// map from vendor ID to vendor items
 	vendorItemsMap := map[string]presentation.ItemsAPI{
 		vendor.ID: purchaseOrder.Vendor.Items,
 	}
-	c.Set("vendorItemsMap", vendorItemsMap)
 
 	remainingItems := presentation.ItemsAPI{}
 	for _, vendorItem := range purchaseOrder.Vendor.Items {
@@ -374,6 +385,9 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 		}
 	}
 
+	c.Set("po", purchaseOrder)
+	c.Set("vendors", presentation.VendorsAPI{purchaseOrder.Vendor})
+	c.Set("vendorItemsMap", vendorItemsMap)
 	c.Set("remainingItems", remainingItems)
 
 	return c.Render(200, r.Auto(c, models.PurchaseOrder{}))
