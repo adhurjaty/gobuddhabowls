@@ -9,23 +9,22 @@ export function addToRemaining(item) {
         return a.index - b.index;
     });
     $container.attr('data', JSON.stringify(remainingItems));
-    populateRemaining();
+    populateRemaining(remainingItems);
 }
 
 export function removeFromRemaining(item) {
     var $container = $('#add-order-modal');
     var remainingItems = JSON.parse($container.attr('data'));
-    var idx = remainingItems.indexOf(item);
+    var idx = remainingItems.findIndex((x) => x.id == item.id);
 
     remainingItems.splice(idx, 1);
     $container.attr('data', JSON.stringify(remainingItems));
-    populateRemaining();
+    populateRemaining(remainingItems);
 }
 
-function populateRemaining() {
-    var $container = $('#add-order-modal');
-    var remainingItems = JSON.parse($container.attr('data'));
-    var $select = $container.find('select');
+function populateRemaining(remainingItems) {
+    var $select = $('#add-order-modal').find('select');
+    $select.empty();
 
     remainingItems.forEach((item) => {
         $('<option/>').val(item.id).html(item.name).appendTo($select);

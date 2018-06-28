@@ -92,3 +92,11 @@ export function getDate(dateStr) {
     var date = new Date(dateStr);
     return new Date(date.getFullYear(), date.getMonth(), date.getDate());
 }
+
+export function sortItems(items) {
+    items.sort((a, b) => {
+        return (a.Category.index * 1000 + a.index) - (b.Category.index * 1000 + b.index);
+    });
+
+    return items;
+}

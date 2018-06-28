@@ -1,4 +1,4 @@
-import { formatMoney, unFormatMoney } from './helpers';
+import { formatMoney, unFormatMoney, sortItems } from './helpers';
 import { CategorizedDatagrid } from './categorized_datagrid';
 import { addToRemaining, removeFromRemaining } from './new_item_modal';
 
@@ -14,7 +14,7 @@ export function addToDatagrid(item) {
 
     // add item to datagrid data
     _items.push(item);
-    _items.sort((a, b) => a.index - b.index);
+    _items = sortItems(_items);
     writeItemsToDOM();
 
     // reinitialize datagrid
