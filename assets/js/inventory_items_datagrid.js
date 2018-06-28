@@ -1,4 +1,4 @@
-import { groupByCategory, formatMoney } from './helpers';
+import { groupByCategory, formatMoney, unFormatMoney } from './helpers';
 import { DataGrid } from './datagrid';
 import { CategorizedDatagrid } from './categorized_datagrid';
 
@@ -111,7 +111,10 @@ function createRow(item) {
 }
 
 function datagridUpdated(updateObj) {
-
+    var price = parseFloat(unFormatMoney(updateObj.price));
+    var count = parseFloat(updateObj.count);
+    var $tr = $('.datagrid').find(`tr td:contains(${updateObj.id})`).parent();
+    $tr.find('td[name="total_cost"]').text(formatMoney(price * count));
 }
 
 $(() => {
@@ -134,7 +137,6 @@ $(() => {
             }
         },
         {
-            name: 'name',
             header: 'Name',
             column_func: (item) => {
                 return item.name;
@@ -162,7 +164,7 @@ $(() => {
             name: 'total_cost',
             header: 'Total Cost',
             column_func: (item) => {
-                return formatMoney(parseFloat(item.price * item.count));
+                return formatMoney(parseFloat(item.price) * parseFloat(item.count));
             }
         }
     ];

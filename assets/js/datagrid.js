@@ -1,106 +1,39 @@
 import { formatMoney, unFormatMoney } from "./helpers";
 import { datepicker } from "./datepicker";
 
-// EditCell represents an editable cell in a Datagrid. 
-class EditCell {
-    constructor($td, sendUpdate) {
+
+class Cell {
+    constructor($td) {
         this.$td = $td;
-        this.sendUpdate = sendUpdate;
-        this.type = $td.attr('data-type');
         this.contents = $td.text();
-        this.errorMessage = "";
-        this.setListener();
     }
 
-    // setListener initializes the behaviors of the different types of cell data types
-    setListener() {
-        var self = this;
+    getCell() {
+        return this.$td;
+    }
 
-        switch(self.type) {
-        case 'date':
-            self.$td.on('focus', function(event) {
-                self.clearError($(this));
-                var $date = $('<input data-provide="datepicker" value="' + self.contents + '">');
-                $date.css('width', '85px');
-                $(this).empty();
-                $(this).append($date);
-                var startDate = self.contents ? self.contents : new Date().toLocaleDateString("en-US");
-                // debugger;
-                // $date.datepicker({
-                datepicker($date, {
-                    autoclose: 'true',
-                    format: 'mm/dd/yyyy',
-                    defaultViewDate: startDate
-                }).on('changeDate', function(event) {
-                    self.contents = event.format();
-                    self.$td.text(self.contents);
-                    self.sendUpdate(self);
-                }).on('hide', function(event) {
-                    self.$td.text(self.contents);
-                    if(self.errorMessage) {
-                        self.showError(self.errorMessage);
-                    }
-                });
-                $date.focus();
-            });
-            break;
-        // TODO: fill these options in
-        case 'money':
-            self.$td.on('focusin', function(event) {
-                self.clearError($(this));
-                $(this).text(unFormatMoney($(this).text()));
-                $(this).selectText();
-            });
-            self.$td.on('focusout', function(event) {
-                // HACK: event firing multiple times causes
-                // text to go to $0.00 without this
-                var text = $(this).text().replace('$', '')
-                if(text == undefined) {
-                    return;
-                }
-                // debugger;
+    getText() {
+        return this.$td.text();
+    }
 
-                if(!isNaN(text)) {
-                    var amt = parseFloat(text);
-                    $(this).attr('value', amt);
-                    self.contents = formatMoney(amt);
-                    $(this).text(self.contents);
-                    self.sendUpdate(self);
-                } else {
-                    debugger;
-                    $(this).text("$0.00");
-                }
-            });
-            break;
-        case 'selector':
-            break;
-        case 'number':
-            self.$td.on('focusin', function(event) {
-                self.clearError($(this));
-                $(this).selectText();
-            });
-            self.$td.on('focusout', function(event) {
-                if(!isNaN($(this).text())) {
-                    self.contents = $(this).text();
-                    self.sendUpdate(self);
-                } else {
-                    $(this).text("0");
-                }
-            });
-            break;
-        default:    // type 'text'
-            self.$td.on('focusin', function(event) {
-                self.clearError($(this));
-                $(this).selectText();                    
-            });
-            self.$td.on('focusout', function(event) {
-                // var id = $(this).parent().attr('item-id');
-                // var field = $(this).attr('field');
-                self.contents = $(this).text();
-                self.sendUpdate(self);
-            });
-            break;
+    setText(text) {
+        if(text) {
+            this.$td.text(text);
         }
+        this.contents = this.$td.text();
+    }
+
+    isEditable() {
+        return this.constructor.name == "EditCell";
+    }
+}
+
+// EditCell represents an editable cell in a Datagrid. 
+class EditCell extends Cell {
+    constructor($td) {
+        super($td);
+        this.type = $td.attr('data-type');
+        this.errorMessage = "";
     }
 
     onError(msg) {
@@ -127,35 +60,129 @@ class EditCell {
     }
 }
 
-// may want to store cells and rows as classes, not sure yet
-// class Cell {
-//     constructor($cell) {
-//         this.$cell = $cell;
-//     }
-//     getCell() {
-//         return this.$cell;
-//     }
-// }
 
-// class Row {
-//     constructor($cells) {
-//         this.$cells = $cells;
-//         this.$row = null;
-//         this.initRow();
-//     }
+class Row {
+    constructor(cells, updateFnc) {
+        this.cells = cells;
+        this.updateFnc = updateFnc;
+        this.$tr = null;
+        this.initRow();
+    }
 
-//     initRow() {
-//         var self = this;
-//         this.$row = $(`<tr></tr>`);
-//         this.$cells.forEach(($cell) => {
-//             $cell.appendTo(self.$row);
-//         });
-//     }
+    initRow() {
+        var self = this;
+        this.$tr = $(`<tr></tr>`);
+        this.cells.forEach((cell) => {
+            cell.getCell().appendTo(self.$tr);
+            if(cell.isEditable()) {
+                self.setListener(cell);
+            }
+        });
+    }
 
-//     getRow() {
-//         return this.$row;
-//     }
-// }
+    getRow() {
+        return this.$tr;
+    }
+
+    // setListener initializes the behaviors of the different types of cell data types
+    setListener(cell) {
+        var self = this;
+        switch(cell.type) {
+        case 'date':
+            cell.$td.on('focus', function(event) {
+                cell.clearError();
+                var $date = $('<input data-provide="datepicker" value="' + cell.contents + '">');
+                $date.css('width', '85px');
+                $(this).empty();
+                $(this).append($date);
+                var startDate = cell.contents ? cell.contents : new Date().toLocaleDateString("en-US");
+                // debugger;
+                // $date.datepicker({
+                datepicker($date, {
+                    autoclose: 'true',
+                    format: 'mm/dd/yyyy',
+                    defaultViewDate: startDate
+                }).on('changeDate', function(event) {
+                    cell.contents = event.format();
+                    cell.setText(cell.contents);
+                    self.sendUpdate();
+                }).on('hide', function(event) {
+                    cell.$td.text(cell.contents);
+                    if(cell.errorMessage) {
+                        cell.showError(cell.errorMessage);
+                    }
+                });
+                $date.focus();
+            });
+            break;
+        // TODO: fill these options in
+        case 'money':
+            cell.$td.on('focusin', function(event) {
+                cell.clearError($(this));
+                cell.setText(unFormatMoney(cell.getText()));
+                $(this).selectText();
+            });
+            cell.$td.on('focusout', function(event) {
+                // HACK: event firing multiple times causes
+                // text to go to $0.00 without this
+                var text = cell.getText().replace('$', '')
+                if(text == undefined) {
+                    return;
+                }
+                // debugger;
+
+                if(!isNaN(text)) {
+                    var amt = parseFloat(text);
+                    $(this).attr('value', amt);
+                    cell.setText(formatMoney(amt));
+                    self.sendUpdate();
+                } else {
+                    debugger;
+                    cell.setText("$0.00");
+                }
+            });
+            break;
+        case 'selector':
+            break;
+        case 'number':
+            cell.$td.on('focusin', function(event) {
+                cell.clearError();
+                $(this).selectText();
+            });
+            cell.$td.on('focusout', function(event) {
+                if(!isNaN(cell.getText())) {
+                    cell.setText()
+                    self.sendUpdate();
+                } else {
+                    $(this).text("0");
+                }
+            });
+            break;
+        default:    // type 'text'
+            cell.$td.on('focusin', function(event) {
+                self.clearError($(this));
+                $(this).selectText();                    
+            });
+            cell.$td.on('focusout', function(event) {
+                cell.setText();
+                self.sendUpdate();
+            });
+            break;
+        }
+    }
+
+    sendUpdate() {
+        var updateObj = {}
+        this.$tr.find('td[name]').each((_, td) => {
+            updateObj[$(td).attr('name')] = $(td).text()
+        });
+        this.updateFnc(updateObj);
+    }
+
+    getEditableCells() {
+        return this.cells.filter((cell) => cell.isEditable());
+    }
+}
 
 // DataGrid is a class for creating a table that has editable cells that
 // may update models on edit
@@ -176,7 +203,7 @@ export class DataGrid {
         this.columnInfo = columnInfo;
         this.sendUpdate = updateFnc || this.defaultSendUpdate;
         this.$table = null;
-        this.$rows = null;
+        this.rows = null;
         this.initTable();
     }
 
@@ -203,9 +230,8 @@ export class DataGrid {
         });
         $header.appendTo(this.$table);
 
-        this.$rows = this.data.map((item) => {
-            var $row = $('<tr></tr>');
-            self.columnInfo.forEach((info) => {
+        this.rows = this.data.map((item) => {
+            var cells = self.columnInfo.map((info) => {
                 var $td = $('<td></td>');
                 $td.attr('name', info.name);
                 $td.html(info.column_func(item));
@@ -216,40 +242,31 @@ export class DataGrid {
                 if(info.editable) {
                     $td.attr('editable', true);
                     $td.attr('data-type', info.data_type);
-                    new EditCell($td, ((item, info) => {
-                        var updateObj = {
-                            id: item.id,
-                            name: info.name,
-                        }
-                        return (editCell) => {
-                            updateObj.value = editCell.contents;
-                            updateObj.onError = editCell.onError;
-                            updateObj.onSuccess = editCell.onSuccess;
-                            return self.sendUpdate(updateObj);
-                        }
-                    })(item, info));
+                    return new EditCell($td);
                 }
-                $td.appendTo($row);
+
+                return new Cell($td);
             });
-            return $row;
+            return new Row(cells, this.sendUpdate);
         });
 
         var $tbody = $('<tbody></tbody>');
-        this.$rows.forEach(($row) => {
-            self.setRowClick($row);
+        this.rows.forEach((row) => {
+            self.setRowClick(row);
+            var $row = row.getRow();
             // TODO: remove highlighting when clicking off the table
             $row.appendTo($tbody);
         });
         $tbody.appendTo(this.$table);
     }
 
-    setRowClick($row) {
+    setRowClick(row) {
         var self = this;
-        $row.click(function() {
+        row.getRow().click(function() {
             if(!$(this).hasClass('active')) {
                 self.clearSelectedRow();
                 $(this).addClass('active');
-                self.setEditable($(this));
+                self.setEditable(row);
             }
         });
     }
@@ -261,12 +278,16 @@ export class DataGrid {
         this.removeEditable($row);
     }
 
-    setEditable($row) {
+    setEditable(row) {
+        var self = this;
+        var $row = row.getRow();
         var editableCells = $row.find('td[editable="true"]');
         editableCells.attr('contenteditable', true);
         var fired = false;
 
         editableCells.keydown(function(e) {
+            var colIdx = $(this).index();
+            var rowIdx = self.rows.indexOf(row);
             if(e.keyCode == 13 || e.keyCode == 9) {
                 if(fired) {
                     return false;
@@ -278,18 +299,18 @@ export class DataGrid {
                 // ENTER key
                 if(e.keyCode == 13) {
                     if(window.event.getModifierState("Shift")) {
-                        focusPrevRow($(this));
+                        self.focusPrevRow(rowIdx, colIdx);
                     } else {
-                        focusNextRow($(this));
+                        self.focusNextRow(rowIdx, colIdx);
                     }
                     return false;
                 }
                 // TAB key
                 if(e.keyCode == 9) {
                     if(window.event.getModifierState("Shift")) {
-                        focusPrevColumn($(this));
+                        self.focusPrevColumn(rowIdx, colIdx);
                     } else {
-                        focusNextColumn($(this));
+                        self.focusNextColumn(rowIdx, colIdx);
                     }
                     return false;
                 }
@@ -316,92 +337,63 @@ export class DataGrid {
     defaultSendUpdate($row, editCell) {
         console.log('default send update');
     }
-}
 
-function focusPrevRow($el) {
-    var colIdx = $el.index();
-    var nextRow = $el.parent().prev();
-    if(nextRow.length == 0) {
-        var $td = $el.parents('.datagrid')
-                     .first()
-                     .parents('tr')
-                     .prev().prev()
-                     .find('td')
-                     .first();
-
-        $td.click();
-        nextRow = $td.find('.datagrid')
-                        .find('tr')
-                        .last();
-
-    }
-    if(nextRow.length == 0) {
-        $el.focus();
-    } else {
-        nextRow.children().eq(colIdx).click();
-        nextRow.children().eq(colIdx).focus();
-    }
-}
-
-function focusNextRow($el) {
-    var colIdx = $el.index();
-    var nextRow = $el.parent().next();
-    if(nextRow.length == 0) {
-        var $td = $el.parents('.datagrid')
-                     .first()
-                     .parents('tr')
-                     .next().next()
-                     .find('td')
-                     .first();
-        $td.click();
-        nextRow = $td.find('.datagrid')
-                     .find('tr')
-                     .eq(1);
-    }
-    if(nextRow.length == 0) {
-        $el.focus();
-    } else {
-        nextRow.children().eq(colIdx).click();
-        nextRow.children().eq(colIdx).focus();
-    }
-}
-
-function focusPrevColumn($el) {
-    var cols = $el.parent().children();
-    var colNum = cols.length;
-    var colIdx = $el.index();
-    var i = colIdx-1;
-    if(i < 0) {
-        i = colNum - 1;
-    }
-    
-    while(i != colIdx) {
-        if(cols.eq(i).attr('editable') == 'true') {
-            cols.eq(i).focus();
-            cols.eq(i).focusin();
-            break;
+    focusPrevRow(rowIdx, colIdx) {
+        if(rowIdx > 0) {
+            rowIdx--;
         }
-        i--;
+        var $el = this.rows[rowIdx].cells[colIdx].getCell();
+        $el.click();
+        $el.focus();
+    }
+
+    focusNextRow(rowIdx, colIdx) {
+        if(rowIdx < this.rows.length - 1) {
+            rowIdx++;
+        }
+        var $el = this.rows[rowIdx].cells[colIdx].getCell();
+        $el.click();
+        $el.focus();
+    }
+
+    focusPrevColumn(rowIdx, colIdx) {
+        var row = this.rows[rowIdx];
+        var colNum = row.cells.length;
+        var i = colIdx-1;
         if(i < 0) {
             i = colNum - 1;
         }
-    }
-}
-
-function focusNextColumn($el) {
-    var cols = $el.parent().children();
-    var colNum = cols.length;
-    var colIdx = $el.index();
-    var i = colIdx+1 % colNum;
-    while(i != colIdx) {
-        if(cols.eq(i).attr('editable') == 'true') {
-            cols.eq(i).focus();
-            cols.eq(i).focusin();
-            break;
+        
+        while(i != colIdx) {
+            var cell = row.cells[i];
+            if(cell.isEditable()) {
+                cell.getCell().click();
+                cell.getCell().focus();
+                break;
+            }
+            i--;
+            if(i < 0) {
+                i = colNum - 1;
+            }
         }
-        i++;
-        i %= colNum;
     }
+
+    focusNextColumn(rowIdx, colIdx) {
+        var row = this.rows[rowIdx];
+        var colNum = row.cells.length;
+        var i = colIdx+1 % colNum;
+        while(i != colIdx) {
+            var cell = row.cells[i];
+            if(cell.isEditable()) {
+                cell.getCell().click();
+                cell.getCell().focus();
+                break;
+            }
+            i++;
+            i %= colNum;
+        }
+    }
+
 }
 
 // code from https://stackoverflow.com/questions/12243898/how-to-select-all-text-in-contenteditable-div/12244703

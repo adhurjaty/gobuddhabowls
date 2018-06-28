@@ -11,7 +11,7 @@ export class CategorizedDatagrid extends DataGrid {
     insertCategoryLabels() {
         var i = 0;
         this.categorizedData.forEach((catItem) => {
-            var $row = this.$rows[i];
+            var $row = this.rows[i].getRow();
             var $labelRow = $(`<tr class="category-header" style="background-color: ${catItem.background};">
                 <td colspan="100">${catItem.name}</td>
             </tr>`);

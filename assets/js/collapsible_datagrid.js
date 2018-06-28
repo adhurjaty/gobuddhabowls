@@ -14,14 +14,15 @@ export class CollapsibleDatagrid extends DataGrid {
 
     insertCollapers() {
         this.$table.find('thead').prepend('<th>&nbsp;</th>');
-        this.$rows.forEach(($row) => {
+        this.rows.forEach((row) => {
+            var $row = row.getRow();
             $row.prepend(`<td class="expander"><span class="fa ${collapsedCaret}"></span></td>`);
         });
     }
 
     insertCollapseRows() {
         for (let i = this.data.length-1; i >= 0; i--) {
-            const $row = this.$rows[i]
+            const $row = this.rows[i].getRow();
             const item = this.data[i];
             var $hiddenRow = $(this.collapseInfo(item))
             $hiddenRow.hide();
