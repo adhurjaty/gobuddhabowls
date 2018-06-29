@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop/nulls"
+	"github.com/gobuffalo/uuid"
 )
 
 // PurchaseOrderAPI purchase order information to pass to the UI
@@ -37,4 +38,31 @@ func NewPurchaseOrdersAPI(purchaseOrders *models.PurchaseOrders) PurchaseOrdersA
 	}
 
 	return apis
+}
+
+func ConvertToModelPurchaseOrder(poAPI *PurchaseOrderAPI) (*models.PurchaseOrder, error) {
+	id := uuid.UUID{}
+	if len(poAPI.ID) > 0 {
+		var err error
+		id, err = uuid.FromString(poAPI.ID)
+		if err != nil {
+			return nil, err
+		}
+	}
+	vendorID, err := uuid.FromString(poAPI.Vendor.ID)
+	if err != nil {
+		return nil, err
+	}
+	items, err := ConvertToModelOrderItems(poAPI.Items, id)
+	if err != nil {
+		return nil, err
+	}
+	return &models.PurchaseOrder{
+		ID:           id,
+		VendorID:     vendorID,
+		OrderDate:    poAPI.OrderDate,
+		ReceivedDate: poAPI.ReceivedDate,
+		ShippingCost: poAPI.ShippingCost,
+		Items:        *items,
+	}, nil
 }

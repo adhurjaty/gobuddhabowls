@@ -3,6 +3,7 @@ package logic
 import (
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/validate"
 	"time"
 )
 
@@ -32,4 +33,8 @@ func GetPurchaseOrder(id string, tx *pop.Connection) (*models.PurchaseOrder, err
 	err := factory.CreateModel(po, tx, id)
 
 	return po, err
+}
+
+func InsertPurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.Eager().ValidateAndCreate(purchaseOrder)
 }

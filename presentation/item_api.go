@@ -2,6 +2,8 @@ package presentation
 
 import (
 	"buddhabowls/models"
+	"fmt"
+	"github.com/gobuffalo/uuid"
 )
 
 // ItemAPI is an object for serving order and vendor items to UI
@@ -11,9 +13,9 @@ type ItemAPI struct {
 	Category        CategoryAPI `json:"Category"`
 	Index           int         `json:"index"`
 	InventoryItemID string      `json:"inventory_item_id,omitempty"`
-	Count           float64     `json:"count,string,omitempty"`
-	Price           float64     `json:"price,string,omitempty"`
-	PurchasedUnit   string      `json:"purchased_unit,string,omitempty"`
+	Count           float64     `json:"count,omitempty"`
+	Price           float64     `json:"price,omitempty"`
+	PurchasedUnit   string      `json:"purchased_unit,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
@@ -70,6 +72,42 @@ func NewItemsAPI(modelItems interface{}) ItemsAPI {
 	}
 
 	return apis
+}
+
+func ConvertToModelOrderItem(item ItemAPI, orderID uuid.UUID) (*models.OrderItem, error) {
+	id := uuid.UUID{}
+	if len(item.ID) > 0 {
+		var err error
+		id, err = uuid.FromString(item.ID)
+		if err != nil {
+			return nil, err
+		}
+	}
+	invID, err := uuid.FromString(item.InventoryItemID)
+	if err != nil {
+		return nil, err
+	}
+	fmt.Println("!!!!!!!!!!!!!!!!")
+	fmt.Println(item)
+	return &models.OrderItem{
+		ID:              id,
+		InventoryItemID: invID,
+		Count:           item.Count,
+		Price:           item.Price,
+		OrderID:         orderID,
+	}, nil
+}
+
+func ConvertToModelOrderItems(items ItemsAPI, orderID uuid.UUID) (*models.OrderItems, error) {
+	modelItems := models.OrderItems{}
+	for _, item := range items {
+		modelItem, err := ConvertToModelOrderItem(item, orderID)
+		if err != nil {
+			return nil, err
+		}
+		modelItems = append(modelItems, *modelItem)
+	}
+	return &modelItems, nil
 }
 
 // SelectValue returns the ID for select input tags

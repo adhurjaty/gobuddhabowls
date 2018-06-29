@@ -9,6 +9,7 @@ import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"encoding/json"
+	"fmt"
 	"net/url"
 	"sort"
 	"time"
@@ -218,13 +219,14 @@ func NewOrderVendorChanged(c buffalo.Context) error {
 // path POST /purchase_orders
 func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 
-	// Allocate an empty PurchaseOrder
-	purchaseOrder := &models.PurchaseOrder{}
+	// Allocate an empty PurchaseOrder API object
+	poAPI := &presentation.PurchaseOrderAPI{}
 
 	// Bind purchaseOrder to the html form elements
-	if err := c.Bind(purchaseOrder); err != nil {
+	if err := c.Bind(poAPI); err != nil {
 		return errors.WithStack(err)
 	}
+	vendorID := c.Request().Form.Get("VendorID")
 
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
@@ -232,80 +234,122 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// get shipping cost from vendor
-	vendor := &models.Vendor{}
-
-	if err := tx.Find(vendor, purchaseOrder.VendorID); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	vendor, err := presenter.GetVendor(vendorID)
+	if err != nil {
 		return errors.WithStack(err)
 	}
-	purchaseOrder.ShippingCost = vendor.ShippingCost
+	poAPI.Vendor = *vendor
+	poAPI.ShippingCost = vendor.ShippingCost
 
-	// Validate the data from the html form
-	verrs, err := tx.ValidateAndCreate(purchaseOrder)
+	itemsJSON := c.Request().Form.Get("Items")
+	poAPI.Items, err = getItemsFromParams(itemsJSON)
 	if err != nil {
 		return errors.WithStack(err)
 	}
 
+	verrs, err := presenter.InsertPurchaseOrder(poAPI)
+	if err != nil {
+		return errors.WithStack(err)
+	}
 	if verrs.HasAny() {
-		vendors := getSortedVendors(tx)
-
-		// Make the errors available inside the html template
-		c.Set("errors", verrs)
-		c.Set("vendors", vendors)
-
-		// Render again the new.html template that the user can
-		// correct the input.
-		return c.Render(422, r.Auto(c, purchaseOrder))
-	}
-
-	// Create the OrderItems as well
-	itemsParamJSON, ok := c.Request().Form["Items"]
-	if !ok {
-		return c.Error(500, errors.New("Could not get items from form params"))
-	}
-
-	err = setItemsFromParams(itemsParamJSON[0], purchaseOrder)
-	if err != nil {
-		return errors.WithStack(err)
-	}
-
-	for _, item := range purchaseOrder.Items {
-
-		verrs, err := tx.ValidateAndCreate(&item)
-		if err != nil {
-			return errors.WithStack(err)
-		}
-
-		if verrs.HasAny() {
-			vendors := getSortedVendors(tx)
-
-			// Make the errors available inside the html template
-			c.Set("errors", verrs)
-			c.Set("vendors", vendors)
-
-			// Render again the new.html template that the user can
-			// correct the input.
-			return c.Render(422, r.Auto(c, purchaseOrder))
-		}
-		// need to check whether this is the most recent order from this vendor
-		// TODO: move this to when order is received
-		// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
-		// for _, vendorItem := range selectedVendor.Items {
-		// 	if vendorItem.InventoryItemID == item.InventoryItemID {
-		// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
-		// 			vendorItem.Price = item.Price
-		// 			tx.ValidateAndUpdate(vendorItem)
-		// 		}
-		// 		break
-		// 	}
+		fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!")
+		fmt.Println(itemsJSON)
+		// vendors, err := presenter.GetVendors()
+		// if err != nil {
+		// 	return c.Error(500, err)
 		// }
+		// // add a blank vendor at the beginning so user is prompted to select a vendor
+		// vendorList := append(presentation.VendorsAPI{presentation.VendorAPI{}}, *vendors...)
+		// vendors = &vendorList
+
+		// // map from vendor ID to vendor items
+		// vendorItemsMap := map[string]presentation.ItemsAPI{}
+		// for _, vendor := range *vendors {
+		// 	vendorItemsMap[vendor.ID] = vendor.Items
+		// }
+
+		// c.Set("po", presentation.PurchaseOrderAPI{})
+		// c.Set("vendors", vendors)
+		// c.Set("vendorItemsMap", vendorItemsMap)
+		// c.Set("errors", verrs)
+		return c.Render(422, r.Auto(c, models.PurchaseOrder{}))
 	}
+
+	// get shipping cost from vendor
+	// vendor := &models.Vendor{}
+
+	// if err := tx.Find(vendor, purchaseOrder.VendorID); err != nil {
+	// 	return errors.WithStack(err)
+	// }
+	// purchaseOrder.ShippingCost = vendor.ShippingCost
+
+	// // Validate the data from the html form
+	// verrs, err := tx.ValidateAndCreate(purchaseOrder)
+	// if err != nil {
+	// 	return errors.WithStack(err)
+	// }
+
+	// if verrs.HasAny() {
+	// 	vendors := getSortedVendors(tx)
+
+	// 	// Make the errors available inside the html template
+	// 	c.Set("errors", verrs)
+	// 	c.Set("vendors", vendors)
+
+	// 	// Render again the new.html template that the user can
+	// 	// correct the input.
+	// 	return c.Render(422, r.Auto(c, purchaseOrder))
+	// }
+
+	// // Create the OrderItems as well
+	// itemsParamJSON, ok := c.Request().Form["Items"]
+	// if !ok {
+	// 	return c.Error(500, errors.New("Could not get items from form params"))
+	// }
+
+	// err = setItemsFromParams(itemsParamJSON[0], purchaseOrder)
+	// if err != nil {
+	// 	return errors.WithStack(err)
+	// }
+
+	// for _, item := range purchaseOrder.Items {
+
+	// 	verrs, err := tx.ValidateAndCreate(&item)
+	// 	if err != nil {
+	// 		return errors.WithStack(err)
+	// 	}
+
+	// 	if verrs.HasAny() {
+	// 		vendors := getSortedVendors(tx)
+
+	// 		// Make the errors available inside the html template
+	// 		c.Set("errors", verrs)
+	// 		c.Set("vendors", vendors)
+
+	// 		// Render again the new.html template that the user can
+	// 		// correct the input.
+	// 		return c.Render(422, r.Auto(c, purchaseOrder))
+	// 	}
+	// need to check whether this is the most recent order from this vendor
+	// TODO: move this to when order is received
+	// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
+	// for _, vendorItem := range selectedVendor.Items {
+	// 	if vendorItem.InventoryItemID == item.InventoryItemID {
+	// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
+	// 			vendorItem.Price = item.Price
+	// 			tx.ValidateAndUpdate(vendorItem)
+	// 		}
+	// 		break
+	// 	}
+	// }
+	// }
 
 	// If there are no errors set a success message
 	c.Flash().Add("success", "PurchaseOrder was created successfully")
 
 	// and redirect to the purchase_orders index page
-	return c.Render(201, r.Auto(c, purchaseOrder))
+	return c.Render(201, r.Auto(c, models.PurchaseOrder{}))
 }
 
 // PurchaseOrdersCountChanged updates the UI for new and edit orders when the count
@@ -592,23 +636,15 @@ func getSortedVendors(tx *pop.Connection) models.Vendors {
 // 	c.Set("remainingVendorItems", *getRemainingVendorItems(purchaseOrder, tx))
 // }
 
-func setItemsFromParams(itemsParamJSON string, purchaseOrder *models.PurchaseOrder) error {
-	orderItems := models.OrderItems{}
+func getItemsFromParams(itemsParamJSON string) (presentation.ItemsAPI, error) {
+	items := presentation.ItemsAPI{}
 
-	err := json.Unmarshal([]byte(itemsParamJSON), &orderItems)
+	err := json.Unmarshal([]byte(itemsParamJSON), &items)
 	if err != nil {
-		return err
+		return items, err
 	}
 
-	purchaseOrder.Items = models.OrderItems{}
-	for _, item := range orderItems {
-		if item.Count > 0 {
-			item.OrderID = purchaseOrder.ID
-			purchaseOrder.Items = append(purchaseOrder.Items, item)
-		}
-	}
-
-	return nil
+	return items, nil
 }
 
 func getRemainingVendorItems(po *models.PurchaseOrder, tx *pop.Connection) *models.VendorItems {

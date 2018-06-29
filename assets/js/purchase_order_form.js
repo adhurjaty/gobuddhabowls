@@ -26,11 +26,25 @@ $(() => {
         initOrderItemsArea(items);
     });
 
-    $('#purchase-order-form>button[role="submit"]').click(function(event) {
+    $('#purchase-order-form-submit').closest('form').submit(function(event) {
+        if($('#new-order-vendor option:selected').val().length == 0) {
+            event.preventDefault();
+            showError('must select a vendor');
+            return;
+        }
+
+        var data = JSON.parse($('#vendor-items-table').attr('data'));
+        data = data.filter((x) => x.count > 0);
+        if(data.length == 0) {
+            event.preventDefault();
+            showError('must order at least one item');
+            return;
+        }
+        
         if(!$('#received-order-checkbox').is(':checked')) {
             $('#received-date-input').remove();
         }
-        sendOrderItems();
+        sendOrderItems(data)
     });
 
     $('#received-order-checkbox').change(function() {
@@ -42,13 +56,15 @@ $(() => {
     });
 });
 
-function sendOrderItems() {
-    var $input = $('form>input[name="Items"]');
-    var data = $('#vendor-items-table').find('tr[item-id]').map(function(i, el) {
-        return createItemFromRow($(el));
-    }).get();
-    data = JSON.stringify(data);
-    $input.val(data);
+function sendOrderItems(data) {
+    var $input = $('form input[name="Items"]');
+    debugger;
+    $input.val(JSON.stringify(data));
+}
+
+function showError(msg) {
+    $('#form-errors').text(msg);
+    $('#form-errors').show();
 }
 
 function cacheItemValues(id) {

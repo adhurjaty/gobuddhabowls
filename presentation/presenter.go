@@ -4,6 +4,7 @@ import (
 	"buddhabowls/logic"
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/validate"
 	"time"
 )
 
@@ -28,6 +29,7 @@ func NewPresenter(tx *pop.Connection) *Presenter {
 }
 
 // GetPeriodData gets all the period selector information to pass to the view
+// don't know why this is still here. delete if it's been here a while 6/28
 // func (p *Presenter) GetPeriodData(tx *pop.Connection) ([]logic.PeriodSelector, error) {
 // 	years, err := models.GetYears(tx)
 // 	if err != nil {
@@ -63,6 +65,14 @@ func (p *Presenter) GetPurchaseOrder(id string) (*PurchaseOrderAPI, error) {
 
 	apiPO := NewPurchaseOrderAPI(purchaseOrder)
 	return &apiPO, nil
+}
+
+func (p *Presenter) InsertPurchaseOrder(poAPI *PurchaseOrderAPI) (*validate.Errors, error) {
+	purchaseOrder, err := ConvertToModelPurchaseOrder(poAPI)
+	if err != nil {
+		return nil, err
+	}
+	return logic.InsertPurchaseOrder(purchaseOrder, p.tx)
 }
 
 func (p *Presenter) GetVendors() (*VendorsAPI, error) {
