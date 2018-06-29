@@ -2,7 +2,6 @@ package presentation
 
 import (
 	"buddhabowls/models"
-	"fmt"
 	"github.com/gobuffalo/uuid"
 )
 
@@ -87,8 +86,6 @@ func ConvertToModelOrderItem(item ItemAPI, orderID uuid.UUID) (*models.OrderItem
 	if err != nil {
 		return nil, err
 	}
-	fmt.Println("!!!!!!!!!!!!!!!!")
-	fmt.Println(item)
 	return &models.OrderItem{
 		ID:              id,
 		InventoryItemID: invID,

@@ -3,10 +3,13 @@ package presentation
 import (
 	"buddhabowls/logic"
 	"buddhabowls/models"
+	"fmt"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/validate"
 	"time"
 )
+
+var _ = fmt.Printf
 
 // periodSelectorContext context for the _period_selector.html template
 type periodSelectorContext struct {

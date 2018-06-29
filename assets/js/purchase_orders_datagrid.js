@@ -6,10 +6,6 @@ $(() => {
     var $container = $('#datagrid-holder');
     // var purchaseOrders = JSON.parse($container.attr('data'));
     var editOrderPath = $container.attr('data-url');
-    var $openDatagridContainer = $('#open-order-datagrid')
-    var openOrders = JSON.parse($openDatagridContainer.attr('data'));
-    var $recDatagridContainer = $('#rec-order-datagrid');
-    var recOrders = JSON.parse($recDatagridContainer.attr('data'));
 
     var baseColumnObjects = [
         {
@@ -44,8 +40,48 @@ $(() => {
         }
     ];
 
-    var openColumnObjects = baseColumnObjects.concat([
-        {
+    var $openDatagridContainer = $('#open-order-datagrid')
+    var openOrdersData = $openDatagridContainer.attr('data')
+    if(openOrdersData) {
+        var openOrders = JSON.parse(openOrdersData);
+        var openColumnObjects = baseColumnObjects.concat([
+            {
+                name: 'dropdown',
+                column_func: ((editOrderPath) => {
+                    return (purchaseOrder) => {
+                        return `<div class="dropdown show">
+                            <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                ...
+                            </button>
+                            <div class="dropdown-menu">
+                                <span class="dropdown-item" onclick="receiveItem(${purchaseOrder.id})">Received</span>
+                                <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
+                                <span class="dropdown-item text-danger" onclick="deleteItem(${purchaseOrder.id})">Delete</span>
+                            </div>
+                        </div>`
+                    }
+                })(editOrderPath)
+            }
+        ]);
+        var openDatagrid = new CollapsibleDatagrid(openOrders, openColumnObjects, getHiddenRow, sendUpdate)
+        $openDatagridContainer.html(openDatagrid.getTable());
+    }
+
+    var $recDatagridContainer = $('#rec-order-datagrid');
+    var recOrdersData = $recDatagridContainer.attr('data');
+    if(recOrdersData) {
+        var recOrders = JSON.parse(recOrdersData);
+        var recColumnObjects = baseColumnObjects.slice();
+        recColumnObjects.splice(3, 0, {
+            name: 'received_date',
+            header: 'Received Date',
+            editable: true,
+            data_type: 'date',
+            column_func: (purchaseOrder) => {
+                return formatSlashDate(purchaseOrder.received_date);
+            }
+        });
+        recColumnObjects.push({
             name: 'dropdown',
             column_func: ((editOrderPath) => {
                 return (purchaseOrder) => {
@@ -54,49 +90,18 @@ $(() => {
                             ...
                         </button>
                         <div class="dropdown-menu">
-                            <span class="dropdown-item" onclick="receiveItem(${purchaseOrder.id})">Received</span>
+                            <span class="dropdown-item" onclick="reopen(${purchaseOrder.id})">Re-open</span>
                             <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
                             <span class="dropdown-item text-danger" onclick="deleteItem(${purchaseOrder.id})">Delete</span>
                         </div>
                     </div>`
                 }
             })(editOrderPath)
-        }
-    ]);
+        });
 
-    var recColumnObjects = baseColumnObjects.slice();
-    recColumnObjects.splice(3, 0, {
-        name: 'received_date',
-        header: 'Received Date',
-        editable: true,
-        data_type: 'date',
-        column_func: (purchaseOrder) => {
-            return formatSlashDate(purchaseOrder.received_date);
-        }
-    });
-    recColumnObjects.push({
-        name: 'dropdown',
-        column_func: ((editOrderPath) => {
-            return (purchaseOrder) => {
-                return `<div class="dropdown show">
-                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        ...
-                    </button>
-                    <div class="dropdown-menu">
-                        <span class="dropdown-item" onclick="reopen(${purchaseOrder.id})">Re-open</span>
-                        <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
-                        <span class="dropdown-item text-danger" onclick="deleteItem(${purchaseOrder.id})">Delete</span>
-                    </div>
-                </div>`
-            }
-        })(editOrderPath)
-    });
-
-    var openDatagrid = new CollapsibleDatagrid(openOrders, openColumnObjects, getHiddenRow, sendUpdate)
-    var recDatagrid = new CollapsibleDatagrid(recOrders, recColumnObjects, getHiddenRow, sendUpdate);
-
-    $openDatagridContainer.html(openDatagrid.getTable());
-    $recDatagridContainer.html(recDatagrid.getTable());
+        var recDatagrid = new CollapsibleDatagrid(recOrders, recColumnObjects, getHiddenRow, sendUpdate);
+        $recDatagridContainer.html(recDatagrid.getTable());
+    }
 });
 
 function sendUpdate(updateObj) {

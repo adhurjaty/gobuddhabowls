@@ -36,5 +36,19 @@ func GetPurchaseOrder(id string, tx *pop.Connection) (*models.PurchaseOrder, err
 }
 
 func InsertPurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection) (*validate.Errors, error) {
-	return tx.Eager().ValidateAndCreate(purchaseOrder)
+	verrs, err := tx.ValidateAndCreate(purchaseOrder)
+	if err != nil || verrs.HasAny() {
+		return verrs, err
+	}
+
+	// insert items
+	for _, item := range purchaseOrder.Items {
+		item.OrderID = purchaseOrder.ID
+		verrs, err = tx.ValidateAndCreate(&item)
+		if err != nil || verrs.HasAny() {
+			return verrs, err
+		}
+	}
+
+	return verrs, nil
 }
