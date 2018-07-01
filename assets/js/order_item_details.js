@@ -1,4 +1,4 @@
-import { formatMoney, unFormatMoney, sortItems, getPurchaseOrderCost } from './helpers';
+import { formatMoney, unFormatMoney, sortItems } from './helpers';
 import { CategorizedDatagrid } from './categorized_datagrid';
 import { addToRemaining, removeFromRemaining } from './new_item_modal';
 import { horizontalPercentageChart } from './horizontal_percentage_chart';
@@ -27,6 +27,10 @@ export function addToDatagrid(item) {
     // need to re-initialize globals because this is called from outside
     _$container = $('#vendor-items-table');
     _items = JSON.parse(_$container.attr('data'));
+
+    if(item.count == undefined) {
+        item.count = 0;
+    }
 
     // add item to datagrid data
     _items.push(item);
@@ -169,14 +173,14 @@ function initDatagrid() {
     initSelection();
 }
 
-$(() => {
-    _$container = $('#vendor-items-table');
-    _items = JSON.parse(_$container.attr('data'));
+// $(() => {
+//     _$container = $('#vendor-items-table');
+//     _items = JSON.parse(_$container.attr('data'));
 
-    if(_items && _items.length > 0) {
-        initDatagrid();
-        initBreakdown();
-        initAddRemoveButtons();
-    }
-});
+//     if(_items && _items.length > 0) {
+//         initDatagrid();
+//         initBreakdown();
+//         initAddRemoveButtons();
+//     }
+// });
 

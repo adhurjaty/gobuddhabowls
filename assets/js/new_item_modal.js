@@ -33,7 +33,6 @@ function populateRemaining(remainingItems) {
 
 $(() => {
     var $container = $('#add-order-modal');
-    
     $('#add-po-item-submit').click(() => {
         var id = $('#add-order-modal option:selected').val();
         var remainingItems = JSON.parse($container.attr('data'));

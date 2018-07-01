@@ -11,6 +11,10 @@ $(() => {
         format: 'mm/dd/yyyy'
     });
 
+    if($('#new-order-vendor option:selected').val()) {
+        var items = JSON.parse($('#vendor-items-table').attr('data'));
+        initOrderItemsArea(items)
+    }
     $('#new-order-vendor').change(function(d) {
         // remove none option
         $('#new-order-vendor option[value=""]').remove();

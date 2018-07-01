@@ -161,60 +161,12 @@ func (v PurchaseOrdersResource) New(c buffalo.Context) error {
 	presenter := presentation.NewPresenter(tx)
 	purchaseOrder := presentation.PurchaseOrderAPI{}
 
-	vendors, err := presenter.GetVendors()
+	err := setPurchaseOrderViewVars(c, presenter, purchaseOrder)
 	if err != nil {
 		return c.Error(500, err)
 	}
-	// add a blank vendor at the beginning so user is prompted to select a vendor
-	vendorList := append(presentation.VendorsAPI{presentation.VendorAPI{}}, *vendors...)
-	vendors = &vendorList
-
-	// map from vendor ID to vendor items
-	vendorItemsMap := map[string]presentation.ItemsAPI{}
-	for _, vendor := range *vendors {
-		vendorItemsMap[vendor.ID] = vendor.Items
-	}
-
-	c.Set("po", purchaseOrder)
-	c.Set("vendors", vendors)
-	c.Set("vendorItemsMap", vendorItemsMap)
 
 	return c.Render(200, r.Auto(c, &models.PurchaseOrder{}))
-}
-
-// NewOrderVendorChanged updates the new PO page when vendor has been selected
-// GET /purchase_orders/order_vendor_changed/{vendor_id}
-func NewOrderVendorChanged(c buffalo.Context) error {
-	// Get the DB connection from the context
-	// tx, ok := c.Value("tx").(*pop.Connection)
-	// if !ok {
-	// 	return errors.WithStack(errors.New("no transaction found"))
-	// }
-
-	// // get the vendor from params
-	// selectedVendor, err := models.LoadVendor(tx, c.Param("vendor_id"))
-	// if err != nil {
-	// 	return c.Error(404, err)
-	// }
-
-	// // format vendor items to be shown in the UI
-	// vendOrderItems := selectedVendor.Items.ToOrderItems()
-	// categoryGroups := models.GetCategoryGroups(vendOrderItems.ToCountItems())
-
-	// // get and sort keys from the map
-	// sortedCategories := models.InventoryItemCategories{}
-	// for k := range categoryGroups {
-	// 	sortedCategories = append(sortedCategories, k)
-	// }
-	// sort.Slice(sortedCategories, func(i, j int) bool {
-	// 	return sortedCategories[i].Index < sortedCategories[j].Index
-	// })
-
-	// // pass variables to UI
-	// c.Set("sortedCategories", sortedCategories)
-	// c.Set("categoryGroups", categoryGroups)
-
-	return c.Render(200, r.JavaScript("purchase_orders/replace_new_vendor_items"))
 }
 
 // Create adds a PurchaseOrder to the DB. This function is mapped to the
@@ -255,23 +207,10 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 	if verrs.HasAny() {
-		vendors, err := presenter.GetVendors()
+		err = setPurchaseOrderViewVars(c, presenter, presentation.PurchaseOrderAPI{})
 		if err != nil {
-			return c.Error(500, err)
+			return errors.WithStack(err)
 		}
-		// add a blank vendor at the beginning so user is prompted to select a vendor
-		vendorList := append(presentation.VendorsAPI{presentation.VendorAPI{}}, *vendors...)
-		vendors = &vendorList
-
-		// map from vendor ID to vendor items
-		vendorItemsMap := map[string]presentation.ItemsAPI{}
-		for _, vendor := range *vendors {
-			vendorItemsMap[vendor.ID] = vendor.Items
-		}
-
-		c.Set("po", presentation.PurchaseOrderAPI{})
-		c.Set("vendors", vendors)
-		c.Set("vendorItemsMap", vendorItemsMap)
 		c.Set("errors", verrs)
 		return c.Render(422, r.Auto(c, models.PurchaseOrder{}))
 	}
@@ -290,42 +229,6 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 	return c.Redirect(303, c.Request().URL.String(), redirectURL.String())
 }
 
-// PurchaseOrdersCountChanged updates the UI for new and edit orders when the count
-// or price change. It displays a category price breakdown and updates
-// the price extension
-// mapped to the path POST /purchase_orders/count_changed
-// func PurchaseOrdersCountChanged(c buffalo.Context) error {
-// 	purchaseOrder := &models.PurchaseOrder{}
-// 	itemsJSON, ok := c.Request().Form["Items"]
-// 	if !ok {
-// 		return c.Error(500, errors.New("Could not get items from form"))
-// 	}
-// 	err := setItemsFromParams(itemsJSON[0], purchaseOrder)
-// 	if err != nil {
-// 		return errors.WithStack(err)
-// 	}
-
-// 	tx, ok := c.Value("tx").(*pop.Connection)
-// 	if !ok {
-// 		return c.Error(500, errors.New("Could not open database connection"))
-// 	}
-
-// 	for i, item := range purchaseOrder.Items {
-// 		invItem := &models.InventoryItem{}
-// 		err = tx.Eager().Find(invItem, item.InventoryItemID)
-// 		if err != nil {
-// 			return c.Error(500, errors.New("invalid inventory item ID"))
-// 		}
-// 		purchaseOrder.Items[i].InventoryItem = *invItem
-// 	}
-
-// 	categoryDetails := purchaseOrder.GetCategoryCosts()
-// 	c.Set("categoryDetails", categoryDetails)
-// 	c.Set("title", "Category Breakdown")
-
-// 	return c.Render(200, r.JavaScript("purchase_orders/count_changed"))
-// }
-
 // Edit renders a edit form for a PurchaseOrder. This function is
 // mapped to the path GET /purchase_orders/{purchase_order_id}/edit
 func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
@@ -342,164 +245,76 @@ func (v PurchaseOrdersResource) Edit(c buffalo.Context) error {
 		return c.Error(404, err)
 	}
 
-	vendor, err := presenter.GetVendor(purchaseOrder.Vendor.ID)
+	err = setPurchaseOrderViewVars(c, presenter, *purchaseOrder)
 	if err != nil {
-		return c.Error(500, err)
+		return errors.WithStack(err)
 	}
-	purchaseOrder.Vendor = *vendor
-
-	// map from vendor ID to vendor items
-	vendorItemsMap := map[string]presentation.ItemsAPI{
-		vendor.ID: purchaseOrder.Vendor.Items,
-	}
-
-	remainingItems := presentation.ItemsAPI{}
-	for _, vendorItem := range purchaseOrder.Vendor.Items {
-		contains := false
-		for _, poItem := range purchaseOrder.Items {
-			if vendorItem.InventoryItemID == poItem.InventoryItemID {
-				contains = true
-				break
-			}
-		}
-		if !contains {
-			remainingItems = append(remainingItems, vendorItem)
-		}
-	}
-
-	c.Set("po", purchaseOrder)
-	c.Set("vendors", presentation.VendorsAPI{purchaseOrder.Vendor})
-	c.Set("vendorItemsMap", vendorItemsMap)
-	c.Set("remainingItems", remainingItems)
 
 	return c.Render(200, r.Auto(c, models.PurchaseOrder{}))
 }
 
-// AddPurchaseOrderItem adds an order item to the order item list
-// mapped to /purchase_orders/add_item/{purchase_order_id}
-// func AddPurchaseOrderItem(c buffalo.Context) error {
-
-// tx, ok := c.Value("tx").(*pop.Connection)
-// if !ok {
-// 	return errors.WithStack(errors.New("no transaction found"))
-// }
-
-// vendorItemID := c.Request().Form["VendorItemID"][0]
-
-// vendorItem, err := models.LoadVendorItem(tx, vendorItemID)
-// if err != nil {
-// 	return c.Error(500, err)
-// }
-
-// purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
-// if err != nil {
-// 	return c.Error(404, err)
-// }
-
-// // Bind PurchaseOrder to the html form elements
-// if err := c.Bind(&purchaseOrder); err != nil {
-// 	fmt.Println(err)
-// 	return errors.WithStack(err)
-// }
-
-// purchaseOrder.Items = append(purchaseOrder.Items, *vendorItem.ToOrderItem())
-// purchaseOrder.Items.Sort()
-
-// setEditPOView(c, &purchaseOrder)
-
-// 	return c.Render(200, r.HTML("purchase_orders/edit"))
-// }
-
 // Update changes a PurchaseOrder in the DB. This function is mapped to
 // the path PUT /purchase_orders/{purchase_order_id}
 func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
+
 	// Get the DB connection from the context
-	// tx, ok := c.Value("tx").(*pop.Connection)
-	// if !ok {
-	// 	return errors.WithStack(errors.New("no transaction found"))
-	// }
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
 
-	// // Allocate an empty PurchaseOrder
-	// purchaseOrder := &models.PurchaseOrder{}
+	presenter := presentation.NewPresenter(tx)
+	poAPI, err := presenter.GetPurchaseOrder(c.Param("purchase_order_id"))
+	if err != nil {
+		return c.Error(404, err)
+	}
 
-	// if err := tx.Find(purchaseOrder, c.Param("purchase_order_id")); err != nil {
-	// 	return c.Error(404, err)
-	// }
+	// Bind purchaseOrder to the html form elements
+	if err := c.Bind(poAPI); err != nil {
+		return errors.WithStack(err)
+	}
+	itemsParamJSON := c.Request().Form.Get("Items")
+	poAPI.Items, err = getItemsFromParams(itemsParamJSON)
+	if err != nil {
+		return err
+	}
 
-	// // Bind PurchaseOrder to the html form elements
-	// if err := c.Bind(purchaseOrder); err != nil {
-	// 	fmt.Println(err)
-	// 	return errors.WithStack(err)
-	// }
+	verrs, err := presenter.UpdatePurchaseOrder(poAPI)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+	if verrs.HasAny() {
+		setPurchaseOrderViewVars(c, presenter, *poAPI)
+		c.Set("errors", verrs)
 
-	// verrs, err := tx.ValidateAndUpdate(purchaseOrder)
-	// if err != nil {
-	// 	fmt.Println(fmt.Errorf("Invalid data"))
-	// 	return c.Error(422, err)
-	// }
-	// if verrs.HasAny() {
-	// 	fmt.Println(fmt.Errorf("Invalid data"))
-	// 	errorMsgs := []string{}
-	// 	for _, verr := range verrs.Errors {
-	// 		for _, v := range verr {
-	// 			errorMsgs = append(errorMsgs, v)
+		return c.Render(422, r.Auto(c, models.PurchaseOrder{}))
+	}
+
+	// need to check whether this is the most recent order from this vendor
+	// TODO: move this to when order is received
+	// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
+	// for _, vendorItem := range selectedVendor.Items {
+	// 	if vendorItem.InventoryItemID == item.InventoryItemID {
+	// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
+	// 			vendorItem.Price = item.Price
+	// 			tx.ValidateAndUpdate(vendorItem)
 	// 		}
+	// 		break
 	// 	}
-
-	// 	return c.Render(422, r.String(strings.Join(errorMsgs, "\n")))
-	// }
-
-	// // Create the OrderItems as well
-	// itemsParamJSON, ok := c.Request().Form["Items"]
-	// if !ok {
-	// 	// case for editing item within main datagrid
-	// 	return c.Render(200, r.String("success"))
-	// }
-
-	// err = setItemsFromParams(itemsParamJSON[0], purchaseOrder)
-	// if err != nil {
-	// 	return errors.WithStack(err)
-	// }
-
-	// for _, item := range purchaseOrder.Items {
-
-	// 	verrs, err := tx.ValidateAndUpdate(&item)
-	// 	if err != nil {
-	// 		return errors.WithStack(err)
-	// 	}
-
-	// 	if verrs.HasAny() {
-	// 		// models.LoadOrderItems(tx, purchaseOrder)
-	// 		po, err := models.LoadPurchaseOrder(tx, purchaseOrder.ID.String())
-	// 		if err != nil {
-	// 			return errors.WithStack(err)
-	// 		}
-	// 		setEditPOView(c, &po)
-
-	// 		// Render again the edit.html template that the user can
-	// 		// correct the input.
-	// 		return c.Render(422, r.Auto(c, &po))
-	// 	}
-	// 	// need to check whether this is the most recent order from this vendor
-	// 	// TODO: move this to when order is received
-	// 	// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
-	// 	// for _, vendorItem := range selectedVendor.Items {
-	// 	// 	if vendorItem.InventoryItemID == item.InventoryItemID {
-	// 	// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
-	// 	// 			vendorItem.Price = item.Price
-	// 	// 			tx.ValidateAndUpdate(vendorItem)
-	// 	// 		}
-	// 	// 		break
-	// 	// 	}
-	// 	// }
 	// }
 
 	// // If there are no errors set a success message
-	// c.Flash().Add("success", "PurchaseOrder was updated successfully")
+	c.Flash().Add("success", "PurchaseOrder was updated successfully")
+
+	week := presenter.GetSelectedWeek(poAPI.OrderDate.Time)
+	startTime := week.StartTime.Format(time.RFC3339)
+	redirectURL, _ := url.Parse("/purchase_orders")
+	q := redirectURL.Query()
+	q.Add("StartTime", startTime)
+	redirectURL.RawQuery = q.Encode()
 
 	// and redirect to the purchase_orders index page
-	// return c.Render(200, r.Auto(c, purchaseOrder))
-	return c.Render(200, r.Auto(c, nil))
+	return c.Redirect(303, redirectURL.String())
 }
 
 // Destroy deletes a PurchaseOrder from the DB. This function is mapped
@@ -550,29 +365,54 @@ func getSortedVendors(tx *pop.Connection) models.Vendors {
 	return vendors
 }
 
-// func setEditPOView(c buffalo.Context, purchaseOrder *models.PurchaseOrder) {
-// 	c.Set("vendors", models.Vendors{purchaseOrder.Vendor})
-// 	c.Set("purchaseOrder", purchaseOrder)
+func setPurchaseOrderViewVars(c buffalo.Context, presenter *presentation.Presenter, poAPI presentation.PurchaseOrderAPI) error {
+	newItem := poAPI.ID == ""
 
-// 	categoryDetails := purchaseOrder.GetCategoryCosts()
-// 	c.Set("categoryDetails", categoryDetails)
-// 	c.Set("title", "Category Breakdown")
+	var vendors *presentation.VendorsAPI
+	if newItem {
+		var err error
+		vendors, err = presenter.GetVendors()
+		if err != nil {
+			return err
+		}
+		// add a blank vendor at the beginning so user is prompted to select a vendor
+		vendorList := append(presentation.VendorsAPI{presentation.VendorAPI{}}, *vendors...)
+		vendors = &vendorList
+	} else {
+		vendor, err := presenter.GetVendor(poAPI.Vendor.ID)
+		if err != nil {
+			return c.Error(500, err)
+		}
+		poAPI.Vendor = *vendor
 
-// 	categoryGroups := models.GetCategoryGroups(purchaseOrder.Items.ToGenericItems())
-// 	// get and sort keys from the map
-// 	sortedCategories := models.InventoryItemCategories{}
-// 	for k := range categoryGroups {
-// 		sortedCategories = append(sortedCategories, k)
-// 	}
-// 	sort.Slice(sortedCategories, func(i, j int) bool {
-// 		return sortedCategories[i].Index < sortedCategories[j].Index
-// 	})
-// 	c.Set("sortedCategories", sortedCategories)
-// 	c.Set("categoryGroups", categoryGroups)
+		vendors = &presentation.VendorsAPI{poAPI.Vendor}
 
-// 	tx := c.Value("tx").(*pop.Connection)
-// 	c.Set("remainingVendorItems", *getRemainingVendorItems(purchaseOrder, tx))
-// }
+		remainingItems := presentation.ItemsAPI{}
+		for _, vendorItem := range poAPI.Vendor.Items {
+			contains := false
+			for _, poItem := range poAPI.Items {
+				if vendorItem.InventoryItemID == poItem.InventoryItemID {
+					contains = true
+					break
+				}
+			}
+			if !contains {
+				remainingItems = append(remainingItems, vendorItem)
+			}
+		}
+		c.Set("remainingItems", remainingItems)
+	}
+	// map from vendor ID to vendor items
+	vendorItemsMap := map[string]presentation.ItemsAPI{}
+	for _, vendor := range *vendors {
+		vendorItemsMap[vendor.ID] = vendor.Items
+	}
+
+	c.Set("po", poAPI)
+	c.Set("vendors", vendors)
+	c.Set("vendorItemsMap", vendorItemsMap)
+	return nil
+}
 
 func getItemsFromParams(itemsParamJSON string) (presentation.ItemsAPI, error) {
 	items := presentation.ItemsAPI{}

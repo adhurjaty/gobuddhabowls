@@ -2,6 +2,7 @@ package logic
 
 import (
 	"buddhabowls/models"
+	"fmt"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/validate"
 	"time"
@@ -47,6 +48,54 @@ func InsertPurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection
 		verrs, err = tx.ValidateAndCreate(&item)
 		if err != nil || verrs.HasAny() {
 			return verrs, err
+		}
+	}
+
+	return verrs, nil
+}
+
+func UpdatePurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection) (*validate.Errors, error) {
+	oldPO, err := GetPurchaseOrder(purchaseOrder.ID.String(), tx)
+	if err != nil {
+		return nil, err
+	}
+
+	verrs, err := tx.ValidateAndUpdate(purchaseOrder)
+	if err != nil || verrs.HasAny() {
+		return verrs, err
+	}
+
+	oldItems := oldPO.Items
+	containsFunc := func(item models.OrderItem, itemArr models.OrderItems) bool {
+		for _, otherItem := range itemArr {
+			if item.ID == otherItem.ID {
+				return true
+			}
+		}
+		return false
+	}
+
+	// update or insert items
+	for _, item := range purchaseOrder.Items {
+		item.OrderID = purchaseOrder.ID
+		if containsFunc(item, oldItems) {
+			verrs, err = tx.ValidateAndUpdate(&item)
+		} else {
+			verrs, err = tx.ValidateAndCreate(&item)
+		}
+		if err != nil || verrs.HasAny() {
+			fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!!")
+			fmt.Println(err)
+			return verrs, err
+		}
+	}
+
+	for _, item := range oldItems {
+		if !containsFunc(item, purchaseOrder.Items) {
+			err = tx.Destroy(item)
+			if err != nil {
+				return verrs, err
+			}
 		}
 	}
 
