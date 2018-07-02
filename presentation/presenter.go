@@ -86,6 +86,14 @@ func (p *Presenter) UpdatePurchaseOrder(poAPI *PurchaseOrderAPI) (*validate.Erro
 	return logic.UpdatePurchaseOrder(purchaseOrder, p.tx)
 }
 
+func (p *Presenter) DestroyPurchaseOrder(poAPI *PurchaseOrderAPI) error {
+	purchaseOrder, err := ConvertToModelPurchaseOrder(poAPI)
+	if err != nil {
+		return err
+	}
+	return logic.DeletePurchaseOrder(purchaseOrder, p.tx)
+}
+
 func (p *Presenter) GetVendors() (*VendorsAPI, error) {
 	vendors, err := logic.GetAllVendors(p.tx)
 	if err != nil {

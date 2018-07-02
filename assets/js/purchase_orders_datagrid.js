@@ -54,10 +54,10 @@ $(() => {
                                 ...
                             </button>
                             <div class="dropdown-menu">
-                                <span class="dropdown-item" onclick="receiveItem(${purchaseOrder.id})">Received</span>
+                                <span name="receive" class="dropdown-item" onclick="receiveItem(${purchaseOrder.id})">Received</span>
                                 <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
-                                <span class="dropdown-item text-danger" onclick="deleteItem(${purchaseOrder.id})">Delete</span>
-                            </div>
+                                <a name="delete" class="dropdown-item text-danger" data-method="DELETE">Delete</span>
+                                </div>
                         </div>`
                     }
                 })(editOrderPath)
@@ -65,6 +65,8 @@ $(() => {
         ]);
         var openDatagrid = new CollapsibleDatagrid(openOrders, openColumnObjects, getHiddenRow, sendUpdate)
         $openDatagridContainer.html(openDatagrid.getTable());
+
+        initDropdownActions(openDatagrid);
     }
 
     var $recDatagridContainer = $('#rec-order-datagrid');
@@ -90,9 +92,9 @@ $(() => {
                             ...
                         </button>
                         <div class="dropdown-menu">
-                            <span class="dropdown-item" onclick="reopen(${purchaseOrder.id})">Re-open</span>
+                            <span name="reopen" class="dropdown-item" >Re-open</span>
                             <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
-                            <span class="dropdown-item text-danger" onclick="deleteItem(${purchaseOrder.id})">Delete</span>
+                            <a name="delete" class="dropdown-item text-danger" data-method="DELETE">Delete</span>
                         </div>
                     </div>`
                 }
@@ -101,6 +103,8 @@ $(() => {
 
         var recDatagrid = new CollapsibleDatagrid(recOrders, recColumnObjects, getHiddenRow, sendUpdate);
         $recDatagridContainer.html(recDatagrid.getTable());
+
+        initDropdownActions(recDatagrid);
     }
 });
 
@@ -130,4 +134,38 @@ function getHiddenRow(purchaseOrder) {
                     ${horizontalPercentageChart(purchaseOrder.Vendor.name + ' Order', purchaseOrder.Items, getPurchaseOrderCost(purchaseOrder))}            
                 </td> 
             </tr>`;
+}
+
+function initDropdownActions(datagrid) {
+    var updatePath = $('#datagrid-holder').attr('update-url');
+    datagrid.rows.forEach((row) => {
+        var details = row.getInfo();
+        var id = details.id;
+        var $row = row.getRow();
+
+        $row.find('td[name="dropdown"] span[name="receive"]').click(() => {
+            submitForm(replaceUrlId(updatePath, id), 'PUT', { ReceivedDate: (new Date()).toISOString() });
+        });
+        $row.find('td[name="dropdown"] span[name="reopen"]').click(() => {
+            submitForm(replaceUrlId(updatePath, id), 'PUT', { ReceivedDate: null });
+        });
+        $row.find('td[name="dropdown"] a[name="delete"]').attr('href', replaceUrlId(updatePath, id));
+    });
+}
+
+function submitForm(url, method, data) {
+    var $form = $('<form></form>');
+    $form.attr('method', method);
+    $form.attr('action', url);
+
+    for(key in data) {
+        var $field = $('<input />');
+        $field.attr('type', 'hidden');
+        $field.attr('name', key);
+        $field.val(data[key]);
+        $field.appendTo($form);
+    }
+
+    $('body').append($form);
+    $form.submit();
 }

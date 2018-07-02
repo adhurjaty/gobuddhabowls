@@ -101,3 +101,7 @@ func UpdatePurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection
 
 	return verrs, nil
 }
+
+func DeletePurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection) error {
+	return tx.Destroy(purchaseOrder)
+}

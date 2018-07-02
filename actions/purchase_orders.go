@@ -321,35 +321,34 @@ func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
 // to the path DELETE /purchase_orders/{purchase_order_id}
 func (v PurchaseOrdersResource) Destroy(c buffalo.Context) error {
 	// Get the DB connection from the context
-	// tx, ok := c.Value("tx").(*pop.Connection)
-	// if !ok {
-	// 	return errors.WithStack(errors.New("no transaction found"))
-	// }
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
 
-	// // To find the PurchaseOrder the parameter purchase_order_id is used.
-	// purchaseOrder, err := models.LoadPurchaseOrder(tx, c.Param("purchase_order_id"))
+	presenter := presentation.NewPresenter(tx)
+	purchaseOrder, err := presenter.GetPurchaseOrder(c.Param("purchase_order_id"))
+	if err != nil {
+		return c.Error(404, err)
+	}
 
-	// if err != nil {
-	// 	return c.Error(404, err)
-	// }
+	err = presenter.DestroyPurchaseOrder(purchaseOrder)
+	if err != nil {
+		return errors.WithStack(err)
+	}
 
-	// // destroy associated order items
-	// for _, item := range purchaseOrder.Items {
-	// 	if err = tx.Destroy(&item); err != nil {
-	// 		return errors.WithStack(err)
-	// 	}
-	// }
+	// If there are no errors set a flash message
+	c.Flash().Add("success", "PurchaseOrder was destroyed successfully")
 
-	// if err := tx.Destroy(&purchaseOrder); err != nil {
-	// 	return errors.WithStack(err)
-	// }
+	week := presenter.GetSelectedWeek(purchaseOrder.OrderDate.Time)
+	startTime := week.StartTime.Format(time.RFC3339)
+	redirectURL, _ := url.Parse("/purchase_orders")
+	q := redirectURL.Query()
+	q.Add("StartTime", startTime)
+	redirectURL.RawQuery = q.Encode()
 
-	// // If there are no errors set a flash message
-	// c.Flash().Add("success", "PurchaseOrder was destroyed successfully")
-
-	// // Redirect to the purchase_orders index page
-	// return c.Render(200, r.Auto(c, purchaseOrder))
-	return c.Render(200, r.Auto(c, nil))
+	// and redirect to the purchase_orders index page
+	return c.Redirect(303, redirectURL.String())
 }
 
 func getSortedVendors(tx *pop.Connection) models.Vendors {
