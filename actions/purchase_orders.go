@@ -10,13 +10,11 @@ import (
 	"buddhabowls/presentation"
 	"encoding/json"
 	"fmt"
-	"net/url"
-	"sort"
-	"time"
-
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/pkg/errors"
+	"net/url"
+	"time"
 )
 
 var _ = fmt.Printf
@@ -273,10 +271,19 @@ func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
 	if err := c.Bind(poAPI); err != nil {
 		return errors.WithStack(err)
 	}
+
+	// invalidate ReceivedOrder if it is blank (default time value)
+	if poAPI.ReceivedDate.Time.Unix() <= 0 {
+		poAPI.ReceivedDate.Time = poAPI.OrderDate.Time
+		poAPI.ReceivedDate.Valid = false
+	}
+
 	itemsParamJSON := c.Request().Form.Get("Items")
-	poAPI.Items, err = getItemsFromParams(itemsParamJSON)
-	if err != nil {
-		return err
+	if itemsParamJSON != "" {
+		poAPI.Items, err = getItemsFromParams(itemsParamJSON)
+		if err != nil {
+			return err
+		}
 	}
 
 	verrs, err := presenter.UpdatePurchaseOrder(poAPI)
@@ -351,19 +358,6 @@ func (v PurchaseOrdersResource) Destroy(c buffalo.Context) error {
 	return c.Redirect(303, redirectURL.String())
 }
 
-func getSortedVendors(tx *pop.Connection) models.Vendors {
-	vendors := models.Vendors{}
-	tx.Eager().All(&vendors)
-
-	// sort and add empty option
-	sort.Slice(vendors, func(i, j int) bool {
-		return vendors[i].Name < vendors[j].Name
-	})
-	vendors = append(models.Vendors{models.Vendor{}}, vendors...)
-
-	return vendors
-}
-
 func setPurchaseOrderViewVars(c buffalo.Context, presenter *presentation.Presenter, poAPI presentation.PurchaseOrderAPI) error {
 	newItem := poAPI.ID == ""
 
@@ -422,29 +416,4 @@ func getItemsFromParams(itemsParamJSON string) (presentation.ItemsAPI, error) {
 	}
 
 	return items, nil
-}
-
-func getRemainingVendorItems(po *models.PurchaseOrder, tx *pop.Connection) *models.VendorItems {
-	// vendorItems := models.VendorItems{}
-	// vendor, err := models.LoadVendor(tx, po.VendorID.String())
-	// if err != nil {
-	// 	return nil
-	// }
-
-	// for _, vendorItem := range vendor.Items {
-	// 	contains := func(vendorItem models.VendorItem) bool {
-	// 		for _, orderItem := range po.Items {
-	// 			if orderItem.InventoryItemID == vendorItem.InventoryItemID {
-	// 				return true
-	// 			}
-	// 		}
-	// 		return false
-	// 	}(vendorItem)
-	// 	if !contains {
-	// 		vendorItems = append(vendorItems, vendorItem)
-	// 	}
-	// }
-
-	// return &vendorItems
-	return nil
 }

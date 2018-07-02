@@ -57,6 +57,7 @@ func ConvertToModelPurchaseOrder(poAPI *PurchaseOrderAPI) (*models.PurchaseOrder
 	if err != nil {
 		return nil, err
 	}
+
 	return &models.PurchaseOrder{
 		ID:           id,
 		VendorID:     vendorID,

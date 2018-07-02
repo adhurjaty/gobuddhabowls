@@ -56,8 +56,8 @@ $(() => {
                             <div class="dropdown-menu">
                                 <span name="receive" class="dropdown-item" onclick="receiveItem(${purchaseOrder.id})">Received</span>
                                 <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
-                                <a name="delete" class="dropdown-item text-danger" data-method="DELETE">Delete</span>
-                                </div>
+                                <a name="delete" class="dropdown-item text-danger" data-method="DELETE">Delete</a>
+                            </div>
                         </div>`
                     }
                 })(editOrderPath)
@@ -94,7 +94,7 @@ $(() => {
                         <div class="dropdown-menu">
                             <span name="reopen" class="dropdown-item" >Re-open</span>
                             <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
-                            <a name="delete" class="dropdown-item text-danger" data-method="DELETE">Delete</span>
+                            <a name="delete" class="dropdown-item text-danger" data-method="DELETE">Delete</a>
                         </div>
                     </div>`
                 }
@@ -144,21 +144,20 @@ function initDropdownActions(datagrid) {
         var $row = row.getRow();
 
         $row.find('td[name="dropdown"] span[name="receive"]').click(() => {
-            submitForm(replaceUrlId(updatePath, id), 'PUT', { ReceivedDate: (new Date()).toISOString() });
+            submitUpdateForm(id, { ReceivedDate: (new Date()).toISOString() });
         });
         $row.find('td[name="dropdown"] span[name="reopen"]').click(() => {
-            submitForm(replaceUrlId(updatePath, id), 'PUT', { ReceivedDate: null });
+            submitUpdateForm(id, { ReceivedDate: '' });
         });
         $row.find('td[name="dropdown"] a[name="delete"]').attr('href', replaceUrlId(updatePath, id));
     });
 }
 
-function submitForm(url, method, data) {
-    var $form = $('<form></form>');
-    $form.attr('method', method);
-    $form.attr('action', url);
+function submitUpdateForm(id, data) {
+    var $form = $('#update-po-form');
+    $form.attr('action', replaceUrlId($form.attr('action'), id));
 
-    for(key in data) {
+    for(var key in data) {
         var $field = $('<input />');
         $field.attr('type', 'hidden');
         $field.attr('name', key);
@@ -166,6 +165,5 @@ function submitForm(url, method, data) {
         $field.appendTo($form);
     }
 
-    $('body').append($form);
     $form.submit();
 }
