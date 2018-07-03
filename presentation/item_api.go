@@ -20,25 +20,6 @@ type ItemAPI struct {
 
 type ItemsAPI []ItemAPI
 
-// AddVendorInfo adds properties to the ItemAPI object that correspond
-// to the vendor
-func (item *ItemAPI) AddVendorInfo(vendorItem ItemAPI) {
-	item.PurchasedUnit = vendorItem.PurchasedUnit
-	item.Conversion = vendorItem.Conversion
-}
-
-// AddVendorInfo adds properties to the ItemsAPI object that correspond
-// to the vendor
-func (items *ItemsAPI) AddVendorInfo(vendorItems ItemsAPI) {
-	for _, item := range *items {
-		for _, vendorItem := range vendorItems {
-			if item.InventoryItemID == vendorItem.InventoryItemID {
-				item.AddVendorInfo(vendorItem)
-			}
-		}
-	}
-}
-
 // NewItemAPI converts an order/vendor/inventory item to an api item
 func NewItemAPI(item models.GenericItem) ItemAPI {
 	itemAPI := ItemAPI{
@@ -126,6 +107,23 @@ func ConvertToModelOrderItems(items ItemsAPI, orderID uuid.UUID) (*models.OrderI
 		modelItems = append(modelItems, *modelItem)
 	}
 	return &modelItems, nil
+}
+
+// AddVendorInfo adds the vendorItem-specific data to the item
+func AddVendorInfo(items ItemsAPI, vendorItems ItemsAPI) ItemsAPI {
+	outItems := []ItemAPI{}
+	for _, item := range items {
+		for _, vendorItem := range vendorItems {
+			if item.InventoryItemID == vendorItem.InventoryItemID {
+				item.PurchasedUnit = vendorItem.PurchasedUnit
+				item.Conversion = vendorItem.Conversion
+				break
+			}
+		}
+		outItems = append(outItems, item)
+	}
+
+	return outItems
 }
 
 // SelectValue returns the ID for select input tags

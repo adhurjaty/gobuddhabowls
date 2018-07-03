@@ -376,7 +376,7 @@ func ShowOrderSheet(c buffalo.Context) error {
 	if err != nil {
 		return errors.WithStack(err)
 	}
-	purchaseOrder.Items.AddVendorInfo(vendor.Items)
+	purchaseOrder.Items = presentation.AddVendorInfo(purchaseOrder.Items, vendor.Items)
 
 	c.Set("purchaseOrder", purchaseOrder)
 
