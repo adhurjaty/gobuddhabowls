@@ -383,6 +383,31 @@ func ShowOrderSheet(c buffalo.Context) error {
 	return c.Render(200, r.HTML("purchase_orders/order_sheet.html", "old_application.html"))
 }
 
+// ShowReceivingList displays the receiving list for marking received orders at the restaurant
+// mapped to the path /purchase_orders/{purchase_order_id}/receiving_list
+func ShowReceivingList(c buffalo.Context) error {
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	purchaseOrder, err := presenter.GetPurchaseOrder(c.Param("purchase_order_id"))
+	if err != nil {
+		return c.Error(404, err)
+	}
+	vendor, err := presenter.GetVendor(purchaseOrder.Vendor.ID)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+	purchaseOrder.Items = presentation.AddVendorInfo(purchaseOrder.Items, vendor.Items)
+
+	c.Set("purchaseOrder", purchaseOrder)
+
+	return c.Render(200, r.HTML("purchase_orders/receiving_list.html", "old_application.html"))
+}
+
 func setPurchaseOrderViewVars(c buffalo.Context, presenter *presentation.Presenter, poAPI presentation.PurchaseOrderAPI) error {
 	newItem := poAPI.ID == ""
 

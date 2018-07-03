@@ -173,14 +173,3 @@ function initDatagrid() {
     initSelection();
 }
 
-// $(() => {
-//     _$container = $('#vendor-items-table');
-//     _items = JSON.parse(_$container.attr('data'));
-
-//     if(_items && _items.length > 0) {
-//         initDatagrid();
-//         initBreakdown();
-//         initAddRemoveButtons();
-//     }
-// });
-

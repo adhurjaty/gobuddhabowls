@@ -1,54 +1,61 @@
 import { formatMoney } from "./helpers";
-import { OrderSheetTable } from "./order_sheet_table";
 import html2canvas from 'html2canvas';
+import { DataGrid } from "./datagrid";
+
 
 $(() => {
     var columnInfo = [
         {
-            name: 'Pack Size',
+            header: 'Pack Size',
             column_func: (item) => {
                 return item.conversion;
             }
         },
         {
-            name: 'Purchased Unit',
+            header: 'Purchased Unit',
             column_func: (item) => {
                 return item.purchased_unit;
             }
         },
         {
-            name: 'category',
+            header: 'Item Name',
             column_func: (item) => {
                 return item.name;
             }
         },
         {
-            name: 'Order Amt',
+            header: 'Order Amt',
             column_func: (item) => {
                 return item.count;
             }
         },
         {
-            name: 'Current Price',
+            header: 'Current Price',
             column_func: (item) => {
                 return formatMoney(item.price);
             }
         },
         {
-            name: 'Extension',
+            header: 'Extension',
             column_func: (item) => {
                 return formatMoney(item.count * item.price);
+            }
+        },
+        {
+            header: 'Received?',
+            column_func: (item) => {
+                return '';
             }
         }
     ];
 
-    var $container = $('#order-table');
+    var $container = $('#receiving-table');
     var data = JSON.parse($container.attr('data'));
-    var table = new OrderSheetTable(data, columnInfo);
+    var table = new DataGrid(data, columnInfo);
     $container.append(table.getTable());
 
     html2canvas(document.body).then((canvas) => {
         document.body.appendChild(canvas);
-        $('#order-sheet').remove();
+        $('#receiving-sheet').remove();
     });
 });
