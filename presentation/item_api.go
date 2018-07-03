@@ -15,9 +15,29 @@ type ItemAPI struct {
 	Count           float64     `json:"count,omitempty"`
 	Price           float64     `json:"price,omitempty"`
 	PurchasedUnit   string      `json:"purchased_unit,omitempty"`
+	Conversion      float64     `json:"conversion,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
+
+// AddVendorInfo adds properties to the ItemAPI object that correspond
+// to the vendor
+func (item *ItemAPI) AddVendorInfo(vendorItem ItemAPI) {
+	item.PurchasedUnit = vendorItem.PurchasedUnit
+	item.Conversion = vendorItem.Conversion
+}
+
+// AddVendorInfo adds properties to the ItemsAPI object that correspond
+// to the vendor
+func (items *ItemsAPI) AddVendorInfo(vendorItems ItemsAPI) {
+	for _, item := range *items {
+		for _, vendorItem := range vendorItems {
+			if item.InventoryItemID == vendorItem.InventoryItemID {
+				item.AddVendorInfo(vendorItem)
+			}
+		}
+	}
+}
 
 // NewItemAPI converts an order/vendor/inventory item to an api item
 func NewItemAPI(item models.GenericItem) ItemAPI {
@@ -40,6 +60,7 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		itemAPI.InventoryItemID = vendorItem.InventoryItemID.String()
 		itemAPI.Price = vendorItem.Price
 		itemAPI.PurchasedUnit = vendorItem.PurchasedUnit.String
+		itemAPI.Conversion = vendorItem.Conversion
 	}
 
 	return itemAPI

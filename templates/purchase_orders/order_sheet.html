@@ -1,0 +1,31 @@
+<div class="span12">
+  <h4 style="text-align: center;"><%= purchaseOrder.Vendor.Name %> Purchase Order</h4>
+</div>
+<div class="row">
+  <div class="col-md-2 text-center">
+    Contact:
+  </div>
+  <div class="col-md-2">
+    <%= purchaseOrder.Vendor.Contact %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-2 text-center">
+    Phone:
+  </div>
+  <div class="col-md-2">
+    <%= purchaseOrder.Vendor.PhoneNumber %>
+  </div>
+  <div class="offset-md-4 col-md-2 text-center">
+      Date:
+  </div>
+  <div class="col-md-2">
+    <%= format_date(purchaseOrder.OrderDate.Time) %>
+  </div>
+</div>
+<br/>
+<div id="order-table" class="row" data='<%= json(purchaseOrder.Items) %>'>
+  <!-- table created from javascript -->
+</div>
+
+<%= javascriptTag("order_sheet.js") %>

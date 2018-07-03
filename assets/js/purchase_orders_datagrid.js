@@ -6,6 +6,7 @@ $(() => {
     var $container = $('#datagrid-holder');
     // var purchaseOrders = JSON.parse($container.attr('data'));
     var editOrderPath = $container.attr('data-url');
+    var orderSheetPath = $container.attr('order-sheet-url');
 
     var baseColumnObjects = [
         {
@@ -57,6 +58,7 @@ $(() => {
                                 <span name="receive" class="dropdown-item" onclick="receiveItem(${purchaseOrder.id})">Received</span>
                                 <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
                                 <a name="delete" class="dropdown-item text-danger" data-method="DELETE">Delete</a>
+                                <a href="${replaceUrlId(orderSheetPath, purchaseOrder.id)}" class="dropdown-item">Order Sheet<a>
                             </div>
                         </div>`
                     }
@@ -95,6 +97,7 @@ $(() => {
                             <span name="reopen" class="dropdown-item" >Re-open</span>
                             <a href="${replaceUrlId(editOrderPath, purchaseOrder.id)}" class="dropdown-item">Edit</a>
                             <a name="delete" class="dropdown-item text-danger" data-method="DELETE">Delete</a>
+                            <a href="${replaceUrlId(orderSheetPath, purchaseOrder.id)}" class="dropdown-item">Order Sheet<a>
                         </div>
                     </div>`
                 }

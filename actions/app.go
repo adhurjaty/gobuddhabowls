@@ -62,6 +62,7 @@ func App() *buffalo.App {
 		app.Resource("/vendors", VendorsResource{})
 		app.Resource("/count_inventory_items", CountInventoryItemsResource{})
 
+		app.GET("/purchase_orders/{purchase_order_id}/order_sheet", ShowOrderSheet)
 		app.Resource("/purchase_orders", PurchaseOrdersResource{})
 
 		app.Resource("/order_items", OrderItemsResource{})
