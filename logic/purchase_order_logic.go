@@ -2,7 +2,6 @@ package logic
 
 import (
 	"buddhabowls/models"
-	"fmt"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/validate"
 	"time"
@@ -84,12 +83,11 @@ func UpdatePurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection
 			verrs, err = tx.ValidateAndCreate(&item)
 		}
 		if err != nil || verrs.HasAny() {
-			fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!!")
-			fmt.Println(err)
 			return verrs, err
 		}
 	}
 
+	// delete items are removed from the order list
 	for _, item := range oldItems {
 		if !containsFunc(item, purchaseOrder.Items) {
 			err = tx.Destroy(item)
