@@ -97,6 +97,9 @@ function getStyle() {
 
 function getBars(categorizedItems, total) {
     return categorizedItems.map((category) => {
+        if(category.value == 0) {
+            return '';
+        }
         var proportion = category.value / total * 100;
         return `
         <div class="bar-holder">
