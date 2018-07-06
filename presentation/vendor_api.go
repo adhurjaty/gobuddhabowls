@@ -2,6 +2,7 @@ package presentation
 
 import (
 	"buddhabowls/models"
+	"encoding/json"
 )
 
 // VendorAPI is a struct for serving vendor information to the ui
@@ -16,6 +17,16 @@ type VendorAPI struct {
 }
 
 type VendorsAPI []VendorAPI
+
+func (v VendorAPI) String() string {
+	jo, _ := json.Marshal(v)
+	return string(jo)
+}
+
+func (v VendorsAPI) String() string {
+	jo, _ := json.Marshal(v)
+	return string(jo)
+}
 
 // NewVendorAPI converts a vendor to an api vendor
 func NewVendorAPI(vendor *models.Vendor) VendorAPI {

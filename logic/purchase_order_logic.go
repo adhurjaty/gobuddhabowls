@@ -3,6 +3,7 @@ package logic
 import (
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 	"time"
 )
@@ -40,6 +41,8 @@ func InsertPurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection
 
 	// insert items
 	for _, item := range purchaseOrder.Items {
+		// need to ensure that items don't get the vendor item ID
+		item.ID = uuid.UUID{}
 		item.OrderID = purchaseOrder.ID
 		verrs, err = tx.ValidateAndCreate(&item)
 		if err != nil || verrs.HasAny() {

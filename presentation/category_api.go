@@ -2,6 +2,7 @@ package presentation
 
 import (
 	"buddhabowls/models"
+	"encoding/json"
 )
 
 // CategoryAPI category object for ui
@@ -10,6 +11,11 @@ type CategoryAPI struct {
 	Name       string `json:"name"`
 	Background string `json:"background"`
 	Index      int    `json:"index"`
+}
+
+func (c CategoryAPI) String() string {
+	jo, _ := json.Marshal(c)
+	return string(jo)
 }
 
 // NewCategoryAPI converts a category to an api category

@@ -2,6 +2,7 @@ package presentation
 
 import (
 	"buddhabowls/models"
+	"encoding/json"
 	"github.com/gobuffalo/pop/nulls"
 	"github.com/gobuffalo/uuid"
 )
@@ -17,6 +18,16 @@ type PurchaseOrderAPI struct {
 }
 
 type PurchaseOrdersAPI []PurchaseOrderAPI
+
+func (p PurchaseOrderAPI) String() string {
+	jo, _ := json.Marshal(p)
+	return string(jo)
+}
+
+func (p PurchaseOrdersAPI) String() string {
+	jo, _ := json.Marshal(p)
+	return string(jo)
+}
 
 // NewPurchaseOrderAPI converts a purchase order to an api purchase order
 func NewPurchaseOrderAPI(purchaseOrder *models.PurchaseOrder) PurchaseOrderAPI {

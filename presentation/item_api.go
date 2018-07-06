@@ -2,6 +2,7 @@ package presentation
 
 import (
 	"buddhabowls/models"
+	"encoding/json"
 	"github.com/gobuffalo/uuid"
 )
 
@@ -19,6 +20,16 @@ type ItemAPI struct {
 }
 
 type ItemsAPI []ItemAPI
+
+func (item ItemAPI) String() string {
+	jo, _ := json.Marshal(item)
+	return string(jo)
+}
+
+func (items ItemsAPI) String() string {
+	jo, _ := json.Marshal(items)
+	return string(jo)
+}
 
 // NewItemAPI converts an order/vendor/inventory item to an api item
 func NewItemAPI(item models.GenericItem) ItemAPI {

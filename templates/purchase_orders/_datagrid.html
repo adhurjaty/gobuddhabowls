@@ -5,7 +5,7 @@
           <h4>Open Orders</h4>
       </div>
     </div> 
-    <div class="row" id="open-order-datagrid" data='<%= json(openPurchaseOrders) %>'>
+    <div class="row" id="open-order-datagrid" data="<%= json(openPurchaseOrders.String()) %>">
 
     </div>
   <% } %>
@@ -15,7 +15,7 @@
           <h4>Received Orders</h4>
       </div>
     </div> 
-    <div class="row" id="rec-order-datagrid" data='<%= json(recPurchaseOrders) %>'>
+    <div class="row" id="rec-order-datagrid" data="<%= json(recPurchaseOrders) %>">
 
     </div>
   <% } %>
