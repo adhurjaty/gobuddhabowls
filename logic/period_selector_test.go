@@ -76,7 +76,7 @@ func TestGetPeriodAndWeek(t *testing.T) {
 	t.Run("A=2", func(t *testing.T) {
 		week := periodSelector.GetWeek(date)
 
-		if week.Index != 1 || week.EndTime.Day() != 2 {
+		if week.Index != 1 || week.EndTime.Day() != 1 {
 			t.Errorf("Incorrect week: %s", week.String())
 		}
 	})
@@ -84,7 +84,7 @@ func TestGetPeriodAndWeek(t *testing.T) {
 		period := periodSelector.GetPeriod(date)
 		week := period.GetWeek(date)
 
-		if week.Index != 1 || week.EndTime.Day() != 2 {
+		if week.Index != 1 || week.EndTime.Day() != 1 {
 			t.Errorf("Incorrect week within period: %s", week.String())
 		}
 	})

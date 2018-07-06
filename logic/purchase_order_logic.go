@@ -9,13 +9,10 @@ import (
 
 // GetPurchaseOrders retrieves purchase orders from within the given start and end dates
 func GetPurchaseOrders(startTime, endTime time.Time, tx *pop.Connection) (*models.PurchaseOrders, error) {
-	startTime = OffsetStart(startTime)
-	endTime = OffsetEnd(endTime)
-
 	startVal := startTime.Format(time.RFC3339)
 	endVal := endTime.Format(time.RFC3339)
 
-	q := tx.Eager().Where("order_date >= ? AND order_date < ?",
+	q := tx.Eager().Where("order_date >= ? AND order_date <= ?",
 		startVal, endVal).Order("order_date DESC")
 
 	pos := &models.PurchaseOrders{}

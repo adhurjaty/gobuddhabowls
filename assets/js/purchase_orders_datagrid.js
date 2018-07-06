@@ -49,7 +49,7 @@ $(() => {
         var openColumnObjects = baseColumnObjects.concat([
             {
                 name: 'dropdown',
-                column_func: ((editOrderPath) => {
+                column_func: ((editOrderPath, orderSheetPath, receivingListPath) => {
                     return (purchaseOrder) => {
                         return `<div class="dropdown show">
                             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,7 +64,7 @@ $(() => {
                             </div>
                         </div>`
                     }
-                })(editOrderPath)
+                })(editOrderPath, orderSheetPath, receivingListPath)
             }
         ]);
         var openDatagrid = new CollapsibleDatagrid(openOrders, openColumnObjects, getHiddenRow, sendUpdate)
@@ -150,7 +150,9 @@ function initDropdownActions(datagrid) {
         var $row = row.getRow();
 
         $row.find('td[name="dropdown"] span[name="receive"]').click(() => {
-            submitUpdateForm(id, { ReceivedDate: (new Date()).toISOString() });
+            var date = new Date();
+            date.setHours(0, 0, 0, 0);
+            submitUpdateForm(id, { ReceivedDate: date.toISOString() });
         });
         $row.find('td[name="dropdown"] span[name="reopen"]').click(() => {
             submitUpdateForm(id, { ReceivedDate: '' });

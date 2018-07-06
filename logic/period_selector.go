@@ -7,8 +7,7 @@ import (
 )
 
 const (
-	weekStart = 1
-	// dayStart  = time.Hour * 4
+	weekStart = 1 // denotes that the first day of the week is Monday (not Sunday)
 )
 
 // PeriodSelector holds values for periods of the year
