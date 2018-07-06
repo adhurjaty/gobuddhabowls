@@ -4,6 +4,7 @@ import { initOrderItemsArea } from './order_item_details';
 var _vendorItemsMap;
 
 $(() => {
+    debugger;
     _vendorItemsMap = JSON.parse($('#vendor-items-map').attr('data'));
 
     datepicker($('#new-order-date'), {
@@ -12,6 +13,7 @@ $(() => {
     });
 
     if($('#new-order-vendor option:selected').val()) {
+        debugger;
         var items = JSON.parse($('#vendor-items-table').attr('data'));
         initOrderItemsArea(items)
     }

@@ -25,7 +25,7 @@
     <%= f.SelectTag("Vendor", {options: vendors, id: "new-order-vendor", name: "VendorID" }) %>
 </div>
 
-<div id="vendor-items-map" data="<%= json(vendorItemsMap) %>" />
+<div id="vendor-items-map" data='<%= json(vendorItemsMap) %>' />
 <input type="text" name="Items" style="display: none;"/>
 <div class="row">
     <%= partial("purchase_orders/order_item_details.html") %>
