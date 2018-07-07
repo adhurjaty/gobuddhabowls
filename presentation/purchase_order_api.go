@@ -64,7 +64,15 @@ func ConvertToModelPurchaseOrder(poAPI *PurchaseOrderAPI) (*models.PurchaseOrder
 	if err != nil {
 		return nil, err
 	}
-	items, err := ConvertToModelOrderItems(poAPI.Items, id)
+	// filter out 0 count items
+	// Purchase Order should only consist of items that have non-zero values
+	poItems := ItemsAPI{}
+	for _, item := range poAPI.Items {
+		if item.Count > 0 {
+			poItems = append(poItems, item)
+		}
+	}
+	items, err := ConvertToModelOrderItems(poItems, id)
 	if err != nil {
 		return nil, err
 	}

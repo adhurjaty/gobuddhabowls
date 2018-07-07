@@ -215,16 +215,8 @@ func (as *ActionSuite) Test_CreatePO_NoItemCounts() {
 
 	as.Equal(422, res.Code)
 
-	resultURL, err := url.Parse(res.Location())
-	as.NoError(err)
-	path := resultURL.EscapedPath()
-	as.Equal("/purchase_orders/new", path)
-
-	purchaseOrders, err := logic.GetPurchaseOrders(orderDate, orderDate, as.DB)
-	as.NoError(err)
-	as.Equal(0, len(*purchaseOrders))
-
-	as.Contains(res.Body.String(), "errors")
+	purchaseOrder := &models.PurchaseOrder{}
+	as.Error(as.DB.First(purchaseOrder))
 }
 
 // viewing edit page for PO
@@ -243,17 +235,210 @@ func (as *ActionSuite) Test_EditPO_View() {
 	}
 }
 
-// viewing edit page for received PO
+// viewing edit page for received PO (fill in later)
 
 // editing PO changing counts
+func (as *ActionSuite) Test_EditPO_ChangeCounts() {
+	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
+	purchaseOrder, err := createPO(as.DB, orderTime)
+	as.NoError(err)
+
+	items := presentation.NewItemsAPI(purchaseOrder.Items)
+	for i := 0; i < len(items); i++ {
+		items[i].Count = 69
+	}
+
+	newOrderTime := time.Date(2018, 7, 6, 0, 0, 0, 0, time.UTC)
+	itemsJSON, err := json.Marshal(items)
+	as.NoError(err)
+	formData := struct {
+		OrderDate time.Time
+		VendorID  string
+		Items     string
+	}{
+		newOrderTime,
+		purchaseOrder.Vendor.ID.String(),
+		string(itemsJSON),
+	}
+
+	res := as.HTML(fmt.Sprintf("/purchase_orders/%s", purchaseOrder.ID.String())).Put(formData)
+
+	// ensure redirect
+	as.Equal(303, res.Code)
+
+	// ensure redirect to the index page
+	resultURL, err := url.Parse(res.Location())
+	as.NoError(err)
+	path := resultURL.EscapedPath()
+	as.Equal("/purchase_orders", path)
+
+	dbPOs, err := logic.GetPurchaseOrders(newOrderTime, newOrderTime, as.DB)
+	as.NoError(err)
+
+	dbPO := (*dbPOs)[0]
+	for _, item := range dbPO.Items {
+		as.Equal(69.0, item.Count)
+	}
+}
 
 // editing PO adding items
+func (as *ActionSuite) Test_EditPO_AddItem() {
+	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
+	purchaseOrder, err := createPO(as.DB, orderTime)
+	as.NoError(err)
+
+	items := presentation.NewItemsAPI(purchaseOrder.Items)
+	newVendorItem, err := createVendorItem(as.DB, &purchaseOrder.Vendor, "another_item")
+	as.NoError(err)
+
+	newItem := presentation.NewItemAPI(*newVendorItem)
+	items = append(items, newItem)
+	for i := 0; i < len(items); i++ {
+		items[i].Count = 69
+	}
+
+	newOrderTime := time.Date(2018, 7, 6, 0, 0, 0, 0, time.UTC)
+	itemsJSON, err := json.Marshal(items)
+	as.NoError(err)
+	formData := struct {
+		OrderDate time.Time
+		VendorID  string
+		Items     string
+	}{
+		newOrderTime,
+		purchaseOrder.Vendor.ID.String(),
+		string(itemsJSON),
+	}
+
+	res := as.HTML(fmt.Sprintf("/purchase_orders/%s", purchaseOrder.ID.String())).Put(formData)
+
+	// ensure redirect
+	as.Equal(303, res.Code)
+
+	dbPOs, err := logic.GetPurchaseOrders(newOrderTime, newOrderTime, as.DB)
+	as.NoError(err)
+
+	dbPO := (*dbPOs)[0]
+	for _, item := range dbPO.Items {
+		as.Equal(69.0, item.Count)
+	}
+	as.Equal(2, len(dbPO.Items))
+}
 
 // editing PO removing items
+func (as *ActionSuite) Test_EditPO_RemoveItem() {
+	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
+	purchaseOrder, err := createPOMultipleItems(as.DB, orderTime)
+	as.NoError(err)
+
+	for _, item := range purchaseOrder.Items {
+		if item.GetName() == "yet_another_item" {
+			purchaseOrder.Items = models.OrderItems{item}
+			break
+		}
+	}
+
+	items := presentation.NewItemsAPI(purchaseOrder.Items)
+	itemsJSON, err := json.Marshal(items)
+	as.NoError(err)
+	formData := struct {
+		OrderDate time.Time
+		VendorID  string
+		Items     string
+	}{
+		orderTime,
+		purchaseOrder.Vendor.ID.String(),
+		string(itemsJSON),
+	}
+
+	res := as.HTML(fmt.Sprintf("/purchase_orders/%s", purchaseOrder.ID.String())).Put(formData)
+
+	// ensure redirect
+	as.Equal(303, res.Code)
+
+	dbPOs, err := logic.GetPurchaseOrders(orderTime, orderTime, as.DB)
+	as.NoError(err)
+
+	dbPO := (*dbPOs)[0]
+	as.Equal(1, len(dbPO.Items))
+	as.Equal("yet_another_item", dbPO.Items[0].GetName())
+}
 
 // editing PO removing all items (produces error)
+func (as *ActionSuite) Test_EditPO_RemoveAllItem() {
+	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
+	purchaseOrder, err := createPOMultipleItems(as.DB, orderTime)
+	as.NoError(err)
+
+	for i := 0; i < len(purchaseOrder.Items); i++ {
+		purchaseOrder.Items[i].Count = 0
+	}
+
+	items := presentation.NewItemsAPI(purchaseOrder.Items)
+	itemsJSON, err := json.Marshal(items)
+	as.NoError(err)
+	formData := struct {
+		OrderDate time.Time
+		VendorID  string
+		Items     string
+	}{
+		orderTime,
+		purchaseOrder.Vendor.ID.String(),
+		string(itemsJSON),
+	}
+
+	res := as.HTML(fmt.Sprintf("/purchase_orders/%s", purchaseOrder.ID.String())).Put(formData)
+
+	// ensure error code
+	as.Equal(422, res.Code)
+
+	presenter := presentation.NewPresenter(as.DB)
+	dbPOs, err := presenter.GetPurchaseOrders(orderTime, orderTime)
+	as.NoError(err)
+	dbPO := (*dbPOs)[0]
+	as.Equal(2, len(dbPO.Items))
+}
 
 // editing open PO, setting to received
+func (as *ActionSuite) Test_EditPO_ChangeCounts() {
+	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
+	purchaseOrder, err := createPO(as.DB, orderTime)
+	as.NoError(err)
+
+	receivedTime := time.Date(2018, 7, 6, 0, 0, 0, 0, time.UTC)
+	itemsJSON, err := json.Marshal(presentation.NewItemsAPI(purchaseOrder.Items))
+	as.NoError(err)
+	formData := struct {
+		OrderDate    time.Time
+		ReceivedDate time.Time
+		VendorID     string
+		Items        string
+	}{
+		orderTime,
+		receivedTime,
+		purchaseOrder.Vendor.ID.String(),
+		string(itemsJSON),
+	}
+
+	res := as.HTML(fmt.Sprintf("/purchase_orders/%s", purchaseOrder.ID.String())).Put(formData)
+
+	// ensure redirect
+	as.Equal(303, res.Code)
+
+	// ensure redirect to the index page
+	resultURL, err := url.Parse(res.Location())
+	as.NoError(err)
+	path := resultURL.EscapedPath()
+	as.Equal("/purchase_orders", path)
+
+	dbPOs, err := logic.GetPurchaseOrders(newOrderTime, newOrderTime, as.DB)
+	as.NoError(err)
+
+	dbPO := (*dbPOs)[0]
+	for _, item := range dbPO.Items {
+		as.Equal(69.0, item.Count)
+	}
+}
 
 // editing received PO, setting to open
 
@@ -322,6 +507,30 @@ func createPO(db *pop.Connection, orderTime time.Time) (*models.PurchaseOrder, e
 	}
 
 	purchaseOrder.Items = models.OrderItems{*item}
+
+	return purchaseOrder, nil
+}
+
+func createPOMultipleItems(db *pop.Connection, orderTime time.Time) (*models.PurchaseOrder, error) {
+	purchaseOrder, err := createPO(db, orderTime)
+	if err != nil {
+		return nil, err
+	}
+
+	newItem, err := createVendorItem(db, &purchaseOrder.Vendor, "yet_another_item")
+	item := &models.OrderItem{
+		InventoryItem:   newItem.InventoryItem,
+		InventoryItemID: newItem.InventoryItemID,
+		Count:           6,
+		Price:           newItem.Price,
+		OrderID:         purchaseOrder.ID,
+	}
+
+	if err = db.Create(item); err != nil {
+		return nil, err
+	}
+
+	purchaseOrder.Items = append(purchaseOrder.Items, *item)
 
 	return purchaseOrder, nil
 }

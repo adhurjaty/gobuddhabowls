@@ -33,7 +33,7 @@ func (as *ActionSuite) Test_InventoryItemsResource_Destroy() {
 	as.Fail("Not Implemented!")
 }
 
-func createInventoryItem(db *pop.Connection) (*models.InventoryItem, error) {
+func createInventoryItem(db *pop.Connection, name string) (*models.InventoryItem, error) {
 	category := &models.InventoryItemCategory{
 		Name:  "test_category",
 		Index: 0,
@@ -43,7 +43,7 @@ func createInventoryItem(db *pop.Connection) (*models.InventoryItem, error) {
 		return nil, err
 	}
 	item := &models.InventoryItem{
-		Name:       "test_item",
+		Name:       name,
 		Category:   *category,
 		CategoryID: category.ID,
 		IsActive:   true,

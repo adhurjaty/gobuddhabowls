@@ -45,7 +45,7 @@ func createVendor(db *pop.Connection) (*models.Vendor, error) {
 		return nil, err
 	}
 
-	invItem, err := createInventoryItem(db)
+	invItem, err := createInventoryItem(db, "test_item")
 	if err != nil {
 		return nil, err
 	}

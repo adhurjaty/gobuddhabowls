@@ -42,6 +42,7 @@ func (p PurchaseOrders) String() string {
 // This method is not required and may be deleted.
 func (p *PurchaseOrder) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
+		&validators.UUIDIsPresent{Field: p.VendorID, Name: "Vendor"},
 		validate.ValidatorFunc(func(errors *validate.Errors) {
 			if !p.OrderDate.Valid {
 				errors.Add(validators.GenerateKey(p.Vendor.Name), "Must have order date")
@@ -51,6 +52,11 @@ func (p *PurchaseOrder) Validate(tx *pop.Connection) (*validate.Errors, error) {
 			if p.OrderDate.Valid && p.ReceivedDate.Valid && p.OrderDate.Time.Unix() > p.ReceivedDate.Time.Unix() {
 				errors.Add(validators.GenerateKey(p.Vendor.Name+" "+p.OrderDate.Time.String()),
 					"Received date must be after order date")
+			}
+		}),
+		validate.ValidatorFunc(func(errors *validate.Errors) {
+			if len(p.Items) == 0 {
+				errors.Add(validators.GenerateKey(p.Vendor.Name), "Must have order items")
 			}
 		}),
 	), nil

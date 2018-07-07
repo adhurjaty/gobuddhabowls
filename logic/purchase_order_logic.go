@@ -90,7 +90,7 @@ func UpdatePurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection
 	// delete items are removed from the order list
 	for _, item := range oldItems {
 		if !containsFunc(item, purchaseOrder.Items) {
-			err = tx.Destroy(item)
+			err = tx.Destroy(&item)
 			if err != nil {
 				return verrs, err
 			}
