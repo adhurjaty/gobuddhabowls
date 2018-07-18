@@ -228,7 +228,7 @@ func (as *ActionSuite) Test_EditPO_View() {
 	res := as.HTML(fmt.Sprintf("/purchase_orders/%s/edit", purchaseOrder.ID.String())).Get()
 
 	as.Equal(200, res.Code)
-	as.Contains(res.Body.String(), "7/4/2018")
+	as.Contains(res.Body.String(), "07/04/2018")
 	for _, item := range purchaseOrder.Items {
 		as.Contains(res.Body.String(), item.ID.String())
 		as.Contains(res.Body.String(), item.InventoryItemID.String())
@@ -400,7 +400,7 @@ func (as *ActionSuite) Test_EditPO_RemoveAllItem() {
 }
 
 // editing open PO, setting to received
-func (as *ActionSuite) Test_EditPO_ChangeCounts() {
+func (as *ActionSuite) Test_EditPO_SetReceived() {
 	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
 	purchaseOrder, err := createPO(as.DB, orderTime)
 	as.NoError(err)
@@ -431,18 +431,88 @@ func (as *ActionSuite) Test_EditPO_ChangeCounts() {
 	path := resultURL.EscapedPath()
 	as.Equal("/purchase_orders", path)
 
-	dbPOs, err := logic.GetPurchaseOrders(newOrderTime, newOrderTime, as.DB)
+	dbPOs, err := logic.GetPurchaseOrders(orderTime, orderTime, as.DB)
 	as.NoError(err)
 
 	dbPO := (*dbPOs)[0]
-	for _, item := range dbPO.Items {
-		as.Equal(69.0, item.Count)
-	}
+	as.Equal(receivedTime.Unix(), dbPO.ReceivedDate.Time.Unix())
 }
 
 // editing received PO, setting to open
+func (as *ActionSuite) Test_EditPO_SetReOpen() {
+	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
+	purchaseOrder, err := createPO(as.DB, orderTime)
+	as.NoError(err)
+	receivedTime := time.Date(2018, 7, 6, 0, 0, 0, 0, time.UTC)
+	purchaseOrder.ReceivedDate.Time = receivedTime
+	purchaseOrder.ReceivedDate.Valid = true
+	as.DB.Update(purchaseOrder)
+
+	itemsJSON, err := json.Marshal(presentation.NewItemsAPI(purchaseOrder.Items))
+	as.NoError(err)
+	formData := struct {
+		OrderDate time.Time
+		VendorID  string
+		Items     string
+	}{
+		orderTime,
+		purchaseOrder.Vendor.ID.String(),
+		string(itemsJSON),
+	}
+
+	res := as.HTML(fmt.Sprintf("/purchase_orders/%s", purchaseOrder.ID.String())).Put(formData)
+
+	// ensure redirect
+	as.Equal(303, res.Code)
+
+	// ensure redirect to the index page
+	resultURL, err := url.Parse(res.Location())
+	as.NoError(err)
+	path := resultURL.EscapedPath()
+	as.Equal("/purchase_orders", path)
+
+	dbPOs, err := logic.GetPurchaseOrders(orderTime, orderTime, as.DB)
+	as.NoError(err)
+
+	dbPO := (*dbPOs)[0]
+	as.False(dbPO.ReceivedDate.Valid)
+}
 
 // editing PO, setting received before open date (produces error)
+func (as *ActionSuite) Test_EditPO_SetReceivedError() {
+	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
+	purchaseOrder, err := createPO(as.DB, orderTime)
+	as.NoError(err)
+	receivedTime := time.Date(2018, 7, 3, 0, 0, 0, 0, time.UTC)
+	purchaseOrder.ReceivedDate.Time = receivedTime
+	purchaseOrder.ReceivedDate.Valid = true
+
+	itemsJSON, err := json.Marshal(presentation.NewItemsAPI(purchaseOrder.Items))
+	as.NoError(err)
+	formData := struct {
+		OrderDate    time.Time
+		ReceivedDate time.Time
+		VendorID     string
+		Items        string
+	}{
+		orderTime,
+		receivedTime,
+		purchaseOrder.Vendor.ID.String(),
+		string(itemsJSON),
+	}
+
+	res := as.HTML(fmt.Sprintf("/purchase_orders/%s", purchaseOrder.ID.String())).Put(formData)
+
+	as.Equal(422, res.Code)
+
+	as.Contains(res.Body.String(), "error")
+
+	dbPOs, err := logic.GetPurchaseOrders(orderTime, orderTime, as.DB)
+	as.NoError(err)
+
+	dbPO := (*dbPOs)[0]
+	as.False(dbPO.ReceivedDate.Valid)
+}
 
 // receiving open PO
 

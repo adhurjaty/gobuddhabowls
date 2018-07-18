@@ -39,7 +39,8 @@ func init() {
 				return math.Round(100 * num / total)
 			},
 			"today": func() string {
-				return helpers.FormatDate(time.Now())
+				t := time.Now()
+				return helpers.FormatDate(time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, t.Location()))
 			},
 		},
 	})

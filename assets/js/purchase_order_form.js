@@ -62,17 +62,10 @@ $(() => {
 
 function sendOrderItems(data) {
     var $input = $('form input[name="Items"]');
-    debugger;
     $input.val(JSON.stringify(data));
 }
 
 function showError(msg) {
     $('#form-errors').text(msg);
     $('#form-errors').show();
-}
-
-function cacheItemValues(id) {
-    var items = JSON.parse($('#vendor-items-table').attr('data'));
-    _vendorItemsMap[id] = items;
-    $('#vendor-items-map').attr('data', JSON.stringify(items));
 }

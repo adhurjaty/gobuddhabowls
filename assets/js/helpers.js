@@ -1,3 +1,12 @@
+import { format } from "path";
+
+
+Number.prototype.pad = function(size) {
+    var s = String(this);
+    while (s.length < (size || 2)) {s = "0" + s;}
+    return s;
+}
+
 // allow user to edit content on double click
 export function dblclickEdit(element) {
     element.contentEditable = true;
@@ -38,8 +47,11 @@ export function formatMoney(amt) {
 }
 
 export function formatSlashDate(dateStr) {
-    var date = (new Date(dateStr)).toLocaleDateString();
-    return date;
+    var date = new Date(dateStr);
+    var month = date.getMonth() + 1;
+    var day = date.getUTCDate();
+    var year = date.getFullYear();
+    return `${month.pad(2)}/${day.pad(2)}/${year}`;
 }
 
 export function unFormatMoney(s) {
