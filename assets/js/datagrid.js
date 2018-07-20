@@ -1,5 +1,5 @@
 import { formatMoney, unFormatMoney } from "./helpers";
-import { datepicker } from "./datepicker";
+import "webpack-jquery-ui/datepicker";
 
 
 class Cell {
@@ -96,9 +96,9 @@ class Row {
                 $(this).empty();
                 $(this).append($date);
                 var startDate = cell.contents ? cell.contents : new Date().toLocaleDateString("en-US");
-                // debugger;
-                // $date.datepicker({
-                datepicker($date, {
+                debugger;
+                $date.datepicker({
+                // datepicker($date, {
                     autoclose: 'true',
                     format: 'mm/dd/yyyy',
                     defaultViewDate: startDate

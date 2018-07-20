@@ -5,6 +5,7 @@ var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var ManifestPlugin = require("webpack-manifest-plugin");
 var PROD = process.env.NODE_ENV || "development";
 var CleanWebpackPlugin = require("clean-webpack-plugin");
+var path = require('path');
 
 var entries = {
   application: [
@@ -41,7 +42,9 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       $: "jquery",
-      jQuery: "jquery"
+      jQuery: "jquery",
+      'window.jQuery': "jquery",
+      'window.$': "jquery"
     }),
     new ExtractTextPlugin("[name].[hash].css"),
     new CopyWebpackPlugin(
@@ -62,11 +65,12 @@ module.exports = {
     })
   ],
   module: {
-    rules: [{
-      test: /\.jsx?$/,
-      loader: "babel-loader",
-      exclude: /node_modules/
-    },
+    rules: [
+      {
+        test: /\.jsx?$/,
+        loader: "babel-loader",
+        exclude: /node_modules/
+      },
       {
         test: /\.s[ac]ss$/,
         use: ExtractTextPlugin.extract({
@@ -95,6 +99,20 @@ module.exports = {
       {
         test: /\.go$/,
         use: "gopherjs-loader"
+      },
+      {
+        test: /\.(jpe?g|png|gif)$/i,
+        loader:"file-loader",
+        query:{
+          name:'[name].[ext]',
+          outputPath:'images/'
+          //the images will be emmited to public/assets/images/ folder
+          //the images will be put in the DOM <style> tag as eg. background: url(assets/images/image.png);
+        }
+      },
+      {
+        test: /\.css$/,
+        loaders: ["style-loader","css-loader"]
       }
     ]
   }

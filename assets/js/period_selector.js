@@ -1,5 +1,6 @@
 // import "bootstrap-datepicker";
-import { datepicker } from "./datepicker";
+// import { datepicker } from "./datepicker";
+import 'webpack-jquery-ui/datepicker';
 
 $(() => {
 
@@ -28,12 +29,18 @@ $(() => {
         $form.submit();
     });
 
-    datepicker($('.input-daterange'), {
-        autoclose: true,
-        format: "mm/dd/yyyy",
+    // $('.input-daterange').datepicker({
+    // // datepicker($('.input-daterange'), {
+    //     autoclose: true,
+    //     format: "mm/dd/yyyy",
+    // });
+    $('.input-daterange input').datepicker({
+        changeMonth: true,
+        changeYear: true,
+        beforeShow: setMinEndDateRange
     });
-    $.each($('.input-daterange'), function(i, d) {
-        $(this).on('changeDate', function(event) {
+    $.each($('.input-daterange input'), function(i, d) {
+        $(this).on('change', function() {
             var startTime = $form.find('input[name="StartTime"]').val();
             var endTime = $form.find('input[name="EndTime"]').val();
             startTime = new Date(startTime).toISOString();
@@ -62,4 +69,15 @@ function clearFormAndEnd($form) {
 
 function getFormattedTime(dateStr) {
     return (new Date(dateStr)).toISOString()
+}
+
+function setMinEndDateRange(input) {
+    if ($(input).attr('name') == 'EndTime') {
+        var minDate = new Date($('form input[name="StartTime"]').val());
+        minDate.setDate(minDate.getDate() + 1)
+
+        return {
+            minDate: minDate
+        };
+    }
 }

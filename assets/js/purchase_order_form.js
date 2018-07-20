@@ -1,5 +1,7 @@
-import { datepicker } from './datepicker';
 import { initOrderItemsArea } from './order_item_details';
+// if(!$.datepicker) {
+//     import 'bootstrap-datepicker';
+// }
 
 var _vendorItemsMap;
 
