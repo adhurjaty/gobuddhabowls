@@ -48,6 +48,7 @@ $(() => {
         var openOrders = JSON.parse(openOrdersData);
         var openColumnObjects = baseColumnObjects.concat([
             {
+                name: 'dropdown',
                 column_func: ((editOrderPath, orderSheetPath, receivingListPath) => {
                     return (purchaseOrder) => {
                         return `<div class="dropdown show">
@@ -87,6 +88,7 @@ $(() => {
             }
         });
         recColumnObjects.push({
+            name: 'dropdown',
             column_func: ((editOrderPath) => {
                 return (purchaseOrder) => {
                     return `<div class="dropdown show">
