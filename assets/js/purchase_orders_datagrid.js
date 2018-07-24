@@ -48,7 +48,6 @@ $(() => {
         var openOrders = JSON.parse(openOrdersData);
         var openColumnObjects = baseColumnObjects.concat([
             {
-                name: 'dropdown',
                 column_func: ((editOrderPath, orderSheetPath, receivingListPath) => {
                     return (purchaseOrder) => {
                         return `<div class="dropdown show">
@@ -88,7 +87,6 @@ $(() => {
             }
         });
         recColumnObjects.push({
-            name: 'dropdown',
             column_func: ((editOrderPath) => {
                 return (purchaseOrder) => {
                     return `<div class="dropdown show">
@@ -116,22 +114,20 @@ $(() => {
 
 function sendUpdate(updateObj) {
     var id = updateObj.id;
-    var updateUrl = replaceUrlId($('#datagrid-holder').attr('update-url'), id);
-    var data = {};
-    data[updateObj.name] = updateObj.value;
-    $.ajax({
-        url: updateUrl,
-        data: data,
-        method: 'PUT',
-        error: function(xhr, status, err) {
-            var errMessage = xhr.responseText;
-            debugger;
-            updateObj.onError(errMessage);
-        },
-        success: function(data, status, xhr) {
-            updateObj.onSuccess();
-        }
-    });
+    
+    submitUpdateForm(id, convertUpdateObj(updateObj));
+}
+
+function convertUpdateObj(updateObj) {
+    var outObj = {}
+    if(updateObj['order_date']) {
+        outObj['OrderDate'] = updateObj['order_date']
+    }
+    if(updateObj['received_date']) {
+        outObj['ReceivedDate'] = updateObj['received_date']
+    }
+
+    return outObj;
 }
 
 function getHiddenRow(purchaseOrder) {

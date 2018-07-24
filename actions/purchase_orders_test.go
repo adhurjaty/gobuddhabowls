@@ -532,22 +532,25 @@ func (as *ActionSuite) Test_EditPO_SetReceivedError() {
 // changing order date to after received date (produces error)
 
 // destroying PO
+func (as *ActionSuite) Test_DestroyPO() {
+	orderTime := time.Date(2018, 7, 4, 0, 0, 0, 0, time.UTC)
+	purchaseOrder, err := createPO(as.DB, orderTime)
 
-// func (as *ActionSuite) Test_PurchaseOrdersResource_Create() {
-// 	as.Fail("Not Implemented!")
-// }
+	res := as.HTML(fmt.Sprintf("/purchase_orders/%s", purchaseOrder.ID.String())).Delete()
 
-// func (as *ActionSuite) Test_PurchaseOrdersResource_Edit() {
-// 	as.Fail("Not Implemented!")
-// }
+	as.Equal(303, res.Code)
 
-// func (as *ActionSuite) Test_PurchaseOrdersResource_Update() {
-// 	as.Fail("Not Implemented!")
-// }
+	// ensure redirect to the index page
+	resultURL, err := url.Parse(res.Location())
+	as.NoError(err)
+	path := resultURL.EscapedPath()
+	as.Equal("/purchase_orders", path)
 
-// func (as *ActionSuite) Test_PurchaseOrdersResource_Destroy() {
-// 	as.Fail("Not Implemented!")
-// }
+	dbPOs, err := logic.GetPurchaseOrders(orderTime, orderTime, as.DB)
+	as.NoError(err)
+
+	as.Equal(0, len(*dbPOs))
+}
 
 func createPO(db *pop.Connection, orderTime time.Time) (*models.PurchaseOrder, error) {
 	vendor, err := createVendor(db)
