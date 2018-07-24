@@ -1,6 +1,4 @@
-// import "bootstrap-datepicker";
-// import { datepicker } from "./datepicker";
-import 'webpack-jquery-ui/datepicker';
+import { datepicker, daterange } from './datepicker';
 
 $(() => {
 
@@ -29,30 +27,18 @@ $(() => {
         $form.submit();
     });
 
-    // $('.input-daterange').datepicker({
-    // // datepicker($('.input-daterange'), {
-    //     autoclose: true,
-    //     format: "mm/dd/yyyy",
-    // });
-    $('.input-daterange input').datepicker({
-        changeMonth: true,
-        changeYear: true,
-        beforeShow: setMinEndDateRange
-    });
-    $.each($('.input-daterange input'), function(i, d) {
-        $(this).on('change', function() {
-            var startTime = $form.find('input[name="StartTime"]').val();
-            var endTime = $form.find('input[name="EndTime"]').val();
-            startTime = new Date(startTime).toISOString();
-            endTime = new Date(endTime).toISOString();
+    var range = daterange($('.input-daterange input'), () => {
+        var startTime = $form.find('input[name="StartTime"]').val();
+        var endTime = $form.find('input[name="EndTime"]').val();
+        startTime = new Date(startTime).toISOString();
+        endTime = new Date(endTime).toISOString();
 
-            clearForm($form);
-            $form.find('input[name="StartTime"]').val(startTime);
-            $form.find('input[name="EndTime"]').val(endTime);
+        clearForm($form);
+        $form.find('input[name="StartTime"]').val(startTime);
+        $form.find('input[name="EndTime"]').val(endTime);
 
-            $form.submit();
-            $('.input-daterange').remove();
-        });
+        $form.submit();
+        $('.input-daterange').remove();
     });
 });
 

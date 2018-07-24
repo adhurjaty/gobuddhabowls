@@ -1,5 +1,6 @@
-import { formatMoney, unFormatMoney } from "./helpers";
-import "webpack-jquery-ui/datepicker";
+import { formatMoney, unFormatMoney, formatSlashDate } from "./helpers";
+import Pikaday from 'pikaday';
+import { datepicker } from "./datepicker";
 
 
 class Cell {
@@ -91,28 +92,25 @@ class Row {
         case 'date':
             cell.$td.on('focus', function(event) {
                 cell.clearError();
-                var $date = $('<input data-provide="datepicker" value="' + cell.contents + '">');
-                $date.css('width', '85px');
+                var $dateInput = $('<input value="' + cell.contents + '">');
+                $dateInput.css('width', '85px');
                 $(this).empty();
-                $(this).append($date);
+                $(this).append($dateInput);
                 var startDate = cell.contents ? cell.contents : new Date().toLocaleDateString("en-US");
-                debugger;
-                $date.datepicker({
-                // datepicker($date, {
-                    autoclose: 'true',
-                    format: 'mm/dd/yyyy',
-                    defaultViewDate: startDate
-                }).on('changeDate', function(event) {
-                    cell.contents = event.format();
+
+                var picker = datepicker($dateInput.get(0), (date) => {
+                    cell.contents = formatSlashDate(date);
                     cell.setText(cell.contents);
                     self.sendUpdate();
-                }).on('hide', function(event) {
+                });
+                $dateInput.on('focusout', function(event) {
                     cell.$td.text(cell.contents);
                     if(cell.errorMessage) {
                         cell.showError(cell.errorMessage);
                     }
                 });
-                $date.focus();
+
+                $dateInput.focus();
             });
             break;
         // TODO: fill these options in

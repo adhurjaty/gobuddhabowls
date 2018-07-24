@@ -23,7 +23,7 @@ glob.sync("./assets/*/*.*").reduce((_, entry) => {
   if( entries[key] == null) {
     entries[key] = [entry]
     return
-  } 
+  }
   
   entries[key].push(entry)
 })

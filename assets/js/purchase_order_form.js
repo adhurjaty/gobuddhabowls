@@ -1,17 +1,12 @@
 import { initOrderItemsArea } from './order_item_details';
-// if(!$.datepicker) {
-//     import 'bootstrap-datepicker';
-// }
+import { datepicker } from './datepicker';
 
 var _vendorItemsMap;
 
 $(() => {
     _vendorItemsMap = JSON.parse($('#vendor-items-map').attr('data'));
 
-    datepicker($('#new-order-date'), {
-        autoclose: 'true',
-        format: 'mm/dd/yyyy'
-    });
+    var picker = datepicker($('#new-order-date').get(0));
 
     if($('#new-order-vendor option:selected').val()) {
         var items = JSON.parse($('#vendor-items-table').attr('data'));
