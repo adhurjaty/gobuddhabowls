@@ -10,13 +10,13 @@ export function datepicker(el, onDateSelected) {
     });
 }
 
-export function daterange($inputs, onDateSelected = function() {}) {
+export function daterange($inputs, onDateSelected = function(d) {}) {
     if($inputs.length < 2) {
         return datepicker($inputs.eq(0), onDateSelected);
     }
 
-    $inputs.each(() => {
-        disableAutocomplete(this);
+    $inputs.each((i, el) => {
+        disableAutocomplete(el);
     });
 
     var $startInput = $inputs.eq(0);
@@ -28,7 +28,7 @@ export function daterange($inputs, onDateSelected = function() {}) {
             $endInput.val(formatSlashDate(date));
         }
 
-        onDateSelected()
+        onDateSelected(date)
     };
 
     var start = new Pikaday({
@@ -39,7 +39,7 @@ export function daterange($inputs, onDateSelected = function() {}) {
 
     var startDate = new Date($startInput.val());
 
-    debugger;
+
     var end = new Pikaday({
         field: $endInput.get(0),
         format: 'MM/DD/YYYY',

@@ -6,12 +6,8 @@ var _vendorItemsMap;
 $(() => {
     _vendorItemsMap = JSON.parse($('#vendor-items-map').attr('data'));
 
-    datepicker($('#new-order-date').get(0));
-    datepicker($('#received-date-input').get(0), (date) => {
-        debugger;
-    });
-    // var $inputs = $('#new-order-date, #received-date-input');
-    // daterange($inputs);
+    var $inputs = $('#new-order-date, #new-received-date');
+    daterange($inputs);
 
     if($('#new-order-vendor option:selected').val()) {
         var items = JSON.parse($('#vendor-items-table').attr('data'));
@@ -23,10 +19,6 @@ $(() => {
         var id = $(this).val();
         
         var items = _vendorItemsMap[id];
-
-        // put the existing item edits in the vendor map
-        // TODO: see if this is useful
-        // cacheItemValues(lastID);
 
         // initialize grid and breakdown
         initOrderItemsArea(items);
