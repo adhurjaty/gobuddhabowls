@@ -1,12 +1,17 @@
 import { initOrderItemsArea } from './order_item_details';
-import { datepicker } from './datepicker';
+import { datepicker, daterange } from './datepicker';
 
 var _vendorItemsMap;
 
 $(() => {
     _vendorItemsMap = JSON.parse($('#vendor-items-map').attr('data'));
 
-    var picker = datepicker($('#new-order-date').get(0));
+    datepicker($('#new-order-date').get(0));
+    datepicker($('#received-date-input').get(0), (date) => {
+        debugger;
+    });
+    // var $inputs = $('#new-order-date, #received-date-input');
+    // daterange($inputs);
 
     if($('#new-order-vendor option:selected').val()) {
         var items = JSON.parse($('#vendor-items-table').attr('data'));

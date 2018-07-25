@@ -31,22 +31,6 @@ func NewPresenter(tx *pop.Connection) *Presenter {
 	return p
 }
 
-// GetPeriodData gets all the period selector information to pass to the view
-// don't know why this is still here. delete if it's been here a while 6/28
-// func (p *Presenter) GetPeriodData(tx *pop.Connection) ([]logic.PeriodSelector, error) {
-// 	years, err := models.GetYears(tx)
-// 	if err != nil {
-// 		return nil, err
-// 	}
-// 	periods := make([]logic.PeriodSelector, len(years))
-
-// 	for i, year := range years {
-// 		periods[i] = logic.NewPeriodSelector(year)
-// 	}
-
-// 	return periods, nil
-// }
-
 // GetPurchaseOrders gets the purchase orders from the given date interval
 func (p *Presenter) GetPurchaseOrders(startTime time.Time, endTime time.Time) (*PurchaseOrdersAPI, error) {
 	purchaseOrders, err := logic.GetPurchaseOrders(startTime, endTime, p.tx)
