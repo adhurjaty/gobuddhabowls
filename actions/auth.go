@@ -55,7 +55,7 @@ func AuthCreate(c buffalo.Context) error {
 	c.Session().Set("current_user_id", u.ID)
 	c.Flash().Add("success", "Welcome Back to Buffalo!")
 
-	return c.Redirect(302, "/")
+	return c.Redirect(302, "/purchase_orders")
 }
 
 // AuthDestroy clears the session and logs a user out

@@ -50,7 +50,7 @@ func App() *buffalo.App {
 		app.Use(SetCurrentUser)
 		app.Use(Authorize)
 
-		app.Middleware.Skip(Authorize, HomeHandler, AuthCreate, AuthNew)
+		app.Middleware.Skip(Authorize, AuthCreate, AuthNew)
 
 		// Setup and use translations:
 		var err error
