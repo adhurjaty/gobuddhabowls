@@ -232,6 +232,21 @@ CREATE TABLE public.schema_migration (
 ALTER TABLE public.schema_migration OWNER TO postgres;
 
 --
+-- Name: users; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.users (
+    id uuid NOT NULL,
+    email character varying(255) NOT NULL,
+    password_hash character varying(255) NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+ALTER TABLE public.users OWNER TO postgres;
+
+--
 -- Name: vendor_items; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -348,6 +363,14 @@ ALTER TABLE ONLY public.recipes
 
 
 --
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT users_pkey PRIMARY KEY (id);
+
+
+--
 -- Name: vendor_items vendor_items_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -361,6 +384,13 @@ ALTER TABLE ONLY public.vendor_items
 
 ALTER TABLE ONLY public.vendors
     ADD CONSTRAINT vendors_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: users_email_idx; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX users_email_idx ON public.users USING btree (email);
 
 
 --

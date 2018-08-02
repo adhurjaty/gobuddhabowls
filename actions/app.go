@@ -47,6 +47,10 @@ func App() *buffalo.App {
 		//  c.Value("tx").(*pop.PopTransaction)
 		// Remove to disable this.
 		app.Use(middleware.PopTransaction(models.DB))
+		app.Use(SetCurrentUser)
+		app.Use(Authorize)
+
+		app.Middleware.Skip(Authorize, HomeHandler, AuthCreate, AuthNew)
 
 		// Setup and use translations:
 		var err error
@@ -75,6 +79,9 @@ func App() *buffalo.App {
 
 		app.GET("/settings", SettingsHandler)
 		app.Resource("/inventory_item_categories", InventoryItemCategoriesResource{})
+
+		app.GET("/signin", AuthNew)
+		app.POST("/signin", AuthCreate)
 
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
