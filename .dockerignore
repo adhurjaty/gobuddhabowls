@@ -1,3 +1,8 @@
 node_modules/
 *.log
 bin/
+.git*
+build/
+target/
+.bundler
+*.log

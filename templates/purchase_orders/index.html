@@ -19,4 +19,4 @@
 
 <%= partial("purchase_orders/datagrid.html", { openPurchaseOrders: openPurchaseOrders, recPurchaseOrders: recPurchaseOrders }) %>
 
-<%= form({action: purchaseOrderPath(), method: "PUT", id: "update-po-form", style: "display: none;"}) { %> <% } %>
+<%= form({action: "/purchase_orders/{purchase_order_id}", method: "PUT", id: "update-po-form", style: "display: none;"}) { %> <% } %>
