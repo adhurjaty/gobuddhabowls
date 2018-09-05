@@ -1,8 +1,8 @@
 // code from https://gist.github.com/d3noob/f8b7f107ba25c21971851728520224cb
 
 import * as d3 from 'd3';
-import d3Tip from '@lix/d3-tip';
-d3.tip = d3Tip;
+// import d3Tip from '@lix/d3-tip';
+// d3.tip = d3Tip;
 
 export class MultilineGraph {
     constructor(height, data, id) {
