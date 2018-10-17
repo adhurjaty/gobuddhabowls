@@ -32,3 +32,17 @@ services:
       default:
         aliases:
           - gobuddhabowls
+
+  gobuddhabowls-db-seed:
+    build:
+      context: .
+      dockerfile: Dockerfile-Migrate
+    depends_on:
+      - postgres
+    command: ["./wait-for-it.sh", "postgres:5432", "--", "buffalo", "db", "migrate"]
+    networks:
+      default:
+        aliases:
+          - gobuddhabowls-db-seed
+
+

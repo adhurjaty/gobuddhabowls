@@ -1,0 +1,6 @@
+# We need to use an older version of gobuffalo here for the migrations to succeed
+FROM gobuffalo/buffalo:v0.11.0 as migrate
+
+WORKDIR $GOPATH/src/buddhabowls/
+ADD . .
+ENV GO_ENV=development
