@@ -3,12 +3,12 @@ development:
   database: buddhabowls_development
   user: postgres
   password: mysecretpassword
-  host: 127.0.0.1
-  port: 15432
+  host: postgres
+  port: 5432
   pool: 5
 
 test:
-  url: {{envOr "TEST_DATABASE_URL" "postgres://postgres:mysecretpassword@127.0.0.1:15432/buddhabowls_test?sslmode=disable"}}
+  url: {{envOr "TEST_DATABASE_URL" "postgres://postgres:mysecretpassword@postgres:5432/buddhabowls_test?sslmode=disable"}}
 
 production:
-  url: {{envOr "DATABASE_URL" "postgres://postgres:mysecretpassword@127.0.0.1:15432/buddhabowls_production?sslmode=disable"}}
+  url: {{envOr "DATABASE_URL" "postgres://postgres:mysecretpassword@postgres:5432/buddhabowls_production?sslmode=disable"}}

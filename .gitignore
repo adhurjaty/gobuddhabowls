@@ -12,3 +12,4 @@ buddhabowls
 .vscode/
 .grifter/
 .env
+pg_data/

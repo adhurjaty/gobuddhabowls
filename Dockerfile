@@ -2,21 +2,27 @@
 # https://docs.docker.com/engine/userguide/eng-image/multistage-build/
 FROM gobuffalo/buffalo:v0.12.6 as builder
 
+ENV GO_ENV=development
+
 RUN mkdir -p $GOPATH/src/buddhabowls
 WORKDIR $GOPATH/src/buddhabowls/
 
 # this will cache the npm install step, unless package.json changes
-# ADD package.json .
+ADD package.json .
+RUN npm install
 # ADD yarn.lock .
 # RUN yarn install --no-progress
 ADD . .
-RUN npm install
-ENV GO_ENV=development
 RUN buffalo build --static -o bin/app
 
-# CMD ./bin/app
-# RUN go get $(go list ./... | grep -v /vendor/)
+# We need to use an older version of gobuffalo here for the migrations to succeed
+FROM gobuffalo/buffalo:v0.11.0 as migrate
 
+WORKDIR $GOPATH/src/buddhabowls/
+ADD . .
+ENV GO_ENV=development
+
+# Run the compiled binary in a slim alpine image
 FROM alpine
 RUN apk add --no-cache bash
 RUN apk add --no-cache ca-certificates
