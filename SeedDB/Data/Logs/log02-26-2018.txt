@@ -1,0 +1,2478 @@
+02/26/18 - 12:09:53 - INFO - Application starting
+02/26/18 - 12:09:53 - INFO - Loading models
+02/26/18 - 12:09:54 - INFO - Models loaded
+02/26/18 - 12:09:57 - INFO - Upating BreadOrder: 323
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 0
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 1
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 2
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 3
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 4
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 5
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 6
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 7
+02/26/18 - 12:09:57 - INFO - Inserted DailySale: 8
+02/26/18 - 12:09:57 - INFO - Inserted ExpenseItem: 1474
+02/26/18 - 12:09:57 - INFO - Inserted ExpenseItem: 1475
+02/26/18 - 12:09:57 - INFO - Inserted ExpenseItem: 1476
+02/26/18 - 12:09:57 - INFO - Upating ExpenseItem: 1459
+02/26/18 - 12:09:57 - INFO - Upating ExpenseItem: 1460
+02/26/18 - 12:09:57 - INFO - Upating ExpenseItem: 1461
+02/26/18 - 12:09:57 - INFO - Upating ExpenseItem: 1462
+02/26/18 - 12:09:57 - INFO - Upating ExpenseItem: 1463
+02/26/18 - 12:09:57 - INFO - Upating ExpenseItem: 1464
+02/26/18 - 12:09:57 - INFO - Upating ExpenseItem: 1465
+02/26/18 - 12:09:58 - INFO - Upating ExpenseItem: 1466
+02/26/18 - 12:09:58 - INFO - Upating ExpenseItem: 1467
+02/26/18 - 12:09:58 - INFO - Upating ExpenseItem: 1468
+02/26/18 - 12:09:58 - INFO - Upating ExpenseItem: 1469
+02/26/18 - 12:09:58 - INFO - Upating ExpenseItem: 1470
+02/26/18 - 12:09:58 - INFO - Upating ExpenseItem: 1471
+02/26/18 - 12:09:58 - INFO - Upating ExpenseItem: 1472
+02/26/18 - 12:09:58 - INFO - Upating ExpenseItem: 1473
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 0
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 1
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 2
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 3
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 4
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 5
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 6
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 7
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 8
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 9
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 10
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 11
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 12
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 13
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:00 - INFO - Upating Recipe: 14
+02/26/18 - 12:10:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:21 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:22 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:23 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:24 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:24 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:27 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:28 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:29 - INFO - Changed to tab: Recipes
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:10:37 - INFO - Executing InventoryListVM#EditInventoryItem
+02/26/18 - 12:10:37 - INFO - Adding temp tab: NewInventoryItemWizard
+02/26/18 - 12:10:37 - INFO - Changed to tab: New Item
+02/26/18 - 12:10:37 - INFO - Changed to tab: New Item
+02/26/18 - 12:10:37 - INFO - Changed to tab: New Item
+02/26/18 - 12:11:51 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:11:51 - INFO - Changed to tab: New Item
+02/26/18 - 12:11:51 - INFO - Changed to tab: New Item
+02/26/18 - 12:11:52 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:11:52 - INFO - Changed to tab: New Item
+02/26/18 - 12:11:53 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/26/18 - 12:11:54 - INFO - Upating InventoryItem: 23
+02/26/18 - 12:11:54 - INFO - Upating Vendor: 2
+02/26/18 - 12:11:54 - INFO - Upating Vendor: 0
+02/26/18 - 12:11:54 - INFO - Removing temp tab
+02/26/18 - 12:11:54 - INFO - Changed to tab: Settings
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 0
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 1
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 2
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 3
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 4
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 5
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 6
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 7
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 8
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 9
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 10
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 11
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 12
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 13
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:57 - INFO - Upating Recipe: 14
+02/26/18 - 12:11:57 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:59 - INFO - Changed to tab: Recipes
+02/26/18 - 12:11:59 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:01 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:01 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:02 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:02 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:04 - INFO - Executing RecipeTabVM#EditRecipe
+02/26/18 - 12:12:04 - INFO - Adding temp tab: NewRecipeVM
+02/26/18 - 12:12:04 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:12:04 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:12:05 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:12:06 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:12:06 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:12:08 - INFO - Executing NewRecipeVM#FinishWizard
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 12
+02/26/18 - 12:12:09 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:12:09 - INFO - Removing temp tab
+02/26/18 - 12:12:09 - INFO - Changed to tab: Settings
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 0
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 1
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 2
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 3
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 4
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 5
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 6
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 7
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 8
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 9
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 10
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 11
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 12
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 13
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:12:09 - INFO - Upating Recipe: 14
+02/26/18 - 12:12:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:18:28 - INFO - Changed to tab: Recipes
+02/26/18 - 12:18:29 - INFO - Changed to tab: Recipes
+02/26/18 - 12:18:30 - INFO - Changed to tab: Orders
+02/26/18 - 12:18:32 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:39 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:40 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:42 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:46 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:49 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:50 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:51 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:55 - INFO - Upating InventoryItem: 126
+02/26/18 - 12:18:55 - INFO - Upating Vendor: 3
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:18:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:58 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:58 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:58 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:58 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:58 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:58 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:58 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:58 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:32:59 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:00 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:01 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:02 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:02 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:02 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:02 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:02 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:03 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:05 - INFO - Changed to tab: Reports
+02/26/18 - 12:33:06 - INFO - Changed to tab: Reports
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 0
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 1
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 2
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 3
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 4
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 5
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 6
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 7
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 8
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 9
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 10
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 11
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 12
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 13
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:08 - INFO - Upating Recipe: 14
+02/26/18 - 12:33:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:10 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:11 - INFO - Application closing
+02/26/18 - 12:33:23 - INFO - Application starting
+02/26/18 - 12:33:23 - INFO - Loading models
+02/26/18 - 12:33:24 - INFO - Models loaded
+02/26/18 - 12:33:25 - INFO - Upating BreadOrder: 323
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 0
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 1
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 2
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 3
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 4
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 5
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 6
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 7
+02/26/18 - 12:33:25 - INFO - Upating DailySale: 8
+02/26/18 - 12:33:25 - INFO - Destroying DailySale: 0
+02/26/18 - 12:33:25 - INFO - Destroying DailySale: 1
+02/26/18 - 12:33:25 - INFO - Destroying DailySale: 2
+02/26/18 - 12:33:26 - INFO - Destroying DailySale: 3
+02/26/18 - 12:33:26 - INFO - Destroying DailySale: 4
+02/26/18 - 12:33:26 - INFO - Destroying DailySale: 5
+02/26/18 - 12:33:26 - INFO - Destroying DailySale: 6
+02/26/18 - 12:33:26 - INFO - Destroying DailySale: 7
+02/26/18 - 12:33:26 - INFO - Destroying DailySale: 8
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 0
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 1
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 2
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 3
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 4
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 5
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 6
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 7
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 8
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 9
+02/26/18 - 12:33:26 - INFO - Inserted DailySale: 10
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1474
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1475
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1476
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1459
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1460
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1461
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1462
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1463
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1464
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1465
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1466
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1467
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1468
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1469
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1470
+02/26/18 - 12:33:26 - INFO - Upating ExpenseItem: 1471
+02/26/18 - 12:33:27 - INFO - Upating ExpenseItem: 1472
+02/26/18 - 12:33:27 - INFO - Upating ExpenseItem: 1473
+02/26/18 - 12:33:27 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:27 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:27 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:27 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:27 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:27 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:27 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:28 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:28 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:28 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:28 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:29 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:30 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:31 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 0
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 1
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 2
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 3
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 4
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 5
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 6
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 7
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 8
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 9
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 10
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 11
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 12
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 13
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:32 - INFO - Upating Recipe: 14
+02/26/18 - 12:33:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:34 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:35 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:38 - INFO - Executing InventoryListVM#EditInventoryItem
+02/26/18 - 12:33:39 - INFO - Adding temp tab: NewInventoryItemWizard
+02/26/18 - 12:33:39 - INFO - Changed to tab: New Item
+02/26/18 - 12:33:39 - INFO - Changed to tab: New Item
+02/26/18 - 12:33:39 - INFO - Changed to tab: New Item
+02/26/18 - 12:33:50 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:33:50 - INFO - Changed to tab: New Item
+02/26/18 - 12:33:50 - INFO - Changed to tab: New Item
+02/26/18 - 12:33:50 - INFO - Changed to tab: New Item
+02/26/18 - 12:33:50 - INFO - Changed to tab: New Item
+02/26/18 - 12:33:51 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:33:51 - INFO - Changed to tab: New Item
+02/26/18 - 12:33:56 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/26/18 - 12:33:56 - INFO - Upating InventoryItem: 59
+02/26/18 - 12:33:57 - INFO - Upating Vendor: 1
+02/26/18 - 12:33:57 - INFO - Upating Vendor: 10
+02/26/18 - 12:33:57 - INFO - Upating Vendor: 9
+02/26/18 - 12:33:57 - INFO - Upating Vendor: 0
+02/26/18 - 12:33:57 - INFO - Removing temp tab
+02/26/18 - 12:33:57 - INFO - Changed to tab: Settings
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:57 - INFO - Changed to tab: Inventory
+02/26/18 - 12:33:59 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:59 - INFO - Upating Recipe: 0
+02/26/18 - 12:33:59 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:59 - INFO - Upating Recipe: 1
+02/26/18 - 12:33:59 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:59 - INFO - Upating Recipe: 2
+02/26/18 - 12:33:59 - INFO - Changed to tab: Recipes
+02/26/18 - 12:33:59 - INFO - Upating Recipe: 3
+02/26/18 - 12:33:59 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 4
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 5
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 6
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 7
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 8
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 9
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 10
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 11
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 12
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 13
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:00 - INFO - Upating Recipe: 14
+02/26/18 - 12:34:00 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:01 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:02 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:02 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:08 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:09 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:11 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:14 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:15 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:16 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:16 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:16 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:16 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:16 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:16 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:17 - INFO - Changed to tab: Bread
+02/26/18 - 12:34:17 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:18 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:18 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:19 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:20 - INFO - Executing RecipeTabVM#EditRecipe
+02/26/18 - 12:34:20 - INFO - Adding temp tab: NewRecipeVM
+02/26/18 - 12:34:20 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:34:20 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:34:28 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:34:29 - INFO - Executing NewRecipeVM#FinishWizard
+02/26/18 - 12:34:29 - INFO - Upating Recipe: 8
+02/26/18 - 12:34:29 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:34:29 - INFO - Removing temp tab
+02/26/18 - 12:34:29 - INFO - Changed to tab: Settings
+02/26/18 - 12:34:29 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 0
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 1
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 2
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 3
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 4
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 5
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 6
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 7
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 8
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 9
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 10
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 11
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 12
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 13
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:30 - INFO - Upating Recipe: 14
+02/26/18 - 12:34:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:37 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:37 - INFO - Changed to tab: Recipes
+02/26/18 - 12:34:41 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:43 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:44 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:45 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:46 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:46 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:46 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:46 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:46 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:46 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:47 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:48 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:50 - INFO - Executing InventoryListVM#EditInventoryItem
+02/26/18 - 12:34:50 - INFO - Adding temp tab: NewInventoryItemWizard
+02/26/18 - 12:34:50 - INFO - Changed to tab: New Item
+02/26/18 - 12:34:50 - INFO - Changed to tab: New Item
+02/26/18 - 12:34:50 - INFO - Changed to tab: New Item
+02/26/18 - 12:34:54 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:34:54 - INFO - Changed to tab: New Item
+02/26/18 - 12:34:54 - INFO - Changed to tab: New Item
+02/26/18 - 12:34:54 - INFO - Changed to tab: New Item
+02/26/18 - 12:34:54 - INFO - Changed to tab: New Item
+02/26/18 - 12:34:55 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:34:55 - INFO - Changed to tab: New Item
+02/26/18 - 12:34:55 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/26/18 - 12:34:55 - INFO - Upating InventoryItem: 59
+02/26/18 - 12:34:56 - INFO - Upating Vendor: 1
+02/26/18 - 12:34:56 - INFO - Upating Vendor: 10
+02/26/18 - 12:34:56 - INFO - Upating Vendor: 9
+02/26/18 - 12:34:56 - INFO - Upating Vendor: 0
+02/26/18 - 12:34:56 - INFO - Removing temp tab
+02/26/18 - 12:34:56 - INFO - Changed to tab: Settings
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:34:56 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:00 - INFO - Executing InventoryListVM#EditInventoryItem
+02/26/18 - 12:35:00 - INFO - Adding temp tab: NewInventoryItemWizard
+02/26/18 - 12:35:00 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:00 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:00 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:04 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:35:05 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:05 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:05 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:05 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:05 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:35:05 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:05 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/26/18 - 12:35:05 - INFO - Upating InventoryItem: 59
+02/26/18 - 12:35:05 - INFO - Upating Vendor: 1
+02/26/18 - 12:35:05 - INFO - Upating Vendor: 10
+02/26/18 - 12:35:05 - INFO - Upating Vendor: 9
+02/26/18 - 12:35:05 - INFO - Upating Vendor: 0
+02/26/18 - 12:35:05 - INFO - Removing temp tab
+02/26/18 - 12:35:06 - INFO - Changed to tab: Settings
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:06 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:07 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:08 - INFO - Executing InventoryListVM#EditInventoryItem
+02/26/18 - 12:35:08 - INFO - Adding temp tab: NewInventoryItemWizard
+02/26/18 - 12:35:08 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:08 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:08 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:18 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:35:18 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:18 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:18 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:18 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:18 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:35:18 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:19 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/26/18 - 12:35:19 - INFO - Upating InventoryItem: 59
+02/26/18 - 12:35:19 - INFO - Upating Vendor: 1
+02/26/18 - 12:35:19 - INFO - Upating Vendor: 10
+02/26/18 - 12:35:19 - INFO - Upating Vendor: 9
+02/26/18 - 12:35:19 - INFO - Upating Vendor: 0
+02/26/18 - 12:35:19 - INFO - Removing temp tab
+02/26/18 - 12:35:19 - INFO - Changed to tab: Settings
+02/26/18 - 12:35:19 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:19 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:19 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:19 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:20 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:21 - INFO - Executing InventoryListVM#EditInventoryItem
+02/26/18 - 12:35:21 - INFO - Adding temp tab: NewInventoryItemWizard
+02/26/18 - 12:35:21 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:21 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:21 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:30 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:35:30 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:30 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:30 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:30 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:30 - INFO - Executing WizardVM#NextPage
+02/26/18 - 12:35:30 - INFO - Changed to tab: New Item
+02/26/18 - 12:35:31 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/26/18 - 12:35:31 - INFO - Upating InventoryItem: 59
+02/26/18 - 12:35:31 - INFO - Upating Vendor: 1
+02/26/18 - 12:35:31 - INFO - Upating Vendor: 10
+02/26/18 - 12:35:31 - INFO - Upating Vendor: 9
+02/26/18 - 12:35:31 - INFO - Upating Vendor: 0
+02/26/18 - 12:35:31 - INFO - Removing temp tab
+02/26/18 - 12:35:31 - INFO - Changed to tab: Settings
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:31 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:32 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:32 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:33 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:34 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:36 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:37 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:38 - INFO - Changed to tab: Inventory
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 0
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 1
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 2
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 3
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 4
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 5
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 6
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 7
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 8
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 9
+02/26/18 - 12:35:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:39 - INFO - Upating Recipe: 10
+02/26/18 - 12:35:40 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:40 - INFO - Upating Recipe: 11
+02/26/18 - 12:35:40 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:40 - INFO - Upating Recipe: 12
+02/26/18 - 12:35:40 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:40 - INFO - Upating Recipe: 13
+02/26/18 - 12:35:40 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:40 - INFO - Upating Recipe: 14
+02/26/18 - 12:35:40 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:42 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:42 - INFO - Changed to tab: Recipes
+02/26/18 - 12:35:43 - INFO - Application closing
+02/26/18 - 12:35:58 - INFO - Application starting
+02/26/18 - 12:35:58 - INFO - Loading models
+02/26/18 - 12:35:59 - INFO - Models loaded
+02/26/18 - 12:36:00 - INFO - Upating BreadOrder: 323
+02/26/18 - 12:36:00 - INFO - Upating DailySale: 0
+02/26/18 - 12:36:00 - INFO - Upating DailySale: 1
+02/26/18 - 12:36:00 - INFO - Upating DailySale: 2
+02/26/18 - 12:36:00 - INFO - Upating DailySale: 3
+02/26/18 - 12:36:00 - INFO - Upating DailySale: 4
+02/26/18 - 12:36:01 - INFO - Upating DailySale: 5
+02/26/18 - 12:36:01 - INFO - Upating DailySale: 6
+02/26/18 - 12:36:01 - INFO - Upating DailySale: 7
+02/26/18 - 12:36:01 - INFO - Upating DailySale: 8
+02/26/18 - 12:36:01 - INFO - Upating DailySale: 9
+02/26/18 - 12:36:01 - INFO - Upating DailySale: 10
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 0
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 1
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 2
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 3
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 4
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 5
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 6
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 7
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 8
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 9
+02/26/18 - 12:36:01 - INFO - Destroying DailySale: 10
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 0
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 1
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 2
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 3
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 4
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 5
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 6
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 7
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 8
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 9
+02/26/18 - 12:36:01 - INFO - Inserted DailySale: 10
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1474
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1475
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1476
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1459
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1460
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1461
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1462
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1463
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1464
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1465
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1466
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1467
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1468
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1469
+02/26/18 - 12:36:01 - INFO - Upating ExpenseItem: 1470
+02/26/18 - 12:36:02 - INFO - Upating ExpenseItem: 1471
+02/26/18 - 12:36:02 - INFO - Upating ExpenseItem: 1472
+02/26/18 - 12:36:02 - INFO - Upating ExpenseItem: 1473
+02/26/18 - 12:36:02 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:02 - INFO - Upating Recipe: 0
+02/26/18 - 12:36:02 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:02 - INFO - Upating Recipe: 1
+02/26/18 - 12:36:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:03 - INFO - Upating Recipe: 2
+02/26/18 - 12:36:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:03 - INFO - Upating Recipe: 3
+02/26/18 - 12:36:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:03 - INFO - Upating Recipe: 4
+02/26/18 - 12:36:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:03 - INFO - Upating Recipe: 5
+02/26/18 - 12:36:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:03 - INFO - Upating Recipe: 6
+02/26/18 - 12:36:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:03 - INFO - Upating Recipe: 7
+02/26/18 - 12:36:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:04 - ERROR - The process cannot access the file 'C:\Users\Buddha\Desktop\Database Files\Data\Recipes\Hummus.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   at System.IO.File.WriteAllLines(String path, IEnumerable`1 contents)
+   at BuddhaBowls.Services.DatabaseInterface.CreateTable(String[] colHeaders, String[][] rows, String tableName)
+   at BuddhaBowls.Helpers.ModelHelper.CreateTable[T](List`1 records, String tableName)
+   at BuddhaBowls.Models.Recipe.Update()
+   at BuddhaBowls.Services.ModelContainer`1.Update(T item)
+   at BuddhaBowls.RecipeTabVM.RowEdited(Recipe item)
+   at BuddhaBowls.UserControls.RecipeTabControl.ComboBox_Selected(Object sender, RoutedEventArgs e)
+   at System.Windows.Controls.SelectionChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.ComboBox.OnSelectionChanged(SelectionChangedEventArgs e)
+   at System.Windows.Controls.Primitives.Selector.InvokeSelectionChanged(List`1 unselectedInfos, List`1 selectedInfos)
+   at System.Windows.Controls.Primitives.Selector.SelectionChanger.End()
+   at System.Windows.Controls.Primitives.Selector.SelectionChanger.SelectJustThisItem(ItemInfo info, Boolean assumeInItemsCollection)
+   at System.Windows.Controls.Primitives.Selector.OnSelectedIndexChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.DependencyObject.SetCurrentValueInternal(DependencyProperty dp, Object value)
+   at System.Windows.Controls.ComboBox.TextUpdated(String newText, Boolean textBoxUpdated)
+   at System.Windows.Controls.ComboBox.OnTextChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.InvalidateProperty(DependencyProperty dp, Boolean preserveCurrentValue)
+   at System.Windows.Data.BindingExpressionBase.Invalidate(Boolean isASubPropertyChange)
+   at System.Windows.Data.BindingExpression.TransferValue(Object newValue, Boolean isASubPropertyChange)
+   at System.Windows.Data.BindingExpression.Activate(Object item)
+   at System.Windows.Data.BindingExpression.AttachToContext(AttachAttempt attempt)
+   at System.Windows.Data.BindingExpression.MS.Internal.Data.IDataBindEngineClient.AttachToContext(Boolean lastChance)
+   at MS.Internal.Data.DataBindEngine.Task.Run(Boolean lastChance)
+   at MS.Internal.Data.DataBindEngine.Run(Object arg)
+   at MS.Internal.Data.DataBindEngine.OnLayoutUpdated(Object sender, EventArgs e)
+   at System.Windows.ContextLayoutManager.fireLayoutUpdateEvent()
+   at System.Windows.ContextLayoutManager.UpdateLayout()
+   at System.Windows.UIElement.UpdateLayout()
+   at System.Windows.Controls.TabItem.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)
+   at System.Windows.UIElement.OnPreviewGotKeyboardFocusThunk(Object sender, KeyboardFocusChangedEventArgs e)
+   at System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.KeyboardDevice.TryChangeFocus(DependencyObject newFocus, IKeyboardInputProvider keyboardInputProvider, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(DependencyObject focus, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(IInputElement element)
+   at System.Windows.UIElement.Focus()
+   at System.Windows.Controls.TabItem.SetFocus()
+   at System.Windows.Controls.TabItem.OnMouseLeftButtonDown(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+02/26/18 - 12:36:05 - INFO - Upating Recipe: 9
+02/26/18 - 12:36:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:05 - INFO - Upating Recipe: 10
+02/26/18 - 12:36:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:05 - INFO - Upating Recipe: 11
+02/26/18 - 12:36:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:05 - INFO - Upating Recipe: 12
+02/26/18 - 12:36:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:05 - INFO - Upating Recipe: 13
+02/26/18 - 12:36:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:05 - INFO - Upating Recipe: 14
+02/26/18 - 12:36:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:20 - INFO - Application starting
+02/26/18 - 12:36:20 - INFO - Loading models
+02/26/18 - 12:36:21 - INFO - Models loaded
+02/26/18 - 12:36:23 - INFO - Upating BreadOrder: 323
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 0
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 1
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 2
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 3
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 4
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 5
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 6
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 7
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 8
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 9
+02/26/18 - 12:36:23 - INFO - Upating DailySale: 10
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 0
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 1
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 2
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 3
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 4
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 5
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 6
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 7
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 8
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 9
+02/26/18 - 12:36:23 - INFO - Destroying DailySale: 10
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 0
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 1
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 2
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 3
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 4
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 5
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 6
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 7
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 8
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 9
+02/26/18 - 12:36:23 - INFO - Inserted DailySale: 10
+02/26/18 - 12:36:23 - INFO - Upating ExpenseItem: 1474
+02/26/18 - 12:36:23 - INFO - Upating ExpenseItem: 1475
+02/26/18 - 12:36:23 - INFO - Upating ExpenseItem: 1476
+02/26/18 - 12:36:23 - INFO - Upating ExpenseItem: 1459
+02/26/18 - 12:36:23 - INFO - Upating ExpenseItem: 1460
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1461
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1462
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1463
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1464
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1465
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1466
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1467
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1468
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1469
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1470
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1471
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1472
+02/26/18 - 12:36:24 - INFO - Upating ExpenseItem: 1473
+02/26/18 - 12:36:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:25 - INFO - Upating Recipe: 0
+02/26/18 - 12:36:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:25 - INFO - Upating Recipe: 1
+02/26/18 - 12:36:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:25 - INFO - Upating Recipe: 2
+02/26/18 - 12:36:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:25 - INFO - Upating Recipe: 3
+02/26/18 - 12:36:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:25 - INFO - Upating Recipe: 4
+02/26/18 - 12:36:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:25 - INFO - Upating Recipe: 5
+02/26/18 - 12:36:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:25 - INFO - Upating Recipe: 6
+02/26/18 - 12:36:25 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:25 - INFO - Upating Recipe: 7
+02/26/18 - 12:36:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:26 - INFO - Upating Recipe: 8
+02/26/18 - 12:36:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:26 - INFO - Upating Recipe: 9
+02/26/18 - 12:36:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:26 - INFO - Upating Recipe: 10
+02/26/18 - 12:36:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:26 - INFO - Upating Recipe: 11
+02/26/18 - 12:36:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:26 - INFO - Upating Recipe: 12
+02/26/18 - 12:36:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:26 - INFO - Upating Recipe: 13
+02/26/18 - 12:36:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:26 - INFO - Upating Recipe: 14
+02/26/18 - 12:36:26 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:29 - INFO - Changed to tab: Recipes
+02/26/18 - 12:36:32 - INFO - Executing RecipeTabVM#EditRecipe
+02/26/18 - 12:36:32 - INFO - Adding temp tab: NewRecipeVM
+02/26/18 - 12:36:32 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:36:32 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:36:40 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:36:41 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:36:42 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:36:48 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:36:48 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 12:36:50 - INFO - Changed to tab: Recipes
+02/26/18 - 12:37:06 - INFO - Changed to tab: Recipes
+02/26/18 - 12:37:06 - INFO - Changed to tab: Recipes
+02/26/18 - 12:37:07 - INFO - Changed to tab: Recipes
+02/26/18 - 12:37:11 - INFO - Changed to tab: Recipes
+02/26/18 - 12:37:13 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:14 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:15 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:16 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:20 - INFO - Changed to tab: Orders
+02/26/18 - 12:37:21 - INFO - Changed to tab: Bread
+02/26/18 - 12:37:25 - INFO - Changed to tab: Orders
+02/26/18 - 12:37:25 - INFO - Upating BreadOrder: 323
+02/26/18 - 12:37:25 - INFO - Upating InventoryItem: 111
+02/26/18 - 12:37:25 - INFO - Upating InventoryItem: 77
+02/26/18 - 12:37:25 - INFO - Changed to tab: Orders
+02/26/18 - 12:37:27 - INFO - Changed to tab: Orders
+02/26/18 - 12:37:28 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:29 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:29 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:30 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:30 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:31 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:31 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:32 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:32 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:33 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:33 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:34 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:35 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:35 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:36 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:36 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:37 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:37 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:38 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:40 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:42 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:43 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:43 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:44 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:45 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:46 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:46 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:47 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:47 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:50 - INFO - Changed to tab: Reports
+02/26/18 - 12:37:51 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:52 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:53 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:54 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:37:55 - INFO - Changed to tab: Inventory
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 0
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 1
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 2
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 3
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 4
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 5
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 6
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 7
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 8
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 9
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 10
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 11
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:05 - INFO - Upating Recipe: 12
+02/26/18 - 12:38:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:06 - INFO - Upating Recipe: 13
+02/26/18 - 12:38:06 - INFO - Changed to tab: Recipes
+02/26/18 - 12:38:06 - INFO - Upating Recipe: 14
+02/26/18 - 12:38:06 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:31 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:33 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:33 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:34 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:34 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:35 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:36 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:36 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:37 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:40 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:41 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:41 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:42 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:42 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:43 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:44 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:45 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:46 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:46 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:47 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:47 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:48 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:49 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:49 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:50 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:50 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:51 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:52 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:52 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:53 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:53 - INFO - Changed to tab: Recipes
+02/26/18 - 12:42:54 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:28 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:28 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:29 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:31 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:33 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:34 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:34 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:35 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:35 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:36 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:37 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:37 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:38 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:39 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:40 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:40 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:41 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:42 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:42 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:43 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:43 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:44 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:45 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:46 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:46 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:47 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:48 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:48 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:49 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:51 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:52 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:52 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:53 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:53 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:53 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:54 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:55 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:55 - INFO - Changed to tab: Recipes
+02/26/18 - 12:44:56 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:02 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:03 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:05 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:06 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:07 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:07 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:08 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:09 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:10 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:10 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:11 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:12 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:13 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:15 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:16 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:16 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:18 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:18 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:19 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:28 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:28 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:29 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:30 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:31 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:32 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:33 - INFO - Changed to tab: Recipes
+02/26/18 - 12:45:34 - INFO - Changed to tab: Recipes
+02/26/18 - 13:31:53 - INFO - Changed to tab: Recipes
+02/26/18 - 13:31:54 - INFO - Changed to tab: Recipes
+02/26/18 - 13:31:56 - INFO - Changed to tab: Recipes
+02/26/18 - 13:31:58 - INFO - Changed to tab: Recipes
+02/26/18 - 14:41:57 - INFO - Application closing
+02/26/18 - 14:59:10 - INFO - Application starting
+02/26/18 - 14:59:10 - INFO - Loading models
+02/26/18 - 14:59:12 - INFO - Models loaded
+02/26/18 - 14:59:14 - INFO - Upating BreadOrder: 323
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 0
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 1
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 2
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 3
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 4
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 5
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 6
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 7
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 8
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 9
+02/26/18 - 14:59:14 - INFO - Upating DailySale: 10
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 0
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 1
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 2
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 3
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 4
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 5
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 6
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 7
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 8
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 9
+02/26/18 - 14:59:14 - INFO - Destroying DailySale: 10
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 0
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 1
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 2
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 3
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 4
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 5
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 6
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 7
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 8
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 9
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 10
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 11
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 12
+02/26/18 - 14:59:14 - INFO - Inserted DailySale: 13
+02/26/18 - 14:59:15 - INFO - Inserted DailySale: 14
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1474
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1475
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1476
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1459
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1460
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1461
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1462
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1463
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1464
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1465
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1466
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1467
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1468
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1469
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1470
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1471
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1472
+02/26/18 - 14:59:15 - INFO - Upating ExpenseItem: 1473
+02/26/18 - 14:59:27 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 0
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 1
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 2
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 3
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 4
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 5
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 6
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 7
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 8
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 9
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 10
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 11
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 12
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 13
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:28 - INFO - Upating Recipe: 14
+02/26/18 - 14:59:28 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:33 - INFO - Changed to tab: Recipes
+02/26/18 - 14:59:36 - INFO - Executing RecipeTabVM#EditRecipe
+02/26/18 - 14:59:36 - INFO - Adding temp tab: NewRecipeVM
+02/26/18 - 14:59:36 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 14:59:36 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:00:06 - INFO - Executing NewRecipeVM#FinishWizard
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 11
+02/26/18 - 15:00:06 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:00:06 - INFO - Removing temp tab
+02/26/18 - 15:00:06 - INFO - Changed to tab: Settings
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 0
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 1
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 2
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 3
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 4
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 5
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 6
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 7
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 8
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 9
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 10
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 11
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 12
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 13
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:06 - INFO - Upating Recipe: 14
+02/26/18 - 15:00:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:07 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Inventory
+02/26/18 - 15:00:08 - INFO - Changed to tab: Vendors
+02/26/18 - 15:00:09 - INFO - Changed to tab: Bread
+02/26/18 - 15:00:10 - INFO - Changed to tab: Orders
+02/26/18 - 15:00:11 - INFO - Changed to tab: Bread
+02/26/18 - 15:00:11 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:12 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:19 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:22 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:23 - INFO - Executing RecipeTabVM#EditRecipe
+02/26/18 - 15:00:23 - INFO - Adding temp tab: NewRecipeVM
+02/26/18 - 15:00:23 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:00:23 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:00:26 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:00:28 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:00:30 - INFO - Executing NewRecipeVM#FinishWizard
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 11
+02/26/18 - 15:00:30 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:00:30 - INFO - Removing temp tab
+02/26/18 - 15:00:30 - INFO - Changed to tab: Settings
+02/26/18 - 15:00:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 0
+02/26/18 - 15:00:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 1
+02/26/18 - 15:00:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 2
+02/26/18 - 15:00:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 3
+02/26/18 - 15:00:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 4
+02/26/18 - 15:00:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 5
+02/26/18 - 15:00:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 6
+02/26/18 - 15:00:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:30 - INFO - Upating Recipe: 7
+02/26/18 - 15:00:31 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:31 - INFO - Upating Recipe: 8
+02/26/18 - 15:00:31 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:31 - INFO - Upating Recipe: 9
+02/26/18 - 15:00:31 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:31 - INFO - Upating Recipe: 10
+02/26/18 - 15:00:31 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:31 - INFO - Upating Recipe: 11
+02/26/18 - 15:00:31 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:31 - INFO - Upating Recipe: 12
+02/26/18 - 15:00:31 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:31 - INFO - Upating Recipe: 13
+02/26/18 - 15:00:31 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:31 - INFO - Upating Recipe: 14
+02/26/18 - 15:00:31 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:32 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:37 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:37 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:38 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:46 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:47 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:48 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:48 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:48 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:53 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:54 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:57 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:58 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:59 - INFO - Changed to tab: Recipes
+02/26/18 - 15:00:59 - INFO - Changed to tab: Recipes
+02/26/18 - 15:01:00 - INFO - Changed to tab: Recipes
+02/26/18 - 15:01:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:01:02 - INFO - Executing ChangeableTabVM#SwitchPage
+02/26/18 - 15:01:02 - INFO - Changed to tab: Recipes
+02/26/18 - 15:01:03 - INFO - Upating Recipe: 35
+02/26/18 - 15:01:03 - INFO - Changed to tab: Recipes
+02/26/18 - 15:01:03 - INFO - Upating Recipe: 36
+02/26/18 - 15:01:03 - INFO - Changed to tab: Recipes
+02/26/18 - 15:01:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:01:06 - INFO - Executing RecipeTabVM#EditRecipe
+02/26/18 - 15:01:06 - INFO - Adding temp tab: NewRecipeVM
+02/26/18 - 15:01:06 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:01:09 - INFO - Changed to tab: Vendors
+02/26/18 - 15:02:10 - INFO - Changed to tab: Recipes
+02/26/18 - 15:02:13 - INFO - Executing RecipeTabVM#AddItem
+02/26/18 - 15:02:13 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:02:51 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:03:00 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:03:11 - INFO - Executing NewRecipeVM#AddItem
+02/26/18 - 15:03:15 - INFO - Executing NewRecipeVM#ModalOk
+02/26/18 - 15:03:17 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:03:22 - INFO - Executing NewRecipeVM#AddItem
+02/26/18 - 15:03:26 - INFO - Executing NewRecipeVM#ModalOk
+02/26/18 - 15:03:27 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:03:30 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:03:31 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:03:34 - INFO - Changed to tab: Inventory
+02/26/18 - 15:03:35 - INFO - Executing InventoryListVM#NewInventoryHelper
+02/26/18 - 15:03:36 - INFO - Changed to tab: New Item
+02/26/18 - 15:03:53 - INFO - Changed to tab: New Item
+02/26/18 - 15:03:54 - INFO - Changed to tab: New Item
+02/26/18 - 15:03:56 - INFO - Changed to tab: New Item
+02/26/18 - 15:04:00 - INFO - Changed to tab: New Item
+02/26/18 - 15:12:36 - INFO - Changed to tab: Recipes
+02/26/18 - 15:50:09 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:10 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:12 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:13 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:14 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:14 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:14 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:14 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:14 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:14 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:14 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:14 - INFO - Changed to tab: Inventory
+02/26/18 - 15:50:18 - INFO - Executing InventoryListVM#NewInventoryHelper
+02/26/18 - 15:50:18 - INFO - Changed to tab: New Item
+02/26/18 - 15:50:25 - INFO - Changed to tab: New Item
+02/26/18 - 15:50:26 - INFO - Changed to tab: New Item
+02/26/18 - 15:50:27 - INFO - Changed to tab: New Item
+02/26/18 - 15:50:30 - INFO - Changed to tab: New Item
+02/26/18 - 15:50:33 - INFO - Changed to tab: New Item
+02/26/18 - 15:50:35 - INFO - Executing WizardVM#NextPage
+02/26/18 - 15:50:37 - INFO - Executing NewInventoryItemWizard#AddVendor
+02/26/18 - 15:50:40 - INFO - Executing ModalVM`1#ModalOk
+02/26/18 - 15:50:40 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:33 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:38 - INFO - Executing WizardVM#NextPage
+02/26/18 - 15:51:38 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:44 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:47 - INFO - Executing ReOrderVM#PlaceAbove
+02/26/18 - 15:51:49 - INFO - Executing ReOrderVM#PlaceBelow
+02/26/18 - 15:51:50 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:52 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:53 - INFO - Executing ReOrderVM#MoveDown
+02/26/18 - 15:51:53 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:55 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:56 - INFO - Changed to tab: New Item
+02/26/18 - 15:51:57 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/26/18 - 15:51:57 - INFO - Inserted InventoryItem: 135
+02/26/18 - 15:51:57 - INFO - Upating Vendor: 0
+02/26/18 - 15:51:58 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:52:02 - INFO - Executing NewRecipeVM#AddItem
+02/26/18 - 15:52:03 - INFO - Executing NewRecipeVM#ModalOk
+02/26/18 - 15:52:05 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:52:08 - INFO - Executing NewRecipeVM#AddItem
+02/26/18 - 15:52:15 - INFO - Executing NewRecipeVM#ModalOk
+02/26/18 - 15:52:18 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:52:21 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:52:23 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:52:25 - INFO - Executing NewRecipeVM#AddItem
+02/26/18 - 15:52:28 - INFO - Executing NewRecipeVM#ModalOk
+02/26/18 - 15:52:30 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:52:32 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:52:35 - INFO - Executing NewRecipeVM#FinishWizard
+02/26/18 - 15:52:35 - INFO - Inserted Recipe: 37
+02/26/18 - 15:52:35 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:52:37 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:38 - INFO - Upating Recipe: 35
+02/26/18 - 15:52:38 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:38 - INFO - Upating Recipe: 36
+02/26/18 - 15:52:38 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:38 - INFO - Upating Recipe: 37
+02/26/18 - 15:52:38 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:41 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:55 - INFO - Executing ChangeableTabVM#SwitchPage
+02/26/18 - 15:52:55 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 0
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 1
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 2
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 3
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 4
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 5
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 6
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 7
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 8
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 9
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 10
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 11
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 12
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 13
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:56 - INFO - Upating Recipe: 14
+02/26/18 - 15:52:56 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:58 - INFO - Executing ChangeableTabVM#SwitchPage
+02/26/18 - 15:52:59 - INFO - Upating Recipe: 35
+02/26/18 - 15:52:59 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:59 - INFO - Upating Recipe: 36
+02/26/18 - 15:52:59 - INFO - Changed to tab: Recipes
+02/26/18 - 15:52:59 - INFO - Upating Recipe: 37
+02/26/18 - 15:52:59 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Executing ChangeableTabVM#SwitchPage
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 0
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 1
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 2
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 3
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 4
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 5
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 6
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 7
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 8
+02/26/18 - 15:53:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:01 - INFO - Upating Recipe: 9
+02/26/18 - 15:53:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:04 - INFO - Upating Recipe: 10
+02/26/18 - 15:53:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:04 - INFO - Upating Recipe: 11
+02/26/18 - 15:53:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:04 - INFO - Upating Recipe: 12
+02/26/18 - 15:53:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:04 - INFO - Upating Recipe: 13
+02/26/18 - 15:53:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:05 - INFO - Upating Recipe: 14
+02/26/18 - 15:53:05 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:53:07 - INFO - Executing RecipeTabVM#AddItem
+02/26/18 - 15:53:07 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:08 - INFO - Executing NewRecipeVM#AddItem
+02/26/18 - 15:53:13 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:19 - INFO - Executing NewRecipeVM#ModalOk
+02/26/18 - 15:53:21 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:23 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:27 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:30 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:32 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:32 - INFO - Executing NewRecipeVM#AddItem
+02/26/18 - 15:53:36 - INFO - Executing NewRecipeVM#ModalOk
+02/26/18 - 15:53:36 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:40 - INFO - Executing NewRecipeVM#AddItem
+02/26/18 - 15:53:54 - INFO - Executing NewRecipeVM#ModalOk
+02/26/18 - 15:53:55 - INFO - Changed to tab: New Recipe
+02/26/18 - 15:53:58 - INFO - Executing NewRecipeVM#FinishWizard
+02/26/18 - 15:53:58 - INFO - Inserted Recipe: 38
+02/26/18 - 15:53:58 - INFO - Changed to tab: Edit Recipe
+02/26/18 - 15:54:00 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:00 - INFO - Upating Recipe: 0
+02/26/18 - 15:54:00 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:00 - INFO - Upating Recipe: 1
+02/26/18 - 15:54:00 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:00 - INFO - Upating Recipe: 2
+02/26/18 - 15:54:00 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:00 - INFO - Upating Recipe: 3
+02/26/18 - 15:54:00 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:00 - INFO - Upating Recipe: 4
+02/26/18 - 15:54:00 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:00 - INFO - Upating Recipe: 5
+02/26/18 - 15:54:00 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 6
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 7
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 8
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 9
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 10
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 11
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 12
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 13
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 14
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:01 - INFO - Upating Recipe: 38
+02/26/18 - 15:54:01 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:02 - INFO - Executing ChangeableTabVM#SwitchPage
+02/26/18 - 15:54:02 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:02 - INFO - Upating Recipe: 35
+02/26/18 - 15:54:02 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:02 - INFO - Upating Recipe: 36
+02/26/18 - 15:54:02 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:02 - INFO - Upating Recipe: 37
+02/26/18 - 15:54:02 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:03 - INFO - Executing ChangeableTabVM#SwitchPage
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 0
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 1
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 2
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 3
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 4
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 5
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 6
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 7
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 8
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 9
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 10
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 11
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 12
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 13
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 14
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:04 - INFO - Upating Recipe: 38
+02/26/18 - 15:54:04 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:05 - INFO - Executing ChangeableTabVM#SwitchPage
+02/26/18 - 15:54:06 - INFO - Upating Recipe: 35
+02/26/18 - 15:54:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:06 - INFO - Upating Recipe: 36
+02/26/18 - 15:54:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:06 - INFO - Upating Recipe: 37
+02/26/18 - 15:54:06 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:07 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:08 - INFO - Executing RecipeTabVM#DeleteItem
+02/26/18 - 15:54:14 - INFO - Destroying Recipe: 37
+02/26/18 - 15:54:14 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:15 - INFO - Upating Recipe: 35
+02/26/18 - 15:54:15 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:15 - INFO - Upating Recipe: 36
+02/26/18 - 15:54:15 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:15 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:17 - INFO - Changed to tab: Bread
+02/26/18 - 15:54:19 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:20 - INFO - Executing ChangeableTabVM#SwitchPage
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 0
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 1
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 2
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 3
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 4
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 5
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 6
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 7
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 8
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 9
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 10
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 11
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 12
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 13
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 14
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:21 - INFO - Upating Recipe: 38
+02/26/18 - 15:54:21 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:27 - INFO - Changed to tab: Recipes
+02/26/18 - 15:54:30 - INFO - Changed to tab: Recipes
+02/26/18 - 15:59:09 - INFO - Changed to tab: Recipes
+02/26/18 - 15:59:13 - INFO - Application closing

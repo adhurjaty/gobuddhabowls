@@ -1,0 +1,8 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+4,Butter,Dairy,CASE 30lb,6,1lb,30,OZ-wt,16,1,80,0,,6
+6,Heavy Cream,Dairy,1/2 Gallon,6,1/2 GALLON,1,CUP,8,1,5.99,3,2/2/2018 12:40:38 PM,6
+9,Whole Milk,Dairy,2 GALLON,22,GALLON,2,CUP,16,1,4.99,15,3/2/2018 12:00:00 AM,6
+38,Sugar (BROWN),Grocery,25lb,7.4,QUART,16,CUP,62.5,1,13.88,0,,6
+58,Mixed Greens,Produce,3lb,1,BAG,1,OZ-wt,48,0.98,5.99,0,,6
+104,Honey,Beverage,5lbs,1.8,JAR,1,CUP,6.96,1,11.99,0,,6
+114,Sugar (CANE),Beverage,EA,8,QUART,16,CUP,1,1,30,0,,6

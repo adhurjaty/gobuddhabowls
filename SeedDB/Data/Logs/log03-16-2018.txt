@@ -1,0 +1,434 @@
+03/16/18 - 11:20:15 - INFO - Application starting
+03/16/18 - 11:20:15 - INFO - Loading models
+03/16/18 - 11:20:17 - INFO - Models loaded
+03/16/18 - 11:20:24 - INFO - Upating BreadOrder: 337
+03/16/18 - 11:20:27 - INFO - Upating BreadOrder: 339
+03/16/18 - 11:20:27 - INFO - Upating BreadOrder: 341
+03/16/18 - 11:20:28 - INFO - Upating BreadOrder: 340
+03/16/18 - 11:20:32 - INFO - Upating BreadOrder: 338
+03/16/18 - 11:20:45 - ERROR - Value cannot be null.
+Parameter name: array
+   at System.Array.IndexOf[T](T[] array, T value)
+   at BuddhaBowls.Services.DatabaseInterface.<>c__DisplayClass3_0.<GetRecords>b__0(String x)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecords(String tableName, Dictionary`2 mapping, Int32 limit)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecord(String tableName, Dictionary`2 mapping)
+   at BuddhaBowls.Models.DailySale..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.DailySale.Insert()
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/16/18 - 11:22:17 - INFO - Application starting
+03/16/18 - 11:22:17 - INFO - Loading models
+03/16/18 - 11:22:18 - INFO - Models loaded
+03/16/18 - 11:22:23 - INFO - Upating BreadOrder: 341
+03/16/18 - 11:22:23 - INFO - Upating BreadOrder: 340
+03/16/18 - 11:22:23 - INFO - Upating BreadOrder: 337
+03/16/18 - 11:22:24 - INFO - Upating BreadOrder: 338
+03/16/18 - 11:22:24 - INFO - Upating BreadOrder: 339
+03/16/18 - 11:22:40 - ERROR - Value cannot be null.
+Parameter name: array
+   at System.Array.IndexOf[T](T[] array, T value)
+   at BuddhaBowls.Services.DatabaseInterface.<>c__DisplayClass3_0.<GetRecords>b__0(String x)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecords(String tableName, Dictionary`2 mapping, Int32 limit)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecord(String tableName, Dictionary`2 mapping)
+   at BuddhaBowls.Models.DailySale..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.DailySale.Insert()
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/16/18 - 11:22:49 - INFO - Application starting
+03/16/18 - 11:22:49 - INFO - Loading models
+03/16/18 - 11:22:50 - INFO - Models loaded
+03/16/18 - 11:22:57 - INFO - Upating BreadOrder: 337
+03/16/18 - 11:22:57 - INFO - Upating BreadOrder: 341
+03/16/18 - 11:22:57 - INFO - Upating BreadOrder: 339
+03/16/18 - 11:22:59 - INFO - Upating BreadOrder: 340
+03/16/18 - 11:23:09 - INFO - Upating BreadOrder: 338
+03/16/18 - 11:23:40 - ERROR - Value cannot be null.
+Parameter name: array
+   at System.Array.IndexOf[T](T[] array, T value)
+   at BuddhaBowls.Services.DatabaseInterface.<>c__DisplayClass3_0.<GetRecords>b__0(String x)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecords(String tableName, Dictionary`2 mapping, Int32 limit)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecord(String tableName, Dictionary`2 mapping)
+   at BuddhaBowls.Models.DailySale..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.DailySale.Insert()
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/16/18 - 12:03:05 - INFO - Application starting
+03/16/18 - 12:03:05 - INFO - Loading models
+03/16/18 - 12:03:06 - INFO - Models loaded
+03/16/18 - 12:03:09 - INFO - Upating BreadOrder: 340
+03/16/18 - 12:03:09 - INFO - Upating BreadOrder: 341
+03/16/18 - 12:29:42 - INFO - Application starting
+03/16/18 - 12:29:42 - INFO - Loading models
+03/16/18 - 12:29:43 - INFO - Models loaded
+03/16/18 - 12:29:50 - INFO - Upating BreadOrder: 339
+03/16/18 - 12:29:50 - INFO - Upating BreadOrder: 341
+03/16/18 - 12:29:50 - INFO - Upating BreadOrder: 340
+03/16/18 - 12:29:50 - INFO - Application closing
+03/16/18 - 12:30:02 - INFO - Application starting
+03/16/18 - 12:30:02 - INFO - Loading models
+03/16/18 - 12:30:03 - INFO - Models loaded
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:07 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:09 - INFO - Executing ChangeableTabVM#SwitchPage
+03/16/18 - 12:30:09 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:09 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:09 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:11 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:11 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:11 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:14 - INFO - Upating BreadOrder: 341
+03/16/18 - 12:30:16 - INFO - Upating BreadOrder: 340
+03/16/18 - 12:30:16 - INFO - Changed to tab: Inventory
+03/16/18 - 12:30:18 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:20 - INFO - Upating BreadOrder: 337
+03/16/18 - 12:30:20 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:22 - INFO - Upating BreadOrder: 338
+03/16/18 - 12:30:23 - INFO - Executing CogsVM#OpenEndInv
+03/16/18 - 12:30:23 - INFO - Adding temp tab: NewInventoryVM
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:23 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:24 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:24 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:24 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:24 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:25 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:26 - INFO - Upating BreadOrder: 339
+03/16/18 - 12:30:28 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:28 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:29 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:31 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:39 - INFO - Executing CogsVM#OpenEndInv
+03/16/18 - 12:30:39 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:40 - INFO - Changed to tab: View Inventory
+03/16/18 - 12:30:42 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:45 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:54 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:59 - INFO - Changed to tab: Reports
+03/16/18 - 12:30:59 - INFO - Changed to tab: Reports
+03/16/18 - 12:31:12 - INFO - Changed to tab: Orders
+03/16/18 - 12:31:14 - INFO - Changed to tab: Orders
+03/16/18 - 12:31:17 - INFO - Changed to tab: Orders
+03/16/18 - 12:31:23 - INFO - Upating PurchaseOrder: 199
+03/16/18 - 12:31:23 - INFO - Upating InventoryItem: 79
+03/16/18 - 12:31:23 - INFO - Upating InventoryItem: 106
+03/16/18 - 12:31:23 - INFO - Upating InventoryItem: 121
+03/16/18 - 12:31:23 - INFO - Upating InventoryItem: 90
+03/16/18 - 12:31:23 - INFO - Upating InventoryItem: 95
+03/16/18 - 12:31:23 - INFO - Upating InventoryItem: 78
+03/16/18 - 12:31:24 - INFO - Upating InventoryItem: 119
+03/16/18 - 12:31:24 - INFO - Upating InventoryItem: 116
+03/16/18 - 12:31:24 - INFO - Upating InventoryItem: 85
+03/16/18 - 12:31:24 - INFO - Upating InventoryItem: 110
+03/16/18 - 12:31:24 - INFO - Upating InventoryItem: 81
+03/16/18 - 12:31:24 - INFO - Upating InventoryItem: 122
+03/16/18 - 12:31:24 - INFO - Upating Vendor: 3
+03/16/18 - 12:31:24 - INFO - Changed to tab: Orders
+03/16/18 - 12:31:24 - INFO - Changed to tab: Orders
+03/16/18 - 12:31:24 - INFO - Changed to tab: Orders
+03/16/18 - 12:31:25 - INFO - Changed to tab: Orders
+03/16/18 - 12:31:27 - INFO - Changed to tab: Reports
+03/16/18 - 12:31:28 - INFO - Changed to tab: Reports
+03/16/18 - 12:31:28 - INFO - Changed to tab: Reports
+03/16/18 - 12:31:29 - INFO - Changed to tab: Orders
+03/16/18 - 12:31:45 - ERROR - Value cannot be null.
+Parameter name: array
+   at System.Array.IndexOf[T](T[] array, T value)
+   at BuddhaBowls.Services.DatabaseInterface.<>c__DisplayClass3_0.<GetRecords>b__0(String x)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecords(String tableName, Dictionary`2 mapping, Int32 limit)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecord(String tableName, Dictionary`2 mapping)
+   at BuddhaBowls.Models.DailySale..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.DailySale.Insert()
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/16/18 - 12:32:49 - INFO - Application starting
+03/16/18 - 12:32:49 - INFO - Loading models
+03/16/18 - 12:32:50 - INFO - Models loaded
+03/16/18 - 12:32:54 - INFO - Upating BreadOrder: 339
+03/16/18 - 12:32:54 - INFO - Upating BreadOrder: 337
+03/16/18 - 12:32:54 - INFO - Upating BreadOrder: 341
+03/16/18 - 12:32:55 - INFO - Upating BreadOrder: 340
+03/16/18 - 12:32:58 - INFO - Upating BreadOrder: 338
+03/16/18 - 12:33:13 - ERROR - Value cannot be null.
+Parameter name: array
+   at System.Array.IndexOf[T](T[] array, T value)
+   at BuddhaBowls.Services.DatabaseInterface.<>c__DisplayClass3_0.<GetRecords>b__0(String x)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecords(String tableName, Dictionary`2 mapping, Int32 limit)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecord(String tableName, Dictionary`2 mapping)
+   at BuddhaBowls.Models.DailySale..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.DailySale.Insert()
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/16/18 - 12:34:08 - INFO - Application starting
+03/16/18 - 12:34:08 - INFO - Loading models
+03/16/18 - 12:34:09 - INFO - Models loaded
+03/16/18 - 12:34:12 - INFO - Upating BreadOrder: 339
+03/16/18 - 12:34:13 - INFO - Upating BreadOrder: 341
+03/16/18 - 12:34:13 - INFO - Upating BreadOrder: 337
+03/16/18 - 12:34:14 - INFO - Upating BreadOrder: 340
+03/16/18 - 12:34:15 - INFO - Upating BreadOrder: 338
+03/16/18 - 12:34:27 - INFO - Changed to tab: Reports
+03/16/18 - 12:34:30 - INFO - Changed to tab: Reports
+03/16/18 - 12:34:34 - INFO - Changed to tab: Reports
+03/16/18 - 12:34:43 - INFO - Changed to tab: Orders
+03/16/18 - 12:34:44 - INFO - Changed to tab: Orders
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:46 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:47 - INFO - Changed to tab: Inventory
+03/16/18 - 12:34:47 - INFO - Changed to tab: Orders
+03/16/18 - 12:34:48 - INFO - Changed to tab: Orders
+03/16/18 - 12:34:50 - INFO - Changed to tab: Orders
+03/16/18 - 12:35:05 - ERROR - Value cannot be null.
+Parameter name: array
+   at System.Array.IndexOf[T](T[] array, T value)
+   at BuddhaBowls.Services.DatabaseInterface.<>c__DisplayClass3_0.<GetRecords>b__0(String x)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecords(String tableName, Dictionary`2 mapping, Int32 limit)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecord(String tableName, Dictionary`2 mapping)
+   at BuddhaBowls.Models.DailySale..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.DailySale.Insert()
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/16/18 - 13:14:54 - INFO - Application starting
+03/16/18 - 13:14:54 - INFO - Loading models
+03/16/18 - 13:14:56 - INFO - Models loaded
+03/16/18 - 13:15:01 - INFO - Upating BreadOrder: 341
+03/16/18 - 13:34:44 - INFO - Application starting
+03/16/18 - 13:34:44 - INFO - Loading models
+03/16/18 - 13:34:45 - INFO - Models loaded
+03/16/18 - 13:34:49 - INFO - Upating BreadOrder: 341
+03/16/18 - 13:34:49 - INFO - Upating BreadOrder: 339
+03/16/18 - 13:34:50 - INFO - Upating BreadOrder: 337
+03/16/18 - 13:34:50 - INFO - Upating BreadOrder: 340
+03/16/18 - 13:34:51 - INFO - Upating BreadOrder: 338
+03/16/18 - 13:35:10 - ERROR - The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at BuddhaBowls.ProfitLossVM.GetOverheadSummaryItems(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/16/18 - 13:35:47 - INFO - Application starting
+03/16/18 - 13:35:47 - INFO - Loading models
+03/16/18 - 13:35:49 - INFO - Models loaded
+03/16/18 - 13:36:01 - INFO - Application starting
+03/16/18 - 13:36:01 - INFO - Loading models
+03/16/18 - 13:36:02 - INFO - Models loaded
+03/16/18 - 13:36:05 - INFO - Changed to tab: Vendors
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:05 - INFO - Changed to tab: Orders
+03/16/18 - 13:36:06 - INFO - Upating BreadOrder: 341
+03/16/18 - 13:36:06 - INFO - Upating BreadOrder: 339
+03/16/18 - 13:36:06 - INFO - Upating BreadOrder: 340
+03/16/18 - 13:36:07 - INFO - Upating BreadOrder: 337
+03/16/18 - 13:36:09 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:09 - INFO - Upating BreadOrder: 338
+03/16/18 - 13:36:09 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:09 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:09 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:09 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:09 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:09 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:10 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:11 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:11 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:11 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:11 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:11 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:11 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:12 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:12 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:12 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:12 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:12 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:12 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:13 - INFO - Changed to tab: Inventory
+03/16/18 - 13:36:13 - INFO - Changed to tab: Orders
+03/16/18 - 13:36:25 - ERROR - The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at BuddhaBowls.ProfitLossVM.GetOverheadSummaryItems(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/16/18 - 13:37:57 - INFO - Application starting
+03/16/18 - 13:37:57 - INFO - Loading models
+03/16/18 - 13:37:59 - INFO - Models loaded
+03/16/18 - 13:38:02 - INFO - Upating BreadOrder: 337
+03/16/18 - 13:38:03 - INFO - Upating BreadOrder: 341
+03/16/18 - 13:38:03 - INFO - Upating BreadOrder: 340

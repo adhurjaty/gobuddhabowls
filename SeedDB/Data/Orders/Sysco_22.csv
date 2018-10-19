@@ -1,0 +1,23 @@
+Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,Id
+Mozzarella,Dairy,CASE 30lb,18,5lb BAG,6,OZ-wt,480,1,66.76,2,1/15/2017 10:02:07 AM,0
+Cheddar,Dairy,CASE 20lb,8,5lb BAG,4,OZ-wt,320,1,43.65,3,1/15/2017 10:02:07 AM,1
+Butter,Dairy,CASE 30lb,41,1lb,30,OZ-wt,480,1,76.99,1,1/15/2017 10:02:07 AM,4
+Whole Milk,Dairy,2 GALLON,9,GALLON,2,CUP,32,1,4.69,12,1/15/2017 10:02:07 AM,9
+Pesto,Dairy,4/33.5,7,BUCKET,4,OZ-wt,4,0.97,126,1,1/15/2017 10:02:07 AM,11
+Pizza Sauce,Dry Goods,6# CANS,6,CAN,6,EA,6,1,20.89,1,1/15/2017 10:02:07 AM,13
+Garbanzo Beans,Dry Goods,6# CANS,8,CAN,6,EA,6,1,25,1,1/15/2017 10:02:07 AM,16
+Pinto Beans,Dry Goods,6# CANS,8,CAN,6,EA,6,1,23,1,1/15/2017 10:02:07 AM,17
+Macaroni,Dry Goods,2lb,15,BAG,2,EA,320,2.41,19.88,2,1/15/2017 10:02:07 AM,21
+Roasted Bell Peppers,Dry Goods,6# CANS,5,CAN,6,OZ-wt,360,0.98,36.09,2,1/15/2017 10:02:07 AM,23
+Tomato Juice,Dry Goods,12x48oz CANS,39,CAN,12,EA,12,1,13.24,3,1/15/2017 10:02:07 AM,25
+Canola Oil,Dry Goods,30lb JUG,0.6,JUG,1,OZ-wt,800,0.99,20.85,1,1/15/2017 10:02:07 AM,34
+Olive Oil,Dry Goods,6 GAL,3.9,JUG,6,OZ-fl,768,0.99,67,1,1/15/2017 10:02:07 AM,36
+Flour,Dry Goods,25lb,1.1,BAG,1,CUP,66.67,1,6.67,1,1/15/2017 10:02:07 AM,37
+Kalamata Olives,Dry Goods,EACH,1,JAR,1,OZ-wt,64.8,1,12.82,1,1/15/2017 10:02:07 AM,41
+Salt,Herbs,25lbs,7,Container,8.9,TBL,615,1,5.12,1,1/15/2017 10:02:07 AM,49
+Yellow Onions,Produce,50lb,1.75,BAG,1,OZ-wt,800,0.85,10.5,2,1/15/2017 10:02:07 AM,54
+Mixed Greens,Produce,3lb,1,BAG,1,OZ-wt,48,0.98,5.99,1,1/15/2017 10:02:07 AM,58
+Garlic Peeled,Produce,5lb JAR,0.2,JAR,1,OZ-wt,114.29,0.98,17,1,1/15/2017 10:02:07 AM,71
+Chicken Breast,Poultry,40lb CASE,2,CASE,1,OZ-wt,640,0.85,68.7,4,1/15/2017 10:02:07 AM,72
+Ground Beef,Meats,20lb CASE,2,LOG,2,EA,2,1,53,1,1/15/2017 10:02:07 AM,73
+Italian Sausage,Meats,10lb CASE,22,BAG,2,OZ-wt,160,0.91,27.16,5,1/15/2017 10:02:07 AM,74

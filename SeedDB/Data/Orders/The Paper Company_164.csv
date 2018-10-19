@@ -1,0 +1,11 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,Paper Goods,Case,10,Stack,4,Each,40,4E+07,39.55,7,12/5/2017 12:00:00 AM,3
+79,Water Cups,Paper Goods,2500,25,Sleeve,25,1,2500,10000,73.7,1,12/5/2017 12:00:00 AM,3
+82,Forks,Paper Goods,1000,4.5,Sleeve,10,1,1,10000,20.59,1,12/5/2017 12:00:00 AM,3
+86,Small To-Go Bags,Paper Goods,500,0.25,Case,1,1,1,100,14.88,1,12/5/2017 12:00:00 AM,3
+95,Napkins,Paper Goods,6000,8,Stack,12,1,1,10000,45.46,1,12/5/2017 12:00:00 AM,3
+110,Poly Gloves,Paper Goods,2000,12,BOX,4,1,1,100,15.8,2,12/5/2017 12:00:00 AM,3
+116,Straws,Paper Goods,2000,2.5,BOX,4,1,1,100,10.06,1,12/5/2017 12:00:00 AM,3
+121,Die-Cut To-Go Bags,Paper Goods,500,0.8,CASE,1,1,1,100,55.35,1,12/5/2017 12:00:00 AM,3
+125,Bleach,Janitorial,4 GAL,4.2,GALLON,4,1,1,100,8,1,12/5/2017 12:00:00 AM,3
+126,Steel Wool,Janitorial,12 COUNT,9,Sleeve,12,1,1,100,4.77,1,12/5/2017 12:00:00 AM,3

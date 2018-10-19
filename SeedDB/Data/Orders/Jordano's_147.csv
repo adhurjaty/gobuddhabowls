@@ -1,0 +1,2 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+75,Bacon Bits,83.48,2,10lb CASE,Meats,0,BAG,OZ-wt,160,100,2,11/11/2017 12:00:00 AM,8

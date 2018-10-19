@@ -1,0 +1,109 @@
+Id,Name,Category,PurchasedUnit,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Count,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,Dairy,CASE 30lb,5lb BAG,6,OZ-wt,80,4,1,55.99,1,3/8/2018 12:00:00 AM,0
+1,Cheddar,Dairy,CASE 20lb,5lb BAG,4,OZ-wt,80,5,1,42.04,2,3/8/2018 12:00:00 AM,0
+2,Pepper Jack,Dairy,CASE 20lb,5lb BAG,4,OZ-wt,80,4,1,43.9,1,3/8/2018 12:00:00 AM,0
+3,Feta,Dairy,33lbs,5lb BAG,1,OZ-wt,160,0.7,1,49.74,2,3/2/2018 12:00:00 AM,2
+4,Butter,Dairy,CASE 30lb,1lb,30,OZ-wt,16,26,1,85.88,1,3/8/2018 12:00:00 AM,0
+5,Sour Cream,Dairy,2 x 5lb,GALLON,2,OZ-wt,16,1,1,13.99,1,3/8/2018 12:00:00 AM,0
+6,Heavy Cream,Dairy,1/2 Gallon,1/2 GALLON,1,CUP,8,6,1,5.99,3,2/2/2018 12:40:38 PM,6
+8,Eggs,Dairy,15 DOZEN,TRAY,6,EA,180,3.1,0.95,31.89,1,2/26/2018 11:53:10 AM,0
+9,Whole Milk,Dairy,2 GALLON,GALLON,2,CUP,16,22,1,4.99,15,3/2/2018 12:00:00 AM,6
+11,Pesto,Dairy,2/22lb,BAG,2,OZ-wt,1,2,1,107.99,2,2/26/2018 11:53:10 AM,0
+13,Pizza Sauce,Grocery,6# CANS,CAN,6,EA,6,3,100,22,1,3/8/2018 12:00:00 AM,0
+14,Stewed Tomatoes,Grocery,6# CANS,CAN,6,EA,1,6,1,15.79,1,3/8/2018 12:00:00 AM,0
+18,Artichoke Hearts,Grocery,6# CANS,CAN,6,OZ-wt,324,0,10000,62.57,1,3/5/2018 12:00:00 AM,0
+19,Mayonnaise,Grocery,4 GAL,JUG,4,EA,1,7,1,32.15,1,3/11/2018 1:25:25 PM,10
+20,BBQ Sauce,Grocery,CS 39.5lbs,JUG,4,OZ-wt,632,8,9800,48.99,1,3/5/2018 10:48:08 AM,2
+21,Macaroni,Grocery,20lb CASE,BAG,2,EA,160,4,2.41,19.82,4,3/8/2018 12:00:00 AM,0
+23,Roasted Bell Peppers,Grocery,6# CANS,CAN,6,OZ-wt,63.5,89,1,37.94,1,3/5/2018 10:48:08 AM,2
+24,Chopped Clams,Grocery,12x48oz CANS,CAN,12,EA,1,5,1,91.55,1,3/1/2018 12:00:00 AM,0
+25,Tomato Juice,Grocery,12x48oz CANS,CAN,12,EA,1,24,1,15.79,3,3/8/2018 12:00:00 AM,0
+26,Clam Juice,Grocery,12x48oz CANS,CAN,12,EA,1,2,1,31.37,0,,0
+30,Balsamic Vinegar,Grocery,2 x 5 Liter,JUG,2,OZ-wt,169.07,1.5,1,18.5,1,2/11/2018 12:00:00 AM,2
+31,Tapatio,Grocery,EA,BOTTLE,12,EA,12,13,1,12.84,1,3/2/2018 12:00:00 AM,2
+32,Sriracha,Grocery,12x17oz,BOTTLE,12,EA,12,11,1,18.88,1,3/2/2018 12:00:00 AM,2
+33,Chicken Broth,Grocery,4x32oz,BOTTLE,4,OZ-wt,1,0,1,39,0,,2
+34,Canola Oil,Grocery,35lb JUG,JUG,1,OZ-wt,800,1.1,99,25.25,1,3/8/2018 12:00:00 AM,0
+36,Olive Oil,Grocery,6 GAL,JUG,6,OZ-fl,128,8,1,49.95,1,3/8/2018 12:00:00 AM,0
+38,Sugar (BROWN),Grocery,25lb,QUART,16,CUP,62.5,8,1,13.88,0,12/28/2016 11:52,6
+40,Tahini,Grocery,40lbs,Container,1,OZ-wt,640,1,1,58.45,1,3/2/2018 12:00:00 AM,2
+41,Kalamata Olives,Grocery,6x4.4lbs,JAR,6,OZ-wt,64.8,4,1,47.18,1,3/2/2018 12:00:00 AM,2
+42,Lemon Juice,Grocery,4 GAL,GAL,4,OZ-wt,128,0,1,16.72,1,2/15/2018 2:38:32 PM,2
+43,Dried Basil,Herbs,12oz,OZ-wt,24,TBL,274.29,47.4,1,9.81,1,12/11/2017 12:00:00 AM,2
+44,Thyme,Herbs,2 lbs,OZ-wt,32,TBL,243.81,35.4,1,13.34,2,2/11/2018 12:00:00 AM,2
+45,Oregano,Herbs,1.5lbs,OZ-wt,24,TBL,9.697,42.4,1,13.9,1,2/11/2018 12:00:00 AM,2
+46,Cumin,Herbs,5lbs,OZ-wt,80,TBL,5,81,1,17.47,1,12/11/2017 12:00:00 AM,2
+47,Cayenne Pepper,Herbs,5lbs,OZ-wt,80,TBL,1,44.8,1,21.46,1,12/11/2017 12:00:00 AM,2
+48,Pepper,Herbs,5lbs,OZ-wt,80,TBL,3.9,19.6,1,25.15,3,2/11/2018 12:00:00 AM,2
+49,Salt,Herbs,EA,Container,1,TBL,615,0.2,1,5.9,1,3/1/2018 12:00:00 AM,0
+50,Chili Powder,Herbs,6lbs,OZ-wt,96,TBL,78.05,91.2,1,24.43,1,2/11/2018 12:00:00 AM,2
+51,Paprika,Herbs,5lbs,OZ-wt,80,TBL,36.96,103.4,1,16.67,1,2/11/2018 12:00:00 AM,2
+54,Yellow Onions,Produce,20lbs,BAG,4,OZ-wt,80,7,1,16.59,9,3/8/2018 12:00:00 AM,0
+55,Red Onions,Produce,25lb,BAG,1,OZ-wt,400,0.6,8500,11.5,1,3/8/2018 12:00:00 AM,0
+56,Potatoes,Produce,50lb,1/2 CASE,1,OZ-wt,800,0.5,0.85,17.89,1,3/5/2018 12:00:00 AM,0
+57,Spinach,Produce,4x2.5lb,BAG,4,OZ-wt,160,6,99,16.5,3,3/8/2018 12:00:00 AM,0
+58,Mixed Greens,Produce,3lb,BAG,1,OZ-wt,48,0,9800,5.99,2,3/8/2018 12:00:00 AM,0
+59,Mushrooms,Produce,10lb CASE,FLAT,1,OZ-wt,160,0,0.9,26.95,2,3/11/2018 1:25:25 PM,10
+60,Cucumbers,Produce,36 COUNT,CASE,1,OZ-wt,420,0.1,950000,23.07,1,3/8/2018 12:00:00 AM,0
+61,Tomatoes,Produce,25lb,CASE,1,OZ-wt,400,0,0.95,16.71,1,3/8/2018 12:00:00 AM,0
+62,Avocado,Produce,60 COUNT,EACH,60,EA,24,36,1,27.5,1,1/17/2018 3:42:46 PM,0
+63,Celery,Produce,24 COUNT,1/2 CASE,24,BUNCH,1,0.9,1,28.35,1,2/22/2018 2:57:03 PM,0
+64,Fresh Basil,Produce,1lb,BAG,1,OZ-wt,16,0,1,8.99,1,3/8/2018 12:00:00 AM,0
+66,Pineapple,Produce,6 COUNT,EACH,6,OZ-wt,44,1,100,16.99,1,3/8/2018 12:00:00 AM,0
+71,Garlic Peeled,Produce,5lbs,JAR,1,OZ-wt,114.29,0,1,16.99,2,3/8/2018 12:00:00 AM,0
+72,Chicken Breast,Poultry,40lb CASE,CASE,1,OZ-wt,640,1,85,42.53,4,3/8/2018 12:00:00 AM,0
+73,Ground Beef,Meats,20lb CASE,LOG,2,EA,2,3,10000,23.33,3,3/1/2018 12:00:00 AM,0
+74,Italian Sausage,Meats,20lb CASE,BAG,4,OZ-wt,160,11,91,47.5,3,3/8/2018 12:00:00 AM,0
+75,Bacon Bits,Meats,10lb CASE,BAG,2,OZ-wt,80,0,1,51.99,1,3/8/2018 12:00:00 AM,0
+77,Whole Wheat,Bread,EA,EACH,1,EA,1,0,1,0.67,0,,7
+78,Biopack #4,Paper Goods,Case,Stack,4,Each,40,0,0.4,39.55,6,3/7/2018 12:00:00 AM,3
+79,Water Cups,Paper Goods,2500,Sleeve,25,1,2500,19,1,80.16,1,2/28/2018 12:00:00 AM,3
+80,Soufle Lids,Paper Goods,2500,Sleeve,25,1,1,4.4,1,24.37,1,3/7/2018 12:00:00 AM,3
+81,Spoons,Paper Goods,1000,Sleeve,10,1,1,0,1,7,1,3/7/2018 12:00:00 AM,3
+82,Forks,Paper Goods,1000,Sleeve,10,1,1,0,1,20.59,1,3/7/2018 12:00:00 AM,3
+85,Wax Paper Sheets,Paper Goods,6000,Stack,6,1,1,0,1,54.65,1,3/7/2018 12:00:00 AM,3
+86,Small To-Go Bags,Paper Goods,500,Case,1,1,1,0,1,16.21,1,3/7/2018 12:00:00 AM,3
+87,Foil Roll,Paper Goods,ROLL,1,1,1,1,1.1,1,17.65,5,,2
+89,To-Go Soup Bowls (16oz),Paper Goods,500,Sleeve,10,1,1,0,1,48.78,1,3/7/2018 12:00:00 AM,3
+90,Paper Towels,Paper Goods,4000,Sleeve,16,1,1,0,1,16.11,1,2/28/2018 12:00:00 AM,3
+91,To-Go Soup Lids,Paper Goods,500,Sleeve,10,1,1,0,1,42.68,1,3/7/2018 12:00:00 AM,3
+92,To-Go Soup Bowls (12oz),Paper Goods,500,Sleeve,10,1,1,8,1,42.68,1,3/7/2018 12:00:00 AM,3
+95,Napkins,Paper Goods,6000,Stack,12,1,1,0,1,43.23,1,2/28/2018 12:00:00 AM,3
+97,Dried Black Beans,Grocery,50lbs,Quart,27.414,3.5,1,8,1,36.99,1,2/19/2018 12:00:00 AM,0
+99,Cinnamon,Herbs,,LB,80,OZ-wt,1,71.2,1,18.02,1,12/11/2017 12:00:00 AM,2
+100,Passion Syrup,Beverage,6/5.5lbs,5.5 lbs,6,CUP,7.65,10,1,60,0,,5
+101,Allspice,Herbs,1lb,OZ-wt,16,TBL,1,41,1,8.02,0,,2
+102,Black Tea,Beverage,(20 x 600g) CASE,BAG,20,CUP,5.88,14.5,1,110,0,,5
+104,Honey,Beverage,5lbs,JAR,1,CUP,6.96,2.25,1,11.99,0,4/24/2017 15:47,6
+106,24 Oz Cups,Paper Goods,600 COUNT,Sleeve,12,Each,1,10,1,64.75,1,2/28/2018 12:00:00 AM,3
+107,Dried Pinto Beans,Grocery,25lb,Quart,14.47,8,8,27,10000,25.49,1,3/1/2018 12:00:00 AM,0
+109,Sanitizer,Janitorial,4 GAL,GALLON,4,1,1,1.1,1,37.87,0,,3
+110,Poly Gloves,Paper Goods,2000,BOX,4,1,1,0,1,15.8,2,3/7/2018 12:00:00 AM,3
+111,Sourdough,Bread,EA,EACH,1,1,1,0,1,0.67,0,,7
+112,Dried Garbanzo Beans,Grocery,25lb,QUART,13.318,LB,1.877,64.64,1,22.93,2,3/2/2018 12:00:00 AM,2
+113,Crushed Red Pepper,Herbs,5lbs,OZ-wt,80,TBL,1,54.8,1,17.15,1,12/11/2017 12:00:00 AM,2
+114,Sugar (CANE),Beverage,EA,QUART,16,CUP,1,8,1,30,0,,6
+115,16/24 Oz Lids,Paper Goods,1000 CASE,Sleeve,10,1,1,12,1,25.51,1,3/7/2018 12:00:00 AM,3
+116,Straws,Paper Goods,2000,BOX,4,1,1,2.5,1,10.06,1,2/28/2018 12:00:00 AM,3
+117,16 Oz Cups,Paper Goods,1000 CASE,Sleeve,20,1,1,10,1,54.75,1,,3
+118,Large To-Go Bags,Paper Goods,500,BAG,1,1,1,0.4,1,52.81,1,2/14/2018 12:00:00 AM,3
+119,Soufle Cups,Paper Goods,2500,Sleeve,25,1,1,6,1,28.99,1,2/28/2018 12:00:00 AM,3
+120,Ceramawrap,Paper Goods,2000,EACH,1,1,1,0,1,10.54,1,2/7/2018 11:52:55 AM,3
+121,Die-Cut To-Go Bags,Paper Goods,500,CASE,1,1,1,0,1,60.34,1,2/28/2018 12:00:00 AM,3
+122,Garbage Bags,Janitorial,250,CASE,1,1,1,1.1,1,28.62,1,3/7/2018 12:00:00 AM,3
+123,Detergent,Janitorial,5 GAL,GALLON,4,1,1,1,1,21.02,2,12/11/2017 12:00:00 AM,2
+124,De-Greaser,Janitorial,1 Gal,GALLON,4,1,1,3.1,1,5.53,1,2/21/2018 12:00:00 AM,3
+125,Bleach,Janitorial,4 GAL,GALLON,4,1,1,0,1,8,1,2/21/2018 12:00:00 AM,3
+126,Steel Wool,Janitorial,12 COUNT,Sleeve,12,1,1,9,1,4.62,1,3/7/2018 12:00:00 AM,3
+127,Floor Cleaner,Janitorial,3 GAL,1 GAL,3,1,1,0,1,73.67,1,,3
+128,Bay Leaves,Herbs,8oz,OZ-wt,8,OZ-wt,1,19.4,1,10.48,1,12/11/2017 12:00:00 AM,2
+129,Lemonade Base,Beverage,EA,GALLON,4,1,16,1.3,,21.11,1.75,2/11/2018 12:00:00 AM,2
+130,Pink Lemonade Base,Beverage,4 GAL,GALLON,4,1,1,3.6,,22.23,2,3/2/2018 12:00:00 AM,2
+131,Jalapenos Nacho Sliced,Grocery,EA,CAN,6,OZ-wt,1,1,,19.99,1,3/1/2018 12:00:00 AM,0
+132,Grill Screens,Janitorial,,Sleeve,0,EA,1,0,1,0,0,,
+133,Grill Pads,Janitorial,60 COUNT,Sleeve,6,1,1,0,1,69.39,1,3/7/2018 12:00:00 AM,3
+134,Buttermilk,Dairy,,1/2 GALLON,0,EA,1,0,1,0,0,,
+135,Hidden Valley Ranch,Grocery,,EACH,0,EA,1,0,1,0,0,,
+136,Red Wine Vinegar,Grocery,,GAL,0,OZ-fl,1,0,1,0,0,,
+137,Fresh Mint,Produce,,1lb,0,OZ-wt,1,0,1,0,0,,
+138,Strawberries,Produce,EA,Basket,1,OZ-wt,1,0,1,4,0,,

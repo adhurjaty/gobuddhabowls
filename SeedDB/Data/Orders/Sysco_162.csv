@@ -1,0 +1,20 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+13,Pizza Sauce,21.45,6,6# CANS,Grocery,5,CAN,EA,6,100,1,11/29/2017 12:00:00 AM,0
+14,Stewed Tomatoes,15.47,6,6# CANS,Grocery,5,CAN,EA,6,100,1,11/29/2017 12:00:00 AM,0
+21,Macaroni,17.72,2,20lb CASE,Grocery,3,BAG,EA,160,2.41,5,11/29/2017 12:00:00 AM,0
+23,Roasted Bell Peppers,37.44,6,6# CANS,Grocery,28,CAN,OZ-wt,360,98,1,11/29/2017 12:00:00 AM,0
+36,Olive Oil,50.8,6,6 GAL,Grocery,5.25,JUG,OZ-fl,128,99,1,11/29/2017 12:00:00 AM,0
+54,Yellow Onions,16.95,4,20lbs,Produce,8,BAG,OZ-wt,800,85,5,11/29/2017 12:00:00 AM,0
+56,Potatoes,13.79,1,50lb,Produce,1,1/2 CASE,OZ-wt,800,850000,1,11/29/2017 12:00:00 AM,0
+57,Spinach,15.79,4,4x2.5lb,Produce,0,BAG,OZ-wt,160,99,3,11/29/2017 12:00:00 AM,0
+58,Mixed Greens,5.99,1,3lb,Produce,0,BAG,OZ-wt,48,9800,2,11/29/2017 12:00:00 AM,0
+61,Tomatoes,17.9,1,25lb,Produce,1,CASE,OZ-wt,400,0.95,2,11/29/2017 12:00:00 AM,0
+62,Avocado,49.99,60,60 COUNT,Produce,108,EACH,EA,24,10000,1,11/29/2017 12:00:00 AM,0
+63,Celery,20.85,24,24 COUNT,Produce,12,1/2 CASE,BUNCH,12,100,1,11/29/2017 12:00:00 AM,0
+64,Fresh Basil,8.99,1,1lb,Produce,0.25,BAG,OZ-wt,16,65,1,11/29/2017 12:00:00 AM,0
+66,Pineapple,16.99,6,6 COUNT,Produce,0,EACH,OZ-wt,44,100,1,11/29/2017 12:00:00 AM,0
+71,Garlic Peeled,18.63,1,5lbs,Produce,1,JAR,OZ-wt,114.29,98,1,11/29/2017 12:00:00 AM,0
+72,Chicken Breast,42.99,1,40lb CASE,Poultry,0,CASE,OZ-wt,640,85,5,11/29/2017 12:00:00 AM,0
+73,Ground Beef,45.8,2,20lb CASE,Meats,3,LOG,EA,2,10000,1,11/29/2017 12:00:00 AM,0
+75,Bacon Bits,54.99,2,10lb CASE,Meats,2,BAG,OZ-wt,80,1,4,11/29/2017 12:00:00 AM,0
+107,Dried Pinto Beans,28.69,14.47,25lb,Grocery,8,Quart,8,8,10000,1,11/29/2017 12:00:00 AM,0

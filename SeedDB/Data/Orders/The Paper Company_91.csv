@@ -1,0 +1,14 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,39.55,4,Case,Paper Goods,15,Stack,Each,40,4E+07,4,8/22/2017 12:00:00 AM,3
+80,Soufle Lids,26.35,25,2500,Paper Goods,13,Sleeve,1,1,100,1,8/22/2017 12:00:00 AM,3
+82,Forks,20.59,10,1000,Paper Goods,13,Sleeve,1,1,10000,1,8/22/2017 12:00:00 AM,3
+86,Small To-Go Bags,14.88,1,500,Paper Goods,0.75,Case,1,1,100,1,8/22/2017 12:00:00 AM,3
+89,To-Go Soup Bowls (16oz),48.78,10,500,Paper Goods,10,Sleeve,1,1,1000000,1,8/22/2017 12:00:00 AM,3
+90,Paper Towels,16.11,16,4000,Paper Goods,9,Sleeve,1,1,1E+08,1,8/22/2017 12:00:00 AM,3
+95,Napkins,45.46,12,6000,Paper Goods,5,Stack,1,1,10000,1,8/22/2017 12:00:00 AM,3
+106,24 Oz Cups,58.86,12,600 COUNT,Paper Goods,10,Sleeve,Each,1,10000,1,8/22/2017 12:00:00 AM,3
+110,Poly Gloves,15.8,4,2000,Paper Goods,14,BOX,1,1,100,1,8/22/2017 12:00:00 AM,3
+115,16/24 Oz Lids,23.19,10,1000 CASE,Paper Goods,7,Sleeve,1,1,100,1,8/22/2017 12:00:00 AM,3
+120,Ceramawrap,10.26,1,2000,Paper Goods,1,EACH,1,1,100,1,8/22/2017 12:00:00 AM,3
+121,Die-Cut To-Go Bags,55.35,1,500,Paper Goods,1,CASE,1,1,100,1,8/22/2017 12:00:00 AM,3
+123,Detergent,16.2,4,4 GAL,Janitorial,3.25,GALLON,1,1,100,1,8/22/2017 12:00:00 AM,3

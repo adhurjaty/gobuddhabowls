@@ -1,0 +1,345 @@
+Id,Date,GrossSales,SalesForecast,BreadDescDBString
+0,6/5/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=50;Id=-1
+1,6/6/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=50;Id=-1
+2,6/7/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=50;Id=-1
+3,6/8/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=50;Id=-1
+4,6/9/2017 12:00:00 AM,0,2500,Name=Sourdough;BeginInventory=104;Delivery=224;Backup=64;FreezerCount=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=64;Backup=32;FreezerCount=56;ParFactor=50;Id=-1
+5,6/10/2017 12:00:00 AM,0,2500,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=32;FreezerCount=0;ParFactor=50;Id=-1
+6,6/11/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=50;Id=-1
+7,6/12/2017 12:00:00 AM,1847.11,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+8,6/13/2017 12:00:00 AM,1774.03,1700,Name=Sourdough;BeginInventory=64;FreezerCount=0;Delivery=200;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=24;Delivery=48;Backup=32;ParFactor=50;Id=-1
+9,6/14/2017 12:00:00 AM,2082.57,1800,Name=Sourdough;BeginInventory=136;FreezerCount=24;Delivery=184;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=40;Backup=32;ParFactor=50;Id=-1
+10,6/15/2017 12:00:00 AM,2512.78,2200,Name=Sourdough;BeginInventory=48;FreezerCount=72;Delivery=112;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=24;Delivery=32;Backup=32;ParFactor=50;Id=-1
+11,6/16/2017 12:00:00 AM,2131.54,2200,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=328;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=8;Delivery=56;Backup=32;ParFactor=50;Id=-1
+12,6/17/2017 12:00:00 AM,1945.74,2000,Name=Sourdough;BeginInventory=128;FreezerCount=0;Delivery=184;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=8;Delivery=56;Backup=32;ParFactor=50;Id=-1
+13,6/18/2017 12:00:00 AM,689.68,0,Name=Sourdough;BeginInventory=88;FreezerCount=48;Delivery=80;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=56;FreezerCount=8;Delivery=32;Backup=32;ParFactor=50;Id=-1
+14,6/19/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+15,5/22/2017 12:00:00 AM,0,0,
+16,5/23/2017 12:00:00 AM,0,0,
+17,5/24/2017 12:00:00 AM,0,0,
+18,5/25/2017 12:00:00 AM,0,0,
+19,5/26/2017 12:00:00 AM,0,0,
+20,5/27/2017 12:00:00 AM,0,0,
+21,5/28/2017 12:00:00 AM,0,0,
+22,5/29/2017 12:00:00 AM,0,0,
+23,4/24/2017 12:00:00 AM,0,0,
+24,4/25/2017 12:00:00 AM,0,0,
+25,4/26/2017 12:00:00 AM,0,0,
+26,4/27/2017 12:00:00 AM,0,0,
+27,4/28/2017 12:00:00 AM,0,0,
+28,4/29/2017 12:00:00 AM,0,0,
+29,4/30/2017 12:00:00 AM,0,0,
+30,5/1/2017 12:00:00 AM,0,0,
+31,5/30/2017 12:00:00 AM,0,0,
+32,5/31/2017 12:00:00 AM,0,0,
+33,6/1/2017 12:00:00 AM,0,0,
+34,6/2/2017 12:00:00 AM,0,0,
+35,6/3/2017 12:00:00 AM,0,0,
+36,6/4/2017 12:00:00 AM,0,0,
+37,6/20/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=64;FreezerCount=0;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+38,6/21/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+39,6/22/2017 12:00:00 AM,0,0,Name=Sourdough;ParFactor=1;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;Id=-1|Name=Whole Wheat;ParFactor=1;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;Id=-1
+40,6/23/2017 12:00:00 AM,0,0,Name=Sourdough;ParFactor=1;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;Id=-1|Name=Whole Wheat;ParFactor=1;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;Id=-1
+41,6/24/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+42,6/25/2017 12:00:00 AM,1308.94,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+43,6/26/2017 12:00:00 AM,1391.04,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1,0,,0,
+44,6/27/2017 12:00:00 AM,1221.77,1200,Name=Sourdough;BeginInventory=96;Delivery=96;Backup=64;FreezerCount=0;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=8;Delivery=56;Backup=32;ParFactor=50;Id=-1
+45,6/28/2017 12:00:00 AM,1356.46,1400,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+46,6/29/2017 12:00:00 AM,1005.25,0,Name=Sourdough;BeginInventory=12;FreezerCount=16;Delivery=18;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+47,6/30/2017 12:00:00 AM,1301.6,0,Name=Sourdough;BeginInventory=12;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+48,7/1/2017 12:00:00 AM,1236.8,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+49,7/2/2017 12:00:00 AM,359.26,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+50,7/3/2017 12:00:00 AM,1348.71,1500,Name=Sourdough;BeginInventory=32;FreezerCount=104;Delivery=104;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=32;Backup=32;ParFactor=50;Id=-1
+51,7/4/2017 12:00:00 AM,1470.21,1400,Name=Sourdough;BeginInventory=56;FreezerCount=64;Delivery=232;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=24;Backup=32;ParFactor=50;Id=-1
+52,7/5/2017 12:00:00 AM,1047.4,1100,Name=Sourdough;BeginInventory=88;FreezerCount=88;Delivery=40;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=48;Backup=32;ParFactor=50;Id=-1
+53,7/6/2017 12:00:00 AM,1108.25,1200,Name=Sourdough;BeginInventory=48;FreezerCount=88;Delivery=104;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=40;Delivery=0;Backup=32;ParFactor=50;Id=-1
+54,7/7/2017 12:00:00 AM,752.14,1200,Name=Sourdough;BeginInventory=16;FreezerCount=88;Delivery=80;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=16;Backup=32;ParFactor=50;Id=-1
+55,7/8/2017 12:00:00 AM,1513.93,1400,Name=Sourdough;BeginInventory=88;FreezerCount=56;Delivery=168;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=24;Delivery=16;Backup=32;ParFactor=50;Id=-1
+56,7/9/2017 12:00:00 AM,1183.75,1200,Name=Sourdough;BeginInventory=64;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=0;Delivery=0;Backup=32;ParFactor=50;Id=-1
+57,7/10/2017 12:00:00 AM,784.1,800,Name=Sourdough;BeginInventory=16;FreezerCount=46;Delivery=112;Backup=64;ParFactor=11;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=56;Backup=32;ParFactor=40;Id=-1
+58,7/11/2017 12:00:00 AM,1085.82,1100,Name=Sourdough;BeginInventory=88;FreezerCount=16;Delivery=144;Backup=64;ParFactor=11;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=0;Delivery=32;Backup=32;ParFactor=40;Id=-1
+59,7/12/2017 12:00:00 AM,1084.21,1100,Name=Sourdough;BeginInventory=72;FreezerCount=80;Delivery=104;Backup=64;ParFactor=11;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=16;Delivery=60;Backup=32;ParFactor=40;Id=-1
+60,7/13/2017 12:00:00 AM,1143.14,1100,Name=Sourdough;BeginInventory=40;FreezerCount=136;Delivery=0;Backup=64;ParFactor=11;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=40;Delivery=0;Backup=32;ParFactor=40;Id=-1
+61,7/14/2017 12:00:00 AM,1431.3,1400,Name=Sourdough;BeginInventory=32;FreezerCount=32;Delivery=136;Backup=64;ParFactor=11;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=32;Delivery=56;Backup=32;ParFactor=40;Id=-1
+62,7/15/2017 12:00:00 AM,1306.24,1500,Name=Sourdough;BeginInventory=24;FreezerCount=36;Delivery=144;Backup=64;ParFactor=11;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=36;Delivery=40;Backup=32;ParFactor=40;Id=-1
+63,7/16/2017 12:00:00 AM,567.22,1300,Name=Sourdough;BeginInventory=48;FreezerCount=32;Delivery=136;Backup=64;ParFactor=11;Id=-1|Name=Whole Wheat;BeginInventory=48;FreezerCount=32;Delivery=0;Backup=32;ParFactor=40;Id=-1
+64,7/17/2017 12:00:00 AM,1122.07,1200,Name=Sourdough;BeginInventory=80;FreezerCount=32;Delivery=88;Backup=64;ParFactor=10.94129;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=32;Delivery=56;Backup=32;ParFactor=40.91813;Id=-1
+65,7/18/2017 12:00:00 AM,939.17,1100,Name=Sourdough;BeginInventory=56;FreezerCount=56;Delivery=96;Backup=64;ParFactor=10.43093;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=48;Delivery=0;Backup=32;ParFactor=36.30034;Id=-1
+66,7/19/2017 12:00:00 AM,1197.4,1100,Name=Sourdough;BeginInventory=64;FreezerCount=56;Delivery=80;Backup=64;ParFactor=10.43093;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=24;Backup=32;ParFactor=36.30034;Id=-1
+67,7/20/2017 12:00:00 AM,927.63,1200,Name=Sourdough;BeginInventory=64;FreezerCount=56;Delivery=144;Backup=64;ParFactor=10.43093;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=16;Backup=32;ParFactor=36.30034;Id=-1
+68,7/21/2017 12:00:00 AM,902.24,1300,Name=Sourdough;BeginInventory=64;FreezerCount=56;Delivery=144;Backup=64;ParFactor=10.94129;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=32;Delivery=32;Backup=32;ParFactor=40.91813;Id=-1
+69,7/22/2017 12:00:00 AM,1268.47,1400,Name=Sourdough;BeginInventory=128;FreezerCount=56;Delivery=88;Backup=64;ParFactor=10.43093;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=48;Backup=32;ParFactor=36.30034;Id=-1
+70,7/23/2017 12:00:00 AM,1428.72,1200,Name=Sourdough;BeginInventory=64;FreezerCount=104;Delivery=0;Backup=64;ParFactor=10.43093;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=56;Delivery=0;Backup=32;ParFactor=36.30034;Id=-1
+71,7/24/2017 12:00:00 AM,1349.97,1100,Name=Sourdough;BeginInventory=24;FreezerCount=16;Delivery=128;Backup=64;ParFactor=10.5208;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=48;Delivery=56;Backup=32;ParFactor=40.09493;Id=-1
+72,7/25/2017 12:00:00 AM,1103.44,1200,Name=Sourdough;BeginInventory=32;FreezerCount=16;Delivery=152;Backup=64;ParFactor=10.5208;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=48;Delivery=0;Backup=32;ParFactor=40.09493;Id=-1
+73,7/26/2017 12:00:00 AM,963.61,1100,Name=Sourdough;BeginInventory=56;FreezerCount=16;Delivery=92;Backup=64;ParFactor=10.5208;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=48;Delivery=16;Backup=32;ParFactor=40.09493;Id=-1
+74,7/27/2017 12:00:00 AM,992.29,1100,Name=Sourdough;BeginInventory=80;FreezerCount=16;Delivery=128;Backup=64;ParFactor=10.5208;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=48;Delivery=16;Backup=32;ParFactor=40.09493;Id=-1
+75,7/28/2017 12:00:00 AM,1307.8,1200,Name=Sourdough;BeginInventory=64;FreezerCount=56;Delivery=80;Backup=64;ParFactor=10.5208;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=32;Delivery=32;Backup=32;ParFactor=40.09493;Id=-1
+76,7/29/2017 12:00:00 AM,580.98,1400,Name=Sourdough;BeginInventory=24;FreezerCount=56;Delivery=152;Backup=64;ParFactor=10.5208;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=32;Delivery=32;Backup=32;ParFactor=40.09493;Id=-1
+77,7/30/2017 12:00:00 AM,0,1200,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=64;ParFactor=10.5208;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=32;ParFactor=40.09493;Id=-1
+78,7/31/2017 12:00:00 AM,854.95,1100,Name=Sourdough;BeginInventory=32;FreezerCount=40;Delivery=128;Backup=64;ParFactor=9.668339;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=64;Delivery=0;Backup=32;ParFactor=36.11657;Id=-1
+79,8/1/2017 12:00:00 AM,1331.7,1100,Name=Sourdough;BeginInventory=88;FreezerCount=48;Delivery=104;Backup=64;ParFactor=9.668339;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=48;Delivery=60;Backup=32;ParFactor=36.11657;Id=-1
+80,8/2/2017 12:00:00 AM,1030.64,900,Name=Sourdough;BeginInventory=80;FreezerCount=48;Delivery=64;Backup=64;ParFactor=9.668339;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=72;Delivery=0;Backup=32;ParFactor=36.11657;Id=-1
+81,8/3/2017 12:00:00 AM,1106.88,1100,Name=Sourdough;BeginInventory=48;FreezerCount=48;Delivery=64;Backup=64;ParFactor=9.668339;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=64;Delivery=0;Backup=32;ParFactor=36.11657;Id=-1
+82,8/4/2017 12:00:00 AM,1500.13,1300,Name=Sourdough;BeginInventory=48;FreezerCount=16;Delivery=144;Backup=64;ParFactor=9.668339;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=40;Delivery=16;Backup=32;ParFactor=36.11657;Id=-1
+83,8/5/2017 12:00:00 AM,1418.11,1300,Name=Sourdough;BeginInventory=56;FreezerCount=16;Delivery=144;Backup=64;ParFactor=9.668339;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=24;Delivery=40;Backup=32;ParFactor=36.11657;Id=-1
+84,8/6/2017 12:00:00 AM,798.48,1200,Name=Sourdough;BeginInventory=72;FreezerCount=16;Delivery=144;Backup=64;ParFactor=9.668339;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=24;Backup=32;ParFactor=36.11657;Id=-1
+85,8/7/2017 12:00:00 AM,1101.23,1400,Name=Sourdough;BeginInventory=72;FreezerCount=16;Delivery=104;Backup=0;ParFactor=9.546849;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=24;Delivery=40;Backup=0;ParFactor=36.97832;Id=-1
+86,8/8/2017 12:00:00 AM,1084.94,1100,Name=Sourdough;BeginInventory=64;FreezerCount=16;Delivery=96;Backup=0;ParFactor=9.546849;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=24;Delivery=16;Backup=0;ParFactor=36.97832;Id=-1
+87,8/9/2017 12:00:00 AM,1042.47,1100,Name=Sourdough;BeginInventory=48;Delivery=64;Backup=0;FreezerCount=32;ParFactor=9.546849;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=24;Delivery=0;Backup=0;ParFactor=36.97832;Id=-1
+88,8/10/2017 12:00:00 AM,1290.42,1100,Name=Sourdough;BeginInventory=16;FreezerCount=32;Delivery=144;Backup=0;ParFactor=9.546849;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=24;Delivery=32;Backup=0;ParFactor=36.97832;Id=-1
+89,8/11/2017 12:00:00 AM,1342.79,1400,Name=Sourdough;BeginInventory=40;FreezerCount=32;Delivery=136;Backup=0;ParFactor=9.546849;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=8;Delivery=24;Backup=0;ParFactor=36.97832;Id=-1
+90,8/12/2017 12:00:00 AM,1550.08,1500,Name=Sourdough;BeginInventory=56;FreezerCount=32;Delivery=128;Backup=0;ParFactor=9.546849;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=8;Delivery=48;Backup=0;ParFactor=36.97832;Id=-1
+91,8/13/2017 12:00:00 AM,878.1,1500,Name=Sourdough;BeginInventory=56;FreezerCount=32;Delivery=144;Backup=32;ParFactor=9.546849;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=8;Delivery=40;Backup=16;ParFactor=36.97832;Id=-1
+92,8/14/2017 12:00:00 AM,1233.63,1250,Name=Sourdough;BeginInventory=32;FreezerCount=32;Delivery=112;Backup=32;ParFactor=9.675669;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=32;Delivery=24;Backup=16;ParFactor=37.28176;Id=-1
+93,8/15/2017 12:00:00 AM,1162.53,1100,Name=Sourdough;BeginInventory=32;FreezerCount=32;Delivery=112;Backup=32;ParFactor=9.675669;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=32;Delivery=32;Backup=16;ParFactor=37.28176;Id=-1
+94,8/16/2017 12:00:00 AM,1168.69,1200,Name=Sourdough;BeginInventory=32;FreezerCount=32;Delivery=128;Backup=32;ParFactor=9.675669;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=32;Delivery=24;Backup=16;ParFactor=37.28176;Id=-1
+95,8/17/2017 12:00:00 AM,1226.11,1200,Name=Sourdough;BeginInventory=56;FreezerCount=32;Delivery=128;Backup=32;ParFactor=9.675669;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=0;Delivery=32;Backup=16;ParFactor=37.28176;Id=-1
+96,8/18/2017 12:00:00 AM,1717.46,1500,Name=Sourdough;BeginInventory=80;FreezerCount=32;Delivery=128;Backup=32;ParFactor=9.675669;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=16;Delivery=40;Backup=16;ParFactor=37.28176;Id=-1
+97,8/19/2017 12:00:00 AM,1897.14,1500,Name=Sourdough;BeginInventory=48;FreezerCount=32;Delivery=128;Backup=32;ParFactor=9.675669;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=16;Delivery=40;Backup=16;ParFactor=37.28176;Id=-1
+98,8/20/2017 12:00:00 AM,1769.99,1750,Name=Sourdough;BeginInventory=40;FreezerCount=0;Delivery=136;Backup=32;ParFactor=9.675669;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=16;Delivery=32;Backup=16;ParFactor=37.28176;Id=-1
+99,8/21/2017 12:00:00 AM,1034.57,1100,Name=Sourdough;BeginInventory=64;FreezerCount=0;Delivery=192;Backup=32;ParFactor=9.804179;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=16;Delivery=56;Backup=16;ParFactor=40.62918;Id=-1
+100,8/22/2017 12:00:00 AM,1354.74,1200,Name=Sourdough;BeginInventory=72;FreezerCount=64;Delivery=48;Backup=32;ParFactor=9.804179;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=32;Delivery=16;Backup=16;ParFactor=40.62918;Id=-1
+101,8/23/2017 12:00:00 AM,1142.8,1200,Name=Sourdough;BeginInventory=32;FreezerCount=40;Delivery=96;Backup=32;ParFactor=9.804179;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=16;Backup=16;ParFactor=40.62918;Id=-1
+102,8/24/2017 12:00:00 AM,1281.16,1300,Name=Sourdough;BeginInventory=16;FreezerCount=40;Delivery=152;Backup=32;ParFactor=9.804179;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=32;Delivery=64;Backup=16;ParFactor=40.62918;Id=-1
+103,8/25/2017 12:00:00 AM,1600.42,1500,Name=Sourdough;BeginInventory=56;FreezerCount=40;Delivery=144;Backup=32;ParFactor=9.804179;Id=-1|Name=Whole Wheat;BeginInventory=48;FreezerCount=32;Delivery=16;Backup=16;ParFactor=40.62918;Id=-1
+104,8/26/2017 12:00:00 AM,1634.2,1850,Name=Sourdough;BeginInventory=32;FreezerCount=40;Delivery=296;Backup=32;ParFactor=9.804179;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=32;Delivery=32;Backup=16;ParFactor=40.62918;Id=-1
+105,8/27/2017 12:00:00 AM,1562.38,1850,Name=Sourdough;BeginInventory=80;FreezerCount=40;Delivery=104;Backup=32;ParFactor=9.804179;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=32;Backup=16;ParFactor=40.62918;Id=-1
+106,8/28/2017 12:00:00 AM,1121.09,1250,Name=Sourdough;BeginInventory=64;FreezerCount=40;Delivery=136;Backup=32;ParFactor=9.85601;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=24;Backup=16;ParFactor=39.90095;Id=-1
+107,8/29/2017 12:00:00 AM,1039.02,1100,Name=Sourdough;BeginInventory=104;FreezerCount=72;Delivery=72;Backup=32;ParFactor=9.85601;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=32;Delivery=16;Backup=16;ParFactor=39.90095;Id=-1
+108,8/30/2017 12:00:00 AM,1186.07,1100,Name=Sourdough;BeginInventory=64;FreezerCount=72;Delivery=48;Backup=32;ParFactor=9.85601;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=24;Delivery=24;Backup=16;ParFactor=39.90095;Id=-1
+109,8/31/2017 12:00:00 AM,1288.7,1300,Name=Sourdough;BeginInventory=24;FreezerCount=48;Delivery=112;Backup=32;ParFactor=9.85601;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=24;Backup=16;ParFactor=39.90095;Id=-1
+110,9/1/2017 12:00:00 AM,1443.9,1500,Name=Sourdough;BeginInventory=32;FreezerCount=48;Delivery=160;Backup=32;ParFactor=9.85601;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=24;Delivery=48;Backup=16;ParFactor=39.90095;Id=-1
+111,9/2/2017 12:00:00 AM,1902.68,1650,Name=Sourdough;BeginInventory=56;FreezerCount=48;Delivery=136;Backup=32;ParFactor=9.85601;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=24;Delivery=48;Backup=16;ParFactor=39.90095;Id=-1
+112,9/3/2017 12:00:00 AM,1789.78,1800,Name=Sourdough;BeginInventory=32;FreezerCount=48;Delivery=136;Backup=32;ParFactor=9.85601;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=24;Delivery=16;Backup=16;ParFactor=39.90095;Id=-1
+113,9/4/2017 12:00:00 AM,1520.68,1800,Name=Sourdough;BeginInventory=0;FreezerCount=48;Delivery=160;Backup=32;ParFactor=10.57644;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=24;Backup=16;ParFactor=41.4887;Id=-1
+114,9/5/2017 12:00:00 AM,1135.84,1200,Name=Sourdough;BeginInventory=64;Delivery=136;Backup=32;FreezerCount=0;ParFactor=10.57644;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=32;Backup=16;ParFactor=41.4887;Id=-1
+115,9/6/2017 12:00:00 AM,901.69,1100,Name=Sourdough;BeginInventory=40;FreezerCount=48;Delivery=88;Backup=32;ParFactor=10.57644;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=16;Backup=16;ParFactor=41.4887;Id=-1
+116,9/7/2017 12:00:00 AM,1238.27,1350,Name=Sourdough;BeginInventory=56;FreezerCount=48;Delivery=116;Backup=32;ParFactor=10.57644;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=24;Delivery=16;Backup=16;ParFactor=41.4887;Id=-1
+117,9/8/2017 12:00:00 AM,1213.99,1600,Name=Sourdough;BeginInventory=56;FreezerCount=116;Delivery=12;Backup=32;ParFactor=10.57644;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=41.4887;Id=-1
+118,9/9/2017 12:00:00 AM,1386.65,1400,Name=Sourdough;BeginInventory=64;FreezerCount=48;Delivery=104;Backup=32;ParFactor=10.57644;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=8;Delivery=24;Backup=16;ParFactor=41.4887;Id=-1
+119,9/10/2017 12:00:00 AM,1726.96,1400,Name=Sourdough;BeginInventory=48;FreezerCount=48;Delivery=112;Backup=32;ParFactor=10.57644;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=8;Delivery=24;Backup=16;ParFactor=41.4887;Id=-1
+120,9/11/2017 12:00:00 AM,1092.04,1200,Name=Sourdough;BeginInventory=0;FreezerCount=48;Delivery=88;Backup=48;ParFactor=10.94366;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=8;Delivery=24;Backup=24;ParFactor=42.81914;Id=-1
+121,9/12/2017 12:00:00 AM,1072.17,1100,Name=Sourdough;BeginInventory=48;FreezerCount=0;Delivery=160;Backup=48;ParFactor=10.94366;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=0;Delivery=32;Backup=24;ParFactor=42.81914;Id=-1
+122,9/13/2017 12:00:00 AM,1133.91,1100,Name=Sourdough;BeginInventory=56;FreezerCount=48;Delivery=88;Backup=48;ParFactor=10.94366;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=0;Delivery=40;Backup=24;ParFactor=42.81914;Id=-1
+123,9/14/2017 12:00:00 AM,1652.51,1250,Name=Sourdough;BeginInventory=48;FreezerCount=48;Delivery=80;Backup=48;ParFactor=10.94366;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=0;Delivery=24;Backup=24;ParFactor=42.81914;Id=-1
+124,9/15/2017 12:00:00 AM,1527.23,1600,Name=Sourdough;BeginInventory=16;FreezerCount=24;Delivery=168;Backup=48;ParFactor=10.94366;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=0;Delivery=40;Backup=24;ParFactor=42.81914;Id=-1
+125,9/16/2017 12:00:00 AM,1661.16,1800,Name=Sourdough;BeginInventory=32;FreezerCount=24;Delivery=184;Backup=48;ParFactor=10.94366;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=0;Delivery=64;Backup=24;ParFactor=42.81914;Id=-1
+126,9/17/2017 12:00:00 AM,1194.72,2200,Name=Sourdough;BeginInventory=64;FreezerCount=24;Delivery=200;Backup=48;ParFactor=10.72022;Id=-1|Name=Whole Wheat;BeginInventory=48;FreezerCount=0;Delivery=16;Backup=24;ParFactor=42.69302;Id=-1
+127,10/9/2017 12:00:00 AM,1493.6,1800,Name=Sourdough;BeginInventory=64;FreezerCount=64;Delivery=128;Backup=48;ParFactor=9.914596;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=8;Delivery=8;Backup=16;ParFactor=45.47838;Id=-1
+128,10/10/2017 12:00:00 AM,2104.62,1500,Name=Sourdough;BeginInventory=80;FreezerCount=64;Delivery=160;Backup=48;ParFactor=9.914596;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=8;Delivery=40;Backup=16;ParFactor=45.47838;Id=-1
+129,10/11/2017 12:00:00 AM,1972.45,1600,Name=Sourdough;BeginInventory=40;FreezerCount=64;Delivery=88;Backup=48;ParFactor=9.914596;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=8;Delivery=16;Backup=16;ParFactor=45.47838;Id=-1
+130,10/12/2017 12:00:00 AM,2203.49,2100,Name=Sourdough;BeginInventory=8;FreezerCount=0;Delivery=240;Backup=48;ParFactor=9.914596;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=0;Delivery=48;Backup=16;ParFactor=45.47838;Id=-1
+131,10/13/2017 12:00:00 AM,3197.56,3200,Name=Sourdough;BeginInventory=64;FreezerCount=0;Delivery=264;Backup=48;ParFactor=9.914596;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=88;Backup=16;ParFactor=45.47838;Id=-1
+132,10/14/2017 12:00:00 AM,4869.27,3500,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=456;Backup=48;ParFactor=9.914596;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=0;Delivery=112;Backup=16;ParFactor=45.47838;Id=-1
+133,10/15/2017 12:00:00 AM,3365.31,3200,Name=Sourdough;BeginInventory=32;FreezerCount=0;Delivery=320;Backup=48;ParFactor=9.914596;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=24;Delivery=56;Backup=16;ParFactor=45.47838;Id=-1
+134,9/18/2017 12:00:00 AM,1264.26,1200,Name=Sourdough;BeginInventory=80;FreezerCount=24;Delivery=120;Backup=48;ParFactor=10.08191;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=0;Delivery=48;Backup=16;ParFactor=38.76197;Id=-1
+135,9/19/2017 12:00:00 AM,1231.2,1200,Name=Sourdough;BeginInventory=64;FreezerCount=48;Delivery=144;Backup=48;ParFactor=10.08191;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=16;Delivery=40;Backup=16;ParFactor=38.76197;Id=-1
+136,9/20/2017 12:00:00 AM,1085.25,1200,Name=Sourdough;BeginInventory=64;FreezerCount=80;Delivery=56;Backup=48;ParFactor=10.08191;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=16;Delivery=8;Backup=16;ParFactor=38.76197;Id=-1
+137,9/21/2017 12:00:00 AM,1329.78,1500,Name=Sourdough;BeginInventory=48;FreezerCount=56;Delivery=136;Backup=48;ParFactor=10.08191;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=16;Delivery=48;Backup=16;ParFactor=38.76197;Id=-1
+138,9/22/2017 12:00:00 AM,1879.36,2200,Name=Sourdough;BeginInventory=48;FreezerCount=56;Delivery=168;Backup=48;ParFactor=10.08191;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=16;Delivery=40;Backup=16;ParFactor=38.76197;Id=-1
+139,9/23/2017 12:00:00 AM,3715.94,3500,Name=Sourdough;BeginInventory=80;FreezerCount=8;Delivery=368;Backup=48;ParFactor=10.08191;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=16;Delivery=112;Backup=16;ParFactor=38.76197;Id=-1
+140,9/24/2017 12:00:00 AM,3512.85,3000,Name=Sourdough;BeginInventory=64;FreezerCount=56;Delivery=360;Backup=48;ParFactor=10.08191;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=56;Delivery=64;Backup=16;ParFactor=38.76197;Id=-1
+141,9/25/2017 12:00:00 AM,2098.85,2200,Name=Sourdough;BeginInventory=88;FreezerCount=36;Delivery=180;Backup=48;ParFactor=10.23121;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=32;Delivery=24;Backup=16;ParFactor=42.66827;Id=-1
+142,9/26/2017 12:00:00 AM,2475.27,2200,Name=Sourdough;BeginInventory=72;FreezerCount=56;Delivery=216;Backup=48;ParFactor=10.23121;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=56;Delivery=48;Backup=16;ParFactor=42.66827;Id=-1
+143,9/27/2017 12:00:00 AM,2513.03,2500,Name=Sourdough;BeginInventory=72;FreezerCount=48;Delivery=200;Backup=48;ParFactor=10.23121;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=8;Delivery=40;Backup=16;ParFactor=42.66827;Id=-1
+144,9/28/2017 12:00:00 AM,2269.28,2500,Name=Sourdough;BeginInventory=40;FreezerCount=56;Delivery=240;Backup=48;ParFactor=10.23121;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=32;Delivery=72;Backup=16;ParFactor=42.66827;Id=-1
+145,9/29/2017 12:00:00 AM,2652.23,3000,Name=Sourdough;BeginInventory=48;FreezerCount=48;Delivery=224;Backup=48;ParFactor=10.23121;Id=-1|Name=Whole Wheat;BeginInventory=56;FreezerCount=32;Delivery=32;Backup=16;ParFactor=42.66827;Id=-1
+146,9/30/2017 12:00:00 AM,3595.76,3500,Name=Sourdough;BeginInventory=24;FreezerCount=16;Delivery=384;Backup=48;ParFactor=10.23121;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=32;Delivery=68;Backup=16;ParFactor=42.66827;Id=-1
+147,10/1/2017 12:00:00 AM,3241.77,3200,Name=Sourdough;BeginInventory=8;FreezerCount=64;Delivery=336;Backup=48;ParFactor=10.23121;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=32;Delivery=56;Backup=16;ParFactor=42.66827;Id=-1
+148,10/2/2017 12:00:00 AM,1574.13,2000,Name=Sourdough;BeginInventory=64;FreezerCount=64;Delivery=184;Backup=48;ParFactor=10.08786;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=32;Delivery=24;Backup=16;ParFactor=43.62385;Id=-1
+149,10/3/2017 12:00:00 AM,1782.51,1600,Name=Sourdough;BeginInventory=136;FreezerCount=64;Delivery=112;Backup=48;ParFactor=10.08786;Id=-1|Name=Whole Wheat;BeginInventory=46;FreezerCount=32;Delivery=24;Backup=16;ParFactor=43.62385;Id=-1
+150,10/4/2017 12:00:00 AM,1970.7,1500,Name=Sourdough;BeginInventory=88;FreezerCount=64;Delivery=64;Backup=48;ParFactor=10.08786;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=16;Delivery=0;Backup=16;ParFactor=43.62385;Id=-1
+151,10/5/2017 12:00:00 AM,2142.87,2000,Name=Sourdough;BeginInventory=8;FreezerCount=40;Delivery=232;Backup=48;ParFactor=10.08786;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=8;Delivery=40;Backup=16;ParFactor=43.62385;Id=-1
+152,10/6/2017 12:00:00 AM,2877.81,3200,Name=Sourdough;BeginInventory=40;FreezerCount=40;Delivery=324;Backup=48;ParFactor=10.08786;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=88;Backup=16;ParFactor=43.62385;Id=-1
+153,10/7/2017 12:00:00 AM,3809.58,3500,Name=Sourdough;BeginInventory=80;FreezerCount=40;Delivery=312;Backup=48;ParFactor=10.08786;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=0;Delivery=88;Backup=16;ParFactor=43.62385;Id=-1
+154,10/8/2017 12:00:00 AM,1547.52,3000,Name=Sourdough;BeginInventory=32;FreezerCount=40;Delivery=360;Backup=48;ParFactor=10.08786;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=0;Delivery=88;Backup=16;ParFactor=43.62385;Id=-1
+155,10/16/2017 12:00:00 AM,1525.51,2000,Name=Sourdough;BeginInventory=24;FreezerCount=0;Delivery=264;Backup=48;ParFactor=9.664856;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=0;Delivery=48;Backup=16;ParFactor=43.54817;Id=-1
+156,10/17/2017 12:00:00 AM,1547.38,1600,Name=Sourdough;BeginInventory=184;FreezerCount=0;Delivery=160;Backup=48;ParFactor=9.664856;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=0;Delivery=48;Backup=16;ParFactor=43.54817;Id=-1
+157,10/18/2017 12:00:00 AM,1644,1500,Name=Sourdough;BeginInventory=96;FreezerCount=96;Delivery=56;Backup=48;ParFactor=9.664856;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=8;Delivery=32;Backup=16;ParFactor=43.54817;Id=-1
+158,10/19/2017 12:00:00 AM,2058.18,2000,Name=Sourdough;BeginInventory=40;FreezerCount=64;Delivery=184;Backup=48;ParFactor=9.664856;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=8;Delivery=32;Backup=16;ParFactor=43.54817;Id=-1
+159,10/20/2017 12:00:00 AM,3113.07,3200,Name=Sourdough;BeginInventory=40;FreezerCount=64;Delivery=300;Backup=48;ParFactor=9.664856;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=8;Delivery=64;Backup=16;ParFactor=43.54817;Id=-1
+160,10/21/2017 12:00:00 AM,3990.97,4200,Name=Sourdough;BeginInventory=24;FreezerCount=64;Delivery=392;Backup=48;ParFactor=9.664856;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=8;Delivery=72;Backup=16;ParFactor=43.54817;Id=-1
+161,10/22/2017 12:00:00 AM,3018.71,3000,Name=Sourdough;BeginInventory=40;FreezerCount=64;Delivery=352;Backup=48;ParFactor=9.664856;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=8;Delivery=96;Backup=16;ParFactor=43.54817;Id=-1
+162,10/23/2017 12:00:00 AM,1465.93,1500,Name=Sourdough;BeginInventory=112;FreezerCount=72;Delivery=88;Backup=48;ParFactor=10.44314;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=32;Delivery=16;Backup=16;ParFactor=47.75481;Id=-1
+163,10/24/2017 12:00:00 AM,1595.08,1500,Name=Sourdough;BeginInventory=72;Delivery=120;Backup=48;FreezerCount=96;ParFactor=10.44314;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=32;Delivery=8;Backup=16;ParFactor=47.75481;Id=-1
+164,10/25/2017 12:00:00 AM,1626.03,1700,Name=Sourdough;BeginInventory=48;FreezerCount=96;Delivery=88;Backup=48;ParFactor=10.44314;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=0;Delivery=24;Backup=16;ParFactor=47.75481;Id=-1
+165,10/26/2017 12:00:00 AM,2180.2,2000,Name=Sourdough;BeginInventory=40;FreezerCount=32;Delivery=224;Backup=48;ParFactor=10.44314;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=0;Delivery=64;Backup=16;ParFactor=47.75481;Id=-1
+166,10/27/2017 12:00:00 AM,2690.27,3500,Name=Sourdough;BeginInventory=56;FreezerCount=32;Delivery=360;Backup=48;ParFactor=10.44314;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=0;Delivery=64;Backup=16;ParFactor=47.75481;Id=-1
+167,10/28/2017 12:00:00 AM,2849.31,3800,Name=Sourdough;BeginInventory=120;FreezerCount=16;Delivery=360;Backup=48;ParFactor=10.44314;Id=-1|Name=Whole Wheat;BeginInventory=56;FreezerCount=0;Delivery=88;Backup=0;ParFactor=47.75481;Id=-1
+168,10/29/2017 12:00:00 AM,3656.98,2600,Name=Sourdough;BeginInventory=72;FreezerCount=128;Delivery=176;Backup=48;ParFactor=10.44314;Id=-1|Name=Whole Wheat;BeginInventory=56;FreezerCount=56;Delivery=0;Backup=0;ParFactor=47.75481;Id=-1
+169,10/30/2017 12:00:00 AM,1657.84,1650,Name=Sourdough;BeginInventory=32;FreezerCount=64;Delivery=136;Backup=48;ParFactor=10.21169;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=0;Delivery=0;Backup=16;ParFactor=45.38358;Id=-1
+170,10/31/2017 12:00:00 AM,1574.4,1700,Name=Sourdough;BeginInventory=16;FreezerCount=64;Delivery=176;Backup=0;ParFactor=10.21169;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=0;Delivery=48;Backup=16;ParFactor=45.38358;Id=-1
+171,11/1/2017 12:00:00 AM,2112.03,1600,Name=Sourdough;BeginInventory=36;FreezerCount=64;Delivery=98;Backup=0;ParFactor=10.21169;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=0;Delivery=40;Backup=16;ParFactor=45.38358;Id=-1
+172,11/2/2017 12:00:00 AM,2294.51,2200,Name=Sourdough;BeginInventory=8;FreezerCount=8;Delivery=208;Backup=0;ParFactor=10.21169;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=8;Delivery=64;Backup=16;ParFactor=45.38358;Id=-1
+173,11/3/2017 12:00:00 AM,3649.3,3500,Name=Sourdough;BeginInventory=8;FreezerCount=16;Delivery=400;Backup=0;ParFactor=10.21169;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=0;Delivery=72;Backup=16;ParFactor=45.38358;Id=-1
+174,11/4/2017 12:00:00 AM,4532.89,4400,Name=Sourdough;BeginInventory=40;FreezerCount=16;Delivery=400;Backup=0;ParFactor=10.21169;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=0;Delivery=112;Backup=16;ParFactor=45.38358;Id=-1
+175,11/5/2017 12:00:00 AM,3227.16,3500,Name=Sourdough;BeginInventory=0;FreezerCount=16;Delivery=408;Backup=0;ParFactor=10.21169;Id=-1|Name=Whole Wheat;BeginInventory=48;FreezerCount=0;Delivery=56;Backup=16;ParFactor=45.38358;Id=-1
+176,11/6/2017 12:00:00 AM,0,1700,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=10.02134;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=44.88622;Id=-1
+177,11/7/2017 12:00:00 AM,0,0,
+178,11/8/2017 12:00:00 AM,0,0,
+179,11/9/2017 12:00:00 AM,0,0,
+180,11/10/2017 12:00:00 AM,0,0,
+181,11/11/2017 12:00:00 AM,0,0,
+182,11/12/2017 12:00:00 AM,0,0,
+183,11/6/2017 12:00:00 AM,0,1700,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=10.02134;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=44.88622;Id=-1
+184,11/7/2017 12:00:00 AM,0,0,
+185,11/8/2017 12:00:00 AM,0,0,
+186,11/9/2017 12:00:00 AM,0,0,
+187,11/10/2017 12:00:00 AM,0,0,
+188,11/11/2017 12:00:00 AM,0,0,
+189,11/12/2017 12:00:00 AM,0,0,
+190,11/6/2017 12:00:00 AM,1581.56,1700,Name=Sourdough;BeginInventory=112;FreezerCount=16;Delivery=136;Backup=0;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=0;Delivery=32;Backup=0;ParFactor=53.41978;Id=-1
+191,11/7/2017 12:00:00 AM,1777.85,1500,Name=Sourdough;BeginInventory=96;FreezerCount=16;Delivery=124;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=0;Delivery=24;Backup=16;ParFactor=53.41978;Id=-1
+192,11/8/2017 12:00:00 AM,2197.78,1700,Name=Sourdough;BeginInventory=72;FreezerCount=16;Delivery=188;Backup=48;ParFactor=9.963205;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=0;Delivery=16;Backup=16;ParFactor=47.31074;Id=-1
+193,11/9/2017 12:00:00 AM,2560.98,2100,Name=Sourdough;BeginInventory=40;FreezerCount=16;Delivery=176;Backup=48;ParFactor=9.963205;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=64;Backup=16;ParFactor=47.31074;Id=-1
+194,11/10/2017 12:00:00 AM,3566.32,3500,Name=Sourdough;BeginInventory=8;FreezerCount=0;Delivery=352;Backup=48;ParFactor=9.963205;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=80;Backup=16;ParFactor=47.31074;Id=-1
+195,11/11/2017 12:00:00 AM,4319.98,4200,Name=Sourdough;BeginInventory=16;FreezerCount=0;Delivery=448;Backup=48;ParFactor=9.963205;Id=-1|Name=Whole Wheat;BeginInventory=32;FreezerCount=0;Delivery=40;Backup=16;ParFactor=47.31074;Id=-1
+196,11/12/2017 12:00:00 AM,3059.07,3500,Name=Sourdough;BeginInventory=88;FreezerCount=0;Delivery=392;Backup=48;ParFactor=9.963205;Id=-1|Name=Whole Wheat;BeginInventory=48;FreezerCount=0;Delivery=24;Backup=16;ParFactor=47.31074;Id=-1
+197,11/13/2017 12:00:00 AM,1835.26,1600,Name=Sourdough;BeginInventory=116;FreezerCount=48;Delivery=120;Backup=48;ParFactor=9.948911;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=16;Delivery=128;Backup=16;ParFactor=49.31952;Id=-1
+198,11/14/2017 12:00:00 AM,1693.58,1700,Name=Sourdough;BeginInventory=128;FreezerCount=0;Delivery=120;Backup=0;ParFactor=9.948911;Id=-1|Name=Whole Wheat;BeginInventory=40;FreezerCount=80;Delivery=0;Backup=0;ParFactor=49.31952;Id=-1
+199,11/15/2017 12:00:00 AM,1787.59,1800,Name=Sourdough;BeginInventory=48;FreezerCount=64;Delivery=64;Backup=0;ParFactor=9.948911;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=80;Delivery=0;Backup=0;ParFactor=49.31952;Id=-1
+200,11/16/2017 12:00:00 AM,2235.9,2400,Name=Sourdough;BeginInventory=16;FreezerCount=0;Delivery=280;Backup=0;ParFactor=9.948911;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=64;Delivery=0;Backup=0;ParFactor=49.31952;Id=-1
+201,11/17/2017 12:00:00 AM,3059.55,3800,Name=Sourdough;BeginInventory=104;FreezerCount=0;Delivery=408;Backup=0;ParFactor=9.948911;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=24;Delivery=64;Backup=0;ParFactor=49.31952;Id=-1
+202,11/18/2017 12:00:00 AM,4052.74,4200,Name=Sourdough;BeginInventory=104;FreezerCount=48;Delivery=328;Backup=0;ParFactor=9.948911;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=80;Backup=0;ParFactor=49.31952;Id=-1
+203,11/19/2017 12:00:00 AM,3982.56,3400,Name=Sourdough;BeginInventory=24;FreezerCount=48;Delivery=352;Backup=0;ParFactor=9.948911;Id=-1|Name=Whole Wheat;BeginInventory=24;FreezerCount=24;Delivery=48;Backup=0;ParFactor=49.31952;Id=-1
+204,11/20/2017 12:00:00 AM,2303.74,1800,Name=Sourdough;BeginInventory=48;FreezerCount=48;Delivery=152;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=24;Delivery=24;Backup=16;ParFactor=53.41978;Id=-1
+205,11/21/2017 12:00:00 AM,2487.17,2200,Name=Sourdough;BeginInventory=0;FreezerCount=48;Delivery=192;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=8;FreezerCount=0;Delivery=32;Backup=16;ParFactor=53.41978;Id=-1
+206,11/22/2017 12:00:00 AM,1345.56,1500,Name=Sourdough;BeginInventory=0;FreezerCount=48;Delivery=192;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=53.41978;Id=-1
+207,11/23/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=53.41978;Id=-1
+208,11/24/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=53.41978;Id=-1
+209,11/25/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=104;Delivery=0;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=32;Delivery=0;Backup=16;ParFactor=53.41978;Id=-1
+210,11/26/2017 12:00:00 AM,3573.93,3500,Name=Sourdough;BeginInventory=0;FreezerCount=104;Delivery=360;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=32;Delivery=80;Backup=16;ParFactor=53.41978;Id=-1
+211,11/27/2017 12:00:00 AM,1564.3,1750,Name=Sourdough;BeginInventory=56;Delivery=200;Backup=48;FreezerCount=72;ParFactor=9.826185;Id=-1|Name=Whole Wheat;BeginInventory=16;FreezerCount=32;Delivery=16;Backup=16;ParFactor=50.69581;Id=-1
+212,11/28/2017 12:00:00 AM,1527.12,1750,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.826185;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=50.69581;Id=-1
+213,11/29/2017 12:00:00 AM,1532.33,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.826185;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=50.69581;Id=-1
+214,11/30/2017 12:00:00 AM,1807.34,2300,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.826185;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=50.69581;Id=-1
+215,12/1/2017 12:00:00 AM,8.82,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.826185;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=50.69581;Id=-1
+216,12/2/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=53.41978;Id=-1
+217,12/3/2017 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.995567;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=53.41978;Id=-1
+218,12/4/2017 12:00:00 AM,1596.24,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=9.839186;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=54.92255;Id=-1
+219,12/5/2017 12:00:00 AM,2226.34,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=9.839186;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=54.92255;Id=-1
+220,12/6/2017 12:00:00 AM,205.15,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=9.839186;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=54.92255;Id=-1
+221,12/7/2017 12:00:00 AM,0,0,
+222,12/8/2017 12:00:00 AM,0,0,
+223,12/9/2017 12:00:00 AM,0,0,
+224,12/10/2017 12:00:00 AM,0,0,
+225,12/11/2017 12:00:00 AM,172.22,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=9.839186;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=54.92255;Id=-1
+226,12/12/2017 12:00:00 AM,0,0,
+227,12/13/2017 12:00:00 AM,0,0,
+228,12/14/2017 12:00:00 AM,0,0,
+229,12/15/2017 12:00:00 AM,0,0,
+230,12/16/2017 12:00:00 AM,0,0,
+231,12/17/2017 12:00:00 AM,0,0,
+232,1/8/2018 4:00:00 AM,2274.79,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+233,1/9/2018 4:00:00 AM,1969.01,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+234,1/10/2018 4:00:00 AM,2132.01,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+235,1/11/2018 4:00:00 AM,2037.82,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+236,1/12/2018 4:00:00 AM,3299.97,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+237,1/13/2018 4:00:00 AM,3615.32,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+238,1/14/2018 4:00:00 AM,191.85,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+239,1/1/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+240,1/2/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+241,1/3/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+242,1/4/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+243,1/5/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+244,1/6/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+245,1/7/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+246,1/15/2018 4:00:00 AM,2893.01,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+247,1/16/2018 4:00:00 AM,1887.95,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+248,1/17/2018 4:00:00 AM,301.92,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+249,1/18/2018 4:00:00 AM,1736.22,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+250,1/19/2018 4:00:00 AM,3770.15,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+251,1/20/2018 4:00:00 AM,3744.08,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+252,1/21/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+253,1/22/2018 4:00:00 AM,1255.42,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+254,1/23/2018 4:00:00 AM,1626.61,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+255,1/24/2018 4:00:00 AM,1548.05,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+256,1/25/2018 4:00:00 AM,1997.08,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+257,1/26/2018 4:00:00 AM,3219.02,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+258,1/27/2018 4:00:00 AM,3505.69,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+259,1/28/2018 4:00:00 AM,1878.19,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=1;Id=-1
+260,11/20/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+261,11/21/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+262,11/22/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+263,11/23/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+264,11/24/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+265,11/25/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+266,11/26/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+267,11/13/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+268,11/14/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+269,11/15/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+270,11/16/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+271,11/17/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+272,11/18/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+273,11/19/2017 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=1;Id=-1
+274,1/29/2018 4:00:00 AM,1688.41,1800,Name=Sourdough;BeginInventory=280;FreezerCount=0;Delivery=160;Backup=48;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=55;FreezerCount=0;Delivery=36;Backup=16;ParFactor=30.69836;Id=-1
+275,1/30/2018 4:00:00 AM,1513.12,0,Name=Sourdough;BeginInventory=136;FreezerCount=0;Delivery=176;Backup=48;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=64;FreezerCount=0;Delivery=32;Backup=16;ParFactor=30.69836;Id=-1
+276,1/31/2018 4:00:00 AM,1661.28,0,Name=Sourdough;BeginInventory=181;FreezerCount=160;Delivery=144;Backup=48;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=66;FreezerCount=0;Delivery=32;Backup=16;ParFactor=30.69836;Id=-1
+277,2/1/2018 4:00:00 AM,1747.75,0,Name=Sourdough;BeginInventory=162;FreezerCount=160;Delivery=160;Backup=48;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=57;FreezerCount=0;Delivery=29;Backup=16;ParFactor=30.69836;Id=-1
+278,2/2/2018 4:00:00 AM,3300.05,0,Name=Sourdough;BeginInventory=153;FreezerCount=160;Delivery=172;Backup=48;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=69;FreezerCount=0;Delivery=64;Backup=16;ParFactor=30.69836;Id=-1
+279,2/3/2018 4:00:00 AM,3931.48,0,Name=Sourdough;BeginInventory=72;FreezerCount=96;Delivery=768;Backup=48;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=43;FreezerCount=0;Delivery=208;Backup=16;ParFactor=30.69836;Id=-1
+280,2/4/2018 4:00:00 AM,1801.81,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=48;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=16;ParFactor=30.69836;Id=-1
+281,2/5/2018 4:00:00 AM,1471.85,0,Name=Sourdough;BeginInventory=272;Delivery=0;Backup=0;FreezerCount=96;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=137;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+282,2/6/2018 4:00:00 AM,1545.56,0,Name=Sourdough;BeginInventory=147;FreezerCount=96;Delivery=144;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=98;FreezerCount=0;Delivery=16;Backup=0;ParFactor=30.15893;Id=-1
+283,2/7/2018 4:00:00 AM,1507.29,0,Name=Sourdough;BeginInventory=161;FreezerCount=96;Delivery=160;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=89;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+284,2/8/2018 4:00:00 AM,1674.6,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+285,2/9/2018 4:00:00 AM,48.26,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+286,2/10/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.69836;Id=-1
+287,2/11/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.030036;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.69836;Id=-1
+288,2/12/2018 4:00:00 AM,1462.8,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+289,2/13/2018 4:00:00 AM,283.21,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+290,2/14/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+291,2/15/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+292,2/16/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+293,2/17/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+294,2/18/2018 4:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+295,2/12/2018 12:00:00 AM,1462.8,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+296,2/13/2018 12:00:00 AM,1498.56,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+297,2/14/2018 12:00:00 AM,2486.38,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+298,2/15/2018 12:00:00 AM,1808.98,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+299,2/16/2018 12:00:00 AM,3204.98,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+300,2/17/2018 12:00:00 AM,3314.34,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+301,2/18/2018 12:00:00 AM,1094.52,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+302,2/5/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+303,2/6/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+304,2/7/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+305,2/8/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+306,2/9/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+307,2/10/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+308,2/11/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+309,1/29/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+310,1/30/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+311,1/31/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+312,2/1/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+313,2/2/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+314,2/3/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+315,2/4/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=6.580895;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=30.15893;Id=-1
+316,2/19/2018 12:00:00 AM,2617.75,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+317,2/20/2018 12:00:00 AM,1609.83,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+318,2/21/2018 12:00:00 AM,1665.54,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+319,2/22/2018 12:00:00 AM,2127.24,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+320,2/23/2018 12:00:00 AM,2987.08,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+321,2/24/2018 12:00:00 AM,3057.43,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+322,2/25/2018 12:00:00 AM,470.97,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=4.259459;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.77332;Id=-1
+323,2/26/2018 12:00:00 AM,1334.62,0,Name=Sourdough;BeginInventory=133;FreezerCount=0;Delivery=176;Backup=0;ParFactor=4.961641;Id=-1|Name=Whole Wheat;BeginInventory=112;FreezerCount=0;Delivery=32;Backup=0;ParFactor=16.94203;Id=-1
+324,2/27/2018 12:00:00 AM,1506.55,0,Name=Sourdough;BeginInventory=182;FreezerCount=0;Delivery=192;Backup=0;ParFactor=4.961641;Id=-1|Name=Whole Wheat;BeginInventory=83;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.94203;Id=-1
+325,2/28/2018 12:00:00 AM,1697.19,0,Name=Sourdough;BeginInventory=206;FreezerCount=0;Delivery=160;Backup=0;ParFactor=4.961641;Id=-1|Name=Whole Wheat;BeginInventory=38;FreezerCount=0;Delivery=32;Backup=0;ParFactor=16.94203;Id=-1
+326,3/1/2018 12:00:00 AM,1721.96,0,Name=Sourdough;BeginInventory=256;FreezerCount=64;Delivery=80;Backup=0;ParFactor=4.961641;Id=-1|Name=Whole Wheat;BeginInventory=64;FreezerCount=0;Delivery=32;Backup=0;ParFactor=16.94203;Id=-1
+327,3/2/2018 12:00:00 AM,3130.25,0,Name=Sourdough;BeginInventory=279;FreezerCount=80;Delivery=0;Backup=0;ParFactor=4.961641;Id=-1|Name=Whole Wheat;BeginInventory=77;FreezerCount=0;Delivery=0;Backup=0;ParFactor=16.94203;Id=-1
+328,3/3/2018 12:00:00 AM,3140.02,0,Name=Sourdough;BeginInventory=167;FreezerCount=0;Delivery=576;Backup=0;ParFactor=4.961641;Id=-1|Name=Whole Wheat;BeginInventory=41;FreezerCount=0;Delivery=96;Backup=0;ParFactor=16.94203;Id=-1
+329,3/4/2018 12:00:00 AM,2407.33,0,Name=Sourdough;BeginInventory=229;FreezerCount=176;Delivery=0;Backup=0;ParFactor=4.961641;Id=-1|Name=Whole Wheat;BeginInventory=64;FreezerCount=16;Delivery=0;Backup=0;ParFactor=16.94203;Id=-1
+330,3/5/2018 12:00:00 AM,1457.65,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+331,3/6/2018 12:00:00 AM,1429.46,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+332,3/7/2018 12:00:00 AM,1614.19,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+333,3/8/2018 12:00:00 AM,1947.02,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+334,3/9/2018 12:00:00 AM,3645.7,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+335,3/10/2018 12:00:00 AM,3095.1,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+336,3/11/2018 12:00:00 AM,817.67,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+337,3/12/2018 12:00:00 AM,1950.54,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+338,3/13/2018 12:00:00 AM,2108.97,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+339,3/14/2018 12:00:00 AM,1529.53,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+340,3/15/2018 12:00:00 AM,1459.95,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+341,3/16/2018 12:00:00 AM,348.94,0,Name=Sourdough;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;FreezerCount=0;Delivery=0;Backup=0;ParFactor=49.13789;Id=-1
+342,3/17/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=49.13789;Id=-1
+343,3/18/2018 12:00:00 AM,0,0,Name=Sourdough;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=11.34238;Id=-1|Name=Whole Wheat;BeginInventory=0;Delivery=0;Backup=0;FreezerCount=0;ParFactor=49.13789;Id=-1

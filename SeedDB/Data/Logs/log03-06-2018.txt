@@ -1,0 +1,2526 @@
+03/06/18 - 13:13:35 - INFO - Application starting
+03/06/18 - 13:13:35 - INFO - Loading models
+03/06/18 - 13:13:35 - INFO - Application starting
+03/06/18 - 13:13:35 - INFO - Loading models
+03/06/18 - 13:13:37 - INFO - Models loaded
+03/06/18 - 13:13:38 - ERROR - The process cannot access the file 'C:\Users\Buddha\Desktop\Database Files\Data\Logs\log03-06-2018.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   at System.IO.File.InternalAppendAllText(String path, String contents, Encoding encoding)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at BuddhaBowls.Helpers.Logger.Info(String msg)
+   at BuddhaBowls.Services.DBCache.InitializeModels()
+   at BuddhaBowls.Services.DBCache..ctor()
+   at BuddhaBowls.MainViewModel.InitTabsAndModel()
+   at BuddhaBowls.MainViewModel..ctor()
+   at BuddhaBowls.MainClass.Show()
+   at BuddhaBowls.MainClass.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/06/18 - 13:13:41 - INFO - Upating BreadOrder: 331
+03/06/18 - 13:13:42 - INFO - Upating BreadOrder: 330
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 8
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 9
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 10
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 11
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 12
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 13
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 14
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 15
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 16
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 17
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 18
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 19
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 20
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 21
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 22
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 23
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 24
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 25
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 26
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 27
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 28
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 29
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 30
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 31
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 32
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 33
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 34
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 35
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 36
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 37
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 38
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 39
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 40
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 41
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 42
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 43
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 44
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 45
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 46
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 47
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 48
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 49
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 50
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 51
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 52
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 53
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 54
+03/06/18 - 13:13:43 - INFO - Upating DailySale: 55
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 56
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 57
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 58
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 59
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 60
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 61
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 62
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 63
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 64
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 65
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 66
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 67
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 68
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 69
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 70
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 71
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 72
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 73
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 74
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 75
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 76
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 77
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 78
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 79
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 80
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 81
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 82
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 83
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 84
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 85
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 86
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 87
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 88
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 89
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 90
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 91
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 92
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 93
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 94
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 95
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 96
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 97
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 98
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 99
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 100
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 101
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 102
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 103
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 104
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 105
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 106
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 107
+03/06/18 - 13:13:44 - INFO - Upating DailySale: 108
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 109
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 110
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 111
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 112
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 113
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 114
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 115
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 116
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 117
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 118
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 119
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 120
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 121
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 122
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 123
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 124
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 125
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 126
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 127
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 128
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 129
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 130
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 131
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 132
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 133
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 134
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 135
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 136
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 137
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 138
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 139
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 140
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 141
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 142
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 143
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 144
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 145
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 146
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 147
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 148
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 149
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 150
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 151
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 152
+03/06/18 - 13:13:45 - INFO - Upating DailySale: 153
+03/06/18 - 13:13:45 - INFO - Destroying DailySale: 152
+03/06/18 - 13:13:45 - INFO - Destroying DailySale: 153
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 152
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 153
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 154
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 155
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 156
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 157
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 158
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 159
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 160
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 161
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 162
+03/06/18 - 13:13:45 - INFO - Inserted DailySale: 163
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 164
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 165
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 166
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 167
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 168
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 169
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 170
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 171
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 172
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 173
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 174
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 175
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 176
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 177
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 178
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 179
+03/06/18 - 13:13:46 - INFO - Inserted DailySale: 180
+03/06/18 - 13:13:46 - INFO - Upating ExpenseItem: 1496
+03/06/18 - 13:13:46 - INFO - Upating ExpenseItem: 1497
+03/06/18 - 13:13:46 - INFO - Upating ExpenseItem: 1498
+03/06/18 - 13:13:46 - INFO - Upating ExpenseItem: 1499
+03/06/18 - 13:13:46 - INFO - Upating ExpenseItem: 1500
+03/06/18 - 13:13:46 - INFO - Upating ExpenseItem: 1501
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1538
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1539
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1540
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1541
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1542
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1543
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1544
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1545
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1546
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1547
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1548
+03/06/18 - 13:13:46 - INFO - Inserted ExpenseItem: 1549
+03/06/18 - 13:15:17 - INFO - Executing OrderTabVM#StartNewOrder
+03/06/18 - 13:15:18 - INFO - Adding temp tab: NewOrderVM
+03/06/18 - 13:15:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:21 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:22 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:22 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:22 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:22 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:22 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:24 - INFO - Changed to tab: New Order
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:25 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:26 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:27 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:28 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:28 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:28 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:28 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:28 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:28 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:28 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:29 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:32 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:32 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:32 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:32 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:34 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:34 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:34 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:36 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:36 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:36 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:36 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:36 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:36 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:56 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:56 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:56 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:56 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:56 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:57 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:15:59 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:00 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:01 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:01 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:03 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:16:04 - INFO - Changed to tab: Inventory
+03/06/18 - 13:22:27 - INFO - Changed to tab: Orders
+03/06/18 - 13:22:29 - INFO - Executing OrderTabVM#StartNewOrder
+03/06/18 - 13:22:29 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:32 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Executing NewOrderVM#ClearOrderAmounts
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:22:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:10 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:12 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:18 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:30 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:30 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:33 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:37 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:39 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:41 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:42 - INFO - Changed to tab: New Order
+03/06/18 - 13:23:42 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:34 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:51 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:56 - INFO - Changed to tab: New Order
+03/06/18 - 13:24:58 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:02 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:07 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:08 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:22 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:23 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:25 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:35 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:36 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:43 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:43 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:43 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:43 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:43 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:43 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:43 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:43 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:44 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:46 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:46 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:46 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:46 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:46 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:46 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:46 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:46 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:50 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:52 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:52 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:53 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:53 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:53 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:53 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:53 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:53 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:55 - INFO - Changed to tab: New Order
+03/06/18 - 13:25:56 - INFO - Changed to tab: New Order
+03/06/18 - 13:26:06 - INFO - Changed to tab: New Order
+03/06/18 - 13:26:06 - INFO - Changed to tab: New Order
+03/06/18 - 13:26:06 - INFO - Changed to tab: New Order
+03/06/18 - 13:26:06 - INFO - Changed to tab: New Order
+03/06/18 - 13:26:06 - INFO - Changed to tab: New Order
+03/06/18 - 13:26:06 - INFO - Changed to tab: New Order
+03/06/18 - 13:26:06 - INFO - Executing NewOrderVM#SaveOrder
+03/06/18 - 13:26:06 - INFO - Inserted PurchaseOrder: 205
+03/06/18 - 13:26:06 - INFO - Removing temp tab
+03/06/18 - 13:26:06 - INFO - Changed to tab: Settings
+03/06/18 - 13:26:06 - INFO - Changed to tab: Orders
+03/06/18 - 13:26:09 - INFO - Changed to tab: Orders
+03/06/18 - 13:26:11 - INFO - Executing OrderTabVM#ShowOpenPO
+03/06/18 - 13:26:37 - INFO - Executing OrderTabVM#ShowOpenPO
+03/06/18 - 13:27:29 - INFO - Executing OrderTabVM#ShowOpenPO
+03/06/18 - 13:52:44 - INFO - Application starting
+03/06/18 - 13:52:44 - INFO - Loading models
+03/06/18 - 13:52:46 - INFO - Models loaded
+03/06/18 - 13:52:47 - INFO - Upating BreadOrder: 331
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 8
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 9
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 10
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 11
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 12
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 13
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 14
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 15
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 16
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 17
+03/06/18 - 13:52:47 - INFO - Upating DailySale: 18
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 19
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 20
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 21
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 22
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 23
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 24
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 25
+03/06/18 - 13:52:48 - INFO - Upating BreadOrder: 330
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 26
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 27
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 28
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 29
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 30
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 31
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 32
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 33
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 34
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 35
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 36
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 37
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 38
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 39
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 40
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 41
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 42
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 43
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 44
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 45
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 46
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 47
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 48
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 49
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 50
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 51
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 52
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 53
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 54
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 55
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 56
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 57
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 58
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 59
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 60
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 61
+03/06/18 - 13:52:48 - INFO - Upating DailySale: 62
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 63
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 64
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 65
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 66
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 67
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 68
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 69
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 70
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 71
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 72
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 73
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 74
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 75
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 76
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 77
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 78
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 79
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 80
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 81
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 82
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 83
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 84
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 85
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 86
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 87
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 88
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 89
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 90
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 91
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 92
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 93
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 94
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 95
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 96
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 97
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 98
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 99
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 100
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 101
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 102
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 103
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 104
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 105
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 106
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 107
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 108
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 109
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 110
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 111
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 112
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 113
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 114
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 115
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 116
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 117
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 118
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 119
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 120
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 121
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 122
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 123
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 124
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 125
+03/06/18 - 13:52:49 - INFO - Upating DailySale: 126
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 127
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 128
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 129
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 130
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 131
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 132
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 133
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 134
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 135
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 136
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 137
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 138
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 139
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 140
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 141
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 142
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 143
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 144
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 145
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 146
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 147
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 148
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 149
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 150
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 151
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 152
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 153
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 154
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 155
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 156
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 157
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 158
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 159
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 160
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 161
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 162
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 163
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 164
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 165
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 166
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 167
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 168
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 169
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 170
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 171
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 172
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 173
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 174
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 175
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 176
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 177
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 178
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 179
+03/06/18 - 13:52:50 - INFO - Upating DailySale: 180
+03/06/18 - 13:52:50 - INFO - Destroying DailySale: 174
+03/06/18 - 13:52:50 - INFO - Destroying DailySale: 175
+03/06/18 - 13:52:50 - INFO - Destroying DailySale: 176
+03/06/18 - 13:52:50 - INFO - Destroying DailySale: 177
+03/06/18 - 13:52:50 - INFO - Destroying DailySale: 178
+03/06/18 - 13:52:50 - INFO - Destroying DailySale: 179
+03/06/18 - 13:52:50 - INFO - Destroying DailySale: 180
+03/06/18 - 13:52:50 - INFO - Inserted DailySale: 174
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 175
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 176
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 177
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 178
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 179
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 180
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 181
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 182
+03/06/18 - 13:52:51 - INFO - Inserted DailySale: 183
+03/06/18 - 13:52:51 - INFO - Upating ExpenseItem: 1496
+03/06/18 - 13:52:51 - INFO - Upating ExpenseItem: 1497
+03/06/18 - 13:52:51 - INFO - Upating ExpenseItem: 1498
+03/06/18 - 13:52:51 - INFO - Upating ExpenseItem: 1499
+03/06/18 - 13:52:51 - INFO - Upating ExpenseItem: 1500
+03/06/18 - 13:52:51 - INFO - Upating ExpenseItem: 1501
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1550
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1551
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1552
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1553
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1554
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1555
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1556
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1557
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1558
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1559
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1560
+03/06/18 - 13:52:51 - INFO - Inserted ExpenseItem: 1561
+03/06/18 - 14:35:22 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:28 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:30 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:35:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:31 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:32 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:32 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:32 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:32 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:34 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:35 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:38 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:39 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:39 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:40 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:43 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:44 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:45 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:46 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:46 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:46 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:48 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:49 - INFO - Changed to tab: Inventory
+03/06/18 - 14:36:50 - INFO - Changed to tab: Reports
+03/06/18 - 14:37:03 - INFO - Application closing
+03/06/18 - 14:38:23 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 0
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 1
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 2
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 3
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 4
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 5
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 6
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 7
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 8
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 9
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 10
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 11
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 12
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 13
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 14
+03/06/18 - 14:38:24 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:24 - INFO - Upating Recipe: 38
+03/06/18 - 14:38:25 - INFO - Changed to tab: Recipes
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:26 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:27 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:27 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:27 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:27 - INFO - Changed to tab: Inventory
+03/06/18 - 14:38:28 - INFO - Changed to tab: Inventory
+03/06/18 - 17:11:34 - INFO - Application closing
+03/06/18 - 18:22:40 - INFO - Application starting
+03/06/18 - 18:22:41 - INFO - Loading models
+03/06/18 - 18:22:42 - INFO - Models loaded
+03/06/18 - 18:22:46 - INFO - Upating BreadOrder: 331
+03/06/18 - 18:22:47 - INFO - Upating BreadOrder: 330
+03/06/18 - 18:22:47 - INFO - Upating DailySale: 8
+03/06/18 - 18:22:47 - INFO - Upating DailySale: 9
+03/06/18 - 18:22:47 - INFO - Upating DailySale: 10
+03/06/18 - 18:22:47 - INFO - Upating DailySale: 11
+03/06/18 - 18:22:47 - INFO - Upating DailySale: 12
+03/06/18 - 18:22:47 - INFO - Upating DailySale: 13
+03/06/18 - 18:22:47 - INFO - Upating DailySale: 14
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 15
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 16
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 17
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 18
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 19
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 20
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 21
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 22
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 23
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 24
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 25
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 26
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 27
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 28
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 29
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 30
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 31
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 32
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 33
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 34
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 35
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 36
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 37
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 38
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 39
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 40
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 41
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 42
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 43
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 44
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 45
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 46
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 47
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 48
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 49
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 50
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 51
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 52
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 53
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 54
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 55
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 56
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 57
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 58
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 59
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 60
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 61
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 62
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 63
+03/06/18 - 18:22:48 - INFO - Upating DailySale: 64
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 65
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 66
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 67
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 68
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 69
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 70
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 71
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 72
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 73
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 74
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 75
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 76
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 77
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 78
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 79
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 80
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 81
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 82
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 83
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 84
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 85
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 86
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 87
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 88
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 89
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 90
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 91
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 92
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 93
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 94
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 95
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 96
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 97
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 98
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 99
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 100
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 101
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 102
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 103
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 104
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 105
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 106
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 107
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 108
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 109
+03/06/18 - 18:22:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 110
+03/06/18 - 18:22:49 - INFO - Upating DailySale: 111
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 112
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 113
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 114
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 115
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 116
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 117
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 118
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 119
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 120
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 121
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 122
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 123
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 124
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 125
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 126
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 127
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 128
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 129
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 130
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 131
+03/06/18 - 18:22:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 132
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 133
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 134
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 135
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 136
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 137
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 138
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 139
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 140
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 141
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 142
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 143
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 144
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 145
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 146
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 147
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 148
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 149
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 150
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 151
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 152
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 153
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 154
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 155
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 156
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 157
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 158
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 159
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 160
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 161
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 162
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 163
+03/06/18 - 18:22:50 - INFO - Upating DailySale: 164
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 165
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 166
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 167
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 168
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 169
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 170
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 171
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 172
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 173
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 174
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 175
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 176
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 177
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 178
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 179
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 180
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 181
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 182
+03/06/18 - 18:22:51 - INFO - Upating DailySale: 183
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 174
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 175
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 176
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 177
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 178
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 179
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 180
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 181
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 182
+03/06/18 - 18:22:51 - INFO - Destroying DailySale: 183
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 174
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 175
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 176
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 177
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 178
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 179
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 180
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 181
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 182
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 183
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 184
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 185
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 186
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 187
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 188
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 189
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 190
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 191
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 192
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:51 - INFO - Inserted DailySale: 193
+03/06/18 - 18:22:52 - INFO - Inserted DailySale: 194
+03/06/18 - 18:22:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:52 - INFO - Upating ExpenseItem: 1496
+03/06/18 - 18:22:52 - INFO - Upating ExpenseItem: 1497
+03/06/18 - 18:22:52 - INFO - Upating ExpenseItem: 1498
+03/06/18 - 18:22:52 - INFO - Upating ExpenseItem: 1499
+03/06/18 - 18:22:52 - INFO - Upating ExpenseItem: 1500
+03/06/18 - 18:22:52 - INFO - Upating ExpenseItem: 1501
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1562
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1563
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1564
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1565
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1566
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1567
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1568
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1569
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1570
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1571
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1572
+03/06/18 - 18:22:52 - INFO - Inserted ExpenseItem: 1573
+03/06/18 - 18:22:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:22:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:00 - INFO - Executing InventoryListVM#NewInventoryHelper
+03/06/18 - 18:23:01 - INFO - Adding temp tab: NewInventoryItemWizard
+03/06/18 - 18:23:01 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:13 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:17 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:19 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:26 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:27 - INFO - Executing WizardVM#NextPage
+03/06/18 - 18:23:29 - INFO - Executing NewInventoryItemWizard#AddVendor
+03/06/18 - 18:23:35 - INFO - Executing ModalVM`1#ModalOk
+03/06/18 - 18:23:36 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:36 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:43 - INFO - Executing WizardVM#NextPage
+03/06/18 - 18:23:43 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:49 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:50 - INFO - Executing ReOrderVM#PlaceBelow
+03/06/18 - 18:23:51 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:52 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:52 - INFO - Changed to tab: New Item
+03/06/18 - 18:23:53 - INFO - Executing NewInventoryItemWizard#FinishWizard
+03/06/18 - 18:23:53 - INFO - Inserted InventoryItem: 136
+03/06/18 - 18:23:53 - INFO - Upating Vendor: 0
+03/06/18 - 18:23:54 - INFO - Removing temp tab
+03/06/18 - 18:23:54 - INFO - Changed to tab: Settings
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:23:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:03 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:04 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:04 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:04 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:04 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:04 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:05 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:05 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:05 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:05 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:05 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:06 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:06 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:06 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:06 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:06 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:06 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:07 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:07 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:07 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:07 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:07 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:07 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:07 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:07 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:08 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:09 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:09 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:09 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:09 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:09 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:25 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:26 - INFO - Changed to tab: Inventory
+03/06/18 - 18:24:26 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:09 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:09 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:10 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:11 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:14 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:15 - INFO - Changed to tab: Inventory
+03/06/18 - 18:27:17 - INFO - Executing InventoryListVM#NewInventoryHelper
+03/06/18 - 18:27:17 - INFO - Adding temp tab: NewInventoryItemWizard
+03/06/18 - 18:27:17 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:27 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:30 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:32 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:34 - INFO - Executing WizardVM#NextPage
+03/06/18 - 18:27:35 - INFO - Executing NewInventoryItemWizard#AddVendor
+03/06/18 - 18:27:38 - INFO - Executing ModalVM`1#ModalOk
+03/06/18 - 18:27:38 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:39 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:45 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:46 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:47 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:47 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:51 - INFO - Executing WizardVM#NextPage
+03/06/18 - 18:27:51 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:58 - INFO - Changed to tab: New Item
+03/06/18 - 18:27:59 - INFO - Executing ReOrderVM#PlaceBelow
+03/06/18 - 18:28:00 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:01 - INFO - Executing NewInventoryItemWizard#FinishWizard
+03/06/18 - 18:28:01 - INFO - Inserted InventoryItem: 137
+03/06/18 - 18:28:01 - INFO - Upating Vendor: 0
+03/06/18 - 18:28:01 - INFO - Removing temp tab
+03/06/18 - 18:28:01 - INFO - Changed to tab: Settings
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:01 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:03 - INFO - Executing InventoryListVM#NewInventoryHelper
+03/06/18 - 18:28:03 - INFO - Adding temp tab: NewInventoryItemWizard
+03/06/18 - 18:28:03 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:10 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:12 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:13 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:17 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:17 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:18 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:18 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:19 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:20 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:21 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:22 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:22 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:23 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:23 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:26 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:26 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:28 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:29 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:30 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:34 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:36 - INFO - Executing WizardVM#NextPage
+03/06/18 - 18:28:37 - INFO - Executing NewInventoryItemWizard#AddVendor
+03/06/18 - 18:28:39 - INFO - Executing ModalVM`1#ModalOk
+03/06/18 - 18:28:39 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:40 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:42 - INFO - Executing WizardVM#NextPage
+03/06/18 - 18:28:42 - INFO - Changed to tab: New Item
+03/06/18 - 18:28:43 - INFO - Executing NewInventoryItemWizard#FinishWizard
+03/06/18 - 18:28:43 - INFO - Inserted InventoryItem: 138
+03/06/18 - 18:28:43 - INFO - Upating Vendor: 0
+03/06/18 - 18:28:43 - INFO - Removing temp tab
+03/06/18 - 18:28:43 - INFO - Changed to tab: Settings
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:45 - INFO - Executing InventoryListVM#StartEditOrder
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:48 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:49 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:50 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:52 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:53 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:54 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:55 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:56 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:28:57 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:00 - INFO - Executing InventoryListVM#EditInventoryItem
+03/06/18 - 18:29:00 - INFO - Adding temp tab: NewInventoryItemWizard
+03/06/18 - 18:29:00 - INFO - Changed to tab: New Item
+03/06/18 - 18:29:00 - INFO - Changed to tab: New Item
+03/06/18 - 18:29:00 - INFO - Changed to tab: New Item
+03/06/18 - 18:29:01 - INFO - Executing WizardVM#NextPage
+03/06/18 - 18:29:01 - INFO - Changed to tab: New Item
+03/06/18 - 18:29:02 - INFO - Executing WizardVM#NextPage
+03/06/18 - 18:29:02 - INFO - Changed to tab: New Item
+03/06/18 - 18:29:09 - INFO - Changed to tab: New Item
+03/06/18 - 18:29:10 - INFO - Executing ReOrderVM#PlaceBelow
+03/06/18 - 18:29:11 - INFO - Changed to tab: New Item
+03/06/18 - 18:29:12 - INFO - Executing NewInventoryItemWizard#FinishWizard
+03/06/18 - 18:29:12 - INFO - Upating InventoryItem: 138
+03/06/18 - 18:29:12 - INFO - Upating Vendor: 0
+03/06/18 - 18:29:12 - INFO - Removing temp tab
+03/06/18 - 18:29:12 - INFO - Changed to tab: Settings
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:12 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:13 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:14 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:15 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:22 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:22 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:23 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:23 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:24 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:24 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:26 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:27 - INFO - Changed to tab: Orders
+03/06/18 - 18:29:32 - INFO - Changed to tab: Vendors
+03/06/18 - 18:29:32 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:33 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:34 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:35 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:36 - INFO - Changed to tab: Inventory
+03/06/18 - 18:29:37 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:18 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:30 - INFO - Executing InventoryTabVM#GenerateInvList
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:42 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:43 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:44 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:33:45 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:34:21 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:46 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:47 - INFO - Changed to tab: Inventory
+03/06/18 - 18:42:48 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:02 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:03 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:04 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:06 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:06 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:06 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:06 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:06 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:06 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:06 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:06 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:07 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:08 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:09 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:10 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:11 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:12 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:13 - INFO - Changed to tab: Inventory
+03/07/18 - 11:03:17 - INFO - Application closing

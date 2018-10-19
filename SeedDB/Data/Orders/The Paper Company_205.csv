@@ -1,0 +1,15 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+78,Biopack #4,6,39.55,Paper Goods,Case,0,Stack,4,Each,40,0.4,2/20/2018 2:03:05 PM,3
+80,Soufle Lids,1,24.37,Paper Goods,2500,4.4,Sleeve,25,1,1,1,1/24/2018 12:00:00 AM,3
+81,Spoons,1,7,Paper Goods,1000,0,Sleeve,10,1,1,1,2/14/2018 12:00:00 AM,3
+82,Forks,1,20.59,Paper Goods,1000,0,Sleeve,10,1,1,1,2/21/2018 12:00:00 AM,3
+85,Wax Paper Sheets,1,54.65,Paper Goods,6000,0,Stack,6,1,1,1,2/21/2018 12:00:00 AM,3
+86,Small To-Go Bags,1,16.21,Paper Goods,500,0,Case,1,1,1,1,2/14/2018 12:00:00 AM,3
+89,To-Go Soup Bowls (16oz),1,48.78,Paper Goods,500,0,Sleeve,10,1,1,1,2/21/2018 12:00:00 AM,3
+91,To-Go Soup Lids,1,42.68,Paper Goods,500,0,Sleeve,10,1,1,1,2/21/2018 12:00:00 AM,3
+92,To-Go Soup Bowls (12oz),1,42.68,Paper Goods,500,8,Sleeve,10,1,1,1,4/24/2017 3:47:00 PM,3
+110,Poly Gloves,2,15.8,Paper Goods,2000,0,BOX,4,1,1,1,2/21/2018 12:00:00 AM,3
+115,16/24 Oz Lids,1,25.51,Paper Goods,1000 CASE,12,Sleeve,10,1,1,1,,3
+122,Garbage Bags,1,28.62,Janitorial,250,1.1,CASE,1,1,1,1,2/14/2018 12:00:00 AM,3
+126,Steel Wool,1,4.62,Janitorial,12 COUNT,9,Sleeve,12,1,1,1,2/14/2018 12:00:00 AM,3
+133,Grill Pads,1,69.39,Janitorial,60 COUNT,0,Sleeve,6,1,1,1,,

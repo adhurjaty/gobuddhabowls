@@ -1,0 +1,22 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,75.51,6,CASE 30lb,Dairy,9,5lb BAG,OZ-wt,480,1,2,8/16/2017 12:00:00 AM,0
+1,Cheddar,45.99,4,CASE 20lb,Dairy,8,5lb BAG,OZ-wt,320,1,2,8/16/2017 12:00:00 AM,0
+4,Butter,91.85,30,CASE 30lb,Dairy,26,1lb,OZ-wt,480,1,1,8/16/2017 12:00:00 AM,0
+8,Eggs,16.98,6,15 DOZEN,Dairy,4,TRAY,EA,180,95,1,8/16/2017 12:00:00 AM,0
+11,Pesto,106,2,2/22lb,Dairy,1,BAG,OZ-wt,4,970000,1,8/16/2017 12:00:00 AM,0
+14,Stewed Tomatoes,15.79,6,6# CANS,Grocery,7,CAN,EA,6,100,1,8/16/2017 12:00:00 AM,0
+19,Mayonnaise,25.04,4,4 GAL,Grocery,2,JUG,EA,4,10000,1,8/16/2017 12:00:00 AM,0
+21,Macaroni,17.69,2,20lb CASE,Grocery,3,BAG,EA,320,241,2,8/16/2017 12:00:00 AM,0
+25,Tomato Juice,15.79,12,12x48oz CANS,Grocery,31,CAN,EA,12,100,2,8/16/2017 12:00:00 AM,0
+54,Yellow Onions,14.99,1,50lb,Produce,0,BAG,OZ-wt,800,85,3,8/16/2017 12:00:00 AM,0
+55,Red Onions,14.99,1,25lb,Produce,1,BAG,OZ-wt,400,8500,1,8/16/2017 12:00:00 AM,0
+56,Potatoes,11.59,1,50lb,Produce,1.5,1/2 CASE,OZ-wt,800,850000,1,8/16/2017 12:00:00 AM,0
+57,Spinach,15.79,4,4x2.5lb,Produce,0,BAG,OZ-wt,160,99,1,8/16/2017 12:00:00 AM,0
+58,Mixed Greens,5.99,1,3lb,Produce,1,BAG,OZ-wt,48,9800,1,8/16/2017 12:00:00 AM,0
+59,Mushrooms,18.99,1,10lb CASE,Produce,0,FLAT,OZ-wt,160,95,3,8/16/2017 12:00:00 AM,0
+61,Tomatoes,16.53,1,25lb,Produce,0.5,CASE,OZ-wt,400,97,2,8/16/2017 12:00:00 AM,0
+64,Fresh Basil,8.99,1,1lb,Produce,1,BAG,OZ-wt,16,65,1,8/16/2017 12:00:00 AM,0
+66,Pineapple,16.99,6,6 COUNT,Produce,7,EACH,OZ-wt,44,100,1,8/16/2017 12:00:00 AM,0
+72,Chicken Breast,69.99,1,40lb CASE,Poultry,1,CASE,OZ-wt,640,85,2,8/16/2017 12:00:00 AM,0
+74,Italian Sausage,47.04,4,20lb CASE,Meats,8,BAG,OZ-wt,160,91,1,8/16/2017 12:00:00 AM,0
+75,Bacon Bits,53.99,2,10lb CASE,Meats,4,BAG,OZ-wt,160,100,1,8/16/2017 12:00:00 AM,0

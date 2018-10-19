@@ -1,0 +1,29 @@
+Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,Id
+Butter,Dairy,CASE 30lb,32,1lb,30,OZ-wt,480,1,76.99,1,1/31/2017 6:10:55 PM,4
+Heavy Cream,Dairy,6 1/2 Gallon,3,1/2 GALLON,6,CUP,48,1,35.95,1,1/31/2017 6:10:55 PM,6
+Eggs,Dairy,15 DOZEN,6,TRAY,6,EA,180,0.95,19.91,1,1/31/2017 6:10:55 PM,8
+Whole Milk,Dairy,2 GALLON,7,GALLON,2,CUP,32,1,5.69,12,1/31/2017 6:10:55 PM,9
+Pizza Sauce,Dry Goods,6# CANS,9,CAN,6,EA,6,1,20.03,2,1/31/2017 6:10:55 PM,13
+Stewed Tomatoes,Dry Goods,6# CANS,2,CAN,6,EA,6,1,13.62,3,1/31/2017 6:10:55 PM,14
+Mayonnaise,Dry Goods,4 GAL,2,JUG,4,EA,4,1,23.01,1,1/31/2017 6:10:55 PM,19
+BBQ Sauce,Dry Goods,CS 39.5lbs,2,JUG,4,OZ-wt,632,0.98,33.88,1,1/31/2017 6:10:55 PM,20
+Macaroni,Dry Goods,2lb,7,BAG,2,EA,320,2.41,14.29,4,1/31/2017 6:10:55 PM,21
+Roasted Bell Peppers,Dry Goods,6# CANS,2,CAN,6,OZ-wt,360,0.98,30.06,2,1/31/2017 6:10:55 PM,23
+Canola Oil,Dry Goods,30lb JUG,0.6,JUG,1,OZ-wt,800,0.99,20.44,1,1/31/2017 6:10:55 PM,34
+Olive Oil,Dry Goods,6 GAL,7.5,JUG,6,OZ-fl,768,0.99,52.59,3,1/31/2017 6:10:55 PM,36
+Flour,Dry Goods,25lb,1,BAG,1,CUP,66.67,1,6.67,1,1/31/2017 6:10:55 PM,37
+Lemon Juice,Dry Goods,1 Gal,1.1,GAL,1,OZ-wt,128,1,10.2,1,1/31/2017 6:10:55 PM,42
+Yellow Onions,Produce,50lb,0,BAG,1,OZ-wt,800,0.85,10.5,4,1/31/2017 6:10:55 PM,54
+Red Onions,Produce,25lb,0.25,BAG,1,OZ-wt,400,0.85,13.5,1,1/31/2017 6:10:55 PM,55
+Potatoes,Produce,1/2 CASE,0.3,1/2 CASE,1,OZ-wt,800,0.85,8,1,1/31/2017 6:10:55 PM,56
+Spinach,Produce,10lb,0,BAG,4,OZ-wt,160,0.99,12.5,4,1/31/2017 6:10:55 PM,57
+Mixed Greens,Produce,3lb,1,BAG,1,OZ-wt,48,0.98,5.99,2,1/31/2017 6:10:55 PM,58
+Mushrooms,Produce,10lb,2,FLAT,1,OZ-wt,160,0.95,17.5,7,1/31/2017 6:10:55 PM,59
+Tomatoes,Produce,25lb,1.2,CASE,1,OZ-wt,400,0.97,13.95,3,1/31/2017 6:10:55 PM,61
+Avocado,Produce,1/2 CASE,24,EACH,24,EA,24,1,38,1,1/31/2017 6:10:55 PM,62
+Fresh Basil,Produce,1lb,0.4,BAG,1,OZ-wt,16,0.65,4.95,2,1/31/2017 6:10:55 PM,64
+Garlic Peeled,Produce,5lb JAR,0,JAR,1,OZ-wt,114.29,0.98,17,2,1/31/2017 6:10:55 PM,71
+Chicken Breast,Poultry,40lb CASE,2,CASE,1,OZ-wt,640,0.85,44.8,6,1/31/2017 6:10:55 PM,72
+Italian Sausage,Meats,10lb CASE,10,BAG,2,OZ-wt,160,0.91,17.54,6,1/31/2017 6:10:55 PM,74
+Bacon Bits,Meats,10lb CASE,6,BAG,2,OZ-wt,160,1,70,2,1/31/2017 6:10:55 PM,75
+Biopack #4,Paper Goods,Case,4,Stack,4,Each,40,40,32.65,5,1/31/2017 6:10:55 PM,78

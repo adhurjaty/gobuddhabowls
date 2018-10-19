@@ -1,0 +1,9 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,Paper Goods,Case,10,Stack,4,Each,40,4E+07,39.55,8,10/31/2017 12:00:00 AM,3
+81,Spoons,Paper Goods,1000,16,Sleeve,10,1,1,10000,7,1,10/31/2017 12:00:00 AM,3
+89,To-Go Soup Bowls (16oz),Paper Goods,500,3,Sleeve,10,1,1,1000000,48.78,1,10/31/2017 12:00:00 AM,3
+110,Poly Gloves,Paper Goods,2000,20,BOX,4,1,1,100,15.8,1,10/31/2017 12:00:00 AM,3
+120,Ceramawrap,Paper Goods,2000,1,EACH,1,1,1,100,10.54,1,10/31/2017 12:00:00 AM,3
+122,Garbage Bags,Janitorial,250,1.5,CASE,1,1,1,100,28.62,1,10/31/2017 12:00:00 AM,3
+125,Bleach,Janitorial,4 GAL,4.2,GALLON,4,1,1,100,8,1,10/31/2017 12:00:00 AM,3
+126,Steel Wool,Janitorial,12 COUNT,9,Sleeve,12,1,1,100,4.77,1,10/31/2017 12:00:00 AM,3

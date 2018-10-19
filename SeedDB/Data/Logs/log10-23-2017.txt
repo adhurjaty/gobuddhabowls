@@ -1,0 +1,23 @@
+10/23/17 - 14:03:31 - INFO - Application starting
+10/23/17 - 14:03:31 - INFO - Loading models
+10/23/17 - 14:03:32 - INFO - Models loaded
+10/23/17 - 14:03:50 - INFO - Changed to tab: Vendors
+10/23/17 - 14:03:51 - INFO - Changed to tab: Orders
+10/23/17 - 14:03:53 - INFO - Changed to tab: Orders
+10/23/17 - 14:03:54 - INFO - Changed to tab: Bread
+10/23/17 - 14:04:03 - INFO - Application closing
+10/23/17 - 14:24:19 - INFO - Application starting
+10/23/17 - 14:24:19 - INFO - Loading models
+10/23/17 - 14:24:20 - INFO - Models loaded
+10/23/17 - 14:24:24 - INFO - Upating BreadOrder: 162
+10/23/17 - 14:24:25 - INFO - Changed to tab: Bread
+10/23/17 - 14:24:30 - INFO - Executing BreadGuideVM#UpdateSquare
+10/23/17 - 14:24:30 - INFO - Upating BreadOrder: 162
+10/23/17 - 14:24:33 - INFO - Upating BreadOrder: 162
+10/23/17 - 14:24:39 - INFO - Application closing
+10/23/17 - 15:37:53 - INFO - Application starting
+10/23/17 - 15:37:53 - INFO - Loading models
+10/23/17 - 15:37:54 - INFO - Models loaded
+10/23/17 - 15:37:57 - INFO - Upating BreadOrder: 162
+10/23/17 - 15:37:58 - INFO - Changed to tab: Bread
+10/23/17 - 15:38:43 - INFO - Application closing

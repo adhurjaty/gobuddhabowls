@@ -1,0 +1,1982 @@
+11/20/17 - 08:12:21 - INFO - Application starting
+11/20/17 - 08:12:21 - INFO - Loading models
+11/20/17 - 08:12:22 - INFO - Models loaded
+11/20/17 - 08:12:23 - INFO - Upating BreadOrder: 204
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:26 - INFO - Changed to tab: Inventory
+11/20/17 - 08:12:27 - INFO - Executing InventoryTabVM#GenerateInvList
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 446
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 447
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 448
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 449
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 450
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 451
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 452
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 453
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 454
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 455
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 456
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 457
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 458
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 459
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 460
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 461
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 462
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 463
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 464
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 465
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 466
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 488
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 489
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 490
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 491
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 492
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 493
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 494
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 495
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 496
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 497
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 498
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 499
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 500
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 501
+11/20/17 - 08:12:28 - INFO - Destroying DailySale: 502
+11/20/17 - 08:12:29 - INFO - Destroying DailySale: 503
+11/20/17 - 08:12:29 - INFO - Destroying DailySale: 504
+11/20/17 - 08:12:29 - INFO - Destroying DailySale: 505
+11/20/17 - 08:12:29 - INFO - Destroying DailySale: 506
+11/20/17 - 08:12:29 - INFO - Destroying DailySale: 507
+11/20/17 - 08:12:29 - INFO - Destroying DailySale: 508
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 488
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 489
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 490
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 491
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 492
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 493
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 494
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 495
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 496
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 497
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 498
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 499
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 500
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 501
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 502
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 503
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 504
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 505
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 506
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 507
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 508
+11/20/17 - 08:12:29 - INFO - Inserted DailySale: 509
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 147
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 148
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 149
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 150
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 151
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 152
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 153
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 154
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 155
+11/20/17 - 08:12:32 - INFO - Inserted ExpenseItem: 156
+11/20/17 - 08:12:33 - INFO - Inserted ExpenseItem: 157
+11/20/17 - 08:12:33 - INFO - Inserted ExpenseItem: 158
+11/20/17 - 08:12:33 - INFO - Inserted ExpenseItem: 159
+11/20/17 - 08:12:33 - INFO - Inserted ExpenseItem: 160
+11/20/17 - 08:12:33 - INFO - Inserted ExpenseItem: 161
+11/20/17 - 08:12:33 - INFO - Inserted ExpenseItem: 162
+11/20/17 - 08:12:33 - INFO - Inserted ExpenseItem: 163
+11/20/17 - 08:12:33 - INFO - Inserted ExpenseItem: 164
+11/20/17 - 10:55:34 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:36 - INFO - Upating Recipe: 0
+11/20/17 - 10:55:36 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:36 - INFO - Upating Recipe: 1
+11/20/17 - 10:55:36 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:36 - INFO - Upating Recipe: 2
+11/20/17 - 10:55:36 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 3
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 4
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 5
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 6
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 7
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 8
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 9
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 10
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 11
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 12
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 13
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 10:55:37 - INFO - Upating Recipe: 14
+11/20/17 - 10:55:37 - INFO - Changed to tab: Recipes
+11/20/17 - 11:17:51 - INFO - Changed to tab: Orders
+11/20/17 - 11:17:56 - INFO - Changed to tab: Orders
+11/20/17 - 11:17:59 - INFO - Changed to tab: Orders
+11/20/17 - 11:18:05 - INFO - Changed to tab: Orders
+11/20/17 - 11:18:05 - INFO - Changed to tab: Orders
+11/20/17 - 11:18:05 - INFO - Changed to tab: Orders
+11/20/17 - 11:18:07 - INFO - Changed to tab: Orders
+11/20/17 - 11:18:10 - INFO - Changed to tab: Orders
+11/20/17 - 11:18:11 - INFO - Executing OrderTabVM#ViewReceivedOrder
+11/20/17 - 11:18:12 - INFO - Adding temp tab: ViewOrderVM
+11/20/17 - 11:18:12 - INFO - Changed to tab: PO#: 127
+11/20/17 - 11:46:42 - INFO - Changed to tab: Orders
+11/20/17 - 12:14:52 - INFO - Executing PeriodSelectorVM#GoToCurWeek
+11/20/17 - 12:14:52 - INFO - Changed to tab: Orders
+11/20/17 - 12:14:52 - INFO - Changed to tab: Orders
+11/20/17 - 12:14:52 - INFO - Changed to tab: Orders
+11/20/17 - 12:14:52 - INFO - Changed to tab: Orders
+11/20/17 - 12:14:52 - INFO - Changed to tab: Orders
+11/20/17 - 12:14:55 - INFO - Changed to tab: Orders
+11/20/17 - 12:14:56 - INFO - Changed to tab: Orders
+11/20/17 - 12:14:57 - INFO - Executing OrderTabVM#ViewReceivedOrder
+11/20/17 - 12:14:57 - INFO - Changed to tab: PO#: 156
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:36 - INFO - Changed to tab: Inventory
+11/20/17 - 12:28:39 - INFO - Executing InventoryTabVM#StartNewInventory
+11/20/17 - 12:28:40 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:40 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:40 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:40 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:43 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:46 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:28:49 - INFO - Changed to tab: Bread
+11/20/17 - 12:28:52 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:25 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:27 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:32 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:34 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:37 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:38 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:41 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 206
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 206
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 207
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 207
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 208
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 208
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 209
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 209
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 210
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 210
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 206
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 206
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 207
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 207
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 208
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 208
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 209
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 209
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 210
+11/20/17 - 12:29:46 - INFO - Upating BreadOrder: 210
+11/20/17 - 12:29:49 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:49 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:49 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:49 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:49 - INFO - Upating BreadOrder: 206
+11/20/17 - 12:29:49 - INFO - Upating BreadOrder: 206
+11/20/17 - 12:29:49 - INFO - Upating BreadOrder: 207
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 207
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 208
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 208
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 209
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 209
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 210
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 210
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 205
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 206
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 206
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 207
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 207
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 208
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 208
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 209
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 209
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 210
+11/20/17 - 12:29:50 - INFO - Upating BreadOrder: 210
+11/20/17 - 12:30:01 - INFO - Changed to tab: Bread
+11/20/17 - 12:30:09 - INFO - Changed to tab: Bread
+11/20/17 - 12:30:16 - INFO - Inserted BreadOrder: 211
+11/20/17 - 12:30:16 - INFO - Inserted BreadOrder: 212
+11/20/17 - 12:30:16 - INFO - Inserted BreadOrder: 213
+11/20/17 - 12:30:16 - INFO - Inserted BreadOrder: 214
+11/20/17 - 12:30:16 - INFO - Inserted BreadOrder: 215
+11/20/17 - 12:30:16 - INFO - Inserted BreadOrder: 216
+11/20/17 - 12:30:16 - INFO - Inserted BreadOrder: 217
+11/20/17 - 12:30:16 - INFO - Changed to tab: Bread
+11/20/17 - 12:30:19 - INFO - Changed to tab: Bread
+11/20/17 - 12:30:28 - INFO - Changed to tab: Inventory
+11/20/17 - 12:30:29 - INFO - Executing InventoryTabVM#StartNewInventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:30 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:33 - INFO - Changed to tab: Bread
+11/20/17 - 12:30:36 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:37 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:52 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:52 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:55 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:56 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:30:57 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:05 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:05 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:05 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:07 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:09 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:09 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:12 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:13 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:31:17 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:19 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:19 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:20 - INFO - Executing OrderTabVM#ViewOpenOrder
+11/20/17 - 12:31:21 - INFO - Changed to tab: PO#: 153
+11/20/17 - 12:31:23 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:24 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:24 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:25 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:25 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:34 - INFO - Executing OrderTabVM#ViewReceivedOrder
+11/20/17 - 12:31:34 - INFO - Changed to tab: PO#: 150
+11/20/17 - 12:31:37 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:40 - INFO - Changed to tab: Orders
+11/20/17 - 12:31:41 - INFO - Executing OrderTabVM#ViewReceivedOrder
+11/20/17 - 12:31:41 - INFO - Changed to tab: PO#: 142
+11/20/17 - 12:31:44 - INFO - Changed to tab: PO#: 142
+11/20/17 - 12:31:46 - INFO - Changed to tab: PO#: 142
+11/20/17 - 12:31:46 - INFO - Changed to tab: PO#: 142
+11/20/17 - 12:33:19 - INFO - Changed to tab: Reports
+11/20/17 - 12:33:21 - INFO - Changed to tab: PO#: 142
+11/20/17 - 12:33:22 - INFO - Changed to tab: Inventory
+11/20/17 - 12:33:25 - INFO - Changed to tab: PO#: 142
+11/20/17 - 12:33:27 - INFO - Executing ViewOrderVM#CancelView
+11/20/17 - 12:33:27 - INFO - Changed to tab: PO#: 150
+11/20/17 - 12:33:28 - INFO - Executing ViewOrderVM#CancelView
+11/20/17 - 12:33:28 - INFO - Changed to tab: PO#: 153
+11/20/17 - 12:33:29 - INFO - Executing ViewOrderVM#CancelView
+11/20/17 - 12:33:29 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:33:45 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:33:51 - INFO - Changed to tab: Orders
+11/20/17 - 12:33:53 - INFO - Executing OrderTabVM#ViewReceivedOrder
+11/20/17 - 12:33:53 - INFO - Changed to tab: PO#: 142
+11/20/17 - 12:33:56 - INFO - Executing ViewOrderVM#CancelView
+11/20/17 - 12:33:57 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:03 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:05 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:05 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:11 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:11 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:12 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:13 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:18 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:22 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:22 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:25 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:30 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:32 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:35 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:37 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:38 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:38 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:34:38 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:18 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:19 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:19 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:19 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:28 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:32 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:32 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:32 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:34 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:34 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:35 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:35 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:35 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:36 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:36 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:36 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:46 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:55 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:55 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:55 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:58 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:58 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:58 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:59 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:35:59 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:00 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:00 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:07 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:07 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:07 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:11 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:17 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:39 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:40 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:42 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:42 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:36:45 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:05 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:05 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:17 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:22 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:25 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:25 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:25 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:27 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:30 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:30 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:30 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:33 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:33 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:33 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:35 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:38 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:38 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:38 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:39 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:39 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:39 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:42 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:42 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:42 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:45 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:45 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:45 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:46 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:46 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:46 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:48 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:48 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:48 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:52 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:55 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:37:55 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:07 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:09 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:10 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:12 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:13 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:18 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:20 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:21 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:23 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:24 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:25 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:27 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:34 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:35 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:36 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:53 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:38:58 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:01 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:03 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:03 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:08 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:17 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:17 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:17 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:18 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:19 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:19 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:19 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:21 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:27 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:27 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:27 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:30 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:30 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:30 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:32 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:32 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:32 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:34 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:34 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:34 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:36 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:37 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:37 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:37 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:37 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:37 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:37 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:39 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:39 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:39 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:41 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:42 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:42 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:43 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:43 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:43 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:44 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:45 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:45 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:45 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:47 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:48 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:48 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:48 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:49 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:50 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:51 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:52 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:52 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:52 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:54 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:56 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:56 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:56 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:58 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:58 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:39:58 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:00 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:00 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:00 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:01 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:01 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:01 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:01 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:01 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:01 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:02 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:04 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:05 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:06 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:09 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:10 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:10 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:13 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:13 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:13 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:14 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:15 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:16 - INFO - Changed to tab: New Inventory
+11/20/17 - 12:40:17 - INFO - Executing NewInventoryVM#SaveInventory
+11/20/17 - 12:40:17 - INFO - Changed to tab: PO#: 156
+11/20/17 - 12:40:17 - INFO - Inserted Inventory: 27
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 7
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 7
+11/20/17 - 12:40:17 - INFO - Upating InventoryItem: 111
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 7
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 7
+11/20/17 - 12:40:17 - INFO - Upating InventoryItem: 77
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:17 - INFO - Upating InventoryItem: 1
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:17 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:17 - INFO - Upating InventoryItem: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 2
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 3
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 6
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 4
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 9
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 8
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 5
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 11
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 14
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 13
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:18 - INFO - Upating InventoryItem: 18
+11/20/17 - 12:40:18 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 31
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 32
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 33
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 25
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 26
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 24
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 23
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 20
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 36
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 30
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 19
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 41
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 131
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 21
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:19 - INFO - Upating InventoryItem: 34
+11/20/17 - 12:40:19 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 97
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 107
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 112
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 38
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 42
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 40
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 49
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 48
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 45
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 44
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 43
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 46
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 50
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 47
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 51
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:20 - INFO - Upating InventoryItem: 101
+11/20/17 - 12:40:20 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 99
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 113
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 128
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 54
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 55
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 56
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 58
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 57
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 63
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 59
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 60
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating InventoryItem: 61
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:21 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 62
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 66
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 1
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 64
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 10
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 71
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 8
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 9
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 8
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 72
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 73
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 74
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 8
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 0
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 8
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 75
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 129
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 130
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 104
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 5
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 5
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 102
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 5
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 5
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 100
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 6
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 114
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 79
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:22 - INFO - Upating InventoryItem: 115
+11/20/17 - 12:40:22 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 106
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 117
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 90
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 95
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 86
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 118
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 8
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 8
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 78
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 80
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 119
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 116
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 87
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 120
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 82
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 81
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 121
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 91
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 89
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 92
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 85
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 110
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:23 - INFO - Upating InventoryItem: 122
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:24 - INFO - Upating InventoryItem: 123
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:24 - INFO - Upating InventoryItem: 109
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:24 - INFO - Upating InventoryItem: 124
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating InventoryItem: 125
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 2
+11/20/17 - 12:40:24 - INFO - Upating InventoryItem: 127
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating InventoryItem: 108
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating Vendor: 3
+11/20/17 - 12:40:24 - INFO - Upating InventoryItem: 126
+11/20/17 - 12:40:26 - INFO - Changed to tab: PO#: 156
+11/20/17 - 12:40:32 - INFO - Changed to tab: Orders
+11/20/17 - 12:40:33 - INFO - Changed to tab: Orders
+11/20/17 - 12:40:33 - INFO - Changed to tab: Orders
+11/20/17 - 12:40:37 - INFO - Changed to tab: Orders
+11/20/17 - 12:40:37 - INFO - Changed to tab: Orders
+11/20/17 - 12:40:37 - INFO - Changed to tab: Orders
+11/20/17 - 12:40:39 - INFO - Executing OrderTabVM#ViewReceivedOrder
+11/20/17 - 12:40:39 - INFO - Changed to tab: PO#: 151
+11/20/17 - 12:40:41 - INFO - Changed to tab: PO#: 151
+11/20/17 - 12:40:43 - INFO - Changed to tab: PO#: 151
+11/20/17 - 12:40:43 - INFO - Changed to tab: PO#: 151
+11/20/17 - 12:40:44 - INFO - Changed to tab: PO#: 151
+11/20/17 - 12:40:45 - INFO - Changed to tab: PO#: 151
+11/20/17 - 12:40:45 - INFO - Changed to tab: PO#: 151
+11/20/17 - 12:40:47 - INFO - Executing ViewOrderVM#SaveEdits
+11/20/17 - 12:40:47 - INFO - Upating PurchaseOrder: 151
+11/20/17 - 12:40:47 - INFO - Changed to tab: PO#: 156
+11/20/17 - 12:40:49 - INFO - Changed to tab: Reports
+11/20/17 - 12:40:53 - INFO - Changed to tab: Reports
+11/20/17 - 12:40:53 - INFO - Destroying DailySale: 446
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 447
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 448
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 449
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 450
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 451
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 452
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 453
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 454
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 455
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 456
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 457
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 458
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 459
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 460
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 461
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 462
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 463
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 464
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 465
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 466
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 488
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 489
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 490
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 491
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 492
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 493
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 494
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 495
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 496
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 497
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 498
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 499
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 500
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 501
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 502
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 503
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 504
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 505
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 506
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 507
+11/20/17 - 12:40:54 - INFO - Destroying DailySale: 508
+11/20/17 - 12:40:54 - INFO - Inserted DailySale: 510
+11/20/17 - 12:40:54 - INFO - Inserted DailySale: 511
+11/20/17 - 12:40:54 - INFO - Inserted DailySale: 512
+11/20/17 - 12:40:54 - INFO - Inserted DailySale: 513
+11/20/17 - 12:40:55 - INFO - Inserted DailySale: 514
+11/20/17 - 12:40:55 - INFO - Inserted DailySale: 515
+11/20/17 - 12:40:55 - INFO - Inserted DailySale: 516
+11/20/17 - 12:40:55 - INFO - Inserted DailySale: 517
+11/20/17 - 12:40:55 - INFO - Inserted DailySale: 518
+11/20/17 - 12:40:55 - INFO - Inserted DailySale: 519
+11/20/17 - 12:40:55 - INFO - Inserted DailySale: 520
+11/20/17 - 12:40:55 - INFO - Changed to tab: Reports
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 85
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 86
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 87
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 88
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 89
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 90
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 153
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 154
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 155
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 156
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 157
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 158
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 159
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 160
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 161
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 162
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 163
+11/20/17 - 12:40:55 - INFO - Upating ExpenseItem: 164
+11/20/17 - 12:40:56 - INFO - Changed to tab: Reports
+11/20/17 - 12:41:01 - INFO - Changed to tab: Reports
+11/20/17 - 12:41:32 - INFO - Changed to tab: Reports
+11/20/17 - 12:41:35 - INFO - Changed to tab: Reports
+11/20/17 - 12:41:35 - INFO - Changed to tab: Orders
+11/20/17 - 12:41:37 - INFO - Changed to tab: Orders
+11/20/17 - 12:41:37 - INFO - Changed to tab: Orders
+11/20/17 - 12:41:38 - INFO - Executing OrderTabVM#ViewOpenOrder
+11/20/17 - 12:41:38 - INFO - Changed to tab: PO#: 149
+11/20/17 - 12:41:41 - INFO - Executing ViewOrderVM#SaveEdits
+11/20/17 - 12:41:41 - INFO - Upating PurchaseOrder: 149
+11/20/17 - 12:41:41 - INFO - Changed to tab: PO#: 156
+11/20/17 - 12:41:43 - INFO - Executing ViewOrderVM#CancelView
+11/20/17 - 12:41:43 - INFO - Changed to tab: PO#: 127
+11/20/17 - 12:41:44 - INFO - Changed to tab: Orders
+11/20/17 - 12:41:47 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+11/20/17 - 12:41:47 - INFO - Upating PurchaseOrder: 149
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 8
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 2
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 78
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 2
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 79
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 80
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 81
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 82
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 85
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 89
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 91
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 92
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 95
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 106
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 2
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:47 - INFO - Upating InventoryItem: 110
+11/20/17 - 12:41:47 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:48 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:48 - INFO - Upating InventoryItem: 115
+11/20/17 - 12:41:48 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:48 - INFO - Upating Vendor: 3
+11/20/17 - 12:41:48 - INFO - Upating InventoryItem: 122
+11/20/17 - 12:41:48 - INFO - Changed to tab: Orders
+11/20/17 - 12:41:48 - INFO - Changed to tab: Orders
+11/20/17 - 12:41:50 - INFO - Changed to tab: Reports
+11/20/17 - 12:41:56 - INFO - Changed to tab: Reports
+11/20/17 - 12:41:59 - INFO - Changed to tab: Reports
+11/20/17 - 12:42:01 - INFO - Executing MainViewModel#RefreshHelper
+11/20/17 - 12:42:01 - INFO - Loading models
+11/20/17 - 12:42:02 - INFO - Models loaded
+11/20/17 - 12:42:04 - INFO - Changed to tab: Reports
+11/20/17 - 12:42:05 - INFO - Changed to tab: Reports
+11/20/17 - 12:42:08 - INFO - Application closing
+11/20/17 - 12:42:18 - INFO - Application starting
+11/20/17 - 12:42:18 - INFO - Loading models
+11/20/17 - 12:42:19 - INFO - Models loaded
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 510
+11/20/17 - 12:42:21 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 511
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 512
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 513
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 514
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 515
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 516
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 517
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 518
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 519
+11/20/17 - 12:42:21 - INFO - Destroying DailySale: 520
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 510
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 511
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 512
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 513
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 514
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 515
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 516
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 517
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 518
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 519
+11/20/17 - 12:42:21 - INFO - Inserted DailySale: 520
+11/20/17 - 12:42:21 - INFO - Upating ExpenseItem: 147
+11/20/17 - 12:42:21 - INFO - Upating ExpenseItem: 148
+11/20/17 - 12:42:21 - INFO - Upating ExpenseItem: 149
+11/20/17 - 12:42:21 - INFO - Upating ExpenseItem: 150
+11/20/17 - 12:42:21 - INFO - Upating ExpenseItem: 151
+11/20/17 - 12:42:21 - INFO - Upating ExpenseItem: 152
+11/20/17 - 12:42:21 - INFO - Inserted ExpenseItem: 165
+11/20/17 - 12:42:21 - INFO - Inserted ExpenseItem: 166
+11/20/17 - 12:42:21 - INFO - Inserted ExpenseItem: 167
+11/20/17 - 12:42:21 - INFO - Inserted ExpenseItem: 168
+11/20/17 - 12:42:21 - INFO - Inserted ExpenseItem: 169
+11/20/17 - 12:42:21 - INFO - Inserted ExpenseItem: 170
+11/20/17 - 12:42:21 - INFO - Inserted ExpenseItem: 171
+11/20/17 - 12:42:22 - INFO - Inserted ExpenseItem: 172
+11/20/17 - 12:42:22 - INFO - Inserted ExpenseItem: 173
+11/20/17 - 12:42:22 - INFO - Inserted ExpenseItem: 174
+11/20/17 - 12:42:22 - INFO - Inserted ExpenseItem: 175
+11/20/17 - 12:42:22 - INFO - Inserted ExpenseItem: 176
+11/20/17 - 12:42:26 - INFO - Changed to tab: Orders
+11/20/17 - 12:42:31 - INFO - Changed to tab: Orders
+11/20/17 - 12:42:31 - INFO - Changed to tab: Orders
+11/20/17 - 12:42:32 - INFO - Changed to tab: Orders
+11/20/17 - 12:42:32 - INFO - Changed to tab: Orders
+11/20/17 - 12:42:36 - INFO - Changed to tab: Orders
+11/20/17 - 12:42:40 - INFO - Changed to tab: Reports
+11/20/17 - 12:42:44 - INFO - Changed to tab: Reports
+11/20/17 - 12:42:45 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.Models.SalesPAndL..ctor(Int32 weekNum, IEnumerable`1 items)
+   at BuddhaBowls.ProfitLossVM.SectionsFromDB(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/20/17 - 12:48:46 - INFO - Application starting
+11/20/17 - 12:48:46 - INFO - Loading models
+11/20/17 - 12:48:46 - INFO - Models loaded
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 510
+11/20/17 - 12:48:48 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 511
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 512
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 513
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 514
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 515
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 516
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 517
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 518
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 519
+11/20/17 - 12:48:48 - INFO - Destroying DailySale: 520
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 510
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 511
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 512
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 513
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 514
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 515
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 516
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 517
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 518
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 519
+11/20/17 - 12:48:48 - INFO - Inserted DailySale: 520
+11/20/17 - 12:48:48 - INFO - Upating ExpenseItem: 147
+11/20/17 - 12:48:48 - INFO - Upating ExpenseItem: 148
+11/20/17 - 12:48:48 - INFO - Upating ExpenseItem: 149
+11/20/17 - 12:48:49 - INFO - Upating ExpenseItem: 150
+11/20/17 - 12:48:49 - INFO - Upating ExpenseItem: 151
+11/20/17 - 12:48:49 - INFO - Upating ExpenseItem: 152
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 177
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 178
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 179
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 180
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 181
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 182
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 183
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 184
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 185
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 186
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 187
+11/20/17 - 12:48:49 - INFO - Inserted ExpenseItem: 188
+11/20/17 - 12:52:58 - INFO - Changed to tab: Reports
+11/20/17 - 12:53:01 - INFO - Changed to tab: Reports
+11/20/17 - 12:53:01 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.Models.SalesPAndL..ctor(Int32 weekNum, IEnumerable`1 items)
+   at BuddhaBowls.ProfitLossVM.SectionsFromDB(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/20/17 - 12:53:04 - INFO - Application starting
+11/20/17 - 12:53:04 - INFO - Loading models
+11/20/17 - 12:53:04 - INFO - Models loaded
+11/20/17 - 12:53:06 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 510
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 511
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 512
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 513
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 514
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 515
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 516
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 517
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 518
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 519
+11/20/17 - 12:53:06 - INFO - Destroying DailySale: 520
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 510
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 511
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 512
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 513
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 514
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 515
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 516
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 517
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 518
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 519
+11/20/17 - 12:53:06 - INFO - Inserted DailySale: 520
+11/20/17 - 12:53:06 - INFO - Upating ExpenseItem: 147
+11/20/17 - 12:53:06 - INFO - Upating ExpenseItem: 148
+11/20/17 - 12:53:06 - INFO - Upating ExpenseItem: 149
+11/20/17 - 12:53:06 - INFO - Upating ExpenseItem: 150
+11/20/17 - 12:53:06 - INFO - Upating ExpenseItem: 151
+11/20/17 - 12:53:06 - INFO - Upating ExpenseItem: 152
+11/20/17 - 12:53:06 - INFO - Inserted ExpenseItem: 189
+11/20/17 - 12:53:06 - INFO - Inserted ExpenseItem: 190
+11/20/17 - 12:53:06 - INFO - Inserted ExpenseItem: 191
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 192
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 193
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 194
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 195
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 196
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 197
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 198
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 199
+11/20/17 - 12:53:07 - INFO - Inserted ExpenseItem: 200
+11/20/17 - 12:53:30 - INFO - Changed to tab: Reports
+11/20/17 - 12:53:31 - INFO - Executing ChangeableTabVM#SwitchPage
+11/20/17 - 12:53:31 - INFO - Changed to tab: Reports
+11/20/17 - 12:53:31 - INFO - Changed to tab: Reports
+11/20/17 - 12:53:33 - INFO - Changed to tab: Reports
+11/20/17 - 12:53:33 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.Models.SalesPAndL..ctor(Int32 weekNum, IEnumerable`1 items)
+   at BuddhaBowls.ProfitLossVM.SectionsFromDB(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/20/17 - 12:53:35 - INFO - Application starting
+11/20/17 - 12:53:35 - INFO - Loading models
+11/20/17 - 12:53:35 - INFO - Models loaded
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 510
+11/20/17 - 12:53:37 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 511
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 512
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 513
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 514
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 515
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 516
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 517
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 518
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 519
+11/20/17 - 12:53:37 - INFO - Destroying DailySale: 520
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 510
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 511
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 512
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 513
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 514
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 515
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 516
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 517
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 518
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 519
+11/20/17 - 12:53:37 - INFO - Inserted DailySale: 520
+11/20/17 - 12:53:37 - INFO - Upating ExpenseItem: 147
+11/20/17 - 12:53:37 - INFO - Upating ExpenseItem: 148
+11/20/17 - 12:53:37 - INFO - Upating ExpenseItem: 149
+11/20/17 - 12:53:37 - INFO - Upating ExpenseItem: 150
+11/20/17 - 12:53:37 - INFO - Upating ExpenseItem: 151
+11/20/17 - 12:53:37 - INFO - Upating ExpenseItem: 152
+11/20/17 - 12:53:37 - INFO - Inserted ExpenseItem: 201
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 202
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 203
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 204
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 205
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 206
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 207
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 208
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 209
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 210
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 211
+11/20/17 - 12:53:38 - INFO - Inserted ExpenseItem: 212
+11/20/17 - 12:56:23 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:27 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:27 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:28 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:28 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:30 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:30 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:31 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:31 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:34 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:35 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:36 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:36 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:37 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:38 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:39 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:39 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:40 - INFO - Changed to tab: Orders
+11/20/17 - 12:56:40 - INFO - Changed to tab: Reports
+11/20/17 - 12:56:42 - INFO - Changed to tab: Reports
+11/20/17 - 12:56:42 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.Models.SalesPAndL..ctor(Int32 weekNum, IEnumerable`1 items)
+   at BuddhaBowls.ProfitLossVM.SectionsFromDB(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/20/17 - 12:56:49 - INFO - Application starting
+11/20/17 - 12:56:49 - INFO - Loading models
+11/20/17 - 12:56:50 - INFO - Models loaded
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 510
+11/20/17 - 12:56:51 - INFO - Upating BreadOrder: 204
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 511
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 512
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 513
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 514
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 515
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 516
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 517
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 518
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 519
+11/20/17 - 12:56:51 - INFO - Destroying DailySale: 520
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 510
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 511
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 512
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 513
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 514
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 515
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 516
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 517
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 518
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 519
+11/20/17 - 12:56:52 - INFO - Inserted DailySale: 520
+11/20/17 - 12:56:52 - INFO - Upating ExpenseItem: 147
+11/20/17 - 12:56:52 - INFO - Upating ExpenseItem: 148
+11/20/17 - 12:56:52 - INFO - Upating ExpenseItem: 149
+11/20/17 - 12:56:52 - INFO - Upating ExpenseItem: 150
+11/20/17 - 12:56:52 - INFO - Upating ExpenseItem: 151
+11/20/17 - 12:56:52 - INFO - Upating ExpenseItem: 152
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 213
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 214
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 215
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 216
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 217
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 218
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 219
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 220
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 221
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 222
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 223
+11/20/17 - 12:56:52 - INFO - Inserted ExpenseItem: 224
+11/20/17 - 13:17:22 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 0
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 1
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 2
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 3
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 4
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 5
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 6
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 7
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:23 - INFO - Upating Recipe: 8
+11/20/17 - 13:17:23 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:24 - INFO - Upating Recipe: 9
+11/20/17 - 13:17:24 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:24 - INFO - Upating Recipe: 10
+11/20/17 - 13:17:24 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:24 - INFO - Upating Recipe: 11
+11/20/17 - 13:17:24 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:24 - INFO - Upating Recipe: 12
+11/20/17 - 13:17:24 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:24 - INFO - Upating Recipe: 13
+11/20/17 - 13:17:24 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:24 - INFO - Upating Recipe: 14
+11/20/17 - 13:17:24 - INFO - Changed to tab: Recipes
+11/20/17 - 13:17:24 - INFO - Changed to tab: Reports
+11/20/17 - 13:17:27 - INFO - Executing ChangeableTabVM#SwitchPage
+11/20/17 - 13:17:28 - INFO - Changed to tab: Reports
+11/20/17 - 13:17:28 - INFO - Changed to tab: Reports
+11/20/17 - 13:17:32 - INFO - Changed to tab: Reports
+11/20/17 - 13:17:32 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.Models.SalesPAndL..ctor(Int32 weekNum, IEnumerable`1 items)
+   at BuddhaBowls.ProfitLossVM.SectionsFromDB(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/20/17 - 13:17:37 - INFO - Application starting
+11/20/17 - 13:17:37 - INFO - Loading models
+11/20/17 - 13:17:38 - INFO - Models loaded
+11/20/17 - 13:17:39 - INFO - Upating BreadOrder: 204
+11/20/17 - 13:17:39 - INFO - Destroying DailySale: 510
+11/20/17 - 13:17:39 - INFO - Destroying DailySale: 511
+11/20/17 - 13:17:39 - INFO - Destroying DailySale: 512
+11/20/17 - 13:17:39 - INFO - Destroying DailySale: 513
+11/20/17 - 13:17:40 - INFO - Destroying DailySale: 514
+11/20/17 - 13:17:40 - INFO - Destroying DailySale: 515
+11/20/17 - 13:17:40 - INFO - Destroying DailySale: 516
+11/20/17 - 13:17:40 - INFO - Destroying DailySale: 517
+11/20/17 - 13:17:40 - INFO - Destroying DailySale: 518
+11/20/17 - 13:17:40 - INFO - Destroying DailySale: 519
+11/20/17 - 13:17:40 - INFO - Destroying DailySale: 520
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 510
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 511
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 512
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 513
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 514
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 515
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 516
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 517
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 518
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 519
+11/20/17 - 13:17:40 - INFO - Inserted DailySale: 520
+11/20/17 - 13:17:40 - INFO - Upating ExpenseItem: 147
+11/20/17 - 13:17:40 - INFO - Upating ExpenseItem: 148
+11/20/17 - 13:17:40 - INFO - Upating ExpenseItem: 149
+11/20/17 - 13:17:40 - INFO - Upating ExpenseItem: 150
+11/20/17 - 13:17:40 - INFO - Upating ExpenseItem: 151
+11/20/17 - 13:17:40 - INFO - Upating ExpenseItem: 152
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 225
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 226
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 227
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 228
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 229
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 230
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 231
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 232
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 233
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 234
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 235
+11/20/17 - 13:17:40 - INFO - Inserted ExpenseItem: 236
+11/20/17 - 13:17:45 - INFO - Changed to tab: Settings
+11/20/17 - 13:17:46 - INFO - Application closing
+11/20/17 - 16:38:52 - INFO - Application starting
+11/20/17 - 16:38:52 - INFO - Loading models
+11/20/17 - 16:38:54 - INFO - Models loaded
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 510
+11/20/17 - 16:38:56 - INFO - Upating BreadOrder: 204
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 511
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 512
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 513
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 514
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 515
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 516
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 517
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 518
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 519
+11/20/17 - 16:38:56 - INFO - Destroying DailySale: 520
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 510
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 511
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 512
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 513
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 514
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 515
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 516
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 517
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 518
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 519
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 520
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 521
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 522
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 523
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 524
+11/20/17 - 16:38:56 - INFO - Inserted DailySale: 525
+11/20/17 - 16:38:56 - INFO - Upating ExpenseItem: 147
+11/20/17 - 16:38:56 - INFO - Upating ExpenseItem: 148
+11/20/17 - 16:38:56 - INFO - Upating ExpenseItem: 149
+11/20/17 - 16:38:56 - INFO - Upating ExpenseItem: 150
+11/20/17 - 16:38:56 - INFO - Upating ExpenseItem: 151
+11/20/17 - 16:38:56 - INFO - Upating ExpenseItem: 152
+11/20/17 - 16:38:56 - INFO - Inserted ExpenseItem: 237
+11/20/17 - 16:38:56 - INFO - Inserted ExpenseItem: 238
+11/20/17 - 16:38:56 - INFO - Inserted ExpenseItem: 239
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 240
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 241
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 242
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 243
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 244
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 245
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 246
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 247
+11/20/17 - 16:38:57 - INFO - Inserted ExpenseItem: 248
+11/20/17 - 16:38:57 - INFO - Changed to tab: Bread
+11/20/17 - 16:39:01 - INFO - Executing BreadGuideVM#UpdateSquare
+11/20/17 - 16:39:01 - INFO - Upating BreadOrder: 204
+11/20/17 - 16:39:06 - INFO - Upating BreadOrder: 205
+11/20/17 - 16:39:50 - INFO - Upating BreadOrder: 205
+11/20/17 - 16:39:53 - INFO - Upating BreadOrder: 205
+11/20/17 - 16:40:05 - INFO - Changed to tab: Vendors
+11/21/17 - 09:11:49 - INFO - Changed to tab: Bread
+11/21/17 - 09:11:56 - INFO - Executing BreadGuideVM#UpdateSquare
+11/21/17 - 09:11:58 - INFO - Upating BreadOrder: 205
+11/21/17 - 09:11:59 - INFO - Upating BreadOrder: 204
+11/21/17 - 09:13:00 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:06 - INFO - Changed to tab: Vendors
+11/21/17 - 09:13:08 - INFO - Executing VendorTabVM#GenerateOrderSheet
+11/21/17 - 13:41:00 - INFO - Changed to tab: Orders
+11/21/17 - 13:41:02 - INFO - Executing OrderTabVM#StartNewOrder
+11/21/17 - 13:41:04 - INFO - Adding temp tab: NewOrderVM
+11/21/17 - 13:41:04 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:10 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Executing NewOrderVM#ClearOrderAmounts
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:11 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:12 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:15 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:17 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:24 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:26 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:27 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:28 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:31 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:33 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:33 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:33 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:33 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:33 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:34 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:34 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:35 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:36 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:36 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:36 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:36 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:36 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:36 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:36 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:36 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:37 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:38 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:38 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:42 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:42 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:42 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:42 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:42 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:43 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:44 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:44 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:44 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:44 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:44 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:45 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:45 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:45 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:45 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:45 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:45 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:47 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:47 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:47 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:47 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:47 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:48 - INFO - Changed to tab: New Order
+11/21/17 - 13:41:50 - INFO - Executing NewOrderVM#SaveOrder
+11/21/17 - 13:41:50 - INFO - Removing temp tab
+11/21/17 - 13:41:50 - INFO - Changed to tab: Settings
+11/21/17 - 13:41:50 - INFO - Changed to tab: Orders
+11/21/17 - 13:41:51 - INFO - Inserted PurchaseOrder: 157
+11/21/17 - 13:41:54 - INFO - Upating Vendor: 3
+11/21/17 - 13:41:57 - INFO - Changed to tab: Orders
+11/21/17 - 16:07:04 - INFO - Changed to tab: Bread
+11/21/17 - 16:07:15 - INFO - Executing BreadGuideVM#UpdateSquare
+11/21/17 - 16:07:18 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:07:19 - INFO - Upating BreadOrder: 204
+11/21/17 - 16:07:25 - INFO - Upating BreadOrder: 206
+11/21/17 - 16:07:27 - INFO - Upating BreadOrder: 206
+11/21/17 - 16:07:30 - INFO - Upating BreadOrder: 206
+11/21/17 - 16:07:37 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:07:38 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:07:40 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:07:42 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:07:47 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:07:47 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:07:48 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:07:52 - INFO - Upating BreadOrder: 206
+11/21/17 - 16:27:39 - INFO - Executing BreadGuideVM#UpdateSquare
+11/21/17 - 16:27:40 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:27:42 - INFO - Upating BreadOrder: 204
+11/21/17 - 16:27:47 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:27:56 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:27:56 - INFO - Upating BreadOrder: 206
+11/21/17 - 16:27:57 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:27:59 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:28:01 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:28:01 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:28:02 - INFO - Upating BreadOrder: 207
+11/21/17 - 16:28:03 - INFO - Upating BreadOrder: 206
+11/21/17 - 16:28:03 - INFO - Upating BreadOrder: 205
+11/21/17 - 16:28:28 - INFO - Upating BreadOrder: 210
+11/21/17 - 17:31:15 - INFO - Changed to tab: Bread
+11/21/17 - 17:38:47 - INFO - Executing BreadGuideVM#UpdateSquare
+11/21/17 - 17:38:50 - INFO - Upating BreadOrder: 199
+11/21/17 - 17:38:51 - INFO - Upating BreadOrder: 198
+11/21/17 - 17:38:52 - INFO - Upating BreadOrder: 200
+11/21/17 - 17:38:52 - INFO - Upating BreadOrder: 201
+11/21/17 - 17:38:54 - INFO - Upating BreadOrder: 202
+11/21/17 - 17:38:54 - INFO - Upating BreadOrder: 203
+11/21/17 - 17:38:57 - INFO - Changed to tab: Bread
+11/21/17 - 17:38:58 - INFO - Executing BreadGuideVM#UpdateSquare
+11/21/17 - 17:38:59 - INFO - Upating BreadOrder: 205
+11/21/17 - 17:39:02 - INFO - Changed to tab: Bread
+11/21/17 - 17:39:03 - INFO - Executing BreadGuideVM#UpdateSquare
+11/21/17 - 17:39:04 - INFO - Upating BreadOrder: 198
+11/21/17 - 17:39:05 - INFO - Upating BreadOrder: 197
+11/21/17 - 17:39:05 - INFO - Upating BreadOrder: 199
+11/21/17 - 17:39:06 - INFO - Upating BreadOrder: 200
+11/21/17 - 17:39:08 - INFO - Upating BreadOrder: 202
+11/21/17 - 17:39:08 - INFO - Upating BreadOrder: 201
+11/21/17 - 17:39:09 - INFO - Upating BreadOrder: 203
+11/21/17 - 17:55:04 - INFO - Application closing

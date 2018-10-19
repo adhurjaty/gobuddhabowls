@@ -1,0 +1,44 @@
+10/27/17 - 09:43:51 - INFO - Application starting
+10/27/17 - 09:43:51 - INFO - Loading models
+10/27/17 - 09:43:53 - INFO - Models loaded
+10/27/17 - 09:43:58 - INFO - Upating BreadOrder: 166
+10/27/17 - 09:43:59 - INFO - Upating BreadOrder: 163
+10/27/17 - 09:43:59 - INFO - Upating BreadOrder: 164
+10/27/17 - 09:44:00 - INFO - Upating BreadOrder: 165
+10/27/17 - 09:44:00 - INFO - Upating BreadOrder: 162
+10/27/17 - 09:44:44 - INFO - Changed to tab: Bread
+10/27/17 - 09:44:46 - INFO - Executing BreadGuideVM#UpdateSquare
+10/27/17 - 09:44:49 - INFO - Upating BreadOrder: 166
+10/27/17 - 09:44:49 - INFO - Upating BreadOrder: 164
+10/27/17 - 09:44:50 - INFO - Upating BreadOrder: 166
+10/27/17 - 09:44:50 - INFO - Upating BreadOrder: 162
+10/27/17 - 09:44:50 - INFO - Upating BreadOrder: 163
+10/27/17 - 09:44:50 - INFO - Upating BreadOrder: 165
+10/27/17 - 09:44:50 - INFO - Upating BreadOrder: 166
+10/27/17 - 09:44:52 - INFO - Upating BreadOrder: 166
+10/27/17 - 09:44:57 - INFO - Upating BreadOrder: 166
+10/27/17 - 09:44:58 - INFO - Upating BreadOrder: 166
+10/27/17 - 09:44:58 - INFO - Upating BreadOrder: 166
+10/27/17 - 09:45:06 - INFO - Upating BreadOrder: 167
+10/27/17 - 10:34:39 - INFO - Application closing
+10/27/17 - 13:47:16 - INFO - Application starting
+10/27/17 - 13:47:16 - INFO - Loading models
+10/27/17 - 13:47:17 - INFO - Models loaded
+10/27/17 - 13:47:19 - INFO - Upating BreadOrder: 166
+10/27/17 - 13:47:20 - INFO - Upating BreadOrder: 164
+10/27/17 - 13:47:20 - INFO - Upating BreadOrder: 162
+10/27/17 - 13:47:20 - INFO - Upating BreadOrder: 165
+10/27/17 - 13:47:22 - INFO - Changed to tab: Bread
+10/27/17 - 13:47:23 - INFO - Executing BreadGuideVM#UpdateSquare
+10/27/17 - 13:47:25 - INFO - Upating BreadOrder: 166
+10/27/17 - 13:47:25 - INFO - Upating BreadOrder: 163
+10/27/17 - 13:47:25 - INFO - Upating BreadOrder: 162
+10/27/17 - 13:47:25 - INFO - Upating BreadOrder: 164
+10/27/17 - 13:47:25 - INFO - Upating BreadOrder: 165
+10/27/17 - 13:47:28 - INFO - Executing BreadGuideVM#UpdateSquare
+10/27/17 - 13:47:29 - INFO - Upating BreadOrder: 166
+10/27/17 - 13:47:29 - INFO - Upating BreadOrder: 164
+10/27/17 - 13:47:29 - INFO - Upating BreadOrder: 163
+10/27/17 - 13:47:29 - INFO - Upating BreadOrder: 162
+10/27/17 - 13:47:30 - INFO - Upating BreadOrder: 165
+10/27/17 - 14:24:03 - INFO - Application closing

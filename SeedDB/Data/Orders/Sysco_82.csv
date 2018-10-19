@@ -1,0 +1,2 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+73,Ground Beef,5,45.8,Meats,20lb CASE,1,LOG,2,EA,2,10000,8/3/2017 12:00:00 AM,0

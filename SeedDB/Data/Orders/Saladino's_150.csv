@@ -1,0 +1,7 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+0,Mozzarella,3,60.915,Dairy,CASE 30lb,0,5lb BAG,6,OZ-wt,80,1,11/15/2017 12:00:00 AM,9
+1,Cheddar,4,42.156,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,80,1,11/15/2017 12:00:00 AM,9
+6,Heavy Cream,5,6.2036,Dairy,1/2 Gallon,3,1/2 GALLON,1,CUP,48,1000000,11/15/2017 12:00:00 AM,9
+8,Eggs,1,15.3192,Dairy,15 DOZEN,5,TRAY,6,EA,180,95,11/15/2017 12:00:00 AM,9
+54,Yellow Onions,2,17.07,Produce,20lb CASE,0,BAG,1,OZ-wt,800,85,11/15/2017 12:00:00 AM,9
+59,Mushrooms,3,16.8009,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,95,11/15/2017 12:00:00 AM,9

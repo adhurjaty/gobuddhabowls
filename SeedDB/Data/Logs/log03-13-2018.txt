@@ -1,0 +1,526 @@
+03/13/18 - 16:15:41 - INFO - Application starting
+03/13/18 - 16:15:41 - INFO - Loading models
+03/13/18 - 16:15:43 - INFO - Models loaded
+03/13/18 - 16:15:43 - INFO - Application starting
+03/13/18 - 16:15:43 - INFO - Loading models
+03/13/18 - 16:15:45 - INFO - Models loaded
+03/13/18 - 16:15:46 - INFO - Upating BreadOrder: 338
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 8
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 9
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 10
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 11
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 12
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 13
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 14
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 15
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 16
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 17
+03/13/18 - 16:15:46 - INFO - Upating DailySale: 18
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 19
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 20
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 21
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 22
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 23
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 24
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 25
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 26
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 27
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 28
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 29
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 30
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 31
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 32
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 33
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 34
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 35
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 36
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 37
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 38
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 39
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 40
+03/13/18 - 16:15:47 - INFO - Upating DailySale: 41
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 42
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 43
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 44
+03/13/18 - 16:15:48 - INFO - Application closing
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 45
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 46
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 47
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 48
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 49
+03/13/18 - 16:15:48 - ERROR - The type initializer for 'LibGit2Sharp.Core.NativeMethods' threw an exception.
+   at LibGit2Sharp.Core.NativeMethods.git_repository_open(git_repository*& repository, FilePath path)
+   at LibGit2Sharp.Core.Proxy.git_repository_open(String path)
+   at LibGit2Sharp.Repository..ctor(String path, RepositoryOptions options, RepositoryRequiredParameter requiredParameter)
+   at LibGit2Sharp.Repository..ctor(String path)
+   at BuddhaBowls.MainClass.OnExit(ExitEventArgs e)
+   at System.Windows.Application.DoShutdown()
+   at System.Windows.Application.ShutdownImpl()
+   at System.Windows.Application.ShutdownCallback(Object arg)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 50
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 51
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 52
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 53
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 54
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 55
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 56
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 57
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 58
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 59
+03/13/18 - 16:15:48 - INFO - Upating BreadOrder: 337
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 60
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 61
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 62
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 63
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 64
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 65
+03/13/18 - 16:15:48 - INFO - Upating DailySale: 66
+03/13/18 - 16:15:48 - ERROR - The process cannot access the file 'C:\Users\Buddha\Desktop\Database Files\Data\Logs\log03-13-2018.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   at System.IO.File.InternalAppendAllText(String path, String contents, Encoding encoding)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at BuddhaBowls.Helpers.Logger.Info(String msg)
+   at BuddhaBowls.Models.Model.Update()
+   at BuddhaBowls.Models.DailySale.Update()
+   at BuddhaBowls.Services.ModelContainer`1.SetItems(List`1 items)
+   at BuddhaBowls.Services.DailySalesContainer.ClearPrevDailySales(DateTime startDate)
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/13/18 - 16:15:49 - ERROR - The process cannot access the file 'C:\Users\Buddha\Desktop\Database Files\Data\Logs\log03-13-2018.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   at System.IO.File.InternalAppendAllText(String path, String contents, Encoding encoding)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at BuddhaBowls.Helpers.Logger.Info(String msg)
+   at BuddhaBowls.Models.Model.Update()
+   at BuddhaBowls.Models.DailySale.Update()
+   at BuddhaBowls.Services.ModelContainer`1.SetItems(List`1 items)
+   at BuddhaBowls.Services.DailySalesContainer.ClearPrevDailySales(DateTime startDate)
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+03/13/18 - 16:15:52 - INFO - Application starting
+03/13/18 - 16:15:52 - INFO - Loading models
+03/13/18 - 16:15:53 - INFO - Models loaded
+03/13/18 - 16:15:55 - INFO - Upating BreadOrder: 338
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 8
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 9
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 10
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 11
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 12
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 13
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 14
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 15
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 16
+03/13/18 - 16:15:57 - INFO - Upating BreadOrder: 337
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 17
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 18
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 19
+03/13/18 - 16:15:57 - INFO - Upating DailySale: 20
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 21
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 22
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 23
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 24
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 25
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 26
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 27
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 28
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 29
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 30
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 31
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 32
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 33
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 34
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 35
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 36
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 37
+03/13/18 - 16:15:58 - INFO - Upating DailySale: 38
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 39
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 40
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 41
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 42
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 43
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 44
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 45
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 46
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 47
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 48
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 49
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 50
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 51
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 52
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 53
+03/13/18 - 16:15:59 - INFO - Upating DailySale: 54
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 55
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 56
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 57
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 58
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 59
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 60
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 61
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 62
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 63
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 64
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 65
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 66
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 67
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 68
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 69
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 70
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 71
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 72
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 73
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 74
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 75
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 76
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 77
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 78
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 79
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 80
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 81
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 82
+03/13/18 - 16:16:00 - INFO - Upating DailySale: 83
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 84
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 85
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 86
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 87
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 88
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 89
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 90
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 91
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 92
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 93
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 94
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 95
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 96
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 97
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 98
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 99
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 100
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 101
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 102
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 103
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 104
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 105
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 106
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 107
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 108
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 109
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 110
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 111
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 112
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 113
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 114
+03/13/18 - 16:16:01 - INFO - Upating DailySale: 115
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 116
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 117
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 118
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 119
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 120
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 121
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 122
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 123
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 124
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 125
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 126
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 127
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 128
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 129
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 130
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 131
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 132
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 133
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 134
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 135
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 136
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 137
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 138
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 139
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 140
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 141
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 142
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 143
+03/13/18 - 16:16:02 - INFO - Upating DailySale: 144
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 145
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 146
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 147
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 148
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 149
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 150
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 151
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 152
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 153
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 154
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 155
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 156
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 157
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 158
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 159
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 160
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 161
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 162
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 163
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 164
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 165
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 166
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 167
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 168
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 169
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 170
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 171
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 172
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 173
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 174
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 175
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 176
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 177
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 178
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 179
+03/13/18 - 16:16:03 - INFO - Upating DailySale: 180
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 181
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 182
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 183
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 184
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 185
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 186
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 187
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 188
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 189
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 190
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 191
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 192
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 193
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 194
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 195
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 196
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 197
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 198
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 199
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 200
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 201
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 202
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 203
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 204
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 205
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 206
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 207
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 208
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 209
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 210
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 211
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 212
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 213
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 214
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 215
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 216
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 217
+03/13/18 - 16:16:04 - INFO - Upating DailySale: 218
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 219
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 220
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 221
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 222
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 223
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 224
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 225
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 226
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 227
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 228
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 229
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 230
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 231
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 232
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 233
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 234
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 235
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 236
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 237
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 238
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 239
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 240
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 241
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 242
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 243
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 244
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 245
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 246
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 247
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 248
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 249
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 250
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 251
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 252
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 253
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 254
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 255
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 256
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 257
+03/13/18 - 16:16:05 - INFO - Upating DailySale: 258
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 259
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 260
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 261
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 262
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 263
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 264
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 265
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 266
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 267
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 268
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 269
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 270
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 271
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 272
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 273
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 274
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 275
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 276
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 277
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 278
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 279
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 280
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 281
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 282
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 283
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 284
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 285
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 286
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 287
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 288
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 289
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 290
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 291
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 292
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 293
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 294
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 295
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 296
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 297
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 298
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 299
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 300
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 301
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 302
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 303
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 304
+03/13/18 - 16:16:06 - INFO - Upating DailySale: 305
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 306
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 307
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 308
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 309
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 310
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 311
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 312
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 313
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 314
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 315
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 316
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 317
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 318
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 319
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 320
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 321
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 322
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 323
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 324
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 325
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 326
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 327
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 328
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 329
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 330
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 331
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 332
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 333
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 334
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 335
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 336
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 337
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 338
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 339
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 340
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 341
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 342
+03/13/18 - 16:16:07 - INFO - Upating DailySale: 343
+03/13/18 - 16:16:07 - INFO - Destroying DailySale: 327
+03/13/18 - 16:16:07 - INFO - Destroying DailySale: 328
+03/13/18 - 16:16:07 - INFO - Destroying DailySale: 329
+03/13/18 - 16:16:07 - INFO - Destroying DailySale: 330
+03/13/18 - 16:16:07 - INFO - Destroying DailySale: 331
+03/13/18 - 16:16:07 - INFO - Destroying DailySale: 332
+03/13/18 - 16:16:07 - INFO - Destroying DailySale: 333
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 334
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 335
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 336
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 337
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 338
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 339
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 340
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 341
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 342
+03/13/18 - 16:16:08 - INFO - Destroying DailySale: 343
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 327
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 328
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 329
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 330
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 331
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 332
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 333
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 334
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 335
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 336
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 337
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 338
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 339
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 340
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 341
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 342
+03/13/18 - 16:16:08 - INFO - Inserted DailySale: 343
+03/13/18 - 16:16:08 - INFO - Upating ExpenseItem: 1646
+03/13/18 - 16:16:08 - INFO - Upating ExpenseItem: 1647
+03/13/18 - 16:16:08 - INFO - Upating ExpenseItem: 1648
+03/13/18 - 16:16:08 - INFO - Upating ExpenseItem: 1649
+03/13/18 - 16:16:08 - INFO - Upating ExpenseItem: 1650
+03/13/18 - 16:16:09 - INFO - Upating ExpenseItem: 1651
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1676
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1677
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1678
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1679
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1680
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1681
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1682
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1683
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1684
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1685
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1686
+03/13/18 - 16:16:09 - INFO - Inserted ExpenseItem: 1687

@@ -1,0 +1,2170 @@
+02/21/18 - 10:27:35 - INFO - Application starting
+02/21/18 - 10:27:35 - INFO - Loading models
+02/21/18 - 10:27:37 - INFO - Models loaded
+02/21/18 - 10:27:40 - INFO - Upating BreadOrder: 318
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 0
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 1
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 2
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 3
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 4
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 5
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 6
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 7
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 8
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 9
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 10
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 11
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:40 - INFO - Upating Recipe: 12
+02/21/18 - 10:27:40 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:41 - INFO - Upating Recipe: 13
+02/21/18 - 10:27:41 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:41 - INFO - Upating Recipe: 14
+02/21/18 - 10:27:41 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:42 - INFO - Upating BreadOrder: 317
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 0
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 1
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 2
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 3
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 4
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 5
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 6
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 7
+02/21/18 - 10:27:43 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:43 - INFO - Upating BreadOrder: 316
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 8
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 9
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 10
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 11
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 12
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 13
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 14
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 15
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 16
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 17
+02/21/18 - 10:27:43 - INFO - Upating DailySale: 18
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 19
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 20
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 21
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 22
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 23
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 24
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 25
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 26
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 27
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 28
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 29
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 30
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 31
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 32
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 33
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 34
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 35
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 36
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 37
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 38
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 39
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 40
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 41
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 42
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 43
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 44
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 45
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 46
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 47
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 48
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 49
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 50
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 51
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 52
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 53
+02/21/18 - 10:27:44 - INFO - Changed to tab: Recipes
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 54
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 55
+02/21/18 - 10:27:44 - INFO - Upating DailySale: 56
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 57
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 58
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 59
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 60
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 61
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 62
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 63
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 64
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 65
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 66
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 67
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 68
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 69
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 70
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 71
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 72
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 73
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 74
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 75
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 76
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 77
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 78
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 79
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 80
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 81
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 82
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 83
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 84
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 85
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 86
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 87
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 88
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 89
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 90
+02/21/18 - 10:27:45 - INFO - Executing RecipeTabVM#EditRecipe
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 91
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 92
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 93
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 94
+02/21/18 - 10:27:45 - INFO - Adding temp tab: NewRecipeVM
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 95
+02/21/18 - 10:27:45 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:27:45 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:27:45 - INFO - Upating DailySale: 96
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 97
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 98
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 99
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 100
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 101
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 102
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 103
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 104
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 105
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 106
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 107
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 108
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 109
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 110
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 111
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 112
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 113
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 114
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 115
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 116
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 117
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 118
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 119
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 120
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 121
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 122
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 123
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 124
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 125
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 126
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 127
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 128
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 129
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 130
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 131
+02/21/18 - 10:27:46 - INFO - Upating DailySale: 132
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 133
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 134
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 135
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 136
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 137
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 138
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 139
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 140
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 141
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 142
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 143
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 144
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 145
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 146
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 147
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 148
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 149
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 150
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 151
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 152
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 153
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 154
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 155
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 156
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 157
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 158
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 159
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 160
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 161
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 162
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 163
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 164
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 165
+02/21/18 - 10:27:47 - INFO - Upating DailySale: 166
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 167
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 168
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 169
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 170
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 171
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 172
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 173
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 174
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 175
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 176
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 177
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 178
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 179
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 180
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 181
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 182
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 183
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 184
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 185
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 186
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 187
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 188
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 189
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 190
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 191
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 192
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 193
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 194
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 195
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 196
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 197
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 198
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 199
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 200
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 201
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 202
+02/21/18 - 10:27:48 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:27:48 - INFO - Upating DailySale: 203
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 204
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 205
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 206
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 207
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 208
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 209
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 210
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 211
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 212
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 213
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 214
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 215
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 216
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 217
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 218
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 219
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 220
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 221
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 222
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 223
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 224
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 225
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 226
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 227
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 228
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 229
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 230
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 231
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 232
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 233
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 234
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 235
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 236
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 237
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 238
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 239
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 240
+02/21/18 - 10:27:49 - INFO - Upating DailySale: 241
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 242
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 243
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 244
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 245
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 246
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 247
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 248
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 249
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 250
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 251
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 252
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 253
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 254
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 255
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 256
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 257
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 258
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 259
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 260
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 261
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 262
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 263
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 264
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 265
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 266
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 267
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 268
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 269
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 270
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 271
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 272
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 273
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 274
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 275
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 276
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 277
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 278
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 279
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 280
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 281
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 282
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 283
+02/21/18 - 10:27:50 - INFO - Upating DailySale: 284
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 285
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 286
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 287
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 288
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 289
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 290
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 291
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 292
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 293
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 294
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 295
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 296
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 297
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 298
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 299
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 300
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 301
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 302
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 303
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 304
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 305
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 306
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 307
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 308
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 309
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 310
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 311
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 312
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 313
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 314
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 315
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 316
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 317
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 318
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 319
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 320
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 321
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 322
+02/21/18 - 10:27:51 - INFO - Upating DailySale: 323
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 324
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 325
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 326
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 327
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 328
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 329
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 330
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 331
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 332
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 333
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 334
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 335
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 336
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 337
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 338
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 339
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 340
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 341
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 342
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 343
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 344
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 345
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 346
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 347
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 348
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 349
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 350
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 351
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 352
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 353
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 354
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 355
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 356
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 357
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 358
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 359
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 360
+02/21/18 - 10:27:52 - INFO - Upating DailySale: 361
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 362
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 363
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 364
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 365
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 366
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 367
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 368
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 369
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 370
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 371
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 372
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 373
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 374
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 375
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 376
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 377
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 378
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 379
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 380
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 381
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 382
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 383
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 384
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 385
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 386
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 387
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 388
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 389
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 390
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 391
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 392
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 393
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 394
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 395
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 396
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 397
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 398
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 399
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 400
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 401
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 402
+02/21/18 - 10:27:53 - INFO - Upating DailySale: 403
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 404
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 405
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 406
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 407
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 408
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 409
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 410
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 411
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 412
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 413
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 414
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 415
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 416
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 417
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 418
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 419
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 420
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 421
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 422
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 423
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 424
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 425
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 426
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 427
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 428
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 429
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 430
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 431
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 432
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 433
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 434
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 435
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 436
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 437
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 438
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 439
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 440
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 441
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 442
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 443
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 444
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 445
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 446
+02/21/18 - 10:27:54 - INFO - Upating DailySale: 447
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 448
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 449
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 450
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 451
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 452
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 453
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 454
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 455
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 456
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 457
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 458
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 459
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 460
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 461
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 462
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 463
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 464
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 465
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 466
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 467
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 468
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 469
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 470
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 471
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 472
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 473
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 474
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 475
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 476
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 477
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 478
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 479
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 480
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 481
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 482
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 483
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 484
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 485
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 486
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 487
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 488
+02/21/18 - 10:27:55 - INFO - Upating DailySale: 489
+02/21/18 - 10:27:56 - INFO - Upating DailySale: 490
+02/21/18 - 10:27:56 - INFO - Upating DailySale: 491
+02/21/18 - 10:27:56 - INFO - Upating DailySale: 492
+02/21/18 - 10:27:56 - INFO - Upating DailySale: 493
+02/21/18 - 10:27:56 - INFO - Upating DailySale: 494
+02/21/18 - 10:27:56 - INFO - Upating DailySale: 495
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 477
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 478
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 479
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 480
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 481
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 482
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 483
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 484
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 485
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 486
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 487
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 488
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 489
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 490
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 491
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 492
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 493
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 494
+02/21/18 - 10:27:56 - INFO - Destroying DailySale: 495
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 477
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 478
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 479
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 480
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 481
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 482
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 483
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 484
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 485
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 486
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 487
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 488
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 489
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 490
+02/21/18 - 10:27:56 - INFO - Inserted DailySale: 491
+02/21/18 - 10:27:57 - INFO - Inserted DailySale: 492
+02/21/18 - 10:27:57 - INFO - Inserted DailySale: 493
+02/21/18 - 10:27:57 - INFO - Inserted DailySale: 494
+02/21/18 - 10:27:57 - INFO - Inserted DailySale: 495
+02/21/18 - 10:27:57 - INFO - Inserted DailySale: 496
+02/21/18 - 10:27:57 - INFO - Inserted DailySale: 497
+02/21/18 - 10:27:57 - INFO - Upating ExpenseItem: 1333
+02/21/18 - 10:27:57 - INFO - Upating ExpenseItem: 1334
+02/21/18 - 10:27:57 - INFO - Upating ExpenseItem: 1335
+02/21/18 - 10:27:57 - INFO - Upating ExpenseItem: 1336
+02/21/18 - 10:27:57 - INFO - Upating ExpenseItem: 1337
+02/21/18 - 10:27:57 - INFO - Upating ExpenseItem: 1338
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1399
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1400
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1401
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1402
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1403
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1404
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1405
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1406
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1407
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1408
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1409
+02/21/18 - 10:27:57 - INFO - Inserted ExpenseItem: 1410
+02/21/18 - 10:29:49 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:29:50 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:29:53 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:54 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:54 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:55 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:29:55 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:55 - INFO - Upating Recipe: 35
+02/21/18 - 10:29:55 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:55 - INFO - Upating Recipe: 36
+02/21/18 - 10:29:55 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:58 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 0
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 1
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 2
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 3
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 4
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 5
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 6
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 7
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 8
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 9
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 10
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 11
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 12
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 13
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:29:59 - INFO - Upating Recipe: 14
+02/21/18 - 10:29:59 - INFO - Changed to tab: Recipes
+02/21/18 - 10:30:02 - INFO - Changed to tab: Recipes
+02/21/18 - 10:30:02 - INFO - Changed to tab: Recipes
+02/21/18 - 10:30:04 - INFO - Executing RecipeTabVM#EditRecipe
+02/21/18 - 10:30:04 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:04 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:07 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:08 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:12 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:14 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:14 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:14 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:14 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:14 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:14 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:15 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:16 - INFO - Executing InventoryListVM#EditInventoryItem
+02/21/18 - 10:30:16 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:16 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:16 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:22 - INFO - Executing WizardVM#NextPage
+02/21/18 - 10:30:22 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:22 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:22 - INFO - Executing WizardVM#NextPage
+02/21/18 - 10:30:22 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:22 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/21/18 - 10:30:22 - INFO - Upating InventoryItem: 25
+02/21/18 - 10:30:22 - INFO - Upating Vendor: 9
+02/21/18 - 10:30:22 - INFO - Upating Vendor: 0
+02/21/18 - 10:30:23 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:24 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:25 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:26 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:27 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:27 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:29 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:29 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:30 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:31 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:31 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:31 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:31 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:31 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:31 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:31 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:31 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:32 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:33 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:33 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:33 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:33 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:33 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:33 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:34 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:34 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:35 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:35 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:36 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:38 - INFO - Executing InventoryListVM#EditInventoryItem
+02/21/18 - 10:30:38 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:38 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:38 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:41 - INFO - Executing WizardVM#NextPage
+02/21/18 - 10:30:41 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:41 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:41 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:42 - INFO - Executing WizardVM#NextPage
+02/21/18 - 10:30:42 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:42 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/21/18 - 10:30:42 - INFO - Upating InventoryItem: 71
+02/21/18 - 10:30:42 - INFO - Upating Vendor: 10
+02/21/18 - 10:30:42 - INFO - Upating Vendor: 2
+02/21/18 - 10:30:42 - INFO - Upating Vendor: 0
+02/21/18 - 10:30:42 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:43 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:44 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:44 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:45 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:45 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:47 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:51 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:51 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:51 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:51 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:51 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:52 - INFO - Changed to tab: Inventory
+02/21/18 - 10:30:53 - INFO - Executing InventoryListVM#EditInventoryItem
+02/21/18 - 10:30:53 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:53 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:53 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:58 - INFO - Executing WizardVM#NextPage
+02/21/18 - 10:30:58 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:58 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:58 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:58 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:59 - INFO - Executing WizardVM#NextPage
+02/21/18 - 10:30:59 - INFO - Changed to tab: New Item
+02/21/18 - 10:30:59 - INFO - Executing NewInventoryItemWizard#FinishWizard
+02/21/18 - 10:30:59 - INFO - Upating InventoryItem: 64
+02/21/18 - 10:30:59 - INFO - Upating Vendor: 1
+02/21/18 - 10:30:59 - INFO - Upating Vendor: 10
+02/21/18 - 10:30:59 - INFO - Upating Vendor: 2
+02/21/18 - 10:30:59 - INFO - Upating Vendor: 0
+02/21/18 - 10:30:59 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:31:01 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:31:02 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:31:03 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:31:03 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:31:05 - INFO - Executing NewRecipeVM#FinishWizard
+02/21/18 - 10:31:05 - INFO - Upating Recipe: 14
+02/21/18 - 10:31:05 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:31:05 - INFO - Removing temp tab
+02/21/18 - 10:31:05 - INFO - Changed to tab: Settings
+02/21/18 - 10:31:07 - INFO - Changed to tab: Bread
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 0
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 1
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 2
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 3
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 4
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 5
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 6
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 7
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 8
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:07 - INFO - Upating Recipe: 9
+02/21/18 - 10:31:07 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:08 - INFO - Upating Recipe: 10
+02/21/18 - 10:31:08 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:08 - INFO - Upating Recipe: 11
+02/21/18 - 10:31:08 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:08 - INFO - Upating Recipe: 12
+02/21/18 - 10:31:08 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:08 - INFO - Upating Recipe: 13
+02/21/18 - 10:31:08 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:08 - INFO - Upating Recipe: 14
+02/21/18 - 10:31:08 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:10 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:12 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:31:12 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:12 - INFO - Upating Recipe: 35
+02/21/18 - 10:31:12 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:12 - INFO - Upating Recipe: 36
+02/21/18 - 10:31:12 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 0
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 1
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 2
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 3
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 4
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 5
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 6
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 7
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 8
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 9
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 10
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 11
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 12
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 13
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:19 - INFO - Upating Recipe: 14
+02/21/18 - 10:31:19 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:21 - INFO - Changed to tab: Recipes
+02/21/18 - 10:31:22 - INFO - Executing RecipeTabVM#EditRecipe
+02/21/18 - 10:31:22 - INFO - Adding temp tab: NewRecipeVM
+02/21/18 - 10:31:22 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:31:22 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:01 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:06 - INFO - Upating Recipe: 8
+02/21/18 - 10:32:06 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:08 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:32:08 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:08 - INFO - Upating Recipe: 35
+02/21/18 - 10:32:08 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:08 - INFO - Upating Recipe: 36
+02/21/18 - 10:32:08 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:09 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:10 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:11 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:17 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:17 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:18 - INFO - Executing RecipeTabVM#EditRecipe
+02/21/18 - 10:32:18 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:22 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 0
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 1
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 2
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 3
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 4
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 5
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 6
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 7
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 8
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 9
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 10
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 11
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 12
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 13
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:23 - INFO - Upating Recipe: 14
+02/21/18 - 10:32:23 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:26 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:32:27 - INFO - Upating Recipe: 35
+02/21/18 - 10:32:27 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:27 - INFO - Upating Recipe: 36
+02/21/18 - 10:32:27 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:29 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:30 - INFO - Executing RecipeTabVM#EditRecipe
+02/21/18 - 10:32:30 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:31 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:42 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:42 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:44 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:32:44 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:44 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:45 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:32:45 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:46 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 0
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 1
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 2
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 3
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 4
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 5
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 6
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 7
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 8
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 9
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 10
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 11
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 12
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 13
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:48 - INFO - Upating Recipe: 14
+02/21/18 - 10:32:48 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:50 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:51 - INFO - Executing ChangeableTabVM#SwitchPage
+02/21/18 - 10:32:51 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:51 - INFO - Upating Recipe: 35
+02/21/18 - 10:32:51 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:51 - INFO - Upating Recipe: 36
+02/21/18 - 10:32:51 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:53 - INFO - Changed to tab: Recipes
+02/21/18 - 10:32:54 - INFO - Executing RecipeTabVM#EditRecipe
+02/21/18 - 10:32:54 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:55 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:55 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:56 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:32:56 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:57 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:58 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:32:58 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:58 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:32:59 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:00 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:33:00 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:00 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:01 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:33:01 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:03 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:03 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:33:03 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:04 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:04 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:33:04 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:05 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:05 - INFO - Executing NewRecipeVM#RemoveItem
+02/21/18 - 10:33:05 - INFO - Changed to tab: Edit Recipe
+02/21/18 - 10:33:06 - INFO - Executing NewRecipeVM#AddItem
+02/21/18 - 10:33:09 - INFO - Executing NewRecipeVM#ModalOk
+02/21/18 - 10:33:11 - INFO - Executing NewRecipeVM#AddItem
+02/21/18 - 10:33:18 - INFO - Changed to tab: Recipes
+02/21/18 - 10:33:19 - INFO - Changed to tab: Bread
+02/21/18 - 10:33:20 - INFO - Executing NewRecipeVM#ModalCancel
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:22 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:23 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:23 - INFO - Changed to tab: Inventory
+02/21/18 - 10:33:23 - INFO - Changed to tab: Orders
+02/21/18 - 10:36:00 - INFO - Changed to tab: Orders
+02/21/18 - 10:36:01 - INFO - Changed to tab: Orders
+02/21/18 - 10:36:01 - INFO - Changed to tab: Orders
+02/21/18 - 10:36:01 - INFO - Changed to tab: Orders
+02/21/18 - 10:36:21 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:23 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:26 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:33 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:34 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:34 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:42 - INFO - Upating Vendor: 3
+02/21/18 - 10:36:42 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:43 - INFO - Upating Vendor: 3
+02/21/18 - 10:36:43 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:45 - INFO - Upating Vendor: 3
+02/21/18 - 10:36:45 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:52 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:52 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:52 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:52 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:52 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:52 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:52 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:52 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:53 - INFO - Changed to tab: Vendors
+02/21/18 - 10:36:54 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:14 - INFO - Upating Vendor: 3
+02/21/18 - 10:37:14 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:15 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:16 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:16 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:16 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:16 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:16 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:16 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:16 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:16 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:18 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:18 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:19 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:20 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:21 - INFO - Changed to tab: Vendors
+02/21/18 - 10:37:22 - INFO - Changed to tab: Vendors
+02/21/18 - 10:46:44 - INFO - Upating Vendor: 3
+02/21/18 - 10:46:45 - INFO - Changed to tab: Vendors
+02/21/18 - 10:46:45 - INFO - Changed to tab: Vendors
+02/21/18 - 10:46:49 - INFO - Application closing
+02/21/18 - 11:41:59 - INFO - Application starting
+02/21/18 - 11:41:59 - INFO - Loading models
+02/21/18 - 11:42:01 - INFO - Models loaded
+02/21/18 - 11:42:03 - INFO - Application starting
+02/21/18 - 11:42:03 - INFO - Loading models
+02/21/18 - 11:42:04 - INFO - Models loaded
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 0
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 1
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 2
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 3
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 4
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 5
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 6
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 7
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 8
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 9
+02/21/18 - 11:42:07 - INFO - Upating BreadOrder: 318
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 10
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 11
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 0
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 1
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 2
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 3
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 4
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 5
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 6
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 7
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 8
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 9
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 10
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 11
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 12
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 13
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 14
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 15
+02/21/18 - 11:42:07 - INFO - Upating DailySale: 16
+02/21/18 - 11:42:07 - ERROR - The process cannot access the file 'C:\Users\Buddha\Desktop\Database Files\Data\Logs\log02-21-2018.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   at System.IO.File.InternalAppendAllText(String path, String contents, Encoding encoding)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at BuddhaBowls.Helpers.Logger.Info(String msg)
+   at BuddhaBowls.Models.Model.Update()
+   at BuddhaBowls.Models.DailySale.Update()
+   at BuddhaBowls.Services.ModelContainer`1.SetItems(List`1 items)
+   at BuddhaBowls.Services.DailySalesContainer.ClearPrevDailySales(DateTime startDate)
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass26_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__26.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+02/21/18 - 11:42:08 - ERROR - The process cannot access the file 'C:\Users\Buddha\Desktop\Database Files\Data\Logs\log02-21-2018.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding)
+   at System.IO.File.InternalAppendAllText(String path, String contents, Encoding encoding)
+   at System.IO.File.AppendAllText(String path, String contents)
+   at BuddhaBowls.Helpers.Logger.Error(String msg)
+   at BuddhaBowls.MainClass.MainClass_DispatcherUnhandledException(Object sender, DispatcherUnhandledExceptionEventArgs e)
+   at System.Windows.Threading.Dispatcher.CatchException(Exception e)
+   at System.Windows.Threading.Dispatcher.CatchExceptionStatic(Object source, Exception e)
+   at System.Windows.Threading.ExceptionWrapper.CatchException(Object source, Exception e, Delegate catchHandler)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+   at System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   at System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext(Object state)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at MS.Internal.CulturePreservingExecutionContext.Run(CulturePreservingExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Windows.Threading.DispatcherOperation.Invoke()
+   at System.Windows.Threading.Dispatcher.ProcessQueue()
+   at System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+02/21/18 - 11:42:08 - INFO - Upating BreadOrder: 318
+02/21/18 - 11:42:09 - INFO - Upating BreadOrder: 317
+02/21/18 - 11:42:09 - INFO - Upating BreadOrder: 317
+02/21/18 - 11:42:12 - INFO - Application starting
+02/21/18 - 11:42:12 - INFO - Loading models
+02/21/18 - 11:42:13 - INFO - Models loaded
+02/21/18 - 11:42:14 - INFO - Upating BreadOrder: 316
+02/21/18 - 11:42:15 - INFO - Upating BreadOrder: 318
+02/21/18 - 11:42:15 - INFO - Upating DailySale: 0
+02/21/18 - 11:42:15 - INFO - Upating DailySale: 1
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 2
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 3
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 4
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 5
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 6
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 7
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 8
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 9
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 10
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 11
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 12
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 13
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 14
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 15
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 16
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 17
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 18
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 19
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 20
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 21
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 22
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 23
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 24
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 25
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 26
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 27
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 28
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 29
+02/21/18 - 11:42:16 - INFO - Upating BreadOrder: 317
+02/21/18 - 11:42:16 - INFO - Upating DailySale: 30
+02/21/18 - 11:42:17 - INFO - Upating DailySale: 31
+02/21/18 - 11:42:17 - INFO - Upating DailySale: 32
+02/21/18 - 11:42:17 - INFO - Upating DailySale: 33
+02/21/18 - 11:42:17 - INFO - Upating DailySale: 34
+02/21/18 - 11:42:17 - INFO - Upating DailySale: 35
+02/21/18 - 11:42:17 - INFO - Upating DailySale: 36
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 37
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 38
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 39
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 40
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 41
+02/21/18 - 11:42:18 - INFO - Upating BreadOrder: 316
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 42
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 43
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 44
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 45
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 46
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 47
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 48
+02/21/18 - 11:42:18 - INFO - Upating DailySale: 49
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 50
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 51
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 52
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 53
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 54
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 55
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 56
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 57
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 58
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 59
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 60
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 61
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 62
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 63
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 64
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 65
+02/21/18 - 11:42:20 - INFO - Upating DailySale: 66
+02/21/18 - 11:42:21 - INFO - Upating DailySale: 67
+02/21/18 - 11:42:22 - INFO - Upating DailySale: 68
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 69
+02/21/18 - 11:42:23 - INFO - Executing OrderTabVM#StartNewOrder
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 70
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 71
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 72
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 73
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 74
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 75
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 76
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 77
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 78
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 79
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 80
+02/21/18 - 11:42:23 - INFO - Adding temp tab: NewOrderVM
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 81
+02/21/18 - 11:42:23 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 82
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 83
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 84
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 85
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 86
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 87
+02/21/18 - 11:42:23 - INFO - Upating DailySale: 88
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 89
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 90
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 91
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 92
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 93
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 94
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 95
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 96
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 97
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 98
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 99
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 100
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 101
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 102
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 103
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 104
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 105
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 106
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 107
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 108
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 109
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 110
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 111
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 112
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 113
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 114
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 115
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 116
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 117
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 118
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 119
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 120
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 121
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 122
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 123
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 124
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 125
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 126
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 127
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 128
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 129
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 130
+02/21/18 - 11:42:24 - INFO - Upating DailySale: 131
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 132
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 133
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 134
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 135
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 136
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 137
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 138
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 139
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 140
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 141
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 142
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 143
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 144
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 145
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 146
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 147
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 148
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 149
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 150
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 151
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 152
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 153
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 154
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 155
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 156
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 157
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 158
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 159
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 160
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 161
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 162
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 163
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 164
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 165
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 166
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 167
+02/21/18 - 11:42:25 - INFO - Upating DailySale: 168
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 169
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 170
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 171
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 172
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 173
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 174
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 175
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 176
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 177
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 178
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 179
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 180
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 181
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 182
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 183
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 184
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 185
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 186
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 187
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 188
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 189
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 190
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 191
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 192
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 193
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 194
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 195
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 196
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 197
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 198
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 199
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 200
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 201
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 202
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 203
+02/21/18 - 11:42:26 - INFO - Upating DailySale: 204
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 205
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 206
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 207
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 208
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 209
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 210
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 211
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 212
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 213
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 214
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 215
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 216
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 217
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 218
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 219
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 220
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 221
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 222
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 223
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 224
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 225
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:27 - INFO - Upating DailySale: 226
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 227
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 228
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 229
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 230
+02/21/18 - 11:42:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 231
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 232
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 233
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 234
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 235
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 236
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 237
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 238
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 239
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 240
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 241
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 242
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 243
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 244
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 245
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 246
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 247
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 248
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 249
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 250
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 251
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 252
+02/21/18 - 11:42:28 - INFO - Upating DailySale: 253
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 254
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 255
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 256
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 257
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 258
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 259
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 260
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 261
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 262
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 263
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 264
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 265
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 266
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 267
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 268
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 269
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 270
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 271
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 272
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 273
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 274
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 275
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 276
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 277
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 278
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 279
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 280
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 281
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 282
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 283
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 284
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 285
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 286
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 287
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 288
+02/21/18 - 11:42:29 - INFO - Upating DailySale: 289
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 290
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 291
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 292
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 293
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 294
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 295
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 296
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 297
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 298
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 299
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 300
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 301
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 302
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 303
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 304
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 305
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 306
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 307
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 308
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 309
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 310
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 311
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 312
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 313
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 314
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 315
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 316
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 317
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 318
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 319
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 320
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 321
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 322
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 323
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 324
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 325
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 326
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 327
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 328
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 329
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 330
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 331
+02/21/18 - 11:42:30 - INFO - Upating DailySale: 332
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 333
+02/21/18 - 11:42:31 - INFO - Executing NewOrderVM#ClearOrderAmounts
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 334
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 335
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 336
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 337
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 338
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 339
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 340
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 341
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 342
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 343
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 344
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 345
+02/21/18 - 11:42:31 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 346
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 347
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 348
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 349
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 350
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 351
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 352
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 353
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 354
+02/21/18 - 11:42:31 - INFO - Upating DailySale: 355
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 356
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 357
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 358
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 359
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 360
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 361
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 362
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 363
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 364
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 365
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 366
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 367
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 368
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 369
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 370
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 371
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 372
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 373
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 374
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 375
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 376
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 377
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 378
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 379
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 380
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 381
+02/21/18 - 11:42:32 - INFO - Upating DailySale: 382
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 383
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 384
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 385
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 386
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 387
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 388
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 389
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 390
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 391
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 392
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 393
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 394
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 395
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 396
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 397
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 398
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 399
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 400
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 401
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 402
+02/21/18 - 11:42:33 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 403
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 404
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 405
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 406
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 407
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 408
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 409
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 410
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 411
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 412
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 413
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 414
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 415
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 416
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 417
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 418
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 419
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 420
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 421
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 422
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 423
+02/21/18 - 11:42:33 - INFO - Upating DailySale: 424
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 425
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 426
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 427
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 428
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 429
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 430
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 431
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 432
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 433
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 434
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 435
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 436
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 437
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 438
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 439
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 440
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 441
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 442
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 443
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 444
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 445
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 446
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 447
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 448
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 449
+02/21/18 - 11:42:34 - INFO - Upating DailySale: 450
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 451
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 452
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 453
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 454
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 455
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 456
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 457
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 458
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 459
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 460
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 461
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 462
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 463
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 464
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 465
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 466
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 467
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 468
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 469
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 470
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 471
+02/21/18 - 11:42:35 - INFO - Upating DailySale: 472
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 473
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 474
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 475
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 476
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 477
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 478
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 479
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 480
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 481
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 482
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 483
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 484
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 485
+02/21/18 - 11:42:36 - INFO - Upating DailySale: 486
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 487
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 488
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 489
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 490
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 491
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 492
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 493
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 494
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 495
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 496
+02/21/18 - 11:42:37 - INFO - Upating DailySale: 497
+02/21/18 - 11:42:37 - INFO - Inserted DailySale: 498
+02/21/18 - 11:42:37 - INFO - Inserted DailySale: 499
+02/21/18 - 11:42:37 - INFO - Inserted DailySale: 500
+02/21/18 - 11:42:37 - INFO - Inserted DailySale: 501
+02/21/18 - 11:42:37 - INFO - Inserted DailySale: 502
+02/21/18 - 11:42:37 - INFO - Inserted DailySale: 503
+02/21/18 - 11:42:37 - INFO - Upating ExpenseItem: 1333
+02/21/18 - 11:42:37 - INFO - Upating ExpenseItem: 1334
+02/21/18 - 11:42:37 - INFO - Upating ExpenseItem: 1335
+02/21/18 - 11:42:37 - INFO - Upating ExpenseItem: 1336
+02/21/18 - 11:42:38 - INFO - Upating ExpenseItem: 1337
+02/21/18 - 11:42:38 - INFO - Upating ExpenseItem: 1338
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1411
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1412
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1413
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1414
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1415
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1416
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1417
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1418
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1419
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1420
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1421
+02/21/18 - 11:42:38 - INFO - Inserted ExpenseItem: 1422
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:42:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:08 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:11 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:11 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:26 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:29 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:29 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:29 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:38 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:44 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:49 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:51 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:55 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:55 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:55 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:56 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:56 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:43:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:11 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:11 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:14 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:17 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:19 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:20 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:20 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:21 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:37 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:37 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:40 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:43 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:45 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:47 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:47 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:47 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:48 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:52 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:52 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:53 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:53 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:53 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:53 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:55 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:55 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:44:57 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:00 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:05 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:06 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:07 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:09 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:10 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:11 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:11 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:11 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:11 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:12 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:15 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:16 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:16 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:18 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:20 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:22 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:28 - INFO - Changed to tab: New Order
+02/21/18 - 11:45:28 - INFO - Executing NewOrderVM#SaveOrder
+02/21/18 - 11:45:28 - INFO - Inserted PurchaseOrder: 196
+02/21/18 - 11:45:28 - INFO - Removing temp tab
+02/21/18 - 11:45:28 - INFO - Changed to tab: Settings
+02/21/18 - 11:45:28 - INFO - Changed to tab: Orders
+02/21/18 - 11:45:32 - INFO - Changed to tab: Orders
+02/21/18 - 11:45:37 - INFO - Executing OrderTabVM#ShowOpenPO
+02/21/18 - 11:45:41 - INFO - Executing OrderTabVM#ShowOpenPO

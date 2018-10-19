@@ -1,0 +1,57 @@
+12/06/17 - 13:51:41 - INFO - Application starting
+12/06/17 - 13:51:41 - INFO - Loading models
+12/06/17 - 13:51:41 - INFO - Models loaded
+12/06/17 - 13:51:46 - INFO - Upating BreadOrder: 220
+12/06/17 - 13:51:46 - INFO - Upating BreadOrder: 218
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 18
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 19
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 20
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 21
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 22
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 23
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 24
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 25
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 26
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 27
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 28
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 29
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 30
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 31
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 32
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 33
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 34
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 35
+12/06/17 - 13:51:47 - INFO - Upating BreadOrder: 219
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 36
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 37
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 38
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 39
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 40
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 41
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 42
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 43
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 44
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 45
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 46
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 47
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 48
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 49
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 50
+12/06/17 - 13:51:47 - INFO - Inserted DailySale: 51
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 303
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 304
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 305
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 306
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 307
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 308
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 309
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 310
+12/06/17 - 13:51:47 - INFO - Upating ExpenseItem: 311
+12/06/17 - 13:51:48 - INFO - Upating ExpenseItem: 312
+12/06/17 - 13:51:48 - INFO - Upating ExpenseItem: 313
+12/06/17 - 13:51:48 - INFO - Upating ExpenseItem: 314
+12/06/17 - 13:51:48 - INFO - Upating ExpenseItem: 315
+12/06/17 - 13:51:48 - INFO - Upating ExpenseItem: 316
+12/06/17 - 13:51:48 - INFO - Upating ExpenseItem: 317
+12/06/17 - 13:51:48 - INFO - Upating ExpenseItem: 318
+12/06/17 - 13:51:55 - INFO - Application closing

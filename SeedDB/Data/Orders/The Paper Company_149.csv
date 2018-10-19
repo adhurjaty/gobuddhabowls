@@ -1,0 +1,15 @@
+Id,Name,LastOrderAmount,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastPurchasedDate,LastVendorId
+78,Biopack #4,8,Paper Goods,Case,10,Stack,4,Each,40,4E+07,39.55,11/14/2017 12:00:00 AM,3
+79,Water Cups,1,Paper Goods,2500,15,Sleeve,25,1,2500,10000,73.7,11/14/2017 12:00:00 AM,3
+80,Soufle Lids,1,Paper Goods,2500,7,Sleeve,25,1,1,100,26.35,11/14/2017 12:00:00 AM,3
+81,Spoons,1,Paper Goods,1000,5,Sleeve,10,1,1,10000,7,11/14/2017 12:00:00 AM,3
+82,Forks,1,Paper Goods,1000,4,Sleeve,10,1,1,10000,20.59,11/14/2017 12:00:00 AM,3
+85,Wax Paper Sheets,1,Paper Goods,6000,3,Stack,6,1,1,10000,54.65,11/14/2017 12:00:00 AM,3
+89,To-Go Soup Bowls (16oz),1,Paper Goods,500,1,Sleeve,10,1,1,1000000,48.78,11/14/2017 12:00:00 AM,3
+91,To-Go Soup Lids,1,Paper Goods,500,5,Sleeve,10,1,1,1E+08,42.68,11/14/2017 12:00:00 AM,3
+92,To-Go Soup Bowls (12oz),1,Paper Goods,500,1,Sleeve,10,1,1,10000,42.68,11/14/2017 12:00:00 AM,3
+95,Napkins,1,Paper Goods,6000,3.5,Stack,12,1,1,10000,45.46,11/14/2017 12:00:00 AM,3
+106,24 Oz Cups,1,Paper Goods,600 COUNT,3.5,Sleeve,12,Each,1,10000,64.75,11/14/2017 12:00:00 AM,3
+110,Poly Gloves,2,Paper Goods,2000,11,BOX,4,1,1,100,15.8,11/14/2017 12:00:00 AM,3
+115,16/24 Oz Lids,1,Paper Goods,1000 CASE,6,Sleeve,10,1,1,100,25.51,11/14/2017 12:00:00 AM,3
+122,Garbage Bags,1,Janitorial,250,0.75,CASE,1,1,1,100,28.62,11/14/2017 12:00:00 AM,3

@@ -1,0 +1,6 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,39.55,4,Case,Paper Goods,15,Stack,Each,40,4E+07,4,8/1/2017 12:00:00 AM,3
+90,Paper Towels,16.11,16,4000,Paper Goods,9,Sleeve,1,1,1E+08,1,8/1/2017 12:00:00 AM,3
+95,Napkins,45.46,12,6000,Paper Goods,5,Stack,1,1,10000,1,8/1/2017 12:00:00 AM,3
+108,Grill Bricks,13.2,12,12 EA,Janitorial,2,BRICK,1,1,10000,1,8/1/2017 12:00:00 AM,3
+110,Poly Gloves,15.8,4,2000,Paper Goods,14,BOX,1,1,100,2,8/1/2017 12:00:00 AM,3

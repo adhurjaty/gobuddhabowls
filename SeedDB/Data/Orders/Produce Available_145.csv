@@ -1,0 +1,2 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+1,Cheddar,74.6,4,CASE 20lb,Dairy,0,5lb BAG,OZ-wt,80,1,0.5,11/10/2017 12:00:00 AM,10

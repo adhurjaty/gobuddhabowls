@@ -1,0 +1,26 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,Dairy,CASE 30lb,4,5lb BAG,6,OZ-wt,80,1,54.3,3,2/19/2018 12:00:00 AM,0
+1,Cheddar,Dairy,CASE 20lb,5,5lb BAG,4,OZ-wt,80,1,42.24,3,2/19/2018 12:00:00 AM,0
+2,Pepper Jack,Dairy,CASE 20lb,2,5lb BAG,4,OZ-wt,80,1,43.9,1,2/6/2018 11:33:43 AM,0
+14,Stewed Tomatoes,Grocery,6# CANS,6,CAN,6,EA,1,1,15.79,1,2/15/2018 2:38:32 PM,0
+18,Artichoke Hearts,Grocery,6# CANS,0,CAN,6,OZ-wt,324,10000,62.57,1,2/15/2018 2:38:32 PM,0
+19,Mayonnaise,Grocery,4 GAL,7,JUG,4,EA,4,10000,26.89,1,2/15/2018 2:38:32 PM,0
+20,BBQ Sauce,Grocery,CS 39.5lbs,3,JUG,4,OZ-wt,632,9800,39.94,1,2/15/2018 2:38:32 PM,0
+21,Macaroni,Grocery,20lb CASE,4,BAG,2,EA,160,2.41,19.82,3,2/19/2018 12:00:00 AM,0
+23,Roasted Bell Peppers,Grocery,6# CANS,0,CAN,6,OZ-wt,360,98,37.94,3,2/15/2018 2:38:32 PM,0
+24,Chopped Clams,Grocery,12x48oz CANS,5,CAN,12,EA,1,1,91.55,1,2/15/2018 2:38:32 PM,0
+25,Tomato Juice,Grocery,12x48oz CANS,24,CAN,12,EA,1,1,15.79,1,2/19/2018 12:00:00 AM,0
+36,Olive Oil,Grocery,6 GAL,8,JUG,6,OZ-fl,128,1,49.95,1,2/19/2018 12:00:00 AM,0
+54,Yellow Onions,Produce,20lbs,7,BAG,4,OZ-wt,80,1,16.59,6,2/15/2018 2:38:32 PM,0
+57,Spinach,Produce,4x2.5lb,6,BAG,4,OZ-wt,160,99,16.5,3,2/19/2018 12:00:00 AM,0
+58,Mixed Greens,Produce,3lb,0,BAG,1,OZ-wt,48,9800,5.99,2,2/19/2018 12:00:00 AM,0
+59,Mushrooms,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,95,16.9,3,2/19/2018 12:00:00 AM,0
+60,Cucumbers,Produce,36 COUNT,0.1,CASE,1,OZ-wt,420,950000,19.79,1,2/15/2018 2:38:32 PM,0
+61,Tomatoes,Produce,25lb,0,CASE,1,OZ-wt,400,0.95,16.71,1,2/19/2018 12:00:00 AM,0
+63,Celery,Produce,24 COUNT,0.9,1/2 CASE,24,BUNCH,1,1,28.35,1,,1
+64,Fresh Basil,Produce,1lb,0,BAG,1,OZ-wt,16,1,8.99,1,2/19/2018 12:00:00 AM,0
+66,Pineapple,Produce,6 COUNT,1,EACH,6,OZ-wt,44,100,16.99,1,2/19/2018 12:00:00 AM,0
+71,Garlic Peeled,Produce,5lbs,0,JAR,1,OZ-wt,114.29,1,16.99,1,2/15/2018 2:38:32 PM,0
+72,Chicken Breast,Poultry,40lb CASE,1,CASE,1,OZ-wt,640,85,42.53,5,2/19/2018 12:00:00 AM,0
+74,Italian Sausage,Meats,20lb CASE,11,BAG,4,OZ-wt,160,91,47.5,1,2/19/2018 12:00:00 AM,0
+75,Bacon Bits,Meats,10lb CASE,0,BAG,2,OZ-wt,80,1,49.99,2,2/19/2018 12:00:00 AM,0

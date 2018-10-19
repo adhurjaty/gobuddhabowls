@@ -1,0 +1,4 @@
+Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,Id
+Artichoke Hearts,Dry Goods,6# CANS,6,CAN,6,OZ-wt,324,1,53.22,20,1/8/2017 3:04:01 PM,18
+Balsamic Vinegar,Dry Goods,5 LITER,0.6,JUG,1,OZ-wt,169.07,1,17.89,20,1/8/2017 3:04:01 PM,30
+Blueberries (Costco),Produce,BASKET,8,BASKET,1,OZ-wt,32,0.85,5.29,100,1/8/2017 3:04:01 PM,70

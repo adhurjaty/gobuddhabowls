@@ -1,0 +1,2011 @@
+11/02/17 - 15:39:44 - INFO - Application starting
+11/02/17 - 15:39:44 - INFO - Loading models
+11/02/17 - 15:39:45 - INFO - Models loaded
+11/02/17 - 15:39:48 - INFO - Upating BreadOrder: 172
+11/02/17 - 15:39:50 - INFO - Upating BreadOrder: 170
+11/02/17 - 15:39:50 - INFO - Changed to tab: Bread
+11/02/17 - 15:39:51 - INFO - Upating BreadOrder: 171
+11/02/17 - 15:39:51 - INFO - Upating BreadOrder: 169
+11/02/17 - 15:39:54 - INFO - Upating BreadOrder: 172
+11/02/17 - 15:39:56 - INFO - Upating BreadOrder: 172
+11/02/17 - 15:39:58 - INFO - Upating BreadOrder: 172
+11/02/17 - 15:40:07 - INFO - Upating BreadOrder: 172
+11/02/17 - 15:40:07 - INFO - Upating BreadOrder: 172
+11/02/17 - 15:40:09 - INFO - Upating BreadOrder: 172
+11/02/17 - 15:40:15 - INFO - Upating BreadOrder: 173
+11/02/17 - 22:08:13 - INFO - Application closing
+11/02/17 - 22:39:19 - INFO - Application starting
+11/02/17 - 22:39:20 - INFO - Loading models
+11/02/17 - 22:39:20 - INFO - Models loaded
+11/02/17 - 22:39:26 - INFO - Application closing
+11/02/17 - 22:39:59 - INFO - Application starting
+11/02/17 - 22:39:59 - INFO - Loading models
+11/02/17 - 22:39:59 - INFO - Models loaded
+11/02/17 - 22:40:02 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 0
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 1
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 2
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 3
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 4
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 5
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 6
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 7
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 8
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 9
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 10
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 11
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 12
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 13
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:03 - INFO - Upating Recipe: 14
+11/02/17 - 22:40:03 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:05 - INFO - Changed to tab: Reports
+11/02/17 - 22:40:06 - INFO - Changed to tab: Recipes
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:08 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:09 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:10 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:11 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:12 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:13 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:14 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:15 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:16 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:17 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:18 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:20 - INFO - Executing InventoryListVM#EditInventoryItem
+11/02/17 - 22:40:20 - INFO - Adding temp tab: NewInventoryItemWizard
+11/02/17 - 22:40:20 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:20 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:20 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:24 - INFO - Executing WizardVM#NextPage
+11/02/17 - 22:40:24 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:24 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:24 - INFO - Executing WizardVM#NextPage
+11/02/17 - 22:40:24 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:25 - INFO - Executing NewInventoryItemWizard#FinishWizard
+11/02/17 - 22:40:25 - INFO - Upating Vendor: 2
+11/02/17 - 22:40:25 - INFO - Upating Vendor: 0
+11/02/17 - 22:40:25 - INFO - Upating Vendor: 2
+11/02/17 - 22:40:25 - INFO - Upating Vendor: 0
+11/02/17 - 22:40:25 - INFO - Upating Vendor: 2
+11/02/17 - 22:40:25 - INFO - Upating InventoryItem: 21
+11/02/17 - 22:40:25 - INFO - Upating Vendor: 2
+11/02/17 - 22:40:25 - INFO - Upating Vendor: 0
+11/02/17 - 22:40:25 - INFO - Removing temp tab
+11/02/17 - 22:40:25 - INFO - Changed to tab: Settings
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:25 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:26 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:26 - INFO - Changed to tab: Inventory
+11/02/17 - 22:40:28 - INFO - Executing InventoryListVM#EditInventoryItem
+11/02/17 - 22:40:28 - INFO - Adding temp tab: NewInventoryItemWizard
+11/02/17 - 22:40:28 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:28 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:28 - INFO - Changed to tab: New Item
+11/02/17 - 22:40:30 - INFO - Changed to tab: Orders
+11/02/17 - 22:40:30 - INFO - Changed to tab: Reports
+11/02/17 - 22:40:32 - INFO - Executing ChangeableTabVM#SwitchPage
+11/02/17 - 22:40:32 - INFO - Changed to tab: Reports
+11/02/17 - 22:40:32 - INFO - Changed to tab: Reports
+11/02/17 - 22:40:34 - INFO - Executing PeriodSelectorVM#GoToCurWeek
+11/02/17 - 22:40:38 - INFO - Changed to tab: Reports
+11/02/17 - 22:40:40 - INFO - Changed to tab: Reports
+11/02/17 - 22:41:25 - INFO - Application closing
+11/02/17 - 22:45:19 - INFO - Application starting
+11/02/17 - 22:45:19 - INFO - Loading models
+11/02/17 - 22:45:19 - INFO - Models loaded
+11/02/17 - 22:45:24 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:24 - INFO - Upating BreadOrder: 170
+11/02/17 - 22:45:25 - INFO - Executing MainViewModel#BrowseHelper
+11/02/17 - 22:45:25 - INFO - Upating BreadOrder: 169
+11/02/17 - 22:45:30 - INFO - Executing MainViewModel#SaveSettingsHelper
+11/02/17 - 22:45:30 - INFO - Loading models
+11/02/17 - 22:45:30 - INFO - Models loaded
+11/02/17 - 22:45:30 - INFO - Loading models
+11/02/17 - 22:45:30 - INFO - Models loaded
+11/02/17 - 22:45:30 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:30 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:30 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:30 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:30 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:30 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:30 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:31 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:31 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:31 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:31 - INFO - Upating BreadOrder: 172
+11/02/17 - 22:45:31 - INFO - Executing MainViewModel#SaveSettingsHelper
+11/02/17 - 22:45:31 - INFO - Loading models
+11/02/17 - 22:45:31 - INFO - Models loaded
+11/02/17 - 22:45:31 - INFO - Loading models
+11/02/17 - 22:45:32 - INFO - Models loaded
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:32 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:33 - INFO - Changed to tab: Bread
+11/02/17 - 22:45:34 - INFO - Upating BreadOrder: 171
+11/02/17 - 22:45:34 - INFO - Changed to tab: Vendors
+11/02/17 - 22:45:34 - INFO - Changed to tab: Orders
+11/02/17 - 22:45:35 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 0
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 1
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 2
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 3
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 4
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 5
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 6
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 7
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 8
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 9
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 10
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 11
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 12
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 13
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:36 - INFO - Upating Recipe: 14
+11/02/17 - 22:45:36 - INFO - Changed to tab: Recipes
+11/02/17 - 22:45:37 - INFO - Changed to tab: Reports
+11/02/17 - 22:45:38 - INFO - Executing ChangeableTabVM#SwitchPage
+11/02/17 - 22:45:38 - INFO - Changed to tab: Reports
+11/02/17 - 22:45:38 - INFO - Changed to tab: Reports
+11/02/17 - 22:45:48 - INFO - Upating BreadOrder: 169
+11/02/17 - 22:45:50 - INFO - Upating BreadOrder: 169
+11/02/17 - 22:45:57 - INFO - Changed to tab: Settings
+11/02/17 - 22:45:57 - INFO - Changed to tab: Reports
+11/02/17 - 22:45:58 - INFO - Executing PeriodSelectorVM#GoToCurWeek
+11/02/17 - 22:45:59 - INFO - Changed to tab: Reports
+11/02/17 - 22:45:59 - INFO - Upating BreadOrder: 170
+11/02/17 - 22:46:02 - INFO - Changed to tab: Reports
+11/02/17 - 22:46:09 - INFO - Upating BreadOrder: 170
+11/02/17 - 22:46:41 - INFO - Upating BreadOrder: 171
+11/02/17 - 22:46:44 - INFO - Upating BreadOrder: 172
+11/02/17 - 22:46:49 - INFO - Upating BreadOrder: 172
+11/02/17 - 22:46:55 - INFO - Upating BreadOrder: 171
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 0
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 1
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 2
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 3
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 4
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 5
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 6
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 7
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 8
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 9
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 10
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 11
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 12
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 13
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 14
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 15
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 16
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 17
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 18
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 19
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 20
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 21
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 22
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 23
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 24
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 25
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 26
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 27
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 28
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 29
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 30
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 31
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 32
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 33
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 34
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 35
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 36
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 37
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 38
+11/02/17 - 22:47:37 - INFO - Inserted DailySale: 39
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 40
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 41
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 42
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 43
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 44
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 45
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 46
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 47
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 48
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 49
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 50
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 51
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 52
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 53
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 54
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 55
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 56
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 57
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 58
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 59
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 60
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 61
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 62
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 63
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 64
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 65
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 66
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 67
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 68
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 69
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 70
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 71
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 72
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 73
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 74
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 75
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 76
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 77
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 78
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 79
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 80
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 81
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 82
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 83
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 84
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 85
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 86
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 87
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 88
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 89
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 90
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 91
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 92
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 93
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 94
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 95
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 96
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 97
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 98
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 99
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 100
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 101
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 102
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 103
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 104
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 105
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 106
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 107
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 108
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 109
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 110
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 111
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 112
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 113
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 114
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 115
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 116
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 117
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 118
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 119
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 120
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 121
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 122
+11/02/17 - 22:47:38 - INFO - Inserted DailySale: 123
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 124
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 125
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 126
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 127
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 128
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 129
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 130
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 131
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 132
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 133
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 134
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 135
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 136
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 137
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 138
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 139
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 140
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 141
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 142
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 143
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 144
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 145
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 146
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 147
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 148
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 149
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 150
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 151
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 152
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 153
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 154
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 155
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 156
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 157
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 158
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 159
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 160
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 161
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 162
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 163
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 164
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 165
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 166
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 167
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 168
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 169
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 170
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 171
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 172
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 173
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 174
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 175
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 176
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 177
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 178
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 179
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 180
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 181
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 182
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 183
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 184
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 185
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 186
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 187
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 188
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 189
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 190
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 191
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 192
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 193
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 194
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 195
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 196
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 197
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 198
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 199
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 200
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 201
+11/02/17 - 22:47:39 - INFO - Inserted DailySale: 202
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 203
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 204
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 205
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 206
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 207
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 208
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 209
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 210
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 211
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 212
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 213
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 214
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 215
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 216
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 217
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 218
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 219
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 220
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 221
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 222
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 223
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 224
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 225
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 226
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 227
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 228
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 229
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 230
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 231
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 232
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 233
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 234
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 235
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 236
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 237
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 238
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 239
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 240
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 241
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 242
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 243
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 244
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 245
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 246
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 247
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 248
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 249
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 250
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 251
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 252
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 253
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 254
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 255
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 256
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 257
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 258
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 259
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 260
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 261
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 262
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 263
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 264
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 265
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 266
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 267
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 268
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 269
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 270
+11/02/17 - 22:47:40 - INFO - Inserted DailySale: 271
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 272
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 273
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 274
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 275
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 276
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 277
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 278
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 279
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 280
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 281
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 282
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 283
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 284
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 285
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 286
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 287
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 288
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 289
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 290
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 291
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 292
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 293
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 294
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 295
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 296
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 297
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 298
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 299
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 300
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 301
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 302
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 303
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 304
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 305
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 306
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 307
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 308
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 309
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 310
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 311
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 312
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 313
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 314
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 315
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 316
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 317
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 318
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 319
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 320
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 321
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 322
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 323
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 324
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 325
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 326
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 327
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 328
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 329
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 330
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 331
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 332
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 333
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 334
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 335
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 336
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 337
+11/02/17 - 22:47:41 - INFO - Inserted DailySale: 338
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 339
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 340
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 341
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 342
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 343
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 344
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 345
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 346
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 347
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 348
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 349
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 350
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 351
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 352
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 353
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 354
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 355
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 356
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 357
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 358
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 359
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 360
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 361
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 362
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 363
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 364
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 365
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 366
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 367
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 368
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 369
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 370
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 371
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 372
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 373
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 374
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 375
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 376
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 377
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 378
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 379
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 380
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 381
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 382
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 383
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 384
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 385
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 386
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 387
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 388
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 389
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 390
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 391
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 392
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 393
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 394
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 395
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 396
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 397
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 398
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 399
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 400
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 401
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 402
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 403
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 404
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 405
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 406
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 407
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 408
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 409
+11/02/17 - 22:47:42 - INFO - Inserted DailySale: 410
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 411
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 412
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 413
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 414
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 415
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 416
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 417
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 418
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 419
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 420
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 421
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 422
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 423
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 424
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 425
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 426
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 427
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 428
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 429
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 430
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 431
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 432
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 433
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 434
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 435
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 436
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 437
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 438
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 439
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 440
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 441
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 442
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 443
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 444
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 445
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 446
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 447
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 448
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 449
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 450
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 451
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 452
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 453
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 454
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 455
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 456
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 457
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 458
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 459
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 460
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 461
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 462
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 463
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 464
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 465
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 466
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 467
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 468
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 469
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 470
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 471
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 472
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 473
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 474
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 475
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 476
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 477
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 478
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 479
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 480
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 481
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 482
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 483
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 484
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 485
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 486
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 487
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 488
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 489
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 490
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 491
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 492
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 493
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 494
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 495
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 496
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 497
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 498
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 499
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 500
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 501
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 502
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 503
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 504
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 505
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 506
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 507
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 508
+11/02/17 - 22:47:43 - INFO - Inserted DailySale: 509
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 510
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 511
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 512
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 513
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 514
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 515
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 516
+11/02/17 - 22:47:44 - ERROR - The process cannot access the file 'C:\Users\Buddha\Desktop\Database Files\Data\DailySale.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.ReadLines(String path)
+   at BuddhaBowls.Services.DatabaseInterface.WriteRecord(String tableName, Dictionary`2 mapping, Int32 id)
+   at BuddhaBowls.Models.Model.Insert()
+   at BuddhaBowls.Models.DailySale.Insert()
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass24_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 517
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 518
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 519
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 520
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 521
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 522
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 523
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 524
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 525
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 526
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 527
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 528
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 529
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 530
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 531
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 532
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 533
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 534
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 535
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 536
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 537
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 538
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 539
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 540
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 541
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 542
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 543
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 544
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 545
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 546
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 547
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 548
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 549
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 550
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 551
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 552
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 553
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 554
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 555
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 556
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 557
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 558
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 559
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 560
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 561
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 562
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 563
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 564
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 565
+11/02/17 - 22:47:44 - INFO - Inserted DailySale: 566
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 567
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 568
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 569
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 570
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 571
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 572
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 573
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 574
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 575
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 576
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 577
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 578
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 579
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 580
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 581
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 582
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 583
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 584
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 585
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 586
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 587
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 588
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 589
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 590
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 591
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 592
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 593
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 594
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 595
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 596
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 597
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 598
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 599
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 600
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 601
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 602
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 603
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 604
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 605
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 606
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 607
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 608
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 609
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 610
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 611
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 612
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 613
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 614
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 615
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 616
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 617
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 618
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 619
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 620
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 621
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 622
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 623
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 624
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 625
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 626
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 627
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 628
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 629
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 630
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 631
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 632
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 633
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 634
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 635
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 636
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 637
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 638
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 639
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 640
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 641
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 642
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 643
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 644
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 645
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 646
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 647
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 648
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 649
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 650
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 651
+11/02/17 - 22:47:45 - INFO - Inserted DailySale: 652
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 653
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 654
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 655
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 656
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 657
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 658
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 659
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 660
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 661
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 662
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 663
+11/02/17 - 22:47:46 - ERROR - The process cannot access the file 'C:\Users\Buddha\Desktop\Database Files\Data\DailySale.csv' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding)
+   at System.IO.File.ReadLines(String path)
+   at BuddhaBowls.Services.DatabaseInterface.WriteRecord(String tableName, Dictionary`2 mapping, Int32 id)
+   at BuddhaBowls.Models.Model.Insert()
+   at BuddhaBowls.Models.DailySale.Insert()
+   at BuddhaBowls.ProfitLossVM.CalculateRevenue(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.ProfitLossVM.<>c__DisplayClass24_0.<CalculatePAndL>b__1()
+   at System.Threading.Tasks.Task`1.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 664
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 665
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 666
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 667
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 668
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 669
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 670
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 671
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 672
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 673
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 674
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 675
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 676
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 677
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 678
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 679
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 680
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 681
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 682
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 683
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 684
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 685
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 686
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 687
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 688
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 689
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 690
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 691
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 692
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 693
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 694
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 695
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 696
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 697
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 698
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 699
+11/02/17 - 22:47:46 - INFO - Inserted DailySale: 700
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 701
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 702
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 703
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 704
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 705
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 706
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 707
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 708
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 709
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 710
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 711
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 712
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 713
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 714
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 715
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 716
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 717
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 718
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 719
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 720
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 721
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 722
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 723
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 724
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 725
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 726
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 727
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 728
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 729
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 730
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 731
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 732
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 733
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 734
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 735
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 736
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 737
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 738
+11/02/17 - 22:47:47 - INFO - Inserted DailySale: 739
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 740
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 741
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 742
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 743
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 744
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 745
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 746
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 747
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 748
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 749
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 750
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 751
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 752
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 753
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 754
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 755
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 756
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 757
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 758
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 759
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 760
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 761
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 762
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 763
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 764
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 765
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 766
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 767
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 768
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 769
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 770
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 771
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 772
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 773
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 774
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 775
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 776
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 777
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 778
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 779
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 780
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 781
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 782
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 783
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 784
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 785
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 786
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 787
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 788
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 789
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 790
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 791
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 792
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 793
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 794
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 795
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 796
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 797
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 798
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 799
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 800
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 801
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 802
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 803
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 804
+11/02/17 - 22:47:48 - INFO - Inserted DailySale: 805
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 806
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 807
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 808
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 809
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 810
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 811
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 812
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 813
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 814
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 815
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 816
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 817
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 818
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 819
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 820
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 821
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 822
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 823
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 824
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 825
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 826
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 827
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 828
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 829
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 830
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 831
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 832
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 833
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 834
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 835
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 836
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 837
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 838
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 839
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 840
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 841
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 842
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 843
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 844
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 845
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 846
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 847
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 848
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 849
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 850
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 851
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 852
+11/02/17 - 22:47:49 - INFO - Inserted DailySale: 853
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 854
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 855
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 856
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 857
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 858
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 859
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 860
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 861
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 862
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 863
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 864
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 865
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 866
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 867
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 868
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 869
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 870
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 871
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 872
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 873
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 874
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 875
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 876
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 877
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 878
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 879
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 880
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 881
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 882
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 883
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 884
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 885
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 886
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 887
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 888
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 889
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 890
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 891
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 892
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 893
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 894
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 895
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 896
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 897
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 898
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 899
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 900
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 901
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 902
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 903
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 904
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 905
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 906
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 907
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 908
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 909
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 910
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 911
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 912
+11/02/17 - 22:47:50 - INFO - Inserted DailySale: 913
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 914
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 915
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 916
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 917
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 918
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 919
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 920
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 921
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 922
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 923
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 924
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 925
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 926
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 927
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 928
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 929
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 930
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 931
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 932
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 933
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 934
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 935
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 936
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 937
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 938
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 939
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 940
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 941
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 942
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 943
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 944
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 945
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 946
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 947
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 948
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 949
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 950
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 951
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 952
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 953
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 954
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 955
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 956
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 957
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 958
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 959
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 960
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 961
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 962
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 963
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 964
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 965
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 966
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 967
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 968
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 969
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 970
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 971
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 972
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 973
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 974
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 975
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 976
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 977
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 978
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 979
+11/02/17 - 22:47:51 - INFO - Inserted DailySale: 980
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 981
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 982
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 983
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 984
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 985
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 986
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 987
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 988
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 989
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 990
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 991
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 992
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 993
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 994
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 995
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 996
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 997
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 998
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 999
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1000
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1001
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1002
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1003
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1004
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1005
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1006
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1007
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1008
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1009
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1010
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1011
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1012
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1013
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1014
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1015
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1016
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1017
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1018
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1019
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1020
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1021
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1022
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1023
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1024
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1025
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1026
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1027
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1028
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1029
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1030
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1031
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1032
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1033
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1034
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1035
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1036
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1037
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1038
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1039
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1040
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1041
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1042
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1043
+11/02/17 - 22:47:52 - INFO - Inserted DailySale: 1044
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1045
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1046
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1047
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1048
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1049
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1050
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1051
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1052
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1053
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1054
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1055
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1056
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1057
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1058
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1059
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1060
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1061
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1062
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1063
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1064
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1065
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1066
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1067
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1068
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1069
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1070
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1071
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1072
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1073
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1074
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1075
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1076
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1077
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1078
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1079
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1080
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1081
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1082
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1083
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1084
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1085
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1086
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1087
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1088
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1089
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1090
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1091
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1092
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1093
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1094
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1095
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1096
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1097
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1098
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1099
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1100
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1101
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1102
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1103
+11/02/17 - 22:47:53 - INFO - Inserted DailySale: 1104
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1105
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1106
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1107
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1108
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1109
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1110
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1111
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1112
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1113
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1114
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1115
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1116
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1117
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1118
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1119
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1120
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1121
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1122
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1123
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1124
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1125
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1126
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1127
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1128
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1129
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1130
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1131
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1132
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1133
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1134
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1135
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1136
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1137
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1138
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1139
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1140
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1141
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1142
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1143
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1144
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1145
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1146
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1147
+11/02/17 - 22:47:54 - INFO - Inserted DailySale: 1148
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 0
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 1
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 2
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 3
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 4
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 5
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 6
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 7
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 8
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 9
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 10
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 11
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 12
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 13
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 14
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 15
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 16
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 17
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 18
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 19
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 20
+11/02/17 - 22:47:54 - INFO - Inserted ExpenseItem: 21
+11/02/17 - 22:50:51 - INFO - Application starting
+11/02/17 - 22:50:51 - INFO - Loading models
+11/02/17 - 22:50:52 - INFO - Models loaded
+11/02/17 - 22:50:56 - INFO - Application closing
+11/02/17 - 22:52:18 - INFO - Application starting
+11/02/17 - 22:52:18 - INFO - Loading models
+11/02/17 - 22:52:19 - INFO - Models loaded
+11/02/17 - 22:52:21 - INFO - Upating BreadOrder: 169
+11/02/17 - 22:52:22 - INFO - Upating BreadOrder: 170
+11/02/17 - 22:52:22 - INFO - Upating BreadOrder: 172
+11/02/17 - 22:52:22 - INFO - Upating BreadOrder: 171
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1128
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1129
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1130
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1131
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1132
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1133
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1134
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1135
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1136
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1137
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1138
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1139
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1140
+11/02/17 - 22:52:23 - INFO - Destroying DailySale: 1141
+11/02/17 - 22:52:24 - INFO - Destroying DailySale: 1142
+11/02/17 - 22:52:24 - INFO - Destroying DailySale: 1143
+11/02/17 - 22:52:24 - INFO - Destroying DailySale: 1144
+11/02/17 - 22:52:24 - INFO - Destroying DailySale: 1145
+11/02/17 - 22:52:24 - INFO - Destroying DailySale: 1146
+11/02/17 - 22:52:24 - INFO - Destroying DailySale: 1147
+11/02/17 - 22:52:24 - INFO - Destroying DailySale: 1148
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1128
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1129
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1130
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1131
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1132
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1133
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1134
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1135
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1136
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1137
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1138
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1139
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1140
+11/02/17 - 22:52:24 - INFO - Inserted DailySale: 1141
+11/02/17 - 22:52:25 - INFO - Inserted DailySale: 1142
+11/02/17 - 22:52:25 - INFO - Inserted DailySale: 1143
+11/02/17 - 22:52:25 - INFO - Inserted DailySale: 1144
+11/02/17 - 22:52:25 - INFO - Inserted DailySale: 1145
+11/02/17 - 22:52:25 - INFO - Inserted DailySale: 1146
+11/02/17 - 22:52:25 - INFO - Inserted DailySale: 1147
+11/02/17 - 22:52:25 - INFO - Inserted DailySale: 1148
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 0
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 1
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 2
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 3
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 4
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 5
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 6
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 7
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 8
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 9
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 10
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 11
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 12
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 13
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 14
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 15
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 16
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 17
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 18
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 19
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 20
+11/02/17 - 22:52:25 - INFO - Upating ExpenseItem: 21
+11/02/17 - 22:52:33 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:33 - INFO - Upating Recipe: 0
+11/02/17 - 22:52:33 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:33 - INFO - Upating Recipe: 1
+11/02/17 - 22:52:33 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:33 - INFO - Upating Recipe: 2
+11/02/17 - 22:52:33 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 3
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 4
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 5
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 6
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 7
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 8
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 9
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 10
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 11
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 12
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 13
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Upating Recipe: 14
+11/02/17 - 22:52:34 - INFO - Changed to tab: Recipes
+11/02/17 - 22:52:34 - INFO - Changed to tab: Reports
+11/02/17 - 22:52:35 - INFO - Executing ChangeableTabVM#SwitchPage
+11/02/17 - 22:52:36 - INFO - Changed to tab: Reports
+11/02/17 - 22:52:36 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:10 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:11 - INFO - Upating ExpenseItem: 0
+11/02/17 - 22:53:13 - INFO - Upating ExpenseItem: 0
+11/02/17 - 22:53:13 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:13 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:14 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:14 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:15 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:16 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:49 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:50 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:50 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:51 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:51 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:52 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:52 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:52 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:53 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:53 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:53 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:54 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:54 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:54 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:54 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:55 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:55 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:55 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:56 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:56 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:56 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:57 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:57 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:58 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:58 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:58 - INFO - Changed to tab: Reports
+11/02/17 - 22:53:58 - INFO - Changed to tab: Reports
+11/02/17 - 22:54:01 - INFO - Changed to tab: Reports
+11/02/17 - 22:54:11 - INFO - Changed to tab: Reports
+11/02/17 - 23:02:05 - INFO - Changed to tab: Reports
+11/02/17 - 23:02:09 - INFO - Destroying DailySale: 1128
+11/02/17 - 23:02:09 - INFO - Destroying DailySale: 1129
+11/02/17 - 23:02:09 - INFO - Destroying DailySale: 1130
+11/02/17 - 23:02:09 - INFO - Destroying DailySale: 1131
+11/02/17 - 23:02:09 - INFO - Destroying DailySale: 1132
+11/02/17 - 23:02:09 - INFO - Destroying DailySale: 1133
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1134
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1135
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1136
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1137
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1138
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1139
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1140
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1141
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1142
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1143
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1144
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1145
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1146
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1147
+11/02/17 - 23:02:10 - INFO - Destroying DailySale: 1148
+11/02/17 - 23:02:10 - INFO - Inserted DailySale: 1128
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1129
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1130
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1131
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1132
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1133
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1134
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1135
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1136
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1137
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1138
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1139
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1140
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1141
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1142
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1143
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1144
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1145
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1146
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1147
+11/02/17 - 23:02:11 - INFO - Inserted DailySale: 1148
+11/02/17 - 23:02:11 - INFO - Changed to tab: Reports
+11/02/17 - 23:02:11 - INFO - Changed to tab: Reports
+11/02/17 - 23:02:11 - INFO - Changed to tab: Reports
+11/02/17 - 23:02:11 - INFO - Inserted ExpenseItem: 22
+11/02/17 - 23:02:11 - INFO - Inserted ExpenseItem: 23
+11/02/17 - 23:02:11 - INFO - Inserted ExpenseItem: 24
+11/02/17 - 23:02:11 - INFO - Inserted ExpenseItem: 25
+11/02/17 - 23:02:11 - INFO - Inserted ExpenseItem: 26
+11/02/17 - 23:02:11 - INFO - Inserted ExpenseItem: 27
+11/02/17 - 23:02:11 - INFO - Inserted ExpenseItem: 28
+11/02/17 - 23:02:11 - INFO - Inserted ExpenseItem: 29
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 30
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 31
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 32
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 33
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 34
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 35
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 36
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 37
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 38
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 39
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 40
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 41
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 42
+11/02/17 - 23:02:12 - INFO - Inserted ExpenseItem: 43
+11/02/17 - 23:03:19 - INFO - Changed to tab: Reports
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1128
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1129
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1130
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1131
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1132
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1133
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1134
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1135
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1136
+11/02/17 - 23:03:23 - INFO - Destroying DailySale: 1137
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1138
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1139
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1140
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1141
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1142
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1143
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1144
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1145
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1146
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1147
+11/02/17 - 23:03:24 - INFO - Destroying DailySale: 1148
+11/02/17 - 23:03:24 - INFO - Inserted DailySale: 1128
+11/02/17 - 23:03:24 - INFO - Inserted DailySale: 1129
+11/02/17 - 23:03:24 - INFO - Inserted DailySale: 1130
+11/02/17 - 23:03:24 - INFO - Inserted DailySale: 1131
+11/02/17 - 23:03:24 - INFO - Inserted DailySale: 1132
+11/02/17 - 23:03:24 - INFO - Inserted DailySale: 1133
+11/02/17 - 23:03:24 - INFO - Inserted DailySale: 1134
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1135
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1136
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1137
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1138
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1139
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1140
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1141
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1142
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1143
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1144
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1145
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1146
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1147
+11/02/17 - 23:03:25 - INFO - Inserted DailySale: 1148
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 44
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 45
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 46
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 47
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 48
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 49
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 50
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 51
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 52
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 53
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 54
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 55
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 56
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 57
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 58
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 59
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 60
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 61
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 62
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 63
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 64
+11/02/17 - 23:03:25 - INFO - Inserted ExpenseItem: 65
+11/02/17 - 23:03:29 - INFO - Changed to tab: Reports
+11/02/17 - 23:03:31 - INFO - Changed to tab: Reports
+11/02/17 - 23:03:34 - INFO - Destroying DailySale: 1128
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1129
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1130
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1131
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1132
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1133
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1134
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1135
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1136
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1137
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1138
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1139
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1140
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1141
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1142
+11/02/17 - 23:03:35 - INFO - Destroying DailySale: 1143
+11/02/17 - 23:03:36 - INFO - Destroying DailySale: 1144
+11/02/17 - 23:03:36 - INFO - Destroying DailySale: 1145
+11/02/17 - 23:03:36 - INFO - Destroying DailySale: 1146
+11/02/17 - 23:03:36 - INFO - Destroying DailySale: 1147
+11/02/17 - 23:03:36 - INFO - Destroying DailySale: 1148
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1128
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1129
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1130
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1131
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1132
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1133
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1134
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1135
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1136
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1137
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1138
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1139
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1140
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1141
+11/02/17 - 23:03:36 - INFO - Inserted DailySale: 1142
+11/02/17 - 23:03:37 - INFO - Inserted DailySale: 1143
+11/02/17 - 23:03:37 - INFO - Inserted DailySale: 1144
+11/02/17 - 23:03:37 - INFO - Inserted DailySale: 1145
+11/02/17 - 23:03:37 - INFO - Inserted DailySale: 1146
+11/02/17 - 23:03:37 - INFO - Inserted DailySale: 1147
+11/02/17 - 23:03:37 - INFO - Inserted DailySale: 1148
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 0
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 1
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 2
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 3
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 4
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 5
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 6
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 7
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 8
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 9
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 10
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 11
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 12
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 13
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 14
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 15
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 16
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 17
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 18
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 19
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 20
+11/02/17 - 23:03:37 - INFO - Upating ExpenseItem: 21
+11/02/17 - 23:08:50 - INFO - Changed to tab: Reports
+11/02/17 - 23:09:09 - INFO - Changed to tab: Reports
+11/02/17 - 23:09:12 - INFO - Upating ExpenseItem: 16
+11/02/17 - 23:09:13 - INFO - Changed to tab: Reports
+11/02/17 - 23:09:13 - INFO - Changed to tab: Reports
+11/02/17 - 23:09:15 - INFO - Upating ExpenseItem: 17
+11/02/17 - 23:09:15 - INFO - Changed to tab: Reports
+11/02/17 - 23:09:17 - INFO - Changed to tab: Reports

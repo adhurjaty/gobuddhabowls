@@ -1,0 +1,74 @@
+11/09/17 - 14:53:23 - INFO - Application starting
+11/09/17 - 14:53:23 - INFO - Loading models
+11/09/17 - 14:53:24 - INFO - Models loaded
+11/09/17 - 14:53:27 - INFO - Upating BreadOrder: 193
+11/09/17 - 14:53:27 - INFO - Upating BreadOrder: 190
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1774
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1775
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1776
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1777
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1778
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1779
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1780
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1781
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1782
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1783
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1784
+11/09/17 - 14:53:28 - INFO - Upating BreadOrder: 191
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1785
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1786
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1787
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1788
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1789
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1790
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1791
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1792
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1793
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1794
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1795
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1796
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1797
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1798
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1799
+11/09/17 - 14:53:28 - INFO - Inserted DailySale: 1800
+11/09/17 - 14:53:29 - INFO - Inserted DailySale: 1801
+11/09/17 - 14:53:29 - INFO - Inserted DailySale: 1802
+11/09/17 - 14:53:29 - INFO - Inserted DailySale: 1803
+11/09/17 - 14:53:29 - INFO - Inserted DailySale: 1804
+11/09/17 - 14:53:29 - INFO - Inserted DailySale: 1805
+11/09/17 - 14:53:29 - INFO - Inserted DailySale: 1806
+11/09/17 - 14:53:29 - INFO - Inserted DailySale: 1807
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 22
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 23
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 24
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 25
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 26
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 27
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 9
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 10
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 11
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 31
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 32
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 33
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 15
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 16
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 17
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 18
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 19
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 20
+11/09/17 - 14:53:29 - INFO - Upating ExpenseItem: 40
+11/09/17 - 14:53:29 - INFO - Upating BreadOrder: 192
+11/09/17 - 14:55:31 - INFO - Changed to tab: Bread
+11/09/17 - 14:55:33 - INFO - Executing BreadGuideVM#UpdateSquare
+11/09/17 - 14:55:34 - INFO - Upating BreadOrder: 193
+11/09/17 - 14:55:37 - INFO - Upating BreadOrder: 193
+11/09/17 - 14:55:37 - INFO - Upating BreadOrder: 193
+11/09/17 - 14:55:38 - INFO - Upating BreadOrder: 190
+11/09/17 - 14:55:38 - INFO - Upating BreadOrder: 193
+11/09/17 - 14:55:40 - INFO - Upating BreadOrder: 191
+11/09/17 - 14:55:41 - INFO - Upating BreadOrder: 192
+11/09/17 - 14:55:43 - INFO - Upating BreadOrder: 193
+11/09/17 - 14:55:43 - INFO - Upating BreadOrder: 193
+11/09/17 - 14:55:44 - INFO - Upating BreadOrder: 193
+11/09/17 - 14:55:49 - INFO - Upating BreadOrder: 194
+11/09/17 - 14:56:39 - INFO - Application closing

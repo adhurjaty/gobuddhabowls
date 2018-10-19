@@ -1,0 +1,8 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,39.55,4,Case,Paper Goods,17,Stack,Each,40,4E+07,6,5/24/2017 12:00:00 AM,3
+87,Foil Roll,22.77,1,ROLL,Paper Goods,1,1,1,1,1E+08,1,5/24/2017 12:00:00 AM,3
+89,To-Go Soup Bowls (16oz),48.78,10,500,Paper Goods,8,Sleeve,1,1,1000000,1,5/24/2017 12:00:00 AM,3
+91,To-Go Soup Lids,42.68,10,500,Paper Goods,10,Sleeve,1,1,1E+08,1,5/24/2017 12:00:00 AM,3
+95,Napkins,45.46,12,6000,Paper Goods,11,Stack,1,1,10000,1,5/24/2017 12:00:00 AM,3
+106,24 Oz Cups,58.86,12,600 COUNT,Paper Goods,7,Sleeve,Each,1,10000,1,5/24/2017 12:00:00 AM,3
+121,Die-Cut To-Go Bags,55.35,1,500,Paper Goods,1,CASE,1,1,100,1,5/24/2017 12:00:00 AM,3

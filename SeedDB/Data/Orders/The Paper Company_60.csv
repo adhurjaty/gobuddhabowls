@@ -1,0 +1,23 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+78,Biopack #4,5,39.55,Paper Goods,Case,16,Stack,4,Each,40,4E+07,6/13/2017 12:00:00 AM,3
+78,Biopack #4,5,39.55,Paper Goods,Case,16,Stack,4,Each,40,4E+07,6/13/2017 12:00:00 AM,3
+80,Soufle Lids,1,26.35,Paper Goods,2500,11,Sleeve,25,1,1,100,6/13/2017 12:00:00 AM,3
+80,Soufle Lids,1,26.35,Paper Goods,2500,11,Sleeve,25,1,1,100,6/13/2017 12:00:00 AM,3
+81,Spoons,1,7,Paper Goods,1000,10,Sleeve,10,1,1,10000,6/13/2017 12:00:00 AM,3
+81,Spoons,1,7,Paper Goods,1000,10,Sleeve,10,1,1,10000,6/13/2017 12:00:00 AM,3
+82,Forks,1,20.59,Paper Goods,1000,13,Sleeve,10,1,1,10000,6/13/2017 12:00:00 AM,3
+82,Forks,1,20.59,Paper Goods,1000,13,Sleeve,10,1,1,10000,6/13/2017 12:00:00 AM,3
+90,Paper Towels,1,16.11,Paper Goods,4000,15,Sleeve,16,1,1,1E+08,6/13/2017 12:00:00 AM,3
+90,Paper Towels,1,16.11,Paper Goods,4000,15,Sleeve,16,1,1,1E+08,6/13/2017 12:00:00 AM,3
+91,To-Go Soup Lids,1,42.68,Paper Goods,500,9,Sleeve,10,1,1,1E+08,6/13/2017 12:00:00 AM,3
+91,To-Go Soup Lids,1,42.68,Paper Goods,500,9,Sleeve,10,1,1,1E+08,6/13/2017 12:00:00 AM,3
+109,Sanitizer,0,59.9,Janitorial,4 GAL,1.4,GALLON,4,1,1,100,6/13/2017 12:00:00 AM,3
+109,Sanitizer,0,59.9,Janitorial,4 GAL,1.4,GALLON,4,1,1,100,6/13/2017 12:00:00 AM,3
+110,Poly Gloves,1,15.8,Paper Goods,2000,17,BOX,4,1,1,100,6/13/2017 12:00:00 AM,3
+110,Poly Gloves,1,15.8,Paper Goods,2000,17,BOX,4,1,1,100,6/13/2017 12:00:00 AM,3
+121,Die-Cut To-Go Bags,1,55.35,Paper Goods,500,1,CASE,1,1,1,100,6/13/2017 12:00:00 AM,3
+121,Die-Cut To-Go Bags,1,55.35,Paper Goods,500,1,CASE,1,1,1,100,6/13/2017 12:00:00 AM,3
+123,Detergent,1,16.2,Janitorial,4 GAL,2.5,GALLON,4,1,1,100,6/13/2017 12:00:00 AM,3
+123,Detergent,1,16.2,Janitorial,4 GAL,2.5,GALLON,4,1,1,100,6/13/2017 12:00:00 AM,3
+125,Bleach,1,8,Janitorial,4 GAL,4.5,GALLON,4,1,1,100,6/13/2017 12:00:00 AM,3
+125,Bleach,1,8,Janitorial,4 GAL,4.5,GALLON,4,1,1,100,6/13/2017 12:00:00 AM,3

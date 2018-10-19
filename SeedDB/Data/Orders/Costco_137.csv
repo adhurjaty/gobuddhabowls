@@ -1,0 +1,3 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+9,Whole Milk,5.49,2,2 GALLON,Dairy,29,GALLON,CUP,16,100,24,11/3/2017 12:00:00 AM,6
+104,Honey,11.99,1,5lbs,Beverage,0.5,JAR,CUP,6.96,100,4,11/3/2017 12:00:00 AM,6

@@ -1,0 +1,32 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,Paper Goods,Case,0,Stack,4,Each,40,0.4,39.55,6,3/7/2018 12:00:00 AM,3
+79,Water Cups,Paper Goods,2500,19,Sleeve,25,1,2500,1,80.16,1,2/28/2018 12:00:00 AM,3
+80,Soufle Lids,Paper Goods,2500,4.4,Sleeve,25,1,1,1,24.37,1,3/7/2018 12:00:00 AM,3
+81,Spoons,Paper Goods,1000,0,Sleeve,10,1,1,1,7,1,3/7/2018 12:00:00 AM,3
+82,Forks,Paper Goods,1000,0,Sleeve,10,1,1,1,20.59,1,3/7/2018 12:00:00 AM,3
+85,Wax Paper Sheets,Paper Goods,6000,0,Stack,6,1,1,1,54.65,1,3/7/2018 12:00:00 AM,3
+86,Small To-Go Bags,Paper Goods,500,0,Case,1,1,1,1,16.21,1,3/7/2018 12:00:00 AM,3
+87,Foil Roll,Paper Goods,ROLL,1.1,1,1,1,1,1,24.71,0,,3
+89,To-Go Soup Bowls (16oz),Paper Goods,500,0,Sleeve,10,1,1,1,48.78,1,3/7/2018 12:00:00 AM,3
+90,Paper Towels,Paper Goods,4000,0,Sleeve,16,1,1,1,16.11,1,2/28/2018 12:00:00 AM,3
+91,To-Go Soup Lids,Paper Goods,500,0,Sleeve,10,1,1,1,42.68,1,3/7/2018 12:00:00 AM,3
+92,To-Go Soup Bowls (12oz),Paper Goods,500,8,Sleeve,10,1,1,1,42.68,1,3/7/2018 12:00:00 AM,3
+95,Napkins,Paper Goods,6000,0,Stack,12,1,1,1,43.23,1,2/28/2018 12:00:00 AM,3
+106,24 Oz Cups,Paper Goods,600 COUNT,10,Sleeve,12,Each,1,1,64.75,1,2/28/2018 12:00:00 AM,3
+109,Sanitizer,Janitorial,4 GAL,1.1,GALLON,4,1,1,1,93.83,0,,3
+110,Poly Gloves,Paper Goods,2000,0,BOX,4,1,1,1,15.8,2,3/7/2018 12:00:00 AM,3
+115,16/24 Oz Lids,Paper Goods,1000 CASE,12,Sleeve,10,1,1,1,25.51,1,3/7/2018 12:00:00 AM,3
+116,Straws,Paper Goods,2000,2.5,BOX,4,1,1,1,10.06,1,2/28/2018 12:00:00 AM,3
+117,16 Oz Cups,Paper Goods,1000 CASE,10,Sleeve,20,1,1,1,54.75,1,,3
+118,Large To-Go Bags,Paper Goods,500,0.4,BAG,1,1,1,1,52.81,1,2/14/2018 12:00:00 AM,3
+119,Soufle Cups,Paper Goods,2500,6,Sleeve,25,1,1,1,28.99,1,2/28/2018 12:00:00 AM,3
+120,Ceramawrap,Paper Goods,2000,0,EACH,1,1,1,1,10.54,1,2/7/2018 11:52:55 AM,3
+121,Die-Cut To-Go Bags,Paper Goods,500,0,CASE,1,1,1,1,60.34,1,2/28/2018 12:00:00 AM,3
+122,Garbage Bags,Janitorial,250,1.1,CASE,1,1,1,1,28.62,1,3/7/2018 12:00:00 AM,3
+123,Detergent,Janitorial,5 GAL,1,GALLON,4,1,1,1,70,2,12/11/2017 12:00:00 AM,2
+124,De-Greaser,Janitorial,4 GAL,3.1,GALLON,4,1,1,1,70,1,2/21/2018 12:00:00 AM,3
+125,Bleach,Janitorial,4 GAL,0,GALLON,4,1,1,1,8,1,2/21/2018 12:00:00 AM,3
+126,Steel Wool,Janitorial,12 COUNT,9,Sleeve,12,1,1,1,4.62,1,3/7/2018 12:00:00 AM,3
+127,Floor Cleaner,Janitorial,3 GAL,0,1 GAL,3,1,1,1,73.67,1,,2
+132,Grill Screens,Janitorial,,0,Sleeve,10,EA,1,1,75.68,0,,
+133,Grill Pads,Janitorial,60 COUNT,0,Sleeve,6,1,1,1,69.39,1,3/7/2018 12:00:00 AM,3

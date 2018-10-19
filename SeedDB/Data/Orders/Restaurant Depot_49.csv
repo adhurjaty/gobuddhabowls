@@ -1,0 +1,26 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+3,Feta,51.97,1,33lbs,Dairy,0.2,5lb BAG,OZ-wt,160,100,2,5/23/2017 12:00:00 AM,2
+8,Eggs,9.91,6,15 DOZEN,Dairy,3.6,TRAY,EA,180,95,1,5/23/2017 12:00:00 AM,2
+18,Artichoke Hearts,43.95,6,6# CANS,Grocery,6,CAN,OZ-wt,324,10000,2,5/23/2017 12:00:00 AM,2
+21,Macaroni,13.15,2,2lb,Grocery,2,BAG,EA,320,241,12,5/23/2017 12:00:00 AM,2
+23,Roasted Bell Peppers,30.52,6,6# CANS,Grocery,3,CAN,OZ-wt,360,98,3,5/23/2017 12:00:00 AM,2
+24,Chopped Clams,87.27,12,12x48oz CANS,Grocery,34,CAN,EA,12,100,2,5/23/2017 12:00:00 AM,2
+26,Clam Juice,31.18,12,12x48oz CANS,Grocery,7,CAN,EA,12,100,3,5/23/2017 12:00:00 AM,2
+30,Balsamic Vinegar,17.95,2,2 x 5 Liter,Grocery,1.4,JUG,OZ-wt,169.07,100,1,5/23/2017 12:00:00 AM,2
+31,Tapatio,11.5,12,EA,Grocery,9,BOTTLE,EA,12,10000,1,5/23/2017 12:00:00 AM,2
+33,Chicken Broth,35.99,4,4x32oz,Grocery,1,BOTTLE,OZ-wt,1,100,1,5/23/2017 12:00:00 AM,2
+40,Tahini,60.09,1,40lbs,Grocery,0.2,LB,OZ-wt,640,9800,1,5/23/2017 12:00:00 AM,2
+41,Kalamata Olives,63.94,6,6x4.4lbs,Grocery,0,JAR,OZ-wt,64.8,10000,2,5/23/2017 12:00:00 AM,2
+42,Lemon Juice,16.69,4,1 Gal,Grocery,3.5,GAL,OZ-wt,128,100,1,5/23/2017 12:00:00 AM,2
+46,Cumin,17.79,80,4.5lbs,Herbs,67,OZ-wt,TBL,360,100,1,5/23/2017 12:00:00 AM,2
+48,Pepper,43.72,80,5lbs,Herbs,96.6,OZ-wt,TBL,312.2,100,1,5/23/2017 12:00:00 AM,2
+50,Chili Powder,24.41,96,6lbs,Herbs,46.8,OZ-wt,TBL,78.05,100,1,5/23/2017 12:00:00 AM,2
+51,Paprika,16.65,80,5lbs,Herbs,56.4,OZ-wt,TBL,36.96,1E+08,1,5/23/2017 12:00:00 AM,2
+64,Fresh Basil,4.95,1,1lb,Produce,0.1,BAG,OZ-wt,16,65,2,5/23/2017 12:00:00 AM,2
+79,Water Cups,57.52,25,2500,Paper Goods,16,Sleeve,1,2500,10000,1,5/23/2017 12:00:00 AM,2
+99,Cinnamon,16.14,80,,Herbs,9,LB,OZ-wt,1,1,1,5/23/2017 12:00:00 AM,2
+101,Allspice,8.02,16,1lb,Herbs,13.6,OZ-wt,TBL,1,1000000,1,5/23/2017 12:00:00 AM,2
+110,Poly Gloves,34.1,10,5000,Paper Goods,13,BOX,1,1,100,1,5/23/2017 12:00:00 AM,2
+112,Dried Garbanzo Beans,23.8,13.318,25lb,Grocery,15,QUART,LB,1.877,1000000,2,5/23/2017 12:00:00 AM,2
+113,Crushed Red Pepper,17.15,80,5lbs,Herbs,0,OZ-wt,TBL,1,1000000,1,5/23/2017 12:00:00 AM,2
+124,De-Greaser,5.53,1,1 Gal,Janitorial,5,GALLON,1,1,100,1,5/23/2017 12:00:00 AM,2

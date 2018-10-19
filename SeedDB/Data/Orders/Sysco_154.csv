@@ -1,0 +1,19 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+13,Pizza Sauce,21.75,6,6# CANS,Grocery,2,CAN,EA,6,100,1,11/19/2017 12:00:00 AM,0
+14,Stewed Tomatoes,15.47,6,6# CANS,Grocery,3,CAN,EA,6,100,1,11/19/2017 12:00:00 AM,0
+19,Mayonnaise,26.62,4,4 GAL,Grocery,2,JUG,EA,4,10000,1,11/19/2017 12:00:00 AM,0
+20,BBQ Sauce,48.79,4,CS 39.5lbs,Grocery,1,JUG,OZ-wt,632,9800,1,11/19/2017 12:00:00 AM,0
+21,Macaroni,17.72,2,20lb CASE,Grocery,2,BAG,EA,160,2.41,5,11/19/2017 12:00:00 AM,0
+25,Tomato Juice,15.79,12,12x48oz CANS,Grocery,11,CAN,EA,12,100,3,11/19/2017 12:00:00 AM,0
+36,Olive Oil,50.8,6,6 GAL,Grocery,2.6,JUG,OZ-fl,128,99,1,11/19/2017 12:00:00 AM,0
+49,Salt,5.95,1,EA,Herbs,0.4,Container,TBL,615,100,1,11/19/2017 12:00:00 AM,0
+54,Yellow Onions,16.95,4,20lbs,Produce,0,BAG,OZ-wt,800,85,4,11/19/2017 12:00:00 AM,0
+57,Spinach,15.79,4,4x2.5lb,Produce,0,BAG,OZ-wt,160,99,3,11/19/2017 12:00:00 AM,0
+58,Mixed Greens,5.99,1,3lb,Produce,1,BAG,OZ-wt,48,9800,2,11/19/2017 12:00:00 AM,0
+61,Tomatoes,17.9,1,25lb,Produce,0.5,CASE,OZ-wt,400,0.95,1,11/19/2017 12:00:00 AM,0
+64,Fresh Basil,8.99,1,1lb,Produce,0.25,BAG,OZ-wt,16,65,1,11/19/2017 12:00:00 AM,0
+66,Pineapple,16.99,6,6 COUNT,Produce,5,EACH,OZ-wt,44,100,1,11/19/2017 12:00:00 AM,0
+72,Chicken Breast,44.39,1,40lb CASE,Poultry,1,CASE,OZ-wt,640,85,4,11/19/2017 12:00:00 AM,0
+74,Italian Sausage,47.95,4,20lb CASE,Meats,13,BAG,OZ-wt,160,91,4,11/19/2017 12:00:00 AM,0
+75,Bacon Bits,53.99,2,10lb CASE,Meats,0,BAG,OZ-wt,80,1,3,11/19/2017 12:00:00 AM,0
+97,Dried Black Beans,41.99,27.414,50lbs,Grocery,8,Quart,3.5,1,100,1,11/19/2017 12:00:00 AM,0

@@ -1,0 +1,39 @@
+Id,Name,RecipeUnit,RecipeUnitConversion,Category,Count,IsBatch
+0,Mac & Cheese,OZ-wt,120.8,MAC + SOUPS,0,True
+1,Balsamic Vinegar,OZ-wt,66.4,MAC + SOUPS,0,True
+2,Chicken Marinade,OZ-wt,208,MAC + SOUPS,0,True
+3,Chili,OZ-wt,524,MAC + SOUPS,0,True
+4,Cooked Spinach,OZ-wt,19.2,MAC + SOUPS,0,True
+5,Garlic Oil Spread,OZ-wt,100,MAC + SOUPS,0,True
+6,Grilled Chicken,OZ-wt,184.96,MAC + SOUPS,0,True
+7,Grilled Onions,OZ-wt,50.35,MAC + SOUPS,0,True
+8,Hummus,OZ-wt,494.4,SAUCES+DRESSINGS,3,True
+9,Marinara,OZ-wt,505,SAUCES+DRESSINGS,0,True
+10,New England Clam Chowder,OZ-wt,484.8,MAC + SOUPS,16,True
+11,Pesto Aioli,OZ-wt,663.8,SAUCES+DRESSINGS,0,True
+12,Roasted Bell Peppers,OZ-wt,36.23,MAC + SOUPS,0,True
+13,Sauteed Mushrooms,OZ-wt,22.1,MAC + SOUPS,0,True
+14,Tomato Basil,OZ-wt,518.4,MAC + SOUPS,0,True
+15,Custom Bowl,EACH,1,Food,0,False
+16,Mac Daddy,EACH,1,Food,0,False
+17,Mediterranean Bowl,EACH,1,Food,0,False
+18,BBQ Bowl,EACH,1,Food,0,FALSE
+19,Custom Salad,EACH,1,Food,0,FALSE
+20,Add Bacon,EACH,1,Food,0,FALSE
+21,Tomato Basil,EACH,1,Food,0,FALSE
+22,Pizza Bowl,EACH,1,Food,0,FALSE
+23,Chili,EACH,1,Food,0,FALSE
+24,Hangover Bowl,EACH,1,Food,0,FALSE
+25,Passion Tea,EACH,1,Beverage,0,FALSE
+26,Clam Chowder,EACH,1,Food,0,FALSE
+27,Mac Side,EACH,1,Food,0,False
+28,Honey Milk Tea,EACH,1,Beverage,0,FALSE
+29,Bread,EACH,1,Food,0,False
+30,Bowl Of The Week,EACH,1,Food,0,FALSE
+31,Egg,EACH,1,Extra,0,FALSE
+32,Sausage,EACH,1,Extra,0,FALSE
+33,Chicken,EACH,1,Extra,0,FALSE
+34,Avo,EACH,1,Extra,0,FALSE
+35,Strawberry Lemonade,EA,1,Beverage,0,False
+36,Fresh Lemonade,EA,1,Beverage,0,False
+38,Ranch Dressing,OZ-wt,126.8,Food,0,True

@@ -1,0 +1,726 @@
+10/26/17 - 11:39:27 - INFO - Application starting
+10/26/17 - 11:39:27 - INFO - Loading models
+10/26/17 - 11:39:28 - INFO - Models loaded
+10/26/17 - 11:39:30 - INFO - Upating BreadOrder: 165
+10/26/17 - 11:39:31 - INFO - Upating BreadOrder: 162
+10/26/17 - 11:39:32 - INFO - Upating BreadOrder: 163
+10/26/17 - 11:39:32 - INFO - Upating BreadOrder: 164
+10/26/17 - 11:39:35 - INFO - Changed to tab: Orders
+10/26/17 - 11:39:36 - INFO - Executing OrderTabVM#ViewOpenOrder
+10/26/17 - 11:39:36 - INFO - Adding temp tab: ViewOrderVM
+10/26/17 - 11:39:36 - INFO - Changed to tab: PO#: 125
+10/26/17 - 11:39:43 - INFO - Application closing
+10/26/17 - 15:11:47 - INFO - Application starting
+10/26/17 - 15:11:47 - INFO - Loading models
+10/26/17 - 15:11:47 - INFO - Models loaded
+10/26/17 - 15:11:50 - INFO - Changed to tab: Bread
+10/26/17 - 15:11:50 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:11:52 - INFO - Upating BreadOrder: 164
+10/26/17 - 15:11:52 - INFO - Executing BreadGuideVM#UpdateSquare
+10/26/17 - 15:11:52 - INFO - Upating BreadOrder: 162
+10/26/17 - 15:11:53 - INFO - Upating BreadOrder: 163
+10/26/17 - 15:11:54 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:11:54 - INFO - Upating BreadOrder: 162
+10/26/17 - 15:11:55 - INFO - Upating BreadOrder: 163
+10/26/17 - 15:11:55 - INFO - Upating BreadOrder: 164
+10/26/17 - 15:11:57 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:11:58 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:11:59 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:12:01 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:12:05 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:12:06 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:12:07 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:12:08 - INFO - Upating BreadOrder: 165
+10/26/17 - 15:12:15 - INFO - Upating BreadOrder: 166
+10/26/17 - 21:43:20 - INFO - Executing BreadGuideVM#UpdateSquare
+10/26/17 - 21:43:22 - INFO - Upating BreadOrder: 165
+10/26/17 - 21:43:22 - INFO - Upating BreadOrder: 162
+10/26/17 - 21:43:22 - INFO - Upating BreadOrder: 164
+10/26/17 - 21:43:22 - INFO - Upating BreadOrder: 163
+10/26/17 - 21:43:26 - INFO - Application closing
+10/26/17 - 22:08:02 - INFO - Application starting
+10/26/17 - 22:08:02 - INFO - Loading models
+10/26/17 - 22:08:03 - INFO - Models loaded
+10/26/17 - 22:08:04 - ERROR - 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '19' and line position '18'.
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
+   at BuddhaBowls.MainWindow.InitializeComponent()
+   at BuddhaBowls.MainWindow..ctor(MainViewModel mvm)
+   at BuddhaBowls.MainClass.Show()
+   at BuddhaBowls.MainClass.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+10/26/17 - 22:08:05 - INFO - Upating BreadOrder: 163
+10/26/17 - 22:08:05 - INFO - Upating BreadOrder: 165
+10/26/17 - 22:08:05 - INFO - Upating BreadOrder: 162
+10/26/17 - 22:08:08 - INFO - Application starting
+10/26/17 - 22:08:08 - INFO - Loading models
+10/26/17 - 22:08:09 - INFO - Models loaded
+10/26/17 - 22:08:10 - ERROR - 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '19' and line position '18'.
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
+   at BuddhaBowls.MainWindow.InitializeComponent()
+   at BuddhaBowls.MainWindow..ctor(MainViewModel mvm)
+   at BuddhaBowls.MainClass.Show()
+   at BuddhaBowls.MainClass.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+10/26/17 - 22:08:11 - INFO - Upating BreadOrder: 164
+10/26/17 - 22:08:12 - INFO - Upating BreadOrder: 163
+10/26/17 - 22:08:12 - INFO - Upating BreadOrder: 165
+10/26/17 - 22:08:12 - INFO - Upating BreadOrder: 162
+10/26/17 - 22:10:13 - INFO - Application starting
+10/26/17 - 22:10:13 - INFO - Loading models
+10/26/17 - 22:10:14 - INFO - Models loaded
+10/26/17 - 22:10:16 - INFO - Upating BreadOrder: 164
+10/26/17 - 22:10:16 - INFO - Upating BreadOrder: 162
+10/26/17 - 22:10:16 - INFO - Upating BreadOrder: 165
+10/26/17 - 22:10:16 - INFO - Upating BreadOrder: 163
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:17 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:20 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:20 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:20 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:20 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:20 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:20 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:20 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:20 - INFO - Changed to tab: Vendors
+10/26/17 - 22:10:21 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:23 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:26 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:26 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:26 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:26 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:26 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:31 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:35 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:37 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+10/26/17 - 22:10:37 - INFO - Upating PurchaseOrder: 125
+10/26/17 - 22:10:37 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:37 - INFO - Upating InventoryItem: 0
+10/26/17 - 22:10:37 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:37 - INFO - Upating InventoryItem: 1
+10/26/17 - 22:10:37 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 6
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:37 - INFO - Upating InventoryItem: 4
+10/26/17 - 22:10:37 - INFO - Upating Vendor: 1
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:38 - INFO - Upating InventoryItem: 54
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 1
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:38 - INFO - Upating InventoryItem: 59
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 8
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 2
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:38 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:38 - INFO - Upating InventoryItem: 72
+10/26/17 - 22:10:38 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:40 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:45 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:48 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating InventoryItem: 0
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating InventoryItem: 1
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 6
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating InventoryItem: 4
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 1
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating InventoryItem: 54
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 1
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating InventoryItem: 59
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 8
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 2
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 0
+10/26/17 - 22:10:53 - INFO - Upating Vendor: 9
+10/26/17 - 22:10:53 - INFO - Upating InventoryItem: 72
+10/26/17 - 22:10:53 - INFO - Upating PurchaseOrder: 121
+10/26/17 - 22:10:54 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:55 - INFO - Changed to tab: Orders
+10/26/17 - 22:10:56 - INFO - Changed to tab: Inventory
+10/26/17 - 22:10:59 - INFO - Changed to tab: Orders
+10/26/17 - 22:11:03 - INFO - Upating PurchaseOrder: 121
+10/26/17 - 22:11:05 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:06 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:07 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:07 - INFO - Changed to tab: Orders
+10/26/17 - 22:11:13 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:15 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:16 - INFO - Changed to tab: Inventory
+10/26/17 - 22:11:28 - INFO - Changed to tab: Bread
+10/26/17 - 22:11:56 - INFO - Changed to tab: Orders
+10/26/17 - 22:12:01 - INFO - Changed to tab: Orders
+10/26/17 - 22:12:01 - INFO - Changed to tab: Orders
+10/26/17 - 22:12:01 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:02 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:02 - INFO - Upating Recipe: 0
+10/26/17 - 22:12:02 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:02 - INFO - Upating Recipe: 1
+10/26/17 - 22:12:02 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 2
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 3
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 4
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 5
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 6
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 7
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 8
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 9
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 10
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 11
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 12
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 13
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Upating Recipe: 14
+10/26/17 - 22:12:03 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:03 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:04 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:05 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:06 - INFO - Executing RecipeTabVM#EditRecipe
+10/26/17 - 22:12:06 - INFO - Adding temp tab: NewRecipeVM
+10/26/17 - 22:12:06 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:06 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:08 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:09 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:11 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:12 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:12 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:13 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:14 - INFO - Executing InventoryListVM#EditInventoryItem
+10/26/17 - 22:12:15 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:15 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:15 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:20 - INFO - Executing WizardVM#NextPage
+10/26/17 - 22:12:20 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:20 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:20 - INFO - Executing WizardVM#NextPage
+10/26/17 - 22:12:20 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:20 - INFO - Executing NewInventoryItemWizard#FinishWizard
+10/26/17 - 22:12:20 - INFO - Upating Vendor: 2
+10/26/17 - 22:12:20 - INFO - Upating Vendor: 0
+10/26/17 - 22:12:20 - INFO - Upating Vendor: 2
+10/26/17 - 22:12:21 - INFO - Upating Vendor: 0
+10/26/17 - 22:12:21 - INFO - Upating Vendor: 2
+10/26/17 - 22:12:21 - INFO - Upating InventoryItem: 21
+10/26/17 - 22:12:21 - INFO - Upating Vendor: 2
+10/26/17 - 22:12:21 - INFO - Upating Vendor: 0
+10/26/17 - 22:12:21 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:23 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:23 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:24 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:25 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:26 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:26 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:28 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:29 - INFO - Executing RecipeTabVM#EditRecipe
+10/26/17 - 22:12:29 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:29 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:31 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:33 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:34 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:34 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:36 - INFO - Executing InventoryListVM#EditInventoryItem
+10/26/17 - 22:12:36 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:36 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:36 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:40 - INFO - Executing WizardVM#NextPage
+10/26/17 - 22:12:40 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:40 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:40 - INFO - Executing WizardVM#NextPage
+10/26/17 - 22:12:40 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:41 - INFO - Executing NewInventoryItemWizard#FinishWizard
+10/26/17 - 22:12:41 - INFO - Upating Vendor: 2
+10/26/17 - 22:12:41 - INFO - Upating Vendor: 0
+10/26/17 - 22:12:41 - INFO - Upating Vendor: 2
+10/26/17 - 22:12:41 - INFO - Upating Vendor: 0
+10/26/17 - 22:12:41 - INFO - Upating Vendor: 2
+10/26/17 - 22:12:41 - INFO - Upating InventoryItem: 21
+10/26/17 - 22:12:41 - INFO - Upating Vendor: 2
+10/26/17 - 22:12:41 - INFO - Upating Vendor: 0
+10/26/17 - 22:12:41 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:43 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:43 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:43 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:44 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:44 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:45 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:12:46 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:46 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:46 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:46 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:46 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:46 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:46 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:46 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:46 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:47 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:47 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:48 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:48 - INFO - Changed to tab: Inventory
+10/26/17 - 22:12:50 - INFO - Executing InventoryListVM#EditInventoryItem
+10/26/17 - 22:12:51 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:51 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:51 - INFO - Changed to tab: New Item
+10/26/17 - 22:12:52 - INFO - Changed to tab: Vendors
+10/26/17 - 22:12:54 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:56 - INFO - Executing ChangeableTabVM#SwitchPage
+10/26/17 - 22:12:56 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:57 - INFO - Changed to tab: Recipes
+10/26/17 - 22:12:58 - INFO - Executing RecipeTabVM#EditRecipe
+10/26/17 - 22:12:59 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:13:00 - INFO - Executing NewRecipeVM#AddItem
+10/26/17 - 22:13:07 - INFO - Executing NewRecipeVM#FinishWizard
+10/26/17 - 22:13:07 - INFO - Upating Recipe: 15
+10/26/17 - 22:13:07 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:13:07 - INFO - Changed to tab: New Item
+10/26/17 - 22:13:08 - INFO - Changed to tab: Vendors
+10/26/17 - 22:13:09 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:11 - INFO - Changed to tab: Vendors
+10/26/17 - 22:13:18 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Inventory
+10/26/17 - 22:13:21 - INFO - Changed to tab: Reports
+10/26/17 - 22:13:22 - INFO - Changed to tab: Settings
+10/26/17 - 22:13:23 - INFO - Changed to tab: Recipes
+10/26/17 - 22:13:24 - INFO - Changed to tab: New Item
+10/26/17 - 22:13:25 - INFO - Changed to tab: Recipes
+10/26/17 - 22:13:27 - INFO - Changed to tab: Recipes
+10/26/17 - 22:13:28 - INFO - Changed to tab: Recipes
+10/26/17 - 22:13:28 - INFO - Changed to tab: Recipes
+10/26/17 - 22:13:30 - INFO - Executing RecipeTabVM#EditRecipe
+10/26/17 - 22:13:30 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:13:33 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:13:38 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:13:38 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:13:39 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:13:51 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:02 - INFO - Executing NewRecipeVM#AddItem
+10/26/17 - 22:14:06 - INFO - Executing NewRecipeVM#ModalOk
+10/26/17 - 22:14:06 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:07 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:08 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:08 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:09 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:09 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:09 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:11 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:11 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:12 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:14 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:14 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:14:16 - INFO - Changed to tab: Edit Recipe
+10/26/17 - 22:19:42 - INFO - Changed to tab: Recipes
+10/26/17 - 22:19:43 - INFO - Changed to tab: Bread
+10/26/17 - 22:20:43 - INFO - Changed to tab: Inventory
+10/26/17 - 22:20:44 - INFO - Changed to tab: Inventory
+10/26/17 - 22:20:44 - INFO - Changed to tab: Inventory
+10/26/17 - 22:20:44 - INFO - Changed to tab: Inventory
+10/26/17 - 22:20:44 - INFO - Changed to tab: Inventory
+10/26/17 - 22:20:48 - INFO - Changed to tab: Orders
+10/26/17 - 22:20:49 - INFO - Changed to tab: Orders
+10/26/17 - 22:20:49 - INFO - Changed to tab: Orders
+10/26/17 - 22:20:49 - INFO - Changed to tab: Orders
+10/26/17 - 22:20:55 - INFO - Changed to tab: Reports
+10/26/17 - 22:20:56 - INFO - Executing ChangeableTabVM#SwitchPage
+10/26/17 - 22:20:57 - INFO - Executing ChangeableTabVM#SwitchPage
+10/26/17 - 22:20:58 - INFO - Changed to tab: Reports
+10/26/17 - 22:20:58 - INFO - Changed to tab: Reports
+10/26/17 - 22:22:23 - INFO - Changed to tab: Reports
+10/26/17 - 22:22:23 - INFO - Changed to tab: Reports
+10/26/17 - 22:22:24 - INFO - Changed to tab: Reports
+10/26/17 - 22:22:27 - INFO - Changed to tab: Reports
+10/26/17 - 22:22:47 - INFO - Changed to tab: Recipes
+10/26/17 - 22:22:54 - INFO - Changed to tab: Bread
+10/26/17 - 22:22:57 - INFO - Executing BreadGuideVM#UpdateSquare
+10/26/17 - 22:23:00 - INFO - Upating BreadOrder: 163
+10/26/17 - 22:23:00 - INFO - Upating BreadOrder: 162
+10/26/17 - 22:23:00 - INFO - Upating BreadOrder: 164
+10/26/17 - 22:23:01 - INFO - Upating BreadOrder: 165
+10/26/17 - 22:23:03 - INFO - Changed to tab: Vendors
+10/26/17 - 22:23:04 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:06 - INFO - Changed to tab: Bread
+10/26/17 - 22:23:19 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:23:20 - INFO - Changed to tab: Inventory
+10/26/17 - 22:27:30 - INFO - Changed to tab: Orders
+10/26/17 - 22:27:31 - INFO - Changed to tab: Orders
+10/26/17 - 22:27:31 - INFO - Changed to tab: Orders
+10/26/17 - 22:27:33 - INFO - Changed to tab: Orders
+10/26/17 - 22:27:33 - INFO - Changed to tab: Orders
+10/26/17 - 22:27:34 - INFO - Executing OrderTabVM#StartNewOrder
+10/26/17 - 22:27:35 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:37 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:37 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:37 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:37 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:37 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:37 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:37 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:37 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:44 - INFO - Executing NewOrderVM#ClearOrderAmounts
+10/26/17 - 22:27:44 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:44 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:44 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:44 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:44 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:44 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:44 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:46 - INFO - Executing NewOrderVM#ClearOrderAmounts
+10/26/17 - 22:27:47 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:47 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:47 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:47 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:47 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:47 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:47 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:47 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:49 - ERROR - Object reference not set to an instance of an object.
+   at BuddhaBowls.OrderBreakdownVM.<>c__DisplayClass25_0.<UpdateItem>b__0(BreakdownCategoryItem x)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.UpdateItem(VendorInventoryItem item)
+   at BuddhaBowls.NewOrderVM.RowEdited(VendorInventoryItem item)
+   at BuddhaBowls.UserControls.NewOrder.OrderList_RowEditEnding(Object sender, DataGridRowEditEndingEventArgs e)
+   at System.Windows.Controls.DataGrid.OnRowEditEnding(DataGridRowEditEndingEventArgs e)
+   at System.Windows.Controls.DataGrid.OnExecutedCommitEdit(ExecutedRoutedEventArgs e)
+   at System.Windows.Controls.DataGrid.OnExecutedCommitEdit(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandBinding.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandManager.ExecuteCommandBinding(Object sender, ExecutedRoutedEventArgs e, CommandBinding commandBinding)
+   at System.Windows.Input.CommandManager.FindCommandBinding(Object sender, RoutedEventArgs e, ICommand command, Boolean execute)
+   at System.Windows.Input.CommandManager.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.UIElement.OnExecutedThunk(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.ExecutedRoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object target)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.RoutedCommand.ExecuteImpl(Object parameter, IInputElement target, Boolean userInitiated)
+   at System.Windows.Input.RoutedCommand.Execute(Object parameter, IInputElement target)
+   at System.Windows.Controls.DataGrid.EndEdit(RoutedCommand command, DataGridCell cellContainer, DataGridEditingUnit editingUnit, Boolean exitEditMode)
+   at System.Windows.Controls.DataGrid.OnCurrentCellChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.DependencyObject.SetCurrentValueInternal(DependencyProperty dp, Object value)
+   at System.Windows.Controls.DataGrid.set_CurrentCellContainer(DataGridCell value)
+   at System.Windows.Controls.DataGrid.set_FocusedCell(DataGridCell value)
+   at System.Windows.Controls.DataGridCell.OnAnyLostFocus(Object sender, RoutedEventArgs e)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.TextBoxBase.OnLostFocus(RoutedEventArgs e)
+   at System.Windows.UIElement.IsFocused_Changed(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.Controls.TextBox.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.ClearValueCommon(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata)
+   at System.Windows.DependencyObject.ClearValue(DependencyPropertyKey key)
+   at System.Windows.Input.FocusManager.OnFocusedElementChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.Input.FocusManager.SetFocusedElement(DependencyObject element, IInputElement value)
+   at System.Windows.Input.KeyboardNavigation.UpdateFocusedElement(DependencyObject focusTarget)
+   at System.Windows.FrameworkElement.OnGotKeyboardFocus(Object sender, KeyboardFocusChangedEventArgs e)
+   at System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.KeyboardDevice.ChangeFocus(DependencyObject focus, Int32 timestamp)
+   at System.Windows.Input.KeyboardDevice.TryChangeFocus(DependencyObject newFocus, IKeyboardInputProvider keyboardInputProvider, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(DependencyObject focus, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(IInputElement element)
+   at System.Windows.UIElement.Focus()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+10/26/17 - 22:27:49 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:49 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:49 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:49 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:49 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:49 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:49 - INFO - Changed to tab: New Order
+10/26/17 - 22:27:55 - INFO - Application starting
+10/26/17 - 22:27:55 - INFO - Loading models
+10/26/17 - 22:27:56 - INFO - Models loaded
+10/26/17 - 22:27:57 - ERROR - 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '19' and line position '18'.
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
+   at BuddhaBowls.MainWindow.InitializeComponent()
+   at BuddhaBowls.MainWindow..ctor(MainViewModel mvm)
+   at BuddhaBowls.MainClass.Show()
+   at BuddhaBowls.MainClass.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+10/26/17 - 22:27:58 - INFO - Upating BreadOrder: 164
+10/26/17 - 22:27:58 - INFO - Upating BreadOrder: 163
+10/26/17 - 22:27:58 - INFO - Upating BreadOrder: 162
+10/26/17 - 22:27:59 - INFO - Upating BreadOrder: 165
+10/26/17 - 22:27:59 - INFO - Application starting
+10/26/17 - 22:27:59 - INFO - Loading models
+10/26/17 - 22:28:00 - INFO - Models loaded
+10/26/17 - 22:28:01 - ERROR - 'Provide value on 'System.Windows.StaticResourceExtension' threw an exception.' Line number '19' and line position '18'.
+   at System.Windows.Markup.WpfXamlLoader.Load(XamlReader xamlReader, IXamlObjectWriterFactory writerFactory, Boolean skipJournaledProperties, Object rootObject, XamlObjectWriterSettings settings, Uri baseUri)
+   at System.Windows.Markup.WpfXamlLoader.LoadBaml(XamlReader xamlReader, Boolean skipJournaledProperties, Object rootObject, XamlAccessLevel accessLevel, Uri baseUri)
+   at System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   at System.Windows.Application.LoadComponent(Object component, Uri resourceLocator)
+   at BuddhaBowls.MainWindow.InitializeComponent()
+   at BuddhaBowls.MainWindow..ctor(MainViewModel mvm)
+   at BuddhaBowls.MainClass.Show()
+   at BuddhaBowls.MainClass.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+10/26/17 - 22:28:02 - INFO - Upating BreadOrder: 163
+10/26/17 - 22:28:02 - INFO - Upating BreadOrder: 164
+10/26/17 - 22:28:03 - INFO - Upating BreadOrder: 162
+10/26/17 - 22:28:03 - INFO - Upating BreadOrder: 165

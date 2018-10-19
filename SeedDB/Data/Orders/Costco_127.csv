@@ -1,0 +1,5 @@
+Id,Name,LastOrderAmount,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastPurchasedDate,LastVendorId
+6,Heavy Cream,2,Dairy,1/2 Gallon,4,1/2 GALLON,1,CUP,48,1000000,5.99,10/25/2017 12:00:00 AM,6
+9,Whole Milk,26,Dairy,2 GALLON,37,GALLON,2,CUP,16,100,5.39,10/25/2017 12:00:00 AM,6
+38,Sugar (BROWN),1,Grocery,25lb,21,QUART,16,CUP,62.5,10000,13.88,10/25/2017 12:00:00 AM,6
+114,Sugar (CANE),1,Beverage,EA,17,QUART,16,CUP,1,1E+12,30,10/25/2017 12:00:00 AM,6

@@ -1,0 +1,52 @@
+Id,LastPurchasedDate,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastVendorId
+1,2/19/2018 12:00:00 AM,Cheddar,Dairy,CASE 20lb,5,5lb BAG,4,OZ-wt,80,1,42.24,1,0
+2,1/17/2018 12:00:00 AM,Pepper Jack,Dairy,CASE 20lb,1,5lb BAG,4,OZ-wt,80,1,42.85,1,0
+3,3/2/2018 12:00:00 AM,Feta,Dairy,33lbs,0.7,5lb BAG,1,OZ-wt,160,1,49.74,2,2
+6,2/2/2018 12:40:38 PM,Heavy Cream,Dairy,6 1/2 Gallon,6,1/2 GALLON,6,CUP,8,1,35.95,3,6
+8,1/17/2018 12:00:00 AM,Eggs,Dairy,15 DOZEN,2,TRAY,6,EA,180,0.95,10,1,0
+13,1/29/2018 12:00:00 AM,Pizza Sauce,Grocery,6# CANS,0,CAN,6,EA,6,1,22,2,0
+18,3/2/2018 12:00:00 AM,Artichoke Hearts,Grocery,6# CANS,49,CAN,6,OZ-wt,324,10000,43.87,3,2
+20,3/5/2018 10:48:08 AM,BBQ Sauce,Grocery,CS 39.5lbs,8,JUG,4,OZ-wt,632,9800,48.99,1,2
+21,3/5/2018 10:48:08 AM,Macaroni,Grocery,20lb CASE,20,BAG,2,EA,160,2.41,19.82,3,2
+23,3/5/2018 10:48:08 AM,Roasted Bell Peppers,Grocery,6# CANS,89,CAN,6,OZ-wt,63.5,1,37.94,1,2
+24,2/15/2018 2:38:32 PM,Chopped Clams,Grocery,12x48oz CANS,5,CAN,12,EA,1,1,91.55,1,0
+26,,Clam Juice,Grocery,12x48oz CANS,2,CAN,12,EA,1,1,31.37,0,2
+30,,Balsamic Vinegar,Grocery,2 x 5 Liter,1.5,JUG,2,OZ-wt,169.07,1,18.5,1,2
+31,3/2/2018 12:00:00 AM,Tapatio,Grocery,EA,13,BOTTLE,12,EA,12,1,12.84,1,2
+32,3/2/2018 12:00:00 AM,Sriracha,Grocery,12x17oz,11,BOTTLE,12,EA,12,1,18.88,1,2
+33,,Chicken Broth,Grocery,4x32oz,1,BOTTLE,4,OZ-wt,1,1,35.99,0,2
+40,3/2/2018 12:00:00 AM,Tahini,Grocery,40lbs,1,Container,1,OZ-wt,640,1,58.45,1,2
+41,3/2/2018 12:00:00 AM,Kalamata Olives,Grocery,6x4.4lbs,4,JAR,6,OZ-wt,64.8,1,47.18,1,2
+42,2/15/2018 2:38:32 PM,Lemon Juice,Grocery,4 GAL,0,GAL,4,OZ-wt,128,1,16.72,1,0
+43,12/11/2017 12:00:00 AM,Dried Basil,Herbs,12oz,47.4,OZ-wt,24,TBL,274.29,1,9.81,1,2
+44,2/11/2018 12:00:00 AM,Thyme,Herbs,2 lbs,35.4,OZ-wt,32,TBL,243.81,1,13.34,2,2
+45,2/11/2018 12:00:00 AM,Oregano,Herbs,1.5lbs,42.4,OZ-wt,24,TBL,9.697,1,13.9,1,2
+46,12/11/2017 12:00:00 AM,Cumin,Herbs,5lbs,81,OZ-wt,80,TBL,5,1,17.47,1,2
+47,12/11/2017 12:00:00 AM,Cayenne Pepper,Herbs,5lbs,44.8,OZ-wt,80,TBL,1,1,21.46,1,2
+48,2/11/2018 12:00:00 AM,Pepper,Herbs,5lbs,19.6,OZ-wt,80,TBL,3.9,1,25.15,3,2
+50,,Chili Powder,Herbs,6lbs,91.2,OZ-wt,96,TBL,78.05,1,24.43,1,2
+51,2/11/2018 12:00:00 AM,Paprika,Herbs,5lbs,103.4,OZ-wt,80,TBL,36.96,1,16.67,1,2
+60,12/11/2017 12:00:00 AM,Cucumbers,Produce,36 COUNT,0.4,CASE,1,OZ-wt,420,0.95,7.95,1,2
+62,,Avocado,Produce,60 COUNT,108,EACH,60,EA,24,1,20.77,0,2
+64,2/19/2018 12:00:00 AM,Fresh Basil,Produce,1lb,0,BAG,1,OZ-wt,16,1,8.99,1,0
+71,2/15/2018 2:38:32 PM,Garlic Peeled,Produce,5lbs,0,JAR,1,OZ-wt,114.29,1,7.86,1,0
+72,,Chicken Breast,Poultry,40lb CASE,0,CASE,1,OZ-wt,640,0.85,44.8,0,2
+73,,Ground Beef,Meats,20lb CASE,4,LOG,2,EA,2,1,25.42,0,2
+74,1/21/2018 12:00:00 AM,Italian Sausage,Meats,10lb CASE,4,BAG,2,OZ-wt,160,0.91,17.54,2,0
+78,,Biopack #4,Paper Goods,Case,10,Stack,4,Each,40,0.4,32.65,0,2
+79,,Water Cups,Paper Goods,2500,19,Sleeve,25,1,2500,1,57.52,0,3
+87,,Foil Roll,Paper Goods,ROLL,1.1,1,1,1,1,1,17.65,5,3
+97,,Dried Black Beans,Grocery,50lbs,12,Quart,27.414,3.5,1,1,41.35,0,2
+99,12/11/2017 12:00:00 AM,Cinnamon,Herbs,5lbs,64.4,LB,80,OZ-wt,1,1,18.02,1,2
+101,,Allspice,Herbs,1lb,36.2,OZ-wt,16,TBL,1,1,8.02,0,2
+107,,Dried Pinto Beans,Grocery,25lb,14,Quart,14.47,8,8,1,14.3,0,0
+109,,Sanitizer,Janitorial,4 GAL,1.1,GALLON,4,1,1,1,37.87,0,3
+110,,Poly Gloves,Paper Goods,5000,12,BOX,10,1,1,1,34.1,0,3
+112,3/2/2018 12:00:00 AM,Dried Garbanzo Beans,Grocery,25lb,64.64,QUART,13.318,LB,1.877,1,22.93,2,2
+113,12/11/2017 12:00:00 AM,Crushed Red Pepper,Herbs,3.5lb,52.4,OZ-wt,56,TBL,1,1,17.15,1,2
+123,12/11/2017 12:00:00 AM,Detergent,Janitorial,5 GAL,1,GALLON,4,1,1,1,21.02,2,2
+124,12/11/2017 12:00:00 AM,De-Greaser,Janitorial,1 Gal,3.1,GALLON,4,1,1,1,5.53,4,2
+127,,Floor Cleaner,Janitorial,3 GAL,0.8,1 GAL,3,1,1,1,24.26,0,2
+128,12/11/2017 12:00:00 AM,Bay Leaves,Herbs,16oz,19.4,OZ-wt,16,OZ-wt,1,1,10.48,1,2
+129,2/11/2018 12:00:00 AM,Lemonade Base,Beverage,EA,1.3,GALLON,4,1,16,,21.11,1.75,2
+130,3/2/2018 12:00:00 AM,Pink Lemonade Base,Beverage,4 GAL,3.6,GALLON,4,1,1,,22.23,2,2

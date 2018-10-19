@@ -1,0 +1,5 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+6,Heavy Cream,5.99,1,1/2 Gallon,Dairy,7.5,1/2 GALLON,CUP,48,1000000,3,6/9/2017 12:00:00 AM,6
+6,Heavy Cream,5.99,1,1/2 Gallon,Dairy,7.5,1/2 GALLON,CUP,48,1000000,3,6/9/2017 12:00:00 AM,6
+9,Whole Milk,5.39,2,2 GALLON,Dairy,19,GALLON,CUP,32,100,16,6/9/2017 12:00:00 AM,6
+9,Whole Milk,5.39,2,2 GALLON,Dairy,19,GALLON,CUP,32,100,16,6/9/2017 12:00:00 AM,6

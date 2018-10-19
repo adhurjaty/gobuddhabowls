@@ -1,0 +1,28 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,Dairy,CASE 30lb,4,5lb BAG,6,OZ-wt,80,1,56.35,1,2/26/2018 11:53:10 AM,0
+1,Cheddar,Dairy,CASE 20lb,5,5lb BAG,4,OZ-wt,80,1,42.24,2,2/26/2018 11:53:10 AM,0
+4,Butter,Dairy,CASE 30lb,30,1lb,30,OZ-wt,16,1,85.88,1,2/19/2018 12:00:00 AM,0
+13,Pizza Sauce,Grocery,6# CANS,3,CAN,6,EA,6,100,22,1,2/26/2018 11:53:10 AM,0
+14,Stewed Tomatoes,Grocery,6# CANS,6,CAN,6,EA,1,1,16.99,1,2/22/2018 2:57:03 PM,0
+19,Mayonnaise,Grocery,4 GAL,7,JUG,4,EA,1,1,26.99,1,2/26/2018 11:53:10 AM,0
+20,BBQ Sauce,Grocery,CS 39.5lbs,3,JUG,4,OZ-wt,632,9800,48.99,1,2/22/2018 2:57:03 PM,0
+21,Macaroni,Grocery,20lb CASE,4,BAG,2,EA,160,2.41,19.82,3,2/26/2018 11:53:10 AM,0
+23,Roasted Bell Peppers,Grocery,6# CANS,0,CAN,6,OZ-wt,63.5,1,37.94,1,2/22/2018 2:57:03 PM,0
+24,Chopped Clams,Grocery,12x48oz CANS,5,CAN,12,EA,1,1,91.55,1,2/22/2018 2:57:03 PM,0
+25,Tomato Juice,Grocery,12x48oz CANS,24,CAN,12,EA,1,1,15.79,1,2/26/2018 11:53:10 AM,0
+36,Olive Oil,Grocery,6 GAL,8,JUG,6,OZ-fl,128,1,49.95,1,2/26/2018 11:53:10 AM,0
+49,Salt,Herbs,EA,0.2,Container,1,TBL,615,1,5.9,1,2/19/2018 12:00:00 AM,0
+54,Yellow Onions,Produce,20lbs,7,BAG,4,OZ-wt,80,1,16.59,5,2/26/2018 11:53:10 AM,0
+56,Potatoes,Produce,50lb,0.5,1/2 CASE,1,OZ-wt,800,0.85,19.99,1,2/26/2018 11:53:10 AM,0
+57,Spinach,Produce,4x2.5lb,6,BAG,4,OZ-wt,160,99,16.5,2,2/26/2018 11:53:10 AM,0
+58,Mixed Greens,Produce,3lb,0,BAG,1,OZ-wt,48,9800,5.99,2,2/26/2018 11:53:10 AM,0
+59,Mushrooms,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,0.9,16.9,5,2/22/2018 2:57:03 PM,0
+61,Tomatoes,Produce,25lb,0,CASE,1,OZ-wt,400,0.95,16.71,1,2/26/2018 11:53:10 AM,0
+64,Fresh Basil,Produce,1lb,0,BAG,1,OZ-wt,16,1,8.99,2,2/26/2018 11:53:10 AM,0
+71,Garlic Peeled,Produce,5lbs,0,JAR,1,OZ-wt,114.29,1,16.99,1,2/26/2018 11:53:10 AM,0
+72,Chicken Breast,Poultry,40lb CASE,1,CASE,1,OZ-wt,640,85,42.53,4,2/26/2018 11:53:10 AM,0
+73,Ground Beef,Meats,20lb CASE,3,LOG,2,EA,2,10000,23.33,3,,2
+74,Italian Sausage,Meats,20lb CASE,11,BAG,4,OZ-wt,160,91,47.5,1,2/26/2018 11:53:10 AM,0
+75,Bacon Bits,Meats,10lb CASE,0,BAG,2,OZ-wt,80,1,49.99,2,2/26/2018 11:53:10 AM,0
+107,Dried Pinto Beans,Grocery,25lb,27,Quart,14.47,8,8,10000,25.49,1,1/24/2018 12:00:00 AM,0
+131,Jalapenos Nacho Sliced,Grocery,EA,1,CAN,6,OZ-wt,1,,19.99,1,2/26/2018 11:53:10 AM,0

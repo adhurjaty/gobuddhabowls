@@ -1,0 +1,12 @@
+Id,Name,Category,CountUnit,RecipeUnit,RecipeUnitConversion,PurchasedUnit,Count,Conversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+54,Yellow Onions,Produce,BAG,OZ-wt,80,50lb,7,1,1,13,6,2/15/2018 2:38:32 PM,1
+55,Red Onions,Produce,BAG,OZ-wt,400,25lb,0.5,1,0.85,9.15,1,1/21/2018 12:00:00 AM,1
+56,Potatoes,Produce,1/2 CASE,OZ-wt,800,50lb,0.5,1,0.85,12.7,1,2/19/2018 12:00:00 AM,1
+57,Spinach,Produce,BAG,OZ-wt,160,4x2.5lb,0,4,0.99,13.65,2,1/21/2018 12:00:00 AM,1
+58,Mixed Greens,Produce,BAG,OZ-wt,48,3lb,0,1,0.98,7.8,2,1/21/2018 12:00:00 AM,1
+59,Mushrooms,Produce,FLAT,OZ-wt,160,10lb CASE,0,1,0.9,19.65,3,2/22/2018 2:57:03 PM,1
+60,Cucumbers,Produce,CASE,OZ-wt,420,36 COUNT,0.3,1,0.95,17.75,1,1/21/2018 12:00:00 AM,1
+61,Tomatoes,Produce,CASE,OZ-wt,400,25lb,0.05,1,0.95,15.3,1,1/21/2018 12:00:00 AM,1
+62,Avocado,Produce,EACH,EA,24,60 COUNT,116,60,1,41.05,0,,1
+63,Celery,Produce,1/2 CASE,BUNCH,1,24 COUNT,0.9,1,1,28.35,0,,1
+64,Fresh Basil,Produce,BAG,OZ-wt,16,1lb,0,1,1,8.3,1,2/19/2018 12:00:00 AM,1

@@ -1,0 +1,6 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+1,Cheddar,42.572,4,CASE 20lb,Dairy,0,5lb BAG,OZ-wt,80,1,4,11/1/2017 12:00:00 AM,9
+6,Heavy Cream,6.2,1,1/2 Gallon,Dairy,4,1/2 GALLON,CUP,48,1000000,6,11/1/2017 12:00:00 AM,9
+54,Yellow Onions,16.9965,1,20lb CASE,Produce,24,BAG,OZ-wt,800,85,4,11/1/2017 12:00:00 AM,9
+59,Mushrooms,16.8,1,10lb CASE,Produce,0,FLAT,OZ-wt,160,95,5,11/1/2017 12:00:00 AM,9
+72,Chicken Breast,54.8,1,40lb CASE,Poultry,1,CASE,OZ-wt,640,85,4,11/1/2017 12:00:00 AM,9

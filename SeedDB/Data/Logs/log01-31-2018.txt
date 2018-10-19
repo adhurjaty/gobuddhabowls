@@ -1,0 +1,3014 @@
+01/31/18 - 11:38:21 - INFO - Application starting
+01/31/18 - 11:38:21 - INFO - Loading models
+01/31/18 - 11:38:22 - INFO - Models loaded
+01/31/18 - 11:38:24 - INFO - Upating BreadOrder: 276
+01/31/18 - 11:38:24 - INFO - Upating DailySale: 0
+01/31/18 - 11:38:24 - INFO - Upating DailySale: 1
+01/31/18 - 11:38:24 - INFO - Upating DailySale: 2
+01/31/18 - 11:38:24 - INFO - Upating DailySale: 3
+01/31/18 - 11:38:24 - INFO - Upating DailySale: 4
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 5
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 6
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 7
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 8
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 9
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 10
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 11
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 12
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 13
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 14
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 15
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 16
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 17
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 18
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 19
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 20
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 21
+01/31/18 - 11:38:25 - INFO - Upating DailySale: 22
+01/31/18 - 11:38:25 - INFO - Destroying DailySale: 19
+01/31/18 - 11:38:25 - INFO - Destroying DailySale: 20
+01/31/18 - 11:38:25 - INFO - Destroying DailySale: 21
+01/31/18 - 11:38:25 - INFO - Destroying DailySale: 22
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 19
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 20
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 21
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 22
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 23
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 24
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 25
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 26
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 27
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 28
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 29
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 30
+01/31/18 - 11:38:25 - INFO - Upating BreadOrder: 275
+01/31/18 - 11:38:25 - INFO - Upating BreadOrder: 274
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 31
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 32
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 33
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 34
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 35
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 36
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 37
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 38
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 39
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 40
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 41
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 42
+01/31/18 - 11:38:25 - INFO - Inserted DailySale: 43
+01/31/18 - 11:38:25 - INFO - Changed to tab: Inventory
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 562
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 563
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 564
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 547
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 548
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 549
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 550
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 551
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 552
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 553
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 554
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 555
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 556
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 557
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 558
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 559
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 560
+01/31/18 - 11:38:26 - INFO - Upating ExpenseItem: 561
+01/31/18 - 11:38:26 - INFO - Changed to tab: Orders
+01/31/18 - 11:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:28 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:30 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:31 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:32 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:32 - INFO - Changed to tab: Vendors
+01/31/18 - 11:38:34 - INFO - Changed to tab: Orders
+01/31/18 - 11:38:35 - INFO - Changed to tab: Orders
+01/31/18 - 13:00:23 - INFO - Changed to tab: Orders
+01/31/18 - 13:00:24 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:27 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:28 - INFO - Changed to tab: Vendors
+01/31/18 - 13:00:29 - INFO - Changed to tab: Orders
+01/31/18 - 13:00:32 - INFO - Changed to tab: Orders
+01/31/18 - 13:00:40 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:41 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:42 - INFO - Changed to tab: Inventory
+01/31/18 - 13:00:43 - INFO - Changed to tab: Orders
+01/31/18 - 13:12:43 - INFO - Changed to tab: Inventory
+01/31/18 - 13:12:43 - INFO - Changed to tab: Orders
+01/31/18 - 13:12:44 - INFO - Changed to tab: Orders
+01/31/18 - 13:12:45 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:50 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:51 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:52 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:52 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:54 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:54 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:55 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:57 - INFO - Changed to tab: Vendors
+01/31/18 - 13:12:57 - INFO - Changed to tab: Vendors
+01/31/18 - 13:23:55 - INFO - Changed to tab: Orders
+01/31/18 - 13:23:56 - INFO - Executing OrderTabVM#StartNewOrder
+01/31/18 - 13:23:57 - INFO - Adding temp tab: NewOrderVM
+01/31/18 - 13:23:57 - INFO - Changed to tab: New Order
+01/31/18 - 13:24:00 - INFO - Changed to tab: Orders
+01/31/18 - 13:24:00 - INFO - Changed to tab: Orders
+01/31/18 - 13:24:01 - INFO - Executing OrderTabVM#ViewOpenOrder
+01/31/18 - 13:24:01 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:24:47 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:24:48 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:24:49 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:24:53 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:24:53 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:24:55 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:24:56 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:24:57 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:01 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:01 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:02 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:03 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:05 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:23 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:24 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:25 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:25 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:28 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:28 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:29 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:33 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:34 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:37 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:37 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:39 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:44 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:44 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:46 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:46 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:49 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:53 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:54 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:54 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:54 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:25:56 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:01 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:06 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:06 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:10 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:12 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:17 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:23 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:23 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:25 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:28 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:28 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:33 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:39 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:41 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:41 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:43 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:51 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:55 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:56 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:57 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:59 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:26:59 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:00 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:02 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:02 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:03 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:04 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:04 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:05 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:09 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:10 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:42 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:42 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:42 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:44 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:47 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:48 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:52 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:52 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:52 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:27:53 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:28:36 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:28:37 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:28:37 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:28:41 - INFO - Executing ViewOrderVM#AddPOItem
+01/31/18 - 13:28:49 - INFO - Executing ModalVM`1#ModalCancel
+01/31/18 - 13:28:50 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:28:50 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:28:50 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:28:51 - INFO - Executing ViewOrderVM#SaveEdits
+01/31/18 - 13:28:52 - INFO - Upating PurchaseOrder: 177
+01/31/18 - 13:28:52 - INFO - Upating Vendor: 0
+01/31/18 - 13:28:53 - INFO - Changed to tab: New Order
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:55 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:28:56 - ERROR - Value cannot be null.
+Parameter name: source
+   at System.Linq.Enumerable.Where[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>b__27_0()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at BuddhaBowls.OrderBreakdownVM.<UpdateDisplay>d__27.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/31/18 - 13:30:00 - INFO - Application starting
+01/31/18 - 13:30:00 - INFO - Loading models
+01/31/18 - 13:30:01 - INFO - Models loaded
+01/31/18 - 13:30:04 - INFO - Upating BreadOrder: 276
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 0
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 1
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 2
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 3
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 4
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 5
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 6
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 7
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 8
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 9
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 10
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 11
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 12
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 13
+01/31/18 - 13:30:04 - INFO - Upating DailySale: 14
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 15
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 16
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 17
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 18
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 19
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 20
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 21
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 22
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 23
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 24
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 25
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 26
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 27
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 28
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 29
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 30
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 31
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 32
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 33
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 34
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 35
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 36
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 37
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 38
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 39
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 40
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 41
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 42
+01/31/18 - 13:30:05 - INFO - Upating DailySale: 43
+01/31/18 - 13:30:05 - INFO - Destroying DailySale: 39
+01/31/18 - 13:30:05 - INFO - Destroying DailySale: 40
+01/31/18 - 13:30:05 - INFO - Destroying DailySale: 41
+01/31/18 - 13:30:05 - INFO - Destroying DailySale: 42
+01/31/18 - 13:30:05 - INFO - Destroying DailySale: 43
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 39
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 40
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 41
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 42
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 43
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 44
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 45
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 46
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 47
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 48
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 49
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 50
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 51
+01/31/18 - 13:30:05 - INFO - Inserted DailySale: 52
+01/31/18 - 13:30:06 - INFO - Inserted DailySale: 53
+01/31/18 - 13:30:06 - INFO - Inserted DailySale: 54
+01/31/18 - 13:30:06 - INFO - Inserted DailySale: 55
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 562
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 563
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 564
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 547
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 548
+01/31/18 - 13:30:06 - INFO - Upating BreadOrder: 275
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 549
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 550
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 551
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 552
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 553
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 554
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 555
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 556
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 557
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 558
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 559
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 560
+01/31/18 - 13:30:06 - INFO - Upating ExpenseItem: 561
+01/31/18 - 13:30:10 - INFO - Upating BreadOrder: 274
+01/31/18 - 13:30:11 - INFO - Changed to tab: Vendors
+01/31/18 - 13:30:12 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:13 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:14 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:15 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:15 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:15 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:15 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:15 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:15 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:15 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:17 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:17 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:17 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:17 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:17 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:17 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:17 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:18 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:19 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:20 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:21 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:22 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:22 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:23 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:23 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:23 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:23 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:23 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:23 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 13:32:07 - INFO - Changed to tab: Orders
+01/31/18 - 13:32:08 - INFO - Changed to tab: Orders
+01/31/18 - 13:32:10 - INFO - Executing OrderTabVM#ViewOpenOrder
+01/31/18 - 13:32:10 - INFO - Adding temp tab: ViewOrderVM
+01/31/18 - 13:32:10 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:32:16 - INFO - Executing ViewOrderVM#AddPOItem
+01/31/18 - 13:32:27 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:32:27 - INFO - Executing ModalVM`1#ModalCancel
+01/31/18 - 13:32:29 - INFO - Changed to tab: PO#: 177
+01/31/18 - 13:32:34 - INFO - Executing ViewOrderVM#AddPOItem
+01/31/18 - 13:32:36 - INFO - Executing ModalVM`1#ModalCancel
+01/31/18 - 13:32:37 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:25 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+01/31/18 - 13:35:25 - INFO - Upating PurchaseOrder: 177
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 1
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 0
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 2
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 4
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 13
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 25
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 26
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 20
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 36
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 19
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 21
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 34
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 49
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 54
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 55
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 58
+01/31/18 - 13:35:25 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 57
+01/31/18 - 13:35:25 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 63
+01/31/18 - 13:35:25 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 59
+01/31/18 - 13:35:25 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 61
+01/31/18 - 13:35:25 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 66
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 64
+01/31/18 - 13:35:25 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 71
+01/31/18 - 13:35:25 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 72
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 74
+01/31/18 - 13:35:25 - INFO - Upating InventoryItem: 75
+01/31/18 - 13:35:26 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:28 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:28 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:28 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:33 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+01/31/18 - 13:35:33 - INFO - Upating PurchaseOrder: 179
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 79
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 95
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 86
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 78
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 120
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 82
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 81
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 121
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 91
+01/31/18 - 13:35:33 - INFO - Upating InventoryItem: 110
+01/31/18 - 13:35:34 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:35 - INFO - Changed to tab: Vendors
+01/31/18 - 13:35:35 - INFO - Changed to tab: Orders
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:35 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:35:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Inventory
+01/31/18 - 13:36:36 - INFO - Changed to tab: Orders
+01/31/18 - 13:36:37 - INFO - Executing OrderTabVM#StartNewOrder
+01/31/18 - 13:36:38 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:41 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:42 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Executing NewOrderVM#ClearOrderAmounts
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:43 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:44 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:45 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:46 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:46 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:46 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:46 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:46 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:46 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:46 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:46 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:47 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:48 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:48 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:48 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:48 - INFO - Changed to tab: New Order
+01/31/18 - 13:36:48 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:09 - INFO - Changed to tab: Orders
+01/31/18 - 14:08:11 - INFO - Executing OrderTabVM#StartNewOrder
+01/31/18 - 14:08:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:16 - INFO - Executing NewOrderVM#AddVendorItem
+01/31/18 - 14:08:22 - INFO - Executing ModalVM`1#ModalCancel
+01/31/18 - 14:08:23 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:32 - INFO - Executing NewOrderVM#ClearOrderAmounts
+01/31/18 - 14:08:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:41 - INFO - Executing NewOrderVM#AddVendorItem
+01/31/18 - 14:08:43 - INFO - Executing ModalVM`1#ModalOk
+01/31/18 - 14:08:43 - INFO - Upating Vendor: 0
+01/31/18 - 14:08:43 - INFO - Upating Vendor: 0
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:45 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:53 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:08:57 - INFO - Executing NewOrderVM#AddVendorItem
+01/31/18 - 14:08:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Executing ModalVM`1#ModalOk
+01/31/18 - 14:09:01 - INFO - Upating Vendor: 0
+01/31/18 - 14:09:01 - INFO - Upating Vendor: 0
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:04 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:05 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:07 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:09 - INFO - Executing NewOrderVM#AddVendorItem
+01/31/18 - 14:09:15 - INFO - Executing ModalVM`1#ModalOk
+01/31/18 - 14:09:15 - INFO - Upating Vendor: 0
+01/31/18 - 14:09:15 - INFO - Upating Vendor: 0
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:09:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:06 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:09 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:09 - INFO - Changed to tab: New Order
+01/31/18 - 14:10:09 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:48 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:48 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:48 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:49 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:50 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:52 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:52 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:52 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:52 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:52 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:52 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:53 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:53 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:53 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:53 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:54 - INFO - Executing NewOrderVM#AddVendorItem
+01/31/18 - 14:17:56 - INFO - Executing ModalVM`1#ModalOk
+01/31/18 - 14:17:56 - INFO - Upating Vendor: 0
+01/31/18 - 14:17:56 - INFO - Upating Vendor: 0
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:58 - INFO - Changed to tab: New Order
+01/31/18 - 14:17:59 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:01 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:02 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:12 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:16 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:16 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:16 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:16 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:21 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:30 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:31 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:32 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:33 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:34 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:35 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:39 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:41 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:41 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:42 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:42 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:44 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:45 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:45 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:45 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:45 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:46 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:47 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:48 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:48 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:50 - INFO - Executing NewOrderVM#AddVendorItem
+01/31/18 - 14:18:54 - INFO - Executing ModalVM`1#ModalOk
+01/31/18 - 14:18:54 - INFO - Upating Vendor: 0
+01/31/18 - 14:18:54 - INFO - Upating Vendor: 0
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:54 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:56 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:57 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:59 - INFO - Changed to tab: New Order
+01/31/18 - 14:18:59 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:00 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:03 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:08 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:08 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:08 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:08 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:08 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:08 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:08 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:08 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:09 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:09 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:11 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:13 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:14 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:14 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:15 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:16 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:16 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:16 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:16 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:17 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:18 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:19 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:19 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:20 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:22 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:23 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:25 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:26 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:27 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:28 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:28 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:28 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:28 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:28 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:28 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:28 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:28 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:36 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:37 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:37 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:37 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:37 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:37 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:37 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:37 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:37 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:41 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:42 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:43 - INFO - Changed to tab: New Order
+01/31/18 - 14:19:45 - INFO - Executing NewOrderVM#SaveOrder
+01/31/18 - 14:19:45 - INFO - Inserted PurchaseOrder: 180
+01/31/18 - 14:19:46 - INFO - Changed to tab: PO#: 177
+01/31/18 - 14:19:51 - INFO - Changed to tab: Orders
+01/31/18 - 14:19:52 - INFO - Changed to tab: Orders
+01/31/18 - 14:19:53 - INFO - Executing OrderTabVM#ViewOpenOrder
+01/31/18 - 14:19:53 - INFO - Changed to tab: PO#: 180
+01/31/18 - 14:29:01 - INFO - Application closing
+01/31/18 - 15:29:39 - INFO - Application starting
+01/31/18 - 15:29:39 - INFO - Loading models
+01/31/18 - 15:29:40 - INFO - Models loaded
+01/31/18 - 15:29:46 - INFO - Upating BreadOrder: 276
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 0
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 1
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 2
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 3
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 4
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 5
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 6
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 7
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 8
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 9
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 10
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 11
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 12
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 13
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 14
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 15
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 16
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 17
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 18
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 19
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 20
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 21
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 22
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 23
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 24
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 25
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 26
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 27
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 28
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 29
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 30
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 31
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 32
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 33
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 34
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 35
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 36
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 37
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 38
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 39
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 40
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 41
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 42
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 43
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 44
+01/31/18 - 15:29:46 - INFO - Upating DailySale: 45
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 46
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 47
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 48
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 49
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 50
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 51
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 52
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 53
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 54
+01/31/18 - 15:29:47 - INFO - Upating DailySale: 55
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 39
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 40
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 41
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 42
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 43
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 44
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 45
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 46
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 47
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 48
+01/31/18 - 15:29:47 - INFO - Changed to tab: Orders
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 49
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 50
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 51
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 52
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 53
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 54
+01/31/18 - 15:29:47 - INFO - Destroying DailySale: 55
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 39
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 40
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 41
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 42
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 43
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 44
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 45
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 46
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 47
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 48
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 49
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 50
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 51
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 52
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 53
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 54
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 55
+01/31/18 - 15:29:47 - INFO - Inserted DailySale: 56
+01/31/18 - 15:29:47 - INFO - Upating ExpenseItem: 562
+01/31/18 - 15:29:47 - INFO - Upating ExpenseItem: 563
+01/31/18 - 15:29:47 - INFO - Upating ExpenseItem: 564
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 547
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 548
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 549
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 550
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 551
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 552
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 553
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 554
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 555
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 556
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 557
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 558
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 559
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 560
+01/31/18 - 15:29:48 - INFO - Upating ExpenseItem: 561
+01/31/18 - 15:29:50 - INFO - Upating BreadOrder: 275
+01/31/18 - 15:29:51 - INFO - Upating BreadOrder: 274
+01/31/18 - 15:29:51 - INFO - Changed to tab: Orders
+01/31/18 - 15:29:51 - INFO - Changed to tab: Orders
+01/31/18 - 15:29:55 - INFO - Changed to tab: Orders
+01/31/18 - 15:29:56 - INFO - Changed to tab: Orders
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:03 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:06 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:07 - INFO - Changed to tab: Orders
+01/31/18 - 15:30:11 - INFO - Executing OrderTabVM#ViewReceivedOrder
+01/31/18 - 15:30:11 - INFO - Adding temp tab: ViewOrderVM
+01/31/18 - 15:30:11 - INFO - Changed to tab: PO#: 177
+01/31/18 - 15:30:12 - INFO - Changed to tab: PO#: 177
+01/31/18 - 15:30:18 - INFO - Executing ViewOrderVM#SaveEdits
+01/31/18 - 15:30:18 - INFO - Upating PurchaseOrder: 177
+01/31/18 - 15:30:19 - INFO - Upating Vendor: 0
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 1
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 0
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 2
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 4
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 13
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 25
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 26
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 20
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 36
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 19
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 21
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 34
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 49
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 54
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 55
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 58
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 57
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 63
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 59
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 61
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 66
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 64
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 71
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 72
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 74
+01/31/18 - 15:30:19 - INFO - Upating InventoryItem: 75
+01/31/18 - 15:30:19 - INFO - Removing temp tab
+01/31/18 - 15:30:19 - INFO - Changed to tab: Settings
+01/31/18 - 15:30:19 - INFO - Changed to tab: Orders
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:24 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:25 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:26 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:26 - INFO - Changed to tab: Inventory
+01/31/18 - 15:30:27 - INFO - Changed to tab: Orders
+01/31/18 - 15:30:29 - INFO - Executing OrderTabVM#StartNewOrder
+01/31/18 - 15:30:30 - INFO - Adding temp tab: NewOrderVM
+01/31/18 - 15:30:30 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:33 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:34 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:34 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:34 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:34 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:34 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:34 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:34 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:34 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:35 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:36 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Changed to tab: New Order
+01/31/18 - 15:30:42 - INFO - Executing NewOrderVM#SaveOrder
+01/31/18 - 15:30:42 - INFO - Inserted PurchaseOrder: 181
+01/31/18 - 15:30:42 - INFO - Removing temp tab
+01/31/18 - 15:30:42 - INFO - Changed to tab: Settings
+01/31/18 - 15:30:42 - INFO - Changed to tab: Orders
+01/31/18 - 15:30:46 - INFO - Changed to tab: Orders
+01/31/18 - 15:30:46 - INFO - Changed to tab: Orders
+01/31/18 - 15:30:49 - INFO - Changed to tab: Orders
+01/31/18 - 15:30:50 - INFO - Executing OrderTabVM#ViewOpenOrder
+01/31/18 - 15:30:51 - INFO - Adding temp tab: ViewOrderVM
+01/31/18 - 15:30:51 - INFO - Changed to tab: PO#: 181
+01/31/18 - 15:30:56 - INFO - Executing ViewOrderVM#SaveEdits
+01/31/18 - 15:30:56 - INFO - Upating PurchaseOrder: 181
+01/31/18 - 15:30:57 - INFO - Upating Vendor: 0
+01/31/18 - 15:30:57 - INFO - Removing temp tab
+01/31/18 - 15:30:57 - INFO - Changed to tab: Settings
+01/31/18 - 15:30:57 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:04 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+01/31/18 - 15:31:04 - INFO - Upating PurchaseOrder: 181
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 1
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 0
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 2
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 4
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 13
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 25
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 26
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 20
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 36
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 19
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 21
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 34
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 49
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 54
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 55
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 58
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 57
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 59
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 61
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 64
+01/31/18 - 15:31:04 - INFO - Upating InventoryItem: 71
+01/31/18 - 15:31:05 - INFO - Upating InventoryItem: 72
+01/31/18 - 15:31:05 - INFO - Upating InventoryItem: 74
+01/31/18 - 15:31:05 - INFO - Upating InventoryItem: 75
+01/31/18 - 15:31:05 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:07 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:12 - INFO - Upating PurchaseOrder: 177
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 1
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 0
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 2
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 4
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 13
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 25
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 26
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 20
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 36
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 19
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 21
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 34
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 49
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 54
+01/31/18 - 15:31:12 - INFO - Upating InventoryItem: 55
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 58
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 57
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 63
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 59
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 61
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 66
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 64
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 71
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 72
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 74
+01/31/18 - 15:31:13 - INFO - Upating InventoryItem: 75
+01/31/18 - 15:31:13 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:17 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:18 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:20 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:25 - INFO - Upating PurchaseOrder: 181
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 1
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 0
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 2
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 4
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 13
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 25
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 26
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 20
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 36
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 19
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 21
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 34
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 49
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 54
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 55
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 58
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 57
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 59
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 61
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 64
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 71
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 72
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 74
+01/31/18 - 15:31:25 - INFO - Upating InventoryItem: 75
+01/31/18 - 15:31:26 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:27 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:51 - INFO - Upating PurchaseOrder: 181
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 1
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 0
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 2
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 4
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 13
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 25
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 26
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 20
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 36
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 19
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 21
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 34
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 49
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 54
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 55
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 58
+01/31/18 - 15:31:51 - INFO - Upating InventoryItem: 57
+01/31/18 - 15:31:52 - INFO - Upating InventoryItem: 59
+01/31/18 - 15:31:52 - INFO - Upating InventoryItem: 61
+01/31/18 - 15:31:52 - INFO - Upating InventoryItem: 64
+01/31/18 - 15:31:52 - INFO - Upating InventoryItem: 71
+01/31/18 - 15:31:52 - INFO - Upating InventoryItem: 72
+01/31/18 - 15:31:52 - INFO - Upating InventoryItem: 74
+01/31/18 - 15:31:52 - INFO - Upating InventoryItem: 75
+01/31/18 - 15:31:52 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:55 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:56 - INFO - Changed to tab: Inventory
+01/31/18 - 15:31:57 - INFO - Changed to tab: Orders
+01/31/18 - 15:31:59 - INFO - Executing MainViewModel#RefreshHelper
+01/31/18 - 15:31:59 - INFO - Loading models
+01/31/18 - 15:32:00 - INFO - Models loaded
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:01 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:02 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:08 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:09 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:09 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:11 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:15 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:21 - INFO - Executing OrderTabVM#ViewReceivedOrder
+01/31/18 - 15:32:21 - INFO - Adding temp tab: ViewOrderVM
+01/31/18 - 15:32:21 - INFO - Changed to tab: PO#: 177
+01/31/18 - 15:32:23 - INFO - Changed to tab: PO#: 177
+01/31/18 - 15:32:24 - INFO - Changed to tab: PO#: 177
+01/31/18 - 15:32:24 - INFO - Executing ViewOrderVM#SaveEdits
+01/31/18 - 15:32:24 - INFO - Upating PurchaseOrder: 177
+01/31/18 - 15:32:24 - INFO - Upating Vendor: 0
+01/31/18 - 15:32:24 - INFO - Removing temp tab
+01/31/18 - 15:32:24 - INFO - Changed to tab: Settings
+01/31/18 - 15:32:24 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:25 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:25 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:27 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:28 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:28 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:30 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:31 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:32 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:44 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:45 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:46 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:47 - INFO - Changed to tab: Orders
+01/31/18 - 15:32:48 - INFO - Changed to tab: Inventory
+01/31/18 - 15:32:51 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:52 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:52 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:52 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:53 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:54 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:55 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:32:57 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:02 - INFO - Executing VendorTabVM#AddVendorItem
+01/31/18 - 15:33:06 - INFO - Executing ModalVM`1#ModalOk
+01/31/18 - 15:33:06 - INFO - Upating Vendor: 0
+01/31/18 - 15:33:06 - INFO - Upating Vendor: 0
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:06 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:07 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Upating Vendor: 0
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:14 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:16 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:17 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:19 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:20 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:23 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:25 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:31 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:33 - INFO - Changed to tab: Orders
+01/31/18 - 15:33:35 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:36 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:40 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:40 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:41 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:42 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:48 - INFO - Upating Vendor: 0
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:49 - INFO - Changed to tab: Vendors
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:50 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:51 - INFO - Changed to tab: Inventory
+01/31/18 - 15:33:52 - INFO - Changed to tab: Inventory
+01/31/18 - 15:34:00 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:01 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Upating Vendor: 0
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:34:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:31 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Upating Vendor: 0
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:34 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:35 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:36 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Executing VendorTabVM#DeleteVendorItem
+01/31/18 - 15:35:37 - INFO - Upating Vendor: 0
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Upating Vendor: 0
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:38 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:35:42 - INFO - Changed to tab: Orders
+01/31/18 - 15:35:48 - INFO - Executing OrderTabVM#ViewReceivedOrder
+01/31/18 - 15:35:48 - INFO - Adding temp tab: ViewOrderVM
+01/31/18 - 15:35:48 - INFO - Changed to tab: PO#: 176
+01/31/18 - 15:35:50 - INFO - Changed to tab: PO#: 176
+01/31/18 - 15:35:51 - INFO - Executing ViewOrderVM#DeletePOItem
+01/31/18 - 15:35:52 - INFO - Changed to tab: PO#: 176
+01/31/18 - 15:35:54 - INFO - Executing ViewOrderVM#SaveEdits
+01/31/18 - 15:35:54 - INFO - Upating PurchaseOrder: 176
+01/31/18 - 15:35:54 - INFO - Upating Vendor: 0
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 1
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 0
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 11
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 14
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 24
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 23
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 131
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 21
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 107
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 112
+01/31/18 - 15:35:54 - INFO - Upating InventoryItem: 54
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 56
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 58
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 57
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 59
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 61
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 64
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 71
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 72
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 74
+01/31/18 - 15:35:55 - INFO - Upating InventoryItem: 75
+01/31/18 - 15:35:55 - INFO - Removing temp tab
+01/31/18 - 15:35:55 - INFO - Changed to tab: Settings
+01/31/18 - 15:35:55 - INFO - Changed to tab: Orders
+01/31/18 - 15:35:57 - INFO - Changed to tab: Orders
+01/31/18 - 15:35:58 - INFO - Changed to tab: Orders
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:00 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:01 - INFO - Changed to tab: Orders
+01/31/18 - 15:36:08 - INFO - Changed to tab: Orders
+01/31/18 - 15:36:09 - INFO - Executing OrderTabVM#ViewReceivedOrder
+01/31/18 - 15:36:09 - INFO - Adding temp tab: ViewOrderVM
+01/31/18 - 15:36:09 - INFO - Changed to tab: PO#: 177
+01/31/18 - 15:36:11 - INFO - Executing ViewOrderVM#CancelView
+01/31/18 - 15:36:11 - INFO - Removing temp tab
+01/31/18 - 15:36:11 - INFO - Changed to tab: Settings
+01/31/18 - 15:36:11 - INFO - Changed to tab: Orders
+01/31/18 - 15:36:11 - INFO - Changed to tab: Orders
+01/31/18 - 15:36:12 - INFO - Executing OrderTabVM#ViewReceivedOrder
+01/31/18 - 15:36:12 - INFO - Adding temp tab: ViewOrderVM
+01/31/18 - 15:36:12 - INFO - Changed to tab: PO#: 176
+01/31/18 - 15:36:14 - INFO - Executing ViewOrderVM#CancelView
+01/31/18 - 15:36:14 - INFO - Removing temp tab
+01/31/18 - 15:36:14 - INFO - Changed to tab: Settings
+01/31/18 - 15:36:14 - INFO - Changed to tab: Orders
+01/31/18 - 15:36:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:17 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:17 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:17 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:18 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:19 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:21 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:21 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:21 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:21 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:21 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:21 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:21 - INFO - Changed to tab: Inventory
+01/31/18 - 15:36:21 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:22 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:22 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:22 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:22 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:22 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:22 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:22 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:23 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:23 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:23 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:23 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:23 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:23 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:23 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:30 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:33 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:33 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:33 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:33 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:33 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:33 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:37 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:36:58 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:12 - INFO - Executing VendorTabVM#GenerateOrderSheet
+01/31/18 - 15:38:26 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:26 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:26 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:26 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:26 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:26 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:26 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:27 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:28 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:28 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:28 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:28 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:29 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:39 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:40 - INFO - Changed to tab: Vendors
+01/31/18 - 15:38:40 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:05 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:08 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:10 - INFO - Changed to tab: Vendors
+01/31/18 - 15:39:40 - INFO - Changed to tab: Bread
+01/31/18 - 15:39:58 - INFO - Upating BreadOrder: 275
+01/31/18 - 15:40:08 - INFO - Upating BreadOrder: 275
+01/31/18 - 15:40:11 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:15 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:16 - INFO - Changed to tab: Inventory
+01/31/18 - 15:40:21 - INFO - Changed to tab: Bread
+01/31/18 - 15:40:31 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 0
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 1
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 2
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 3
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 4
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 5
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 6
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 7
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 8
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 9
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 10
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 11
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 12
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 13
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:32 - INFO - Upating Recipe: 14
+01/31/18 - 15:40:32 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:41 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:43 - INFO - Changed to tab: Bread
+01/31/18 - 15:40:44 - INFO - Changed to tab: Vendors
+01/31/18 - 15:40:44 - INFO - Changed to tab: Recipes
+01/31/18 - 15:40:46 - INFO - Changed to tab: Reports
+01/31/18 - 15:40:59 - INFO - Changed to tab: Orders
+01/31/18 - 15:41:04 - INFO - Changed to tab: Orders
+01/31/18 - 15:41:04 - INFO - Changed to tab: Orders
+01/31/18 - 15:41:05 - INFO - Changed to tab: Inventory
+01/31/18 - 15:49:34 - INFO - Changed to tab: Reports
+01/31/18 - 15:49:35 - INFO - Executing ChangeableTabVM#SwitchPage
+01/31/18 - 15:49:36 - INFO - Changed to tab: Reports
+01/31/18 - 15:49:36 - INFO - Changed to tab: Reports
+01/31/18 - 15:49:36 - INFO - Changed to tab: Reports
+01/31/18 - 15:49:44 - INFO - Changed to tab: Recipes
+01/31/18 - 15:49:46 - INFO - Changed to tab: Reports
+01/31/18 - 15:49:47 - INFO - Executing ChangeableTabVM#SwitchPage
+01/31/18 - 15:49:48 - INFO - Changed to tab: Reports
+01/31/18 - 15:49:58 - INFO - Executing ChangeableTabVM#SwitchPage
+01/31/18 - 15:50:05 - INFO - Changed to tab: Inventory
+01/31/18 - 15:50:05 - INFO - Changed to tab: Orders
+01/31/18 - 15:50:25 - INFO - Changed to tab: Vendors
+01/31/18 - 15:50:32 - INFO - Changed to tab: Orders
+01/31/18 - 17:37:58 - INFO - Application closing
+01/31/18 - 18:16:59 - INFO - Application starting
+01/31/18 - 18:16:59 - INFO - Loading models
+01/31/18 - 18:17:00 - INFO - Models loaded
+01/31/18 - 18:17:02 - INFO - Upating BreadOrder: 276
+01/31/18 - 18:17:05 - INFO - Upating BreadOrder: 274
+01/31/18 - 18:17:06 - INFO - Upating BreadOrder: 275
+01/31/18 - 18:17:07 - INFO - Upating DailySale: 0
+01/31/18 - 18:17:07 - INFO - Upating DailySale: 1
+01/31/18 - 18:17:07 - INFO - Upating DailySale: 2
+01/31/18 - 18:17:07 - INFO - Upating DailySale: 3
+01/31/18 - 18:17:07 - INFO - Upating DailySale: 4
+01/31/18 - 18:17:07 - INFO - Upating DailySale: 5
+01/31/18 - 18:17:07 - INFO - Upating DailySale: 6
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 7
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 8
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 9
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 10
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 11
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 12
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 13
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 14
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 15
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 16
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 17
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 18
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 19
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 20
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 21
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 22
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 23
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 24
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 25
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 26
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 27
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 28
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 29
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 30
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 31
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 32
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 33
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 34
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 35
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 36
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 37
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 38
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 39
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 40
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 41
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 42
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 43
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 44
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 45
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 46
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 47
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 48
+01/31/18 - 18:17:08 - INFO - Upating DailySale: 49
+01/31/18 - 18:17:09 - INFO - Upating DailySale: 50
+01/31/18 - 18:17:09 - INFO - Upating DailySale: 51
+01/31/18 - 18:17:09 - INFO - Upating DailySale: 52
+01/31/18 - 18:17:09 - INFO - Upating DailySale: 53
+01/31/18 - 18:17:09 - INFO - Upating DailySale: 54
+01/31/18 - 18:17:09 - INFO - Upating DailySale: 55
+01/31/18 - 18:17:09 - INFO - Upating DailySale: 56
+01/31/18 - 18:17:09 - INFO - Upating DailySale: 57
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 39
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 40
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 41
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 42
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 43
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 44
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 45
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 46
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 47
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 48
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 49
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 50
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 51
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 52
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 53
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 54
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 55
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 56
+01/31/18 - 18:17:09 - INFO - Destroying DailySale: 57
+01/31/18 - 18:17:09 - INFO - Inserted DailySale: 39
+01/31/18 - 18:17:09 - INFO - Inserted DailySale: 40
+01/31/18 - 18:17:09 - INFO - Inserted DailySale: 41
+01/31/18 - 18:17:09 - INFO - Inserted DailySale: 42
+01/31/18 - 18:17:09 - INFO - Inserted DailySale: 43
+01/31/18 - 18:17:09 - INFO - Inserted DailySale: 44
+01/31/18 - 18:17:09 - INFO - Inserted DailySale: 45
+01/31/18 - 18:17:09 - INFO - Inserted DailySale: 46
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 47
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 48
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 49
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 50
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 51
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 52
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 53
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 54
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 55
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 56
+01/31/18 - 18:17:10 - INFO - Inserted DailySale: 57
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 562
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 563
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 564
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 547
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 548
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 549
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 550
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 551
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 552
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 553
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 554
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 555
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 556
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 557
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 558
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 559
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 560
+01/31/18 - 18:17:10 - INFO - Upating ExpenseItem: 561
+01/31/18 - 18:17:11 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Inventory
+01/31/18 - 18:17:12 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:14 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:14 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:14 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:16 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:18 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:20 - INFO - Upating Vendor: 0
+01/31/18 - 18:17:20 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:21 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:23 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:24 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:24 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:24 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:24 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:24 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:25 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:25 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:26 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:26 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:26 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:28 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:29 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:31 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:32 - INFO - Changed to tab: Vendors
+01/31/18 - 18:17:35 - INFO - Upating Vendor: 0
+01/31/18 - 18:17:35 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:42 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:42 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:43 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:45 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:46 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:46 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:47 - INFO - Changed to tab: Orders
+02/01/18 - 13:06:47 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:48 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:49 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:50 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:51 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:51 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:51 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:51 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:51 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:51 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:51 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:52 - INFO - Changed to tab: Vendors
+02/01/18 - 13:06:58 - INFO - Changed to tab: Settings
+02/01/18 - 13:07:10 - INFO - Application closing

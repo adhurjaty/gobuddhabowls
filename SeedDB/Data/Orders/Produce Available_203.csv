@@ -1,0 +1,2 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+59,Mushrooms,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,0.9,26.95,2,3/5/2018 10:48:08 AM,0

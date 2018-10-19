@@ -1,0 +1,36 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+0,Mozzarella,2,55.49,6,CASE 30lb,Dairy,4,5lb BAG,OZ-wt,80,1,2/13/2018 9:42:23 PM,0
+1,Cheddar,2,41.84,4,CASE 20lb,Dairy,5,5lb BAG,OZ-wt,80,1,2/13/2018 9:42:23 PM,0
+4,Butter,1,84.99,30,CASE 30lb,Dairy,17,1lb,OZ-wt,16,1,,6
+5,Sour Cream,1,13.99,2,2 x 5lb,Dairy,1,GALLON,OZ-wt,16,1,2/8/2018 12:00:00 AM,0
+8,Eggs,1,31.83,6,15 DOZEN,Dairy,3.1,TRAY,EA,180,95,2/8/2018 12:00:00 AM,0
+11,Pesto,1,107.99,2,2/22lb,Dairy,2,BAG,OZ-wt,4,970000,2/13/2018 9:42:23 PM,0
+13,Pizza Sauce,1,22,6,6# CANS,Grocery,3,CAN,EA,6,100,2/13/2018 9:42:23 PM,0
+14,Stewed Tomatoes,1,15.79,6,6# CANS,Grocery,6,CAN,EA,1,1,2/6/2018 11:33:43 AM,0
+18,Artichoke Hearts,1,62.57,6,6# CANS,Grocery,0,CAN,OZ-wt,324,10000,2/13/2018 9:42:23 PM,0
+19,Mayonnaise,2,26.89,4,4 GAL,Grocery,7,JUG,EA,4,10000,2/13/2018 9:42:23 PM,0
+20,BBQ Sauce,1,39.94,4,CS 39.5lbs,Grocery,3,JUG,OZ-wt,632,9800,2/11/2018 12:00:00 AM,0
+21,Macaroni,4,19.82,2,20lb CASE,Grocery,4,BAG,EA,160,2.41,2/13/2018 9:42:23 PM,0
+23,Roasted Bell Peppers,2,37.94,6,6# CANS,Grocery,0,CAN,OZ-wt,360,98,2/13/2018 9:42:23 PM,0
+24,Chopped Clams,1,91.55,12,12x48oz CANS,Grocery,5,CAN,EA,12,100,2/13/2018 9:42:23 PM,0
+25,Tomato Juice,2,15.79,12,12x48oz CANS,Grocery,24,CAN,EA,12,100,2/13/2018 9:42:23 PM,0
+34,Canola Oil,1,25.05,1,35lb JUG,Grocery,1.1,JUG,OZ-wt,800,99,2/13/2018 9:42:23 PM,0
+36,Olive Oil,1,49.95,6,6 GAL,Grocery,8,JUG,OZ-fl,128,1,2/13/2018 9:42:23 PM,0
+42,Lemon Juice,1,26.99,4,1 Gal,Grocery,0,GAL,OZ-wt,128,100,2/13/2018 9:42:23 PM,0
+54,Yellow Onions,6,16.59,4,20lbs,Produce,7,BAG,OZ-wt,800,85,2/13/2018 9:42:23 PM,0
+55,Red Onions,1,12.25,1,25lb,Produce,0.6,BAG,OZ-wt,400,8500,2/13/2018 9:42:23 PM,0
+56,Potatoes,1,16.75,1,50lb,Produce,0.5,1/2 CASE,OZ-wt,800,850000,2/8/2018 12:00:00 AM,0
+57,Spinach,2,16.5,4,4x2.5lb,Produce,6,BAG,OZ-wt,160,99,2/13/2018 9:42:23 PM,0
+58,Mixed Greens,2,5.99,1,3lb,Produce,0,BAG,OZ-wt,48,9800,2/13/2018 9:42:23 PM,0
+59,Mushrooms,4,16.9,1,10lb CASE,Produce,0,FLAT,OZ-wt,160,95,2/13/2018 9:42:23 PM,0
+60,Cucumbers,1,19.79,1,36 COUNT,Produce,0.1,CASE,OZ-wt,420,950000,2/8/2018 12:00:00 AM,0
+61,Tomatoes,2,16.71,1,25lb,Produce,0,CASE,OZ-wt,400,0.95,2/13/2018 9:42:23 PM,0
+64,Fresh Basil,1,8.99,1,1lb,Produce,0,BAG,OZ-wt,16,65,2/13/2018 9:42:23 PM,0
+66,Pineapple,1,16.99,6,6 COUNT,Produce,1,EACH,OZ-wt,44,100,2/13/2018 9:42:23 PM,0
+71,Garlic Peeled,1,16.99,1,5lbs,Produce,0,JAR,OZ-wt,114.29,98,2/13/2018 9:42:23 PM,0
+72,Chicken Breast,3,41.98,1,40lb CASE,Poultry,1,CASE,OZ-wt,640,85,2/13/2018 9:42:23 PM,0
+73,Ground Beef,4,21.355,2,20lb CASE,Meats,3,LOG,EA,2,10000,,2
+74,Italian Sausage,4,47.5,4,20lb CASE,Meats,11,BAG,OZ-wt,160,91,2/13/2018 9:42:23 PM,0
+75,Bacon Bits,2,49.99,2,10lb CASE,Meats,0,BAG,OZ-wt,80,1,2/13/2018 9:42:23 PM,0
+112,Dried Garbanzo Beans,1,26.99,11.58,20lbs,Grocery,12,QUART,LB,1.877,1000000,2/13/2018 9:42:23 PM,0
+131,Jalapenos Nacho Sliced,1,19.99,6,EA,Grocery,1,CAN,OZ-wt,1,,2/13/2018 9:42:23 PM,0

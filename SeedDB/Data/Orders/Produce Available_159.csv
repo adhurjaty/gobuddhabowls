@@ -1,0 +1,5 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+54,Yellow Onions,27.8,1,20lb CASE,Produce,8,BAG,OZ-wt,800,85,0.5,11/27/2017 12:00:00 AM,10
+58,Mixed Greens,8.5,1,3lb,Produce,0,BAG,OZ-wt,48,9800,1,11/27/2017 12:00:00 AM,10
+60,Cucumbers,18.35,1,36 COUNT,Produce,0.4,CASE,OZ-wt,420,950000,1,11/27/2017 12:00:00 AM,10
+66,Pineapple,16.65,6,6 COUNT,Produce,0,EACH,OZ-wt,44,100,1,11/27/2017 12:00:00 AM,10

@@ -1,0 +1,3 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+100,Passion Syrup,60,6,6/5.5lbs,Beverage,5.9,5.5 lbs,CUP,7.65,1,0,,5
+102,Black Tea,110,20,(20 x 600g) CASE,Beverage,3.5,BAG,CUP,5.88,1,0,,5

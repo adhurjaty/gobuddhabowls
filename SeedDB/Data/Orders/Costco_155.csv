@@ -1,0 +1,2 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+9,Whole Milk,28,5.49,Dairy,2 GALLON,16,GALLON,2,CUP,16,100,11/15/2017 12:00:00 AM,6

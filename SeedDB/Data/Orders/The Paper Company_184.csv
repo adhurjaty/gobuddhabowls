@@ -1,0 +1,12 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,Paper Goods,Case,0,Stack,4,Each,40,4E+07,39.55,6,1/31/2018 1:35:33 PM,3
+81,Spoons,Paper Goods,1000,0,Sleeve,10,1,1,10000,7,1,1/31/2018 1:35:33 PM,3
+82,Forks,Paper Goods,1000,0,Sleeve,10,1,1,10000,20.59,1,1/31/2018 1:35:33 PM,3
+85,Wax Paper Sheets,Paper Goods,6000,0,Stack,6,1,1,10000,54.65,1,1/24/2018 12:00:00 AM,3
+89,To-Go Soup Bowls (16oz),Paper Goods,500,0,Sleeve,10,1,1,1000000,48.78,1,1/24/2018 12:00:00 AM,3
+90,Paper Towels,Paper Goods,4000,0,Sleeve,16,1,1,1E+08,16.11,1,1/24/2018 12:00:00 AM,3
+91,To-Go Soup Lids,Paper Goods,500,0,Sleeve,10,1,1,1E+08,42.68,1,1/31/2018 1:35:33 PM,3
+95,Napkins,Paper Goods,6000,0,Stack,12,1,1,10000,43.23,1,1/31/2018 1:35:33 PM,3
+110,Poly Gloves,Paper Goods,2000,0,BOX,4,1,1,100,15.8,3,1/31/2018 1:35:33 PM,3
+120,Ceramawrap,Paper Goods,2000,0,EACH,1,1,1,100,10.54,1,1/31/2018 1:35:33 PM,3
+127,Floor Cleaner,Janitorial,3 GAL,0,1 GAL,3,1,1,1,73.67,1,,2

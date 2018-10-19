@@ -1,0 +1,10 @@
+Id,Name,LastOrderAmount,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastPurchasedDate,LastVendorId
+78,Biopack #4,7,Paper Goods,Case,16,Stack,4,Each,40,4E+07,39.55,1/24/2018 12:00:00 AM,3
+80,Soufle Lids,1,Paper Goods,2500,4.4,Sleeve,25,1,1,100,24.37,1/24/2018 12:00:00 AM,3
+82,Forks,1,Paper Goods,1000,0.9,Sleeve,10,1,1,10000,20.59,1/24/2018 12:00:00 AM,3
+85,Wax Paper Sheets,1,Paper Goods,6000,1,Stack,6,1,1,10000,54.65,1/24/2018 12:00:00 AM,3
+89,To-Go Soup Bowls (16oz),1,Paper Goods,500,2,Sleeve,10,1,1,1000000,48.78,1/24/2018 12:00:00 AM,3
+90,Paper Towels,1,Paper Goods,4000,8,Sleeve,16,1,1,1E+08,16.11,1/24/2018 12:00:00 AM,3
+110,Poly Gloves,1,Paper Goods,2000,8,BOX,4,1,1,100,15.8,1/24/2018 12:00:00 AM,3
+119,Soufle Cups,1,Paper Goods,2500,6,Sleeve,25,1,1,100,26.35,1/24/2018 12:00:00 AM,3
+122,Garbage Bags,1,Janitorial,250,1.1,CASE,1,1,1,100,28.62,1/24/2018 12:00:00 AM,3

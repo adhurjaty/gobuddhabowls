@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 CREATE TABLE public.inventory_item_categories(
     id uuid NOT NULL,
 	name character varying(255) NOT NULL,

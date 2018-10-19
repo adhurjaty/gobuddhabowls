@@ -1,0 +1,103 @@
+Id,Name,LastOrderAmount,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastPurchasedDate,LastVendorId
+0,Mozzarella,3,Dairy,CASE 30lb,3,5lb BAG,6,OZ-wt,80,1,60.576,,9
+1,Cheddar,5,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,80,1,41.93,,9
+2,Pepper Jack,0,Dairy,CASE 20lb,3,5lb BAG,4,OZ-wt,80,1,48.83,,0
+3,Feta,2,Dairy,33lbs,2,5lb BAG,1,OZ-wt,160,1,55.39,,2
+4,Butter,1,Dairy,CASE 30lb,23,1lb,30,OZ-wt,16,1,83.37,,9
+5,Sour Cream,0,Dairy,2 x 5lb,1,5lb BUCKET,2,OZ-wt,160,0.95,13.04,,0
+6,Heavy Cream,3,Dairy,1/2 Gallon,2.5,1/2 GALLON,1,CUP,48,1,6.2036,,9
+8,Eggs,0,Dairy,15 DOZEN,6,TRAY,6,EA,180,95,16.57,,9
+9,Whole Milk,28,Dairy,2 GALLON,20,GALLON,2,CUP,16,100,5.49,,6
+11,Pesto,0,Dairy,2/22lb,3,BAG,2,OZ-wt,4,970000,106,,0
+13,Pizza Sauce,1,Grocery,6# CANS,5,CAN,6,EA,6,100,21.45,,0
+14,Stewed Tomatoes,1,Grocery,6# CANS,5,CAN,6,EA,6,100,15.47,,0
+18,Artichoke Hearts,3,Grocery,6# CANS,18,CAN,6,OZ-wt,324,10000,43.83,,2
+19,Mayonnaise,1,Grocery,4 GAL,4,JUG,4,EA,4,10000,25.75,,0
+20,BBQ Sauce,0,Grocery,CS 39.5lbs,3,JUG,4,OZ-wt,632,9800,33.88,,2
+21,Macaroni,0,Grocery,2lb,3,BAG,2,EA,160,2.41,13.32,,2
+23,Roasted Bell Peppers,6,Grocery,6# CANS,28,CAN,6,OZ-wt,360,98,29.03,,2
+24,Chopped Clams,3,Grocery,12x48oz CANS,43,CAN,12,EA,12,100,91.55,,2
+25,Tomato Juice,0,Grocery,12x48oz CANS,8,CAN,12,EA,12,100,27.19,,9
+26,Clam Juice,2,Grocery,12x48oz CANS,35,CAN,12,EA,12,100,31.37,,2
+30,Balsamic Vinegar,0,Grocery,2 x 5 Liter,2.4,JUG,2,OZ-wt,169.07,100,17.95,,2
+31,Tapatio,0,Grocery,EA,12,BOTTLE,12,EA,12,10000,18.99,,0
+32,Sriracha,1,Grocery,12x17oz,14,BOTTLE,12,EA,12,100,19.13,,2
+33,Chicken Broth,0,Grocery,4x32oz,4,BOTTLE,4,OZ-wt,1,100,35.99,,2
+34,Canola Oil,0,Grocery,35lb JUG,1,JUG,1,OZ-wt,800,99,24.55,,0
+36,Olive Oil,1,Grocery,6 GAL,5.25,JUG,6,OZ-fl,128,99,50.8,,0
+38,Sugar (BROWN),0,Grocery,25lb,8,QUART,16,CUP,62.5,10000,13.88,,6
+40,Tahini,0,Grocery,40lbs,0.7,LB,1,OZ-wt,640,9800,60.09,,2
+41,Kalamata Olives,2,Grocery,6x4.4lbs,12,JAR,6,OZ-wt,64.8,10000,63.94,,2
+42,Lemon Juice,1,Grocery,1 Gal,8,GAL,4,OZ-wt,128,100,16.69,,2
+43,Dried Basil,1,Herbs,12oz,72.4,OZ-wt,12,TBL,274.29,100,9.81,,2
+44,Thyme,2,Herbs,2 lbs,110.2,OZ-wt,32,TBL,243.81,100,13.33,,2
+45,Oregano,1,Herbs,1.5lbs,137.2,OZ-wt,24,TBL,232.73,100,13.88,,2
+46,Cumin,0,Herbs,4.5lbs,104.4,OZ-wt,80,TBL,360,100,17.79,,2
+47,Cayenne Pepper,0,Herbs,5lbs,47.6,OZ-wt,80,TBL,1,1,17.45,,0
+48,Pepper,2,Herbs,5lbs,317.4,OZ-wt,80,TBL,312.2,100,33.9,,2
+49,Salt,1,Herbs,EA,0.9,Container,1,TBL,615,100,5.9,,0
+50,Chili Powder,1,Herbs,6lbs,176,OZ-wt,96,TBL,78.05,100,24.41,,2
+51,Paprika,1,Herbs,5lbs,131.2,OZ-wt,80,TBL,36.96,1E+08,16.65,,2
+54,Yellow Onions,0,Produce,50lb,8,BAG,1,OZ-wt,800,85,13,,1
+55,Red Onions,0,Produce,25lb,0.75,BAG,1,OZ-wt,400,8500,9.15,,1
+56,Potatoes,0,Produce,50lb,1,1/2 CASE,1,OZ-wt,800,850000,12.7,,1
+57,Spinach,2,Produce,4x2.5lb,0,BAG,4,OZ-wt,160,99,13.65,,1
+58,Mixed Greens,0,Produce,3lb,0,BAG,1,OZ-wt,48,9800,7.8,,1
+59,Mushrooms,7,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,95,19.65,,1
+60,Cucumbers,0,Produce,36 COUNT,0.4,CASE,1,OZ-wt,420,950000,17.75,,1
+61,Tomatoes,2,Produce,25lb,1,CASE,1,OZ-wt,400,0.95,15.3,,1
+62,Avocado,1,Produce,60 COUNT,108,EACH,60,EA,24,10000,20.77,,2
+63,Celery,0,Produce,24 COUNT,12,1/2 CASE,24,BUNCH,12,100,28.35,,1
+64,Fresh Basil,2,Produce,1lb,0.25,BAG,1,OZ-wt,16,65,8.3,,1
+66,Pineapple,1,Produce,6 COUNT,0,EACH,6,OZ-wt,44,100,16.99,,10
+71,Garlic Peeled,0,Produce,5lbs,1,JAR,1,OZ-wt,114.29,98,18.63,,10
+72,Chicken Breast,0,Poultry,40lb CASE,0,CASE,1,OZ-wt,640,85,79,,8
+73,Ground Beef,0,Meats,20lb CASE,3,LOG,2,EA,2,10000,25.42,,2
+74,Italian Sausage,0,Meats,10lb CASE,4,BAG,2,OZ-wt,160,91,17.54,,2
+75,Bacon Bits,3,Meats,10lb CASE,2,BAG,2,OZ-wt,80,1,83.48,,8
+77,Whole Wheat,0,Bread,EA,40,EACH,1,EA,1,1000000,0.76,,7
+78,Biopack #4,0,Paper Goods,Case,10,Stack,4,Each,40,4E+07,79,,8
+79,Water Cups,0,Paper Goods,2500,25,Sleeve,25,1,2500,10000,57.52,,2
+80,Soufle Lids,1,Paper Goods,2500,26,Sleeve,25,1,1,100,26.35,,3
+81,Spoons,1,Paper Goods,1000,5.5,Sleeve,10,1,1,10000,7,,3
+82,Forks,1,Paper Goods,1000,4.5,Sleeve,10,1,1,10000,20.59,,3
+85,Wax Paper Sheets,1,Paper Goods,6000,6,Stack,6,1,1,10000,54.65,,3
+86,Small To-Go Bags,0,Paper Goods,500,0.25,Case,1,1,1,100,14.88,,3
+87,Foil Roll,0,Paper Goods,ROLL,4,1,1,1,1,1E+08,17.99,,2
+89,To-Go Soup Bowls (16oz),1,Paper Goods,500,5,Sleeve,10,1,1,1000000,48.78,,3
+90,Paper Towels,0,Paper Goods,4000,13,Sleeve,16,1,1,1E+08,16.11,,3
+91,To-Go Soup Lids,1,Paper Goods,500,7,Sleeve,10,1,1,1E+08,42.68,,3
+92,To-Go Soup Bowls (12oz),1,Paper Goods,500,8,Sleeve,10,1,1,10000,42.68,,3
+95,Napkins,1,Paper Goods,6000,8,Stack,12,1,1,10000,45.46,,3
+97,Dried Black Beans,0,Grocery,50lbs,4,Quart,27.414,3.5,1,100,41.35,,2
+99,Cinnamon,0,Herbs,,71.2,LB,80,OZ-wt,1,1,16.14,,2
+100,Passion Syrup,0,Beverage,6/5.5lbs,10,5.5 lbs,6,CUP,7.65,100,60,,5
+101,Allspice,0,Herbs,1lb,41,OZ-wt,16,TBL,1,1000000,8.02,,2
+102,Black Tea,0,Beverage,(20 x 600g) CASE,14.5,BAG,20,CUP,5.88,100,110,,5
+104,Honey,0,Beverage,5lbs,2.25,JAR,1,CUP,6.96,100,11.99,,6
+106,24 Oz Cups,1,Paper Goods,600 COUNT,10,Sleeve,12,Each,1,10000,64.75,,3
+107,Dried Pinto Beans,0,Grocery,25lb,8,Quart,14.47,8,8,10000,14.3,,2
+108,Grill Bricks,0,Janitorial,12 EA,2,BRICK,12,1,1,10000,13.2,,3
+109,Sanitizer,0,Janitorial,4 GAL,0.6,GALLON,4,1,1,100,37.87,,2
+110,Poly Gloves,0,Paper Goods,5000,12,BOX,10,1,1,100,34.1,,2
+111,Sourdough,0,Bread,EA,208,EACH,1,1,1,1,0.76,,7
+112,Dried Garbanzo Beans,2,Grocery,25lb,36,QUART,13.318,LB,1.877,1000000,23.22,,2
+113,Crushed Red Pepper,0,Herbs,5lbs,54.8,OZ-wt,80,TBL,1,1000000,17.15,,2
+114,Sugar (CANE),0,Beverage,EA,9,QUART,16,CUP,1,1E+12,30,,6
+115,16/24 Oz Lids,1,Paper Goods,1000 CASE,12,Sleeve,10,1,1,100,25.51,,3
+116,Straws,0,Paper Goods,2000,2.5,BOX,4,1,1,100,10.06,,3
+117,16 Oz Cups,0,Paper Goods,1000 CASE,10,Sleeve,20,1,1,100,54.75,,3
+118,Large To-Go Bags,0,Paper Goods,500,0.4,BAG,1,1,1,100,52.81,,3
+119,Soufle Cups,0,Paper Goods,2500,4,Sleeve,25,1,1,100,26.35,,3
+120,Ceramawrap,0,Paper Goods,2000,0,EACH,1,1,1,100,10.54,,3
+121,Die-Cut To-Go Bags,0,Paper Goods,500,0.8,CASE,1,1,1,100,55.35,,3
+122,Garbage Bags,1,Janitorial,250,0.75,CASE,1,1,1,100,28.62,,3
+123,Detergent,1,Janitorial,5 GAL,0.9,GALLON,4,1,1,100,21.02,,2
+124,De-Greaser,2,Janitorial,1 Gal,3,GALLON,4,1,1,100,5.53,,2
+125,Bleach,0,Janitorial,4 GAL,4.2,GALLON,4,1,1,100,8,,3
+126,Steel Wool,0,Janitorial,12 COUNT,9,Sleeve,12,1,1,100,4.77,,3
+127,Fabuloso,0,Janitorial,3 GAL,3,1 GAL,3,1,1,,24.26,,2
+128,Bay Leaves,0,Herbs,8oz,30,OZ-wt,8,OZ-wt,1,,11.91,,2
+129,Lemonade Base,2,Beverage,EA,16.75,GALLON,4,1,16,,21.18,,2
+130,Pink Lemonade Base,5,Beverage,4 GAL,20.4,GALLON,4,1,1,,22.23,,2
+131,Jalapenos Nacho Sliced,0,Grocery,EA,3,CAN,6,OZ-wt,1,,19.99,,0

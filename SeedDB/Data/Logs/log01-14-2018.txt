@@ -1,0 +1,792 @@
+01/14/18 - 11:40:51 - INFO - Application starting
+01/14/18 - 11:40:51 - INFO - Loading models
+01/14/18 - 11:40:53 - INFO - Models loaded
+01/14/18 - 11:41:02 - INFO - Upating BreadOrder: 233
+01/14/18 - 11:41:02 - INFO - Upating BreadOrder: 232
+01/14/18 - 11:41:02 - INFO - Upating BreadOrder: 235
+01/14/18 - 11:41:02 - INFO - Upating BreadOrder: 234
+01/14/18 - 11:41:03 - INFO - Upating BreadOrder: 238
+01/14/18 - 11:41:04 - INFO - Upating BreadOrder: 236
+01/14/18 - 11:41:06 - INFO - Upating BreadOrder: 237
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 1
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 2
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 3
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 4
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 5
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 6
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 7
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 8
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 9
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 10
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 12
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 13
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 14
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 15
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 16
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 17
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 18
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 19
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 20
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 21
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 22
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 23
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 24
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 25
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 26
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 27
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 28
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 29
+01/14/18 - 11:41:06 - INFO - Upating DailySale: 30
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 31
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 32
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 33
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 34
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 35
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 36
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 37
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 38
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 39
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 40
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 41
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 42
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 43
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 44
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 45
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 46
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 47
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 48
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 49
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 50
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 51
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 52
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 53
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 54
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 55
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 56
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 57
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 58
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 59
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 60
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 61
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 62
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 63
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 64
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 65
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 66
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 67
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 68
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 69
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 70
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 71
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 72
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 73
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 74
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 75
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 76
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 77
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 78
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 79
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 80
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 81
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 82
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 83
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 84
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 85
+01/14/18 - 11:41:07 - INFO - Upating DailySale: 86
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 87
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 88
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 89
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 90
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 91
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 92
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 93
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 94
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 95
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 96
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 97
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 98
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 99
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 100
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 101
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 102
+01/14/18 - 11:41:08 - INFO - Upating DailySale: 103
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 84
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 85
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 86
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 87
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 88
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 89
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 90
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 91
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 92
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 93
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 94
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 95
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 96
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 97
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 98
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 99
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 100
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 101
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 102
+01/14/18 - 11:41:08 - INFO - Destroying DailySale: 103
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 84
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 85
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 86
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 87
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 88
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 89
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 90
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 91
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 92
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 93
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 94
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 95
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 96
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 97
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 98
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 99
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 100
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 101
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 102
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 103
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 104
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 105
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 106
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 107
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 108
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 109
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 110
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 111
+01/14/18 - 11:41:08 - INFO - Inserted DailySale: 112
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 113
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 114
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 115
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 116
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 117
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 118
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 119
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 120
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 121
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 122
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 123
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 124
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 125
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 126
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 127
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 128
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 129
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 130
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 131
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 132
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 133
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 134
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 135
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 136
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 137
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 138
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 139
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 140
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 141
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 142
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 143
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 144
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 145
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 146
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 147
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 148
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 149
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 150
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 151
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 152
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 153
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 154
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 155
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 156
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 157
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 158
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 159
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 160
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 161
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 162
+01/14/18 - 11:41:09 - INFO - Inserted DailySale: 163
+01/14/18 - 11:41:09 - INFO - Upating ExpenseItem: 355
+01/14/18 - 11:41:09 - INFO - Upating ExpenseItem: 356
+01/14/18 - 11:41:09 - INFO - Upating ExpenseItem: 357
+01/14/18 - 11:41:09 - INFO - Upating ExpenseItem: 358
+01/14/18 - 11:41:09 - INFO - Upating ExpenseItem: 359
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 360
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 361
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 362
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 363
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 364
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 365
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 366
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 367
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 368
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 369
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 370
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 371
+01/14/18 - 11:41:10 - INFO - Upating ExpenseItem: 372
+01/14/18 - 11:41:12 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Inventory
+01/14/18 - 11:41:13 - INFO - Changed to tab: Bread
+01/14/18 - 11:41:14 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:16 - INFO - Changed to tab: Vendors
+01/14/18 - 11:41:17 - INFO - Executing VendorTabVM#GenerateOrderSheet
+01/14/18 - 12:06:54 - INFO - Changed to tab: Orders
+01/14/18 - 12:06:56 - INFO - Executing OrderTabVM#StartNewOrder
+01/14/18 - 12:06:57 - INFO - Adding temp tab: NewOrderVM
+01/14/18 - 12:06:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:02 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:03 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:10 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:12 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:12 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:18 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:18 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:18 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:18 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:18 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:18 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:21 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:21 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:21 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:21 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:21 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:21 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:21 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:28 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:28 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:29 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:33 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:34 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:34 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:34 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:35 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:35 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:36 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:36 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:39 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:40 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:41 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:41 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:41 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:42 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:43 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:44 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:44 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:44 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:44 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:44 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:45 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:45 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:45 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:49 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:50 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:50 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:50 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:50 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:50 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:50 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:51 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:51 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:51 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:52 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:53 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:54 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:55 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:56 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:57 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:58 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:58 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:59 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:59 - INFO - Changed to tab: New Order
+01/14/18 - 12:07:59 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:00 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:01 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:01 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:01 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:04 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:05 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:05 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:06 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:07 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:08 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:08 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:08 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:08 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:11 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:12 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:12 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:13 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:15 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:16 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:17 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:18 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:18 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:19 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:19 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:19 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:19 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:20 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:23 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:24 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:25 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:26 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:27 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:28 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:28 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:28 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:28 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:28 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:29 - INFO - Executing NewOrderVM#SaveOrder
+01/14/18 - 12:08:29 - INFO - Inserted PurchaseOrder: 169
+01/14/18 - 12:08:29 - INFO - Upating InventoryItem: 1
+01/14/18 - 12:08:29 - INFO - Upating InventoryItem: 0
+01/14/18 - 12:08:29 - INFO - Upating InventoryItem: 25
+01/14/18 - 12:08:29 - INFO - Upating InventoryItem: 36
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 19
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 21
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 54
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 56
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 58
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 57
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 59
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 66
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 64
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 71
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 72
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 74
+01/14/18 - 12:08:30 - INFO - Upating InventoryItem: 75
+01/14/18 - 12:08:32 - INFO - Changed to tab: New Order
+01/14/18 - 12:08:33 - INFO - Upating Vendor: 0
+01/14/18 - 12:08:33 - INFO - Removing temp tab
+01/14/18 - 12:08:33 - INFO - Changed to tab: Settings
+01/14/18 - 12:08:33 - INFO - Changed to tab: Orders
+01/14/18 - 12:08:34 - INFO - Changed to tab: Orders
+01/14/18 - 12:12:43 - INFO - Executing OrderTabVM#ShowOpenRecList
+01/14/18 - 14:02:57 - INFO - Application closing

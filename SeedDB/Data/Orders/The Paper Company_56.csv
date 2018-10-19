@@ -1,0 +1,19 @@
+Id,Name,LastOrderAmount,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastPurchasedDate,LastVendorId
+78,Biopack #4,5,Paper Goods,Case,17,Stack,4,Each,40,4E+07,39.55,6/6/2017 12:00:00 AM,3
+78,Biopack #4,5,Paper Goods,Case,17,Stack,4,Each,40,4E+07,39.55,6/6/2017 12:00:00 AM,3
+81,Spoons,1,Paper Goods,1000,24,Sleeve,10,1,1,10000,7,6/6/2017 12:00:00 AM,3
+81,Spoons,1,Paper Goods,1000,24,Sleeve,10,1,1,10000,7,6/6/2017 12:00:00 AM,3
+85,Wax Paper Sheets,1,Paper Goods,6000,6,Stack,6,1,1,10000,54.65,6/6/2017 12:00:00 AM,3
+85,Wax Paper Sheets,1,Paper Goods,6000,6,Stack,6,1,1,10000,54.65,6/6/2017 12:00:00 AM,3
+86,Small To-Go Bags,1,Paper Goods,500,0.6,Case,1,1,1,100,14.88,6/6/2017 12:00:00 AM,3
+86,Small To-Go Bags,1,Paper Goods,500,0.6,Case,1,1,1,100,14.88,6/6/2017 12:00:00 AM,3
+95,Napkins,1,Paper Goods,6000,9.75,Stack,12,1,1,10000,45.46,6/6/2017 12:00:00 AM,3
+95,Napkins,1,Paper Goods,6000,9.75,Stack,12,1,1,10000,45.46,6/6/2017 12:00:00 AM,3
+110,Poly Gloves,1,Paper Goods,2000,17,BOX,4,1,1,100,15.8,6/6/2017 12:00:00 AM,3
+110,Poly Gloves,1,Paper Goods,2000,17,BOX,4,1,1,100,15.8,6/6/2017 12:00:00 AM,3
+119,Soufle Cups,1,Paper Goods,2500,10,Sleeve,25,1,1,100,26.35,6/6/2017 12:00:00 AM,3
+119,Soufle Cups,1,Paper Goods,2500,10,Sleeve,25,1,1,100,26.35,6/6/2017 12:00:00 AM,3
+120,Ceramawrap,1,Paper Goods,2000,1,EACH,1,1,1,100,10.26,6/6/2017 12:00:00 AM,3
+120,Ceramawrap,1,Paper Goods,2000,1,EACH,1,1,1,100,10.26,6/6/2017 12:00:00 AM,3
+122,Garbage Bags,1,Janitorial,250,1.1,CASE,1,1,1,100,28.62,6/6/2017 12:00:00 AM,3
+122,Garbage Bags,1,Janitorial,250,1.1,CASE,1,1,1,100,28.62,6/6/2017 12:00:00 AM,3

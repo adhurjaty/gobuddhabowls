@@ -1,0 +1,18 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,70.89,6,CASE 30lb,Dairy,9,5lb BAG,OZ-wt,480,1,1,7/16/2017 12:00:00 AM,0
+1,Cheddar,46.89,4,CASE 20lb,Dairy,8,5lb BAG,OZ-wt,320,1,1,7/16/2017 12:00:00 AM,0
+23,Roasted Bell Peppers,37.44,6,6# CANS,Grocery,6,CAN,OZ-wt,360,98,1,7/16/2017 12:00:00 AM,0
+34,Canola Oil,23.75,1,35lb JUG,Grocery,0.7,JUG,OZ-wt,800,99,1,7/16/2017 12:00:00 AM,0
+36,Olive Oil,50.8,6,6 GAL,Grocery,9.5,JUG,OZ-fl,768,99,1,7/16/2017 12:00:00 AM,0
+54,Yellow Onions,15.43,1,50lb,Produce,0,BAG,OZ-wt,800,85,2,7/16/2017 12:00:00 AM,0
+57,Spinach,15.79,4,4x2.5lb,Produce,4,BAG,OZ-wt,160,99,2,7/16/2017 12:00:00 AM,0
+58,Mixed Greens,6.24,1,3lb,Produce,1,BAG,OZ-wt,48,9800,1,7/16/2017 12:00:00 AM,0
+59,Mushrooms,18.99,1,10lb CASE,Produce,1,FLAT,OZ-wt,160,95,2,7/16/2017 12:00:00 AM,0
+61,Tomatoes,12.75,1,25lb,Produce,0.5,CASE,OZ-wt,400,97,1,7/16/2017 12:00:00 AM,0
+62,Avocado,53.9,60,60 COUNT,Produce,60,EACH,EA,24,10000,1,7/16/2017 12:00:00 AM,0
+64,Fresh Basil,8.99,1,1lb,Produce,1,BAG,OZ-wt,16,65,1,7/16/2017 12:00:00 AM,0
+66,Pineapple,16.99,6,6 COUNT,Produce,7,EACH,OZ-wt,44,100,1,7/16/2017 12:00:00 AM,0
+72,Chicken Breast,73.95,1,40lb CASE,Poultry,1,CASE,OZ-wt,640,85,2,7/16/2017 12:00:00 AM,0
+74,Italian Sausage,45.79,4,20lb CASE,Meats,7,BAG,OZ-wt,160,91,1,7/16/2017 12:00:00 AM,0
+75,Bacon Bits,52.99,2,10lb CASE,Meats,2,BAG,OZ-wt,160,100,1,7/16/2017 12:00:00 AM,0
+112,Dried Garbanzo Beans,26.99,26.635,25lb,Grocery,14,QUART,LB,1.877,1000000,1,7/16/2017 12:00:00 AM,0

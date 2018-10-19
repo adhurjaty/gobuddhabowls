@@ -1,0 +1,3 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+77,Whole Wheat,0.67,1,EA,Bread,354,EACH,EA,1,1,0,,7
+111,Sourdough,0.67,1,EA,Bread,0,EACH,1,1,1,0,,7

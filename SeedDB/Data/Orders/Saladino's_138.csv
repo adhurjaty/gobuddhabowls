@@ -1,0 +1,2 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+4,Butter,Dairy,CASE 30lb,33,1lb,30,OZ-wt,16,1,85,1,11/2/2017 12:00:00 AM,9

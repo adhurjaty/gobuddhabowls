@@ -1,0 +1,663 @@
+11/06/17 - 09:22:44 - INFO - Application starting
+11/06/17 - 09:22:44 - INFO - Loading models
+11/06/17 - 09:22:45 - INFO - Models loaded
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 0
+11/06/17 - 09:22:47 - INFO - Upating BreadOrder: 190
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 1
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 2
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 3
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 4
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 5
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 6
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 7
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 8
+11/06/17 - 09:22:47 - INFO - Destroying DailySale: 9
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 10
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 11
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 12
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 13
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 14
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 15
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 16
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 17
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 18
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 19
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 20
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 21
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 22
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 23
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 24
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 25
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 26
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 27
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 28
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 29
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 30
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 31
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 32
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 33
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 34
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 35
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 36
+11/06/17 - 09:22:48 - INFO - Destroying DailySale: 37
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 38
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 39
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 40
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 41
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 42
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 43
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 44
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 45
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 46
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 47
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 48
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 49
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 50
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 51
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 52
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 53
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 54
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 55
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 56
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 57
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 58
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 59
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 60
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 61
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 62
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 63
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 64
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 65
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 66
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 67
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 68
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 69
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 70
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 71
+11/06/17 - 09:22:49 - INFO - Destroying DailySale: 72
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 73
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 74
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 75
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 76
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 77
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 78
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 79
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 80
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 81
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 82
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 83
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 84
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 85
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 86
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 87
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 88
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 89
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 90
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 91
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 92
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 93
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 94
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 95
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 96
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 97
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 98
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 99
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 100
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 101
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 102
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 103
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 104
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 105
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 106
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 107
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 108
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 109
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 110
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 111
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 112
+11/06/17 - 09:22:50 - INFO - Destroying DailySale: 113
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 114
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 115
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 116
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 117
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 118
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 119
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 120
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 121
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 122
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 123
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 124
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 125
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 126
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 127
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 128
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 129
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 130
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 131
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 132
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 133
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 134
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 135
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 136
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 137
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 138
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 139
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 140
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 141
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 142
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 143
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 144
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 145
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 146
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 147
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 148
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 149
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 150
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 151
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 152
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 153
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 154
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 155
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 156
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 157
+11/06/17 - 09:22:51 - INFO - Destroying DailySale: 158
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 159
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 160
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 161
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 162
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 163
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 164
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 165
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 166
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 167
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 168
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 169
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 170
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 171
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 172
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 173
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 174
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 175
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 176
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 177
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 178
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 179
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 180
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 181
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 182
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 183
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 184
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 185
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 186
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 187
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 188
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 189
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 190
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 191
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 192
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 193
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 194
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 195
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 196
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 197
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 198
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 199
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 200
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 201
+11/06/17 - 09:22:52 - INFO - Destroying DailySale: 202
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 203
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 204
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 205
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 206
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 207
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 208
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 209
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 210
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 211
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 212
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 213
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 214
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 215
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 216
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 217
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 218
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 219
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 220
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 221
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 222
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 223
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 224
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 225
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 226
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 227
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 228
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 229
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 230
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 231
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 232
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 233
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 234
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 235
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 236
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 237
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 238
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 239
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 240
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 241
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 242
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 243
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 244
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 245
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 246
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 247
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 248
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 249
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 250
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 251
+11/06/17 - 09:22:53 - INFO - Destroying DailySale: 252
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 253
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 254
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 255
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 256
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 257
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 258
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 259
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 260
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 261
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 262
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 263
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 264
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 265
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 266
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 267
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 268
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 269
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 270
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 271
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 272
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 273
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 274
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 275
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 276
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 277
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 278
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 279
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 280
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 281
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 282
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 283
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 284
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 285
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 286
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 287
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 288
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 289
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 290
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 291
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 292
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 293
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 294
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 295
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 296
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 297
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 298
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 299
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 300
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 301
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 302
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 303
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 304
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 305
+11/06/17 - 09:22:54 - INFO - Destroying DailySale: 306
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 307
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 308
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 309
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 310
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 311
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 312
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 313
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 314
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 315
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 316
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 317
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 318
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 319
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 320
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 321
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 322
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 323
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 324
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 325
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 326
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 327
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 328
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 329
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 330
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 331
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 332
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 333
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 334
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 335
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 336
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 337
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 338
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 339
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 340
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 341
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 342
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 343
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 344
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 345
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 346
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 347
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 348
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 349
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 350
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 351
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 352
+11/06/17 - 09:22:55 - INFO - Destroying DailySale: 353
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 354
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 355
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 356
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 357
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 358
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 359
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 360
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 361
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 362
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 363
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 364
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 365
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 366
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 367
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 368
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 369
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 370
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 371
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 372
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 373
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 374
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 375
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 376
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 377
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 378
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 379
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 380
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 381
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 382
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 383
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 384
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 385
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 386
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 387
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 388
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 389
+11/06/17 - 09:22:56 - INFO - Destroying DailySale: 390
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 391
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 392
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 393
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 394
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 395
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 396
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 397
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 398
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 399
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 400
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 401
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 402
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 403
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 404
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 405
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 406
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 407
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 408
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 409
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 410
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 411
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 412
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 413
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 414
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 415
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 416
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 417
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 418
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 419
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 420
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 421
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 422
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 423
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 424
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 425
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 426
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 427
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 428
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 429
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 430
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 431
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 432
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 433
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 434
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 435
+11/06/17 - 09:22:57 - INFO - Destroying DailySale: 436
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 437
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 438
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 439
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 440
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 441
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 442
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 443
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 444
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 445
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 446
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 447
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 448
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 449
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 450
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 451
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 452
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 453
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 454
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 455
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 456
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 457
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 458
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 459
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 460
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 461
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 462
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 463
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 464
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 465
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 466
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 467
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 468
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 469
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 470
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 471
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 472
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 473
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 474
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 475
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 476
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 477
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 478
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 479
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 480
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 481
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 482
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 483
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 484
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 485
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 486
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 487
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 488
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 489
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 490
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 491
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 492
+11/06/17 - 09:22:58 - INFO - Destroying DailySale: 493
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 494
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 495
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 496
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 497
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 498
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 499
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 500
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 501
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 502
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 503
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 504
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 505
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 506
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 507
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 508
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 509
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 510
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 511
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 512
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 513
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 514
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 515
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 516
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 517
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 518
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 519
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 520
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 521
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 522
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 523
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 524
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 525
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 526
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 527
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 528
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 529
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 530
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 531
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 532
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 533
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 534
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 535
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 536
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 537
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 538
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 539
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 540
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 541
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 542
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 543
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 544
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 545
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 546
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 547
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 548
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 549
+11/06/17 - 09:22:59 - INFO - Destroying DailySale: 550
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 551
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 552
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 553
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 554
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 555
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 556
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 557
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 558
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 559
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 560
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 561
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 562
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 563
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 564
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 565
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 566
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 567
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 568
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 569
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 570
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 571
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 572
+11/06/17 - 09:23:00 - INFO - Destroying DailySale: 573
+11/06/17 - 09:23:01 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.ProfitLossVM.GetCogsSummaryItems()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/06/17 - 09:24:23 - INFO - Application starting
+11/06/17 - 09:24:23 - INFO - Loading models
+11/06/17 - 09:24:23 - INFO - Models loaded
+11/06/17 - 09:24:24 - INFO - Upating BreadOrder: 190
+11/06/17 - 09:24:24 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.ProfitLossVM.GetCogsSummaryItems()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/06/17 - 09:24:32 - INFO - Application starting
+11/06/17 - 09:24:32 - INFO - Loading models
+11/06/17 - 09:24:33 - INFO - Models loaded
+11/06/17 - 09:24:33 - INFO - Upating BreadOrder: 190
+11/06/17 - 09:24:34 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.ProfitLossVM.GetCogsSummaryItems()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/06/17 - 09:24:36 - INFO - Application starting
+11/06/17 - 09:24:36 - INFO - Loading models
+11/06/17 - 09:24:36 - INFO - Models loaded
+11/06/17 - 09:24:37 - INFO - Upating BreadOrder: 190
+11/06/17 - 09:24:37 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.ProfitLossVM.GetCogsSummaryItems()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/06/17 - 09:26:38 - INFO - Application starting
+11/06/17 - 09:26:38 - INFO - Loading models
+11/06/17 - 09:26:38 - INFO - Models loaded
+11/06/17 - 09:26:39 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.ProfitLossVM.GetCogsSummaryItems()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/06/17 - 09:26:39 - INFO - Upating BreadOrder: 190
+11/06/17 - 09:26:57 - INFO - Changed to tab: Bread
+11/06/17 - 09:27:02 - INFO - Changed to tab: Orders
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:03 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:04 - INFO - Changed to tab: Inventory
+11/06/17 - 09:27:06 - INFO - Changed to tab: Reports
+11/06/17 - 09:27:11 - INFO - Executing ChangeableTabVM#SwitchPage
+11/06/17 - 09:27:11 - INFO - Changed to tab: Reports
+11/06/17 - 09:27:11 - INFO - Changed to tab: Reports
+11/06/17 - 10:13:57 - INFO - Application starting
+11/06/17 - 10:13:57 - INFO - Loading models
+11/06/17 - 10:13:58 - INFO - Models loaded
+11/06/17 - 10:13:59 - INFO - Upating BreadOrder: 190
+11/06/17 - 10:14:00 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.ProfitLossVM.GetCogsSummaryItems()
+   at BuddhaBowls.ProfitLossVM.<CalculatePAndL>d__24.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)

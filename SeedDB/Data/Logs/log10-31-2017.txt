@@ -1,0 +1,651 @@
+10/31/17 - 20:05:40 - INFO - Application starting
+10/31/17 - 20:05:41 - INFO - Loading models
+10/31/17 - 20:05:43 - INFO - Models loaded
+10/31/17 - 20:05:44 - INFO - Application starting
+10/31/17 - 20:05:44 - INFO - Loading models
+10/31/17 - 20:05:46 - INFO - Models loaded
+10/31/17 - 20:05:49 - INFO - Upating BreadOrder: 170
+10/31/17 - 20:05:49 - INFO - Upating BreadOrder: 169
+10/31/17 - 20:05:50 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:50 - INFO - Upating BreadOrder: 170
+10/31/17 - 20:05:50 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:50 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:50 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:50 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:50 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:51 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:51 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:51 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:51 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:51 - INFO - Changed to tab: Inventory
+10/31/17 - 20:05:52 - INFO - Executing InventoryTabVM#StartNewInventory
+10/31/17 - 20:05:54 - INFO - Adding temp tab: NewInventoryVM
+10/31/17 - 20:05:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:55 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:55 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:05:55 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:09 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:12 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:16 - INFO - Changed to tab: Bread
+10/31/17 - 20:06:36 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:38 - INFO - Changed to tab: Inventory
+10/31/17 - 20:06:39 - INFO - Changed to tab: Bread
+10/31/17 - 20:06:44 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:46 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:52 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:55 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:56 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:58 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:06:58 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:00 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:00 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:00 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:01 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:01 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:01 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:05 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:05 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:07 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:07 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:07 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:07 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:07 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:09 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:09 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:09 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:09 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:09 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:12 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:12 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:17 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:19 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:19 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:24 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:24 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:24 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:25 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:25 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:28 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:28 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:28 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:30 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:31 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:32 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:32 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:33 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:33 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:33 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:33 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:35 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:35 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:39 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:41 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:41 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:44 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:44 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:47 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:50 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:53 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:56 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:56 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:58 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:59 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:07:59 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:00 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:02 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:02 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:02 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:05 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:08 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:09 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:11 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:11 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:11 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:13 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:13 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:13 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:14 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:16 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:16 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:16 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:17 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:17 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:17 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:17 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:19 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:19 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:19 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:19 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:20 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:22 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:23 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:23 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:24 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:24 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:24 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:25 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:25 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:27 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:27 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:27 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:27 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:27 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:27 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:30 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:33 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:33 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:33 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:37 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:37 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:37 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:37 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:37 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:37 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:39 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:39 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:39 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:41 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:41 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:41 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:43 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:43 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:43 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:43 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:43 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:43 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:45 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:45 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:45 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:45 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:45 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:45 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:47 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:47 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:47 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:49 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:49 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:49 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:49 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:49 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:49 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:51 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:54 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:55 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:55 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:55 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:56 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:56 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:56 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:57 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:57 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:57 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:58 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:08:59 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:00 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:00 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:01 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:01 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:01 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:03 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:05 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:05 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:05 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:06 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:09 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:10 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:17 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:18 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:18 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:26 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:26 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:28 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:28 - INFO - Changed to tab: New Inventory
+10/31/17 - 20:09:30 - INFO - Executing NewInventoryVM#SaveInventory
+10/31/17 - 20:09:30 - INFO - Removing temp tab
+10/31/17 - 20:09:30 - INFO - Changed to tab: Settings
+10/31/17 - 20:09:30 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:31 - INFO - Inserted Inventory: 24
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 7
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 7
+10/31/17 - 20:09:31 - INFO - Upating InventoryItem: 111
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 7
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 7
+10/31/17 - 20:09:31 - INFO - Upating InventoryItem: 77
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:31 - INFO - Upating InventoryItem: 1
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:31 - INFO - Upating InventoryItem: 0
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:31 - INFO - Upating InventoryItem: 2
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:31 - INFO - Upating InventoryItem: 3
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:31 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 6
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 4
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 9
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 8
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 5
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 11
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 14
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 13
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:32 - INFO - Upating InventoryItem: 18
+10/31/17 - 20:09:32 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating InventoryItem: 31
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating InventoryItem: 32
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:33 - INFO - Upating InventoryItem: 33
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating InventoryItem: 25
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:33 - INFO - Upating InventoryItem: 26
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:33 - INFO - Upating InventoryItem: 24
+10/31/17 - 20:09:33 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 23
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 20
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 36
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 30
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 19
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 41
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 131
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 21
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:34 - INFO - Upating InventoryItem: 34
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 97
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 107
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 112
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 38
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 42
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 40
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 49
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 48
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:35 - INFO - Upating InventoryItem: 45
+10/31/17 - 20:09:35 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 44
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 43
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 46
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 50
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 47
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 51
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 101
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 99
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 113
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 128
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:36 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:36 - INFO - Upating InventoryItem: 54
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating InventoryItem: 55
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating InventoryItem: 56
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating InventoryItem: 58
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating InventoryItem: 57
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating InventoryItem: 63
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating InventoryItem: 59
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating InventoryItem: 60
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:37 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 61
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 62
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 66
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 1
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 64
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 71
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 8
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 9
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 72
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 73
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 74
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 75
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:38 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:38 - INFO - Upating InventoryItem: 129
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 130
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 104
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 5
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 5
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 102
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 5
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 5
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 100
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 6
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 114
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 79
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 115
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 106
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 117
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 90
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:39 - INFO - Upating Vendor: 0
+10/31/17 - 20:09:39 - INFO - Upating InventoryItem: 95
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 86
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 118
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 8
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 8
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 78
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 80
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 119
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 116
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 87
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 120
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 82
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 81
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 121
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:40 - INFO - Upating InventoryItem: 91
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 89
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 92
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 85
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 110
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 122
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 123
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 109
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 124
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 125
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 2
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 127
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 108
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating Vendor: 3
+10/31/17 - 20:09:41 - INFO - Upating InventoryItem: 126
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:42 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:44 - INFO - Executing ChangeableTabVM#SwitchPage
+10/31/17 - 20:09:44 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:44 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:49 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:51 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:51 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:53 - INFO - Changed to tab: Inventory
+10/31/17 - 20:09:53 - INFO - Changed to tab: Reports
+10/31/17 - 20:10:00 - INFO - Changed to tab: Reports

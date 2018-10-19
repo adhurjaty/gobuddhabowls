@@ -1,0 +1,9 @@
+Id,Name,Count,Category,PurchasedUnit,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,16,Paper Goods,Case,Stack,4,Each,40,4E+07,39.55,2,7/11/2017 12:00:00 AM,3
+81,Spoons,10,Paper Goods,1000,Sleeve,10,1,1,10000,7,1,7/11/2017 12:00:00 AM,3
+82,Forks,13,Paper Goods,1000,Sleeve,10,1,1,10000,20.59,1,7/11/2017 12:00:00 AM,3
+86,Small To-Go Bags,0.3,Paper Goods,500,Case,1,1,1,100,14.88,1,7/11/2017 12:00:00 AM,3
+90,Paper Towels,15,Paper Goods,4000,Sleeve,16,1,1,1E+08,16.11,1,7/11/2017 12:00:00 AM,3
+95,Napkins,3.5,Paper Goods,6000,Stack,12,1,1,10000,45.46,1,7/11/2017 12:00:00 AM,3
+120,Ceramawrap,0,Paper Goods,2000,EACH,1,1,1,100,10.26,1,7/11/2017 12:00:00 AM,3
+123,Detergent,2.5,Janitorial,4 GAL,GALLON,4,1,1,100,16.2,1,7/11/2017 12:00:00 AM,3

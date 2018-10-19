@@ -1,0 +1,4 @@
+Id,Name,Count,Category,PurchasedUnit,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,16,Paper Goods,Case,Stack,4,Each,40,4E+07,39.55,5,7/3/2017 12:00:00 AM,3
+110,Poly Gloves,17,Paper Goods,2000,BOX,4,1,1,100,15.8,2,7/3/2017 12:00:00 AM,3
+117,16 Oz Cups,10,Paper Goods,1000 CASE,Sleeve,20,1,1,100,54.75,1,7/3/2017 12:00:00 AM,3

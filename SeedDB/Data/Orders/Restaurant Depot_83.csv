@@ -1,0 +1,21 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+3,Feta,1,53.86,Dairy,33lbs,1.25,5lb BAG,1,OZ-wt,160,100,8/3/2017 12:00:00 AM,2
+8,Eggs,1,9.91,Dairy,15 DOZEN,4,TRAY,6,EA,180,95,8/3/2017 12:00:00 AM,2
+18,Artichoke Hearts,3,43.83,Grocery,6# CANS,2,CAN,6,OZ-wt,324,10000,8/3/2017 12:00:00 AM,2
+21,Macaroni,7,13.15,Grocery,2lb,3,BAG,2,EA,320,241,8/3/2017 12:00:00 AM,2
+23,Roasted Bell Peppers,6,29.95,Grocery,6# CANS,1,CAN,6,OZ-wt,360,98,8/3/2017 12:00:00 AM,2
+24,Chopped Clams,3,91.86,Grocery,12x48oz CANS,19,CAN,12,EA,12,100,8/3/2017 12:00:00 AM,2
+26,Clam Juice,1,31.18,Grocery,12x48oz CANS,34,CAN,12,EA,12,100,8/3/2017 12:00:00 AM,2
+32,Sriracha,1,19.13,Grocery,12x17oz,3,BOTTLE,12,EA,12,100,8/3/2017 12:00:00 AM,2
+40,Tahini,1,60.09,Grocery,40lbs,0.6,LB,1,OZ-wt,640,9800,8/3/2017 12:00:00 AM,2
+41,Kalamata Olives,2,63.94,Grocery,6x4.4lbs,2,JAR,6,OZ-wt,64.8,10000,8/3/2017 12:00:00 AM,2
+42,Lemon Juice,1,16.69,Grocery,1 Gal,4.5,GAL,4,OZ-wt,128,100,8/3/2017 12:00:00 AM,2
+44,Thyme,2,13.33,Herbs,2 lbs ,82.6,OZ-wt,32,TBL,243.81,100,8/3/2017 12:00:00 AM,2
+45,Oregano,1,13.88,Herbs,1.5lbs,18.4,OZ-wt,24,TBL,232.73,100,8/3/2017 12:00:00 AM,2
+48,Pepper,2,42.94,Herbs,5lbs,40.2,OZ-wt,80,TBL,312.2,100,8/3/2017 12:00:00 AM,2
+50,Chili Powder,2,24.41,Herbs,6lbs,62.6,OZ-wt,96,TBL,78.05,100,8/3/2017 12:00:00 AM,2
+60,Cucumbers,1,7.77,Produce,36 COUNT,0.3,CASE,1,OZ-wt,420,950000,8/3/2017 12:00:00 AM,2
+87,Foil Roll,1,17.99,Paper Goods,ROLL,1,1,1,1,1,1E+08,8/3/2017 12:00:00 AM,2
+109,Sanitizer,1,37.87,Janitorial,4 GAL,2,GALLON,4,1,1,100,8/3/2017 12:00:00 AM,2
+112,Dried Garbanzo Beans,2,23.8,Grocery,25lb,12,QUART,13.318,LB,1.877,1000000,8/3/2017 12:00:00 AM,2
+124,De-Greaser,1,19.7,Janitorial,1 Gal,3,GALLON,4,1,1,100,8/3/2017 12:00:00 AM,2

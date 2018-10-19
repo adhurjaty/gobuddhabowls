@@ -1,0 +1,2067 @@
+11/05/17 - 09:06:28 - INFO - Application starting
+11/05/17 - 09:06:28 - INFO - Loading models
+11/05/17 - 09:06:29 - INFO - Models loaded
+11/05/17 - 09:06:35 - INFO - Upating BreadOrder: 170
+11/05/17 - 09:06:36 - INFO - Upating BreadOrder: 169
+11/05/17 - 09:06:36 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:37 - INFO - Upating BreadOrder: 175
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:38 - INFO - Changed to tab: Vendors
+11/05/17 - 09:06:39 - INFO - Upating BreadOrder: 172
+11/05/17 - 09:06:39 - INFO - Executing VendorTabVM#GenerateOrderSheet
+11/05/17 - 09:06:41 - INFO - Upating BreadOrder: 171
+11/05/17 - 09:06:41 - INFO - Upating BreadOrder: 173
+11/05/17 - 09:06:43 - INFO - Upating BreadOrder: 174
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 533
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 534
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 535
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 536
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 537
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 538
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 539
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 540
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 541
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 542
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 543
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 544
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 545
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 546
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 547
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 548
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 549
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 550
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 551
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 552
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 553
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 554
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 555
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 556
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 557
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 558
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 559
+11/05/17 - 09:06:43 - INFO - Inserted DailySale: 560
+11/05/17 - 09:06:43 - INFO - Upating ExpenseItem: 0
+11/05/17 - 09:06:43 - INFO - Upating ExpenseItem: 1
+11/05/17 - 09:06:43 - INFO - Upating ExpenseItem: 2
+11/05/17 - 09:06:43 - INFO - Upating ExpenseItem: 3
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 4
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 5
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 6
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 7
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 8
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 9
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 10
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 11
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 12
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 13
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 14
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 15
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 16
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 17
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 18
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 19
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 20
+11/05/17 - 09:06:44 - INFO - Upating ExpenseItem: 21
+11/05/17 - 09:11:21 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Inventory
+11/05/17 - 09:11:22 - INFO - Changed to tab: Orders
+11/05/17 - 09:11:24 - INFO - Executing OrderTabVM#StartNewOrder
+11/05/17 - 09:11:24 - INFO - Adding temp tab: NewOrderVM
+11/05/17 - 09:11:24 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:11:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Executing NewOrderVM#ClearOrderAmounts
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:13 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:16 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:16 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:37 - INFO - Executing NewOrderVM#SaveOrder
+11/05/17 - 09:12:37 - INFO - Removing temp tab
+11/05/17 - 09:12:37 - INFO - Changed to tab: Settings
+11/05/17 - 09:12:37 - INFO - Changed to tab: Orders
+11/05/17 - 09:12:37 - INFO - Inserted PurchaseOrder: 135
+11/05/17 - 09:12:37 - INFO - Upating Vendor: 9
+11/05/17 - 09:12:39 - INFO - Executing OrderTabVM#StartNewOrder
+11/05/17 - 09:12:39 - INFO - Adding temp tab: NewOrderVM
+11/05/17 - 09:12:39 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:02 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:04 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:05 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:05 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:05 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:05 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:05 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:05 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:06 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:07 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:08 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:10 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:10 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:10 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:10 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:10 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:11 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:12 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:13 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:13 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:14 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:15 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:16 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:16 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:16 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:17 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:18 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:19 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:20 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:21 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:22 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:23 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:24 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:24 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:24 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:24 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:25 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:26 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:27 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:27 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:27 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:27 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:27 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:27 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:28 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:29 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:30 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:31 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:32 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:32 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:32 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:32 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:32 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:32 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:33 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:33 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:33 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:33 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:33 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:34 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:37 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:37 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:37 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:37 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:38 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:38 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:40 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:40 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:40 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:40 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:40 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:41 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:42 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:43 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:43 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:45 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:46 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:47 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:48 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:49 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:50 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:50 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:50 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:51 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:52 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:52 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:52 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:53 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:54 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:55 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:56 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:56 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:57 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:58 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:58 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:58 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:58 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:58 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:58 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:58 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:58 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:59 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:59 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:59 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:59 - INFO - Changed to tab: New Order
+11/05/17 - 09:13:59 - INFO - Changed to tab: New Order
+11/05/17 - 09:14:04 - INFO - Executing NewOrderVM#SaveOrder
+11/05/17 - 09:14:04 - INFO - Removing temp tab
+11/05/17 - 09:14:04 - INFO - Changed to tab: Settings
+11/05/17 - 09:14:04 - INFO - Changed to tab: Orders
+11/05/17 - 09:14:04 - INFO - Inserted PurchaseOrder: 136
+11/05/17 - 09:14:05 - INFO - Upating Vendor: 0
+11/05/17 - 09:17:06 - INFO - Changed to tab: Orders
+11/05/17 - 09:17:07 - INFO - Executing OrderTabVM#ShowOpenRecList
+11/05/17 - 09:17:18 - INFO - Changed to tab: Orders
+11/05/17 - 09:17:19 - INFO - Executing OrderTabVM#ShowOpenRecList
+11/05/17 - 10:47:59 - INFO - Changed to tab: Bread
+11/05/17 - 10:48:00 - INFO - Executing BreadGuideVM#UpdateSquare
+11/05/17 - 10:48:05 - INFO - Upating BreadOrder: 169
+11/05/17 - 10:48:06 - INFO - Upating BreadOrder: 175
+11/05/17 - 10:48:07 - INFO - Upating BreadOrder: 170
+11/05/17 - 10:48:07 - INFO - Upating BreadOrder: 171
+11/05/17 - 10:48:08 - INFO - Upating BreadOrder: 172
+11/05/17 - 10:48:09 - INFO - Upating BreadOrder: 173
+11/05/17 - 10:48:12 - INFO - Upating BreadOrder: 174
+11/05/17 - 10:48:29 - INFO - Upating BreadOrder: 175
+11/05/17 - 10:48:40 - INFO - Upating BreadOrder: 175
+11/05/17 - 10:48:42 - INFO - Upating BreadOrder: 175
+11/05/17 - 10:48:46 - INFO - Upating BreadOrder: 175
+11/05/17 - 10:48:48 - INFO - Upating BreadOrder: 175
+11/05/17 - 10:48:49 - INFO - Upating BreadOrder: 175
+11/05/17 - 10:48:58 - INFO - Changed to tab: Bread
+11/05/17 - 10:48:58 - INFO - Inserted BreadOrder: 176
+11/05/17 - 10:48:58 - INFO - Inserted BreadOrder: 177
+11/05/17 - 10:48:58 - INFO - Inserted BreadOrder: 178
+11/05/17 - 10:48:58 - INFO - Inserted BreadOrder: 179
+11/05/17 - 10:48:58 - INFO - Inserted BreadOrder: 180
+11/05/17 - 10:48:58 - INFO - Inserted BreadOrder: 181
+11/05/17 - 10:48:58 - INFO - Inserted BreadOrder: 182
+11/05/17 - 10:48:58 - INFO - Changed to tab: Bread
+11/05/17 - 10:48:58 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:06 - INFO - Upating BreadOrder: 176
+11/05/17 - 10:49:10 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:10 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:10 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:11 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:23 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:23 - INFO - Inserted BreadOrder: 183
+11/05/17 - 10:49:23 - INFO - Inserted BreadOrder: 184
+11/05/17 - 10:49:23 - INFO - Inserted BreadOrder: 185
+11/05/17 - 10:49:23 - INFO - Inserted BreadOrder: 186
+11/05/17 - 10:49:23 - INFO - Inserted BreadOrder: 187
+11/05/17 - 10:49:23 - INFO - Inserted BreadOrder: 188
+11/05/17 - 10:49:23 - INFO - Inserted BreadOrder: 189
+11/05/17 - 10:49:23 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:23 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:31 - INFO - Upating BreadOrder: 183
+11/05/17 - 10:49:34 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:34 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:34 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:36 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:38 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:43 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:43 - INFO - Inserted BreadOrder: 190
+11/05/17 - 10:49:43 - INFO - Inserted BreadOrder: 191
+11/05/17 - 10:49:43 - INFO - Inserted BreadOrder: 192
+11/05/17 - 10:49:43 - INFO - Inserted BreadOrder: 193
+11/05/17 - 10:49:43 - INFO - Inserted BreadOrder: 194
+11/05/17 - 10:49:43 - INFO - Inserted BreadOrder: 195
+11/05/17 - 10:49:43 - INFO - Inserted BreadOrder: 196
+11/05/17 - 10:49:43 - INFO - Changed to tab: Bread
+11/05/17 - 10:49:43 - INFO - Changed to tab: Bread
+11/05/17 - 10:50:45 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:50:46 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:50:48 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:50:52 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:50:55 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:50:59 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:01 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:02 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 192
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 192
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 193
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 193
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 194
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 194
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 195
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 195
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 196
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 196
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 192
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 192
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 193
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 193
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 194
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 194
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 195
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 195
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 196
+11/05/17 - 10:51:34 - INFO - Upating BreadOrder: 196
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 192
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 192
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 193
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 193
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 194
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 194
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 195
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 195
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 196
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 196
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 190
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 191
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 192
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 192
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 193
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 193
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 194
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 194
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 195
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 195
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 196
+11/05/17 - 10:51:36 - INFO - Upating BreadOrder: 196
+11/05/17 - 16:53:20 - INFO - Executing BreadGuideVM#UpdateSquare
+11/05/17 - 16:53:24 - INFO - Changed to tab: Bread
+11/05/17 - 16:53:24 - INFO - Changed to tab: Bread
+11/05/17 - 16:53:24 - INFO - Changed to tab: Bread
+11/05/17 - 16:53:26 - INFO - Changed to tab: Bread
+11/05/17 - 16:53:28 - INFO - Executing PeriodSelectorVM#GoToCurWeek
+11/05/17 - 16:53:30 - INFO - Executing BreadGuideVM#UpdateSquare
+11/05/17 - 16:53:33 - INFO - Upating BreadOrder: 169
+11/05/17 - 16:53:34 - INFO - Upating BreadOrder: 170
+11/05/17 - 16:53:34 - INFO - Upating BreadOrder: 171
+11/05/17 - 16:53:34 - INFO - Upating BreadOrder: 172
+11/05/17 - 16:53:35 - INFO - Upating BreadOrder: 175
+11/05/17 - 16:53:36 - INFO - Upating BreadOrder: 173
+11/05/17 - 16:53:37 - INFO - Upating BreadOrder: 174
+11/05/17 - 17:11:48 - INFO - Changed to tab: Inventory
+11/05/17 - 17:11:48 - INFO - Changed to tab: Bread
+11/05/17 - 18:02:42 - INFO - Changed to tab: Orders
+11/05/17 - 18:02:53 - INFO - Changed to tab: Orders
+11/05/17 - 18:02:56 - INFO - Executing OrderTabVM#ViewOpenOrder
+11/05/17 - 18:02:56 - INFO - Adding temp tab: ViewOrderVM
+11/05/17 - 18:02:56 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:00 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:10 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:10 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:15 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:16 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:21 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:24 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:25 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:32 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:32 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:37 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:45 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:52 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:53 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:54 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:59 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:59 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:03:59 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:05 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:09 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:09 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:16 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:36 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:36 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:39 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:39 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:40 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:40 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:53 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:04:53 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:05:03 - INFO - Executing ViewOrderVM#SaveEdits
+11/05/17 - 18:05:03 - INFO - Removing temp tab
+11/05/17 - 18:05:03 - INFO - Changed to tab: Settings
+11/05/17 - 18:05:03 - INFO - Changed to tab: Orders
+11/05/17 - 18:05:10 - INFO - Executing OrderTabVM#ViewOpenOrder
+11/05/17 - 18:05:10 - INFO - Adding temp tab: ViewOrderVM
+11/05/17 - 18:05:10 - INFO - Changed to tab: PO#: 134
+11/05/17 - 18:05:12 - INFO - Executing ViewOrderVM#SaveEdits
+11/05/17 - 18:05:12 - INFO - Removing temp tab
+11/05/17 - 18:05:12 - INFO - Changed to tab: Settings
+11/05/17 - 18:05:12 - INFO - Changed to tab: Orders
+11/05/17 - 18:05:14 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+11/05/17 - 18:05:14 - INFO - Upating PurchaseOrder: 134
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 9
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 2
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 2
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 19
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 2
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 21
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 9
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 25
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 34
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 36
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 49
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 1
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 9
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 54
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 1
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 55
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 1
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 56
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 1
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 57
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 1
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 6
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:15 - INFO - Upating InventoryItem: 58
+11/05/17 - 18:05:15 - INFO - Upating Vendor: 1
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating InventoryItem: 61
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 1
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating InventoryItem: 62
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 2
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating InventoryItem: 74
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating InventoryItem: 75
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 2
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:16 - INFO - Upating InventoryItem: 112
+11/05/17 - 18:05:16 - INFO - Changed to tab: Orders
+11/05/17 - 18:05:18 - INFO - Changed to tab: Orders
+11/05/17 - 18:05:20 - INFO - Changed to tab: Vendors
+11/05/17 - 18:05:24 - INFO - Executing VendorTabVM#EditVendor
+11/05/17 - 18:05:24 - INFO - Adding temp tab: NewVendorWizardVM
+11/05/17 - 18:05:24 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Executing WizardVM#NextPage
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:28 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:29 - INFO - Executing NewVendorWizardVM#FinishWizard
+11/05/17 - 18:05:29 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:29 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:29 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:29 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:29 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:29 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:05:29 - INFO - Upating Vendor: 0
+11/05/17 - 18:05:29 - INFO - Removing temp tab
+11/05/17 - 18:05:29 - INFO - Changed to tab: Settings
+11/05/17 - 18:05:29 - INFO - Changed to tab: Vendors
+11/05/17 - 18:05:31 - INFO - Changed to tab: Orders
+11/05/17 - 18:06:58 - INFO - Executing OrderTabVM#StartNewOrder
+11/05/17 - 18:06:58 - INFO - Adding temp tab: NewOrderVM
+11/05/17 - 18:06:58 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:03 - INFO - Executing NewOrderVM#ClearOrderAmounts
+11/05/17 - 18:07:03 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:03 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:03 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:03 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:03 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:03 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:03 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:06 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:08 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:08 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:08 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:08 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:08 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:08 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:08 - INFO - Changed to tab: New Order
+11/05/17 - 18:07:14 - INFO - Changed to tab: Vendors
+11/05/17 - 18:07:15 - ERROR - Object reference not set to an instance of an object.
+   at BuddhaBowls.OrderBreakdownVM.<>c__DisplayClass25_0.<UpdateItem>b__0(BreakdownCategoryItem x)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.UpdateItem(VendorInventoryItem item)
+   at BuddhaBowls.NewOrderVM.RowEdited(VendorInventoryItem item)
+   at BuddhaBowls.UserControls.NewOrder.OrderList_RowEditEnding(Object sender, DataGridRowEditEndingEventArgs e)
+   at System.Windows.Controls.DataGrid.OnRowEditEnding(DataGridRowEditEndingEventArgs e)
+   at System.Windows.Controls.DataGrid.OnExecutedCommitEdit(ExecutedRoutedEventArgs e)
+   at System.Windows.Controls.DataGrid.OnExecutedCommitEdit(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandBinding.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandManager.ExecuteCommandBinding(Object sender, ExecutedRoutedEventArgs e, CommandBinding commandBinding)
+   at System.Windows.Input.CommandManager.FindCommandBinding(Object sender, RoutedEventArgs e, ICommand command, Boolean execute)
+   at System.Windows.Input.CommandManager.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.UIElement.OnExecutedThunk(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.ExecutedRoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object target)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.RoutedCommand.ExecuteImpl(Object parameter, IInputElement target, Boolean userInitiated)
+   at System.Windows.Input.RoutedCommand.Execute(Object parameter, IInputElement target)
+   at System.Windows.Controls.DataGrid.EndEdit(RoutedCommand command, DataGridCell cellContainer, DataGridEditingUnit editingUnit, Boolean exitEditMode)
+   at System.Windows.Controls.DataGrid.OnCurrentCellChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.DependencyObject.SetCurrentValueInternal(DependencyProperty dp, Object value)
+   at System.Windows.Controls.DataGrid.set_CurrentCellContainer(DataGridCell value)
+   at System.Windows.Controls.DataGrid.set_FocusedCell(DataGridCell value)
+   at System.Windows.Controls.DataGridCell.OnAnyLostFocus(Object sender, RoutedEventArgs e)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.UIElement.OnLostFocus(RoutedEventArgs e)
+   at System.Windows.UIElement.IsFocused_Changed(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.ClearValueCommon(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata)
+   at System.Windows.DependencyObject.ClearValue(DependencyPropertyKey key)
+   at System.Windows.Input.FocusManager.OnFocusedElementChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.Input.FocusManager.SetFocusedElement(DependencyObject element, IInputElement value)
+   at System.Windows.Input.KeyboardNavigation.UpdateFocusedElement(DependencyObject focusTarget)
+   at System.Windows.FrameworkElement.OnGotKeyboardFocus(Object sender, KeyboardFocusChangedEventArgs e)
+   at System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.KeyboardDevice.ChangeFocus(DependencyObject focus, Int32 timestamp)
+   at System.Windows.Input.KeyboardDevice.TryChangeFocus(DependencyObject newFocus, IKeyboardInputProvider keyboardInputProvider, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(DependencyObject focus, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(IInputElement element)
+   at System.Windows.UIElement.Focus()
+   at System.Windows.Input.KeyboardNavigation.Navigate(DependencyObject currentElement, TraversalRequest request, ModifierKeys modifierKeys, DependencyObject firstElement)
+   at System.Windows.FrameworkElement.MoveFocus(TraversalRequest request)
+   at System.Windows.Controls.TabItem.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)
+   at System.Windows.UIElement.OnPreviewGotKeyboardFocusThunk(Object sender, KeyboardFocusChangedEventArgs e)
+   at System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.KeyboardDevice.TryChangeFocus(DependencyObject newFocus, IKeyboardInputProvider keyboardInputProvider, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(DependencyObject focus, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(IInputElement element)
+   at System.Windows.UIElement.Focus()
+   at System.Windows.Controls.TabItem.SetFocus()
+   at System.Windows.Controls.TabItem.OnMouseLeftButtonDown(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/05/17 - 18:08:20 - INFO - Application starting
+11/05/17 - 18:08:20 - INFO - Loading models
+11/05/17 - 18:08:21 - INFO - Models loaded
+11/05/17 - 18:08:28 - INFO - Upating BreadOrder: 170
+11/05/17 - 18:08:30 - INFO - Upating BreadOrder: 169
+11/05/17 - 18:08:30 - INFO - Destroying DailySale: 555
+11/05/17 - 18:08:30 - INFO - Destroying DailySale: 556
+11/05/17 - 18:08:30 - INFO - Destroying DailySale: 557
+11/05/17 - 18:08:30 - INFO - Destroying DailySale: 558
+11/05/17 - 18:08:30 - INFO - Destroying DailySale: 559
+11/05/17 - 18:08:30 - INFO - Destroying DailySale: 560
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 555
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 556
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 557
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 558
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 559
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 560
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 561
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 562
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 563
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 564
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 565
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 566
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 567
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 568
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 569
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 570
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 571
+11/05/17 - 18:08:30 - INFO - Inserted DailySale: 572
+11/05/17 - 18:08:30 - INFO - Upating ExpenseItem: 0
+11/05/17 - 18:08:30 - INFO - Upating ExpenseItem: 1
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 2
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 3
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 4
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 5
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 6
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 7
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 8
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 9
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 10
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 11
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 12
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 13
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 14
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 15
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 16
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 17
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 18
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 19
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 20
+11/05/17 - 18:08:31 - INFO - Upating ExpenseItem: 21
+11/05/17 - 18:08:31 - INFO - Upating BreadOrder: 175
+11/05/17 - 18:08:32 - INFO - Upating BreadOrder: 171
+11/05/17 - 18:08:32 - INFO - Upating BreadOrder: 172
+11/05/17 - 18:08:34 - INFO - Upating BreadOrder: 173
+11/05/17 - 18:08:38 - INFO - Upating BreadOrder: 174
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:47 - INFO - Changed to tab: Inventory
+11/05/17 - 18:08:48 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:49 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:50 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:51 - INFO - Executing VendorTabVM#EditVendor
+11/05/17 - 18:08:51 - INFO - Adding temp tab: NewVendorWizardVM
+11/05/17 - 18:08:51 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:08:53 - INFO - Executing WizardVM#Cancel
+11/05/17 - 18:08:53 - INFO - Removing temp tab
+11/05/17 - 18:08:53 - INFO - Changed to tab: Settings
+11/05/17 - 18:08:53 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:54 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:54 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:54 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:55 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:55 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:55 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:55 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:55 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:55 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:55 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:55 - INFO - Changed to tab: Vendors
+11/05/17 - 18:08:57 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:04 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:05 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:05 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:06 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:18 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:22 - INFO - Executing MainViewModel#RefreshHelper
+11/05/17 - 18:09:22 - INFO - Loading models
+11/05/17 - 18:09:23 - INFO - Models loaded
+11/05/17 - 18:09:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:09:25 - INFO - Changed to tab: Orders
+11/05/17 - 18:09:26 - INFO - Executing OrderTabVM#StartNewOrder
+11/05/17 - 18:09:27 - INFO - Adding temp tab: NewOrderVM
+11/05/17 - 18:09:27 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:29 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:29 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:29 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:29 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:29 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:29 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:29 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:29 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:31 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:34 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:34 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:34 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:34 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:34 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:34 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:34 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:35 - INFO - Executing NewOrderVM#ClearOrderAmounts
+11/05/17 - 18:09:35 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:35 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:35 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:35 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:35 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:35 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:35 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:37 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:37 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:37 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:37 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:37 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:37 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:37 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:38 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:38 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:42 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:42 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:42 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:42 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:42 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:42 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:42 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:42 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:46 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:53 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:59 - ERROR - Object reference not set to an instance of an object.
+   at BuddhaBowls.OrderBreakdownVM.<>c__DisplayClass25_0.<UpdateItem>b__0(BreakdownCategoryItem x)
+   at System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.OrderBreakdownVM.UpdateItem(VendorInventoryItem item)
+   at BuddhaBowls.NewOrderVM.RowEdited(VendorInventoryItem item)
+   at BuddhaBowls.UserControls.NewOrder.OrderList_RowEditEnding(Object sender, DataGridRowEditEndingEventArgs e)
+   at System.Windows.Controls.DataGrid.OnRowEditEnding(DataGridRowEditEndingEventArgs e)
+   at System.Windows.Controls.DataGrid.OnExecutedCommitEdit(ExecutedRoutedEventArgs e)
+   at System.Windows.Controls.DataGrid.OnExecutedCommitEdit(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandBinding.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandManager.ExecuteCommandBinding(Object sender, ExecutedRoutedEventArgs e, CommandBinding commandBinding)
+   at System.Windows.Input.CommandManager.FindCommandBinding(Object sender, RoutedEventArgs e, ICommand command, Boolean execute)
+   at System.Windows.Input.CommandManager.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.UIElement.OnExecutedThunk(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.ExecutedRoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object target)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.RoutedCommand.ExecuteImpl(Object parameter, IInputElement target, Boolean userInitiated)
+   at System.Windows.Input.RoutedCommand.Execute(Object parameter, IInputElement target)
+   at System.Windows.Controls.DataGrid.EndEdit(RoutedCommand command, DataGridCell cellContainer, DataGridEditingUnit editingUnit, Boolean exitEditMode)
+   at System.Windows.Controls.DataGrid.OnCurrentCellChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.DependencyObject.SetCurrentValueInternal(DependencyProperty dp, Object value)
+   at System.Windows.Controls.DataGrid.set_CurrentCellContainer(DataGridCell value)
+   at System.Windows.Controls.DataGrid.set_FocusedCell(DataGridCell value)
+   at System.Windows.Controls.DataGridCell.OnAnyLostFocus(Object sender, RoutedEventArgs e)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.TextBoxBase.OnLostFocus(RoutedEventArgs e)
+   at System.Windows.UIElement.IsFocused_Changed(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.Controls.TextBox.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.ClearValueCommon(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata)
+   at System.Windows.DependencyObject.ClearValue(DependencyPropertyKey key)
+   at System.Windows.Input.FocusManager.OnFocusedElementChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.Input.FocusManager.SetFocusedElement(DependencyObject element, IInputElement value)
+   at System.Windows.Input.KeyboardNavigation.UpdateFocusedElement(DependencyObject focusTarget)
+   at System.Windows.FrameworkElement.OnGotKeyboardFocus(Object sender, KeyboardFocusChangedEventArgs e)
+   at System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.KeyboardDevice.ChangeFocus(DependencyObject focus, Int32 timestamp)
+   at System.Windows.Input.KeyboardDevice.TryChangeFocus(DependencyObject newFocus, IKeyboardInputProvider keyboardInputProvider, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(DependencyObject focus, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(IInputElement element)
+   at System.Windows.UIElement.Focus()
+   at System.Windows.Controls.Primitives.ButtonBase.OnMouseLeftButtonDown(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/05/17 - 18:09:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:09:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:49 - INFO - Application starting
+11/05/17 - 18:10:49 - INFO - Loading models
+11/05/17 - 18:10:50 - INFO - Models loaded
+11/05/17 - 18:10:53 - INFO - Upating BreadOrder: 170
+11/05/17 - 18:10:53 - INFO - Upating BreadOrder: 169
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 555
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 556
+11/05/17 - 18:10:54 - INFO - Upating BreadOrder: 171
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 557
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 558
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 559
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 560
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 561
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 562
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 563
+11/05/17 - 18:10:54 - INFO - Upating BreadOrder: 172
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 564
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 565
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 566
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 567
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 568
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 569
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 570
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 571
+11/05/17 - 18:10:54 - INFO - Destroying DailySale: 572
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 555
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 556
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 557
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 558
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 559
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 560
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 561
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 562
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 563
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 564
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 565
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 566
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 567
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 568
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 569
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 570
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 571
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 572
+11/05/17 - 18:10:54 - INFO - Inserted DailySale: 573
+11/05/17 - 18:10:54 - INFO - Upating ExpenseItem: 0
+11/05/17 - 18:10:54 - INFO - Upating ExpenseItem: 1
+11/05/17 - 18:10:54 - INFO - Upating ExpenseItem: 2
+11/05/17 - 18:10:54 - INFO - Upating ExpenseItem: 3
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 4
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 5
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 6
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 7
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 8
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 9
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 10
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 11
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 12
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 13
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 14
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 15
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 16
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 17
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 18
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 19
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 20
+11/05/17 - 18:10:55 - INFO - Upating ExpenseItem: 21
+11/05/17 - 18:10:57 - INFO - Executing OrderTabVM#StartNewOrder
+11/05/17 - 18:10:57 - INFO - Adding temp tab: NewOrderVM
+11/05/17 - 18:10:57 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:57 - INFO - Upating BreadOrder: 173
+11/05/17 - 18:10:57 - INFO - Upating BreadOrder: 175
+11/05/17 - 18:10:59 - INFO - Upating BreadOrder: 174
+11/05/17 - 18:10:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:10:59 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:01 - INFO - Executing NewOrderVM#ClearOrderAmounts
+11/05/17 - 18:11:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:02 - INFO - Changed to tab: New Order
+11/05/17 - 18:11:04 - INFO - Changed to tab: Vendors
+11/05/17 - 18:11:04 - ERROR - Object reference not set to an instance of an object.
+   at BuddhaBowls.BreakdownCategoryItem..ctor(IEnumerable`1 items)
+   at BuddhaBowls.OrderBreakdownVM.UpdateItem(VendorInventoryItem item)
+   at BuddhaBowls.NewOrderVM.RowEdited(VendorInventoryItem item)
+   at BuddhaBowls.UserControls.NewOrder.OrderList_RowEditEnding(Object sender, DataGridRowEditEndingEventArgs e)
+   at System.Windows.Controls.DataGrid.OnRowEditEnding(DataGridRowEditEndingEventArgs e)
+   at System.Windows.Controls.DataGrid.OnExecutedCommitEdit(ExecutedRoutedEventArgs e)
+   at System.Windows.Controls.DataGrid.OnExecutedCommitEdit(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandBinding.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.CommandManager.ExecuteCommandBinding(Object sender, ExecutedRoutedEventArgs e, CommandBinding commandBinding)
+   at System.Windows.Input.CommandManager.FindCommandBinding(Object sender, RoutedEventArgs e, ICommand command, Boolean execute)
+   at System.Windows.Input.CommandManager.OnExecuted(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.UIElement.OnExecutedThunk(Object sender, ExecutedRoutedEventArgs e)
+   at System.Windows.Input.ExecutedRoutedEventArgs.InvokeEventHandler(Delegate genericHandler, Object target)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.RoutedCommand.ExecuteImpl(Object parameter, IInputElement target, Boolean userInitiated)
+   at System.Windows.Input.RoutedCommand.Execute(Object parameter, IInputElement target)
+   at System.Windows.Controls.DataGrid.EndEdit(RoutedCommand command, DataGridCell cellContainer, DataGridEditingUnit editingUnit, Boolean exitEditMode)
+   at System.Windows.Controls.DataGrid.OnCurrentCellChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.DependencyObject.SetCurrentValueInternal(DependencyProperty dp, Object value)
+   at System.Windows.Controls.DataGrid.set_CurrentCellContainer(DataGridCell value)
+   at System.Windows.Controls.DataGrid.set_FocusedCell(DataGridCell value)
+   at System.Windows.Controls.DataGridCell.OnAnyLostFocus(Object sender, RoutedEventArgs e)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs e)
+   at System.Windows.Controls.Primitives.TextBoxBase.OnLostFocus(RoutedEventArgs e)
+   at System.Windows.UIElement.IsFocused_Changed(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.Controls.TextBox.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.ClearValueCommon(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata)
+   at System.Windows.DependencyObject.ClearValue(DependencyPropertyKey key)
+   at System.Windows.Input.FocusManager.OnFocusedElementChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.FrameworkElement.OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+   at System.Windows.DependencyObject.NotifyPropertyChange(DependencyPropertyChangedEventArgs args)
+   at System.Windows.DependencyObject.UpdateEffectiveValue(EntryIndex entryIndex, DependencyProperty dp, PropertyMetadata metadata, EffectiveValueEntry oldEntry, EffectiveValueEntry& newEntry, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType)
+   at System.Windows.DependencyObject.SetValueCommon(DependencyProperty dp, Object value, PropertyMetadata metadata, Boolean coerceWithDeferredReference, Boolean coerceWithCurrentValue, OperationType operationType, Boolean isInternal)
+   at System.Windows.Input.FocusManager.SetFocusedElement(DependencyObject element, IInputElement value)
+   at System.Windows.Input.KeyboardNavigation.UpdateFocusedElement(DependencyObject focusTarget)
+   at System.Windows.FrameworkElement.OnGotKeyboardFocus(Object sender, KeyboardFocusChangedEventArgs e)
+   at System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.KeyboardDevice.ChangeFocus(DependencyObject focus, Int32 timestamp)
+   at System.Windows.Input.KeyboardDevice.TryChangeFocus(DependencyObject newFocus, IKeyboardInputProvider keyboardInputProvider, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(DependencyObject focus, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(IInputElement element)
+   at System.Windows.UIElement.Focus()
+   at System.Windows.Input.KeyboardNavigation.Navigate(DependencyObject currentElement, TraversalRequest request, ModifierKeys modifierKeys, DependencyObject firstElement)
+   at System.Windows.FrameworkElement.MoveFocus(TraversalRequest request)
+   at System.Windows.Controls.TabItem.OnPreviewGotKeyboardFocus(KeyboardFocusChangedEventArgs e)
+   at System.Windows.UIElement.OnPreviewGotKeyboardFocusThunk(Object sender, KeyboardFocusChangedEventArgs e)
+   at System.Windows.Input.KeyboardFocusChangedEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.KeyboardDevice.TryChangeFocus(DependencyObject newFocus, IKeyboardInputProvider keyboardInputProvider, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(DependencyObject focus, Boolean askOld, Boolean askNew, Boolean forceToNullIfFailed)
+   at System.Windows.Input.KeyboardDevice.Focus(IInputElement element)
+   at System.Windows.UIElement.Focus()
+   at System.Windows.Controls.TabItem.SetFocus()
+   at System.Windows.Controls.TabItem.OnMouseLeftButtonDown(MouseButtonEventArgs e)
+   at System.Windows.UIElement.OnMouseLeftButtonDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.ReRaiseEventAs(DependencyObject sender, RoutedEventArgs args, RoutedEvent newEvent)
+   at System.Windows.UIElement.OnMouseDownThunk(Object sender, MouseButtonEventArgs e)
+   at System.Windows.Input.MouseButtonEventArgs.InvokeEventHandler(Delegate genericHandler, Object genericTarget)
+   at System.Windows.RoutedEventArgs.InvokeHandler(Delegate handler, Object target)
+   at System.Windows.RoutedEventHandlerInfo.InvokeHandler(Object target, RoutedEventArgs routedEventArgs)
+   at System.Windows.EventRoute.InvokeHandlersImpl(Object source, RoutedEventArgs args, Boolean reRaised)
+   at System.Windows.UIElement.RaiseEventImpl(DependencyObject sender, RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseTrustedEvent(RoutedEventArgs args)
+   at System.Windows.UIElement.RaiseEvent(RoutedEventArgs args, Boolean trusted)
+   at System.Windows.Input.InputManager.ProcessStagingArea()
+   at System.Windows.Input.InputManager.ProcessInput(InputEventArgs input)
+   at System.Windows.Input.InputProviderSite.ReportInput(InputReport inputReport)
+   at System.Windows.Interop.HwndMouseInputProvider.ReportInput(IntPtr hwnd, InputMode mode, Int32 timestamp, RawMouseActions actions, Int32 x, Int32 y, Int32 wheel)
+   at System.Windows.Interop.HwndMouseInputProvider.FilterMessage(IntPtr hwnd, WindowMessage msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at System.Windows.Interop.HwndSource.InputFilterMessage(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   at MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+11/05/17 - 18:11:06 - INFO - Application starting
+11/05/17 - 18:11:06 - INFO - Loading models
+11/05/17 - 18:11:06 - INFO - Models loaded
+11/05/17 - 18:11:09 - INFO - Upating BreadOrder: 169
+11/05/17 - 18:11:10 - INFO - Upating BreadOrder: 172
+11/05/17 - 18:11:10 - INFO - Upating BreadOrder: 170
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 555
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 556
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 557
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 558
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 559
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 560
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 561
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 562
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 563
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 564
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 565
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 566
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 567
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 568
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 569
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 570
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 571
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 572
+11/05/17 - 18:11:11 - INFO - Destroying DailySale: 573
+11/05/17 - 18:11:11 - INFO - Inserted DailySale: 555
+11/05/17 - 18:11:11 - INFO - Inserted DailySale: 556
+11/05/17 - 18:11:11 - INFO - Inserted DailySale: 557
+11/05/17 - 18:11:11 - INFO - Inserted DailySale: 558
+11/05/17 - 18:11:11 - INFO - Inserted DailySale: 559
+11/05/17 - 18:11:11 - INFO - Inserted DailySale: 560
+11/05/17 - 18:11:11 - INFO - Inserted DailySale: 561
+11/05/17 - 18:11:11 - INFO - Inserted DailySale: 562
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 563
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 564
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 565
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 566
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 567
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 568
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 569
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 570
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 571
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 572
+11/05/17 - 18:11:12 - INFO - Inserted DailySale: 573
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 0
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 1
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 2
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 3
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 4
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 5
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 6
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 7
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 8
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 9
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 10
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 11
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 12
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 13
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 14
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 15
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 16
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 17
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 18
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 19
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 20
+11/05/17 - 18:11:12 - INFO - Upating ExpenseItem: 21
+11/05/17 - 18:11:12 - INFO - Upating BreadOrder: 173
+11/05/17 - 18:11:13 - INFO - Upating BreadOrder: 175
+11/05/17 - 18:11:14 - INFO - Upating BreadOrder: 174
+11/05/17 - 18:11:28 - INFO - Application closing
+11/05/17 - 18:11:34 - INFO - Application starting
+11/05/17 - 18:11:34 - INFO - Loading models
+11/05/17 - 18:11:35 - INFO - Models loaded
+11/05/17 - 18:11:37 - INFO - Upating BreadOrder: 170
+11/05/17 - 18:11:37 - INFO - Upating BreadOrder: 169
+11/05/17 - 18:11:39 - INFO - Upating BreadOrder: 171
+11/05/17 - 18:11:39 - INFO - Upating BreadOrder: 172
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 555
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 556
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 557
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 558
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 559
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 560
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 561
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 562
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 563
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 564
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 565
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 566
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 567
+11/05/17 - 18:11:42 - INFO - Upating BreadOrder: 175
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 568
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 569
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 570
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 571
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 572
+11/05/17 - 18:11:42 - INFO - Destroying DailySale: 573
+11/05/17 - 18:11:42 - INFO - Upating BreadOrder: 173
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 555
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 556
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 557
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 558
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 559
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 560
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 561
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 562
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 563
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 564
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 565
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 566
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 567
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 568
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 569
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 570
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 571
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 572
+11/05/17 - 18:11:42 - INFO - Inserted DailySale: 573
+11/05/17 - 18:11:42 - INFO - Upating ExpenseItem: 0
+11/05/17 - 18:11:42 - INFO - Upating ExpenseItem: 1
+11/05/17 - 18:11:42 - INFO - Upating ExpenseItem: 2
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 3
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 4
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 5
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 6
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 7
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 8
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 9
+11/05/17 - 18:11:43 - INFO - Upating BreadOrder: 174
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 10
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 11
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 12
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 13
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 14
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 15
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 16
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 17
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 18
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 19
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 20
+11/05/17 - 18:11:43 - INFO - Upating ExpenseItem: 21
+11/05/17 - 18:11:43 - INFO - Changed to tab: Bread
+11/05/17 - 18:12:15 - INFO - Changed to tab: Orders
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:21 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:22 - INFO - Changed to tab: Inventory
+11/05/17 - 18:12:22 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:23 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:24 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:24 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:24 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:24 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:25 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:25 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:25 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:25 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:25 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:25 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:25 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:25 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:26 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:31 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:31 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:32 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:33 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:34 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:37 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:38 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:38 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:38 - INFO - Changed to tab: Vendors
+11/05/17 - 18:12:39 - INFO - Changed to tab: Orders
+11/05/17 - 18:12:41 - INFO - Executing OrderTabVM#StartNewOrder
+11/05/17 - 18:12:41 - INFO - Adding temp tab: NewOrderVM
+11/05/17 - 18:12:41 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:43 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:43 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:43 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:43 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:43 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:43 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:43 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:43 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:45 - INFO - Executing NewOrderVM#ClearOrderAmounts
+11/05/17 - 18:12:45 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:45 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:45 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:45 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:45 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:45 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:45 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:47 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:48 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:48 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:48 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:49 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:49 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:49 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:49 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:49 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:51 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:12:55 - INFO - Changed to tab: New Order
+11/05/17 - 18:13:06 - INFO - Executing NewOrderVM#SaveOrder
+11/05/17 - 18:13:06 - INFO - Removing temp tab
+11/05/17 - 18:13:06 - INFO - Changed to tab: Settings
+11/05/17 - 18:13:06 - INFO - Changed to tab: Orders
+11/05/17 - 18:13:06 - INFO - Inserted PurchaseOrder: 137
+11/05/17 - 18:13:06 - INFO - Upating Vendor: 6
+11/05/17 - 18:13:10 - INFO - Changed to tab: Orders
+11/05/17 - 18:13:10 - INFO - Executing OrderTabVM#ViewOpenOrder
+11/05/17 - 18:13:10 - INFO - Adding temp tab: ViewOrderVM
+11/05/17 - 18:13:10 - INFO - Changed to tab: PO#: 137
+11/05/17 - 18:13:14 - INFO - Executing ViewOrderVM#CancelView
+11/05/17 - 18:13:14 - INFO - Removing temp tab
+11/05/17 - 18:13:14 - INFO - Changed to tab: Settings
+11/05/17 - 18:13:14 - INFO - Changed to tab: Orders
+11/05/17 - 18:13:25 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+11/05/17 - 18:13:25 - INFO - Upating PurchaseOrder: 137
+11/05/17 - 18:13:25 - INFO - Upating Vendor: 6
+11/05/17 - 18:13:25 - INFO - Upating Vendor: 0
+11/05/17 - 18:13:25 - INFO - Upating Vendor: 6
+11/05/17 - 18:13:25 - INFO - Upating InventoryItem: 9
+11/05/17 - 18:13:25 - INFO - Upating Vendor: 6
+11/05/17 - 18:13:25 - INFO - Upating Vendor: 6
+11/05/17 - 18:13:25 - INFO - Upating InventoryItem: 104
+11/05/17 - 18:13:25 - INFO - Changed to tab: Orders
+11/05/17 - 18:13:27 - INFO - Changed to tab: Orders
+11/05/17 - 18:24:12 - INFO - Changed to tab: Orders
+11/05/17 - 18:24:12 - INFO - Changed to tab: Orders
+11/05/17 - 18:24:13 - INFO - Executing OrderTabVM#ViewOpenOrder
+11/05/17 - 18:24:13 - INFO - Adding temp tab: ViewOrderVM
+11/05/17 - 18:24:13 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:24:20 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:24:26 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:24:43 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:24:44 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:24:48 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:24:48 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:24:49 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:24:59 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:19 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:20 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:34 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:38 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:38 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:40 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:40 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:40 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:41 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:41 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:41 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:41 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:25:58 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:00 - INFO - Changed to tab: Vendors
+11/05/17 - 18:26:02 - INFO - Executing VendorTabVM#EditVendor
+11/05/17 - 18:26:02 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Executing WizardVM#NextPage
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:06 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:07 - INFO - Executing NewVendorWizardVM#FinishWizard
+11/05/17 - 18:26:07 - INFO - Changed to tab: Vendor Items
+11/05/17 - 18:26:07 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:07 - INFO - Changed to tab: PO#: 133
+11/05/17 - 18:26:10 - INFO - Executing MainViewModel#RefreshHelper
+11/05/17 - 18:26:10 - INFO - Loading models
+11/05/17 - 18:26:10 - INFO - Models loaded
+11/05/17 - 18:26:12 - INFO - Executing ViewOrderVM#SaveEdits
+11/05/17 - 18:26:12 - INFO - Removing temp tab
+11/05/17 - 18:26:12 - INFO - Changed to tab: Settings
+11/05/17 - 18:26:13 - INFO - Changed to tab: Orders
+11/05/17 - 18:26:14 - INFO - Changed to tab: Orders
+11/05/17 - 18:26:16 - INFO - Changed to tab: Orders
+11/05/17 - 18:26:33 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+11/05/17 - 18:26:33 - INFO - Upating PurchaseOrder: 133
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 0
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:33 - INFO - Upating InventoryItem: 1
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 6
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 2
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 0
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:33 - INFO - Upating InventoryItem: 6
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 1
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 0
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:33 - INFO - Upating InventoryItem: 54
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 1
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 0
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:33 - INFO - Upating InventoryItem: 59
+11/05/17 - 18:26:33 - INFO - Upating Vendor: 8
+11/05/17 - 18:26:34 - INFO - Upating Vendor: 2
+11/05/17 - 18:26:34 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:34 - INFO - Upating Vendor: 0
+11/05/17 - 18:26:34 - INFO - Upating Vendor: 9
+11/05/17 - 18:26:34 - INFO - Upating InventoryItem: 72
+11/05/17 - 18:26:34 - INFO - Changed to tab: Orders
+11/05/17 - 18:26:35 - INFO - Changed to tab: Orders
+11/05/17 - 18:26:39 - INFO - Upating Vendor: 6
+11/05/17 - 18:26:39 - INFO - Upating Vendor: 0
+11/05/17 - 18:26:39 - INFO - Upating Vendor: 6
+11/05/17 - 18:26:39 - INFO - Upating InventoryItem: 9
+11/05/17 - 18:26:39 - INFO - Upating Vendor: 6
+11/05/17 - 18:26:39 - INFO - Upating Vendor: 6
+11/05/17 - 18:26:39 - INFO - Upating InventoryItem: 104
+11/05/17 - 18:26:39 - INFO - Upating PurchaseOrder: 133
+11/05/17 - 18:26:39 - INFO - Changed to tab: Orders
+11/05/17 - 18:26:42 - INFO - Upating PurchaseOrder: 134
+11/05/17 - 18:26:45 - INFO - Upating PurchaseOrder: 134
+11/05/17 - 18:26:46 - INFO - Changed to tab: Orders
+11/05/17 - 18:26:48 - INFO - Upating PurchaseOrder: 133
+11/05/17 - 18:33:58 - INFO - Executing OrderTabVM#StartNewOrder
+11/05/17 - 18:33:58 - INFO - Adding temp tab: NewOrderVM
+11/05/17 - 18:33:58 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:00 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Executing NewOrderVM#ClearOrderAmounts
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:01 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Executing NewOrderVM#ClearOrderAmounts
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:11 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:12 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:14 - INFO - Changed to tab: New Order
+11/05/17 - 18:34:17 - INFO - Executing NewOrderVM#SaveOrder
+11/05/17 - 18:34:17 - INFO - Removing temp tab
+11/05/17 - 18:34:17 - INFO - Changed to tab: Settings
+11/05/17 - 18:34:17 - INFO - Changed to tab: Orders
+11/05/17 - 18:34:17 - INFO - Inserted PurchaseOrder: 138
+11/05/17 - 18:34:17 - INFO - Upating Vendor: 9
+11/05/17 - 18:34:19 - INFO - Changed to tab: Orders
+11/05/17 - 18:34:19 - INFO - Changed to tab: Orders
+11/05/17 - 18:34:21 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+11/05/17 - 18:34:21 - INFO - Upating PurchaseOrder: 138
+11/05/17 - 18:34:21 - INFO - Upating Vendor: 6
+11/05/17 - 18:34:21 - INFO - Upating Vendor: 9
+11/05/17 - 18:34:21 - INFO - Upating Vendor: 0
+11/05/17 - 18:34:21 - INFO - Upating Vendor: 9
+11/05/17 - 18:34:21 - INFO - Upating InventoryItem: 4
+11/05/17 - 18:34:21 - INFO - Changed to tab: Orders
+11/05/17 - 18:34:23 - INFO - Changed to tab: Orders
+11/05/17 - 18:34:24 - INFO - Executing OrderTabVM#ViewReceivedOrder
+11/05/17 - 18:34:24 - INFO - Adding temp tab: ViewOrderVM
+11/05/17 - 18:34:24 - INFO - Changed to tab: PO#: 138
+11/05/17 - 18:38:18 - INFO - Changed to tab: Orders
+11/05/17 - 18:38:58 - INFO - Changed to tab: Orders
+11/05/17 - 18:38:58 - INFO - Changed to tab: Orders
+11/05/17 - 18:39:00 - INFO - Executing OrderTabVM#ViewOpenOrder
+11/05/17 - 18:39:00 - INFO - Changed to tab: PO#: 132
+11/05/17 - 18:39:20 - INFO - Changed to tab: PO#: 132
+11/05/17 - 18:39:21 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:21 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:24 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:24 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:25 - INFO - Changed to tab: PO#: 132
+11/05/17 - 18:39:25 - INFO - Changed to tab: PO#: 132
+11/05/17 - 18:39:26 - INFO - Changed to tab: PO#: 132
+11/05/17 - 18:39:26 - INFO - Changed to tab: PO#: 132
+11/05/17 - 18:39:39 - INFO - Executing ViewOrderVM#SaveEdits
+11/05/17 - 18:39:39 - INFO - Changed to tab: PO#: 138
+11/05/17 - 18:39:42 - INFO - Executing ViewOrderVM#SaveEdits
+11/05/17 - 18:39:42 - INFO - Removing temp tab
+11/05/17 - 18:39:42 - INFO - Changed to tab: Settings
+11/05/17 - 18:39:43 - INFO - Changed to tab: Orders
+11/05/17 - 18:39:47 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+11/05/17 - 18:39:47 - INFO - Upating PurchaseOrder: 132
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 8
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 2
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating InventoryItem: 78
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating InventoryItem: 81
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating InventoryItem: 89
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 2
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating InventoryItem: 110
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:47 - INFO - Upating InventoryItem: 120
+11/05/17 - 18:39:48 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:48 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:48 - INFO - Upating InventoryItem: 122
+11/05/17 - 18:39:48 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:48 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:48 - INFO - Upating InventoryItem: 125
+11/05/17 - 18:39:48 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:48 - INFO - Upating Vendor: 3
+11/05/17 - 18:39:48 - INFO - Upating InventoryItem: 126
+11/05/17 - 18:39:48 - INFO - Changed to tab: Orders
+11/05/17 - 18:39:51 - INFO - Changed to tab: Orders
+11/05/17 - 18:39:57 - INFO - Upating Vendor: 6
+11/05/17 - 18:39:57 - INFO - Upating Vendor: 9
+11/05/17 - 18:39:57 - INFO - Upating Vendor: 0
+11/05/17 - 18:39:57 - INFO - Upating Vendor: 9
+11/05/17 - 18:39:57 - INFO - Upating InventoryItem: 4
+11/05/17 - 18:39:57 - INFO - Upating PurchaseOrder: 132
+11/05/17 - 18:40:23 - INFO - Changed to tab: Bread
+11/05/17 - 18:40:32 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 0
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 1
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 2
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 3
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 4
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 5
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 6
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 7
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 8
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 9
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 10
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 11
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 12
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 13
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:33 - INFO - Upating Recipe: 14
+11/05/17 - 18:40:33 - INFO - Changed to tab: Recipes
+11/05/17 - 18:40:34 - INFO - Changed to tab: Vendors
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:35 - INFO - Changed to tab: Inventory
+11/05/17 - 18:40:36 - INFO - Changed to tab: Orders
+11/05/17 - 18:40:38 - INFO - Changed to tab: Reports
+11/05/17 - 18:40:39 - INFO - Executing ChangeableTabVM#SwitchPage
+11/05/17 - 18:40:40 - INFO - Changed to tab: Reports
+11/05/17 - 18:40:40 - INFO - Changed to tab: Reports
+11/05/17 - 18:43:51 - INFO - Changed to tab: Bread
+11/05/17 - 18:44:08 - INFO - Changed to tab: Recipes
+11/05/17 - 19:12:16 - INFO - Changed to tab: Orders
+11/05/17 - 19:13:20 - INFO - Changed to tab: Bread
+11/05/17 - 19:13:21 - INFO - Changed to tab: Orders
+11/05/17 - 19:13:45 - INFO - Changed to tab: Inventory
+11/05/17 - 19:13:47 - INFO - Changed to tab: Orders
+11/05/17 - 19:13:52 - INFO - Changed to tab: Vendors
+11/05/17 - 19:13:54 - INFO - Changed to tab: Bread
+11/05/17 - 19:13:55 - INFO - Executing BreadGuideVM#UpdateSquare
+11/05/17 - 19:13:58 - INFO - Upating BreadOrder: 170
+11/05/17 - 19:13:58 - INFO - Upating BreadOrder: 169
+11/05/17 - 19:13:58 - INFO - Upating BreadOrder: 172
+11/05/17 - 19:13:59 - INFO - Upating BreadOrder: 171
+11/05/17 - 19:14:00 - INFO - Upating BreadOrder: 175
+11/05/17 - 19:14:00 - INFO - Upating BreadOrder: 173
+11/05/17 - 19:14:01 - INFO - Upating BreadOrder: 174
+11/05/17 - 19:31:59 - INFO - Executing BreadGuideVM#UpdateSquare
+11/05/17 - 19:32:01 - INFO - Upating BreadOrder: 170
+11/05/17 - 19:32:01 - INFO - Upating BreadOrder: 172
+11/05/17 - 19:32:02 - INFO - Upating BreadOrder: 169
+11/05/17 - 19:32:02 - INFO - Upating BreadOrder: 171
+11/05/17 - 19:32:04 - INFO - Upating BreadOrder: 174
+11/05/17 - 19:32:05 - INFO - Upating BreadOrder: 173
+11/05/17 - 19:32:05 - INFO - Upating BreadOrder: 175
+11/05/17 - 20:10:57 - INFO - Changed to tab: Inventory
+11/05/17 - 20:11:00 - INFO - Executing InventoryTabVM#GenerateInvList
+11/05/17 - 20:13:14 - INFO - Application closing

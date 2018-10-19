@@ -1,0 +1,24 @@
+Id,Name,LastPurchasedPrice,Conversion,PurchasedUnit,Category,Count,CountUnit,RecipeUnit,RecipeUnitConversion,Yield,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,70.89,6,CASE 30lb,Dairy,9,5lb BAG,OZ-wt,480,1,1,7/19/2017 12:00:00 AM,0
+1,Cheddar,46.89,4,CASE 20lb,Dairy,8,5lb BAG,OZ-wt,320,1,2,7/19/2017 12:00:00 AM,0
+14,Stewed Tomatoes,14.97,6,6# CANS,Grocery,7,CAN,EA,6,100,1,7/19/2017 12:00:00 AM,0
+18,Artichoke Hearts,55.37,6,6# CANS,Grocery,5,CAN,OZ-wt,324,10000,1,7/19/2017 12:00:00 AM,0
+20,BBQ Sauce,42.34,4,CS 39.5lbs,Grocery,4,JUG,OZ-wt,632,9800,1,7/19/2017 12:00:00 AM,0
+21,Macaroni,17.69,2,20lb CASE,Grocery,3,BAG,EA,320,241,2,7/19/2017 12:00:00 AM,0
+23,Roasted Bell Peppers,37.44,6,6# CANS,Grocery,6,CAN,OZ-wt,360,98,1,7/19/2017 12:00:00 AM,0
+25,Tomato Juice,15.79,12,12x48oz CANS,Grocery,22,CAN,EA,12,100,2,7/19/2017 12:00:00 AM,0
+36,Olive Oil,50.8,6,6 GAL,Grocery,9.5,JUG,OZ-fl,768,99,1,7/19/2017 12:00:00 AM,0
+49,Salt,5.9,1,EA,Herbs,0.9,Container,TBL,615,100,1,7/19/2017 12:00:00 AM,0
+54,Yellow Onions,15.43,1,50lb,Produce,0,BAG,OZ-wt,800,85,2,7/19/2017 12:00:00 AM,0
+56,Potatoes,11.59,1,50lb,Produce,0.25,1/2 CASE,OZ-wt,800,850000,1,7/19/2017 12:00:00 AM,0
+57,Spinach,15.79,4,4x2.5lb,Produce,4,BAG,OZ-wt,160,99,2,7/19/2017 12:00:00 AM,0
+58,Mixed Greens,6.24,1,3lb,Produce,1,BAG,OZ-wt,48,9800,2,7/19/2017 12:00:00 AM,0
+59,Mushrooms,18.99,1,10lb CASE,Produce,1,FLAT,OZ-wt,160,95,3,7/19/2017 12:00:00 AM,0
+60,Cucumbers,19.99,1,36 COUNT,Produce,1.25,CASE,OZ-wt,420,950000,1,7/19/2017 12:00:00 AM,0
+61,Tomatoes,12.75,1,25lb,Produce,0.5,CASE,OZ-wt,400,97,1,7/19/2017 12:00:00 AM,0
+64,Fresh Basil,8.99,1,1lb,Produce,1,BAG,OZ-wt,16,65,1,7/19/2017 12:00:00 AM,0
+66,Pineapple,16.99,6,6 COUNT,Produce,7,EACH,OZ-wt,44,100,1,7/19/2017 12:00:00 AM,0
+71,Garlic Peeled,17.95,1,5lbs,Produce,0,JAR,OZ-wt,114.29,98,1,7/19/2017 12:00:00 AM,0
+72,Chicken Breast,73.95,1,40lb CASE,Poultry,1,CASE,OZ-wt,640,85,2,7/19/2017 12:00:00 AM,0
+74,Italian Sausage,45.79,4,20lb CASE,Meats,7,BAG,OZ-wt,160,91,2,7/19/2017 12:00:00 AM,0
+75,Bacon Bits,52.99,2,10lb CASE,Meats,2,BAG,OZ-wt,160,100,2,7/19/2017 12:00:00 AM,0

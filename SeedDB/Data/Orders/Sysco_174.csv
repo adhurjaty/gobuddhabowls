@@ -1,0 +1,24 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,Dairy,CASE 30lb,4,5lb BAG,6,OZ-wt,80,1,54.49,2,1/25/2018 12:00:00 AM,0
+1,Cheddar,Dairy,CASE 20lb,5,5lb BAG,4,OZ-wt,80,1,42,3,1/25/2018 12:00:00 AM,0
+4,Butter,Dairy,CASE 30lb,0,1lb,30,OZ-wt,16,1,84.99,1,1/25/2018 12:00:00 AM,0
+11,Pesto,Dairy,2/22lb,1,BAG,2,OZ-wt,4,970000,106,2,1/25/2018 12:00:00 AM,0
+14,Stewed Tomatoes,Grocery,6# CANS,7,CAN,6,EA,6,100,15.47,1,1/25/2018 12:00:00 AM,0
+21,Macaroni,Grocery,20lb CASE,0,BAG,2,EA,160,2.41,17.82,5,1/25/2018 12:00:00 AM,0
+23,Roasted Bell Peppers,Grocery,6# CANS,0,CAN,6,OZ-wt,360,98,37.44,1,1/25/2018 12:00:00 AM,0
+24,Chopped Clams,Grocery,12x48oz CANS,13,CAN,12,EA,12,100,91,1,1/25/2018 12:00:00 AM,0
+54,Yellow Onions,Produce,20lbs,2,BAG,4,OZ-wt,800,85,16.95,5,1/25/2018 12:00:00 AM,0
+56,Potatoes,Produce,50lb,1.1,1/2 CASE,1,OZ-wt,800,850000,17.47,1,1/25/2018 12:00:00 AM,0
+57,Spinach,Produce,4x2.5lb,4,BAG,4,OZ-wt,160,99,16.5,3,1/25/2018 12:00:00 AM,0
+58,Mixed Greens,Produce,3lb,0,BAG,1,OZ-wt,48,9800,5.99,2,1/25/2018 12:00:00 AM,0
+59,Mushrooms,Produce,10lb CASE,0.3,FLAT,1,OZ-wt,160,95,16.9,4,1/25/2018 12:00:00 AM,0
+61,Tomatoes,Produce,25lb,0.4,CASE,1,OZ-wt,400,0.95,17.9,2,1/25/2018 12:00:00 AM,0
+64,Fresh Basil,Produce,1lb,0.6,BAG,1,OZ-wt,16,65,8.99,1,1/25/2018 12:00:00 AM,0
+66,Pineapple,Produce,6 COUNT,2,EACH,6,OZ-wt,44,100,16.99,1,1/25/2018 12:00:00 AM,0
+71,Garlic Peeled,Produce,5lbs,1,JAR,1,OZ-wt,114.29,98,16.99,1,1/25/2018 12:00:00 AM,0
+72,Chicken Breast,Poultry,40lb CASE,1.1,CASE,1,OZ-wt,640,85,41.98,5,1/25/2018 12:00:00 AM,0
+74,Italian Sausage,Meats,20lb CASE,10.5,BAG,4,OZ-wt,160,91,47.5,2,1/25/2018 12:00:00 AM,0
+75,Bacon Bits,Meats,10lb CASE,2,BAG,2,OZ-wt,80,1,53.49,2,1/25/2018 12:00:00 AM,0
+107,Dried Pinto Beans,Grocery,25lb,7,Quart,14.47,8,8,10000,28.69,1,1/25/2018 12:00:00 AM,0
+112,Dried Garbanzo Beans,Grocery,20lbs,0,QUART,11.58,LB,1.877,1000000,26.99,1,1/25/2018 12:00:00 AM,0
+131,Jalapenos Nacho Sliced,Grocery,EA,3,CAN,6,OZ-wt,1,,19.99,1,1/25/2018 12:00:00 AM,0

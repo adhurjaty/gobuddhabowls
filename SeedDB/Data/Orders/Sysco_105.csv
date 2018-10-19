@@ -1,0 +1,26 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+0,Mozzarella,1,72.8,Dairy,CASE 30lb,5,5lb BAG,6,OZ-wt,80,1,9/17/2017 12:00:00 AM,0
+1,Cheddar,2,47.33,Dairy,CASE 20lb,5,5lb BAG,4,OZ-wt,80,1,9/17/2017 12:00:00 AM,0
+2,Pepper Jack,1,48.83,Dairy,CASE 20lb,2,5lb BAG,4,OZ-wt,80,1,9/17/2017 12:00:00 AM,0
+4,Butter,1,91.85,Dairy,CASE 30lb,24,1lb,30,OZ-wt,16,1,9/17/2017 12:00:00 AM,0
+5,Sour Cream,1,13.65,Dairy,2 x 5lb,1.5,5lb BUCKET,2,OZ-wt,160,95,9/17/2017 12:00:00 AM,0
+8,Eggs,1,19.96,Dairy,15 DOZEN,5.2,TRAY,6,EA,180,95,9/17/2017 12:00:00 AM,0
+11,Pesto,1,106,Dairy,2/22lb,2,BAG,2,OZ-wt,4,970000,9/17/2017 12:00:00 AM,0
+19,Mayonnaise,1,24.95,Grocery,4 GAL,5,JUG,4,EA,4,10000,9/17/2017 12:00:00 AM,0
+21,Macaroni,3,17.72,Grocery,20lb CASE,3,BAG,2,EA,160,1,9/17/2017 12:00:00 AM,0
+25,Tomato Juice,1,15.79,Grocery,12x48oz CANS,20,CAN,12,EA,12,100,9/17/2017 12:00:00 AM,0
+36,Olive Oil,1,50.8,Grocery,6 GAL,2.6,JUG,6,OZ-fl,128,99,9/17/2017 12:00:00 AM,0
+49,Salt,1,5.9,Herbs,EA,0.6,Container,1,TBL,615,100,9/17/2017 12:00:00 AM,0
+54,Yellow Onions,3,13.79,Produce,50lb,0,BAG,1,OZ-wt,800,85,9/17/2017 12:00:00 AM,0
+56,Potatoes,1,20.8,Produce,50lb,1.5,1/2 CASE,1,OZ-wt,800,850000,9/17/2017 12:00:00 AM,0
+57,Spinach,2,15.79,Produce,4x2.5lb,4,BAG,4,OZ-wt,160,99,9/17/2017 12:00:00 AM,0
+58,Mixed Greens,1,5.99,Produce,3lb,1,BAG,1,OZ-wt,48,9800,9/17/2017 12:00:00 AM,0
+59,Mushrooms,3,18.95,Produce,10lb CASE,1.5,FLAT,1,OZ-wt,160,95,9/17/2017 12:00:00 AM,0
+60,Cucumbers,1,21.8,Produce,36 COUNT,0.5,CASE,1,OZ-wt,420,950000,9/17/2017 12:00:00 AM,0
+61,Tomatoes,1,13.75,Produce,25lb,1,CASE,1,OZ-wt,400,97,9/17/2017 12:00:00 AM,0
+66,Pineapple,1,16.99,Produce,6 COUNT,2,EACH,6,OZ-wt,44,100,9/17/2017 12:00:00 AM,0
+71,Garlic Peeled,1,17.99,Produce,5lbs,0,JAR,1,OZ-wt,114.29,98,9/17/2017 12:00:00 AM,0
+72,Chicken Breast,2,64.95,Poultry,40lb CASE,1,CASE,1,OZ-wt,640,85,9/17/2017 12:00:00 AM,0
+74,Italian Sausage,1,47.95,Meats,20lb CASE,11,BAG,4,OZ-wt,160,91,9/17/2017 12:00:00 AM,0
+75,Bacon Bits,1,53.99,Meats,10lb CASE,3,BAG,2,OZ-wt,160,100,9/17/2017 12:00:00 AM,0
+112,Dried Garbanzo Beans,1,26.99,Grocery,25lb,21.32,QUART,26.635,LB,1.877,1000000,9/17/2017 12:00:00 AM,0

@@ -1,0 +1,25 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,Dairy,CASE 30lb,3,5lb BAG,6,OZ-wt,80,1,59.379,2,12/6/2017 12:00:00 AM,0
+1,Cheddar,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,80,1,41.93,4,12/6/2017 12:00:00 AM,0
+2,Pepper Jack,Dairy,CASE 20lb,3,5lb BAG,4,OZ-wt,80,1,47.79,1,12/6/2017 12:00:00 AM,0
+8,Eggs,Dairy,15 DOZEN,6,TRAY,6,EA,180,95,16.98,1,12/6/2017 12:00:00 AM,0
+14,Stewed Tomatoes,Grocery,6# CANS,5,CAN,6,EA,6,100,15.47,1,12/6/2017 12:00:00 AM,0
+19,Mayonnaise,Grocery,4 GAL,4,JUG,4,EA,4,10000,25.75,1,12/6/2017 12:00:00 AM,0
+20,BBQ Sauce,Grocery,CS 39.5lbs,3,JUG,4,OZ-wt,632,9800,45.99,1,12/6/2017 12:00:00 AM,0
+21,Macaroni,Grocery,20lb CASE,3,BAG,2,EA,160,2.41,17.72,2,12/6/2017 12:00:00 AM,0
+23,Roasted Bell Peppers,Grocery,6# CANS,28,CAN,6,OZ-wt,360,98,37.44,1,12/6/2017 12:00:00 AM,0
+25,Tomato Juice,Grocery,12x48oz CANS,8,CAN,12,EA,12,100,15.79,2,12/6/2017 12:00:00 AM,0
+36,Olive Oil,Grocery,6 GAL,5.25,JUG,6,OZ-fl,128,99,50.8,1,12/6/2017 12:00:00 AM,0
+54,Yellow Onions,Produce,20lbs,8,BAG,4,OZ-wt,800,85,16.95,6,12/6/2017 12:00:00 AM,0
+55,Red Onions,Produce,25lb,0.75,BAG,1,OZ-wt,400,8500,12.99,1,12/6/2017 12:00:00 AM,0
+57,Spinach,Produce,4x2.5lb,0,BAG,4,OZ-wt,160,99,15.98,2,12/6/2017 12:00:00 AM,0
+58,Mixed Greens,Produce,3lb,0,BAG,1,OZ-wt,48,9800,5.99,2,12/6/2017 12:00:00 AM,0
+59,Mushrooms,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,95,16.9,5,12/6/2017 12:00:00 AM,0
+61,Tomatoes,Produce,25lb,1,CASE,1,OZ-wt,400,0.95,17.9,1,12/6/2017 12:00:00 AM,0
+64,Fresh Basil,Produce,1lb,0.25,BAG,1,OZ-wt,16,65,8.99,1,12/6/2017 12:00:00 AM,0
+66,Pineapple,Produce,6 COUNT,0,EACH,6,OZ-wt,44,100,16.99,1,12/6/2017 12:00:00 AM,0
+71,Garlic Peeled,Produce,5lbs,1,JAR,1,OZ-wt,114.29,98,18.63,1,12/6/2017 12:00:00 AM,0
+72,Chicken Breast,Poultry,40lb CASE,0,CASE,1,OZ-wt,640,85,43.89,4,12/6/2017 12:00:00 AM,0
+74,Italian Sausage,Meats,20lb CASE,4,BAG,4,OZ-wt,160,91,47.95,2,12/6/2017 12:00:00 AM,0
+75,Bacon Bits,Meats,10lb CASE,2,BAG,2,OZ-wt,80,1,53.49,2,12/6/2017 12:00:00 AM,0
+131,Jalapenos Nacho Sliced,Grocery,EA,3,CAN,6,OZ-wt,1,,19.99,1,12/6/2017 12:00:00 AM,0

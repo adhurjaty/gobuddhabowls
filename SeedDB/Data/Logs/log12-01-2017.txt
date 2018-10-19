@@ -1,0 +1,2640 @@
+12/01/17 - 11:09:14 - INFO - Application starting
+12/01/17 - 11:09:14 - INFO - Loading models
+12/01/17 - 11:09:15 - INFO - Models loaded
+12/01/17 - 11:09:22 - INFO - Upating BreadOrder: 211
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 617
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 618
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 619
+12/01/17 - 11:09:23 - INFO - Upating BreadOrder: 215
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 620
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 621
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 622
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 623
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 624
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 625
+12/01/17 - 11:09:23 - INFO - Destroying DailySale: 626
+12/01/17 - 11:09:23 - INFO - Inserted DailySale: 617
+12/01/17 - 11:09:23 - INFO - Inserted DailySale: 618
+12/01/17 - 11:09:23 - INFO - Inserted DailySale: 619
+12/01/17 - 11:09:23 - INFO - Inserted DailySale: 620
+12/01/17 - 11:09:23 - INFO - Inserted DailySale: 621
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 622
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 623
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 624
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 625
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 626
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 627
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 628
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 629
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 630
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 631
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 632
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 633
+12/01/17 - 11:09:24 - INFO - Upating BreadOrder: 212
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 634
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 635
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 636
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 637
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 638
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 639
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 640
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 641
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 642
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 643
+12/01/17 - 11:09:24 - INFO - Upating BreadOrder: 213
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 644
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 645
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 646
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 647
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 648
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 649
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 650
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 651
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 652
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 653
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 654
+12/01/17 - 11:09:24 - INFO - Upating BreadOrder: 214
+12/01/17 - 11:09:24 - INFO - Inserted DailySale: 655
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 656
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 657
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 658
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 659
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 660
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 661
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 662
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 663
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 664
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 665
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 666
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 667
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 668
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 669
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 670
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 671
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 672
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 673
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 674
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 675
+12/01/17 - 11:09:25 - INFO - Inserted DailySale: 676
+12/01/17 - 11:09:25 - INFO - Upating ExpenseItem: 273
+12/01/17 - 11:09:25 - INFO - Upating ExpenseItem: 274
+12/01/17 - 11:09:25 - INFO - Upating ExpenseItem: 275
+12/01/17 - 11:09:25 - INFO - Upating ExpenseItem: 276
+12/01/17 - 11:09:25 - INFO - Upating ExpenseItem: 277
+12/01/17 - 11:09:25 - INFO - Upating ExpenseItem: 278
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 291
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 292
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 293
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 294
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 295
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 296
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 297
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 298
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 299
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 300
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 301
+12/01/17 - 11:09:25 - INFO - Inserted ExpenseItem: 302
+12/01/17 - 12:15:04 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:06 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:07 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:09 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:10 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:10 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:11 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:12 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:12 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:12 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:12 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:12 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:12 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:12 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:12 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:22 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:35 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:35 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:35 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:36 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:36 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:36 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:36 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:36 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:37 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:37 - INFO - Changed to tab: Vendors
+12/01/17 - 12:15:38 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:38 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:40 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:42 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:42 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:42 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:42 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:42 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:42 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:42 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:42 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:43 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:46 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:46 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:46 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:46 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:46 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:46 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:46 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:47 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:48 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:49 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:49 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:49 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:49 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:49 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:49 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:49 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:49 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:50 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:51 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:52 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:52 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:52 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:54 - INFO - Changed to tab: Vendors
+12/03/17 - 10:12:55 - INFO - Executing VendorTabVM#GenerateOrderSheet
+12/03/17 - 10:54:41 - INFO - Changed to tab: Orders
+12/03/17 - 10:54:46 - INFO - Executing OrderTabVM#StartNewOrder
+12/03/17 - 10:54:47 - INFO - Adding temp tab: NewOrderVM
+12/03/17 - 10:54:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Executing NewOrderVM#ClearOrderAmounts
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:54:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:55 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:56:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:15 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:15 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:22 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:22 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:22 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:23 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:45 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:45 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:57:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:01 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:01 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:01 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:08 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:20 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:20 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:20 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:20 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:20 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:20 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:21 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:22 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:28 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:28 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:28 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:28 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:31 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:31 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:31 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:34 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:34 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:34 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:34 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:34 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:34 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:45 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:45 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:45 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:45 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:45 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:46 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:52 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:53 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:55 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:58:59 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:00 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:01 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:01 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:01 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:01 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:01 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:02 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:03 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:04 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:05 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:06 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:07 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:09 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:10 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:10 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:10 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:10 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:10 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:11 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:12 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:13 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:14 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:14 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:14 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:14 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:14 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:14 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:15 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:15 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:15 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:15 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:15 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:15 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:16 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:16 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:16 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:16 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:17 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:18 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:19 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:19 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:19 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:19 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:19 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:19 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:19 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:19 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:24 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:25 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:26 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:26 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:27 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:29 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:30 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:32 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:33 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:34 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:34 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:35 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:36 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:37 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:37 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:38 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:39 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:40 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:41 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:42 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:42 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:42 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:42 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:42 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:42 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:42 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:42 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:43 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:43 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:43 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:44 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:47 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:48 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:49 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:50 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:51 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:54 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:55 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:55 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:55 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:56 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:57 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:58 - INFO - Changed to tab: New Order
+12/03/17 - 10:59:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:06 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:10 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:10 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:10 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:10 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:00:13 - INFO - Executing NewOrderVM#SaveOrder
+12/03/17 - 11:00:13 - INFO - Removing temp tab
+12/03/17 - 11:00:13 - INFO - Changed to tab: Settings
+12/03/17 - 11:00:13 - INFO - Changed to tab: Orders
+12/03/17 - 11:00:13 - INFO - Inserted PurchaseOrder: 163
+12/03/17 - 11:00:16 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:21 - INFO - Changed to tab: Orders
+12/03/17 - 11:00:24 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+12/03/17 - 11:00:24 - INFO - Upating PurchaseOrder: 158
+12/03/17 - 11:00:24 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:25 - INFO - Upating Vendor: 9
+12/03/17 - 11:00:25 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:25 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:25 - INFO - Upating InventoryItem: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 9
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 1
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 2
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 5
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 11
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 19
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 21
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 9
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 25
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 36
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 9
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:26 - INFO - Upating InventoryItem: 54
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating InventoryItem: 55
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating InventoryItem: 56
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating InventoryItem: 57
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 6
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating InventoryItem: 58
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 9
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating InventoryItem: 59
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:27 - INFO - Upating InventoryItem: 60
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating InventoryItem: 61
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating InventoryItem: 64
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating InventoryItem: 71
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 8
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 9
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating InventoryItem: 72
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating InventoryItem: 74
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 8
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating InventoryItem: 75
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:28 - INFO - Upating InventoryItem: 131
+12/03/17 - 11:00:28 - INFO - Changed to tab: Orders
+12/03/17 - 11:00:31 - INFO - Changed to tab: Orders
+12/03/17 - 11:00:33 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+12/03/17 - 11:00:33 - INFO - Upating PurchaseOrder: 160
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 8
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 78
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 81
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 82
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 85
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 89
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 90
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 91
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 109
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 119
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating Vendor: 3
+12/03/17 - 11:00:33 - INFO - Upating InventoryItem: 122
+12/03/17 - 11:00:34 - INFO - Changed to tab: Orders
+12/03/17 - 11:00:39 - INFO - Changed to tab: Orders
+12/03/17 - 11:00:41 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+12/03/17 - 11:00:41 - INFO - Upating PurchaseOrder: 162
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 13
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 14
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 21
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 23
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 36
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 9
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 54
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 56
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 57
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 6
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 58
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:41 - INFO - Upating InventoryItem: 61
+12/03/17 - 11:00:41 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 62
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 63
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 1
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 64
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 66
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 10
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 71
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 8
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 9
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 72
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 73
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 8
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 75
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 2
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating Vendor: 0
+12/03/17 - 11:00:42 - INFO - Upating InventoryItem: 107
+12/03/17 - 11:00:42 - INFO - Changed to tab: Orders
+12/03/17 - 11:01:22 - INFO - Executing OrderTabVM#StartNewOrder
+12/03/17 - 11:01:22 - INFO - Adding temp tab: NewOrderVM
+12/03/17 - 11:01:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Executing NewOrderVM#ClearOrderAmounts
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:27 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:42 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:43 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:47 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:48 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:50 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:51 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:51 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:52 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:52 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:53 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:55 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:56 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:56 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:56 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:56 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:56 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:57 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:57 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:59 - INFO - Changed to tab: New Order
+12/03/17 - 11:01:59 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:01 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:02 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:03 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:05 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:05 - INFO - Changed to tab: New Order
+12/03/17 - 11:02:05 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:48 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:57 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:57 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:57 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:57 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:58 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:59 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:59 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:59 - INFO - Changed to tab: New Order
+12/03/17 - 11:05:59 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:04 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:05 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:09 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:10 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:10 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:10 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:10 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:14 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:15 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:15 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:15 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:15 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:06:22 - INFO - Executing NewOrderVM#SaveOrder
+12/03/17 - 11:06:22 - INFO - Removing temp tab
+12/03/17 - 11:06:22 - INFO - Changed to tab: Settings
+12/03/17 - 11:06:22 - INFO - Changed to tab: Orders
+12/03/17 - 11:06:22 - INFO - Inserted PurchaseOrder: 164
+12/03/17 - 11:06:22 - INFO - Upating Vendor: 9
+12/03/17 - 11:06:35 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:37 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:37 - INFO - Changed to tab: Vendors
+12/03/17 - 11:06:40 - INFO - Executing VendorTabVM#GenerateOrderSheet
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:51 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:55 - INFO - Changed to tab: Inventory
+12/03/17 - 11:06:58 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:00 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:00 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:01 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:02 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:03 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:03 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:06 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:07 - INFO - Changed to tab: Orders
+12/03/17 - 11:07:09 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:10 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:10 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:11 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:11 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:12 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:12 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:13 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:15 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:15 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:17 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:17 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:31 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:33 - INFO - Changed to tab: Vendors
+12/03/17 - 11:07:33 - INFO - Upating Vendor: 7
+12/03/17 - 11:07:33 - INFO - Upating Vendor: 7
+12/03/17 - 11:07:33 - INFO - Upating InventoryItem: 111
+12/03/17 - 11:07:33 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:34 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:35 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:37 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:38 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:39 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:40 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:41 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:42 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:43 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:43 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:45 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:45 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:46 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:49 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:52 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:52 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:56 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:57 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:57 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:57 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:57 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:58 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:59 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:59 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:59 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:59 - INFO - Changed to tab: Inventory
+12/03/17 - 11:07:59 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:00 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:01 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:02 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:03 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:04 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:05 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:06 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:06 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:06 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:07 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:08 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:09 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:10 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:11 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:11 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:12 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:13 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:14 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:16 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:17 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:17 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:17 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:17 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:17 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:21 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:22 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:22 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:23 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:24 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:25 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:26 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:27 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:28 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:29 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:29 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:30 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:30 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:31 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:31 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:31 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:32 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:32 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:32 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:33 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:33 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:34 - INFO - Changed to tab: Inventory
+12/03/17 - 11:08:34 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:06 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:07 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:07 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:27 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:29 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:31 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:33 - INFO - Executing OrderTabVM#RemoveOpenOrder
+12/03/17 - 11:09:34 - INFO - Destroying PurchaseOrder: 164
+12/03/17 - 11:09:34 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:35 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:36 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:38 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:38 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:38 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:38 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:40 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:41 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:41 - INFO - Changed to tab: Inventory
+12/03/17 - 11:09:42 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:43 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:46 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:48 - INFO - Executing OrderTabVM#ViewOpenOrder
+12/03/17 - 11:09:48 - INFO - Adding temp tab: ViewOrderVM
+12/03/17 - 11:09:48 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:09:53 - INFO - Executing ViewOrderVM#CancelView
+12/03/17 - 11:09:53 - INFO - Removing temp tab
+12/03/17 - 11:09:53 - INFO - Changed to tab: Settings
+12/03/17 - 11:09:53 - INFO - Changed to tab: Orders
+12/03/17 - 11:09:54 - INFO - Executing OrderTabVM#ViewOpenOrder
+12/03/17 - 11:09:54 - INFO - Adding temp tab: ViewOrderVM
+12/03/17 - 11:09:54 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:09:56 - INFO - Executing ViewOrderVM#AddVendorItem
+12/03/17 - 11:10:02 - INFO - Executing ModalVM`1#ModalOk
+12/03/17 - 11:10:04 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:06 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:06 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:11 - INFO - Executing ViewOrderVM#AddVendorItem
+12/03/17 - 11:10:15 - INFO - Executing ModalVM`1#ModalOk
+12/03/17 - 11:10:15 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:16 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:26 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:56 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:56 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:56 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:56 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:10:57 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:11:29 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:11:29 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:11:29 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:11:30 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:11:30 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:11:30 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:11:39 - INFO - Executing ViewOrderVM#SaveEdits
+12/03/17 - 11:11:39 - INFO - Upating PurchaseOrder: 163
+12/03/17 - 11:11:39 - INFO - Upating Vendor: 0
+12/03/17 - 11:11:39 - INFO - Upating Vendor: 0
+12/03/17 - 11:11:39 - INFO - Upating Vendor: 0
+12/03/17 - 11:11:39 - INFO - Upating Vendor: 0
+12/03/17 - 11:11:39 - INFO - Removing temp tab
+12/03/17 - 11:11:39 - INFO - Changed to tab: Settings
+12/03/17 - 11:11:39 - INFO - Changed to tab: Orders
+12/03/17 - 11:11:44 - INFO - Changed to tab: Orders
+12/03/17 - 11:11:45 - INFO - Changed to tab: Orders
+12/03/17 - 11:11:51 - INFO - Executing OrderTabVM#ShowOpenPO
+12/03/17 - 11:12:08 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:08 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:08 - INFO - Executing OrderTabVM#ViewOpenOrder
+12/03/17 - 11:12:08 - INFO - Adding temp tab: ViewOrderVM
+12/03/17 - 11:12:08 - INFO - Changed to tab: PO#: 163
+12/03/17 - 11:12:11 - INFO - Executing ViewOrderVM#SaveEdits
+12/03/17 - 11:12:11 - INFO - Upating PurchaseOrder: 163
+12/03/17 - 11:12:11 - INFO - Removing temp tab
+12/03/17 - 11:12:11 - INFO - Changed to tab: Settings
+12/03/17 - 11:12:11 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:12 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:12 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:12 - INFO - Executing OrderTabVM#ShowOpenPO
+12/03/17 - 11:12:20 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:20 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:20 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:21 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:21 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:21 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:24 - INFO - Changed to tab: Orders
+12/03/17 - 11:12:24 - INFO - Changed to tab: Orders
+12/03/17 - 11:13:05 - INFO - Changed to tab: Orders
+12/03/17 - 11:13:05 - INFO - Changed to tab: Orders
+12/03/17 - 11:13:09 - INFO - Executing OrderTabVM#RemoveOpenOrder
+12/03/17 - 11:13:10 - INFO - Destroying PurchaseOrder: 163
+12/03/17 - 11:13:10 - INFO - Changed to tab: Orders
+12/03/17 - 11:13:11 - INFO - Executing OrderTabVM#StartNewOrder
+12/03/17 - 11:13:11 - INFO - Adding temp tab: NewOrderVM
+12/03/17 - 11:13:11 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:12 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:13 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:14 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:16 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:17 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:17 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:19 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:19 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:19 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:19 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:20 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:20 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:20 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:20 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:20 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:20 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:21 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:21 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:21 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:21 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:22 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:23 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:23 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:23 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:23 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:24 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:24 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:24 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:24 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:24 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:25 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:26 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:27 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:27 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:27 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:28 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:28 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:28 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:28 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:29 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:30 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:30 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:30 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:31 - INFO - Changed to tab: New Order
+12/03/17 - 11:13:33 - INFO - Executing NewOrderVM#SaveOrder
+12/03/17 - 11:13:33 - INFO - Removing temp tab
+12/03/17 - 11:13:33 - INFO - Changed to tab: Settings
+12/03/17 - 11:13:33 - INFO - Changed to tab: Orders
+12/03/17 - 11:13:33 - INFO - Inserted PurchaseOrder: 163
+12/03/17 - 11:13:34 - INFO - Upating Vendor: 0
+12/03/17 - 11:13:36 - INFO - Changed to tab: Orders
+12/03/17 - 11:14:47 - INFO - Changed to tab: Inventory
+12/03/17 - 11:14:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:14:50 - INFO - Changed to tab: Inventory
+12/03/17 - 11:14:53 - INFO - Upating Vendor: 7
+12/03/17 - 11:14:53 - INFO - Upating Vendor: 7
+12/03/17 - 11:14:53 - INFO - Upating InventoryItem: 111
+12/03/17 - 11:14:53 - INFO - Changed to tab: Inventory
+12/03/17 - 11:14:53 - INFO - Changed to tab: Inventory
+12/03/17 - 11:14:55 - INFO - Upating Vendor: 10
+12/03/17 - 11:14:56 - INFO - Upating Vendor: 9
+12/03/17 - 11:14:56 - INFO - Upating Vendor: 0
+12/03/17 - 11:14:56 - INFO - Upating Vendor: 10
+12/03/17 - 11:14:56 - INFO - Upating InventoryItem: 1
+12/03/17 - 11:14:56 - INFO - Changed to tab: Inventory
+12/03/17 - 11:14:56 - INFO - Changed to tab: Inventory
+12/03/17 - 11:14:59 - INFO - Upating Vendor: 10
+12/03/17 - 11:14:59 - INFO - Upating Vendor: 9
+12/03/17 - 11:14:59 - INFO - Upating Vendor: 0
+12/03/17 - 11:14:59 - INFO - Upating Vendor: 10
+12/03/17 - 11:14:59 - INFO - Upating InventoryItem: 1
+12/03/17 - 11:14:59 - INFO - Changed to tab: Inventory
+12/03/17 - 11:14:59 - INFO - Changed to tab: Inventory
+12/03/17 - 11:15:18 - INFO - Upating Vendor: 10
+12/03/17 - 11:15:18 - INFO - Upating Vendor: 9
+12/03/17 - 11:15:18 - INFO - Upating Vendor: 0
+12/03/17 - 11:15:18 - INFO - Upating Vendor: 10
+12/03/17 - 11:15:18 - INFO - Upating InventoryItem: 1
+12/03/17 - 11:15:18 - INFO - Changed to tab: Inventory
+12/03/17 - 11:15:19 - INFO - Changed to tab: Inventory
+12/03/17 - 11:15:20 - INFO - Changed to tab: Inventory
+12/03/17 - 11:16:36 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:38 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:39 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:16:42 - INFO - Executing VendorTabVM#GenerateOrderSheet
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:20:45 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:02 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:05 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:07 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:08 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:09 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:10 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:10 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:10 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:10 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:10 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:10 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:12 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:12 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:12 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:14 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:15 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:15 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:15 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:15 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:15 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:15 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:15 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:18 - INFO - Changed to tab: Vendors
+12/03/17 - 11:21:23 - INFO - Executing VendorTabVM#GenerateOrderSheet
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:40 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:41 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:43 - INFO - Changed to tab: Vendors
+12/03/17 - 11:26:43 - INFO - Changed to tab: Vendors
+12/03/17 - 11:43:35 - INFO - Application closing

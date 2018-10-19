@@ -1,0 +1,7 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+0,Mozzarella,Dairy,CASE 30lb,2,5lb BAG,6,OZ-wt,80,1,60.576,2,11/8/2017 12:00:00 AM,9
+1,Cheddar,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,80,1,41.93,5,11/8/2017 12:00:00 AM,9
+4,Butter,Dairy,CASE 30lb,30,1lb,30,OZ-wt,16,1,86.2387,1,11/8/2017 12:00:00 AM,9
+6,Heavy Cream,Dairy,1/2 Gallon,3,1/2 GALLON,1,CUP,48,1000000,6.2036,6,11/8/2017 12:00:00 AM,9
+25,Tomato Juice,Grocery,12x48oz CANS,5,CAN,12,EA,12,100,27.19,1,11/8/2017 12:00:00 AM,9
+59,Mushrooms,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,95,16.8009,4,11/8/2017 12:00:00 AM,9

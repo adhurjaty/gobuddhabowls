@@ -1,0 +1,6 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+57,Spinach,Produce,4x2.5lb,0,BAG,4,OZ-wt,160,99,19.8,1,11/12/2017 12:00:00 AM,10
+58,Mixed Greens,Produce,3lb,1,BAG,1,OZ-wt,48,9800,8.5,1,11/12/2017 12:00:00 AM,10
+59,Mushrooms,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,95,26.95,1,11/12/2017 12:00:00 AM,10
+66,Pineapple,Produce,6 COUNT,5,EACH,6,OZ-wt,44,100,16.65,1,11/12/2017 12:00:00 AM,10
+71,Garlic Peeled,Produce,5lbs,0,JAR,1,OZ-wt,114.29,98,16.25,1,11/12/2017 12:00:00 AM,10

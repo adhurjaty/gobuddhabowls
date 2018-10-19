@@ -1,0 +1,1813 @@
+12/11/17 - 13:21:47 - INFO - Application starting
+12/11/17 - 13:21:47 - INFO - Loading models
+12/11/17 - 13:21:48 - INFO - Models loaded
+12/11/17 - 13:21:49 - INFO - Inserted BreadOrder: 225
+12/11/17 - 13:21:49 - INFO - Inserted BreadOrder: 226
+12/11/17 - 13:21:49 - INFO - Inserted BreadOrder: 227
+12/11/17 - 13:21:49 - INFO - Inserted BreadOrder: 228
+12/11/17 - 13:21:49 - INFO - Inserted BreadOrder: 229
+12/11/17 - 13:21:49 - INFO - Inserted BreadOrder: 230
+12/11/17 - 13:21:49 - INFO - Inserted BreadOrder: 231
+12/11/17 - 13:21:52 - INFO - Upating BreadOrder: 225
+12/11/17 - 13:21:53 - ERROR - Value cannot be null.
+Parameter name: array
+   at System.Array.IndexOf[T](T[] array, T value)
+   at BuddhaBowls.Services.DatabaseInterface.<>c__DisplayClass3_0.<GetRecords>b__0(String x)
+   at System.Linq.Enumerable.WhereSelectArrayIterator`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecords(String tableName, Dictionary`2 mapping, Int32 limit)
+   at BuddhaBowls.Services.DatabaseInterface.GetRecord(String tableName, Dictionary`2 mapping)
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.GetOtherBreadOrder(Int32 dayDiff)
+   at BuddhaBowls.Models.BreadOrder.SetNextBreadOrder()
+   at BuddhaBowls.Models.BreadOrder..ctor(Dictionary`2 searchParams)
+   at BuddhaBowls.Models.BreadOrder.Insert()
+   at BuddhaBowls.Services.DBCache.GetBreadWeek(WeekMarker week)
+   at BuddhaBowls.Services.DBCache.<GetBreadPeriodOrders>d__47.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at BuddhaBowls.CogsVM.InitRecOrdersDict(PeriodMarker timeFrame)
+   at BuddhaBowls.CogsVM.SetInvAndOrders(PeriodMarker timeFrame)
+   at BuddhaBowls.CogsVM.<GetCogs>d__41.MoveNext()
+   at System.Collections.ObjectModel.ObservableCollection`1.CopyFrom(IEnumerable`1 collection)
+   at System.Collections.ObjectModel.ObservableCollection`1..ctor(IEnumerable`1 collection)
+   at BuddhaBowls.CogsVM.CalculateCogs(WeekMarker week)
+   at BuddhaBowls.ReportsTabVM.SwitchedPeriod(PeriodMarker period, WeekMarker week)
+   at BuddhaBowls.PeriodSelectorVM.GoToCurWeek(Object obj)
+   at BuddhaBowls.PeriodSelectorVM..ctor(DBCache models, WeekChange onChangeWeek, Boolean hasShowAll)
+   at BuddhaBowls.ReportsTabVM..ctor()
+   at BuddhaBowls.MainViewModel.InitTabsAndModel()
+   at BuddhaBowls.MainViewModel..ctor()
+   at BuddhaBowls.MainClass.Show()
+   at BuddhaBowls.MainClass.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+12/11/17 - 13:22:20 - INFO - Application starting
+12/11/17 - 13:22:20 - INFO - Loading models
+12/11/17 - 13:22:20 - INFO - Models loaded
+12/11/17 - 13:22:22 - INFO - Upating BreadOrder: 225
+12/11/17 - 13:22:24 - INFO - Application starting
+12/11/17 - 13:22:24 - INFO - Loading models
+12/11/17 - 13:22:25 - INFO - Models loaded
+12/11/17 - 13:22:27 - INFO - Upating BreadOrder: 225
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 37
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 38
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 39
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 40
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 41
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 42
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 43
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 44
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 45
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 46
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 47
+12/11/17 - 13:22:31 - INFO - Destroying DailySale: 48
+12/11/17 - 13:22:32 - INFO - Destroying DailySale: 49
+12/11/17 - 13:22:32 - INFO - Destroying DailySale: 50
+12/11/17 - 13:22:32 - INFO - Destroying DailySale: 51
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 37
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 38
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 39
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 40
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 41
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 42
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 43
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 44
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 45
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 46
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 47
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 48
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 49
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 50
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 51
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 52
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 53
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 54
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 55
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 56
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 57
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 58
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 59
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 60
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 61
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 62
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 63
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 64
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 65
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 66
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 67
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 68
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 69
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 70
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 71
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 72
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 73
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 74
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 75
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 76
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 77
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 78
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 79
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 80
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 81
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 82
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 83
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 84
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 85
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 86
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 87
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 88
+12/11/17 - 13:22:32 - INFO - Inserted DailySale: 89
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 90
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 91
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 92
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 93
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 94
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 95
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 96
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 97
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 98
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 99
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 100
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 101
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 102
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 103
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 104
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 105
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 106
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 107
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 108
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 109
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 110
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 111
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 112
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 113
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 114
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 115
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 116
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 117
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 118
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 119
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 120
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 121
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 122
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 123
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 124
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 125
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 126
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 127
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 128
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 129
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 130
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 131
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 132
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 133
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 134
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 135
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 136
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 137
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 138
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 139
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 140
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 141
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 142
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 143
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 144
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 145
+12/11/17 - 13:22:33 - INFO - Inserted DailySale: 146
+12/11/17 - 13:22:34 - INFO - Inserted DailySale: 147
+12/11/17 - 13:22:34 - INFO - Inserted DailySale: 148
+12/11/17 - 13:22:34 - INFO - Inserted DailySale: 149
+12/11/17 - 13:22:34 - INFO - Inserted DailySale: 150
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 319
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 320
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 321
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 322
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 323
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 324
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 325
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 326
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 327
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 328
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 329
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 330
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 331
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 332
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 333
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 334
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 335
+12/11/17 - 13:22:34 - INFO - Inserted ExpenseItem: 336
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 37
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 38
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 39
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 40
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 41
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 42
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 43
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 44
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 45
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 46
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 47
+12/11/17 - 13:22:34 - INFO - Destroying DailySale: 48
+12/11/17 - 13:22:35 - INFO - Destroying DailySale: 49
+12/11/17 - 13:22:35 - INFO - Destroying DailySale: 50
+12/11/17 - 13:22:35 - INFO - Destroying DailySale: 51
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 151
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 152
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 153
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 154
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 155
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 156
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 157
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 158
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 159
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 160
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 161
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 162
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 163
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 164
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 165
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 166
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 167
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 168
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 169
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 170
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 171
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 172
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 173
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 174
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 175
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 176
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 177
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 178
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 179
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 180
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 181
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 182
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 183
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 184
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 185
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 186
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 187
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 188
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 189
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 190
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 191
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 192
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 193
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 194
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 195
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 196
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 197
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 198
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 199
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 200
+12/11/17 - 13:22:35 - INFO - Inserted DailySale: 201
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 202
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 203
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 204
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 205
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 206
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 207
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 208
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 209
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 210
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 211
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 212
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 213
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 214
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 215
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 216
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 217
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 218
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 219
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 220
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 221
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 222
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 223
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 224
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 225
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 226
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 227
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 228
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 229
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 230
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 231
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 232
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 233
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 234
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 235
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 236
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 237
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 238
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 239
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 240
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 241
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 242
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 243
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 244
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 245
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 246
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 247
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 248
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 249
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 250
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 251
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 252
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 253
+12/11/17 - 13:22:36 - INFO - Inserted DailySale: 254
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 255
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 256
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 257
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 258
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 259
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 260
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 261
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 262
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 263
+12/11/17 - 13:22:37 - INFO - Inserted DailySale: 264
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 337
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 338
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 339
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 340
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 341
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 342
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 343
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 344
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 345
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 346
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 347
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 348
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 349
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 350
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 351
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 352
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 353
+12/11/17 - 13:22:37 - INFO - Inserted ExpenseItem: 354
+12/11/17 - 13:22:40 - INFO - Executing OrderTabVM#StartNewOrder
+12/11/17 - 13:22:40 - INFO - Adding temp tab: NewOrderVM
+12/11/17 - 13:22:40 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:46 - INFO - Executing NewOrderVM#ClearOrderAmounts
+12/11/17 - 13:22:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:22:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:20 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:20 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:20 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:29 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:33 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:33 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:33 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:23:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Executing NewOrderVM#AddVendorItem
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Executing ModalVM`1#ModalOk
+12/11/17 - 13:24:05 - INFO - Upating Vendor: 2
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:20 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:24 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:24 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:24 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:24 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:24 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:24 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:24 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:24 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:25 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:25 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:25 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:24:59 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:04 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:04 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:04 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:05 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:06 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:18 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:25:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:03 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:03 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:03 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:04 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:15 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:17 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:18 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:18 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:18 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:21 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:23 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:25 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:25 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:29 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:29 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:29 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:29 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:29 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:29 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:30 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:32 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:32 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:32 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:32 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:32 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:32 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:26:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:08 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:09 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:10 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:12 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:13 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:14 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:19 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:33 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:33 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:34 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:35 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:36 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:37 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:37 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:37 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:38 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:39 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:39 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:40 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:42 - INFO - Changed to tab: New Order
+12/11/17 - 13:27:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:03 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:03 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:07 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:11 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:26 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:27 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:28 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:29 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:41 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:43 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:44 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:45 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:46 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:47 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:48 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:49 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:50 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:53 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:54 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:55 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:56 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:57 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:32:58 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:00 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:01 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:02 - INFO - Changed to tab: New Order
+12/11/17 - 13:33:03 - INFO - Executing NewOrderVM#SaveOrder
+12/11/17 - 13:33:03 - INFO - Removing temp tab
+12/11/17 - 13:33:03 - INFO - Changed to tab: Settings
+12/11/17 - 13:33:03 - INFO - Changed to tab: Orders
+12/11/17 - 13:33:03 - INFO - Inserted PurchaseOrder: 166
+12/11/17 - 13:33:04 - INFO - Upating Vendor: 2
+12/11/17 - 13:35:20 - INFO - Application closing
+12/11/17 - 13:35:22 - INFO - Changed to tab: Orders
+12/11/17 - 13:35:23 - INFO - Executing OrderTabVM#ViewOpenOrder
+12/11/17 - 13:35:23 - INFO - Adding temp tab: ViewOrderVM
+12/11/17 - 13:35:23 - INFO - Changed to tab: PO#: 166
+12/11/17 - 15:44:31 - INFO - Application closing

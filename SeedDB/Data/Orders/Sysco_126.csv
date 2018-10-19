@@ -1,0 +1,20 @@
+Id,Name,LastOrderAmount,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastPurchasedDate,LastVendorId
+2,Pepper Jack,1,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,80,1,47.99,10/25/2017 12:00:00 AM,0
+11,Pesto,1,Dairy,2/22lb,0,BAG,2,OZ-wt,4,970000,106,10/25/2017 12:00:00 AM,0
+13,Pizza Sauce,1,Grocery,6# CANS,8,CAN,6,EA,6,100,21.45,10/25/2017 12:00:00 AM,0
+14,Stewed Tomatoes,1,Grocery,6# CANS,7,CAN,6,EA,6,100,15.47,10/25/2017 12:00:00 AM,0
+19,Mayonnaise,1,Grocery,4 GAL,0.5,JUG,4,EA,4,10000,26.05,10/25/2017 12:00:00 AM,0
+20,BBQ Sauce,1,Grocery,CS 39.5lbs,4,JUG,4,OZ-wt,632,9800,45.99,10/25/2017 12:00:00 AM,0
+21,Macaroni,3,Grocery,20lb CASE,4,BAG,2,EA,160,1,17.72,10/25/2017 12:00:00 AM,0
+25,Tomato Juice,2,Grocery,12x48oz CANS,20,CAN,12,EA,12,100,15.79,10/25/2017 12:00:00 AM,0
+36,Olive Oil,1,Grocery,6 GAL,7.75,JUG,6,OZ-fl,128,99,50.8,10/25/2017 12:00:00 AM,0
+55,Red Onions,1,Produce,25lb,0.3,BAG,1,OZ-wt,400,8500,12.99,10/25/2017 12:00:00 AM,0
+57,Spinach,2,Produce,4x2.5lb,0,BAG,4,OZ-wt,160,99,15.79,10/25/2017 12:00:00 AM,0
+58,Mixed Greens,2,Produce,3lb,1,BAG,1,OZ-wt,48,9800,5.99,10/25/2017 12:00:00 AM,0
+61,Tomatoes,1,Produce,25lb,0.25,CASE,1,OZ-wt,400,97,13.75,10/25/2017 12:00:00 AM,0
+63,Celery,1,Produce,24 COUNT,9,1/2 CASE,24,BUNCH,12,100,22.68,10/25/2017 12:00:00 AM,0
+64,Fresh Basil,2,Produce,1lb,1,BAG,1,OZ-wt,16,65,8.99,10/25/2017 12:00:00 AM,0
+73,Ground Beef,2,Meats,20lb CASE,3,LOG,2,EA,2,10000,41.98,10/25/2017 12:00:00 AM,0
+74,Italian Sausage,3,Meats,20lb CASE,8,BAG,4,OZ-wt,160,91,47.95,10/25/2017 12:00:00 AM,0
+75,Bacon Bits,3,Meats,10lb CASE,2,BAG,2,OZ-wt,160,100,54.99,10/25/2017 12:00:00 AM,0
+107,Dried Pinto Beans,1,Grocery,25lb,13,Quart,14.47,8,8,10000,28.89,10/25/2017 12:00:00 AM,0

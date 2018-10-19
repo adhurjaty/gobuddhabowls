@@ -1,0 +1,27 @@
+Id,Name,LastOrderAmount,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastPurchasedDate,LastVendorId
+0,Mozzarella,1,Dairy,CASE 30lb,4,5lb BAG,6,OZ-wt,80,1,70.88,10/11/2017 12:00:00 AM,0
+1,Cheddar,3,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,80,1,46.99,10/11/2017 12:00:00 AM,0
+2,Pepper Jack,1,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,80,1,48.83,10/11/2017 12:00:00 AM,0
+4,Butter,1,Dairy,CASE 30lb,2,1lb,30,OZ-wt,16,1,91.85,10/11/2017 12:00:00 AM,0
+11,Pesto,1,Dairy,2/22lb,0,BAG,2,OZ-wt,4,970000,106,10/11/2017 12:00:00 AM,0
+13,Pizza Sauce,1,Grocery,6# CANS,8,CAN,6,EA,6,100,21.45,10/11/2017 12:00:00 AM,0
+18,Artichoke Hearts,1,Grocery,6# CANS,9,CAN,6,OZ-wt,324,10000,57.62,10/11/2017 12:00:00 AM,0
+19,Mayonnaise,1,Grocery,4 GAL,0.5,JUG,4,EA,4,10000,24.95,10/11/2017 12:00:00 AM,0
+20,BBQ Sauce,1,Grocery,CS 39.5lbs,4,JUG,4,OZ-wt,632,9800,45.99,10/11/2017 12:00:00 AM,0
+21,Macaroni,4,Grocery,20lb CASE,4,BAG,2,EA,160,1,17.72,10/11/2017 12:00:00 AM,0
+23,Roasted Bell Peppers,1,Grocery,6# CANS,21,CAN,6,OZ-wt,360,98,37.44,10/11/2017 12:00:00 AM,0
+34,Canola Oil,1,Grocery,35lb JUG,0.5,JUG,1,OZ-wt,800,99,24.55,10/11/2017 12:00:00 AM,0
+36,Olive Oil,2,Grocery,6 GAL,7.75,JUG,6,OZ-fl,128,99,50.8,10/11/2017 12:00:00 AM,0
+56,Potatoes,1,Produce,50lb,0.5,1/2 CASE,1,OZ-wt,800,850000,18.99,10/11/2017 12:00:00 AM,0
+57,Spinach,3,Produce,4x2.5lb,0,BAG,4,OZ-wt,160,99,15.79,10/11/2017 12:00:00 AM,0
+58,Mixed Greens,2,Produce,3lb,1,BAG,1,OZ-wt,48,9800,5.99,10/11/2017 12:00:00 AM,0
+59,Mushrooms,6,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,95,20.95,10/11/2017 12:00:00 AM,0
+60,Cucumbers,1,Produce,36 COUNT,0.1,CASE,1,OZ-wt,420,950000,21.8,10/11/2017 12:00:00 AM,0
+61,Tomatoes,2,Produce,25lb,0.25,CASE,1,OZ-wt,400,97,13.75,10/11/2017 12:00:00 AM,0
+62,Avocado,1,Produce,60 COUNT,28,EACH,60,EA,24,10000,74.99,10/11/2017 12:00:00 AM,0
+63,Celery,1,Produce,24 COUNT,9,1/2 CASE,24,BUNCH,12,100,20.85,10/11/2017 12:00:00 AM,0
+66,Pineapple,1,Produce,6 COUNT,0,EACH,6,OZ-wt,44,100,16.99,10/11/2017 12:00:00 AM,0
+72,Chicken Breast,5,Poultry,40lb CASE,0,CASE,1,OZ-wt,640,85,58,10/11/2017 12:00:00 AM,0
+73,Ground Beef,2,Meats,20lb CASE,3,LOG,2,EA,2,10000,45.8,10/11/2017 12:00:00 AM,0
+74,Italian Sausage,4,Meats,20lb CASE,8,BAG,4,OZ-wt,160,91,47.95,10/11/2017 12:00:00 AM,0
+75,Bacon Bits,3,Meats,10lb CASE,2,BAG,2,OZ-wt,160,100,54.99,10/11/2017 12:00:00 AM,0

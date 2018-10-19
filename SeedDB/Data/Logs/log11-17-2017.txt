@@ -1,0 +1,1034 @@
+11/17/17 - 13:44:04 - INFO - Application starting
+11/17/17 - 13:44:04 - INFO - Loading models
+11/17/17 - 13:44:05 - INFO - Models loaded
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 405
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 406
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 407
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 408
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 409
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 410
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 411
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 412
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 413
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 414
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 415
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 416
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 417
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 418
+11/17/17 - 13:44:08 - INFO - Destroying DailySale: 419
+11/17/17 - 13:44:08 - INFO - Inserted DailySale: 405
+11/17/17 - 13:44:08 - INFO - Inserted DailySale: 406
+11/17/17 - 13:44:08 - INFO - Upating BreadOrder: 198
+11/17/17 - 13:44:08 - INFO - Inserted DailySale: 407
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 408
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 409
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 410
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 411
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 412
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 413
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 414
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 415
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 416
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 417
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 418
+11/17/17 - 13:44:09 - INFO - Inserted DailySale: 419
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 85
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 86
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 87
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 88
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 89
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 90
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 91
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 92
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 93
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 94
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 95
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 96
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 97
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 98
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 99
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 100
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 101
+11/17/17 - 13:44:09 - INFO - Upating ExpenseItem: 102
+11/17/17 - 13:44:10 - INFO - Upating BreadOrder: 197
+11/17/17 - 13:44:11 - INFO - Upating BreadOrder: 201
+11/17/17 - 13:44:11 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:12 - INFO - Upating BreadOrder: 200
+11/17/17 - 13:44:12 - INFO - Upating BreadOrder: 199
+11/17/17 - 13:44:13 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:14 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:15 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:20 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:20 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:21 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:31 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:45 - INFO - Changed to tab: Reports
+11/17/17 - 13:44:50 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:00 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:01 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:03 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:04 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:09 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:15 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 13:45:15 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:15 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:19 - INFO - Executing ProfitLossVM#UpdateSquare
+11/17/17 - 13:45:26 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:28 - INFO - Executing MainViewModel#RefreshHelper
+11/17/17 - 13:45:28 - INFO - Loading models
+11/17/17 - 13:45:29 - INFO - Models loaded
+11/17/17 - 13:45:38 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 13:45:38 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 13:45:39 - INFO - Changed to tab: Reports
+11/17/17 - 13:45:45 - INFO - Executing ProfitLossVM#UpdateSquare
+11/17/17 - 13:45:53 - INFO - Application closing
+11/17/17 - 13:45:58 - INFO - Application starting
+11/17/17 - 13:45:58 - INFO - Loading models
+11/17/17 - 13:45:58 - INFO - Models loaded
+11/17/17 - 13:46:03 - INFO - Upating BreadOrder: 198
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 405
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 406
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 407
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 408
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 409
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 410
+11/17/17 - 13:46:03 - INFO - Upating BreadOrder: 201
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 411
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 412
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 413
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 414
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 415
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 416
+11/17/17 - 13:46:03 - INFO - Destroying DailySale: 417
+11/17/17 - 13:46:04 - INFO - Destroying DailySale: 418
+11/17/17 - 13:46:04 - INFO - Destroying DailySale: 419
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 405
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 406
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 407
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 408
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 409
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 410
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 411
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 412
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 413
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 414
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 415
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 416
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 417
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 418
+11/17/17 - 13:46:04 - INFO - Inserted DailySale: 419
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 85
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 86
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 87
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 88
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 89
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 90
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 91
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 92
+11/17/17 - 13:46:04 - INFO - Upating BreadOrder: 199
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 93
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 94
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 95
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 96
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 97
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 98
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 99
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 100
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 101
+11/17/17 - 13:46:04 - INFO - Upating ExpenseItem: 102
+11/17/17 - 13:46:05 - INFO - Upating BreadOrder: 200
+11/17/17 - 13:46:05 - INFO - Upating BreadOrder: 197
+11/17/17 - 13:46:07 - INFO - Changed to tab: Reports
+11/17/17 - 13:46:08 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 13:46:08 - INFO - Changed to tab: Reports
+11/17/17 - 13:46:08 - INFO - Changed to tab: Reports
+11/17/17 - 13:46:14 - INFO - Changed to tab: Reports
+11/17/17 - 13:46:18 - INFO - Changed to tab: Reports
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 405
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 406
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 407
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 408
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 409
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 410
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 411
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 412
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 413
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 414
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 415
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 416
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 417
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 418
+11/17/17 - 13:46:19 - INFO - Destroying DailySale: 419
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 405
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 406
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 407
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 408
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 409
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 410
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 411
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 412
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 413
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 414
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 415
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 416
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 417
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 418
+11/17/17 - 13:46:19 - INFO - Inserted DailySale: 419
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 85
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 86
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 87
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 88
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 89
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 90
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 91
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 92
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 93
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 94
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 95
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 96
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 97
+11/17/17 - 13:46:19 - INFO - Upating ExpenseItem: 98
+11/17/17 - 13:46:20 - INFO - Upating ExpenseItem: 99
+11/17/17 - 13:46:20 - INFO - Upating ExpenseItem: 100
+11/17/17 - 13:46:20 - INFO - Upating ExpenseItem: 101
+11/17/17 - 13:46:20 - INFO - Upating ExpenseItem: 102
+11/17/17 - 13:46:22 - INFO - Changed to tab: Reports
+11/17/17 - 13:46:23 - INFO - Executing ProfitLossVM#UpdateSquare
+11/17/17 - 13:46:44 - INFO - Executing PeriodSelectorVM#GoToCurWeek
+11/17/17 - 13:46:45 - INFO - Changed to tab: Reports
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 405
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 406
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 407
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 408
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 409
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 410
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 411
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 412
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 413
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 414
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 415
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 416
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 417
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 418
+11/17/17 - 13:46:45 - INFO - Destroying DailySale: 419
+11/17/17 - 13:46:45 - INFO - Inserted DailySale: 405
+11/17/17 - 13:46:45 - INFO - Inserted DailySale: 406
+11/17/17 - 13:46:45 - INFO - Inserted DailySale: 407
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 408
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 409
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 410
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 411
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 412
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 413
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 414
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 415
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 416
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 417
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 418
+11/17/17 - 13:46:46 - INFO - Inserted DailySale: 419
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 85
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 86
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 87
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 88
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 89
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 90
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 91
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 92
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 93
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 94
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 95
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 96
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 97
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 98
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 99
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 100
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 101
+11/17/17 - 13:46:46 - INFO - Upating ExpenseItem: 102
+11/17/17 - 13:46:46 - INFO - Executing PeriodSelectorVM#GoToCurWeek
+11/17/17 - 13:46:47 - INFO - Executing PeriodSelectorVM#GoToCurWeek
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 405
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 406
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 407
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 408
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 409
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 410
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 411
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 412
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 413
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 414
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 415
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 416
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 417
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 418
+11/17/17 - 13:46:47 - INFO - Destroying DailySale: 419
+11/17/17 - 13:46:48 - INFO - Destroying DailySale: 405
+11/17/17 - 13:46:48 - INFO - Destroying DailySale: 406
+11/17/17 - 13:46:48 - INFO - Destroying DailySale: 407
+11/17/17 - 13:46:48 - INFO - Destroying DailySale: 408
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 409
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 410
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 411
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 412
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 413
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 414
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 415
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 416
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 417
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 418
+11/17/17 - 13:46:49 - INFO - Destroying DailySale: 419
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 405
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 406
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 407
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 408
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 409
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 410
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 411
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 412
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 413
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 414
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 415
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 416
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 417
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 418
+11/17/17 - 13:46:49 - INFO - Inserted DailySale: 419
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 85
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 86
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 87
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 88
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 89
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 90
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 91
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 92
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 93
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 94
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 95
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 96
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 97
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 98
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 99
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 100
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 101
+11/17/17 - 13:46:49 - INFO - Upating ExpenseItem: 102
+11/17/17 - 13:46:59 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:01 - INFO - Upating Recipe: 0
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:01 - INFO - Upating Recipe: 1
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:01 - INFO - Upating Recipe: 2
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:01 - INFO - Upating Recipe: 3
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:01 - INFO - Upating Recipe: 4
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:01 - INFO - Upating Recipe: 5
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:01 - INFO - Upating Recipe: 6
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:01 - INFO - Upating Recipe: 7
+11/17/17 - 13:47:01 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:02 - INFO - Upating Recipe: 8
+11/17/17 - 13:47:02 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:02 - INFO - Upating Recipe: 9
+11/17/17 - 13:47:02 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:02 - INFO - Upating Recipe: 10
+11/17/17 - 13:47:02 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:02 - INFO - Upating Recipe: 11
+11/17/17 - 13:47:02 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:02 - INFO - Upating Recipe: 12
+11/17/17 - 13:47:02 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:02 - INFO - Upating Recipe: 13
+11/17/17 - 13:47:02 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:02 - INFO - Upating Recipe: 14
+11/17/17 - 13:47:02 - INFO - Changed to tab: Recipes
+11/17/17 - 13:47:02 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:03 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 13:47:04 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 13:47:14 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 405
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 406
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 407
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 408
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 409
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 410
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 411
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 412
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 413
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 414
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 415
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 416
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 417
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 418
+11/17/17 - 13:47:15 - INFO - Destroying DailySale: 419
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 405
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 406
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 407
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 408
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 409
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 410
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 411
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 412
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 413
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 414
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 415
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 416
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 417
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 418
+11/17/17 - 13:47:15 - INFO - Inserted DailySale: 419
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 85
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 86
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 87
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 88
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 89
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 90
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 91
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 92
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 93
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 94
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 95
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 96
+11/17/17 - 13:47:15 - INFO - Upating ExpenseItem: 97
+11/17/17 - 13:47:16 - INFO - Upating ExpenseItem: 98
+11/17/17 - 13:47:16 - INFO - Upating ExpenseItem: 99
+11/17/17 - 13:47:16 - INFO - Upating ExpenseItem: 100
+11/17/17 - 13:47:16 - INFO - Upating ExpenseItem: 101
+11/17/17 - 13:47:16 - INFO - Upating ExpenseItem: 102
+11/17/17 - 13:47:23 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:24 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:28 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:28 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:30 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:40 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 405
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 406
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 407
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 408
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 409
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 410
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 411
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 412
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 413
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 414
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 415
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 416
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 417
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 418
+11/17/17 - 13:47:41 - INFO - Destroying DailySale: 419
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 405
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 406
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 407
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 408
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 409
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 410
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 411
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 412
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 413
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 414
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 415
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 416
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 417
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 418
+11/17/17 - 13:47:41 - INFO - Inserted DailySale: 419
+11/17/17 - 13:47:41 - INFO - Changed to tab: Reports
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 85
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 86
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 87
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 88
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 89
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 90
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 91
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 92
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 93
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 94
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 95
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 96
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 97
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 98
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 99
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 100
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 101
+11/17/17 - 13:47:41 - INFO - Upating ExpenseItem: 102
+11/17/17 - 13:48:12 - INFO - Changed to tab: Recipes
+11/17/17 - 13:48:13 - INFO - Changed to tab: Bread
+11/17/17 - 13:48:14 - INFO - Changed to tab: Reports
+11/17/17 - 13:48:25 - INFO - Changed to tab: Recipes
+11/17/17 - 13:48:28 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:28 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:28 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:29 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:30 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:30 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:30 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:30 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:30 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:30 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:30 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:30 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:31 - INFO - Changed to tab: Inventory
+11/17/17 - 13:48:32 - INFO - Executing InventoryListVM#EditInventoryItem
+11/17/17 - 13:48:32 - INFO - Adding temp tab: NewInventoryItemWizard
+11/17/17 - 13:48:32 - INFO - Changed to tab: New Item
+11/17/17 - 13:48:32 - INFO - Changed to tab: New Item
+11/17/17 - 13:48:32 - INFO - Changed to tab: New Item
+11/17/17 - 13:48:59 - INFO - Executing WizardVM#NextPage
+11/17/17 - 13:48:59 - INFO - Changed to tab: New Item
+11/17/17 - 13:48:59 - INFO - Executing WizardVM#NextPage
+11/17/17 - 13:49:00 - INFO - Changed to tab: New Item
+11/17/17 - 13:49:00 - INFO - Executing NewInventoryItemWizard#FinishWizard
+11/17/17 - 13:49:00 - INFO - Upating Vendor: 2
+11/17/17 - 13:49:00 - INFO - Upating Vendor: 0
+11/17/17 - 13:49:00 - INFO - Upating Vendor: 2
+11/17/17 - 13:49:00 - INFO - Upating Vendor: 0
+11/17/17 - 13:49:00 - INFO - Upating Vendor: 2
+11/17/17 - 13:49:00 - INFO - Upating InventoryItem: 21
+11/17/17 - 13:49:00 - INFO - Upating Vendor: 2
+11/17/17 - 13:49:00 - INFO - Upating Vendor: 0
+11/17/17 - 13:49:00 - INFO - Removing temp tab
+11/17/17 - 13:49:00 - INFO - Changed to tab: Settings
+11/17/17 - 13:49:00 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:01 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:03 - INFO - Executing InventoryListVM#EditInventoryItem
+11/17/17 - 13:49:03 - INFO - Adding temp tab: NewInventoryItemWizard
+11/17/17 - 13:49:03 - INFO - Changed to tab: New Item
+11/17/17 - 13:49:03 - INFO - Changed to tab: New Item
+11/17/17 - 13:49:03 - INFO - Changed to tab: New Item
+11/17/17 - 13:49:47 - INFO - Executing WizardVM#NextPage
+11/17/17 - 13:49:47 - INFO - Changed to tab: New Item
+11/17/17 - 13:49:48 - INFO - Executing WizardVM#NextPage
+11/17/17 - 13:49:48 - INFO - Changed to tab: New Item
+11/17/17 - 13:49:49 - INFO - Executing NewInventoryItemWizard#FinishWizard
+11/17/17 - 13:49:49 - INFO - Upating Vendor: 2
+11/17/17 - 13:49:49 - INFO - Upating Vendor: 0
+11/17/17 - 13:49:49 - INFO - Upating Vendor: 2
+11/17/17 - 13:49:49 - INFO - Upating Vendor: 0
+11/17/17 - 13:49:49 - INFO - Upating Vendor: 2
+11/17/17 - 13:49:49 - INFO - Upating InventoryItem: 21
+11/17/17 - 13:49:49 - INFO - Upating Vendor: 2
+11/17/17 - 13:49:49 - INFO - Upating Vendor: 0
+11/17/17 - 13:49:49 - INFO - Removing temp tab
+11/17/17 - 13:49:49 - INFO - Changed to tab: Settings
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:49 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:50 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:50 - INFO - Changed to tab: Inventory
+11/17/17 - 13:49:50 - INFO - Changed to tab: Recipes
+11/17/17 - 13:49:52 - INFO - Changed to tab: Recipes
+11/17/17 - 13:49:54 - INFO - Executing RecipeTabVM#EditRecipe
+11/17/17 - 13:49:54 - INFO - Adding temp tab: NewRecipeVM
+11/17/17 - 13:49:54 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:49:54 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:49:56 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:01 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:02 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:03 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:04 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:29 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:30 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:44 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:45 - INFO - Changed to tab: Edit Recipe
+11/17/17 - 13:50:46 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:47 - INFO - Changed to tab: Bread
+11/17/17 - 13:50:47 - INFO - Changed to tab: Vendors
+11/17/17 - 13:50:49 - INFO - Changed to tab: Bread
+11/17/17 - 13:50:50 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:52 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 13:50:52 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:53 - INFO - Upating Recipe: 35
+11/17/17 - 13:50:53 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:53 - INFO - Upating Recipe: 36
+11/17/17 - 13:50:53 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:53 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 0
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 1
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 2
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 3
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 4
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 5
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 6
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 7
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 8
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 9
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 10
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 11
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 12
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 13
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Upating Recipe: 14
+11/17/17 - 13:50:54 - INFO - Changed to tab: Recipes
+11/17/17 - 13:50:54 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:56 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:56 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:56 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:56 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:56 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:56 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:56 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:56 - INFO - Changed to tab: Inventory
+11/17/17 - 13:50:58 - INFO - Executing InventoryListVM#EditInventoryItem
+11/17/17 - 13:50:58 - INFO - Changed to tab: New Item
+11/17/17 - 13:50:58 - INFO - Changed to tab: New Item
+11/17/17 - 13:50:58 - INFO - Changed to tab: New Item
+11/17/17 - 13:51:07 - INFO - Changed to tab: Recipes
+11/17/17 - 13:51:07 - INFO - Changed to tab: Bread
+11/17/17 - 13:51:26 - INFO - Executing BreadGuideVM#UpdateSquare
+11/17/17 - 13:51:27 - INFO - Upating BreadOrder: 201
+11/17/17 - 13:51:31 - INFO - Changed to tab: Vendors
+11/17/17 - 13:51:31 - INFO - Changed to tab: Inventory
+11/17/17 - 13:51:32 - INFO - Changed to tab: Orders
+11/17/17 - 13:51:33 - INFO - Upating BreadOrder: 197
+11/17/17 - 13:51:34 - INFO - Changed to tab: Orders
+11/17/17 - 13:51:34 - INFO - Upating BreadOrder: 198
+11/17/17 - 13:51:35 - INFO - Upating BreadOrder: 199
+11/17/17 - 13:51:35 - INFO - Upating BreadOrder: 200
+11/17/17 - 13:51:36 - INFO - Changed to tab: Orders
+11/17/17 - 13:52:58 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:09 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:10 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:11 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:12 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:12 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:13 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:13 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:14 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:14 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:20 - INFO - Changed to tab: Reports
+11/17/17 - 13:53:21 - INFO - Changed to tab: Edit Expenses
+11/17/17 - 13:53:23 - INFO - Executing ExpenseDetailVM#CancelExpenses
+11/17/17 - 13:53:23 - INFO - Changed to tab: New Item
+11/17/17 - 14:21:01 - INFO - Changed to tab: Bread
+11/17/17 - 14:21:05 - INFO - Executing BreadGuideVM#UpdateSquare
+11/17/17 - 14:21:27 - INFO - Upating BreadOrder: 202
+11/17/17 - 14:22:46 - INFO - Upating BreadOrder: 201
+11/17/17 - 14:24:15 - INFO - Executing BreadGuideVM#UpdateSquare
+11/17/17 - 14:24:17 - INFO - Upating BreadOrder: 198
+11/17/17 - 14:24:17 - INFO - Upating BreadOrder: 201
+11/17/17 - 14:24:17 - INFO - Upating BreadOrder: 197
+11/17/17 - 14:24:18 - INFO - Upating BreadOrder: 199
+11/17/17 - 14:24:19 - INFO - Upating BreadOrder: 200
+11/17/17 - 15:16:38 - INFO - Application starting
+11/17/17 - 15:16:38 - INFO - Loading models
+11/17/17 - 15:16:40 - INFO - Models loaded
+11/17/17 - 15:16:45 - INFO - Destroying DailySale: 405
+11/17/17 - 15:16:45 - INFO - Destroying DailySale: 406
+11/17/17 - 15:16:45 - INFO - Destroying DailySale: 407
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 408
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 409
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 410
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 411
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 412
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 413
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 414
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 415
+11/17/17 - 15:16:46 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 416
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 417
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 418
+11/17/17 - 15:16:46 - INFO - Destroying DailySale: 419
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 405
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 406
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 407
+11/17/17 - 15:16:46 - INFO - Upating BreadOrder: 197
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 408
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 409
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 410
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 411
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 412
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 413
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 414
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 415
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 416
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 417
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 418
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 419
+11/17/17 - 15:16:46 - INFO - Upating BreadOrder: 199
+11/17/17 - 15:16:46 - INFO - Inserted DailySale: 420
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 85
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 86
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 87
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 88
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 89
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 90
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 91
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 92
+11/17/17 - 15:16:46 - INFO - Upating ExpenseItem: 93
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 94
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 95
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 96
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 97
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 98
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 99
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 100
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 101
+11/17/17 - 15:16:47 - INFO - Upating ExpenseItem: 102
+11/17/17 - 15:16:47 - INFO - Upating BreadOrder: 198
+11/17/17 - 15:16:47 - INFO - Upating BreadOrder: 200
+11/17/17 - 15:16:51 - INFO - Changed to tab: Bread
+11/17/17 - 15:16:58 - INFO - Executing BreadGuideVM#UpdateSquare
+11/17/17 - 15:17:00 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:17:02 - INFO - Upating BreadOrder: 197
+11/17/17 - 15:17:03 - INFO - Upating BreadOrder: 199
+11/17/17 - 15:17:03 - INFO - Upating BreadOrder: 200
+11/17/17 - 15:17:09 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:17:09 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:17:11 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:17:13 - INFO - Executing BreadGuideVM#UpdateSquare
+11/17/17 - 15:17:15 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:17:15 - INFO - Upating BreadOrder: 197
+11/17/17 - 15:17:16 - INFO - Upating BreadOrder: 198
+11/17/17 - 15:17:16 - INFO - Upating BreadOrder: 199
+11/17/17 - 15:17:17 - INFO - Upating BreadOrder: 200
+11/17/17 - 15:17:17 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:17:18 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:17:19 - INFO - Upating BreadOrder: 201
+11/17/17 - 15:17:32 - INFO - Upating BreadOrder: 202
+11/17/17 - 16:29:00 - INFO - Changed to tab: Reports
+11/17/17 - 16:29:04 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 16:29:05 - INFO - Changed to tab: Reports
+11/17/17 - 16:29:05 - INFO - Changed to tab: Reports
+11/17/17 - 16:29:16 - INFO - Changed to tab: Reports
+11/17/17 - 16:29:17 - INFO - Changed to tab: Reports
+11/17/17 - 16:30:32 - INFO - Changed to tab: Orders
+11/17/17 - 16:30:39 - INFO - Changed to tab: Orders
+11/17/17 - 16:30:45 - INFO - Executing OrderTabVM#ViewOpenOrder
+11/17/17 - 16:30:45 - INFO - Adding temp tab: ViewOrderVM
+11/17/17 - 16:30:45 - INFO - Changed to tab: PO#: 149
+11/17/17 - 16:30:47 - INFO - Changed to tab: Orders
+11/17/17 - 16:30:48 - INFO - Executing OrderTabVM#StartNewOrder
+11/17/17 - 16:30:48 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:53 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:53 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:53 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:53 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:53 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:53 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:53 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:53 - INFO - Changed to tab: New Order
+11/17/17 - 16:30:58 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:00 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:00 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:00 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:00 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:00 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:00 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:00 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:04 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:07 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:07 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:07 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:07 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:07 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:07 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:07 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:07 - INFO - Changed to tab: New Order
+11/17/17 - 16:31:09 - INFO - Executing NewOrderVM#SaveOrder
+11/17/17 - 16:31:09 - INFO - Changed to tab: PO#: 149
+11/17/17 - 16:31:09 - INFO - Inserted PurchaseOrder: 152
+11/17/17 - 16:31:09 - INFO - Upating PurchaseOrder: 152
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 6
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 9
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 0
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 6
+11/17/17 - 16:31:11 - INFO - Upating InventoryItem: 4
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 6
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 10
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 0
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 6
+11/17/17 - 16:31:11 - INFO - Upating InventoryItem: 9
+11/17/17 - 16:31:11 - INFO - Upating Vendor: 6
+11/17/17 - 16:31:13 - INFO - Changed to tab: Orders
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:18 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:19 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:20 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:21 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:23 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:23 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:23 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:23 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:23 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:24 - INFO - Changed to tab: Inventory
+11/17/17 - 16:31:27 - INFO - Executing InventoryTabVM#GenerateInvList
+11/17/17 - 16:31:46 - INFO - Changed to tab: Reports
+11/17/17 - 16:31:48 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 16:31:52 - INFO - Changed to tab: Reports
+11/17/17 - 16:32:01 - INFO - Changed to tab: Orders
+11/17/17 - 16:32:12 - INFO - Changed to tab: Orders
+11/17/17 - 16:32:12 - INFO - Changed to tab: Orders
+11/17/17 - 16:32:12 - INFO - Changed to tab: Orders
+11/17/17 - 16:32:37 - INFO - Changed to tab: Reports
+11/17/17 - 16:32:38 - INFO - Upating PurchaseOrder: 151
+11/17/17 - 16:32:47 - INFO - Changed to tab: Reports
+11/17/17 - 16:32:51 - INFO - Changed to tab: Reports
+11/17/17 - 16:32:56 - INFO - Changed to tab: Reports
+11/17/17 - 16:33:11 - INFO - Changed to tab: Reports
+11/17/17 - 16:33:11 - INFO - Changed to tab: Reports
+11/17/17 - 16:33:12 - INFO - Changed to tab: Reports
+11/17/17 - 16:33:19 - INFO - Changed to tab: Reports
+11/17/17 - 16:33:19 - INFO - Changed to tab: Reports
+11/17/17 - 16:33:23 - INFO - Executing ChangeableTabVM#SwitchPage
+11/17/17 - 16:33:29 - INFO - Changed to tab: Reports
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 405
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 406
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 407
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 408
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 409
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 410
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 411
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 412
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 413
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 414
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 415
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 416
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 417
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 418
+11/17/17 - 16:33:30 - INFO - Destroying DailySale: 419
+11/17/17 - 16:33:30 - INFO - Inserted DailySale: 421
+11/17/17 - 16:33:30 - INFO - Inserted DailySale: 422
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 423
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 424
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 425
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 426
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 427
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 428
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 429
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 430
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 431
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 432
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 433
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 434
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 435
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 436
+11/17/17 - 16:33:31 - INFO - Inserted DailySale: 437
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 85
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 86
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 87
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 88
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 89
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 90
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 91
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 92
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 93
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 94
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 95
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 96
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 97
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 98
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 99
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 100
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 101
+11/17/17 - 16:33:31 - INFO - Upating ExpenseItem: 102
+11/17/17 - 16:33:34 - INFO - Executing ProfitLossVM#UpdateSquare
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 405
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 406
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 407
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 408
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 409
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 410
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 411
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 412
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 413
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 414
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 415
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 416
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 417
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 418
+11/17/17 - 16:33:35 - INFO - Destroying DailySale: 419
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 438
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 439
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 440
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 441
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 442
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 443
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 444
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 445
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 446
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 447
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 448
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 449
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 450
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 451
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 452
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 453
+11/17/17 - 16:33:35 - INFO - Inserted DailySale: 454
+11/17/17 - 16:33:35 - INFO - Upating ExpenseItem: 85
+11/17/17 - 16:33:35 - INFO - Upating ExpenseItem: 86
+11/17/17 - 16:33:35 - INFO - Upating ExpenseItem: 87
+11/17/17 - 16:33:35 - INFO - Upating ExpenseItem: 88
+11/17/17 - 16:33:35 - INFO - Upating ExpenseItem: 89
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 90
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 91
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 92
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 93
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 94
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 95
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 96
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 97
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 98
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 99
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 100
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 101
+11/17/17 - 16:33:36 - INFO - Upating ExpenseItem: 102
+11/17/17 - 16:34:05 - INFO - Application closing

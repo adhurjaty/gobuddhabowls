@@ -1,0 +1,329 @@
+01/30/18 - 11:23:29 - INFO - Application starting
+01/30/18 - 11:23:29 - INFO - Loading models
+01/30/18 - 11:23:29 - INFO - Models loaded
+01/30/18 - 11:23:31 - INFO - Upating BreadOrder: 275
+01/30/18 - 11:23:32 - INFO - Upating BreadOrder: 274
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 0
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 1
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 2
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 3
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 4
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 5
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 6
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 7
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 8
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 9
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 10
+01/30/18 - 11:23:32 - INFO - Upating DailySale: 11
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 0
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 1
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 2
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 3
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 4
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 5
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 6
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 7
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 8
+01/30/18 - 11:23:32 - INFO - Destroying DailySale: 9
+01/30/18 - 11:23:33 - INFO - Destroying DailySale: 10
+01/30/18 - 11:23:33 - INFO - Destroying DailySale: 11
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 0
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 1
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 2
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 3
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 4
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 5
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 6
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 7
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 8
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 9
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 10
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 11
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 12
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 13
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 14
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 15
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 16
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 17
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 18
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 19
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 20
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 21
+01/30/18 - 11:23:33 - INFO - Inserted DailySale: 22
+01/30/18 - 11:23:33 - INFO - Inserted ExpenseItem: 562
+01/30/18 - 11:23:33 - INFO - Inserted ExpenseItem: 563
+01/30/18 - 11:23:33 - INFO - Inserted ExpenseItem: 564
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 547
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 548
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 549
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 550
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 551
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 552
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 553
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 554
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 555
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 556
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 557
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 558
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 559
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 560
+01/30/18 - 11:23:33 - INFO - Upating ExpenseItem: 561
+01/30/18 - 11:23:38 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:42 - INFO - Changed to tab: Vendors
+01/30/18 - 11:23:44 - INFO - Executing VendorTabVM#GenerateOrderSheet
+01/30/18 - 11:45:20 - INFO - Changed to tab: Orders
+01/30/18 - 11:45:23 - INFO - Executing OrderTabVM#StartNewOrder
+01/30/18 - 11:45:23 - INFO - Adding temp tab: NewOrderVM
+01/30/18 - 11:45:23 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:25 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:33 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:41 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:43 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:43 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:43 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:43 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:43 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:43 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:43 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:43 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:44 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:47 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:47 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:47 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:47 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:47 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:47 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:47 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:47 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:50 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:52 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:53 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:54 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:56 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:57 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:45:59 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:02 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:05 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:05 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:06 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:06 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:12 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:12 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:12 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:12 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:12 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:12 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:12 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:12 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:16 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:16 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:16 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:16 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:16 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:16 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:16 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:16 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:17 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:21 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:24 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:27 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:32 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:34 - INFO - Changed to tab: New Order
+01/30/18 - 11:46:40 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:00 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:00 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:04 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:09 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:09 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:09 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:09 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:10 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:18 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:18 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:22 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:22 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:22 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:22 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:30 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:30 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:30 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:35 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:36 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:40 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:40 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:40 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:40 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:49 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:50 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:50 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:50 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:50 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:50 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:51 - INFO - Changed to tab: New Order
+01/30/18 - 11:47:57 - INFO - Executing NewOrderVM#SaveOrder
+01/30/18 - 11:47:57 - INFO - Inserted PurchaseOrder: 179
+01/30/18 - 11:47:57 - INFO - Removing temp tab
+01/30/18 - 11:47:57 - INFO - Changed to tab: Settings
+01/30/18 - 11:47:57 - INFO - Changed to tab: Orders
+01/30/18 - 11:48:00 - INFO - Changed to tab: Orders
+01/31/18 - 00:26:15 - INFO - Application closing

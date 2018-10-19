@@ -1,0 +1,1069 @@
+01/10/18 - 13:16:25 - INFO - Application starting
+01/10/18 - 13:16:25 - INFO - Loading models
+01/10/18 - 13:16:27 - INFO - Models loaded
+01/10/18 - 13:16:32 - INFO - Upating BreadOrder: 234
+01/10/18 - 13:16:35 - INFO - Upating BreadOrder: 233
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 0
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 1
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 2
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 3
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 4
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 5
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 6
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 7
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 8
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 9
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 10
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 11
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 12
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 13
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 14
+01/10/18 - 13:16:36 - INFO - Upating BreadOrder: 232
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 15
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 16
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 17
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 18
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 19
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 20
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 21
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 22
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 23
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 24
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 25
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 26
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 27
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 28
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 29
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 30
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 31
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 32
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 33
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 34
+01/10/18 - 13:16:36 - INFO - Upating DailySale: 35
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 0
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 11
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 24
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 25
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 26
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 27
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 28
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 29
+01/10/18 - 13:16:36 - INFO - Destroying DailySale: 30
+01/10/18 - 13:16:37 - INFO - Destroying DailySale: 31
+01/10/18 - 13:16:37 - INFO - Destroying DailySale: 32
+01/10/18 - 13:16:37 - INFO - Destroying DailySale: 33
+01/10/18 - 13:16:37 - INFO - Destroying DailySale: 34
+01/10/18 - 13:16:37 - INFO - Destroying DailySale: 35
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 24
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 25
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 26
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 27
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 28
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 29
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 30
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 31
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 32
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 33
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 34
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 35
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 36
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 37
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 38
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 39
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 40
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 41
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 42
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 43
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 44
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 45
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 46
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 47
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 48
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 49
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 50
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 51
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 52
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 53
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 54
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 55
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 56
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 57
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 58
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 59
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 60
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 61
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 62
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 63
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 64
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 65
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 66
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 67
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 68
+01/10/18 - 13:16:37 - INFO - Inserted DailySale: 69
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 70
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 71
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 72
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 73
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 74
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 75
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 76
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 77
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 78
+01/10/18 - 13:16:38 - INFO - Inserted DailySale: 79
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 355
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 356
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 357
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 358
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 359
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 360
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 361
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 362
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 363
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 364
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 365
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 366
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 367
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 368
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 369
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 370
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 371
+01/10/18 - 13:16:38 - INFO - Upating ExpenseItem: 372
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Inventory
+01/10/18 - 13:16:58 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:03 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:04 - INFO - Changed to tab: Vendors
+01/10/18 - 13:17:05 - INFO - Executing VendorTabVM#GenerateOrderSheet
+01/10/18 - 13:28:06 - INFO - Changed to tab: Orders
+01/10/18 - 13:28:08 - INFO - Executing OrderTabVM#StartNewOrder
+01/10/18 - 13:28:09 - INFO - Adding temp tab: NewOrderVM
+01/10/18 - 13:28:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:13 - INFO - Executing NewOrderVM#ClearOrderAmounts
+01/10/18 - 13:28:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:15 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:24 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:25 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:25 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:25 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:25 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:25 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:27 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:27 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:29 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:30 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:31 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:31 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:36 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:36 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:37 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:37 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:37 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:37 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:37 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:40 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:41 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:41 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:41 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:41 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:42 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:42 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:43 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:44 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:49 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:50 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:52 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:54 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:54 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:55 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:55 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:55 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:55 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:56 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:56 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:56 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:56 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:57 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:57 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:57 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:57 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:58 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:59 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:59 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:59 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:59 - INFO - Changed to tab: New Order
+01/10/18 - 13:28:59 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:00 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:00 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:00 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:00 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:01 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:02 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:03 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:03 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:03 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:03 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:03 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:03 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:04 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:04 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:05 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:06 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:07 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:07 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:08 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:08 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:09 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:10 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:11 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:12 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:13 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:14 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:15 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:17 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:18 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:20 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:21 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:22 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:23 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:26 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:28 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:48 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:49 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:49 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:49 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:49 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:53 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:55 - INFO - Executing NewOrderVM#SaveOrder
+01/10/18 - 13:29:55 - INFO - Inserted PurchaseOrder: 167
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 1
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 0
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 2
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 25
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 36
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 19
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 131
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 21
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 54
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 58
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 57
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 59
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 60
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 61
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 66
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 64
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 71
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 72
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 74
+01/10/18 - 13:29:55 - INFO - Upating InventoryItem: 75
+01/10/18 - 13:29:57 - INFO - Changed to tab: New Order
+01/10/18 - 13:29:57 - INFO - Upating Vendor: 0
+01/10/18 - 13:29:57 - INFO - Removing temp tab
+01/10/18 - 13:29:57 - INFO - Changed to tab: Settings
+01/10/18 - 13:29:57 - INFO - Changed to tab: Orders
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:07 - INFO - Changed to tab: Inventory
+01/10/18 - 13:30:08 - INFO - Changed to tab: Orders
+01/10/18 - 13:31:42 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:43 - INFO - Changed to tab: Inventory
+01/10/18 - 13:31:44 - INFO - Changed to tab: Orders
+01/10/18 - 13:31:45 - INFO - Changed to tab: Inventory
+01/10/18 - 13:31:45 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 0
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 1
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 2
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 3
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 4
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 5
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 6
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 7
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 8
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 9
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 10
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 11
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 12
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 13
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Upating Recipe: 14
+01/10/18 - 13:31:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:31:46 - INFO - Changed to tab: Bread
+01/10/18 - 13:31:47 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:48 - INFO - Changed to tab: Orders
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:49 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:50 - INFO - Changed to tab: Vendors
+01/10/18 - 13:31:51 - INFO - Changed to tab: Bread
+01/10/18 - 13:31:52 - INFO - Executing BreadGuideVM#UpdateSquare
+01/10/18 - 13:31:54 - INFO - Upating BreadOrder: 234
+01/10/18 - 13:31:54 - INFO - Upating BreadOrder: 233
+01/10/18 - 13:31:54 - INFO - Upating BreadOrder: 232
+01/10/18 - 13:31:56 - INFO - Changed to tab: Orders
+01/10/18 - 13:31:58 - INFO - Changed to tab: Settings
+01/10/18 - 13:31:58 - INFO - Changed to tab: Reports
+01/10/18 - 13:32:00 - INFO - Executing ChangeableTabVM#SwitchPage
+01/10/18 - 13:32:00 - INFO - Changed to tab: Reports
+01/10/18 - 13:32:00 - INFO - Changed to tab: Reports
+01/10/18 - 13:32:00 - INFO - Changed to tab: Reports
+01/10/18 - 13:33:21 - INFO - Executing ChangeableTabVM#SwitchPage
+01/10/18 - 13:33:28 - INFO - Changed to tab: Reports
+01/10/18 - 13:33:28 - INFO - Upating DailySale: 0
+01/10/18 - 13:33:28 - INFO - Upating DailySale: 1
+01/10/18 - 13:33:28 - INFO - Upating DailySale: 2
+01/10/18 - 13:33:28 - INFO - Upating DailySale: 3
+01/10/18 - 13:33:28 - INFO - Upating DailySale: 4
+01/10/18 - 13:33:28 - INFO - Upating DailySale: 5
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 6
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 7
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 8
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 9
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 10
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 11
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 12
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 13
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 14
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 15
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 16
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 17
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 18
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 19
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 20
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 21
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 22
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 23
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 24
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 25
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 26
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 27
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 28
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 29
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 30
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 31
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 32
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 33
+01/10/18 - 13:33:29 - INFO - Executing PeriodSelectorVM#GoToCurWeek
+01/10/18 - 13:33:29 - INFO - Changed to tab: Reports
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 34
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 35
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 80
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 81
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 82
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 83
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 84
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 85
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 86
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 87
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 88
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 89
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 90
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 0
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 1
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 91
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 2
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 92
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 3
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 93
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 4
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 94
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 5
+01/10/18 - 13:33:29 - INFO - Inserted DailySale: 95
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 6
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 7
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 8
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 9
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 10
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 11
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 12
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 13
+01/10/18 - 13:33:29 - INFO - Inserted ExpenseItem: 373
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 14
+01/10/18 - 13:33:29 - INFO - Inserted ExpenseItem: 374
+01/10/18 - 13:33:29 - INFO - Upating DailySale: 15
+01/10/18 - 13:33:29 - INFO - Inserted ExpenseItem: 375
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 16
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 376
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 17
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 377
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 18
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 378
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 19
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 379
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 380
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 381
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 382
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 383
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 20
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 384
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 21
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 385
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 22
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 386
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 23
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 387
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 24
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 388
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 25
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 389
+01/10/18 - 13:33:30 - INFO - Inserted ExpenseItem: 390
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 26
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 27
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 28
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 29
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 30
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 31
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 32
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 33
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 34
+01/10/18 - 13:33:30 - INFO - Upating DailySale: 35
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 96
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 97
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 98
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 99
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 100
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 101
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 102
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 103
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 104
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 105
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 106
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 107
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 108
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 109
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 110
+01/10/18 - 13:33:30 - INFO - Inserted DailySale: 111
+01/10/18 - 13:33:30 - INFO - Upating ExpenseItem: 355
+01/10/18 - 13:33:30 - INFO - Upating ExpenseItem: 356
+01/10/18 - 13:33:30 - INFO - Upating ExpenseItem: 357
+01/10/18 - 13:33:30 - INFO - Upating ExpenseItem: 358
+01/10/18 - 13:33:30 - INFO - Upating ExpenseItem: 359
+01/10/18 - 13:33:30 - INFO - Upating ExpenseItem: 360
+01/10/18 - 13:33:30 - INFO - Upating ExpenseItem: 361
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 362
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 363
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 364
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 365
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 366
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 367
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 368
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 369
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 370
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 371
+01/10/18 - 13:33:31 - INFO - Upating ExpenseItem: 372
+01/10/18 - 13:33:33 - INFO - Changed to tab: Orders
+01/10/18 - 13:33:46 - INFO - Changed to tab: Orders
+01/10/18 - 13:33:49 - INFO - Executing OrderTabVM#MoveToReceivedOrders
+01/10/18 - 13:33:49 - INFO - Upating PurchaseOrder: 167
+01/10/18 - 13:33:49 - INFO - Changed to tab: Orders
+01/10/18 - 13:33:49 - INFO - Changed to tab: Orders
+01/10/18 - 13:33:51 - INFO - Executing OrderTabVM#ViewReceivedOrder
+01/10/18 - 13:33:51 - INFO - Adding temp tab: ViewOrderVM
+01/10/18 - 13:33:51 - INFO - Changed to tab: PO#: 167
+01/10/18 - 13:33:54 - INFO - Executing ViewOrderVM#SaveEdits
+01/10/18 - 13:33:54 - INFO - Upating PurchaseOrder: 167
+01/10/18 - 13:33:54 - INFO - Removing temp tab
+01/10/18 - 13:33:54 - INFO - Changed to tab: Settings
+01/10/18 - 13:33:54 - INFO - Changed to tab: Orders
+01/10/18 - 13:33:58 - INFO - Changed to tab: Reports
+01/10/18 - 13:34:00 - INFO - Changed to tab: Orders
+01/10/18 - 13:34:06 - INFO - Executing OrderTabVM#ShowReceivedRecList
+01/10/18 - 13:34:18 - INFO - Changed to tab: Reports
+01/10/18 - 13:34:20 - INFO - Changed to tab: Orders
+01/10/18 - 13:34:21 - INFO - Changed to tab: Reports
+01/10/18 - 13:34:27 - INFO - Executing MainViewModel#RefreshHelper
+01/10/18 - 13:34:27 - INFO - Loading models
+01/10/18 - 13:34:27 - INFO - Models loaded
+01/10/18 - 13:34:30 - INFO - Changed to tab: Orders
+01/10/18 - 13:34:33 - INFO - Changed to tab: Reports
+01/10/18 - 13:34:34 - INFO - Changed to tab: Reports
+01/10/18 - 13:34:35 - INFO - Changed to tab: Reports
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:39 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:41 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:42 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:45 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:47 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:53 - INFO - Executing ChangeableTabVM#SwitchPage
+01/10/18 - 13:34:53 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:53 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:53 - INFO - Changed to tab: Inventory
+01/10/18 - 13:34:55 - INFO - Executing ChangeableTabVM#SwitchPage
+01/10/18 - 13:34:57 - INFO - Changed to tab: Reports
+01/10/18 - 13:35:24 - INFO - Changed to tab: Reports
+01/10/18 - 13:35:24 - INFO - Changed to tab: Reports
+01/10/18 - 13:35:25 - INFO - Changed to tab: Reports
+01/10/18 - 13:35:25 - INFO - Changed to tab: Reports
+01/10/18 - 13:35:37 - INFO - Changed to tab: Reports
+01/10/18 - 13:35:49 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:49 - INFO - Upating Recipe: 0
+01/10/18 - 13:35:49 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:49 - INFO - Upating Recipe: 1
+01/10/18 - 13:35:49 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:49 - INFO - Upating Recipe: 2
+01/10/18 - 13:35:49 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:49 - INFO - Upating Recipe: 3
+01/10/18 - 13:35:49 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:49 - INFO - Upating Recipe: 4
+01/10/18 - 13:35:49 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:49 - INFO - Upating Recipe: 5
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 6
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 7
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 8
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 9
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 10
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 11
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 12
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 13
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:50 - INFO - Upating Recipe: 14
+01/10/18 - 13:35:50 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:54 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:57 - INFO - Executing ChangeableTabVM#SwitchPage
+01/10/18 - 13:35:57 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:57 - INFO - Upating Recipe: 35
+01/10/18 - 13:35:57 - INFO - Changed to tab: Recipes
+01/10/18 - 13:35:57 - INFO - Upating Recipe: 36
+01/10/18 - 13:35:58 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:07 - INFO - Executing ChangeableTabVM#SwitchPage
+01/10/18 - 13:36:07 - INFO - Upating Recipe: 0
+01/10/18 - 13:36:07 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:07 - INFO - Upating Recipe: 1
+01/10/18 - 13:36:07 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:07 - INFO - Upating Recipe: 2
+01/10/18 - 13:36:07 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:07 - INFO - Upating Recipe: 3
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 4
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 5
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 6
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 7
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 8
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 9
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 10
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 11
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 12
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 13
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Upating Recipe: 14
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:08 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:10 - INFO - Executing RecipeTabVM#EditRecipe
+01/10/18 - 13:36:11 - INFO - Adding temp tab: NewRecipeVM
+01/10/18 - 13:36:11 - INFO - Changed to tab: Edit Recipe
+01/10/18 - 13:36:11 - INFO - Changed to tab: Edit Recipe
+01/10/18 - 13:36:25 - INFO - Changed to tab: Reports
+01/10/18 - 13:36:34 - INFO - Changed to tab: Edit Recipe
+01/10/18 - 13:36:44 - INFO - Executing NewRecipeVM#FinishWizard
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 0
+01/10/18 - 13:36:44 - INFO - Changed to tab: Edit Recipe
+01/10/18 - 13:36:44 - INFO - Removing temp tab
+01/10/18 - 13:36:44 - INFO - Changed to tab: Settings
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 0
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 1
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 2
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 3
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 4
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 5
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 6
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 7
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 8
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 9
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 10
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 11
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 12
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 13
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:44 - INFO - Upating Recipe: 14
+01/10/18 - 13:36:44 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:45 - INFO - Executing ChangeableTabVM#SwitchPage
+01/10/18 - 13:36:46 - INFO - Upating Recipe: 35
+01/10/18 - 13:36:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:36:46 - INFO - Upating Recipe: 36
+01/10/18 - 13:36:46 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:27 - INFO - Executing ChangeableTabVM#SwitchPage
+01/10/18 - 13:37:27 - INFO - Upating Recipe: 0
+01/10/18 - 13:37:27 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:27 - INFO - Upating Recipe: 1
+01/10/18 - 13:37:27 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:27 - INFO - Upating Recipe: 2
+01/10/18 - 13:37:27 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:27 - INFO - Upating Recipe: 3
+01/10/18 - 13:37:27 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:27 - INFO - Upating Recipe: 4
+01/10/18 - 13:37:27 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:27 - INFO - Upating Recipe: 5
+01/10/18 - 13:37:27 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 6
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 7
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 8
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 9
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 10
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 11
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 12
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 13
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Upating Recipe: 14
+01/10/18 - 13:37:28 - INFO - Changed to tab: Recipes
+01/10/18 - 13:37:28 - INFO - Changed to tab: Reports
+01/10/18 - 13:38:02 - INFO - Changed to tab: Reports
+01/10/18 - 13:38:02 - INFO - Changed to tab: Reports
+01/10/18 - 13:38:03 - INFO - Changed to tab: Reports
+01/10/18 - 13:38:03 - INFO - Changed to tab: Reports
+01/10/18 - 13:38:04 - INFO - Changed to tab: Reports
+01/10/18 - 13:38:06 - INFO - Changed to tab: Orders
+01/10/18 - 13:38:32 - INFO - Changed to tab: Inventory
+01/10/18 - 13:38:33 - INFO - Changed to tab: Orders
+01/10/18 - 13:38:53 - INFO - Application closing

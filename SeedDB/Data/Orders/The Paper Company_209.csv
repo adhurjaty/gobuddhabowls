@@ -1,0 +1,6 @@
+Id,Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+78,Biopack #4,Paper Goods,Case,0,Stack,4,Each,40,0.4,39.55,8,3/7/2018 12:00:00 AM,3
+82,Forks,Paper Goods,1000,0,Sleeve,10,1,1,1,20.59,1,3/7/2018 12:00:00 AM,3
+91,To-Go Soup Lids,Paper Goods,500,0,Sleeve,10,1,1,1,42.68,1,3/7/2018 12:00:00 AM,3
+95,Napkins,Paper Goods,6000,0,Stack,12,1,1,1,43.23,1,2/21/2018 12:00:00 AM,3
+110,Poly Gloves,Paper Goods,2000,0,BOX,4,1,1,1,15.8,1,3/7/2018 12:00:00 AM,3

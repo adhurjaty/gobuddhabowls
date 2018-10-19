@@ -1,0 +1,19 @@
+Name,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,Id
+Mozzarella,Dairy,CASE 30lb,6,5lb BAG,6,OZ-wt,480,1,66.76,1,1/11/2017 2:11:58 PM,0
+Cheddar,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,320,1,43.65,3,1/11/2017 2:11:58 PM,1
+Heavy Cream,Dairy,6 1/2 Gallon,1,1/2 GALLON,6,CUP,48,1,41.5,1,1/11/2017 2:11:58 PM,6
+Eggs,Dairy,15 DOZEN,4,TRAY,6,EA,180,0.95,10.95,1,1/11/2017 2:11:58 PM,8
+Whole Milk,Dairy,2 GALLON,9,GALLON,2,CUP,32,1,4.69,12,1/11/2017 2:11:58 PM,9
+Mayonnaise,Dry Goods,4 GAL,1,JUG,4,EA,4,1,22.89,1,1/11/2017 2:11:58 PM,19
+Macaroni,Dry Goods,2lb,2,BAG,2,EA,320,2.41,19.88,3,1/11/2017 2:11:58 PM,21
+Roasted Bell Peppers,Dry Goods,6# CANS,0,CAN,6,OZ-wt,360,0.98,36.09,1,1/11/2017 2:11:58 PM,23
+Chicken Broth,Dry Goods,4 EA,4,BOTTLE,4,,,0,40,1,1/11/2017 2:11:58 PM,33
+Olive Oil,Dry Goods,6 GAL,5.1,JUG,6,OZ-fl,768,0.99,67,1,1/11/2017 2:11:58 PM,36
+Kalamata Olives,Dry Goods,EACH,0.5,JAR,1,OZ-wt,64.8,1,12.82,1,1/11/2017 2:11:58 PM,41
+Lemon Juice,Dry Goods,1 Gal,0.75,GAL,1,OZ-wt,128,1,10.2,1,1/11/2017 2:11:58 PM,42
+Thyme,Herbs,2lbs,1,OZ-wt,32,TBL,243.81,1,13.3,1,1/11/2017 2:11:58 PM,44
+Salt,Herbs,25lbs,1,Container,8.9,TBL,615,1,5.12,1,1/11/2017 2:11:58 PM,49
+Yellow Onions,Produce,50lb,0,BAG,1,OZ-wt,800,0.85,10.5,2,1/11/2017 2:11:58 PM,54
+Mixed Greens,Produce,3lb,0,BAG,1,OZ-wt,48,0.98,5.99,1,1/11/2017 2:11:58 PM,58
+Chicken Breast,Poultry,40lb CASE,0,CASE,1,OZ-wt,640,0.85,68.7,4,1/11/2017 2:11:58 PM,72
+Italian Sausage,Meats,10lb CASE,11,BAG,2,OZ-wt,160,0.91,27.16,2,1/11/2017 2:11:58 PM,74

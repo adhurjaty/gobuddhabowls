@@ -1,0 +1,7 @@
+Id,Name,LastOrderAmount,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedPrice,LastPurchasedDate,LastVendorId
+0,Mozzarella,2,Dairy,CASE 30lb,4,5lb BAG,6,OZ-wt,80,1,63.9,10/23/2017 12:00:00 AM,9
+1,Cheddar,3,Dairy,CASE 20lb,0,5lb BAG,4,OZ-wt,80,1,41,10/23/2017 12:00:00 AM,9
+4,Butter,1,Dairy,CASE 30lb,2,1lb,30,OZ-wt,16,1,85,10/23/2017 12:00:00 AM,9
+54,Yellow Onions,4,Produce,20lb CASE,0,BAG,1,OZ-wt,800,85,17,10/23/2017 12:00:00 AM,9
+59,Mushrooms,3,Produce,10lb CASE,0,FLAT,1,OZ-wt,160,95,18.55,10/23/2017 12:00:00 AM,9
+72,Chicken Breast,3,Poultry,40lb CASE,0,CASE,1,OZ-wt,640,85,54.8,10/23/2017 12:00:00 AM,9

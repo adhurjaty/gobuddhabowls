@@ -1,0 +1,30 @@
+01/06/18 - 16:39:16 - INFO - Application starting
+01/06/18 - 16:39:16 - INFO - Loading models
+01/06/18 - 16:39:17 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.Helpers.MainHelper.GetWeek(DateTime date)
+   at BuddhaBowls.Services.DBCache.InitBreadOrders()
+   at BuddhaBowls.Services.DBCache.InitializeModels()
+   at BuddhaBowls.Services.DBCache..ctor()
+   at BuddhaBowls.MainViewModel.InitTabsAndModel()
+   at BuddhaBowls.MainViewModel..ctor()
+   at BuddhaBowls.MainClass.Show()
+   at BuddhaBowls.MainClass.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)
+01/06/18 - 16:39:31 - INFO - Application starting
+01/06/18 - 16:39:31 - INFO - Loading models
+01/06/18 - 16:39:32 - ERROR - Sequence contains no matching element
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source, Func`2 predicate)
+   at BuddhaBowls.Helpers.MainHelper.GetWeek(DateTime date)
+   at BuddhaBowls.Services.DBCache.InitBreadOrders()
+   at BuddhaBowls.Services.DBCache.InitializeModels()
+   at BuddhaBowls.Services.DBCache..ctor()
+   at BuddhaBowls.MainViewModel.InitTabsAndModel()
+   at BuddhaBowls.MainViewModel..ctor()
+   at BuddhaBowls.MainClass.Show()
+   at BuddhaBowls.MainClass.OnStartup(StartupEventArgs e)
+   at System.Windows.Application.<.ctor>b__1_0(Object unused)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)

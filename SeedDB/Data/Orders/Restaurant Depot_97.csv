@@ -1,0 +1,15 @@
+Id,Name,Category,CountUnit,RecipeUnit,RecipeUnitConversion,PurchasedUnit,Count,Conversion,Yield,LastPurchasedPrice,LastOrderAmount,LastPurchasedDate,LastVendorId
+3,Feta,Dairy,5lb BAG,OZ-wt,160,33lbs,1.25,1,100,54.17,2,9/3/2017 12:00:00 AM,2
+18,Artichoke Hearts,Grocery,CAN,OZ-wt,324,6# CANS,2,6,10000,43.83,2,9/3/2017 12:00:00 AM,2
+21,Macaroni,Grocery,BAG,EA,320,2lb,3,2,241,13.32,5,9/3/2017 12:00:00 AM,2
+23,Roasted Bell Peppers,Grocery,CAN,OZ-wt,360,6# CANS,1,6,98,29.95,6,9/3/2017 12:00:00 AM,2
+24,Chopped Clams,Grocery,CAN,EA,12,12x48oz CANS,19,12,100,93.95,2,9/3/2017 12:00:00 AM,2
+26,Clam Juice,Grocery,CAN,EA,12,12x48oz CANS,34,12,100,33.99,1,9/3/2017 12:00:00 AM,2
+31,Tapatio,Grocery,BOTTLE,EA,12,EA,10,12,10000,12.69,1,9/3/2017 12:00:00 AM,2
+41,Kalamata Olives,Grocery,JAR,OZ-wt,64.8,6x4.4lbs,2,6,10000,63.94,1,9/3/2017 12:00:00 AM,2
+42,Lemon Juice,Grocery,GAL,OZ-wt,128,1 Gal,4.5,4,100,16.69,1,9/3/2017 12:00:00 AM,2
+60,Cucumbers,Produce,CASE,OZ-wt,420,36 COUNT,0.3,1,950000,14.77,1,9/3/2017 12:00:00 AM,2
+64,Fresh Basil,Produce,BAG,OZ-wt,16,1lb,1,1,65,3.95,2,9/3/2017 12:00:00 AM,2
+112,Dried Garbanzo Beans,Grocery,QUART,LB,1.877,25lb,12,13.318,1000000,23.8,2,9/3/2017 12:00:00 AM,2
+129,Lemonade Base,Beverage,GALLON,1,16,EA,0,4,,20.58,3,9/3/2017 12:00:00 AM,2
+130,Pink Lemonade Base,Beverage,GALLON,1,1,4 GAL,0,4,,22.96,3,9/3/2017 12:00:00 AM,2

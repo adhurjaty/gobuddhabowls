@@ -1,0 +1,12 @@
+Id,Name,LastOrderAmount,LastPurchasedPrice,Category,PurchasedUnit,Count,CountUnit,Conversion,RecipeUnit,RecipeUnitConversion,Yield,LastPurchasedDate,LastVendorId
+78,Biopack #4,6,39.55,Paper Goods,Case,16,Stack,4,Each,40,4E+07,9/19/2017 12:00:00 AM,3
+82,Forks,1,20.59,Paper Goods,1000,14,Sleeve,10,1,1,10000,9/19/2017 12:00:00 AM,3
+85,Wax Paper Sheets,1,54.65,Paper Goods,6000,6,Stack,6,1,1,10000,9/19/2017 12:00:00 AM,3
+86,Small To-Go Bags,1,14.88,Paper Goods,500,0.6,Case,1,1,1,100,9/19/2017 12:00:00 AM,3
+89,To-Go Soup Bowls (16oz),1,48.78,Paper Goods,500,6,Sleeve,10,1,1,1000000,9/19/2017 12:00:00 AM,3
+91,To-Go Soup Lids,1,42.68,Paper Goods,500,9,Sleeve,10,1,1,1E+08,9/19/2017 12:00:00 AM,3
+110,Poly Gloves,1,15.8,Paper Goods,2000,18,BOX,4,1,1,100,9/19/2017 12:00:00 AM,3
+117,16 Oz Cups,1,54.75,Paper Goods,1000 CASE,7,Sleeve,20,1,1,100,9/19/2017 12:00:00 AM,3
+121,Die-Cut To-Go Bags,1,55.35,Paper Goods,500,0.8,CASE,1,1,1,100,9/19/2017 12:00:00 AM,3
+122,Garbage Bags,1,28.62,Janitorial,250,1.5,CASE,1,1,1,100,9/19/2017 12:00:00 AM,3
+125,Bleach,1,8,Janitorial,4 GAL,4.2,GALLON,4,1,1,100,9/19/2017 12:00:00 AM,3
