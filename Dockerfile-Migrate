@@ -2,5 +2,6 @@
 FROM gobuffalo/buffalo:v0.11.0 as migrate
 
 WORKDIR $GOPATH/src/buddhabowls/
-ADD . .
+ADD wait-for-it.sh .
+ADD app .
 ENV GO_ENV=development

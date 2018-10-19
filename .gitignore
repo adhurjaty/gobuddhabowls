@@ -1,15 +1,1 @@
-vendor/
-**/*.log
-**/*.sqlite
-.idea/
-bin/
-tmp/
-node_modules/
-.sass-cache/
-*-packr.go
-public/assets/
-buddhabowls
-.vscode/
-.grifter/
-.env
-pg_data/
+pg_data
