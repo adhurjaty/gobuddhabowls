@@ -8,11 +8,11 @@ RUN mkdir -p $GOPATH/src/buddhabowls
 WORKDIR $GOPATH/src/buddhabowls/
 
 # this will cache the npm install step, unless package.json changes
-ADD package.json .
+ADD app/package.json .
 RUN npm install
 # ADD yarn.lock .
 # RUN yarn install --no-progress
-ADD . .
+ADD app .
 RUN buffalo build --static -o bin/app
 
 # We need to use an older version of gobuffalo here for the migrations to succeed
