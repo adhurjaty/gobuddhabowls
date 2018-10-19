@@ -7,7 +7,17 @@ import uuid
 import numpy as np
 import psycopg2 as sql
 
-conn = sql.connect("dbname='buddhabowls_development' user='postgres' host='localhost' port='15432' password='mysecretpassword'")
+
+color_dict = {
+    'Dairy': '#96A6DA',
+    'Grocery': '#ADAAAA',
+    'Herbs': '#ADAAAA',
+    'Produce': '#CAE2B5',
+    'Poultry': '#F0CDAE',
+    'Meats': '#F0CDAE',
+    'Bread': '#F9EA9A'
+}
+conn = sql.connect("dbname='buddhabowls_development' user='postgres' host='localhost' port='5432' password='mysecretpassword'")
 
 
 def insert_df_contents(file_df, table, schema):
@@ -90,6 +100,23 @@ def insert_inventory_items():
 
     # Inventory Items
     inv_items_df = pd.read_csv(os.path.join(os.path.curdir, 'Data', 'InventoryItem.csv'))
+
+    # get categories and map
+    cat_series = inv_items_df.groupby(['Category'])['Id'].min()
+    category_df = pd.DataFrame({'name': cat_series.index, 'id': cat_series.values})
+    category_df = category_df.sort_values('id').reset_index(drop=True)
+    category_df['index'] = category_df.index
+    category_df['new_id'] = create_new_id(category_df)
+    category_df['background'] = category_df.apply(lambda a: color_dict.get(a['name'], '#FFFFFF'), axis=1)
+
+    category_schema = [
+        'name',
+        'index',
+        'background'
+    ]
+
+    insert_df_contents(category_df, 'inventory_item_categories', category_schema)
+
     inv_items_mapping = {
         'Id': 'id',
         'Name': 'name',
@@ -102,7 +129,7 @@ def insert_inventory_items():
 
     inv_item_schema = [
         'name',
-        'category',
+        'inventory_item_category_id',
         'count_unit',
         'recipe_unit',
         'recipe_unit_conversion',
@@ -118,6 +145,8 @@ def insert_inventory_items():
     db_inv_item_df['index'] = db_inv_item_df.apply(get_index, axis=1)
     db_inv_item_df['new_id'] = create_new_id(db_inv_item_df)
     db_inv_item_df['yield'] = db_inv_item_df['yield'].fillna(1)
+    db_inv_item_df['inventory_item_category_id'] = db_inv_item_df.apply(lambda a: category_df.loc[category_df['name'] == a['category'],
+                                                                                 'new_id'].item(), axis=1)
 
     insert_df_contents(db_inv_item_df, 'inventory_items', inv_item_schema)
 
@@ -386,4 +415,27 @@ def insert_inventory_items():
     conn.commit()
 
 
+def insert_login():
+    hash = '$2a$10$vGv9pBKd5rIz4MUw7jNnQubnrdrsJ1rmkEBd9rov9k1TRod01Iu5O'
+    uname = 'ddunietz@gmail.com'
+    df = pd.DataFrame()
+    df['password_hash'] = [hash]
+    df['email'] = [uname]
+    insert_df_contents(df, 'users', ['password_hash', 'email'])
+    conn.commit()
+
+
+def truncate_all_tables():
+    cursor = conn.cursor()
+    tables = ('count_inventory_items count_prep_items inventories inventory_item_categories inventory_items '
+              + 'order_items prep_items purchase_orders recipe_items recipes users vendor_items vendors').split()
+    for table in tables:
+        query = f'TRUNCATE {table};'
+        cursor.execute(query)
+        print(f'Ran {query}')
+    conn.commit()
+
+
+truncate_all_tables()
 insert_inventory_items()
+insert_login()
