@@ -4,7 +4,8 @@
 2. `docker-compose --file docker-compose.db.yml build`
 3. `docker-compose --file docker-compose.yml up`
 4. `docker-compose --file docker-compose.db.yml up`
-5. In `../buddhabowls-data/seeddb`: `python migrate_to_postgres.py`
+5. `cd app/SeedDB`
+6. `python3 migrate_to_postgres.py` or `python` if 3 is default for you
 
 # Running the Application
 
