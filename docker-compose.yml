@@ -28,6 +28,8 @@ services:
       ADDR: "0.0.0.0"
       PORT: "3000"
     command: "/bin/app"
+    # volumes: 
+    #   - ./app:/go/src/buddhabowls/bin/app
     networks:
       default:
         aliases:

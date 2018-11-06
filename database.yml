@@ -1,0 +1,14 @@
+development:
+  dialect: postgres
+  database: buddhabowls_development
+  user: postgres
+  password: mysecretpassword
+  host: localhost
+  port: 5432
+  pool: 5
+
+test:
+  url: {{envOr "TEST_DATABASE_URL" "postgres://postgres:mysecretpassword@postgres:5432/buddhabowls_test?sslmode=disable"}}
+
+production:
+  url: {{envOr "DATABASE_URL" "postgres://postgres:mysecretpassword@postgres:5432/buddhabowls_production?sslmode=disable"}}

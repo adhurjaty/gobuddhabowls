@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Restaurateur</title>
+    <%= stylesheetTag("application.css") %>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="<%= authenticity_token %>" />
+    <link rel="icon" href="<%= assetPath("images/favicon.ico") %>">
+  </head>
+  <body>
+      <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+        <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Buddha Bowls</a>
+        <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
+        <ul class="navbar-nav px-3">
+          <li class="nav-item text-nowrap">
+            <a class="nav-link" href="#">Sign out</a>
+          </li>
+        </ul>
+      </nav>
+  
+      <div class="container-fluid">
+        <div class="row">
+          <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+            <div class="sidebar-sticky">
+              <ul class="nav flex-column">
+                <!-- <li class="nav-item">
+                  <a class="nav-link active" href="#">
+                    Dashboard <span class="sr-only">(current)</span>
+                  </a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" id="orders" href="<%= purchaseOrdersPath() %>">
+                    Orders
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="inventory" href="<%= inventoriesPath() %>">
+                    Inventory
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="vendors" href="<%= vendorsPath() %>">
+                    Vendors
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="bread" href="/bread">
+                    Bread
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="recipes" href="<%= recipesPath() %>">
+                    Recipes
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="reports" href="/reports">
+                    Reports
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="settings" href="/settings">
+                    Settings
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+            <%= partial("flash.html") %>
+            <%= yield %>
+          </main>
+        </div>
+      </div>
+
+    <%= javascriptTag("application.js") %>
+  </body>
+</html>
