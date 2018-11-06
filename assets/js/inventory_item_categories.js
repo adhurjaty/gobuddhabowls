@@ -1,6 +1,9 @@
+import 'bootstrap-colorpicker';
+
 $(() => {
     var el = document.getElementById('categories-movable');
     if(el != undefined) {
+        debugger;
         var sortable = Sortable.create(el, {
             group: {
                 name: "components",

@@ -2,7 +2,6 @@ package actions
 
 import (
 	"buddhabowls/models"
-	"fmt"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/pkg/errors"
@@ -47,8 +46,6 @@ func SetCurrentUser(next buffalo.Handler) buffalo.Handler {
 			u := &models.User{}
 			tx := c.Value("tx").(*pop.Connection)
 			err := tx.Find(u, uid)
-			fmt.Println("!!!!!!!!!!!!!!!!!!!!")
-			fmt.Println(u)
 			if err != nil {
 				return errors.WithStack(err)
 			}
