@@ -1,5 +1,5 @@
 import Pikaday from 'pikaday';
-import { formatSlashDate } from './helpers';
+import { formatSlashDate } from './_helpers';
 
 export function datepicker(el, onDateSelected) {
     disableAutocomplete(el);

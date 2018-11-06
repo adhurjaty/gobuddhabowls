@@ -1,5 +1,5 @@
-import { initOrderItemsArea } from './order_item_details';
-import { datepicker, daterange } from './datepicker';
+import { initOrderItemsArea } from './_order_item_details';
+import { datepicker, daterange } from '../_datepicker';
 
 var _vendorItemsMap;
 

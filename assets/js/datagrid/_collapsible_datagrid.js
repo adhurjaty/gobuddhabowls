@@ -1,4 +1,4 @@
-import { DataGrid } from "./datagrid";
+import { DataGrid } from "./_datagrid";
 
 var collapsedCaret = 'fa-caret-right';
 var expandedCaret = 'fa-caret-down';

@@ -1,6 +1,6 @@
-import { CollapsibleDatagrid } from './collapsible_datagrid';
-import { getPurchaseOrderCost, formatMoney, formatSlashDate, replaceUrlId } from './helpers';
-import { horizontalPercentageChart } from './horizontal_percentage_chart';
+import { CollapsibleDatagrid } from '../datagrid/_collapsible_datagrid';
+import { getPurchaseOrderCost, formatMoney, formatSlashDate, replaceUrlId } from '../_helpers';
+import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
 
 $(() => {
     var $container = $('#datagrid-holder');

@@ -1,5 +1,5 @@
-import { formatMoney } from "./helpers";
-import { OrderSheetTable } from "./order_sheet_table";
+import { formatMoney } from "../_helpers";
+import { OrderSheetTable } from "./_order_sheet_table";
 import html2canvas from 'html2canvas';
 
 $(() => {

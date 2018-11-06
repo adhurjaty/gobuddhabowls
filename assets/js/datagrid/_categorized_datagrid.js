@@ -1,5 +1,5 @@
-import { DataGrid } from "./datagrid";
-import { groupByCategory } from "./helpers";
+import { DataGrid } from "./_datagrid";
+import { groupByCategory } from "../_helpers";
 
 export class CategorizedDatagrid extends DataGrid {
     constructor(data, columnInfo, updateFnc) {

@@ -1,4 +1,4 @@
-import { datepicker, daterange } from './datepicker';
+import { datepicker, daterange } from './_datepicker';
 
 $(() => {
 

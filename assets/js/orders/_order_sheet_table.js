@@ -1,5 +1,5 @@
-import { DataGrid } from "./datagrid";
-import { groupByCategory, formatMoney } from "./helpers";
+import { DataGrid } from "../datagrid/_datagrid";
+import { groupByCategory, formatMoney } from "../_helpers";
 
 export class OrderSheetTable extends DataGrid {
     constructor(data, columnInfo) {

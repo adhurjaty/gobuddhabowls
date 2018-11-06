@@ -1,6 +1,6 @@
 
 import { Chart } from 'chart.js'
-import { categorize, formatMoney } from './helpers';
+import { categorize, formatMoney } from './_helpers';
 
 
 $(() => {
