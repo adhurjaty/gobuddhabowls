@@ -1,3 +1,4 @@
 pg_data/
 public/
 tmp/
+node_modules/
