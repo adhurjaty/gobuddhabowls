@@ -2,6 +2,7 @@ package actions
 
 import (
 	"buddhabowls/models"
+	"buddhabowls/presentation"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -34,19 +35,13 @@ func (v VendorsResource) List(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	vendors := &models.Vendors{}
-
-	// Paginate results. Params "page" and "per_page" control pagination.
-	// Default values are "page=1" and "per_page=20".
-	q := tx.PaginateFromParams(c.Params()).Eager()
-
-	// Retrieve all Vendors from the DB
-	if err := q.All(vendors); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	vendors, err := presenter.GetVendors()
+	if err != nil {
 		return errors.WithStack(err)
 	}
 
-	// Add the paginator to the context so it can be used in the template.
-	c.Set("pagination", q.Paginator)
+	c.Set("vendors", vendors)
 
 	return c.Render(200, r.Auto(c, vendors))
 }

@@ -1,4 +1,3 @@
-
 import { Chart } from 'chart.js'
 import { categorize, formatMoney } from './helpers/_helpers';
 
