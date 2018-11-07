@@ -43,7 +43,7 @@ func (v VendorsResource) List(c buffalo.Context) error {
 
 	c.Set("vendors", vendors)
 
-	return c.Render(200, r.Auto(c, vendors))
+	return c.Render(200, r.HTML("vendors/index"))
 }
 
 // Show gets the data for one Vendor. This function is mapped to

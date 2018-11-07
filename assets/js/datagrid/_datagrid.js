@@ -160,7 +160,7 @@ class Row {
             break;
         default:    // type 'text'
             cell.$td.on('focusin', function(event) {
-                self.clearError($(this));
+                cell.clearError($(this));
                 $(this).selectText();                    
             });
             cell.$td.on('focusout', function(event) {
