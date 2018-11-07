@@ -30,11 +30,11 @@ $(() => {
             }
         },
         {
-            name: 'phoneNumber',
+            name: 'phone_number',
             header: 'Phone Number',
             editable: true,
             column_func: (vendor) => {
-                return vendor.phoneNumber;
+                return vendor.phone_number;
             }
         },
         {
@@ -46,7 +46,7 @@ $(() => {
             }
         },
         {
-            name: 'shippingCost',
+            name: 'shipping_cost',
             header: 'Shipping Cost',
             type: 'money',
             editable: true,
@@ -78,12 +78,33 @@ $(() => {
     $container.html(datagrid.getTable());
 });
 
+// TODO: repeated code from purchase_orders_datagrid.js - refactor
 function sendUpdate(updateObj) {
     var id = updateObj.id;
 
-    submitUpdateForm(id, updateObj);
+    submitUpdateForm(id, convertUpdateObj(updateObj));
 }
 
+function convertUpdateObj(updateObj) {
+    var outObj = {}
+    if(updateObj['name']) {
+        outObj['Name'] = updateObj['name']
+    }
+    if(updateObj['email']) {
+        outObj['Email'] = updateObj['email']
+    }
+    if(updateObj['phone_number']) {
+        outObj['PhoneNumber'] = updateObj['phone_number']
+    }
+    if(updateObj['contact']) {
+        outObj['Contact'] = updateObj['contact']
+    }
+    if(updateObj['shipping_cost']) {
+        outObj['ShippingCost'] = updateObj['shipping_cost']
+    }
+
+    return outObj;
+}
 
 function submitUpdateForm(id, data) {
     var $form = $('#update-vendor-form');
