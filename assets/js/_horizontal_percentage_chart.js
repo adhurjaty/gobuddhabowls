@@ -1,4 +1,4 @@
-import { formatMoney, categorize } from "./_helpers";
+import { formatMoney, categorize } from "./helpers/_helpers";
 
 export function horizontalPercentageChart(title, items, total) {
     var head = `

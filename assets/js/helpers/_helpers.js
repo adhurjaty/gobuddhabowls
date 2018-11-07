@@ -112,3 +112,16 @@ export function sortItems(items) {
 
     return items;
 }
+
+export function toJsonName(goName) {
+    var name = goName.replace(/([A-Z])/g, '_$1'.toLowerCase());
+    if(name.charAt(0) == '_') {
+        name = name.slice(1);
+    }
+    return name;
+}
+
+export function toGoName(jsName) {
+    var toks = jsName.split('_');
+    return toks.map((tok) => tok.charAt(0).toUpperCase() + tok.slice(1)).join('');
+}

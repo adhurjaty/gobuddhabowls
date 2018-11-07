@@ -1,4 +1,4 @@
-import { formatMoney } from "../_helpers";
+import { formatMoney } from "../helpers/_helpers";
 import { OrderSheetTable } from "./_order_sheet_table";
 import html2canvas from 'html2canvas';
 

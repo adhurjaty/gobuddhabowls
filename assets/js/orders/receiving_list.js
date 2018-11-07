@@ -1,4 +1,4 @@
-import { formatMoney } from "../_helpers";
+import { formatMoney } from "../helpers/_helpers";
 import html2canvas from 'html2canvas';
 import { DataGrid } from "../datagrid/_datagrid";
 

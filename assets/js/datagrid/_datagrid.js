@@ -1,4 +1,4 @@
-import { formatMoney, unFormatMoney, formatSlashDate } from "../_helpers";
+import { formatMoney, unFormatMoney, formatSlashDate } from "../helpers/_helpers";
 import Pikaday from 'pikaday';
 import { datepicker } from "../_datepicker";
 
@@ -7,6 +7,7 @@ class Cell {
     constructor($td) {
         this.$td = $td;
         this.contents = $td.text();
+        this.name = $td.attr('name');
     }
 
     getCell() {
@@ -79,6 +80,7 @@ class Row {
                 self.setListener(cell);
             }
         });
+        this.id = this.cells.find(x => x.name == 'id').contents;
     }
 
     getRow() {
@@ -170,8 +172,18 @@ class Row {
     }
 
     sendUpdate() {
-        var updateObj = this.getInfo();
+        var updateObj = this.getUpdateInfo();
         this.updateFnc(updateObj);
+    }
+
+    getUpdateInfo() {
+        var updateObj = {}
+        this.getEditableCells().map(cell => {
+            var $td = cell.getCell();
+            updateObj[$td.attr('name')] = $td.text();
+        });
+        updateObj['id'] = this.id;
+        return updateObj;
     }
 
     getInfo() {

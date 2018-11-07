@@ -20,3 +20,5 @@
 <%= partial("purchase_orders/datagrid.html", { openPurchaseOrders: openPurchaseOrders, recPurchaseOrders: recPurchaseOrders }) %>
 
 <%= form({action: "/purchase_orders/{purchase_order_id}", method: "PUT", id: "update-po-form", style: "display: none;"}) { %> <% } %>
+
+<%= javascriptTag("orders/purchase_orders_index.js") %>

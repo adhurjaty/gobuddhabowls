@@ -1,5 +1,5 @@
 import { MultilineGraph } from '../_multiline_graph'
-import { categorize, getDate } from '../_helpers'
+import { categorize, getDate } from '../helpers/_helpers'
 
 
 $(() => {
