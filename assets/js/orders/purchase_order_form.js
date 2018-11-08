@@ -1,5 +1,5 @@
-import { initOrderItemsArea } from './_order_item_details';
-import { datepicker, daterange } from '../_datepicker';
+import { daterange } from '../_datepicker';
+import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
 
 
 $(() => {
@@ -11,6 +11,8 @@ $(() => {
     setDateCheckbox();
 });
 
+var _table = null;
+
 function setDateRange() {
     var $inputs = $('#new-order-date, #new-received-date');
     daterange($inputs);
@@ -18,9 +20,12 @@ function setDateRange() {
 
 function setDropdown(vendorItemsMap) {
     var dropdownId = '#new-order-vendor';
-    if($(`${dropdownId} option:selected`).val()) {
-        var items = JSON.parse($('#vendor-items-table').attr('data'));
-        initOrderItemsArea(items)
+    var container = $('#categorized-items-display');
+    var selectedId = $(`${dropdownId} option:selected`).val();
+
+    if(selectedId) {
+        var allItems = vendorItemsMap[selectedId];
+        _table = new CategorizedItemsDisplay(allItems, container);
     }
     $(dropdownId).change(function(d) {
         // remove none option
@@ -28,9 +33,9 @@ function setDropdown(vendorItemsMap) {
 
         var id = $(this).val();
         var items = vendorItemsMap[id];
+        container.attr('data', JSON.stringify(items));
 
-        // initialize grid and breakdown
-        initOrderItemsArea(items);
+        _table = new CategorizedItemsDisplay(null, container);
     });
 }
 
@@ -60,9 +65,7 @@ function isValidOptionSelected() {
 }
 
 function getDataFromTable() {
-    return JSON.parse($('#vendor-items-table')
-               .attr('data'))
-               .filter((x) => x.count > 0);
+    return _table.items.filter(x => x.count > 0);
 }
 
 function removeUncheckedRecDate() {
