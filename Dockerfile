@@ -15,11 +15,11 @@ RUN sed -i "s|host: .*$|host: postgres|g" database.yml
 RUN buffalo build --static -o bin/app
 
 # We need to use an older version of gobuffalo here for the migrations to succeed
-FROM gobuffalo/buffalo:v0.11.0 as migrate
-
-WORKDIR $GOPATH/src/buddhabowls/
-ADD . .
-ENV GO_ENV=development
+#FROM gobuffalo/buffalo:v0.11.0 as migrate
+#
+#WORKDIR $GOPATH/src/buddhabowls/
+#ADD . .
+#ENV GO_ENV=development
 
 # Run the compiled binary in a slim alpine image
 FROM alpine
