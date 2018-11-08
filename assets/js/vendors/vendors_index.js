@@ -1,5 +1,7 @@
-import { formatMoney, replaceUrlId } from '../_helpers';
+import { formatMoney, replaceUrlId } from '../helpers/_helpers';
 import { DataGrid } from '../datagrid/_datagrid';
+import { sendUpdate } from '../helpers/index_helpers';
+import { CollapsibleDatagrid } from '../datagrid/_collapsible_datagrid';
 
 $(() => {
     var $container = $('#datagrid-holder');
@@ -48,7 +50,7 @@ $(() => {
         {
             name: 'shipping_cost',
             header: 'Shipping Cost',
-            type: 'money',
+            data_type: 'money',
             editable: true,
             column_func: (vendor) => {
                 return formatMoney(vendor.shipping_cost);
@@ -74,50 +76,26 @@ $(() => {
     var dataStr = $container.attr('data');
     var data = dataStr != '' ? JSON.parse(dataStr) : [];
 
-    var datagrid = new DataGrid(data, columnObjects, sendUpdate);
+    var datagrid = new CollapsibleDatagrid(data, columnObjects, getHiddenRow, sendDatagridUpdate);
     $container.html(datagrid.getTable());
 });
 
 // TODO: repeated code from purchase_orders_datagrid.js - refactor
-function sendUpdate(updateObj) {
-    var id = updateObj.id;
-
-    submitUpdateForm(id, convertUpdateObj(updateObj));
+function sendDatagridUpdate(updateObj) {
+    sendUpdate($('#update-vendor-form'), updateObj);
 }
 
-function convertUpdateObj(updateObj) {
-    var outObj = {}
-    if(updateObj['name']) {
-        outObj['Name'] = updateObj['name']
-    }
-    if(updateObj['email']) {
-        outObj['Email'] = updateObj['email']
-    }
-    if(updateObj['phone_number']) {
-        outObj['PhoneNumber'] = updateObj['phone_number']
-    }
-    if(updateObj['contact']) {
-        outObj['Contact'] = updateObj['contact']
-    }
-    if(updateObj['shipping_cost']) {
-        outObj['ShippingCost'] = updateObj['shipping_cost']
-    }
-
-    return outObj;
-}
-
-function submitUpdateForm(id, data) {
-    var $form = $('#update-vendor-form');
-    // TODO: repeated code from purchase_orders_datagrid.js - refactor
-    $form.attr('action', replaceUrlId($form.attr('action'), id));
-
-    for(var key in data) {
-        var $field = $('<input />');
-        $field.attr('type', 'hidden');
-        $field.attr('name', key);
-        $field.val(data[key]);
-        $field.appendTo($form);
-    }
-
-    $form.submit();
+function getHiddenRow(vendor) {
+    return `<tr class="items-list">
+            <td colspan="100">
+                <table>
+                    ${vendor.Items.map((item) => {
+                        return `<tr>
+                            <td>${item.name}</td>
+                            <td>${formatMoney(item.price)}</td>
+                        </tr>`
+                    }).join('\n')}
+                </table>
+            </td>
+        </tr>`
 }

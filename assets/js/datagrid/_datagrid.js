@@ -80,7 +80,8 @@ class Row {
                 self.setListener(cell);
             }
         });
-        this.id = this.cells.find(x => x.name == 'id').contents;
+        var idCell = this.cells.find(x => x.name == 'id')
+        this.id = idCell ? idCell.contents : null;
     }
 
     getRow() {
