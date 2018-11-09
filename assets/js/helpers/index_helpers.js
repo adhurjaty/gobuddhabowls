@@ -16,6 +16,7 @@ function convertUpdateObj(updateObj) {
 
 function submitUpdateForm($form, id, data) {
     $form.attr('action', replaceUrlId($form.attr('action'), id));
+    $form.empty();
 
     for(var key in data) {
         var $field = $('<input />');

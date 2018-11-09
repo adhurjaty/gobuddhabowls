@@ -1,9 +1,9 @@
 import 'bootstrap-colorpicker';
+import { sendUpdate } from './helpers/index_helpers';
 
 $(() => {
     var el = document.getElementById('categories-movable');
     if(el != undefined) {
-        debugger;
         var sortable = Sortable.create(el, {
             group: {
                 name: "components",
@@ -22,29 +22,18 @@ $(() => {
     $('.colorpicker-component').colorpicker({
         useAlpha: false
     });
-    $('#save-inv-item-categories').click(SaveInvItemsCategories);
+    $('#save-inv-item-categories').click(saveInvItemsCategories);
 });
 
-function SaveInvItemsCategories() {
-    var url = $('#categories-movable').attr('on-save-url');
+function saveInvItemsCategories() {
+    var $form = $('#update-category-form');
     $('#categories-movable').find('li').each(function(i, el) {
-        var id = $(el).attr('itemid');
         var data = {};
-        data['Background'] = $(el).find('input[name="Background"]').val();
-        data['Index'] = i;
+        data['id'] = $(el).attr('itemid');
+        data['background'] = $(el).find('input[name="Background"]').val();
+        data['index'] = i;
 
-        $.ajax({
-            url: url + '/' + id,
-            data: data,
-            method: 'PUT',
-            error: function(xhr, status, err) {
-                var errMessage = xhr.responseText;
-                debugger;
-            },
-            success: function(data, status, xhr) {
-                
-            }
-        });
+        sendUpdate($form, data);
     });
 
     location.replace('/settings');

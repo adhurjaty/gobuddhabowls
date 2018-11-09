@@ -3,7 +3,7 @@
 </div>
 
 <div class="row">
-    <ul class="list-group" id="categories-movable" style="width: 400px;" on-save-url="<%= inventoryItemCategoriesPath() %>">
+    <ul class="list-group" id="categories-movable" style="width: 400px;">
         <%= for (category) in inventoryItemCategories { %>
             <li itemid="<%= category.ID %>" class="list-group-item d-flex justify-content-between align-items-center">
                 <span>
@@ -20,13 +20,15 @@
     </ul>
 </div>
 
+<%= form({action: "/inventory_item_categories/{category_id}", method: "PUT", id: "update-category-form", style: "display: none;"}) { %> <% } %>
+
 <div class="row">
-    <div class="col-md-3">
+  <div class="col-md-3">
         <a class="btn btn-primary" href="<%= settingsPath() %>">Cancel</a>
-    </div>
-    <div class="col-md-3">
-        <input id="save-inv-item-categories" type="button" class="btn btn-primary" value="Save">
-    </div>
+  </div>
+  <div class="col-md-3">
+      <input id="save-inv-item-categories" type="button" class="btn btn-primary" value="Save">
+  </div>
 </div>
 
 <%= javascriptTag("inventory_item_categories.js") %>

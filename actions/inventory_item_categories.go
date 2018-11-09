@@ -2,10 +2,13 @@ package actions
 
 import (
 	"buddhabowls/models"
+	"fmt"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/pkg/errors"
 )
+
+var _ = fmt.Println
 
 // InventoryItemCategoriesResource is a resource for managing InventoryItemCategories
 type InventoryItemCategoriesResource struct {
@@ -31,6 +34,8 @@ func (v InventoryItemCategoriesResource) List(c buffalo.Context) error {
 // Update updates the selected category
 // PUT /inventory_item_categories/{inventory_item_category_id}
 func (v InventoryItemCategoriesResource) Update(c buffalo.Context) error {
+	fmt.Println("!!!!!!!!!!!!!!!")
+
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
