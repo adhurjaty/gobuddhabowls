@@ -4,7 +4,6 @@ import (
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	"github.com/gobuffalo/envy"
-	// "github.com/gobuffalo/mw-contenttype"
 	"github.com/gobuffalo/mw-forcessl"
 	"github.com/gobuffalo/mw-paramlogger"
 	"github.com/unrolled/secure"

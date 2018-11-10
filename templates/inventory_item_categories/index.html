@@ -9,10 +9,7 @@
                 <span>
                     <%= category.Name %>
                 </span>
-                <div class="input-group colorpicker-component" title="Using input value">
-                    <input name="Background" type="text" class="form-control input-lg" style="visibility: collapse" value="<%= category.Background %>" />
-                    <span class="input-group-addon"><i></i></span>
-                </div>
+                <input name="color" type="text" value="<%= category.Background %>" />
                       
                 <span class="drag-handle" style="font-size: 20px;">☰</span>
             </li>
@@ -20,7 +17,7 @@
     </ul>
 </div>
 
-<%= form({action: "/inventory_item_categories/{category_id}", method: "PUT", id: "update-category-form", style: "display: none;"}) { %> <% } %>
+<%= form({action: "/inventory_item_categories/{category_id}", method: "PUT", data-remote: "true", id: "update-category-form", style: "display: none;"}) { %> <% } %>
 
 <div class="row">
   <div class="col-md-3">

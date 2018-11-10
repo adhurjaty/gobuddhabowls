@@ -1,8 +1,9 @@
 import { toGoName, replaceUrlId } from "./_helpers";
 
-export function sendUpdate($form, updateObj) {
+export function sendUpdate($form, updateObj, submitFn) {
     var id = updateObj.id;
-    submitUpdateForm($form, id, convertUpdateObj(updateObj));
+    submitFn = submitFn || ((f) => f.submit());
+    submitUpdateForm($form, id, convertUpdateObj(updateObj), submitFn);
 }
 
 function convertUpdateObj(updateObj) {
@@ -14,9 +15,9 @@ function convertUpdateObj(updateObj) {
     return outObj;
 }
 
-function submitUpdateForm($form, id, data) {
+function submitUpdateForm($form, id, data, submitFn) {
     $form.attr('action', replaceUrlId($form.attr('action'), id));
-    $form.empty();
+    clearForm($form);
 
     for(var key in data) {
         var $field = $('<input />');
@@ -26,5 +27,23 @@ function submitUpdateForm($form, id, data) {
         $field.appendTo($form);
     }
 
-    $form.submit();
+    submitFn($form);
+
+    // HACK: need to reset the form action URL in the case of 
+    // repeated calls
+    resetFormAction($form, id);
+}
+
+function clearForm($form) {
+    $form.find('*')
+         .not('input[name="authenticity_token"]')
+         .not('input[name="_method"]')
+         .remove();
+}
+
+function resetFormAction($form, id) {
+    var url = $form.attr('action');
+    var resetUrl = url.replace(id, '{id}');
+
+    $form.attr('action', resetUrl);
 }

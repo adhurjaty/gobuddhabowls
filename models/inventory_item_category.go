@@ -40,7 +40,6 @@ func (i *InventoryItemCategory) Validate(tx *pop.Connection) (*validate.Errors, 
 	return validate.Validate(
 		&validators.StringIsPresent{Field: i.Name, Name: "Name"},
 		&validators.StringIsPresent{Field: i.Background, Name: "Background"},
-		&validators.IntIsPresent{Field: i.Index, Name: "Index"},
 	), nil
 }
 

@@ -6,6 +6,7 @@ import (
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/pkg/errors"
+	"sort"
 )
 
 var _ = fmt.Println
@@ -28,14 +29,16 @@ func (v InventoryItemCategoriesResource) List(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
+	sort.Slice(*categories, func(i, j int) bool {
+		return (*categories)[i].Index < (*categories)[j].Index
+	})
+
 	return c.Render(200, r.Auto(c, categories))
 }
 
 // Update updates the selected category
 // PUT /inventory_item_categories/{inventory_item_category_id}
 func (v InventoryItemCategoriesResource) Update(c buffalo.Context) error {
-	fmt.Println("!!!!!!!!!!!!!!!")
-
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
@@ -65,7 +68,7 @@ func (v InventoryItemCategoriesResource) Update(c buffalo.Context) error {
 
 		// Render again the edit.html template that the user can
 		// correct the input.
-		return c.Error(500, errors.New("Validation errors on categories"))
+		return c.Error(500, errors.New(fmt.Sprintf("Validation errors on categories: %v", verrs)))
 	}
 
 	// If there are no errors set a success message
