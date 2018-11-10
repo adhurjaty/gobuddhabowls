@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"sort"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -83,4 +84,11 @@ func (i InventoryItem) GetIndex() int {
 // and item index is second
 func (i InventoryItem) GetSortValue() int {
 	return i.Category.Index*1000 + i.Index
+}
+
+// Sort sorts the items based on category then inventory item indices
+func (inv *InventoryItems) Sort() {
+	sort.Slice(*inv, func(i, j int) bool {
+		return (*inv)[i].GetSortValue() < (*inv)[j].GetSortValue()
+	})
 }

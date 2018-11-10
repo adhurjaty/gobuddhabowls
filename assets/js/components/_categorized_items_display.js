@@ -3,64 +3,10 @@ import { CategorizedDatagrid } from '../datagrid/_categorized_datagrid';
 import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
 import { Modal } from './_modal';
 
-var columnInfo = [
-    {
-        name: 'id',
-        hidden: true,
-        column_func: (item) => {
-            return item.id;
-        }
-    },
-    {
-        name: 'inventory_item_id',
-        hidden: true,
-        column_func: (item) => {
-            return item.inventory_item_id;
-        }
-    },
-    {
-        name: 'index',
-        hidden: true,
-        column_func: (item) => {
-            return item.index;
-        }
-    },
-    {
-        header: 'Name',
-        column_func: (item) => {
-            return item.name;
-        }
-    },
-    {
-        name: 'price',
-        header: 'Price',
-        editable: true,
-        data_type: 'money',
-        column_func: (item) => {
-            return formatMoney(parseFloat(item.price));
-        }
-    },
-    {
-        name: 'count',
-        header: 'Count',
-        editable: true,
-        data_type: 'number',
-        column_func: (item) => {
-            return item.count;
-        }
-    },
-    {
-        name: 'total_cost',
-        header: 'Total Cost',
-        column_func: (item) => {
-            return formatMoney(parseFloat(item.price) * parseFloat(item.count));
-        }
-    }
-];
-
+// Always use with the partial: _categorized_items_display.html
 export class CategorizedItemsDisplay {
-    constructor(allItems, $container) {
-        this.$container = $container;
+    constructor(columnInfo, allItems) {
+        this.$container = $('#categorized-items-display');
         this.allItems = allItems;
         this.items = null;
         this.$selectedTr = null;
@@ -89,7 +35,7 @@ export class CategorizedItemsDisplay {
     }
 
     initItems() {
-        this.items = JSON.parse(this.$container.attr('data'));
+        this.items = JSON.parse(this.$container.attr('data')) || [];
         this.items.forEach(item => {
             if(!item.count) {
                 item.count = 0;

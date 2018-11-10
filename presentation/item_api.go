@@ -34,10 +34,11 @@ func (items ItemsAPI) String() string {
 // NewItemAPI converts an order/vendor/inventory item to an api item
 func NewItemAPI(item models.GenericItem) ItemAPI {
 	itemAPI := ItemAPI{
-		ID:       item.GetID().String(),
-		Name:     item.GetName(),
-		Category: NewCategoryAPI(item.GetCategory()),
-		Index:    item.GetIndex(),
+		ID:              item.GetID().String(),
+		InventoryItemID: item.GetID().String(),
+		Name:            item.GetName(),
+		Category:        NewCategoryAPI(item.GetCategory()),
+		Index:           item.GetIndex(),
 	}
 
 	switch item.(type) {

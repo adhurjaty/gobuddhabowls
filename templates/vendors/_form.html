@@ -3,4 +3,14 @@
 <%= f.InputTag("PhoneNumber") %>
 <%= f.InputTag("Contact") %>
 <%= f.InputTag("ShippingCost") %>
+
+<div>
+  <h2><%= vendor.Name %> Items</h2>
+</div>
+
+<input type="hidden" id="inventory-items" data="<%= inventoryItems.String() %>" />
+<%= partial("partials/categorized_items_display.html", {items: vendor.Items}) %>
+
 <button class="btn btn-success" role="submit">Save</button>
+
+<%= javascriptTag("vendors/vendors_form.js") %>

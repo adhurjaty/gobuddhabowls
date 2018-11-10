@@ -67,7 +67,23 @@ func (v VendorsResource) Show(c buffalo.Context) error {
 // New renders the form for creating a new Vendor.
 // This function is mapped to the path GET /vendors/new
 func (v VendorsResource) New(c buffalo.Context) error {
-	return c.Render(200, r.Auto(c, &models.Vendor{}))
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no trainsaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	vendor := presentation.VendorAPI{}
+
+	inventoryItems, err := presenter.GetInventoryItems()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("vendor", vendor)
+	c.Set("inventoryItems", inventoryItems)
+
+	return c.Render(200, r.HTML("vendors/new"))
 }
 
 // Create adds a Vendor to the DB. This function is mapped to the
