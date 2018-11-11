@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<div id="datagrid-holder" data-url="/vendor/{vendor_id}/edit" update-url="/vendor/{vendor_id}" data="<%= vendors.String() %>"></div></div>
+<div id="datagrid-holder" data-url='<%= editVendorPath({vendor_id: "{vendor_id}"}) %>' update-url='<%= vendorPath({vendor_id: "{vendor_id}"}) %>' data="<%= vendors.String() %>"></div></div>
 
 <%= form({action: "/vendors/{vendor_id}", method: "PUT", id: "update-vendor-form", style: "display: none;"}) { %> <% } %>
 

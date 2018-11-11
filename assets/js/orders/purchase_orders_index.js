@@ -1,7 +1,7 @@
 import { CollapsibleDatagrid } from '../datagrid/_collapsible_datagrid';
 import { getPurchaseOrderCost, formatMoney, formatSlashDate, replaceUrlId, toGoName } from '../helpers/_helpers';
 import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
-import { sendUpdate } from '../helpers/index_helpers';
+import { sendUpdate, submitUpdateForm } from '../helpers/index_helpers';
 
 const CONTAINER_ID = '#datagrid-holder',
       OPEN_ORDER_DG_ID = '#open-order-datagrid',
@@ -118,6 +118,7 @@ function getHiddenRow(purchaseOrder) {
 
 function initDropdownActions(datagrid) {
     var updatePath = $('#datagrid-holder').attr('update-url');
+    var $form = $('#update-po-form');
     datagrid.rows.forEach((row) => {
         var details = row.getInfo();
         var id = details.id;
@@ -126,10 +127,10 @@ function initDropdownActions(datagrid) {
         $row.find('td[name="dropdown"] span[name="receive"]').click(() => {
             var date = new Date();
             date.setHours(0, 0, 0, 0);
-            submitUpdateForm(id, { ReceivedDate: date.toISOString() });
+            submitUpdateForm($form, id, { ReceivedDate: date.toISOString() });
         });
         $row.find('td[name="dropdown"] span[name="reopen"]').click(() => {
-            submitUpdateForm(id, { ReceivedDate: '' });
+            submitUpdateForm($form, id, { ReceivedDate: '' });
         });
         $row.find('td[name="dropdown"] a[name="delete"]').attr('href', replaceUrlId(updatePath, id));
     });

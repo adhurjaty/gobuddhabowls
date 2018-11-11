@@ -4,6 +4,7 @@ import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"fmt"
+	"sort"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -76,6 +77,10 @@ func (v VendorsResource) New(c buffalo.Context) error {
 	vendor := presentation.VendorAPI{}
 
 	inventoryItems, err := presenter.GetInventoryItems()
+	sort.Slice(*inventoryItems, func(i, j int) bool {
+		return (*inventoryItems)[i].Name < (*inventoryItems)[j].Name
+	})
+
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -134,14 +139,24 @@ func (v VendorsResource) Edit(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty Vendor
-	vendor := &models.Vendor{}
-
-	if err := tx.Find(vendor, c.Param("vendor_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	vendor, err := presenter.GetVendor(c.Param("vendor_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
-	return c.Render(200, r.Auto(c, vendor))
+	inventoryItems, err := presenter.GetInventoryItems()
+	sort.Slice(*inventoryItems, func(i, j int) bool {
+		return (*inventoryItems)[i].Name < (*inventoryItems)[j].Name
+	})
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("vendor", vendor)
+	c.Set("inventoryItems", inventoryItems)
+
+	return c.Render(200, r.HTML("vendors/edit"))
 }
 
 // Update changes a Vendor in the DB. This function is mapped to

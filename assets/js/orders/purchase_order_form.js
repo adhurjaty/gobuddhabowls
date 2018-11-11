@@ -58,7 +58,8 @@ var _columnInfo = [
         data_type: 'number',
         column_func: (item) => {
             return item.count;
-        }
+        },
+        default: 0
     },
     {
         name: 'total_cost',

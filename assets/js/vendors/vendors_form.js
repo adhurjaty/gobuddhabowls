@@ -41,7 +41,8 @@ var _columnInfo = [
         data_type: 'money',
         column_func: (item) => {
             return formatMoney(parseFloat(item.price));
-        }
+        },
+        default: 0
     }
 ];
 

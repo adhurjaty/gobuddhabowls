@@ -9,7 +9,6 @@ export class CategorizedItemsDisplay {
         this.$container = $('#categorized-items-display');
         this.allItems = allItems;
         this.options = options || {};
-        debugger;
         this.items = items || JSON.parse(this.$container.attr('data')) || [];
         this.$selectedTr = null;
         this.datagrid = null;
@@ -111,7 +110,7 @@ export class CategorizedItemsDisplay {
     }
 
     addItem(item) {
-        item.count = 0;
+        this.setDefaults(item);
         this.items.push(item);
         this.items = sortItems(this.items);
         this.updateTables();
@@ -120,6 +119,14 @@ export class CategorizedItemsDisplay {
         if(remaining.length == 0) {
             this.buttonGroup.disableAddButton();
         }
+    }
+
+    setDefaults(item) {
+        this.columnInfo.forEach((info) => {
+            if(Object.keys(info).indexOf('default') > -1) {
+                item[info.name] = info.default;
+            }
+        });
     }
 
     removeItem(item) {
