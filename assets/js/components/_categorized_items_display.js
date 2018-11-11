@@ -5,10 +5,12 @@ import { Modal } from './_modal';
 
 // Always use with the partial: _categorized_items_display.html
 export class CategorizedItemsDisplay {
-    constructor(columnInfo, allItems) {
+    constructor(columnInfo, items, allItems, options) {
         this.$container = $('#categorized-items-display');
         this.allItems = allItems;
-        this.items = null;
+        this.options = options || {};
+        debugger;
+        this.items = items || JSON.parse(this.$container.attr('data')) || [];
         this.$selectedTr = null;
         this.datagrid = null;
         this.breakdown = null;
@@ -35,7 +37,6 @@ export class CategorizedItemsDisplay {
     }
 
     initItems() {
-        this.items = JSON.parse(this.$container.attr('data')) || [];
         this.items.forEach(item => {
             if(!item.count) {
                 item.count = 0;
@@ -67,7 +68,9 @@ export class CategorizedItemsDisplay {
 
     updateTables() {
         this.initDatagrid();
-        this.initBreakdown();
+        if(this.options.breakdown) {
+            this.initBreakdown();
+        }
     }
 
     initDatagrid() {
@@ -111,8 +114,7 @@ export class CategorizedItemsDisplay {
         item.count = 0;
         this.items.push(item);
         this.items = sortItems(this.items);
-        this.initDatagrid();
-        this.initBreakdown();
+        this.updateTables();
 
         var remaining = this.getRemainingItems();
         if(remaining.length == 0) {

@@ -78,10 +78,14 @@ function setDateRange() {
 function setDropdown(vendorItemsMap) {
     var dropdownId = '#new-order-vendor';
     var selectedId = $(`${dropdownId} option:selected`).val();
+    var options = {
+        breakdown: true,
+        breakdownTitle: 'Order Breakdown'
+    };
 
     if(selectedId) {
         var allItems = vendorItemsMap[selectedId];
-        _table = new CategorizedItemsDisplay(_columnInfo, allItems);
+        _table = new CategorizedItemsDisplay(_columnInfo, null, allItems, options);
     }
     $(dropdownId).change(function(d) {
         // remove none option
@@ -89,9 +93,8 @@ function setDropdown(vendorItemsMap) {
 
         var id = $(this).val();
         var items = vendorItemsMap[id];
-        container.attr('data', JSON.stringify(items));
 
-        _table = new CategorizedItemsDisplay(_columnInfo, null);
+        _table = new CategorizedItemsDisplay(_columnInfo, items, null, options);
     });
 }
 
