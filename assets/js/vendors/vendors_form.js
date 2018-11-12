@@ -59,7 +59,6 @@ function setOnFormSubmit() {
     var form = $('#vendor-form-submit').closest('form');
     form.on('submit', (event) => {
         var data = _table.items;
-        debugger;
         form.find('input[name="Items"]').val(JSON.stringify(data));
     });
 }

@@ -1,7 +1,9 @@
 <div class="page-header">
   <h1>Edit Vendor</h1>
 </div>
-
+<div class="edit-delete-button">
+  <a href="<%= vendorPath({vendor_id: vendor.ID}) %>" class="btn btn-danger" role="button" data-method="DELETE">Delete</a>
+</div>
 <%= form_for(vendor, {action: vendorPath({ vendor_id: vendor.ID }), method: "PUT"}) { %>
   <%= partial("vendors/form.html") %>
   <a href="<%= vendorPath({ vendor_id: vendor.ID }) %>" class="btn btn-warning">Cancel</a>
