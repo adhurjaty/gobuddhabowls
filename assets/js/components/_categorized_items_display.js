@@ -171,7 +171,8 @@ export class CategorizedItemsDisplay {
         this.items[idx].count = count;
         this.writeItemsToDataAttr();
 
-        this.initBreakdown();
+        if(this.options.breakdown)
+            this.initBreakdown();
     }
 }
 

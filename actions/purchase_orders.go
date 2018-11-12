@@ -8,7 +8,6 @@ import (
 	"buddhabowls/logic"
 	"buddhabowls/models"
 	"buddhabowls/presentation"
-	"encoding/json"
 	"fmt"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -451,15 +450,4 @@ func setPurchaseOrderViewVars(c buffalo.Context, presenter *presentation.Present
 	c.Set("vendors", vendors)
 	c.Set("vendorItemsMap", vendorItemsMap)
 	return nil
-}
-
-func getItemsFromParams(itemsParamJSON string) (presentation.ItemsAPI, error) {
-	items := presentation.ItemsAPI{}
-
-	err := json.Unmarshal([]byte(itemsParamJSON), &items)
-	if err != nil {
-		return items, err
-	}
-
-	return items, nil
 }

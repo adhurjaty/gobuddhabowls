@@ -3,6 +3,7 @@ import { formatMoney } from '../helpers/_helpers';
 
 $(() => {
     setupTable();
+    setOnFormSubmit();
 });
 
 var _table = null;
@@ -52,5 +53,14 @@ function setupTable() {
         var allItems = JSON.parse(allItemsText);
         _table = new CategorizedItemsDisplay(_columnInfo, null, allItems);
     }
+}
+
+function setOnFormSubmit() {
+    var form = $('#vendor-form-submit').closest('form');
+    form.on('submit', (event) => {
+        var data = _table.items;
+        debugger;
+        form.find('input[name="Items"]').val(JSON.stringify(data));
+    });
 }
 

@@ -76,17 +76,9 @@ func (v VendorsResource) New(c buffalo.Context) error {
 	presenter := presentation.NewPresenter(tx)
 	vendor := presentation.VendorAPI{}
 
-	inventoryItems, err := presenter.GetInventoryItems()
-	sort.Slice(*inventoryItems, func(i, j int) bool {
-		return (*inventoryItems)[i].Name < (*inventoryItems)[j].Name
-	})
-
-	if err != nil {
+	if err := setVendorFormVars(c, presenter, &vendor); err != nil {
 		return errors.WithStack(err)
 	}
-
-	c.Set("vendor", vendor)
-	c.Set("inventoryItems", inventoryItems)
 
 	return c.Render(200, r.HTML("vendors/new"))
 }
@@ -145,16 +137,9 @@ func (v VendorsResource) Edit(c buffalo.Context) error {
 		return c.Error(404, err)
 	}
 
-	inventoryItems, err := presenter.GetInventoryItems()
-	sort.Slice(*inventoryItems, func(i, j int) bool {
-		return (*inventoryItems)[i].Name < (*inventoryItems)[j].Name
-	})
-	if err != nil {
+	if err = setVendorFormVars(c, presenter, vendor); err != nil {
 		return errors.WithStack(err)
 	}
-
-	c.Set("vendor", vendor)
-	c.Set("inventoryItems", inventoryItems)
 
 	return c.Render(200, r.HTML("vendors/edit"))
 }
@@ -168,10 +153,9 @@ func (v VendorsResource) Update(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty Vendor
-	vendor := &models.Vendor{}
-
-	if err := tx.Find(vendor, c.Param("vendor_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	vendor, err := presenter.GetVendor(c.Param("vendor_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
@@ -180,7 +164,15 @@ func (v VendorsResource) Update(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	verrs, err := tx.ValidateAndUpdate(vendor)
+	itemsParamJSON := c.Request().Form.Get("Items")
+	if itemsParamJSON != "" {
+		vendor.Items, err = getItemsFromParams(itemsParamJSON)
+		if err != nil {
+			return err
+		}
+	}
+
+	verrs, err := presenter.UpdateVendor(vendor)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -188,6 +180,7 @@ func (v VendorsResource) Update(c buffalo.Context) error {
 	if verrs.HasAny() {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
+		setVendorFormVars(c, presenter, vendor)
 
 		// Render again the edit.html template that the user can
 		// correct the input.
@@ -198,7 +191,7 @@ func (v VendorsResource) Update(c buffalo.Context) error {
 	c.Flash().Add("success", "Vendor was updated successfully")
 
 	// and redirect to the vendors index page
-	return c.Render(200, r.Auto(c, vendor))
+	return c.Redirect(303, "/vendors")
 }
 
 // Destroy deletes a Vendor from the DB. This function is mapped
@@ -227,4 +220,19 @@ func (v VendorsResource) Destroy(c buffalo.Context) error {
 
 	// Redirect to the vendors index page
 	return c.Render(200, r.Auto(c, vendor))
+}
+
+func setVendorFormVars(c buffalo.Context, presenter *presentation.Presenter, vendor *presentation.VendorAPI) error {
+	inventoryItems, err := presenter.GetInventoryItems()
+	sort.Slice(*inventoryItems, func(i, j int) bool {
+		return (*inventoryItems)[i].Name < (*inventoryItems)[j].Name
+	})
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("vendor", vendor)
+	c.Set("inventoryItems", inventoryItems)
+
+	return nil
 }

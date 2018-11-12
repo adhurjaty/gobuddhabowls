@@ -14,7 +14,7 @@ type ItemAPI struct {
 	Index           int         `json:"index"`
 	InventoryItemID string      `json:"inventory_item_id,omitempty"`
 	Count           float64     `json:"count,omitempty"`
-	Price           float64     `json:"price,omitempty"`
+	Price           float64     `json:"price"`
 	PurchasedUnit   string      `json:"purchased_unit,omitempty"`
 	Conversion      float64     `json:"conversion,omitempty"`
 }
@@ -113,6 +113,42 @@ func ConvertToModelOrderItems(items ItemsAPI, orderID uuid.UUID) (*models.OrderI
 	modelItems := models.OrderItems{}
 	for _, item := range items {
 		modelItem, err := ConvertToModelOrderItem(item, orderID)
+		if err != nil {
+			return nil, err
+		}
+		modelItems = append(modelItems, *modelItem)
+	}
+	return &modelItems, nil
+}
+
+func ConvertToModelVendorItem(item ItemAPI, vendorID uuid.UUID) (*models.VendorItem, error) {
+	id := uuid.UUID{}
+	if len(item.ID) > 0 {
+		var err error
+		id, err = uuid.FromString(item.ID)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	invID, err := uuid.FromString(item.InventoryItemID)
+	if err != nil {
+		return nil, err
+	}
+	return &models.VendorItem{
+		ID:              id,
+		InventoryItemID: invID,
+		Price:           item.Price,
+		PurchasedUnit:   models.StringToNullString(item.PurchasedUnit),
+		Conversion:      item.Conversion,
+		VendorID:        vendorID,
+	}, nil
+}
+
+func ConvertToModelVendorItems(items ItemsAPI, vendorID uuid.UUID) (*models.VendorItems, error) {
+	modelItems := models.VendorItems{}
+	for _, item := range items {
+		modelItem, err := ConvertToModelVendorItem(item, vendorID)
 		if err != nil {
 			return nil, err
 		}

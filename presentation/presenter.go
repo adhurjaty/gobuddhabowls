@@ -98,6 +98,15 @@ func (p *Presenter) GetVendor(id string) (*VendorAPI, error) {
 	return &apiVendor, nil
 }
 
+func (p *Presenter) UpdateVendor(vendAPI *VendorAPI) (*validate.Errors, error) {
+	vendor, err := ConvertToModelVendor(vendAPI)
+	if err != nil {
+		return nil, err
+	}
+
+	return logic.UpdateVendor(vendor, p.tx)
+}
+
 func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
 	items, err := logic.GetInventoryItems(p.tx)
 	if err != nil {

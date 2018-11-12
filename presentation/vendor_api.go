@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/models"
 	"encoding/json"
+	"github.com/gobuffalo/uuid"
 )
 
 // VendorAPI is a struct for serving vendor information to the ui
@@ -62,4 +63,30 @@ func (v VendorAPI) SelectLabel() string {
 		return "- Select a vendor -"
 	}
 	return v.Name
+}
+
+func ConvertToModelVendor(vendAPI *VendorAPI) (*models.Vendor, error) {
+	id := uuid.UUID{}
+	if len(vendAPI.ID) > 0 {
+		var err error
+		id, err = uuid.FromString(vendAPI.ID)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	items, err := ConvertToModelVendorItems(vendAPI.Items, id)
+	if err != nil {
+		return nil, err
+	}
+
+	return &models.Vendor{
+		ID:           id,
+		Name:         vendAPI.Name,
+		Email:        models.StringToNullString(vendAPI.Email),
+		Contact:      models.StringToNullString(vendAPI.Contact),
+		PhoneNumber:  models.StringToNullString(vendAPI.PhoneNumber),
+		ShippingCost: vendAPI.ShippingCost,
+		Items:        *items,
+	}, nil
 }
