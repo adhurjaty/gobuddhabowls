@@ -125,3 +125,35 @@ export function toGoName(jsName) {
     var toks = jsName.split('_');
     return toks.map((tok) => tok.charAt(0).toUpperCase() + tok.slice(1)).join('');
 }
+
+export function parseModelJSON(str) {
+    if(str) {
+        var model = JSON.parse(str);
+        if(Array.isArray(model)) {
+            for(var i = 0; i < model.length; i++) {
+                model[i] = stripQuotes(model[i]);
+            }
+        } else {
+            model = stripQuotes(model);
+        }
+
+        return model;
+    }
+}
+
+function stripQuotes(obj) {
+    for(var key in obj) {
+        if(typeof obj[key] == 'string') {
+            obj[key] = stripCharacter(obj[key], '"');
+        }
+    }
+
+    return obj;
+}
+
+export function stripCharacter(str, char) {
+    var re = new RegExp(`^${char}+`);
+    str = str.replace(re, '');
+    re = new RegExp(`${char}+$`);
+    return str.replace(re, '');
+}

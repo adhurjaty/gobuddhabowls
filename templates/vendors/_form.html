@@ -1,8 +1,8 @@
 <%= f.InputTag("Name") %>
 <%= f.InputTag("Email") %>
-<%= f.InputTag("PhoneNumber") %>
+<%= f.InputTag("PhoneNumber", {class: "phone-number"}) %>
 <%= f.InputTag("Contact") %>
-<%= f.InputTag("ShippingCost") %>
+<%= f.InputTag("ShippingCost", {class: "currency"}) %>
 
 <div>
   <h2><%= vendor.Name %> Items</h2>

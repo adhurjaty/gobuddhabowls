@@ -1,4 +1,4 @@
-import { formatMoney, replaceUrlId } from '../helpers/_helpers';
+import { formatMoney, replaceUrlId, parseModelJSON } from '../helpers/_helpers';
 import { DataGrid } from '../datagrid/_datagrid';
 import { sendUpdate } from '../helpers/index_helpers';
 import { CollapsibleDatagrid } from '../datagrid/_collapsible_datagrid';
@@ -74,7 +74,7 @@ $(() => {
     ];
 
     var dataStr = $container.attr('data');
-    var data = dataStr != '' ? JSON.parse(dataStr) : [];
+    var data = parseModelJSON(dataStr) || [];
 
     var datagrid = new CollapsibleDatagrid(data, columnObjects, getHiddenRow, sendDatagridUpdate);
     $container.html(datagrid.getTable());
