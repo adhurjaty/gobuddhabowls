@@ -3,6 +3,7 @@ package logic
 import (
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 	"sort"
 )
@@ -28,6 +29,26 @@ func GetVendor(id string, tx *pop.Connection) (*models.Vendor, error) {
 	err := factory.CreateModel(vendor, tx, id)
 
 	return vendor, err
+}
+
+func InsertVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, error) {
+	verrs, err := tx.ValidateAndCreate(vendor)
+	if err != nil || verrs.HasAny() {
+		return verrs, err
+	}
+
+	// insert items
+	for _, item := range vendor.Items {
+		// need to ensure that items don't get the vendor item ID
+		item.ID = uuid.UUID{}
+		item.VendorID = vendor.ID
+		verrs, err = tx.ValidateAndCreate(&item)
+		if err != nil || verrs.HasAny() {
+			return verrs, err
+		}
+	}
+
+	return verrs, nil
 }
 
 func UpdateVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, error) {
@@ -75,4 +96,9 @@ func UpdateVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, 
 	}
 
 	return verrs, nil
+}
+
+func DeleteVendor(vendor *models.Vendor, tx *pop.Connection) error {
+	// TODO: delete associated items as well
+	return tx.Destroy(vendor)
 }

@@ -87,10 +87,11 @@ func (v VendorsResource) New(c buffalo.Context) error {
 // path POST /vendors
 func (v VendorsResource) Create(c buffalo.Context) error {
 	// Allocate an empty Vendor
-	vendor := &models.Vendor{}
+	vendorAPI := &presentation.VendorAPI{}
 
 	// Bind vendor to the html form elements
-	if err := c.Bind(vendor); err != nil {
+	err := c.Bind(vendorAPI)
+	if err != nil {
 		return errors.WithStack(err)
 	}
 
@@ -100,8 +101,13 @@ func (v VendorsResource) Create(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Validate the data from the html form
-	verrs, err := tx.ValidateAndCreate(vendor)
+	vendorAPI.Items, err = getItemsFromParams(c.Request().Form.Get("Items"))
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	verrs, err := presenter.InsertVendor(vendorAPI)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -109,17 +115,18 @@ func (v VendorsResource) Create(c buffalo.Context) error {
 	if verrs.HasAny() {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
+		setVendorFormVars(c, presenter, vendorAPI)
 
 		// Render again the new.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, vendor))
+		return c.Render(422, r.HTML("vendors/new"))
 	}
 
 	// If there are no errors set a success message
 	c.Flash().Add("success", "Vendor was created successfully")
 
 	// and redirect to the vendors index page
-	return c.Render(201, r.Auto(c, vendor))
+	return c.Redirect(303, "/vendors")
 }
 
 // Edit renders a edit form for a Vendor. This function is
@@ -184,7 +191,7 @@ func (v VendorsResource) Update(c buffalo.Context) error {
 
 		// Render again the edit.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, vendor))
+		return c.Render(422, r.HTML("vendors/edit"))
 	}
 
 	// If there are no errors set a success message
