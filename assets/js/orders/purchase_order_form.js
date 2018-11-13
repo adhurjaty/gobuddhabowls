@@ -1,5 +1,6 @@
 import { daterange } from '../_datepicker';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
+import { formatMoney, replaceUrlId } from '../helpers/_helpers';
 
 
 $(() => {
@@ -13,6 +14,63 @@ $(() => {
 
 var _table = null;
 
+var _columnInfo = [
+    {
+        name: 'id',
+        hidden: true,
+        column_func: (item) => {
+            return item.id;
+        }
+    },
+    {
+        name: 'inventory_item_id',
+        hidden: true,
+        column_func: (item) => {
+            return item.inventory_item_id;
+        }
+    },
+    {
+        name: 'index',
+        hidden: true,
+        column_func: (item) => {
+            return item.index;
+        }
+    },
+    {
+        header: 'Name',
+        column_func: (item) => {
+            return item.name;
+        }
+    },
+    {
+        name: 'price',
+        header: 'Price',
+        editable: true,
+        data_type: 'money',
+        column_func: (item) => {
+            return formatMoney(parseFloat(item.price));
+        }
+    },
+    {
+        name: 'count',
+        header: 'Count',
+        editable: true,
+        data_type: 'number',
+        column_func: (item) => {
+            return item.count;
+        },
+        default: 0
+    },
+    {
+        name: 'total_cost',
+        header: 'Total Cost',
+        column_func: (item) => {
+            return formatMoney(parseFloat(item.price) * parseFloat(item.count));
+        }
+    }
+];
+
+
 function setDateRange() {
     var $inputs = $('#new-order-date, #new-received-date');
     daterange($inputs);
@@ -20,12 +78,15 @@ function setDateRange() {
 
 function setDropdown(vendorItemsMap) {
     var dropdownId = '#new-order-vendor';
-    var container = $('#categorized-items-display');
     var selectedId = $(`${dropdownId} option:selected`).val();
+    var options = {
+        breakdown: true,
+        breakdownTitle: 'Order Breakdown'
+    };
 
     if(selectedId) {
         var allItems = vendorItemsMap[selectedId];
-        _table = new CategorizedItemsDisplay(allItems, container);
+        _table = new CategorizedItemsDisplay(_columnInfo, null, allItems, options);
     }
     $(dropdownId).change(function(d) {
         // remove none option
@@ -33,9 +94,13 @@ function setDropdown(vendorItemsMap) {
 
         var id = $(this).val();
         var items = vendorItemsMap[id];
-        container.attr('data', JSON.stringify(items));
 
-        _table = new CategorizedItemsDisplay(null, container);
+        _table = new CategorizedItemsDisplay(_columnInfo, items, null, options);
+
+        var editVendorButton = $('#edit-vendor-button');
+        editVendorButton.show();
+        var url = replaceUrlId(editVendorButton.attr('base_href'), id);
+        editVendorButton.attr('href', url);
     });
 }
 

@@ -6,8 +6,12 @@ import (
 	"github.com/gobuffalo/pop"
 )
 
-func (as *ActionSuite) Test_VendorsResource_List() {
-	as.Fail("Not Implemented!")
+func (as *ActionSuite) Test_ListVendor_View() {
+	vendor, err := createVendor(as.DB)
+	as.NoError(err)
+
+	res := as.HTML("/vendors").Get()
+	as.Contains(res.Body.String(), vendor.ID.String())
 }
 
 func (as *ActionSuite) Test_VendorsResource_Show() {

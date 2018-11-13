@@ -1,9 +1,7 @@
-<div class="row">
     <div class="form-check">
         <input type="checkbox" class="form-check-input" id="received-order-checkbox" <%= if (po.ReceivedDate.Valid) { %>checked<% } %>>
-        <label class="form-check-label offset-md-3">Received order</label>
+        <label class="form-check-label check-label-right">Received order</label>
     </div>
-</div>
 
 <%
     let orderDate = today()
@@ -15,14 +13,21 @@
         recDate = format_date(po.ReceivedDate.Time)
     }
 %>
-<div class="row">
-    <%= f.InputTag("OrderDate", {data-provide: "datepicker", id: "new-order-date", value: orderDate }) %>
-</div>
-<div class="row" id="received-date-input" <%= if (!po.ReceivedDate.Valid) { %>style="display: none"<% } %>>
+<%= f.InputTag("OrderDate", {data-provide: "datepicker", id: "new-order-date", value: orderDate }) %>
+<div id="received-date-input" <%= if (!po.ReceivedDate.Valid) { %>style="display: none"<% } %>>
     <%= f.InputTag("ReceivedDate", {data-provide: "datepicker", id: "new-received-date", value: recDate }) %>
 </div>
 <div class="row">
+  <div class="col-8">
     <%= f.SelectTag("Vendor", {options: vendors, id: "new-order-vendor", name: "VendorID" }) %>
+  </div>
+  <div class="col-4">
+    <a id="edit-vendor-button" href="#" style="display: none;"
+       base_href='<%= editVendorPath({vendor_id: "{vendor_id}"}) %>'
+       class="btn btn-primary" role="button">
+          Edit Vendor
+    </a>
+  </div>
 </div>
 
 <div id="vendor-items-map" data='<%= json(vendorItemsMap) %>'></div>

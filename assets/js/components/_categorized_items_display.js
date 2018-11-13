@@ -3,66 +3,13 @@ import { CategorizedDatagrid } from '../datagrid/_categorized_datagrid';
 import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
 import { Modal } from './_modal';
 
-var columnInfo = [
-    {
-        name: 'id',
-        hidden: true,
-        column_func: (item) => {
-            return item.id;
-        }
-    },
-    {
-        name: 'inventory_item_id',
-        hidden: true,
-        column_func: (item) => {
-            return item.inventory_item_id;
-        }
-    },
-    {
-        name: 'index',
-        hidden: true,
-        column_func: (item) => {
-            return item.index;
-        }
-    },
-    {
-        header: 'Name',
-        column_func: (item) => {
-            return item.name;
-        }
-    },
-    {
-        name: 'price',
-        header: 'Price',
-        editable: true,
-        data_type: 'money',
-        column_func: (item) => {
-            return formatMoney(parseFloat(item.price));
-        }
-    },
-    {
-        name: 'count',
-        header: 'Count',
-        editable: true,
-        data_type: 'number',
-        column_func: (item) => {
-            return item.count;
-        }
-    },
-    {
-        name: 'total_cost',
-        header: 'Total Cost',
-        column_func: (item) => {
-            return formatMoney(parseFloat(item.price) * parseFloat(item.count));
-        }
-    }
-];
-
+// Always use with the partial: _categorized_items_display.html
 export class CategorizedItemsDisplay {
-    constructor(allItems, $container) {
-        this.$container = $container;
+    constructor(columnInfo, items, allItems, options) {
+        this.$container = $('#categorized-items-display');
         this.allItems = allItems;
-        this.items = null;
+        this.options = options || {};
+        this.items = items || JSON.parse(this.$container.attr('data')) || [];
         this.$selectedTr = null;
         this.datagrid = null;
         this.breakdown = null;
@@ -89,7 +36,6 @@ export class CategorizedItemsDisplay {
     }
 
     initItems() {
-        this.items = JSON.parse(this.$container.attr('data'));
         this.items.forEach(item => {
             if(!item.count) {
                 item.count = 0;
@@ -121,7 +67,9 @@ export class CategorizedItemsDisplay {
 
     updateTables() {
         this.initDatagrid();
-        this.initBreakdown();
+        if(this.options.breakdown) {
+            this.initBreakdown();
+        }
     }
 
     initDatagrid() {
@@ -162,16 +110,23 @@ export class CategorizedItemsDisplay {
     }
 
     addItem(item) {
-        item.count = 0;
+        this.setDefaults(item);
         this.items.push(item);
         this.items = sortItems(this.items);
-        this.initDatagrid();
-        this.initBreakdown();
+        this.updateTables();
 
         var remaining = this.getRemainingItems();
         if(remaining.length == 0) {
             this.buttonGroup.disableAddButton();
         }
+    }
+
+    setDefaults(item) {
+        this.columnInfo.forEach((info) => {
+            if(Object.keys(info).indexOf('default') > -1) {
+                item[info.name] = info.default;
+            }
+        });
     }
 
     removeItem(item) {
@@ -216,7 +171,8 @@ export class CategorizedItemsDisplay {
         this.items[idx].count = count;
         this.writeItemsToDataAttr();
 
-        this.initBreakdown();
+        if(this.options.breakdown)
+            this.initBreakdown();
     }
 }
 

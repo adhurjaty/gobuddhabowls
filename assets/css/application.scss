@@ -136,4 +136,26 @@ div.hidden-items {
     top: 0;
     width: 100%;
     // padding-top: 102px;  
-  }
+}
+
+.currency-input {
+    position: relative;
+}
+
+.currency {
+    padding-left:18px;
+}
+  
+.currency-symbol {
+    position:absolute;
+    padding: 8px 8px;
+}
+
+.edit-delete-button {
+    width: 100%;
+    text-align: right;
+}
+
+.check-label-right {
+    padding-left: 25px;
+}

@@ -2,7 +2,6 @@ import { toGoName, replaceUrlId } from "./_helpers";
 
 export function sendUpdate($form, updateObj, submitFn) {
     var id = updateObj.id;
-    submitFn = submitFn || ((f) => f.submit());
     submitUpdateForm($form, id, convertUpdateObj(updateObj), submitFn);
 }
 
@@ -15,7 +14,8 @@ function convertUpdateObj(updateObj) {
     return outObj;
 }
 
-function submitUpdateForm($form, id, data, submitFn) {
+export function submitUpdateForm($form, id, data, submitFn) {
+    submitFn = submitFn || ((f) => f.submit());    
     $form.attr('action', replaceUrlId($form.attr('action'), id));
     clearForm($form);
 

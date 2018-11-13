@@ -1,39 +1,15 @@
 <div class="page-header">
-  <h1>Vendors</h1>
+  <h1 class="text-center">Vendors</h1>
 </div>
-<ul class="list-unstyled list-inline">
-  <li><a href="<%= newVendorsPath() %>" class="btn btn-primary">Create New Vendor</a></li>
-</ul>
 
-<table class="table table-striped">
-  <thead>
-  <th>Name</th>
-    <th>Email</th>
-    <th>PhoneNumber</th>
-    <th>Contact</th>
-    <th>ShippingCost</th>
-    <th>&nbsp;</th>
-  </thead>
-  <tbody>
-    <%= for (vendor) in vendors { %>
-      <tr>
-      <td><%= vendor.Name %></td>
-        <td><%= vendor.Email %></td>
-        <td><%= vendor.PhoneNumber %></td>
-        <td><%= vendor.Contact %></td>
-        <td><%= vendor.ShippingCost %></td>
-        <td>
-          <div class="pull-right">
-            <a href="<%= vendorPath({ vendor_id: vendor.ID }) %>" class="btn btn-info">View</a>
-            <a href="<%= editVendorPath({ vendor_id: vendor.ID }) %>" class="btn btn-warning">Edit</a>
-            <a href="<%= vendorPath({ vendor_id: vendor.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
-          </div>
-        </td>
-      </tr>
-    <% } %>
-  </tbody>
-</table>
-
-<div class="text-center">
-  <%= paginator(pagination) %>
+<div class="row">
+  <div class="col-12 float-right">
+    <a href="<%= newVendorsPath() %>" class="btn btn-primary float-right">New Vendor</a>
+  </div>
 </div>
+
+<div id="datagrid-holder" data-url='<%= editVendorPath({vendor_id: "{vendor_id}"}) %>' update-url='<%= vendorPath({vendor_id: "{vendor_id}"}) %>' data="<%= vendors.String() %>"></div></div>
+
+<%= form({action: "/vendors/{vendor_id}", method: "PUT", id: "update-vendor-form", style: "display: none;"}) { %> <% } %>
+
+<%= javascriptTag("vendors/vendors_index.js") %>

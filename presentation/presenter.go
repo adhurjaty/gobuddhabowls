@@ -98,6 +98,34 @@ func (p *Presenter) GetVendor(id string) (*VendorAPI, error) {
 	return &apiVendor, nil
 }
 
+func (p *Presenter) InsertVendor(vendorAPI *VendorAPI) (*validate.Errors, error) {
+	vendor, err := ConvertToModelVendor(vendorAPI)
+	if err != nil {
+		return nil, err
+	}
+	return logic.InsertVendor(vendor, p.tx)
+}
+
+func (p *Presenter) UpdateVendor(vendAPI *VendorAPI) (*validate.Errors, error) {
+	vendor, err := ConvertToModelVendor(vendAPI)
+	if err != nil {
+		return nil, err
+	}
+
+	return logic.UpdateVendor(vendor, p.tx)
+}
+
+func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
+	items, err := logic.GetInventoryItems(p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	apiItems := NewItemsAPI(*items)
+
+	return &apiItems, err
+}
+
 // GetPeriods gets the list of periods available to the user
 func (p *Presenter) GetPeriods(startTime time.Time) []logic.Period {
 	if p.PeriodContext == nil {

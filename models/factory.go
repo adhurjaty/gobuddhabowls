@@ -27,6 +27,11 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 			return err
 		}
 		return nil
+	case *InventoryItem:
+		if err := LoadInventoryItem(m.(*InventoryItem), tx, id); err != nil {
+			return err
+		}
+		return nil
 	}
 
 	return errors.New("unimplemented type")
@@ -42,6 +47,11 @@ func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
 		return nil
 	case *Vendors:
 		if err := LoadVendors(s.(*Vendors), q); err != nil {
+			return err
+		}
+		return nil
+	case *InventoryItems:
+		if err := LoadInventoryItems(s.(*InventoryItems), q); err != nil {
 			return err
 		}
 		return nil
@@ -143,6 +153,20 @@ func LoadVendors(vendList *Vendors, q *pop.Query) error {
 
 		v.Items.Sort()
 	}
+
+	return nil
+}
+
+func LoadInventoryItem(item *InventoryItem, tx *pop.Connection, id string) error {
+	return tx.Eager().Find(item, id)
+}
+
+func LoadInventoryItems(itemList *InventoryItems, q *pop.Query) error {
+	if err := q.All(itemList); err != nil {
+		return err
+	}
+
+	itemList.Sort()
 
 	return nil
 }

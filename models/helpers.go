@@ -1,6 +1,7 @@
 package models
 
 import (
+	"database/sql"
 	"github.com/gobuffalo/pop"
 )
 
@@ -58,4 +59,12 @@ func GetYears(tx *pop.Connection) ([]int, error) {
 	}
 
 	return years, nil
+}
+
+func StringToNullString(s string) sql.NullString {
+	valid := len(s) > 0
+	return sql.NullString{
+		Valid:  valid,
+		String: s,
+	}
 }

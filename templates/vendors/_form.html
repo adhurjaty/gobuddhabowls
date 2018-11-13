@@ -1,6 +1,18 @@
 <%= f.InputTag("Name") %>
 <%= f.InputTag("Email") %>
-<%= f.InputTag("PhoneNumber") %>
+<%= f.InputTag("PhoneNumber", {class: "phone-number"}) %>
 <%= f.InputTag("Contact") %>
-<%= f.InputTag("ShippingCost") %>
-<button class="btn btn-success" role="submit">Save</button>
+<%= f.InputTag("ShippingCost", {class: "currency"}) %>
+
+<div>
+  <h2><%= vendor.Name %> Items</h2>
+</div>
+
+<input type="hidden" id="inventory-items" data="<%= inventoryItems.String() %>" />
+
+<input type="text" name="Items" style="display: none;"/>
+<%= partial("partials/categorized_items_display.html", {items: vendor.Items}) %>
+
+<button id="vendor-form-submit" class="btn btn-success" role="submit">Save</button>
+
+<%= javascriptTag("vendors/vendors_form.js") %>

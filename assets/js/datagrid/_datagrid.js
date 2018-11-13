@@ -80,7 +80,8 @@ class Row {
                 self.setListener(cell);
             }
         });
-        this.id = this.cells.find(x => x.name == 'id').contents;
+        var idCell = this.cells.find(x => x.name == 'id')
+        this.id = idCell ? idCell.contents : null;
     }
 
     getRow() {
@@ -160,7 +161,7 @@ class Row {
             break;
         default:    // type 'text'
             cell.$td.on('focusin', function(event) {
-                self.clearError($(this));
+                cell.clearError($(this));
                 $(this).selectText();                    
             });
             cell.$td.on('focusout', function(event) {
@@ -178,11 +179,10 @@ class Row {
 
     getUpdateInfo() {
         var updateObj = {}
-        this.getEditableCells().map(cell => {
+        this.getEditableCells().concat(this.getHiddenCells()).map(cell => {
             var $td = cell.getCell();
             updateObj[$td.attr('name')] = $td.text();
         });
-        updateObj['id'] = this.id;
         return updateObj;
     }
 
@@ -196,6 +196,10 @@ class Row {
 
     getEditableCells() {
         return this.cells.filter((cell) => cell.isEditable());
+    }
+
+    getHiddenCells() {
+        return this.cells.filter((cell) => cell.getCell().is(':hidden'));
     }
 }
 
