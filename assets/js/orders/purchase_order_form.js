@@ -1,6 +1,6 @@
 import { daterange } from '../_datepicker';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
-import { formatMoney } from '../helpers/_helpers';
+import { formatMoney, replaceUrlId } from '../helpers/_helpers';
 
 
 $(() => {
@@ -96,6 +96,11 @@ function setDropdown(vendorItemsMap) {
         var items = vendorItemsMap[id];
 
         _table = new CategorizedItemsDisplay(_columnInfo, items, null, options);
+
+        var editVendorButton = $('#edit-vendor-button');
+        editVendorButton.show();
+        var url = replaceUrlId(editVendorButton.attr('base_href'), id);
+        editVendorButton.attr('href', url);
     });
 }
 
