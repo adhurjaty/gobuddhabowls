@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"sort"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -47,4 +48,10 @@ func (c *CountInventoryItem) ValidateCreate(tx *pop.Connection) (*validate.Error
 // This method is not required and may be deleted.
 func (c *CountInventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+func (ci *CountInventoryItems) Sort() {
+	sort.Slice(*ci, func(i, j int) bool {
+		return (*ci)[i].InventoryItem.GetSortValue() < (*ci)[j].InventoryItem.GetSortValue()
+	})
 }

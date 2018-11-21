@@ -32,6 +32,11 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 			return err
 		}
 		return nil
+	case *Inventory:
+		if err := LoadInventory(m.(*Inventory), tx, id); err != nil {
+			return err
+		}
+		return nil
 	}
 
 	return errors.New("unimplemented type")
@@ -52,6 +57,11 @@ func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
 		return nil
 	case *InventoryItems:
 		if err := LoadInventoryItems(s.(*InventoryItems), q); err != nil {
+			return err
+		}
+		return nil
+	case *Inventories:
+		if err := LoadInventories(s.(*Inventories), q); err != nil {
 			return err
 		}
 		return nil
@@ -152,6 +162,48 @@ func LoadVendors(vendList *Vendors, q *pop.Query) error {
 		}
 
 		v.Items.Sort()
+	}
+
+	return nil
+}
+
+func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
+	if err := tx.Eager().Find(inventory, id); err != nil {
+		return err
+	}
+
+	for i := 0; i < len(inventory.Items); i++ {
+		if err := tx.Eager().Find(&inventory.Items[i], inventory.Items[i].ID); err != nil {
+			return err
+		}
+		if err := tx.Eager().Find(&inventory.Items[i].InventoryItem, inventory.Items[i].InventoryItemID); err != nil {
+			return err
+		}
+	}
+
+	inventory.Items.Sort()
+
+	return nil
+}
+
+func LoadInventories(invList *Inventories, q *pop.Query) error {
+	if err := q.All(invList); err != nil {
+		return err
+	}
+
+	// I don't love the fact that I need to load the nested models manually
+	// TODO: look for a solution to eager loading nested objects
+	for _, inv := range *invList {
+		for i := 0; i < len(inv.Items); i++ {
+			if err := q.Connection.Eager().Find(&inv.Items[i], inv.Items[i].ID); err != nil {
+				return err
+			}
+			if err := q.Connection.Eager().Find(&inv.Items[i].InventoryItem, inv.Items[i].InventoryItemID); err != nil {
+				return err
+			}
+		}
+
+		inv.Items.Sort()
 	}
 
 	return nil
