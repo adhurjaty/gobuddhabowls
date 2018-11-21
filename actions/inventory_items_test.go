@@ -1,10 +1,5 @@
 package actions
 
-import (
-	"buddhabowls/models"
-	"github.com/gobuffalo/pop"
-)
-
 func (as *ActionSuite) Test_InventoryItemsResource_List() {
 	as.Fail("Not Implemented!")
 }
@@ -31,25 +26,4 @@ func (as *ActionSuite) Test_InventoryItemsResource_Update() {
 
 func (as *ActionSuite) Test_InventoryItemsResource_Destroy() {
 	as.Fail("Not Implemented!")
-}
-
-func createInventoryItem(db *pop.Connection, name string) (*models.InventoryItem, error) {
-	category := &models.InventoryItemCategory{
-		Name:  "test_category",
-		Index: 0,
-	}
-	err := db.Create(category)
-	if err != nil {
-		return nil, err
-	}
-	item := &models.InventoryItem{
-		Name:       name,
-		Category:   *category,
-		CategoryID: category.ID,
-		IsActive:   true,
-		Index:      0,
-	}
-	err = db.Create(item)
-
-	return item, err
 }

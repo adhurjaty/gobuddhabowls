@@ -6,8 +6,6 @@ import (
 	"buddhabowls/presentation"
 	"encoding/json"
 	"fmt"
-	"github.com/gobuffalo/pop"
-	"github.com/gobuffalo/pop/nulls"
 	"github.com/gobuffalo/uuid"
 	"net/url"
 	"time"
@@ -21,7 +19,10 @@ func (as *ActionSuite) Test_ListPO_View() {
 	purchaseOrder, err := createPO(as.DB, orderTime)
 	as.NoError(err)
 
+	login(as)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
+
+	fmt.Println(res.Result().StatusCode)
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
 }
 
@@ -29,7 +30,9 @@ func (as *ActionSuite) Test_ListPO_View() {
 func (as *ActionSuite) Test_ListPO_NoResults() {
 	orderTime := time.Date(2018, 7, 5, 0, 0, 0, 0, time.UTC)
 
+	login(as)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
+
 	as.NotContains(res.Body.String(), "Open Orders")
 	as.NotContains(res.Body.String(), "Received Orders")
 }
@@ -41,6 +44,8 @@ func (as *ActionSuite) Test_ListPO_OutOfWeek() {
 	as.NoError(err)
 
 	orderTime = orderTime.AddDate(0, 0, -7)
+
+	login(as)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
 	as.NotContains(res.Body.String(), purchaseOrder.ID.String())
 	as.NotContains(res.Body.String(), "Open Orders")
@@ -58,6 +63,8 @@ func (as *ActionSuite) Test_ListPO_CustomDate() {
 
 	orderTime = orderTime.AddDate(0, 0, 1)
 	earlyOrderTime = earlyOrderTime.AddDate(0, 0, -1)
+
+	login(as)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s&EndTime=%s", earlyOrderTime.Format(time.RFC3339), orderTime.Format(time.RFC3339))).Get()
 
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
@@ -75,6 +82,7 @@ func (as *ActionSuite) Test_ListPO_LastSecond() {
 	purchaseOrder, err := createPO(as.DB, orderTime)
 	as.NoError(err)
 
+	login(as)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", startTime.Format(time.RFC3339))).Get()
 
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
@@ -90,6 +98,7 @@ func (as *ActionSuite) Test_ListPO_FirstSecond() {
 	purchaseOrder, err := createPO(as.DB, startTime)
 	as.NoError(err)
 
+	login(as)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", startTime.Format(time.RFC3339))).Get()
 
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
@@ -122,6 +131,7 @@ func (as *ActionSuite) Test_ListPO_OpenAndReceived() {
 	as.NoError(err)
 	as.NoError(receiveOrder(as.DB, recPurchaseOrder, orderTime))
 
+	login(as)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
 
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
@@ -550,65 +560,4 @@ func (as *ActionSuite) Test_DestroyPO() {
 	as.NoError(err)
 
 	as.Equal(0, len(*dbPOs))
-}
-
-func createPO(db *pop.Connection, orderTime time.Time) (*models.PurchaseOrder, error) {
-	vendor, err := createVendor(db)
-	if err != nil {
-		return nil, err
-	}
-
-	purchaseOrder := &models.PurchaseOrder{
-		Vendor:    *vendor,
-		VendorID:  vendor.ID,
-		OrderDate: nulls.Time{Time: orderTime, Valid: true},
-	}
-	if err = db.Create(purchaseOrder); err != nil {
-		return nil, err
-	}
-
-	item := &models.OrderItem{
-		InventoryItem:   vendor.Items[0].InventoryItem,
-		InventoryItemID: vendor.Items[0].InventoryItemID,
-		Count:           4,
-		Price:           vendor.Items[0].Price,
-		OrderID:         purchaseOrder.ID,
-	}
-
-	if err = db.Create(item); err != nil {
-		return nil, err
-	}
-
-	purchaseOrder.Items = models.OrderItems{*item}
-
-	return purchaseOrder, nil
-}
-
-func createPOMultipleItems(db *pop.Connection, orderTime time.Time) (*models.PurchaseOrder, error) {
-	purchaseOrder, err := createPO(db, orderTime)
-	if err != nil {
-		return nil, err
-	}
-
-	newItem, err := createVendorItem(db, &purchaseOrder.Vendor, "yet_another_item")
-	item := &models.OrderItem{
-		InventoryItem:   newItem.InventoryItem,
-		InventoryItemID: newItem.InventoryItemID,
-		Count:           6,
-		Price:           newItem.Price,
-		OrderID:         purchaseOrder.ID,
-	}
-
-	if err = db.Create(item); err != nil {
-		return nil, err
-	}
-
-	purchaseOrder.Items = append(purchaseOrder.Items, *item)
-
-	return purchaseOrder, nil
-}
-
-func receiveOrder(db *pop.Connection, purchaseOrder *models.PurchaseOrder, date time.Time) error {
-	purchaseOrder.ReceivedDate = nulls.Time{Time: date, Valid: true}
-	return db.Update(purchaseOrder)
 }
