@@ -50,6 +50,42 @@ func (c *CountInventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Error
 	return validate.NewErrors(), nil
 }
 
+func (c CountInventoryItem) GetID() uuid.UUID {
+	return c.ID
+}
+
+func (c CountInventoryItem) GetName() string {
+	return c.InventoryItem.Name
+}
+
+func (c CountInventoryItem) GetCategory() InventoryItemCategory {
+	return c.InventoryItem.Category
+}
+
+func (c CountInventoryItem) GetIndex() int {
+	return c.InventoryItem.Index
+}
+
+func (c *CountInventoryItem) GetConversion() float64 {
+	for _, item := range c.SelectedVendor.Items {
+		if c.InventoryItemID == item.InventoryItemID {
+			return item.Conversion
+		}
+	}
+
+	return 1
+}
+
+func (c *CountInventoryItem) GetLastPurchasedPrice() float64 {
+	for _, item := range c.SelectedVendor.Items {
+		if c.InventoryItemID == item.InventoryItemID {
+			return item.Price
+		}
+	}
+
+	return 0
+}
+
 func (ci *CountInventoryItems) Sort() {
 	sort.Slice(*ci, func(i, j int) bool {
 		return (*ci)[i].InventoryItem.GetSortValue() < (*ci)[j].InventoryItem.GetSortValue()

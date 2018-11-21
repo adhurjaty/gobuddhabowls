@@ -44,16 +44,20 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 	switch item.(type) {
 	case models.OrderItem:
 		orderItem, _ := item.(models.OrderItem)
-		itemAPI.InventoryItemID = orderItem.InventoryItemID.String()
 		itemAPI.Count = orderItem.Count
 		itemAPI.Price = orderItem.Price
 
 	case models.VendorItem:
 		vendorItem, _ := item.(models.VendorItem)
-		itemAPI.InventoryItemID = vendorItem.InventoryItemID.String()
 		itemAPI.Price = vendorItem.Price
 		itemAPI.PurchasedUnit = vendorItem.PurchasedUnit.String
 		itemAPI.Conversion = vendorItem.Conversion
+
+	case models.CountInventoryItem:
+		countItem, _ := item.(models.CountInventoryItem)
+		itemAPI.Count = countItem.Count
+		itemAPI.Conversion = countItem.GetConversion()
+		itemAPI.Price = countItem.GetLastPurchasedPrice()
 	}
 
 	return itemAPI
@@ -62,6 +66,7 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 // NewItemsAPI converts an order/vendor/inventory item slice to an api item slice
 func NewItemsAPI(modelItems interface{}) ItemsAPI {
 	var apis []ItemAPI
+
 	// TODO: gotta be a better way to do this
 	switch modelItems.(type) {
 	case models.OrderItems:
@@ -72,6 +77,12 @@ func NewItemsAPI(modelItems interface{}) ItemsAPI {
 		}
 	case models.VendorItems:
 		modelSlice := modelItems.(models.VendorItems)
+		apis = make([]ItemAPI, len(modelSlice))
+		for i, modelItem := range modelSlice {
+			apis[i] = NewItemAPI(modelItem)
+		}
+	case models.CountInventoryItems:
+		modelSlice := modelItems.(models.CountInventoryItems)
 		apis = make([]ItemAPI, len(modelSlice))
 		for i, modelItem := range modelSlice {
 			apis[i] = NewItemAPI(modelItem)
