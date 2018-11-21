@@ -19,7 +19,7 @@ func (as *ActionSuite) Test_ListPO_View() {
 	purchaseOrder, err := createPO(as.DB, orderTime)
 	as.NoError(err)
 
-	login(as)
+	login(as.DB, as.Session)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
 
 	fmt.Println(res.Result().StatusCode)
@@ -30,7 +30,7 @@ func (as *ActionSuite) Test_ListPO_View() {
 func (as *ActionSuite) Test_ListPO_NoResults() {
 	orderTime := time.Date(2018, 7, 5, 0, 0, 0, 0, time.UTC)
 
-	login(as)
+	login(as.DB, as.Session)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
 
 	as.NotContains(res.Body.String(), "Open Orders")
@@ -45,7 +45,7 @@ func (as *ActionSuite) Test_ListPO_OutOfWeek() {
 
 	orderTime = orderTime.AddDate(0, 0, -7)
 
-	login(as)
+	login(as.DB, as.Session)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
 	as.NotContains(res.Body.String(), purchaseOrder.ID.String())
 	as.NotContains(res.Body.String(), "Open Orders")
@@ -64,7 +64,7 @@ func (as *ActionSuite) Test_ListPO_CustomDate() {
 	orderTime = orderTime.AddDate(0, 0, 1)
 	earlyOrderTime = earlyOrderTime.AddDate(0, 0, -1)
 
-	login(as)
+	login(as.DB, as.Session)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s&EndTime=%s", earlyOrderTime.Format(time.RFC3339), orderTime.Format(time.RFC3339))).Get()
 
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
@@ -82,7 +82,7 @@ func (as *ActionSuite) Test_ListPO_LastSecond() {
 	purchaseOrder, err := createPO(as.DB, orderTime)
 	as.NoError(err)
 
-	login(as)
+	login(as.DB, as.Session)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", startTime.Format(time.RFC3339))).Get()
 
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
@@ -98,7 +98,7 @@ func (as *ActionSuite) Test_ListPO_FirstSecond() {
 	purchaseOrder, err := createPO(as.DB, startTime)
 	as.NoError(err)
 
-	login(as)
+	login(as.DB, as.Session)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", startTime.Format(time.RFC3339))).Get()
 
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
@@ -131,7 +131,7 @@ func (as *ActionSuite) Test_ListPO_OpenAndReceived() {
 	as.NoError(err)
 	as.NoError(receiveOrder(as.DB, recPurchaseOrder, orderTime))
 
-	login(as)
+	login(as.DB, as.Session)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
 
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())

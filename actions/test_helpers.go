@@ -3,14 +3,13 @@ package actions
 import (
 	"buddhabowls/models"
 	"database/sql"
+	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/pop/nulls"
 	"time"
 )
 
-func login(as *ActionSuite) {
-	db := as.DB
-	session := as.Session
+func login(db *pop.Connection, session *buffalo.Session) {
 	user := &models.User{
 		Email:        "some@email.com",
 		PasswordHash: "lksjf;lej;lkjfsa;eaaklesmae;fmae",
