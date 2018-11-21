@@ -36,7 +36,12 @@ func (v InventoriesResource) List(c buffalo.Context) error {
 	}
 
 	presenter := presentation.NewPresenter(tx)
-	inventories, err := presenter.GetInventories()
+	startTime, endTime, err := setPeriodSelector(c, presenter)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	inventories, err := presenter.GetInventories(startTime, endTime)
 	if err != nil {
 		return errors.WithStack(err)
 	}

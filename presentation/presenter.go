@@ -115,8 +115,8 @@ func (p *Presenter) UpdateVendor(vendAPI *VendorAPI) (*validate.Errors, error) {
 	return logic.UpdateVendor(vendor, p.tx)
 }
 
-func (p *Presenter) GetInventories() (*InventoriesAPI, error) {
-	inventories, err := logic.GetAllInventories(p.tx)
+func (p *Presenter) GetInventories(startTime time.Time, endTime time.Time) (*InventoriesAPI, error) {
+	inventories, err := logic.GetInventories(startTime, endTime, p.tx)
 	if err != nil {
 		return nil, err
 	}

@@ -1,5 +1,4 @@
-import { formatMoney, replaceUrlId, parseModelJSON } from '../helpers/_helpers';
-import { DataGrid } from '../datagrid/_datagrid';
+import { replaceUrlId, parseModelJSON } from '../helpers/_helpers';
 import { sendUpdate } from '../helpers/index_helpers';
 import { CollapsibleDatagrid } from '../datagrid/_collapsible_datagrid';
 
@@ -53,13 +52,14 @@ function sendDatagridUpdate(updateObj) {
 }
 
 function getHiddenRow(inventory) {
+    debugger;
     return `<tr class="items-list">
             <td colspan="100">
                 <table>
                     ${inventory.Items.map((item) => {
                         return `<tr>
                             <td>${item.name}</td>
-                            <td>${formatMoney(item.count)}</td>
+                            <td>${item.count}</td>
                         </tr>`
                     }).join('\n')}
                 </table>

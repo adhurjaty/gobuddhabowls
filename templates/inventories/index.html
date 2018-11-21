@@ -2,6 +2,10 @@
   <h1 class="text-center">Inventory</h1>
 </div>
 
+<div id="period-selector-component" onchange-href="<%= inventoriesPath() %>">
+  <%= partial("partials/period_selector.html", {changePath: inventoriesPath()}) %>
+</div>
+
 <div class="row">
   <div class="col-12 float-right">
     <a href="<%= newInventoriesPath() %>" class="btn btn-primary float-right">New Inventory</a>

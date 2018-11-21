@@ -1,5 +1,5 @@
 <div class="row period-selector" id="period-selector">
-    <%= form({action: purchaseOrdersPath(), method: "GET", id: "period-selector-form"}) { %>
+    <%= form({action: changePath, method: "GET", id: "period-selector-form"}) { %>
     <div class="col-md-3">
         <label for="period-selector">Period</label>
         <%= f.SelectTag({name: "Period", value: SelectedPeriod, options: Periods }) %>

@@ -7,7 +7,7 @@
   </div>
 </div>
 <div class="row" id="period-selector-component" onchange-href="<%= purchaseOrdersPath() %>">
-    <%= partial("partials/period_selector.html") %>
+    <%= partial("partials/period_selector.html", {changePath: purchaseOrdersPath()}) %>
 </div>
 <div class="row">
   <%= partial("purchase_orders/trend_chart.html", { Data: purchaseOrders, Height: 400 }) %>

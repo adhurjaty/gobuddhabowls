@@ -5,7 +5,6 @@ package actions
 // appropriate variables
 
 import (
-	"buddhabowls/logic"
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"fmt"
@@ -39,60 +38,16 @@ const (
 // GET /purchase_orders
 // optional params: StartTime, [EndTime]
 func (v PurchaseOrdersResource) List(c buffalo.Context) error {
-
-	// get the parameters from URL
-	paramsMap, ok := c.Params().(url.Values)
-	if !ok {
-		return c.Error(500, errors.New("Could not parse params"))
-	}
-
-	startVal, startTimeExists := paramsMap["StartTime"]
-	endVal, endTimeExists := paramsMap["EndTime"]
-	startTime := time.Time{}
-	endTime := time.Time{}
-
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	var err error
-	if startTimeExists {
-		startTime, err = time.Parse(time.RFC3339, startVal[0])
-		if err != nil {
-			return errors.WithStack(err)
-		}
-	}
-
 	presenter := presentation.NewPresenter(tx)
-	if !startTimeExists && !endTimeExists {
-		startTime = time.Now()
-	}
 
-	periods := presenter.GetPeriods(startTime)
-	weeks := presenter.GetWeeks(startTime)
-	years := presenter.GetYears()
-
-	if endTimeExists {
-		endTime, err = time.Parse(time.RFC3339, endVal[0])
-		if err != nil {
-			return errors.WithStack(err)
-		}
-		periods = append([]logic.Period{logic.Period{}}, periods...)
-		weeks = append([]logic.Week{logic.Week{}}, weeks...)
-		years = append([]int{0}, years...)
-
-		c.Set("SelectedPeriod", periods[0])
-		c.Set("SelectedWeek", weeks[0])
-		c.Set("SelectedYear", startTime.Year())
-	} else {
-		selectedPeriod := presenter.GetSelectedPeriod(startTime)
-		selectedWeek := presenter.GetSelectedWeek(startTime)
-		c.Set("SelectedPeriod", selectedPeriod)
-		c.Set("SelectedWeek", selectedWeek)
-		c.Set("SelectedYear", startTime.Year())
-		startTime = selectedWeek.StartTime
-		endTime = selectedWeek.EndTime
+	startTime, endTime, err := setPeriodSelector(c, presenter)
+	if err != nil {
+		return errors.WithStack(err)
 	}
 
 	purchaseOrders, err := presenter.GetPurchaseOrders(startTime, endTime)
@@ -110,11 +65,6 @@ func (v PurchaseOrdersResource) List(c buffalo.Context) error {
 		}
 	}
 
-	c.Set("Periods", periods)
-	c.Set("Weeks", weeks)
-	c.Set("Years", years)
-	c.Set("StartTime", startTime)
-	c.Set("EndTime", endTime)
 	c.Set("purchaseOrders", purchaseOrders)
 	c.Set("openPurchaseOrders", openPos)
 	c.Set("recPurchaseOrders", recPos)
