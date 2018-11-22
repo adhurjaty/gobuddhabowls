@@ -159,3 +159,17 @@ div.hidden-items {
 .check-label-right {
     padding-left: 25px;
 }
+
+div.inventory-view {
+    height: 100%;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid gray;
+
+    > div {
+        padding-top: 10px;
+    }
+    .inventory-select {
+        border-right: 1px solid gray;
+    }
+}
