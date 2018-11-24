@@ -17,6 +17,7 @@ type ItemAPI struct {
 	Price           float64     `json:"price"`
 	PurchasedUnit   string      `json:"purchased_unit,omitempty"`
 	Conversion      float64     `json:"conversion,omitempty"`
+	CountUnit       string      `json:'count_unit,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
@@ -58,6 +59,7 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		itemAPI.Count = countItem.Count
 		itemAPI.Conversion = countItem.GetConversion()
 		itemAPI.Price = countItem.GetLastPurchasedPrice()
+		itemAPI.CountUnit = countItem.InventoryItem.CountUnit
 	}
 
 	return itemAPI

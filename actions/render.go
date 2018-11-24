@@ -42,6 +42,12 @@ func init() {
 				t := time.Now()
 				return helpers.FormatDate(time.Date(t.Year(), t.Month(), t.Day(), 0, 0, 0, 0, t.Location()))
 			},
+			"first": func(lst []interface{}) interface{} {
+				if len(lst) == 0 {
+					return nil
+				}
+				return lst[0]
+			},
 		},
 	})
 }

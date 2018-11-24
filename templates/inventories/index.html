@@ -21,7 +21,7 @@
   <div class="col-9">
     <%= form({action: inventoryPath({ inventory_id: "inventory_id" }), method: "PUT", id: "inventory-form"}) { %>
       <%= f.InputTag({name: "Date"}) %>
-      <div id="datagrid-holder"></div>
+      <%= partial("partials/categorized_items_display.html", {items: defaultItems}) %>
       <button class="btn btn-success" role="submit">Save</button>
     <% } %>
   </div>

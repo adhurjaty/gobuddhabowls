@@ -47,6 +47,7 @@ func (v InventoriesResource) List(c buffalo.Context) error {
 	}
 
 	c.Set("inventories", inventories)
+	c.Set("defaultItems", (*inventories)[0].Items)
 
 	return c.Render(200, r.HTML("inventories/index"))
 }
