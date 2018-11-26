@@ -36,7 +36,7 @@ func (items ItemsAPI) String() string {
 func NewItemAPI(item models.GenericItem) ItemAPI {
 	itemAPI := ItemAPI{
 		ID:              item.GetID().String(),
-		InventoryItemID: item.GetID().String(),
+		InventoryItemID: item.GetInventoryItemID().String(),
 		Name:            item.GetName(),
 		Category:        NewCategoryAPI(item.GetCategory()),
 		Index:           item.GetIndex(),

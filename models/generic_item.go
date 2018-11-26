@@ -7,6 +7,7 @@ import (
 // GenericItem is an interface for any item whose lifecycle includes inventory
 type GenericItem interface {
 	GetID() uuid.UUID
+	GetInventoryItemID() uuid.UUID
 	GetName() string
 	GetCategory() InventoryItemCategory
 	GetIndex() int

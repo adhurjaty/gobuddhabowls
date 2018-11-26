@@ -64,6 +64,10 @@ func (v VendorItem) GetID() uuid.UUID {
 	return v.ID
 }
 
+func (v VendorItem) GetInventoryItemID() uuid.UUID {
+	return v.InventoryItemID
+}
+
 func (v VendorItem) GetName() string {
 	return v.InventoryItem.Name
 }

@@ -54,6 +54,10 @@ func (c CountInventoryItem) GetID() uuid.UUID {
 	return c.ID
 }
 
+func (c CountInventoryItem) GetInventoryItemID() uuid.UUID {
+	return c.InventoryItemID
+}
+
 func (c CountInventoryItem) GetName() string {
 	return c.InventoryItem.Name
 }

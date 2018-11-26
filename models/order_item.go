@@ -59,6 +59,10 @@ func (o OrderItem) GetID() uuid.UUID {
 	return o.ID
 }
 
+func (o OrderItem) GetInventoryItemID() uuid.UUID {
+	return o.InventoryItemID
+}
+
 func (o OrderItem) GetName() string {
 	return o.InventoryItem.Name
 }
