@@ -51,7 +51,8 @@ function setupTable() {
     var allItemsText = $('#inventory-items').attr('data');
     if(allItemsText) {
         var allItems = JSON.parse(allItemsText);
-        _table = new CategorizedItemsDisplay(_columnInfo, null, allItems);
+        var container = $('#categorized-items-display');
+        _table = new CategorizedItemsDisplay(container, _columnInfo, allItems, null);
     }
 }
 

@@ -125,6 +125,16 @@ func (p *Presenter) GetInventories(startTime time.Time, endTime time.Time) (*Inv
 	return &apiInv, nil
 }
 
+func (p *Presenter) GetLatestInventory(date time.Time) (*InventoryAPI, error) {
+	inventory, err := logic.GetLatestInventory(date, p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	apiInv := NewInventoryAPI(inventory)
+	return &apiInv, nil
+}
+
 func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
 	items, err := logic.GetInventoryItems(p.tx)
 	if err != nil {

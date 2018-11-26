@@ -41,3 +41,19 @@ func GetInventory(id string, tx *pop.Connection) (*models.Inventory, error) {
 
 	return inventory, err
 }
+
+func GetLatestInventory(date time.Time, tx *pop.Connection) (*models.Inventory, error) {
+	factory := models.ModelFactory{}
+	inventories := &models.Inventories{}
+	query := tx.Eager().Where("date <= ?",
+		date.Format(time.RFC3339)).Order("date DESC").Limit(1)
+	err := factory.CreateModelSlice(inventories, query)
+	if err != nil {
+		return nil, err
+	}
+	if len(*inventories) == 0 {
+		return nil, nil
+	}
+	inventory := (*inventories)[0]
+	return &inventory, nil
+}

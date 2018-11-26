@@ -1,15 +1,14 @@
-import { formatMoney, unFormatMoney, sortItems } from '../helpers/_helpers';
+import { formatMoney, unFormatMoney, sortItems, parseModelJSON } from '../helpers/_helpers';
 import { CategorizedDatagrid } from '../datagrid/_categorized_datagrid';
 import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
 import { Modal } from './_modal';
 
-// Always use with the partial: _categorized_items_display.html
 export class CategorizedItemsDisplay {
-    constructor(columnInfo, items, allItems, options) {
-        this.$container = $('#categorized-items-display');
+    constructor(container, columnInfo, allItems, options) {
+        this.$container = container;
         this.allItems = allItems;
         this.options = options || {};
-        this.items = items || JSON.parse(this.$container.attr('data')) || [];
+        this.items = parseModelJSON(this.$container.attr('data')) || [];
         this.$selectedTr = null;
         this.datagrid = null;
         this.breakdown = null;
@@ -24,23 +23,24 @@ export class CategorizedItemsDisplay {
     }
 
     initDisplay() {
-        this.initItems();
-        this.writeItemsToDataAttr();
+        this.initContainer();
+        this.updateTables();
+    }
 
+    initContainer() {
+        if(this.options.breakdown) {
+            this.$container.html(
+                `<div class="col-md-6">
+                    <div name="datagrid"></div>
+                </div>
+                <div class="col-md-6" name="breakdown"></div>`);
+        } else {
+            this.$container.html('<div class="col-md-12" name="datagrid"></div>');
+        }
         if(this.allItems) {
             this.initAddRemoveButtons();
             this.insertModal();
         }
-
-        this.updateTables();
-    }
-
-    initItems() {
-        this.items.forEach(item => {
-            if(!item.count) {
-                item.count = 0;
-            }
-        });
     }
 
     initAddRemoveButtons() {
@@ -62,7 +62,10 @@ export class CategorizedItemsDisplay {
             self.removeItem(selectedItem);
         });
 
-        this.$container.find('div[name="button-group"]').html(this.buttonGroup.$content);
+        var colDiv = this.$container.find('> div').first();
+        var buttonContainer = $('<div></div>');
+        buttonContainer.append(this.buttonGroup.$content);
+        colDiv.prepend(buttonContainer);
     }
 
     updateTables() {
@@ -149,7 +152,9 @@ export class CategorizedItemsDisplay {
     insertModal() {
         var remainingItems = this.getRemainingItems();
         this.modal = new Modal(remainingItems, this.addItem);
-        this.$container.find('div[name="modal"]').html(this.modal.$content);
+        var modalContainer = $(`<div name="modal"></div>`);
+        modalContainer.html(this.modal.$content);
+        this.$container.append(modalContainer);
     }
     
     getRemainingItems() {
@@ -176,6 +181,7 @@ export class CategorizedItemsDisplay {
     }
 }
 
+// + and - buttons that pop open modal or remove item respectively
 class ButtonGroup {
     constructor() {
         this.createButtonGroup();

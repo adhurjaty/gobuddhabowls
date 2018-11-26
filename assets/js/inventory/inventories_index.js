@@ -117,11 +117,12 @@ function setClickInventory() {
 function setSelectedInventory() {
     var $form = $('#inventory-form');
     var invList = $('#date-list');
+    var container = $('#categorized-items-display');
     var selectedInventory = parseModelJSON(invList.find('li.active').attr('data'));
+    container.attr('data', JSON.stringify(selectedInventory.Items));
     $form.find('input[name="Date"]').val(formatSlashDate(selectedInventory.time));
 
-    var table = new CategorizedItemsDisplay(_columns, selectedInventory.Items,
-        null, _categorizedOptions);
+    var table = new CategorizedItemsDisplay(container, _columns, null, _categorizedOptions);
 }
 
 function setOnSubmit() {

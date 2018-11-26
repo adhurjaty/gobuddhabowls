@@ -1,3 +1,5 @@
+import { sortItems } from "../helpers/_helpers";
+
 export class Modal {
     constructor(items, addFn) {
         this.items = items;
@@ -76,7 +78,7 @@ export class Modal {
     }
 
     sortItems() {
-        this.items.sort((a, b) => a.name > b.name ? 1 : -1);
+        this.items = sortItems(this.items);
     }
     
     getContent() {

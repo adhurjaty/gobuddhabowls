@@ -46,6 +46,15 @@ func (v InventoriesResource) List(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
+	if len(*inventories) == 0 {
+		latestInv, err := presenter.GetLatestInventory(startTime)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+
+		*inventories = append(*inventories, *latestInv)
+	}
+
 	c.Set("inventories", inventories)
 	c.Set("defaultItems", (*inventories)[0].Items)
 

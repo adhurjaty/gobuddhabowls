@@ -5,6 +5,7 @@ import { formatMoney, replaceUrlId } from '../helpers/_helpers';
 
 $(() => {
     var vendorItemsMap = JSON.parse($('#vendor-items-map').attr('data'));
+    _tableContainer = $('#categorized-items-display');
 
     setDateRange();
     setDropdown(vendorItemsMap);
@@ -12,6 +13,7 @@ $(() => {
     setDateCheckbox();
 });
 
+var _tableContainer;
 var _table = null;
 
 var _columnInfo = [
@@ -86,7 +88,8 @@ function setDropdown(vendorItemsMap) {
 
     if(selectedId) {
         var allItems = vendorItemsMap[selectedId];
-        _table = new CategorizedItemsDisplay(_columnInfo, null, allItems, options);
+        _table = new CategorizedItemsDisplay(_tableContainer, _columnInfo,
+            allItems, options);
     }
     $(dropdownId).change(function(d) {
         // remove none option
@@ -94,8 +97,10 @@ function setDropdown(vendorItemsMap) {
 
         var id = $(this).val();
         var items = vendorItemsMap[id];
+        _tableContainer.attr('data', JSON.stringify(items));
 
-        _table = new CategorizedItemsDisplay(_columnInfo, items, null, options);
+        _table = new CategorizedItemsDisplay(_tableContainer, _columnInfo,
+            null, options);
 
         var editVendorButton = $('#edit-vendor-button');
         editVendorButton.show();
