@@ -3,6 +3,7 @@ package actions
 import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
+	"time"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -84,7 +85,25 @@ func (v InventoriesResource) Show(c buffalo.Context) error {
 // New renders the form for creating a new Inventory.
 // This function is mapped to the path GET /inventories/new
 func (v InventoriesResource) New(c buffalo.Context) error {
-	return c.Render(200, r.Auto(c, &models.Inventory{}))
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	items, err := presenter.GetInventoryItems()
+	if err != nil {
+		return err
+	}
+
+	inventory := presentation.InventoryAPI{
+		Date:  time.Now(),
+		Items: *items,
+	}
+
+	c.Set("inventory", inventory)
+
+	return c.Render(200, r.HTML("inventories/new"))
 }
 
 // Create adds a Inventory to the DB. This function is mapped to the

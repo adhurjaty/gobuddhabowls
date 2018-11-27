@@ -8,16 +8,18 @@ import (
 
 // ItemAPI is an object for serving order and vendor items to UI
 type ItemAPI struct {
-	ID              string      `json:"id"`
-	Name            string      `json:"name"`
-	Category        CategoryAPI `json:"Category"`
-	Index           int         `json:"index"`
-	InventoryItemID string      `json:"inventory_item_id,omitempty"`
-	Count           float64     `json:"count"`
-	Price           float64     `json:"price"`
-	PurchasedUnit   string      `json:"purchased_unit,omitempty"`
-	Conversion      float64     `json:"conversion,omitempty"`
-	CountUnit       string      `json:"count_unit,omitempty"`
+	ID              string             `json:"id"`
+	Name            string             `json:"name"`
+	Category        CategoryAPI        `json:"Category"`
+	Index           int                `json:"index"`
+	InventoryItemID string             `json:"inventory_item_id,omitempty"`
+	Count           float64            `json:"count"`
+	Price           float64            `json:"price"`
+	PurchasedUnit   string             `json:"purchased_unit,omitempty"`
+	Conversion      float64            `json:"conversion,omitempty"`
+	CountUnit       string             `json:"count_unit,omitempty"`
+	VendorItemMap   map[string]ItemAPI `json:"VendorItemMap,omitempty"`
+	SelectedVendor  string             `json:"selected_vendor,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
@@ -47,22 +49,17 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		orderItem, _ := item.(models.OrderItem)
 		itemAPI.Count = orderItem.Count
 		itemAPI.Price = orderItem.Price
-		itemAPI.InventoryItemID = orderItem.InventoryItemID.String()
 
 	case models.VendorItem:
 		vendorItem, _ := item.(models.VendorItem)
 		itemAPI.Price = vendorItem.Price
 		itemAPI.PurchasedUnit = vendorItem.PurchasedUnit.String
 		itemAPI.Conversion = vendorItem.Conversion
-		itemAPI.InventoryItemID = vendorItem.InventoryItemID.String()
 
 	case models.CountInventoryItem:
 		countItem, _ := item.(models.CountInventoryItem)
 		itemAPI.Count = countItem.Count
-		itemAPI.Conversion = countItem.GetConversion()
-		itemAPI.Price = countItem.GetLastPurchasedPrice()
 		itemAPI.CountUnit = countItem.InventoryItem.CountUnit
-		itemAPI.InventoryItemID = countItem.InventoryItemID.String()
 	}
 
 	return itemAPI
@@ -188,6 +185,22 @@ func AddVendorInfo(items ItemsAPI, vendorItems ItemsAPI) ItemsAPI {
 	}
 
 	return outItems
+}
+
+func (item *ItemAPI) SetSelectedVendor(name string) {
+	vendItem, ok := item.VendorItemMap[name]
+	if !ok {
+		item.SelectedVendor = ""
+		item.PurchasedUnit = ""
+		item.Price = 0
+		item.Conversion = 1
+		return
+	}
+
+	item.SelectedVendor = name
+	item.PurchasedUnit = vendItem.PurchasedUnit
+	item.Price = vendItem.Price
+	item.Conversion = vendItem.Conversion
 }
 
 // SelectValue returns the ID for select input tags

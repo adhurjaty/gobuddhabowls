@@ -25,7 +25,10 @@ func (inv InventoriesAPI) String() string {
 	return string(jo)
 }
 
-func NewInventoryAPI(inventory *models.Inventory) InventoryAPI {
+func NewInventoryAPI(inventory *models.Inventory, vendors *VendorsAPI) InventoryAPI {
+	items := NewItemsAPI(inventory.Items)
+	populateVendorItems(&items, &inventory.Items, vendors)
+
 	return InventoryAPI{
 		ID:    inventory.ID,
 		Date:  inventory.Date,
@@ -33,11 +36,49 @@ func NewInventoryAPI(inventory *models.Inventory) InventoryAPI {
 	}
 }
 
-func NewInventoriesAPI(inventories *models.Inventories) InventoriesAPI {
+func NewInventoriesAPI(inventories *models.Inventories, vendors *VendorsAPI) InventoriesAPI {
 	apis := make([]InventoryAPI, len(*inventories))
 	for i, inventory := range *inventories {
-		apis[i] = NewInventoryAPI(&inventory)
+		apis[i] = NewInventoryAPI(&inventory, vendors)
 	}
 
 	return apis
 }
+
+func populateVendorItems(apiItems *ItemsAPI, items *models.CountInventoryItems, vendors *VendorsAPI) {
+	for i, item := range *items {
+		vendorMap := make(map[string]ItemAPI)
+		for _, vendor := range *vendors {
+			vendorItem := getVendorItem(item.InventoryItemID, &vendor.Items)
+			if vendorItem != nil {
+				vendorMap[vendor.Name] = *vendorItem
+			}
+		}
+		(*apiItems)[i].VendorItemMap = vendorMap
+		(*apiItems)[i].SetSelectedVendor(item.SelectedVendor.Name)
+	}
+}
+
+func getVendorItem(inventoryItemID uuid.UUID, items *ItemsAPI) *ItemAPI {
+	for _, item := range *items {
+		if inventoryItemID.String() == item.InventoryItemID {
+			return &item
+		}
+	}
+
+	return nil
+}
+
+// func getVendorName(id uuid.NullUUID, vendors *VendorsAPI) string {
+// 	idVal, err := id.Value()
+// 	if err != nil {
+// 		return ""
+// 	}
+// 	for _, vendor := range *vendors {
+// 		if idVal.(uuid.UUID) == vendor.ID {
+// 			return vendor.Name
+// 		}
+// 	}
+
+// 	return ""
+// }

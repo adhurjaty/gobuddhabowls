@@ -121,7 +121,13 @@ func (p *Presenter) GetInventories(startTime time.Time, endTime time.Time) (*Inv
 		return nil, err
 	}
 
-	apiInv := NewInventoriesAPI(inventories)
+	vendors, err := p.GetVendors()
+	if err != nil {
+		return nil, err
+	}
+
+	apiInv := NewInventoriesAPI(inventories, vendors)
+
 	return &apiInv, nil
 }
 
@@ -131,7 +137,12 @@ func (p *Presenter) GetLatestInventory(date time.Time) (*InventoryAPI, error) {
 		return nil, err
 	}
 
-	apiInv := NewInventoryAPI(inventory)
+	vendors, err := p.GetVendors()
+	if err != nil {
+		return nil, err
+	}
+
+	apiInv := NewInventoryAPI(inventory, vendors)
 	return &apiInv, nil
 }
 

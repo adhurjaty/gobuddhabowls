@@ -70,26 +70,6 @@ func (c CountInventoryItem) GetIndex() int {
 	return c.InventoryItem.Index
 }
 
-func (c *CountInventoryItem) GetConversion() float64 {
-	for _, item := range c.SelectedVendor.Items {
-		if c.InventoryItemID == item.InventoryItemID {
-			return item.Conversion
-		}
-	}
-
-	return 1
-}
-
-func (c *CountInventoryItem) GetLastPurchasedPrice() float64 {
-	for _, item := range c.SelectedVendor.Items {
-		if c.InventoryItemID == item.InventoryItemID {
-			return item.Price
-		}
-	}
-
-	return 0
-}
-
 func (ci *CountInventoryItems) Sort() {
 	sort.Slice(*ci, func(i, j int) bool {
 		return (*ci)[i].InventoryItem.GetSortValue() < (*ci)[j].InventoryItem.GetSortValue()

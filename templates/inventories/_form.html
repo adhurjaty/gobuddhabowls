@@ -1,2 +1,6 @@
 <%= f.InputTag("Date") %>
+<div id="categorized-items-display" class="row" data='<%= inventory.Items %>'></div>
+
 <button class="btn btn-success" role="submit">Save</button>
+
+<%= javascriptTag("inventory/inventories_form.js") %>
