@@ -32,7 +32,7 @@ func NewInventoryAPI(inventory *models.Inventory, vendors *VendorsAPI) Inventory
 	return InventoryAPI{
 		ID:    inventory.ID,
 		Date:  inventory.Date,
-		Items: NewItemsAPI(inventory.Items),
+		Items: items,
 	}
 }
 
@@ -54,6 +54,7 @@ func populateVendorItems(apiItems *ItemsAPI, items *models.CountInventoryItems, 
 				vendorMap[vendor.Name] = *vendorItem
 			}
 		}
+
 		(*apiItems)[i].VendorItemMap = vendorMap
 		(*apiItems)[i].SetSelectedVendor(item.SelectedVendor.Name)
 	}

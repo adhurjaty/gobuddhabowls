@@ -4,10 +4,11 @@ import { datepicker } from "../_datepicker";
 
 
 class Cell {
-    constructor($td) {
+    constructor($td, columnInfo) {
         this.$td = $td;
         this.contents = $td.text();
         this.name = $td.attr('name');
+        this.columnInfo = columnInfo;
     }
 
     getCell() {
@@ -32,8 +33,8 @@ class Cell {
 
 // EditCell represents an editable cell in a Datagrid. 
 class EditCell extends Cell {
-    constructor($td) {
-        super($td);
+    constructor($td, columnInfo) {
+        super($td, columnInfo);
         this.type = $td.attr('data-type');
         this.errorMessage = "";
     }
@@ -64,11 +65,33 @@ class EditCell extends Cell {
 
 
 class Row {
-    constructor(cells, updateFnc) {
-        this.cells = cells;
+    constructor(item, columnInfo, updateFnc) {
+        this.item = item;
+        this.columnInfo = columnInfo;
         this.updateFnc = updateFnc;
+        this.cells = null;
         this.$tr = null;
+        this.initCells();
         this.initRow();
+    }
+
+    initCells() {
+        this.cells = this.columnInfo.map((info) => {
+            var $td = $('<td></td>');
+            $td.attr('name', info.name);
+            $td.html(info.column_func(this.item));
+
+            if(info.hidden) {
+                $td.hide();
+            }
+            if(info.editable) {
+                $td.attr('editable', true);
+                $td.attr('data-type', info.data_type);
+                return new EditCell($td, info);
+            }
+
+            return new Cell($td);
+        }, this);
     }
 
     initRow() {
@@ -130,7 +153,6 @@ class Row {
                 if(text == undefined) {
                     return;
                 }
-                // debugger;
 
                 if(!isNaN(text)) {
                     var amt = parseFloat(text);
@@ -144,18 +166,29 @@ class Row {
             });
             break;
         case 'selector':
+            cell.$td.on('focusin', event => {
+                cell.clearError();
+                cell.$td.empty();
+                var $input = self.makeSelectInput(cell);
+                cell.$td.append($input);
+            });
+            cell.$td.on('focusout', event => {
+                cell.$td.empty();
+                cell.$td.text(cell.contents);
+                self.sendUpdate();
+            });
             break;
         case 'number':
-            cell.$td.on('focusin', function(event) {
+            cell.$td.on('focusin', event => {
                 cell.clearError();
-                $(this).selectText();
+                cell.$td.selectText();
             });
-            cell.$td.on('focusout', function(event) {
+            cell.$td.on('focusout', event => {
                 if(!isNaN(cell.getText())) {
                     cell.setText()
                     self.sendUpdate();
                 } else {
-                    $(this).text("0");
+                    cell.$td.text("0");
                 }
             });
             break;
@@ -186,6 +219,26 @@ class Row {
         return updateObj;
     }
 
+    makeSelectInput(cell) {
+        var input = $(
+            `<select>
+                ${cell.columnInfo.options_func(this.item).reduce((s, option) => {
+                    return `${s}\n<option value="${option}"
+                        ${cell.columnInfo.column_func(this.item) == option 
+                            ? "selected" : ""}>
+                        ${option}
+                    </option>`;
+                }, "", this)}
+            </select>`
+        );
+
+        input.change(() => {
+            $(this).remove('option[value=""]');
+            this.column_func.selection_func(this.item);
+        });
+        return input;
+    }
+
     getInfo() {
         var updateObj = {}
         this.$tr.find('td[name]').each((_, td) => {
@@ -214,7 +267,9 @@ export class DataGrid {
     //     editable: optional, default false,
     //     data_type: 'text',
     //     hidden: optional, default false
-    //     column_func: function(data_item)
+    //     column_func: function(data_item),
+    //     default: number,
+    //     options_func: function(data_item) return list
     // }
     // updateFnc: function to execute after updating an editable cell
     constructor(data, columnInfo, updateFnc) {
@@ -258,8 +313,8 @@ export class DataGrid {
         $header.appendTo(this.$table);
 
         this.rows = this.data.map((item) => {
-            return self.createRow(item);
-        });
+            return new Row(item, this.columnInfo, this.sendUpdate);
+        }, this);
 
         var $tbody = $('<tbody></tbody>');
         this.rows.forEach((row) => {
@@ -283,12 +338,11 @@ export class DataGrid {
             if(info.editable) {
                 $td.attr('editable', true);
                 $td.attr('data-type', info.data_type);
-                return new EditCell($td);
+                return new EditCell($td, info);
             }
 
             return new Cell($td);
         });
-        return new Row(cells, this.sendUpdate);
     }
 
     setRowClick(row) {
@@ -357,13 +411,6 @@ export class DataGrid {
     removeItem($row) {
         $row.remove();
     }
-
-    // insertRow(item, idx) {
-    //     var row = this.createRow(item);
-    //     this.rows.splice(index, 0, row);
-        
-
-    // }
 
     defaultSendUpdate(updateObj) {
         console.log('default send update');

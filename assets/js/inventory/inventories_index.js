@@ -36,6 +36,24 @@ var _columns = [
         }
     },
     {
+        name: 'selected_vendor',
+        header: 'Vendor',
+        editable: true,
+        data_type: 'selector',
+        column_func: (item) => {
+            return item.selected_vendor;
+        },
+        options_func: (item) => {
+            return Object.keys(item.VendorItemMap);
+        },
+        selection_func: (item, option) => {
+            var vendorItem = item.VendorItemMap[option];
+            item.purchased_unit = vendorItem.purchased_unit;
+            item.price = vendorItem.price;
+            item.conversion = vendorItem.conversion;
+        }
+    },
+    {
         name: 'purchased_unit',
         header: 'Purchased Unit',
         editable: true,
