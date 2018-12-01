@@ -1,0 +1,1 @@
+UPDATE count_inventory_items SET selected_vendor_id = NULL;
