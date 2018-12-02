@@ -165,15 +165,6 @@ export class CategorizedItemsDisplay {
     }
 
     datagridUpdated(updateObj) {
-        var price = parseFloat(unFormatMoney(updateObj.price));
-        var count = parseFloat(updateObj.count);
-        var $tr = $('.datagrid').find(`tr td:contains(${updateObj.id})`).parent();
-        $tr.find('td[name="total_cost"]').text(formatMoney(price * count));
-
-        // update items and breakdown
-        var idx = this.items.findIndex((x) => x.id == updateObj.id);
-        this.items[idx].price = price;
-        this.items[idx].count = count;
         this.writeItemsToDataAttr();
 
         if(this.options.breakdown)

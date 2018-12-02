@@ -6,37 +6,37 @@ $(() => {
     var columnInfo = [
         {
             name: 'Pack Size',
-            column_func: (item) => {
+            get_column: (item) => {
                 return item.conversion;
             }
         },
         {
             name: 'Purchased Unit',
-            column_func: (item) => {
+            get_column: (item) => {
                 return item.purchased_unit;
             }
         },
         {
             name: 'category',
-            column_func: (item) => {
+            get_column: (item) => {
                 return item.name;
             }
         },
         {
             name: 'Order Amt',
-            column_func: (item) => {
+            get_column: (item) => {
                 return item.count;
             }
         },
         {
             name: 'Current Price',
-            column_func: (item) => {
+            get_column: (item) => {
                 return formatMoney(item.price);
             }
         },
         {
             name: 'Extension',
-            column_func: (item) => {
+            get_column: (item) => {
                 return formatMoney(item.count * item.price);
             }
         }

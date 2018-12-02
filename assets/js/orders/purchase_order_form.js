@@ -20,27 +20,27 @@ var _columnInfo = [
     {
         name: 'id',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.id;
         }
     },
     {
         name: 'inventory_item_id',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.inventory_item_id;
         }
     },
     {
         name: 'index',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.index;
         }
     },
     {
         header: 'Name',
-        column_func: (item) => {
+        get_column: (item) => {
             return item.name;
         }
     },
@@ -49,8 +49,11 @@ var _columnInfo = [
         header: 'Price',
         editable: true,
         data_type: 'money',
-        column_func: (item) => {
+        get_column: (item) => {
             return formatMoney(parseFloat(item.price));
+        },
+        set_column: (item, value) => {
+            item.price = parseFloat(value);
         }
     },
     {
@@ -58,15 +61,18 @@ var _columnInfo = [
         header: 'Count',
         editable: true,
         data_type: 'number',
-        column_func: (item) => {
+        get_column: (item) => {
             return item.count;
+        },
+        set_column: (item, value) => {
+            item.count = parseFloat(value);
         },
         default: 0
     },
     {
         name: 'total_cost',
         header: 'Total Cost',
-        column_func: (item) => {
+        get_column: (item) => {
             return formatMoney(parseFloat(item.price) * parseFloat(item.count));
         }
     }

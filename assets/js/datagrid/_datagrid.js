@@ -79,7 +79,7 @@ class Row {
         this.cells = this.columnInfo.map((info) => {
             var $td = $('<td></td>');
             $td.attr('name', info.name);
-            $td.html(info.column_func(this.item));
+            $td.html(info.get_column(this.item));
 
             if(info.hidden) {
                 $td.hide();
@@ -90,7 +90,7 @@ class Row {
                 return new EditCell($td, info);
             }
 
-            return new Cell($td);
+            return new Cell($td, info);
         }, this);
     }
 
@@ -105,6 +105,12 @@ class Row {
         });
         var idCell = this.cells.find(x => x.name == 'id')
         this.id = idCell ? idCell.contents : null;
+    }
+
+    updateRow() {
+        this.cells.forEach(cell => {
+            cell.$td.html(cell.columnInfo.get_column(this.item));
+        }, this);
     }
 
     getRow() {
@@ -126,7 +132,7 @@ class Row {
 
                 var picker = datepicker($dateInput.get(0), (date) => {
                     cell.contents = formatSlashDate(date);
-                    cell.setText(cell.contents);
+                    cell.columnInfo.set_column(self.item, cell.contents);
                     self.sendUpdate();
                 });
                 $dateInput.on('focusout', function(event) {
@@ -157,26 +163,27 @@ class Row {
                 if(!isNaN(text)) {
                     var amt = parseFloat(text);
                     $(this).attr('value', amt);
-                    cell.setText(formatMoney(amt));
+                    cell.contents = amt;
+                    // cell.setText(formatMoney(amt));
+                    cell.columnInfo.set_column(self.item, cell.contents);
                     self.sendUpdate();
                 } else {
-                    debugger;
                     cell.setText("$0.00");
                 }
             });
             break;
         case 'selector':
-            cell.$td.on('focusin', event => {
+            cell.$td.on('focus', event => {
                 cell.clearError();
                 cell.$td.empty();
-                var $input = self.makeSelectInput(cell);
-                cell.$td.append($input);
+                var datalist = self.makeSelectInput(cell);
+                cell.$td.append(datalist);
+
+                var $input = $(datalist[0]);
+                $input.focus();
+                $input.select();
             });
-            cell.$td.on('focusout', event => {
-                cell.$td.empty();
-                cell.$td.text(cell.contents);
-                self.sendUpdate();
-            });
+            
             break;
         case 'number':
             cell.$td.on('focusin', event => {
@@ -186,6 +193,7 @@ class Row {
             cell.$td.on('focusout', event => {
                 if(!isNaN(cell.getText())) {
                     cell.setText()
+                    cell.columnInfo.set_column(self.item, cell.contents);
                     self.sendUpdate();
                 } else {
                     cell.$td.text("0");
@@ -199,6 +207,7 @@ class Row {
             });
             cell.$td.on('focusout', function(event) {
                 cell.setText();
+                cell.columnInfo.set_column(self.item, cell.contents);
                 self.sendUpdate();
             });
             break;
@@ -206,8 +215,9 @@ class Row {
     }
 
     sendUpdate() {
-        var updateObj = this.getUpdateInfo();
-        this.updateFnc(updateObj);
+        // var updateObj = this.getUpdateInfo();
+        this.updateRow();
+        this.updateFnc(this.item);
     }
 
     getUpdateInfo() {
@@ -220,23 +230,33 @@ class Row {
     }
 
     makeSelectInput(cell) {
-        var input = $(
-            `<select>
+        var self = this;
+        var inputList = $(
+            `<input type="text"
+                value="${cell.columnInfo.get_column(this.item)}"
+                list="${this.item.id}-datalist-options"/>
+            <datalist id="${this.item.id}-datalist-options">
                 ${cell.columnInfo.options_func(this.item).reduce((s, option) => {
-                    return `${s}\n<option value="${option}"
-                        ${cell.columnInfo.column_func(this.item) == option 
-                            ? "selected" : ""}>
+                    return `${s}\n<option value="${option}">
                         ${option}
                     </option>`;
                 }, "", this)}
-            </select>`
+            </datalist>`
         );
+        var input = $(inputList[0]);
 
-        input.change(() => {
+        input.on('blur', (event) => {
             $(this).remove('option[value=""]');
-            this.column_func.selection_func(this.item);
+
+            cell.contents = input.val();
+            cell.$td.text(cell.contents);
+            if(cell.errorMessage) {
+                cell.showError(cell.errorMessage);
+            }
+            cell.columnInfo.set_column(self.item, cell.contents);
+            self.sendUpdate();
         });
-        return input;
+        return inputList;
     }
 
     getInfo() {
@@ -267,7 +287,8 @@ export class DataGrid {
     //     editable: optional, default false,
     //     data_type: 'text',
     //     hidden: optional, default false
-    //     column_func: function(data_item),
+    //     get_column: function(data_item),
+    //     set_column: function(data_item),
     //     default: number,
     //     options_func: function(data_item) return list
     // }
@@ -324,25 +345,6 @@ export class DataGrid {
             $row.appendTo($tbody);
         });
         $tbody.appendTo(this.$table);
-    }
-
-    createRow(item) {
-        var cells = this.columnInfo.map((info) => {
-            var $td = $('<td></td>');
-            $td.attr('name', info.name);
-            $td.html(info.column_func(item));
-
-            if(info.hidden) {
-                $td.hide();
-            }
-            if(info.editable) {
-                $td.attr('editable', true);
-                $td.attr('data-type', info.data_type);
-                return new EditCell($td, info);
-            }
-
-            return new Cell($td);
-        });
     }
 
     setRowClick(row) {

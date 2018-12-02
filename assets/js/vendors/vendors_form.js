@@ -11,27 +11,27 @@ var _columnInfo = [
     {
         name: 'id',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.id;
         }
     },
     {
         name: 'inventory_item_id',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.inventory_item_id;
         }
     },
     {
         name: 'index',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.index;
         }
     },
     {
         header: 'Name',
-        column_func: (item) => {
+        get_column: (item) => {
             return item.name;
         }
     },
@@ -40,8 +40,11 @@ var _columnInfo = [
         header: 'Price',
         editable: true,
         data_type: 'money',
-        column_func: (item) => {
+        get_column: (item) => {
             return formatMoney(parseFloat(item.price));
+        },
+        set_column: (item, value) => {
+            item.price = parseFloat(value);
         },
         default: 0
     }

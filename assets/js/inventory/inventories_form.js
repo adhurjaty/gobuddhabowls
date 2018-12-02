@@ -10,27 +10,27 @@ var _columns = [
     {
         name: 'id',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.id;
         }
     },
     {
         name: 'inventory_item_id',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.inventory_item_id;
         }
     },
     {
         name: 'index',
         hidden: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.index;
         }
     },
     {
         header: 'Name',
-        column_func: (item) => {
+        get_column: (item) => {
             return item.name;
         }
     },
@@ -38,8 +38,11 @@ var _columns = [
         name: 'purchased_unit',
         header: 'Purchased Unit',
         editable: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.purchased_unit;
+        },
+        set_column: (item, value) => {
+            item.purchased_unit = value;
         }
     },
     {
@@ -47,8 +50,11 @@ var _columns = [
         header: 'Purchased Price',
         editable: true,
         data_type: 'money',
-        column_func: (item) => {
+        get_column: (item) => {
             return formatMoney(item.price);
+        },
+        set_column(item, value) {
+            item.price = parseFloat(value);
         }
     },
     {
@@ -56,21 +62,27 @@ var _columns = [
         header: 'Conversion',
         editable: true,
         data_type: 'number',
-        column_func: (item) => {
+        get_column: (item) => {
             return item.conversion;
+        },
+        set_column: (item, value) => {
+            item.conversion = parseFloat(value);
         }
     },
     {
         name: 'count_unit',
         header: 'Count Unit',
         editable: true,
-        column_func: (item) => {
+        get_column: (item) => {
             return item.count_unit;
+        },
+        set_column: (item, value) => {
+            item.count_unit = value;
         }
     },
     {
         header: 'Count Price',
-        column_func: (item) => {
+        get_column: (item) => {
             return formatMoney(item.price / item.conversion);
         }
     },
@@ -79,14 +91,17 @@ var _columns = [
         header: 'Count',
         editable: true,
         data_type: 'number',
-        column_func: (item) => {
+        get_column: (item) => {
             return item.count;
+        },
+        set_column: (item, value) => {
+            item.count = parseFloat(value);
         },
         default: 0
     },
     {
         header: 'Extension',
-        column_func: (item) => {
+        get_column: (item) => {
             return formatMoney(item.count * item.price / item.conversion);
         }
     }

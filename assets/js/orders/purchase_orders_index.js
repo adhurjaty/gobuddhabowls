@@ -14,14 +14,14 @@ var baseColumnObjects = [
 {
     name: 'id',
     hidden: true,
-    column_func: (purchaseOrder) => {
+    get_column: (purchaseOrder) => {
         return purchaseOrder.id;
     }
 },
 {
     name: 'vendor',
     header: 'Vendor',
-    column_func: (purchaseOrder) => {
+    get_column: (purchaseOrder) => {
         return purchaseOrder.Vendor.name;
     }
 },
@@ -30,16 +30,19 @@ var baseColumnObjects = [
     header: 'Order Date',
     editable: true,
     data_type: 'date',
-    column_func: (purchaseOrder) => {
+    get_column: (purchaseOrder) => {
         return formatSlashDate(purchaseOrder.order_date);
+    },
+    set_column: (item, value) => {
+        item.date = value;
     }
 },
 {
     name: 'cost',
     header: 'Cost',
-    column_func: (purchaseOrder) => {
+    get_column: (purchaseOrder) => {
         return formatMoney(getPurchaseOrderCost(purchaseOrder));
-    }
+    },
 }
 ];
     
@@ -64,7 +67,7 @@ function populateRecDatagrid($container) {
         header: 'Received Date',
         editable: true,
         data_type: 'date',
-        column_func: (purchaseOrder) => {
+        get_column: (purchaseOrder) => {
             return formatSlashDate(purchaseOrder.received_date);
         }
     });
@@ -78,7 +81,7 @@ function getColInfo($container, specialOption) {
     return baseColumnObjects.concat([
         {
             name: 'dropdown',
-            column_func: ((editOrderPath, orderSheetPath, receivingListPath) => {
+            get_column: ((editOrderPath, orderSheetPath, receivingListPath) => {
                 return (purchaseOrder) => {
                     return `<div class="dropdown show">
                         <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

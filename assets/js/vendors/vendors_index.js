@@ -11,7 +11,7 @@ $(() => {
         {
             name: 'id',
             hidden: true,
-            column_func: (vendor) => {
+            get_column: (vendor) => {
                 return vendor.id;
             }
         },
@@ -19,7 +19,7 @@ $(() => {
             name: 'name',
             header: 'Name',
             editable: true,
-            column_func: (vendor) => {
+            get_column: (vendor) => {
                 return vendor.name;
             }
         },
@@ -27,24 +27,33 @@ $(() => {
             name: 'email',
             header: 'Email',
             editable: true,
-            column_func: (vendor) => {
+            get_column: (vendor) => {
                 return vendor.email;
+            },
+            set_column: (item, value) => {
+                item.email = value;
             }
         },
         {
             name: 'phone_number',
             header: 'Phone Number',
             editable: true,
-            column_func: (vendor) => {
+            get_column: (vendor) => {
                 return vendor.phone_number;
+            },
+            set_column: (item, value) => {
+                item.phone_number = value;
             }
         },
         {
             name: 'contact',
             header: 'Contact',
             editable: true,
-            column_func: (vendor) => {
+            get_column: (vendor) => {
                 return vendor.contact;
+            },
+            set_column: (item, value) => {
+                item.contact = value;
             }
         },
         {
@@ -52,13 +61,16 @@ $(() => {
             header: 'Shipping Cost',
             data_type: 'money',
             editable: true,
-            column_func: (vendor) => {
+            get_column: (vendor) => {
                 return formatMoney(vendor.shipping_cost);
+            },
+            set_column: (item, value) => {
+                item.shipping_cost = parseFloat(value);
             }
         },
         {
             name: 'dropdown',
-            column_func: ((editVendorPath) => {
+            get_column: ((editVendorPath) => {
                 return (vendor) => {
                     return `<div class="dropdown show">
                             <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
