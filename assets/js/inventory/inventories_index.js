@@ -1,11 +1,14 @@
-import { parseModelJSON, formatSlashDate, formatMoney } from '../helpers/_helpers';
+import { parseModelJSON, formatSlashDate, formatMoney, replaceUrlId } from '../helpers/_helpers';
 import { sendUpdate } from '../helpers/index_helpers';
 import { CollapsibleDatagrid } from '../datagrid/_collapsible_datagrid';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
+import { datepicker } from '../_datepicker';
 
 var _categorizedOptions = {
     breakdown: false
 };
+
+var _selectedInventory = null;
 
 var _columns = [
     {
@@ -152,13 +155,24 @@ function setSelectedInventory() {
     var $form = $('#inventory-form');
     var invList = $('#date-list');
     var container = $('#categorized-items-display');
-    var selectedInventory = parseModelJSON(invList.find('li.active').attr('data'));
-    container.attr('data', JSON.stringify(selectedInventory.Items));
-    $form.find('input[name="Date"]').val(formatSlashDate(selectedInventory.time));
+    _selectedInventory = parseModelJSON(invList.find('li.active').attr('data'));
+    container.attr('data', JSON.stringify(_selectedInventory.Items));
+    var dateInput = $form.find('input[name="Date"]');
+    dateInput.val(formatSlashDate(_selectedInventory.time));
+
+    datepicker(dateInput[0]);
 
     var table = new CategorizedItemsDisplay(container, _columns, null, _categorizedOptions);
 }
 
 function setOnSubmit() {
-
+    var form = $('#inventory-form');
+    form.submit((event) => {
+        var url = replaceUrlId(form.attr('action'), _selectedInventory.id);
+        debugger;
+        form.attr('action', url);
+        var itemsInput = form.find('input[name="Items"]');
+        var datagrid = $('#categorized-items-display');
+        itemsInput.val(datagrid.attr('data'));
+    })
 }

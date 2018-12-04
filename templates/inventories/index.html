@@ -19,8 +19,10 @@
     </ul>
   </div>
   <div class="col-9">
-    <%= form({action: inventoryPath({ inventory_id: "inventory_id" }), method: "PUT", id: "inventory-form"}) { %>
-      <%= f.InputTag({name: "Date"}) %>
+    <%= form({action: inventoryPath({ inventory_id: "{inventory_id}" }), method: "PUT", id: "inventory-form"}) { %>
+      <%= f.InputTag({name: "Date", data-provide: "datepicker"}) %>
+      <input type="text" name="Items" style="display: none;"/>
+
       <div id="categorized-items-display" class="row" data='<%= defaultItems %>'></div>
       <button class="btn btn-success" role="submit">Save</button>
     <% } %>
