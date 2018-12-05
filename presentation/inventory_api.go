@@ -51,6 +51,9 @@ func populateVendorItems(apiItems *ItemsAPI, items *models.CountInventoryItems, 
 		for _, vendor := range *vendors {
 			vendorItem := getVendorItem(item.InventoryItemID, &vendor.Items)
 			if vendorItem != nil {
+				// HACK: getting vendor ID from the property SelectedVendor within
+				// the vendor item map
+				vendorItem.SelectedVendor = vendor.ID.String()
 				vendorMap[vendor.Name] = *vendorItem
 			}
 		}
@@ -70,16 +73,24 @@ func getVendorItem(inventoryItemID uuid.UUID, items *ItemsAPI) *ItemAPI {
 	return nil
 }
 
-// func getVendorName(id uuid.NullUUID, vendors *VendorsAPI) string {
-// 	idVal, err := id.Value()
-// 	if err != nil {
-// 		return ""
-// 	}
-// 	for _, vendor := range *vendors {
-// 		if idVal.(uuid.UUID) == vendor.ID {
-// 			return vendor.Name
-// 		}
-// 	}
+func ConvertToModelInventory(invAPI *InventoryAPI) (*models.Inventory, error) {
+	id := uuid.UUID{}
+	if len(invAPI.ID) > 0 {
+		var err error
+		id, err = uuid.FromString(invAPI.ID)
+		if err != nil {
+			return nil, err
+		}
+	}
 
-// 	return ""
-// }
+	items, err := ConvertToModelCountInventoryItems(invAPI.Items, id)
+	if err != nil {
+		return nil, err
+	}
+
+	return &models.Inventory{
+		ID:    id,
+		Date:  invAPI.Date,
+		Items: *items,
+	}, nil
+}

@@ -187,6 +187,55 @@ func AddVendorInfo(items ItemsAPI, vendorItems ItemsAPI) ItemsAPI {
 	return outItems
 }
 
+func ConvertToModelCountInventoryItems(items ItemsAPI, inventoryID uuid.UUID) (*models.CountInventoryItems, error) {
+	invItems := models.CountInventoryItems{}
+	for _, item := range items {
+		invItem, err := ConvertToModelCountInventoryItem(item, inventoryID)
+		if err != nil {
+			return nil, err
+		}
+		invItems = append(invItems, *invItem)
+	}
+	return &invItems, nil
+}
+
+func ConvertToModelCountInventoryItem(item ItemAPI, inventoryID uuid.UUID) (*models.CountInventoryItem, error) {
+	id := uuid.UUID{}
+	if len(item.ID) > 0 {
+		var err error
+		id, err = uuid.FromString(item.ID)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	invID, err := uuid.FromString(item.InventoryItemID)
+	if err != nil {
+		return nil, err
+	}
+
+	vendorID := uuid.NullUUID{
+		Valid: false,
+	}
+	vendItem, ok := item.VendorItemMap[item.SelectedVendor]
+	if ok {
+		// HACK: getting vendor ID from the property SelectedVendor within
+		// the vendor item map
+		if vendorID.UUID, err = uuid.FromString(vendItem.SelectedVendor); err != nil {
+			vendorID.Valid = false
+		} else {
+			vendorID.Valid = true
+		}
+	}
+
+	return &models.CountInventoryItem{
+		ID:               id,
+		InventoryItemID:  invID,
+		Count:            item.Count,
+		SelectedVendorID: vendorID,
+	}, nil
+}
+
 func (item *ItemAPI) SetSelectedVendor(name string) {
 	vendItem, ok := item.VendorItemMap[name]
 	if !ok {

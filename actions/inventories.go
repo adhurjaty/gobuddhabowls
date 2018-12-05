@@ -40,20 +40,28 @@ func (v InventoriesResource) List(c buffalo.Context) error {
 	}
 
 	presenter := presentation.NewPresenter(tx)
+	if err := setInventoryListVars(c, presenter); err != nil {
+		return errors.WithStack(err)
+	}
+
+	return c.Render(200, r.HTML("inventories/index"))
+}
+
+func setInventoryListVars(c buffalo.Context, presenter *presentation.Presenter) error {
 	startTime, endTime, err := setPeriodSelector(c, presenter)
 	if err != nil {
-		return errors.WithStack(err)
+		return err
 	}
 
 	inventories, err := presenter.GetInventories(startTime, endTime)
 	if err != nil {
-		return errors.WithStack(err)
+		return err
 	}
 
 	if len(*inventories) == 0 {
 		latestInv, err := presenter.GetLatestInventory(startTime)
 		if err != nil {
-			return errors.WithStack(err)
+			return err
 		}
 
 		*inventories = append(*inventories, *latestInv)
@@ -63,7 +71,7 @@ func (v InventoriesResource) List(c buffalo.Context) error {
 	c.Set("inventories", inventories)
 	c.Set("defaultItems", (*inventories)[0].Items)
 
-	return c.Render(200, r.HTML("inventories/index"))
+	return nil
 }
 
 // Show gets the data for one Inventory. This function is mapped to
@@ -177,19 +185,28 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
+	presenter := presentation.NewPresenter(tx)
+	invAPI, err := presenter.GetInventory(c.Param("inventory_id"))
+	if err != nil {
+		return errors.WithStack(err)
+	}
 	// Allocate an empty Inventory
 	inventory := &models.Inventory{}
-
-	if err := tx.Find(inventory, c.Param("inventory_id")); err != nil {
-		return c.Error(404, err)
-	}
 
 	// Bind Inventory to the html form elements
 	if err := c.Bind(inventory); err != nil {
 		return errors.WithStack(err)
 	}
 
-	verrs, err := tx.ValidateAndUpdate(inventory)
+	itemsParamJSON := c.Request().Form.Get("Items")
+	if itemsParamJSON != "" {
+		invAPI.Items, err = getItemsFromParams(itemsParamJSON)
+		if err != nil {
+			return err
+		}
+	}
+
+	verrs, err := presenter.UpdateInventory(invAPI)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -197,6 +214,8 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 	if verrs.HasAny() {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
+
+		setInventoryListVars(c, presenter)
 
 		// Render again the edit.html template that the user can
 		// correct the input.

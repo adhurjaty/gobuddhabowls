@@ -5,6 +5,7 @@ import (
 	"buddhabowls/models"
 	"fmt"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 	"time"
 )
@@ -144,6 +145,47 @@ func (p *Presenter) GetLatestInventory(date time.Time) (*InventoryAPI, error) {
 
 	apiInv := NewInventoryAPI(inventory, vendors)
 	return &apiInv, nil
+}
+
+func (p *Presenter) GetInventory(id string) (*InventoryAPI, error) {
+	inventory, err := logic.GetInventory(id, p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	// may need to add vendor info later
+	apiInv := NewInventoryAPI(inventory, nil)
+	return &apiInv, nil
+}
+
+func (p *Presenter) UpadateInventory(invAPI *InventoryAPI) (*validate.Errors, error) {
+	inventory, err := ConvertToModelInventory(invAPI)
+	if err != nil {
+		return nil, err
+	}
+
+	vendorItems := models.VendorItems{}
+	for _, item := range invAPI.Items {
+		subItem, ok := item.VendorItemMap[item.SelectedVendor]
+		if ok {
+			vendorID, err := uuid.FromString(subItem.SelectedVendor)
+			if err != nil {
+				continue
+			}
+			vItem, err := ConvertToModelVendorItem(item, vendorID)
+			if err != nil {
+				continue
+			}
+
+			vendorItems = append(vendorItems, *vItem)
+		}
+	}
+
+	verrs, err := logic.UpdateVendorItems(&vendorItems, p.tx)
+	if err != nil || verrs.HasAny() {
+		return verrs, err
+	}
+	return logic.UpdateInventory(inventory, p.tx)
 }
 
 func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {

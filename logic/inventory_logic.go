@@ -3,6 +3,7 @@ package logic
 import (
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/validate"
 	"time"
 )
 
@@ -56,4 +57,49 @@ func GetLatestInventory(date time.Time, tx *pop.Connection) (*models.Inventory, 
 	}
 	inventory := (*inventories)[0]
 	return &inventory, nil
+}
+
+func UpdateInventory(inventory *models.Inventory, tx *pop.Connection) (*validate.Errors, error) {
+	oldInventory, err := GetInventory(inventory.ID.String(), tx)
+	if err != nil {
+		return nil, err
+	}
+
+	verrs, err := tx.ValidateAndUpdate(inventory)
+	if err != nil {
+		return verrs, err
+	}
+
+	for _, item := range inventory.Items {
+		item.InventoryID = inventory.ID
+		if isItemIDInList(item, oldInventory.Items) {
+			verrs, err = tx.ValidateAndUpdate(&item)
+		} else {
+			verrs, err = tx.ValidateAndCreate(&item)
+		}
+		if err != nil || verrs.HasAny() {
+			return verrs, err
+		}
+	}
+
+	// delete items are removed from the order list
+	for _, item := range oldInventory.Items {
+		if !isItemIDInList(item, inventory.Items) {
+			err = tx.Destroy(&item)
+			if err != nil {
+				return verrs, err
+			}
+		}
+	}
+
+	return verrs, nil
+}
+
+func isItemIDInList(item models.CountInventoryItem, list models.CountInventoryItems) bool {
+	for _, otherItem := range list {
+		if item.ID == otherItem.ID {
+			return true
+		}
+	}
+	return false
 }
