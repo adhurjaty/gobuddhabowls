@@ -35,7 +35,7 @@ export class CategorizedItemsDisplay {
                 </div>
                 <div class="col-md-6" name="breakdown"></div>`);
         } else {
-            this.$container.html('<div class="col-md-12" name="datagrid"></div>');
+            this.$container.html('<div class="col-md-12"><div name="datagrid"></div></div>');
         }
         if(this.allItems) {
             this.initAddRemoveButtons();
