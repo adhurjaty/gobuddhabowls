@@ -5,7 +5,8 @@ import { CategorizedItemsDisplay } from '../components/_categorized_items_displa
 import { datepicker } from '../_datepicker';
 
 var _categorizedOptions = {
-    breakdown: false
+    breakdown: false,
+    datagridUpdated: onDataGridEdit
 };
 
 var _selectedInventory = null;
@@ -169,10 +170,26 @@ function setOnSubmit() {
     var form = $('#inventory-form');
     form.submit((event) => {
         var url = replaceUrlId(form.attr('action'), _selectedInventory.id);
-        debugger;
         form.attr('action', url);
-        var itemsInput = form.find('input[name="Items"]');
-        var datagrid = $('#categorized-items-display');
-        itemsInput.val(datagrid.attr('data'));
+        // var itemsInput = form.find('input[name="Items"]');
+        // var datagrid = $('#categorized-items-display');
+        // itemsInput.val(datagrid.attr('data'));
     })
+}
+
+function onDataGridEdit(item) {
+    var form = $('#inventory-form');
+    var itemsInput = form.find('input[name="Items"]');
+    var editedItems = [item];
+    if(itemsInput.val()) {
+        editedItems = JSON.parse(itemsInput.val());
+        var idx = editedItems.indexOf(x => x.id == item.id);
+        if(idx > -1) {
+            editedItems[idx] = item;
+        } else {
+            editedItems.push(item);
+        }
+    }
+
+    itemsInput.val(JSON.stringify(editedItems));
 }

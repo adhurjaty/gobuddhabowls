@@ -158,7 +158,7 @@ func (p *Presenter) GetInventory(id string) (*InventoryAPI, error) {
 	return &apiInv, nil
 }
 
-func (p *Presenter) UpadateInventory(invAPI *InventoryAPI) (*validate.Errors, error) {
+func (p *Presenter) UpdateInventory(invAPI *InventoryAPI) (*validate.Errors, error) {
 	inventory, err := ConvertToModelInventory(invAPI)
 	if err != nil {
 		return nil, err
@@ -166,13 +166,17 @@ func (p *Presenter) UpadateInventory(invAPI *InventoryAPI) (*validate.Errors, er
 
 	vendorItems := models.VendorItems{}
 	for _, item := range invAPI.Items {
+		fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!")
+		fmt.Println(item)
 		subItem, ok := item.VendorItemMap[item.SelectedVendor]
+		fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!")
+		fmt.Println(subItem)
 		if ok {
 			vendorID, err := uuid.FromString(subItem.SelectedVendor)
 			if err != nil {
 				continue
 			}
-			vItem, err := ConvertToModelVendorItem(item, vendorID)
+			vItem, err := ConvertToModelVendorItem(subItem, vendorID)
 			if err != nil {
 				continue
 			}
@@ -185,6 +189,7 @@ func (p *Presenter) UpadateInventory(invAPI *InventoryAPI) (*validate.Errors, er
 	if err != nil || verrs.HasAny() {
 		return verrs, err
 	}
+
 	return logic.UpdateInventory(inventory, p.tx)
 }
 

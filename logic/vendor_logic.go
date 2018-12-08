@@ -106,7 +106,7 @@ func UpdateVendorItems(items *models.VendorItems, tx *pop.Connection) (*validate
 		}
 	}
 
-	return nil, nil
+	return &validate.Errors{}, nil
 }
 
 func DeleteVendor(vendor *models.Vendor, tx *pop.Connection) error {

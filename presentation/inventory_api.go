@@ -8,7 +8,7 @@ import (
 )
 
 type InventoryAPI struct {
-	ID    uuid.UUID `json:"id"`
+	ID    string    `json:"id"`
 	Date  time.Time `json:"time"`
 	Items ItemsAPI  `json:"Items"`
 }
@@ -30,7 +30,7 @@ func NewInventoryAPI(inventory *models.Inventory, vendors *VendorsAPI) Inventory
 	populateVendorItems(&items, &inventory.Items, vendors)
 
 	return InventoryAPI{
-		ID:    inventory.ID,
+		ID:    inventory.ID.String(),
 		Date:  inventory.Date,
 		Items: items,
 	}
@@ -46,6 +46,10 @@ func NewInventoriesAPI(inventories *models.Inventories, vendors *VendorsAPI) Inv
 }
 
 func populateVendorItems(apiItems *ItemsAPI, items *models.CountInventoryItems, vendors *VendorsAPI) {
+	if vendors == nil {
+		return
+	}
+
 	for i, item := range *items {
 		vendorMap := make(map[string]ItemAPI)
 		for _, vendor := range *vendors {
@@ -53,7 +57,7 @@ func populateVendorItems(apiItems *ItemsAPI, items *models.CountInventoryItems, 
 			if vendorItem != nil {
 				// HACK: getting vendor ID from the property SelectedVendor within
 				// the vendor item map
-				vendorItem.SelectedVendor = vendor.ID.String()
+				vendorItem.SelectedVendor = vendor.ID
 				vendorMap[vendor.Name] = *vendorItem
 			}
 		}

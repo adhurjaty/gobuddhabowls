@@ -202,7 +202,7 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 	if itemsParamJSON != "" {
 		invAPI.Items, err = getItemsFromParams(itemsParamJSON)
 		if err != nil {
-			return err
+			return errors.WithStack(err)
 		}
 	}
 
@@ -215,18 +215,21 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
 
-		setInventoryListVars(c, presenter)
+		if err = setInventoryListVars(c, presenter); err != nil {
+			return errors.WithStack(err)
+		}
 
 		// Render again the edit.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, inventory))
+		return c.Render(422, r.HTML("inventories"))
 	}
 
 	// If there are no errors set a success message
 	c.Flash().Add("success", "Inventory was updated successfully")
 
 	// and redirect to the inventories index page
-	return c.Render(200, r.Auto(c, inventory))
+	// return c.Redirect(303, "/inventories")
+	return nil
 }
 
 // Destroy deletes a Inventory from the DB. This function is mapped

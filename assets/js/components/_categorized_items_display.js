@@ -165,6 +165,9 @@ export class CategorizedItemsDisplay {
     }
 
     datagridUpdated(updateObj) {
+        if(this.options.datagridUpdated) {
+            this.options.datagridUpdated(updateObj);
+        }
         this.writeItemsToDataAttr();
 
         if(this.options.breakdown)
