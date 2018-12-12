@@ -1,9 +1,10 @@
-import { formatMoney } from '../helpers/_helpers';
+import { parseModelJSON, formatSlashDate, formatMoney } from '../helpers/_helpers';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
-
+import { datepicker } from '../_datepicker';
 
 var _categorizedOptions = {
-    breakdown: false
+    breakdown: false,
+    datagridUpdated: onDataGridEdit
 };
 
 var _columns = [
@@ -35,6 +36,25 @@ var _columns = [
         }
     },
     {
+        name: 'selected_vendor',
+        header: 'Vendor',
+        editable: true,
+        data_type: 'selector',
+        get_column: (item) => {
+            return item.selected_vendor;
+        },
+        options_func: (item) => {
+            return Object.keys(item.VendorItemMap);
+        },
+        set_column: (item, value) => {
+            var vendorItem = item.VendorItemMap[value];
+            item.purchased_unit = vendorItem.purchased_unit;
+            item.price = vendorItem.price;
+            item.conversion = vendorItem.conversion;
+            item.selected_vendor = value;
+        }
+    },
+    {
         name: 'purchased_unit',
         header: 'Purchased Unit',
         editable: true,
@@ -53,8 +73,9 @@ var _columns = [
         get_column: (item) => {
             return formatMoney(item.price);
         },
-        set_column(item, value) {
+        set_column: (item, value) => {
             item.price = parseFloat(value);
+            item.VendorItemMap[item.selected_vendor].price = item.price;
         }
     },
     {
@@ -67,6 +88,7 @@ var _columns = [
         },
         set_column: (item, value) => {
             item.conversion = parseFloat(value);
+            item.VendorItemMap[item.selected_vendor].conversion = item.conversion;
         }
     },
     {
@@ -108,6 +130,30 @@ var _columns = [
 ];
 
 $(() => {
+    var dateInput = $('#inventory-form').find('input[name="Date"]');
+    datepicker(dateInput[0]);
+
+    initDatagrid();
+});
+
+function initDatagrid() {
     var container = $('#categorized-items-display');
     var table = new CategorizedItemsDisplay(container, _columns, null, _categorizedOptions);
-});
+}
+
+function onDataGridEdit(item) {
+    var form = $('#inventory-form');
+    var itemsInput = form.find('input[name="Items"]');
+    var editedItems = [item];
+    if(itemsInput.val()) {
+        editedItems = JSON.parse(itemsInput.val());
+        var idx = editedItems.findIndex(x => x.id == item.id);
+        if(idx > -1) {
+            editedItems[idx] = item;
+        } else {
+            editedItems.push(item);
+        }
+    }
+
+    itemsInput.val(JSON.stringify(editedItems));
+}

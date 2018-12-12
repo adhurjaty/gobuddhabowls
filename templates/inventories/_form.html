@@ -1,5 +1,6 @@
-<%= f.InputTag("Date") %>
-<div id="categorized-items-display" class="row" data='<%= inventory.Items %>'></div>
+<%= f.InputTag({name: "Date", data-provide: "datepicker", value: format_date(inventory.Date)}) %>
+<input type="text" name="Items" style="display: none;"/>
+<div id="categorized-items-display" class="row" data='<%= inventory.Items.String() %>'></div>
 
 <button class="btn btn-success" role="submit">Save</button>
 

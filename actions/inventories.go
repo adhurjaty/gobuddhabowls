@@ -69,7 +69,7 @@ func setInventoryListVars(c buffalo.Context, presenter *presentation.Presenter) 
 
 	// fmt.Println(inventories)
 	c.Set("inventories", inventories)
-	c.Set("defaultItems", (*inventories)[0].Items)
+	c.Set("defaultInventory", (*inventories)[0])
 
 	return nil
 }
@@ -103,19 +103,27 @@ func (v InventoriesResource) New(c buffalo.Context) error {
 	}
 
 	presenter := presentation.NewPresenter(tx)
-	items, err := presenter.GetInventoryItems()
+	latestInv, err := presenter.GetLatestInventory(time.Now())
 	if err != nil {
 		return err
 	}
 
+	clearItemIds(latestInv)
+
 	inventory := presentation.InventoryAPI{
 		Date:  time.Now(),
-		Items: *items,
+		Items: latestInv.Items,
 	}
 
 	c.Set("inventory", inventory)
 
 	return c.Render(200, r.HTML("inventories/new"))
+}
+
+func clearItemIds(inv *presentation.InventoryAPI) {
+	for _, item := range inv.Items {
+		item.ID = ""
+	}
 }
 
 // Create adds a Inventory to the DB. This function is mapped to the

@@ -4,5 +4,5 @@
 
 <%= form_for(inventory, {action: inventoriesPath(), method: "POST"}) { %>
   <%= partial("inventories/form.html") %>
-  <a href="<%= inventoriesPath() %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+  <a href="<%= inventoriesPath() %>" class="btn btn-warning">Cancel</a>
 <% } %>
