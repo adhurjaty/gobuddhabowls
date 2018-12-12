@@ -79,6 +79,7 @@ var _columns = [
         },
         set_column: (item, value) => {
             item.price = parseFloat(value);
+            item.VendorItemMap[item.selected_vendor].price = item.price;
         }
     },
     {
@@ -91,6 +92,7 @@ var _columns = [
         },
         set_column: (item, value) => {
             item.conversion = parseFloat(value);
+            item.VendorItemMap[item.selected_vendor].conversion = item.conversion;
         }
     },
     {
@@ -135,6 +137,9 @@ $(() => {
     var invList = $('#date-list');
     invList.find('li').first().addClass('active');
 
+    var dateInput = $('#inventory-form').find('input[name="Date"]');
+    datepicker(dateInput[0]);
+
     setClickInventory();
     setSelectedInventory();
     setOnSubmit();
@@ -161,8 +166,6 @@ function setSelectedInventory() {
     var dateInput = $form.find('input[name="Date"]');
     dateInput.val(formatSlashDate(_selectedInventory.time));
 
-    datepicker(dateInput[0]);
-
     var table = new CategorizedItemsDisplay(container, _columns, null, _categorizedOptions);
 }
 
@@ -171,10 +174,7 @@ function setOnSubmit() {
     form.submit((event) => {
         var url = replaceUrlId(form.attr('action'), _selectedInventory.id);
         form.attr('action', url);
-        // var itemsInput = form.find('input[name="Items"]');
-        // var datagrid = $('#categorized-items-display');
-        // itemsInput.val(datagrid.attr('data'));
-    })
+    });
 }
 
 function onDataGridEdit(item) {
@@ -183,7 +183,7 @@ function onDataGridEdit(item) {
     var editedItems = [item];
     if(itemsInput.val()) {
         editedItems = JSON.parse(itemsInput.val());
-        var idx = editedItems.indexOf(x => x.id == item.id);
+        var idx = editedItems.findIndex(x => x.id == item.id);
         if(idx > -1) {
             editedItems[idx] = item;
         } else {

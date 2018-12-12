@@ -190,11 +190,9 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 	if err != nil {
 		return errors.WithStack(err)
 	}
-	// Allocate an empty Inventory
-	inventory := &models.Inventory{}
 
 	// Bind Inventory to the html form elements
-	if err := c.Bind(inventory); err != nil {
+	if err := c.Bind(invAPI); err != nil {
 		return errors.WithStack(err)
 	}
 
@@ -228,8 +226,8 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 	c.Flash().Add("success", "Inventory was updated successfully")
 
 	// and redirect to the inventories index page
-	// return c.Redirect(303, "/inventories")
-	return nil
+	return c.Redirect(303, "/inventories")
+	// return nil
 }
 
 // Destroy deletes a Inventory from the DB. This function is mapped

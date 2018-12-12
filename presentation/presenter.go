@@ -166,11 +166,7 @@ func (p *Presenter) UpdateInventory(invAPI *InventoryAPI) (*validate.Errors, err
 
 	vendorItems := models.VendorItems{}
 	for _, item := range invAPI.Items {
-		fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!")
-		fmt.Println(item)
 		subItem, ok := item.VendorItemMap[item.SelectedVendor]
-		fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!")
-		fmt.Println(subItem)
 		if ok {
 			vendorID, err := uuid.FromString(subItem.SelectedVendor)
 			if err != nil {

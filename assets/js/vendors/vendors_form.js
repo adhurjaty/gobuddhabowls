@@ -60,7 +60,6 @@ function setupTable() {
 }
 
 function setOnFormSubmit() {
-    debugger;
     var form = $('#vendor-form-submit').closest('form');
     form.on('submit', (event) => {
         var data = _table.items;

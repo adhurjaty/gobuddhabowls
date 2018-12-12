@@ -2,6 +2,7 @@ package logic
 
 import (
 	"buddhabowls/models"
+	"fmt"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
@@ -100,16 +101,20 @@ func UpdateVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, 
 
 func UpdateVendorItems(items *models.VendorItems, tx *pop.Connection) (*validate.Errors, error) {
 	for _, item := range *items {
+		fmt.Println("!!!!!!!!!!!!!!!")
+		fmt.Println(item)
 		verrs, err := tx.ValidateAndUpdate(&item)
 		if err != nil || verrs.HasAny() {
 			return verrs, err
 		}
 	}
 
-	return &validate.Errors{}, nil
+	return validate.NewErrors(), nil
 }
 
 func DeleteVendor(vendor *models.Vendor, tx *pop.Connection) error {
-	// TODO: delete associated items as well
+	for _, item := range vendor.Items {
+		tx.Destroy(&item)
+	}
 	return tx.Destroy(vendor)
 }
