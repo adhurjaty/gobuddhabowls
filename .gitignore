@@ -3,3 +3,6 @@ public/
 tmp/
 node_modules/
 aws_connect.sh
+.vscode/launch.json
+debug.sh
+bin/
