@@ -110,7 +110,7 @@ func (v InventoriesResource) New(c buffalo.Context) error {
 
 	clearItemIds(latestInv)
 
-	inventory := presentation.InventoryAPI{
+	inventory := &presentation.InventoryAPI{
 		Date:  time.Now(),
 		Items: latestInv.Items,
 	}

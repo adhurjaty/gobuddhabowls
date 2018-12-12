@@ -2,7 +2,7 @@
   <h1>New Inventory</h1>
 </div>
 
-<%= form_for(inventory, {action: inventoriesPath(), method: "POST"}) { %>
-  <%= partial("inventories/form.html") %>
+<%= form({action: inventoriesPath(), method: "POST", id: "inventory-form"}) { %>
+  <%= partial("inventories/form.html", {inventory: inventory}) %>
   <a href="<%= inventoriesPath() %>" class="btn btn-warning">Cancel</a>
 <% } %>

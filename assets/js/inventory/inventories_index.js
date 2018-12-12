@@ -1,6 +1,7 @@
 import { parseModelJSON, formatSlashDate, formatMoney, replaceUrlId } from '../helpers/_helpers';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
 import { datepicker } from '../_datepicker';
+import { createInventoryDatagrid } from './_inventory_datagrid';
 
 var _selectedInventory = null;
 
@@ -22,6 +23,7 @@ function setClickInventory() {
             listItems.removeClass('active');
             $el.addClass('active');
             setSelectedInventory();
+            clearItemsInput();
         });
     });
 }
@@ -36,8 +38,12 @@ function setSelectedInventory() {
     var dateInput = $form.find('input[name="Date"]');
     dateInput.val(formatSlashDate(_selectedInventory.time));
 
-    var table = new CategorizedItemsDisplay(container, _columns,
-        null, _categorizedOptions);
+    var table = createInventoryDatagrid(container, onDataGridEdit);
+}
+
+function clearItemsInput() {
+    var input = $('input[name="Items"]');
+    input.val("");
 }
 
 function setOnSubmit() {
@@ -46,4 +52,21 @@ function setOnSubmit() {
         var url = replaceUrlId(form.attr('action'), _selectedInventory.id);
         form.attr('action', url);
     });
+}
+
+function onDataGridEdit(item) {
+    var form = $('#inventory-form');
+    var itemsInput = form.find('input[name="Items"]');
+    var editedItems = [item];
+    if(itemsInput.val()) {
+        editedItems = JSON.parse(itemsInput.val());
+        var idx = editedItems.findIndex(x => x.id == item.id);
+        if(idx > -1) {
+            editedItems[idx] = item;
+        } else {
+            editedItems.push(item);
+        }
+    }
+
+    itemsInput.val(JSON.stringify(editedItems));
 }
