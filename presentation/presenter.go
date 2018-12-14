@@ -263,12 +263,20 @@ func (p *Presenter) populateLatestInvItems(items *ItemsAPI) error {
 }
 
 func (p *Presenter) populateSelectedVendors(items *ItemsAPI) {
-	for _, item := range *items {
+	for i := 0; i < len(*items); i++ {
+		item := &(*items)[i]
 		vendor, err := logic.GetLatestVendor(item.InventoryItemID, p.tx)
 		if err != nil {
 			continue
 		}
+
 		item.SetSelectedVendor(vendor.Name)
+
+		if i == 0 {
+			fmt.Println("!!!!!!!!!!!!!!")
+			fmt.Println(item)
+			fmt.Println(vendor.Name)
+		}
 	}
 }
 

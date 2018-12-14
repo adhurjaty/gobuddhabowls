@@ -34,9 +34,9 @@ func GetVendor(id string, tx *pop.Connection) (*models.Vendor, error) {
 func GetLatestVendor(invItemId string, tx *pop.Connection) (*models.Vendor, error) {
 	vendor := &models.Vendor{}
 	query := tx.Where("vi.inventory_item_id = ?", invItemId).
-		Join("vendor_items vi", "vendors.id=vi.vendor_id").
-		Join("order_items oi", "vi.inventory_item_id=oi.inventory_item_id").
-		Join("purchase_orders po", "po.id=oi.order_id").
+		Join("purchase_orders po", "po.vendor_id=vendors.id").
+		Join("order_items oi", "po.id=oi.order_id").
+		Join("vendor_items vi", "oi.inventory_item_id=vi.inventory_item_id").
 		Order("po.order_date desc")
 
 	err := query.First(vendor)
