@@ -26,3 +26,9 @@ func FormatDate(date time.Time) string {
 func RFC3339Date(date time.Time) string {
 	return date.Format(time.RFC3339)
 }
+
+func Today() time.Time {
+	nowTime := time.Now()
+	return time.Date(nowTime.Year(), nowTime.Month(), nowTime.Day(),
+		0, 0, 0, 0, nowTime.Location())
+}

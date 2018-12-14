@@ -2,7 +2,6 @@ package logic
 
 import (
 	"buddhabowls/models"
-	"fmt"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
@@ -28,6 +27,19 @@ func GetVendor(id string, tx *pop.Connection) (*models.Vendor, error) {
 	factory := models.ModelFactory{}
 	vendor := &models.Vendor{}
 	err := factory.CreateModel(vendor, tx, id)
+
+	return vendor, err
+}
+
+func GetLatestVendor(invItemId string, tx *pop.Connection) (*models.Vendor, error) {
+	vendor := &models.Vendor{}
+	query := tx.Where("vi.inventory_item_id = ?", invItemId).
+		Join("vendor_items vi", "vendors.id=vi.vendor_id").
+		Join("order_items oi", "vi.inventory_item_id=oi.inventory_item_id").
+		Join("purchase_orders po", "po.id=oi.order_id").
+		Order("po.order_date desc")
+
+	err := query.First(vendor)
 
 	return vendor, err
 }
@@ -101,8 +113,6 @@ func UpdateVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, 
 
 func UpdateVendorItems(items *models.VendorItems, tx *pop.Connection) (*validate.Errors, error) {
 	for _, item := range *items {
-		fmt.Println("!!!!!!!!!!!!!!!")
-		fmt.Println(item)
 		verrs, err := tx.ValidateAndUpdate(&item)
 		if err != nil || verrs.HasAny() {
 			return verrs, err

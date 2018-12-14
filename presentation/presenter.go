@@ -153,9 +153,22 @@ func (p *Presenter) GetInventory(id string) (*InventoryAPI, error) {
 		return nil, err
 	}
 
-	// may need to add vendor info later
 	apiInv := NewInventoryAPI(inventory, nil)
 	return &apiInv, nil
+}
+
+func (p *Presenter) InsertInventory(invAPI *InventoryAPI) (*validate.Errors, error) {
+	inventory, err := ConvertToModelInventory(invAPI)
+	if err != nil {
+		return nil, err
+	}
+
+	verrs, err := p.updateInvVendorItems(invAPI.Items)
+	if err != nil || verrs.HasAny() {
+		return verrs, err
+	}
+
+	return logic.InsertInventory(inventory, p.tx)
 }
 
 func (p *Presenter) UpdateInventory(invAPI *InventoryAPI) (*validate.Errors, error) {
@@ -164,8 +177,17 @@ func (p *Presenter) UpdateInventory(invAPI *InventoryAPI) (*validate.Errors, err
 		return nil, err
 	}
 
+	verrs, err := p.updateInvVendorItems(invAPI.Items)
+	if err != nil || verrs.HasAny() {
+		return verrs, err
+	}
+
+	return logic.UpdateInventory(inventory, p.tx)
+}
+
+func (p *Presenter) updateInvVendorItems(invItems ItemsAPI) (*validate.Errors, error) {
 	vendorItems := models.VendorItems{}
-	for _, item := range invAPI.Items {
+	for _, item := range invItems {
 		subItem, ok := item.VendorItemMap[item.SelectedVendor]
 		if ok {
 			vendorID, err := uuid.FromString(subItem.SelectedVendor)
@@ -181,12 +203,7 @@ func (p *Presenter) UpdateInventory(invAPI *InventoryAPI) (*validate.Errors, err
 		}
 	}
 
-	verrs, err := logic.UpdateVendorItems(&vendorItems, p.tx)
-	if err != nil || verrs.HasAny() {
-		return verrs, err
-	}
-
-	return logic.UpdateInventory(inventory, p.tx)
+	return logic.UpdateVendorItems(&vendorItems, p.tx)
 }
 
 func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
@@ -198,6 +215,67 @@ func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
 	apiItems := NewItemsAPI(*items)
 
 	return &apiItems, err
+}
+
+func (p *Presenter) GetNewInventoryItems() (*ItemsAPI, error) {
+	// get base inventory items
+	items, err := p.GetInventoryItems()
+	if err != nil {
+		return nil, err
+	}
+
+	// populate them based on latest inventory
+	if err = p.populateLatestInvItems(items); err != nil {
+		return nil, err
+	}
+	// populate the latest selected vendor
+	p.populateSelectedVendors(items)
+
+	clearItemIds(items)
+
+	return items, nil
+}
+
+func (p *Presenter) populateLatestInvItems(items *ItemsAPI) error {
+	latestInv, err := p.GetLatestInventory(time.Now())
+	if err != nil {
+		return err
+	}
+
+	j := 0
+	for i := 0; i < len(*items) && j < len(latestInv.Items); i++ {
+		item := &(*items)[i]
+		latestItem := &latestInv.Items[j]
+		if item.InventoryItemID == latestItem.InventoryItemID {
+			item.Count = latestItem.Count
+			item.VendorItemMap = latestItem.VendorItemMap
+			// default behavior, will probably be re-set in the next function
+			item.SetSelectedVendor(latestItem.SelectedVendor)
+		} else if item.Index > latestItem.Index {
+			i--
+		} else if item.Index < latestItem.Index {
+			continue
+		}
+		j++
+	}
+
+	return nil
+}
+
+func (p *Presenter) populateSelectedVendors(items *ItemsAPI) {
+	for _, item := range *items {
+		vendor, err := logic.GetLatestVendor(item.InventoryItemID, p.tx)
+		if err != nil {
+			continue
+		}
+		item.SetSelectedVendor(vendor.Name)
+	}
+}
+
+func clearItemIds(items *ItemsAPI) {
+	for _, item := range *items {
+		item.ID = ""
+	}
 }
 
 // GetPeriods gets the list of periods available to the user

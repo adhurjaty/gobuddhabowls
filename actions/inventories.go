@@ -1,10 +1,10 @@
 package actions
 
 import (
+	"buddhabowls/helpers"
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"fmt"
-	"time"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -103,16 +103,14 @@ func (v InventoriesResource) New(c buffalo.Context) error {
 	}
 
 	presenter := presentation.NewPresenter(tx)
-	latestInv, err := presenter.GetLatestInventory(time.Now())
+	items, err := presenter.GetNewInventoryItems()
 	if err != nil {
 		return err
 	}
 
-	clearItemIds(latestInv)
-
 	inventory := &presentation.InventoryAPI{
-		Date:  time.Now(),
-		Items: latestInv.Items,
+		Date:  helpers.Today(),
+		Items: *items,
 	}
 
 	c.Set("inventory", inventory)
@@ -120,20 +118,15 @@ func (v InventoriesResource) New(c buffalo.Context) error {
 	return c.Render(200, r.HTML("inventories/new"))
 }
 
-func clearItemIds(inv *presentation.InventoryAPI) {
-	for _, item := range inv.Items {
-		item.ID = ""
-	}
-}
-
 // Create adds a Inventory to the DB. This function is mapped to the
 // path POST /inventories
 func (v InventoriesResource) Create(c buffalo.Context) error {
 	// Allocate an empty Inventory
-	inventory := &models.Inventory{}
+	invAPI := &presentation.InventoryAPI{}
 
 	// Bind inventory to the html form elements
-	if err := c.Bind(inventory); err != nil {
+	err := c.Bind(invAPI)
+	if err != nil {
 		return errors.WithStack(err)
 	}
 
@@ -143,8 +136,16 @@ func (v InventoriesResource) Create(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Validate the data from the html form
-	verrs, err := tx.ValidateAndCreate(inventory)
+	itemsParamJSON := c.Request().Form.Get("Items")
+	if itemsParamJSON != "" {
+		invAPI.Items, err = getItemsFromParams(itemsParamJSON)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	verrs, err := presenter.InsertInventory(invAPI)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -153,16 +154,20 @@ func (v InventoriesResource) Create(c buffalo.Context) error {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
 
+		if err = setInventoryListVars(c, presenter); err != nil {
+			return errors.WithStack(err)
+		}
+
 		// Render again the new.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, inventory))
+		return c.Render(422, r.HTML("inventories/new"))
 	}
 
 	// If there are no errors set a success message
 	c.Flash().Add("success", "Inventory was created successfully")
 
 	// and redirect to the inventories index page
-	return c.Render(201, r.Auto(c, inventory))
+	return c.Render(201, r.HTML("inventories"))
 }
 
 // Edit renders a edit form for a Inventory. This function is

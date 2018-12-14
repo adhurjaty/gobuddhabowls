@@ -59,6 +59,23 @@ func GetLatestInventory(date time.Time, tx *pop.Connection) (*models.Inventory, 
 	return &inventory, nil
 }
 
+func InsertInventory(inventory *models.Inventory, tx *pop.Connection) (*validate.Errors, error) {
+	verrs, err := tx.ValidateAndCreate(inventory)
+	if err != nil {
+		return verrs, err
+	}
+
+	for _, item := range inventory.Items {
+		item.InventoryID = inventory.ID
+		verrs, err = tx.ValidateAndCreate(&item)
+		if err != nil || verrs.HasAny() {
+			return verrs, err
+		}
+	}
+
+	return verrs, nil
+}
+
 func UpdateInventory(inventory *models.Inventory, tx *pop.Connection) (*validate.Errors, error) {
 	verrs, err := tx.ValidateAndUpdate(inventory)
 	if err != nil {
