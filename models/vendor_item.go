@@ -77,6 +77,10 @@ func (v VendorItem) GetCategory() InventoryItemCategory {
 	return v.InventoryItem.Category
 }
 
+func (v VendorItem) GetCountUnit() string {
+	return v.InventoryItem.CountUnit
+}
+
 func (v VendorItem) GetIndex() int {
 	return v.InventoryItem.Index
 }

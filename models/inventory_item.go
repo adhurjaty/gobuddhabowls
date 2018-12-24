@@ -80,6 +80,10 @@ func (i InventoryItem) GetCategory() InventoryItemCategory {
 	return i.Category
 }
 
+func (i InventoryItem) GetCountUnit() string {
+	return i.CountUnit
+}
+
 func (i InventoryItem) GetIndex() int {
 	return i.Index
 }

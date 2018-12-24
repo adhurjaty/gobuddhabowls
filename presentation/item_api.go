@@ -42,6 +42,7 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		Name:            item.GetName(),
 		Category:        NewCategoryAPI(item.GetCategory()),
 		Index:           item.GetIndex(),
+		CountUnit:       item.GetCountUnit(),
 	}
 
 	switch item.(type) {
@@ -59,7 +60,6 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 	case models.CountInventoryItem:
 		countItem, _ := item.(models.CountInventoryItem)
 		itemAPI.Count = countItem.Count
-		itemAPI.CountUnit = countItem.InventoryItem.CountUnit
 	}
 
 	return itemAPI

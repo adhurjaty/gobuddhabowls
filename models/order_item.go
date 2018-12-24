@@ -72,6 +72,10 @@ func (o OrderItem) GetCategory() InventoryItemCategory {
 	return o.InventoryItem.Category
 }
 
+func (o OrderItem) GetCountUnit() string {
+	return o.InventoryItem.CountUnit
+}
+
 func (o OrderItem) GetIndex() int {
 	return o.InventoryItem.Index
 }

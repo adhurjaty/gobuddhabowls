@@ -66,6 +66,10 @@ func (c CountInventoryItem) GetCategory() InventoryItemCategory {
 	return c.InventoryItem.Category
 }
 
+func (c CountInventoryItem) GetCountUnit() string {
+	return c.InventoryItem.CountUnit
+}
+
 func (c CountInventoryItem) GetIndex() int {
 	return c.InventoryItem.Index
 }
