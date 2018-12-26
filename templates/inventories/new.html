@@ -6,3 +6,5 @@
   <%= partial("inventories/form.html", {inventory: inventory}) %>
   <a href="<%= inventoriesPath() %>" class="btn btn-warning">Cancel</a>
 <% } %>
+
+<%= javascriptTag("inventory/inventories_new.js") %>

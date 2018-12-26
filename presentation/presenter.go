@@ -206,6 +206,15 @@ func (p *Presenter) updateInvVendorItems(invItems ItemsAPI) (*validate.Errors, e
 	return logic.UpdateVendorItems(&vendorItems, p.tx)
 }
 
+func (p *Presenter) DestroyInventory(invAPI *InventoryAPI) error {
+	inventory, err := ConvertToModelInventory(invAPI)
+	if err != nil {
+		return err
+	}
+
+	return logic.DestroyInventory(inventory, p.tx)
+}
+
 func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
 	items, err := logic.GetInventoryItems(p.tx)
 	if err != nil {
@@ -269,14 +278,9 @@ func (p *Presenter) populateSelectedVendors(items *ItemsAPI) {
 		if err != nil {
 			continue
 		}
+		fmt.Println(vendor)
 
 		item.SetSelectedVendor(vendor.Name)
-
-		if i == 0 {
-			fmt.Println("!!!!!!!!!!!!!!")
-			fmt.Println(item)
-			fmt.Println(vendor.Name)
-		}
 	}
 }
 

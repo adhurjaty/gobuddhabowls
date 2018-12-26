@@ -3,6 +3,7 @@ package logic
 import (
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 	"time"
 )
@@ -67,6 +68,10 @@ func InsertInventory(inventory *models.Inventory, tx *pop.Connection) (*validate
 
 	for _, item := range inventory.Items {
 		item.InventoryID = inventory.ID
+		item.ID, err = uuid.NewV4()
+		if err != nil {
+			return nil, err
+		}
 		verrs, err = tx.ValidateAndCreate(&item)
 		if err != nil || verrs.HasAny() {
 			return verrs, err
@@ -91,4 +96,11 @@ func UpdateInventory(inventory *models.Inventory, tx *pop.Connection) (*validate
 	}
 
 	return verrs, nil
+}
+
+func DestroyInventory(inventory *models.Inventory, tx *pop.Connection) error {
+	for _, item := range inventory.Items {
+		tx.Destroy(&item)
+	}
+	return tx.Destroy(inventory)
 }

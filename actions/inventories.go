@@ -5,6 +5,7 @@ import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"fmt"
+	"time"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -164,10 +165,19 @@ func (v InventoriesResource) Create(c buffalo.Context) error {
 	}
 
 	// If there are no errors set a success message
+
+	week := presenter.GetSelectedWeek(invAPI.Date)
+	startTime := week.StartTime.Format(time.RFC3339)
+	redirectURL := c.Request().URL
+	q := redirectURL.Query()
+	q.Add("StartTime", startTime)
+	redirectURL.RawQuery = q.Encode()
+
+	// If there are no errors set a success message
 	c.Flash().Add("success", "Inventory was created successfully")
 
-	// and redirect to the inventories index page
-	return c.Render(201, r.HTML("inventories"))
+	// and redirect to the inventory index page
+	return c.Redirect(303, c.Request().URL.String(), redirectURL.String())
 }
 
 // Edit renders a edit form for a Inventory. This function is
@@ -252,15 +262,13 @@ func (v InventoriesResource) Destroy(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty Inventory
-	inventory := &models.Inventory{}
-
-	// To find the Inventory the parameter inventory_id is used.
-	if err := tx.Find(inventory, c.Param("inventory_id")); err != nil {
-		return c.Error(404, err)
+	presenter := presentation.NewPresenter(tx)
+	invAPI, err := presenter.GetInventory(c.Param("inventory_id"))
+	if err != nil {
+		return errors.WithStack(err)
 	}
 
-	if err := tx.Destroy(inventory); err != nil {
+	if err = presenter.DestroyInventory(invAPI); err != nil {
 		return errors.WithStack(err)
 	}
 
@@ -268,5 +276,5 @@ func (v InventoriesResource) Destroy(c buffalo.Context) error {
 	c.Flash().Add("success", "Inventory was destroyed successfully")
 
 	// Redirect to the inventories index page
-	return c.Render(200, r.Auto(c, inventory))
+	return c.Redirect(303, "/inventories")
 }

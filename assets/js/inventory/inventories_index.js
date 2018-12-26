@@ -13,6 +13,9 @@ $(() => {
                                 .attr('data'));
     setClickInventory();
     setOnSubmit();
+
+    var container = $('#categorized-items-display');
+    createInventoryDatagrid(container, onDataGridEdit);
 });
 
 function setClickInventory() {
@@ -37,6 +40,10 @@ function setSelectedInventory() {
     container.attr('data', JSON.stringify(_selectedInventory.Items));
     var dateInput = $form.find('input[name="Date"]');
     dateInput.val(formatSlashDate(_selectedInventory.time));
+
+    var deleteLink = $('#delete-inventory');
+    var url = replaceUrlId(deleteLink.attr('data-link'), _selectedInventory.id);
+    deleteLink.attr('href', url);
 
     var table = createInventoryDatagrid(container, onDataGridEdit);
 }

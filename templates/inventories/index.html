@@ -21,7 +21,12 @@
   <div class="col-9">
     <%= form({action: inventoryPath({ inventory_id: "{inventory_id}" }), method: "PUT", id: "inventory-form"}) { %>
       <%= partial("inventories/form.html", {inventory: defaultInventory}) %>
-
+      <a href="<%= inventoryPath({inventory_id: defaultInventory.ID}) %>" 
+          id="delete-inventory" class="btn btn-danger" role="button"
+          data-link='<%= inventoryPath({inventory_id: "{inventory_id}"}) %>'
+          data-method="DELETE" data-confirm="Are you sure?">
+          Delete
+      </a>
     <% } %>
   </div>
 </div>

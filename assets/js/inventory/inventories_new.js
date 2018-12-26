@@ -1,5 +1,10 @@
+import { createInventoryDatagrid } from './_inventory_datagrid';
+
 $(() => {
     setOnSubmit();
+
+    var container = $('#categorized-items-display');
+    createInventoryDatagrid(container);
 });
 
 function setOnSubmit() {
