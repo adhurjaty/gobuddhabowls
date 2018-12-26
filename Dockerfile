@@ -12,6 +12,7 @@ ADD ./package.json .
 RUN npm install
 ADD . .
 RUN sed -i "s|host: .*$|host: postgres|g" database.yml
+RUN buffalo db migrate up
 RUN buffalo build --static -o bin/app
 
 # We need to use an older version of gobuffalo here for the migrations to succeed
