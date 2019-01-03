@@ -157,3 +157,16 @@ export function stripCharacter(str, char) {
     re = new RegExp(`${char}+$`);
     return str.replace(re, '');
 }
+
+export function getObjectDiff(a, b) {
+    var keys = [];
+    for(var key in a) {
+        if(typeof a[key] == "object") {
+            keys.concat(getObjectDiff(a[key], b[key]));
+        } else if(a[key] != b[key]) {
+            keys.push(key);
+        }
+    }
+
+    return keys;
+}

@@ -1,4 +1,4 @@
-import { sendUpdate } from './helpers/index_helpers';
+import { sendUpdate, sendAjax } from './helpers/index_helpers';
 import 'spectrum-colorpicker';
 
 $(() => {
@@ -57,17 +57,4 @@ function saveInvItemsCategories() {
     });
 
     location.replace('/settings');
-}
-
-function sendAjax($form) {
-    var data = {};
-    $form.find('input').each((i, el) => {
-        data[$(el).attr('name')] = $(el).val();
-    });
-
-    $.ajax({
-        url: $form.attr('action'),
-        method: 'POST',
-        data: data
-    });
 }

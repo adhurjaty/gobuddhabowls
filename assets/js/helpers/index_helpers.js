@@ -47,3 +47,16 @@ function resetFormAction($form, id) {
 
     $form.attr('action', resetUrl);
 }
+
+export function sendAjax($form) {
+    var data = {};
+    $form.find('input').each((i, el) => {
+        data[$(el).attr('name')] = $(el).val();
+    });
+
+    $.ajax({
+        url: $form.attr('action'),
+        method: 'POST',
+        data: data
+    });
+}

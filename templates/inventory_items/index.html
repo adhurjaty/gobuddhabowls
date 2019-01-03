@@ -3,7 +3,8 @@
 </div>
 
 <div class="row">
-    <ul class="list-group" id="categories-movable" style="width: 80%;" data='<%= items.String() %>'>
+    <ul class="list-group" id="categories-movable" style="width: 80%;" 
+      data='<%= items.String() %>'>
         <%= for (item) in items { %>
             <li itemid="<%= item.ID %>" class="list-group-item d-flex justify-content-between align-items-center">
                 <span>
@@ -18,6 +19,8 @@
 
 <button class="btn btn-success" role="submit">Save</button>
 
-<%= form({action: "/inventory_items/{item_id}", method: "PUT", data-remote: "true", id: "update-category-form", style: "display: none;"}) { %> <% } %>
+<%= form({action: "/inventory_items/{item_id}", method: "PUT",
+  data-remote: "true", id: "update-category-form", style: "display: none;"}) 
+  { %> <% } %>
 
 <%= javascriptTag("inventory_items/inventory_items_index.js") %>

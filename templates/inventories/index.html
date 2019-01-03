@@ -2,33 +2,12 @@
   <h1 class="text-center">Inventory</h1>
 </div>
 
-<div id="period-selector-component" onchange-href="<%= inventoriesPath() %>">
-  <%= partial("partials/period_selector.html", {changePath: inventoriesPath()}) %>
-</div>
+<%= partial("inventories/master_toggle.html", {page: "master"}) %>
 
-<div class="row">
-  <a href="<%= newInventoriesPath() %>" class="btn btn-primary ml-auto mr-2">New Inventory</a>
-</div>
+<%= form({action: inventoryItemPath({inventory_item_id: "item_id"}), 
+  method: "PUT", id: "inventory-item-form"}) { %> <% } %>
 
-<div class="row inventory-view">
-  <div class="col-3 inventory-select">
-    <ul id="date-list" class="list-group">
-      <%= for (inventory) in inventories { %>
-        <li class="list-group-item" data='<%= inventory.String() %>'><%= format_date(inventory.Date) %></li>
-      <% } %>
-    </ul>
-  </div>
-  <div class="col-9">
-    <%= form({action: inventoryPath({ inventory_id: "{inventory_id}" }), method: "PUT", id: "inventory-form"}) { %>
-      <%= partial("inventories/form.html", {inventory: defaultInventory}) %>
-      <a href="<%= inventoryPath({inventory_id: defaultInventory.ID}) %>" 
-          id="delete-inventory" class="btn btn-danger" role="button"
-          data-link='<%= inventoryPath({inventory_id: "{inventory_id}"}) %>'
-          data-method="DELETE" data-confirm="Are you sure?">
-          Delete
-      </a>
-    <% } %>
-  </div>
-</div>
+<div id="categorized-items-display" class="row" 
+  data='<%= inventory.Items.String() %>'></div>
 
 <%= javascriptTag("inventory/inventories_index.js") %>
