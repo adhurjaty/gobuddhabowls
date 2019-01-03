@@ -2,6 +2,7 @@ package actions
 
 import (
 	"buddhabowls/models"
+	"buddhabowls/presentation"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -34,21 +35,15 @@ func (v InventoryItemsResource) List(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	inventoryItems := &models.InventoryItems{}
-
-	// Paginate results. Params "page" and "per_page" control pagination.
-	// Default values are "page=1" and "per_page=20".
-	q := tx.PaginateFromParams(c.Params())
-
-	// Retrieve all InventoryItems from the DB
-	if err := q.All(inventoryItems); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	itemsAPI, err := presenter.GetInventoryItems()
+	if err != nil {
 		return errors.WithStack(err)
 	}
 
-	// Add the paginator to the context so it can be used in the template.
-	c.Set("pagination", q.Paginator)
+	c.Set("items", itemsAPI)
 
-	return c.Render(200, r.Auto(c, inventoryItems))
+	return c.Render(200, r.HTML("inventory_items/index"))
 }
 
 // Show gets the data for one InventoryItem. This function is mapped to
