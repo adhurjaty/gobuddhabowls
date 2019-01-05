@@ -18,3 +18,14 @@ func GetInventoryItems(tx *pop.Connection) (*models.InventoryItems, error) {
 
 	return items, err
 }
+
+func GetInventoryItem(id string, tx *pop.Connection) (*models.InventoryItem, error) {
+	factory := models.ModelFactory{}
+	item := &models.InventoryItem{}
+	err := factory.CreateModel(item, tx, id)
+	if err != nil {
+		return nil, err
+	}
+
+	return item, nil
+}

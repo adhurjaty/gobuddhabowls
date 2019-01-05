@@ -290,6 +290,53 @@ func clearItemIds(items *ItemsAPI) {
 	}
 }
 
+func (p *Presenter) GetInventoryItem(id string) (*ItemAPI, error) {
+	item, err := logic.GetInventoryItem(id, p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	apiItem := NewItemAPI(item)
+	return &apiItem, nil
+}
+
+func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error) {
+	invItem, err := ConvertToModelInventoryItem(item)
+	if err != nil {
+		return nil, err
+	}
+
+	vendorID, err := uuid.FromString(item.VendorItemMap[item.SelectedVendor].SelectedVendor)
+	if err != nil {
+		return nil, err
+	}
+	vendorItem, err := ConvertToModelVendorItem(*item, vendorID)
+	if err != nil {
+		return nil, err
+	}
+
+	orderID, err := getLatestOrderID(item, vendorID)
+	if err != nil {
+		return nil, err
+	}
+	orderItem, err := ConvertToModelOrderItem(*item, orderID)
+	if err != nil {
+		return nil, err
+	}
+
+	verrs, err := logic.UpdateInventoryItem(invItem, p.tx)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+
+	verrs, err := logic.UpdateVendorItem(vendorItem, p.tx)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+
+	return logic.UpdateOrderItem(orderItem, p.tx)
+}
+
 // GetPeriods gets the list of periods available to the user
 func (p *Presenter) GetPeriods(startTime time.Time) []logic.Period {
 	if p.PeriodContext == nil {

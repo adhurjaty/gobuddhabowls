@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/models"
 	"encoding/json"
+	"github.com/gobuffalo/uuid"
 )
 
 // CategoryAPI category object for ui
@@ -28,4 +29,18 @@ func NewCategoryAPI(category models.InventoryItemCategory) CategoryAPI {
 	c.Index = category.Index
 
 	return c
+}
+
+func ConvertToModelCategory(catAPI CategoryAPI) (*models.InventoryItemCategory, error) {
+	id, err := uuid.FromString(catAPI.ID)
+	if err != nil {
+		return nil, err
+	}
+
+	return &models.InventoryItemCategory{
+		ID:         id,
+		Name:       catAPI.Name,
+		Background: catAPI.Background,
+		Index:      catAPI.Index,
+	}, nil
 }

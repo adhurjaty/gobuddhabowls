@@ -139,19 +139,18 @@ func (v InventoryItemsResource) Update(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty InventoryItem
-	inventoryItem := &models.InventoryItem{}
-
-	if err := tx.Find(inventoryItem, c.Param("inventory_item_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	item, err := presenter.GetInventoryItem(c.Param("inventory_item_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
 	// Bind InventoryItem to the html form elements
-	if err := c.Bind(inventoryItem); err != nil {
+	if err := c.Bind(item); err != nil {
 		return errors.WithStack(err)
 	}
 
-	verrs, err := tx.ValidateAndUpdate(inventoryItem)
+	verrs, err := presenter.UpdateInventoryItem(item)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -160,16 +159,12 @@ func (v InventoryItemsResource) Update(c buffalo.Context) error {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
 
-		// Render again the edit.html template that the user can
-		// correct the input.
-		return c.Render(422, r.Auto(c, inventoryItem))
+		// TODO: send error to page
+		return c.Render(422, r.String("failure"))
 	}
 
-	// If there are no errors set a success message
-	c.Flash().Add("success", "InventoryItem was updated successfully")
-
 	// and redirect to the inventory_items index page
-	return c.Render(200, r.Auto(c, inventoryItem))
+	return c.Render(200, r.String("success"))
 }
 
 // Destroy deletes a InventoryItem from the DB. This function is mapped

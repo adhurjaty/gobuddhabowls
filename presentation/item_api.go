@@ -8,18 +8,20 @@ import (
 
 // ItemAPI is an object for serving order and vendor items to UI
 type ItemAPI struct {
-	ID              string             `json:"id"`
-	Name            string             `json:"name"`
-	Category        CategoryAPI        `json:"Category"`
-	Index           int                `json:"index"`
-	InventoryItemID string             `json:"inventory_item_id,omitempty"`
-	Count           float64            `json:"count"`
-	Price           float64            `json:"price"`
-	PurchasedUnit   string             `json:"purchased_unit,omitempty"`
-	Conversion      float64            `json:"conversion,omitempty"`
-	CountUnit       string             `json:"count_unit,omitempty"`
-	VendorItemMap   map[string]ItemAPI `json:"VendorItemMap,omitempty"`
-	SelectedVendor  string             `json:"selected_vendor,omitempty"`
+	ID                   string             `json:"id"`
+	Name                 string             `json:"name"`
+	Category             CategoryAPI        `json:"Category"`
+	Index                int                `json:"index"`
+	InventoryItemID      string             `json:"inventory_item_id,omitempty"`
+	Count                float64            `json:"count"`
+	Price                float64            `json:"price"`
+	PurchasedUnit        string             `json:"purchased_unit,omitempty"`
+	Conversion           float64            `json:"conversion,omitempty"`
+	CountUnit            string             `json:"count_unit,omitempty"`
+	VendorItemMap        map[string]ItemAPI `json:"VendorItemMap,omitempty"`
+	SelectedVendor       string             `json:"selected_vendor,omitempty"`
+	RecipeUnit           string             `json:"recipe_unit,omitempty"`
+	RecipeUnitConversion float64            `json:"recipe_unit_conversion,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
@@ -98,6 +100,30 @@ func NewItemsAPI(modelItems interface{}) ItemsAPI {
 	}
 
 	return apis
+}
+
+func ConvertToModelInventoryItem(item *ItemAPI) (*models.InventoryItem, error) {
+	id, err := uuid.FromString(item.InventoryItemID)
+	if err != nil {
+		return nil, err
+	}
+
+	category, err := ConvertToModelCategory(item.Category)
+	if err != nil {
+		return nil, err
+	}
+
+	return &models.InventoryItem{
+		ID:                   id,
+		Index:                item.Index,
+		Name:                 item.Name,
+		Category:             *category,
+		CategoryID:           category.ID,
+		CountUnit:            item.CountUnit,
+		RecipeUnit:           item.RecipeUnit,
+		RecipeUnitConversion: item.RecipeUnitConversion,
+		IsActive:             true,
+	}, nil
 }
 
 func ConvertToModelOrderItem(item ItemAPI, orderID uuid.UUID) (*models.OrderItem, error) {
