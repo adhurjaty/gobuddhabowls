@@ -226,6 +226,35 @@ func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
 	return &apiItems, err
 }
 
+func (p *Presenter) GetMasterInventoryList() (*ItemsAPI, error) {
+	items, err := p.GetNewInventoryItems()
+	if err != nil {
+		return nil, err
+	}
+
+	if err = p.populateInventoryItemDetails(items); err != nil {
+		return nil, err
+	}
+
+	return items, nil
+}
+
+func (p *Presenter) populateInventoryItemDetails(items *ItemsAPI) error {
+	for i := 0; i < len(*items); i++ {
+		item := &(*items)[i]
+		invItem, err := logic.GetInventoryItem(item.InventoryItemID, p.tx)
+		if err != nil {
+			return err
+		}
+
+		item.ID = invItem.ID.String()
+		item.RecipeUnit = invItem.RecipeUnit
+		item.RecipeUnitConversion = invItem.RecipeUnitConversion
+	}
+
+	return nil
+}
+
 func (p *Presenter) GetNewInventoryItems() (*ItemsAPI, error) {
 	// get base inventory items
 	items, err := p.GetInventoryItems()
