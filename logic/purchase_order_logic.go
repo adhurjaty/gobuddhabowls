@@ -114,6 +114,10 @@ func UpdatePurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection
 	return verrs, nil
 }
 
+func UpdateOrderItem(item *models.OrderItem, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndUpdate(item)
+}
+
 func DeletePurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection) error {
 	return tx.Destroy(purchaseOrder)
 }

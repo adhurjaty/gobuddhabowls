@@ -3,6 +3,7 @@ package logic
 import (
 	"buddhabowls/models"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/validate"
 )
 
 func GetInventoryItems(tx *pop.Connection) (*models.InventoryItems, error) {
@@ -28,4 +29,8 @@ func GetInventoryItem(id string, tx *pop.Connection) (*models.InventoryItem, err
 	}
 
 	return item, nil
+}
+
+func UpdateInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndUpdate(item)
 }

@@ -113,13 +113,17 @@ func UpdateVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, 
 
 func UpdateVendorItems(items *models.VendorItems, tx *pop.Connection) (*validate.Errors, error) {
 	for _, item := range *items {
-		verrs, err := tx.ValidateAndUpdate(&item)
+		verrs, err := UpdateVendorItem(&item, tx)
 		if err != nil || verrs.HasAny() {
 			return verrs, err
 		}
 	}
 
 	return validate.NewErrors(), nil
+}
+
+func UpdateVendorItem(item *models.VendorItem, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndUpdate(item)
 }
 
 func DeleteVendor(vendor *models.Vendor, tx *pop.Connection) error {

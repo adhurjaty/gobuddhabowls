@@ -48,6 +48,11 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 	}
 
 	switch item.(type) {
+	case models.InventoryItem:
+		invItem, _ := item.(models.InventoryItem)
+		itemAPI.RecipeUnit = invItem.RecipeUnit
+		itemAPI.RecipeUnitConversion = invItem.RecipeUnitConversion
+
 	case models.OrderItem:
 		orderItem, _ := item.(models.OrderItem)
 		itemAPI.Count = orderItem.Count

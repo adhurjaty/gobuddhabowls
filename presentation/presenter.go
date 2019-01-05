@@ -330,7 +330,7 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		return verrs, err
 	}
 
-	verrs, err := logic.UpdateVendorItem(vendorItem, p.tx)
+	verrs, err = logic.UpdateVendorItem(vendorItem, p.tx)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
@@ -338,7 +338,7 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 	return logic.UpdateOrderItem(orderItem, p.tx)
 }
 
-func (p *Presenter) getLatestOrderID(item *ItemAPI, vendorID string) (uuid.UUID, err) {
+func (p *Presenter) getLatestOrderID(item *ItemAPI, vendorID string) (uuid.UUID, error) {
 	order, err := logic.GetLatestOrder(item.InventoryItemID, vendorID, p.tx)
 	if err != nil {
 		return uuid.UUID{}, err
