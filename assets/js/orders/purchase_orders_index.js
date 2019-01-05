@@ -34,7 +34,7 @@ var baseColumnObjects = [
         return formatSlashDate(purchaseOrder.order_date);
     },
     set_column: (item, value) => {
-        item.date = value;
+        item.order_date = value;
     }
 },
 {
@@ -69,6 +69,9 @@ function populateRecDatagrid($container) {
         data_type: 'date',
         get_column: (purchaseOrder) => {
             return formatSlashDate(purchaseOrder.received_date);
+        },
+        set_column: (po, date) => {
+            po.received_date = date;
         }
     });
     createDatagrid(REC_ORDER_DG_ID, colInfo);
@@ -140,5 +143,8 @@ function initDropdownActions(datagrid) {
 }
 
 function sendDatagridUpdate(updateObj) {
+    if('Items' in updateObj) {
+        delete updateObj['Items'];
+    }
     sendUpdate($('#update-po-form'), updateObj);
 }
