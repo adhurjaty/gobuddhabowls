@@ -33,6 +33,20 @@ func GetPurchaseOrder(id string, tx *pop.Connection) (*models.PurchaseOrder, err
 	return po, err
 }
 
+func GetLatestOrder(invID string, vendorID string, tx *pop.Connection) (*models.PurchaseOrder, error) {
+	order := &models.PurchaseOrder{}
+	query := tx.Where("oi.vendor_id = ?", vendorID).
+		Where("oi.inventory_item_id = ?", invID).
+		Join("purchase_orders po", "purchase_orders.id=oi.order_id").
+		Order("purchase_orders.order_date desc")
+
+	if err := query.First(order); err != nil {
+		return nil, err
+	}
+
+	return order, nil
+}
+
 func InsertPurchaseOrder(purchaseOrder *models.PurchaseOrder, tx *pop.Connection) (*validate.Errors, error) {
 	verrs, err := tx.ValidateAndCreate(purchaseOrder)
 	if err != nil || verrs.HasAny() {

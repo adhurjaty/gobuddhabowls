@@ -306,7 +306,8 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		return nil, err
 	}
 
-	vendorID, err := uuid.FromString(item.VendorItemMap[item.SelectedVendor].SelectedVendor)
+	strVendorID := item.VendorItemMap[item.SelectedVendor].SelectedVendor
+	vendorID, err := uuid.FromString(strVendorID)
 	if err != nil {
 		return nil, err
 	}
@@ -315,7 +316,7 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		return nil, err
 	}
 
-	orderID, err := getLatestOrderID(item, vendorID)
+	orderID, err := p.getLatestOrderID(item, strVendorID)
 	if err != nil {
 		return nil, err
 	}
@@ -335,6 +336,15 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 	}
 
 	return logic.UpdateOrderItem(orderItem, p.tx)
+}
+
+func (p *Presenter) getLatestOrderID(item *ItemAPI, vendorID string) (uuid.UUID, err) {
+	order, err := logic.GetLatestOrder(item.InventoryItemID, vendorID, p.tx)
+	if err != nil {
+		return uuid.UUID{}, err
+	}
+
+	return order.ID, nil
 }
 
 // GetPeriods gets the list of periods available to the user
