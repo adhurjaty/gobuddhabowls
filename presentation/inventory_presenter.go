@@ -4,7 +4,6 @@ import (
 	"buddhabowls/helpers"
 	"buddhabowls/logic"
 	"buddhabowls/models"
-	"fmt"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 	"time"
@@ -109,29 +108,35 @@ func (p *Presenter) DestroyInventory(invAPI *InventoryAPI) error {
 	return logic.DestroyInventory(inventory, p.tx)
 }
 
-func (p *Presenter) getCountInventoryItem(item *ItemAPI) (*models.CountInventoryItem, error) {
-	inventoryID, err := p.getLatestInventoryID(item)
-	if err != nil {
-		return nil, err
-	}
-	countInvItem, err := ConvertToModelCountInventoryItem(*item, inventoryID)
-	if err != nil {
-		return nil, err
-	}
-	dbItem, err := logic.GetCountInventoryItemByInvItem(item.InventoryItemID,
-		inventoryID.String(), p.tx)
-	if err != nil {
-		// logic.InsertCountInventoryItem(countInvItem, p.tx)
-		fmt.Println("!!!!!!!!!!!!!")
-		fmt.Println(item.InventoryItemID)
-		fmt.Println(inventoryID)
-		return nil, err
-	}
-	countInvItem.ID = dbItem.ID
-	countInvItem.InventoryID = dbItem.InventoryID
+// func (p *Presenter) getCountInventoryItem(item *ItemAPI) (*models.CountInventoryItem, error) {
+// 	inventoryID, err := p.getLatestInventoryID(item)
+// 	if err != nil {
+// 		return nil, err
+// 	}
+// 	countInvItem, err := ConvertToModelCountInventoryItem(*item, inventoryID)
+// 	if err != nil {
+// 		return nil, err
+// 	}
 
-	return countInvItem, nil
-}
+// 	dbItem, err := logic.GetCountInventoryItemByInvItem(item.InventoryItemID,
+// 		inventoryID.String(), p.tx)
+// 	if err != nil {
+// 		countInvItem.InventoryID = inventoryID
+// 		countInvItem.Count = 0
+// 		_, _ = logic.InsertCountInventoryItem(countInvItem, p.tx)
+
+// 		dbItem, err = logic.GetCountInventoryItemByInvItem(item.InventoryItemID,
+// 			inventoryID.String(), p.tx)
+// 		if err != nil {
+// 			return nil, err
+// 		}
+// 	}
+
+// 	countInvItem.ID = dbItem.ID
+// 	countInvItem.InventoryID = dbItem.InventoryID
+
+// 	return countInvItem, nil
+// }
 
 func (p *Presenter) getLatestInventoryID(item *ItemAPI) (uuid.UUID, error) {
 	inventory, err := logic.GetLatestInventory(helpers.Today(), p.tx)

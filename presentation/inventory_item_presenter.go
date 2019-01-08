@@ -2,8 +2,6 @@ package presentation
 
 import (
 	"buddhabowls/logic"
-	"fmt"
-	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 	"time"
 )
@@ -144,26 +142,10 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 	selectedItem, _ := item.VendorItemMap[item.SelectedVendor]
 	(&selectedItem).SelectedVendor = vendorItem.VendorID.String()
 
-	countInvItem, err := p.getCountInventoryItem(item)
-	if err != nil {
-		return nil, err
-	}
-	countInvItem.SelectedVendorID = uuid.NullUUID{
-		Valid: true,
-		UUID:  vendorItem.VendorID,
-	}
-
-	fmt.Println(*countInvItem)
-
 	verrs, err := logic.UpdateInventoryItem(invItem, p.tx)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
 
-	verrs, err = logic.UpdateVendorItem(vendorItem, p.tx)
-	if verrs.HasAny() || err != nil {
-		return verrs, err
-	}
-
-	return logic.UpdateCountInventoryItem(countInvItem, p.tx)
+	return logic.UpdateVendorItem(vendorItem, p.tx)
 }

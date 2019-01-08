@@ -116,3 +116,7 @@ func DestroyInventory(inventory *models.Inventory, tx *pop.Connection) error {
 	}
 	return tx.Destroy(inventory)
 }
+
+func InsertCountInventoryItem(item *models.CountInventoryItem, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndCreate(item)
+}
