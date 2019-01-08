@@ -31,6 +31,13 @@ func GetVendor(id string, tx *pop.Connection) (*models.Vendor, error) {
 	return vendor, err
 }
 
+func GetVendorByName(name string, tx *pop.Connection) (*models.Vendor, error) {
+	vendor := &models.Vendor{}
+	query := tx.Eager().Where("name = ?", name)
+	err := query.First(vendor)
+	return vendor, err
+}
+
 func GetLatestVendor(invItemId string, tx *pop.Connection) (*models.Vendor, error) {
 	vendor := &models.Vendor{}
 	query := tx.Where("vi.inventory_item_id = ?", invItemId).
@@ -42,6 +49,14 @@ func GetLatestVendor(invItemId string, tx *pop.Connection) (*models.Vendor, erro
 	err := query.First(vendor)
 
 	return vendor, err
+}
+
+func GetVendorItemByInvItem(invItemID string, vendorID string, tx *pop.Connection) (*models.VendorItem, error) {
+	vendorItem := &models.VendorItem{}
+	query := tx.Eager().Where("inventory_item_id = ?", invItemID).
+		Where("vendor_id = ?", vendorID)
+	err := query.First(vendorItem)
+	return vendorItem, err
 }
 
 func InsertVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, error) {

@@ -60,6 +60,14 @@ func GetLatestInventory(date time.Time, tx *pop.Connection) (*models.Inventory, 
 	return &inventory, nil
 }
 
+func GetCountInventoryItemByInvItem(invItemID string, inventoryID string, tx *pop.Connection) (*models.CountInventoryItem, error) {
+	item := &models.CountInventoryItem{}
+	query := tx.Eager().Where("inventory_item_id = ?", invItemID).
+		Where("inventory_id = ?", inventoryID)
+	err := query.First(item)
+	return item, err
+}
+
 func InsertInventory(inventory *models.Inventory, tx *pop.Connection) (*validate.Errors, error) {
 	verrs, err := tx.ValidateAndCreate(inventory)
 	if err != nil {
@@ -96,6 +104,10 @@ func UpdateInventory(inventory *models.Inventory, tx *pop.Connection) (*validate
 	}
 
 	return verrs, nil
+}
+
+func UpdateCountInventoryItem(item *models.CountInventoryItem, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndUpdate(item)
 }
 
 func DestroyInventory(inventory *models.Inventory, tx *pop.Connection) error {

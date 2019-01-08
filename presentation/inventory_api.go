@@ -51,25 +51,30 @@ func populateVendorItems(apiItems *ItemsAPI, items *models.CountInventoryItems, 
 	}
 
 	for i, item := range *items {
-		vendorMap := make(map[string]ItemAPI)
-		for _, vendor := range *vendors {
-			vendorItem := getVendorItem(item.InventoryItemID, &vendor.Items)
-			if vendorItem != nil {
-				// HACK: getting vendor ID from the property SelectedVendor within
-				// the vendor item map
-				vendorItem.SelectedVendor = vendor.ID
-				vendorMap[vendor.Name] = *vendorItem
-			}
-		}
-
-		(*apiItems)[i].VendorItemMap = vendorMap
+		(*apiItems)[i].VendorItemMap = GetVendorMap(item.InventoryItemID.String(),
+			vendors)
 		(*apiItems)[i].SetSelectedVendor(item.SelectedVendor.Name)
 	}
 }
 
-func getVendorItem(inventoryItemID uuid.UUID, items *ItemsAPI) *ItemAPI {
+func GetVendorMap(invItemID string, vendors *VendorsAPI) map[string]ItemAPI {
+	vendorMap := make(map[string]ItemAPI)
+	for _, vendor := range *vendors {
+		vendorItem := getVendorItem(invItemID, &vendor.Items)
+		if vendorItem != nil {
+			// HACK: getting vendor ID from the property SelectedVendor within
+			// the vendor item map
+			vendorItem.SelectedVendor = vendor.ID
+			vendorMap[vendor.Name] = *vendorItem
+		}
+	}
+
+	return vendorMap
+}
+
+func getVendorItem(inventoryItemID string, items *ItemsAPI) *ItemAPI {
 	for _, item := range *items {
-		if inventoryItemID.String() == item.InventoryItemID {
+		if inventoryItemID == item.InventoryItemID {
 			return &item
 		}
 	}

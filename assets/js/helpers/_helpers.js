@@ -123,7 +123,13 @@ export function toJsonName(goName) {
 
 export function toGoName(jsName) {
     var toks = jsName.split('_');
-    return toks.map((tok) => tok.charAt(0).toUpperCase() + tok.slice(1)).join('');
+    var goName = toks.map((tok) => tok.charAt(0).toUpperCase() 
+        + tok.slice(1)).join('');
+    if(goName.endsWith('Id')) {
+        goName = goName.slice(0, goName.length - 2) + 'ID';
+    }
+
+    return goName;
 }
 
 export function parseModelJSON(str) {

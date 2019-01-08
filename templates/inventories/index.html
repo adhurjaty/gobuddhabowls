@@ -4,8 +4,9 @@
 
 <%= partial("inventories/master_toggle.html", {page: "master"}) %>
 
-<%= form({action: inventoryItemPath({inventory_item_id: "item_id"}), 
-  method: "PUT", id: "inventory-item-form"}) { %> <% } %>
+<%= form({action: inventoryItemPath({inventory_item_id: "{item_id}"}), 
+  method: "PUT", id: "inventory-item-form", data-remote: "true",
+  style: "display: none;"}) { %> <% } %>
 
 <div id="categorized-items-display" class="row" 
   data='<%= inventory.Items.String() %>'></div>

@@ -35,9 +35,9 @@ func GetPurchaseOrder(id string, tx *pop.Connection) (*models.PurchaseOrder, err
 
 func GetLatestOrder(invID string, vendorID string, tx *pop.Connection) (*models.PurchaseOrder, error) {
 	order := &models.PurchaseOrder{}
-	query := tx.Where("oi.vendor_id = ?", vendorID).
+	query := tx.Where("purchase_orders.vendor_id = ?", vendorID).
 		Where("oi.inventory_item_id = ?", invID).
-		Join("purchase_orders po", "purchase_orders.id=oi.order_id").
+		Join("order_items oi", "purchase_orders.id=oi.order_id").
 		Order("purchase_orders.order_date desc")
 
 	if err := query.First(order); err != nil {

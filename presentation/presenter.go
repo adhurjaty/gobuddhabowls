@@ -1,6 +1,7 @@
 package presentation
 
 import (
+	"buddhabowls/helpers"
 	"buddhabowls/logic"
 	"buddhabowls/models"
 	"fmt"
@@ -280,21 +281,31 @@ func (p *Presenter) populateLatestInvItems(items *ItemsAPI) error {
 		return err
 	}
 
-	j := 0
-	for i := 0; i < len(*items) && j < len(latestInv.Items); i++ {
+	var vendors *VendorsAPI
+
+	for i := 0; i < len(*items); i++ {
 		item := &(*items)[i]
-		latestItem := &latestInv.Items[j]
-		if item.InventoryItemID == latestItem.InventoryItemID {
-			item.Count = latestItem.Count
-			item.VendorItemMap = latestItem.VendorItemMap
-			// default behavior, will probably be re-set in the next function
-			item.SetSelectedVendor(latestItem.SelectedVendor)
-		} else if item.Index > latestItem.Index {
-			i--
-		} else if item.Index < latestItem.Index {
-			continue
+		for _, latestItem := range latestInv.Items {
+			if item.InventoryItemID == latestItem.InventoryItemID {
+				item.Count = latestItem.Count
+				item.VendorItemMap = latestItem.VendorItemMap
+				fmt.Println(item)
+
+				// default behavior, will probably be re-set in the next function
+				item.SetSelectedVendor(latestItem.SelectedVendor)
+				break
+			}
 		}
-		j++
+		if item.VendorItemMap == nil {
+			item.Count = 0
+			if vendors == nil {
+				vendors, err = p.GetVendors()
+				if err != nil {
+					return err
+				}
+			}
+			item.VendorItemMap = GetVendorMap(item.InventoryItemID, vendors)
+		}
 	}
 
 	return nil
@@ -307,7 +318,6 @@ func (p *Presenter) populateSelectedVendors(items *ItemsAPI) {
 		if err != nil {
 			continue
 		}
-		fmt.Println(vendor)
 
 		item.SetSelectedVendor(vendor.Name)
 	}
@@ -335,23 +345,21 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		return nil, err
 	}
 
-	strVendorID := item.VendorItemMap[item.SelectedVendor].SelectedVendor
-	vendorID, err := uuid.FromString(strVendorID)
-	if err != nil {
-		return nil, err
-	}
-	vendorItem, err := ConvertToModelVendorItem(*item, vendorID)
+	vendorItem, err := p.getVendorItem(item)
 	if err != nil {
 		return nil, err
 	}
 
-	orderID, err := p.getLatestOrderID(item, strVendorID)
+	selectedItem, _ := item.VendorItemMap[item.SelectedVendor]
+	(&selectedItem).SelectedVendor = vendorItem.VendorID.String()
+
+	countInvItem, err := p.getCountInventoryItem(item)
 	if err != nil {
 		return nil, err
 	}
-	orderItem, err := ConvertToModelOrderItem(*item, orderID)
-	if err != nil {
-		return nil, err
+	countInvItem.SelectedVendorID = uuid.NullUUID{
+		Valid: true,
+		UUID:  vendorItem.VendorID,
 	}
 
 	verrs, err := logic.UpdateInventoryItem(invItem, p.tx)
@@ -364,16 +372,60 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		return verrs, err
 	}
 
-	return logic.UpdateOrderItem(orderItem, p.tx)
+	return logic.UpdateCountInventoryItem(countInvItem, p.tx)
 }
 
-func (p *Presenter) getLatestOrderID(item *ItemAPI, vendorID string) (uuid.UUID, error) {
-	order, err := logic.GetLatestOrder(item.InventoryItemID, vendorID, p.tx)
+func (p *Presenter) getVendorItem(item *ItemAPI) (*models.VendorItem, error) {
+	vendorID, err := p.getVendorID(item.SelectedVendor)
+	if err != nil {
+		return nil, err
+	}
+	vendorItem, err := ConvertToModelVendorItem(*item, vendorID)
+	if err != nil {
+		return nil, err
+	}
+	dbItem, err := logic.GetVendorItemByInvItem(item.InventoryItemID,
+		vendorID.String(), p.tx)
+	if err != nil {
+		return nil, err
+	}
+	vendorItem.ID = dbItem.ID
+
+	return vendorItem, nil
+}
+
+func (p *Presenter) getVendorID(name string) (uuid.UUID, error) {
+	vendor, err := logic.GetVendorByName(name, p.tx)
 	if err != nil {
 		return uuid.UUID{}, err
 	}
 
-	return order.ID, nil
+	return vendor.ID, nil
+}
+
+func (p *Presenter) getCountInventoryItem(item *ItemAPI) (*models.CountInventoryItem, error) {
+	inventoryID, err := p.getLatestInventoryID(item)
+	if err != nil {
+		return nil, err
+	}
+	countInvItem, err := ConvertToModelCountInventoryItem(*item, inventoryID)
+	if err != nil {
+		return nil, err
+	}
+	dbItem, err := logic.GetCountInventoryItemByInvItem(item.InventoryItemID,
+		inventoryID.String(), p.tx)
+	countInvItem.ID = dbItem.ID
+
+	return countInvItem, nil
+}
+
+func (p *Presenter) getLatestInventoryID(item *ItemAPI) (uuid.UUID, error) {
+	inventory, err := logic.GetLatestInventory(helpers.Today(), p.tx)
+	if err != nil {
+		return uuid.UUID{}, err
+	}
+
+	return inventory.ID, nil
 }
 
 // GetPeriods gets the list of periods available to the user
