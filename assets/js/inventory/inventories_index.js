@@ -1,6 +1,7 @@
 import { parseModelJSON, getObjectDiff, replaceUrlId, formatMoney, toGoName } from '../helpers/_helpers';
 import { sendAjax, sendUpdate } from '../helpers/index_helpers';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
+import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
 
 var _categorizedOptions = {
     breakdown: false
@@ -155,6 +156,8 @@ var _columns = [
 $(() => {
     var container = $('#categorized-items-display');
     createMasterDatagrid(container);
+    var bdContainer = $('#category-breakdown');
+    createBreakdown(bdContainer)
 });
 
 function createMasterDatagrid(container) {
@@ -206,4 +209,24 @@ function submitForm(form, id) {
     sendAjax(form);
 
     form.attr('action', templatePath);
+}
+
+function createBreakdown(container) {
+    var title = 'Inventory Breakdown';
+    var items = parseModelJSON($('#categorized-items-display').attr('data'));
+    items.forEach(item => {
+        if(item.conversion > 0) {
+            item.price = item.price / item.conversion;
+        } else {
+            item.price = 0;
+        }
+    });
+    var total = items.reduce((total, item) => {
+        return total + item.price * item.count;
+    }, 0);
+    if(total != 0) {
+        container.html(horizontalPercentageChart(title, items, total));
+    } else {
+        bdContainer.html('');
+    }
 }
