@@ -142,6 +142,13 @@ var _columns = [
         get_column: (item) => {
             return item.recipe_unit_conversion;
         }
+    },
+    {
+        name: 'yield',
+        hidden: true,
+        get_column: (item) => {
+            return item.yield;
+        }
     }
 ];
 
@@ -162,7 +169,6 @@ function onDataGridEdit(item) {
 
     var allItems = parseModelJSON(gridContainer.attr('data'));
     var oldItemIdx = allItems.findIndex(x => x.id == item.id);
-    var oldItem = allItems[oldItemIdx];
     
     cleanupForm(form);
 

@@ -22,6 +22,7 @@ type ItemAPI struct {
 	SelectedVendor       string             `json:"selected_vendor,omitempty"`
 	RecipeUnit           string             `json:"recipe_unit,omitempty"`
 	RecipeUnitConversion float64            `json:"recipe_unit_conversion,omitempty"`
+	Yield                float64            `json:"yield,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
@@ -52,6 +53,7 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		invItem, _ := item.(models.InventoryItem)
 		itemAPI.RecipeUnit = invItem.RecipeUnit
 		itemAPI.RecipeUnitConversion = invItem.RecipeUnitConversion
+		itemAPI.Yield = invItem.Yield
 
 	case models.OrderItem:
 		orderItem, _ := item.(models.OrderItem)

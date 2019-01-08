@@ -289,7 +289,6 @@ func (p *Presenter) populateLatestInvItems(items *ItemsAPI) error {
 			if item.InventoryItemID == latestItem.InventoryItemID {
 				item.Count = latestItem.Count
 				item.VendorItemMap = latestItem.VendorItemMap
-				fmt.Println(item)
 
 				// default behavior, will probably be re-set in the next function
 				item.SetSelectedVendor(latestItem.SelectedVendor)
@@ -362,6 +361,8 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		UUID:  vendorItem.VendorID,
 	}
 
+	fmt.Println(*countInvItem)
+
 	verrs, err := logic.UpdateInventoryItem(invItem, p.tx)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
@@ -414,7 +415,15 @@ func (p *Presenter) getCountInventoryItem(item *ItemAPI) (*models.CountInventory
 	}
 	dbItem, err := logic.GetCountInventoryItemByInvItem(item.InventoryItemID,
 		inventoryID.String(), p.tx)
+	if err != nil {
+		// logic.InsertCountInventoryItem(countInvItem, p.tx)
+		fmt.Println("!!!!!!!!!!!!!")
+		fmt.Println(item.InventoryItemID)
+		fmt.Println(inventoryID)
+		return nil, err
+	}
 	countInvItem.ID = dbItem.ID
+	countInvItem.InventoryID = dbItem.InventoryID
 
 	return countInvItem, nil
 }
