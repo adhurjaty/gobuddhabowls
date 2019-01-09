@@ -44,3 +44,16 @@ func ConvertToModelCategory(catAPI CategoryAPI) (*models.InventoryItemCategory, 
 		Index:      catAPI.Index,
 	}, nil
 }
+
+// SelectValue returns the ID for select input tags
+func (c CategoryAPI) SelectValue() interface{} {
+	return c.ID
+}
+
+// SelectLabel returs the name for select input tags
+func (c CategoryAPI) SelectLabel() string {
+	if c.ID == "" {
+		return ""
+	}
+	return c.Name
+}

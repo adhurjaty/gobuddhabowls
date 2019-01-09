@@ -6,6 +6,7 @@ export class Modal {
         this.$content = null;
         this.$select = null;
         this.addFn = addFn;
+        this.sortFn = sortItems;
 
         this.initModal();
     }
@@ -63,6 +64,10 @@ export class Modal {
         submit.appendTo(this.$content.find('div.modal-footer'));
     }
 
+    setSortFn(fn) {
+        this.sortFn = fn;
+    }
+
     addItem(item) {
         this.items.push(item);
         this.sortItems();
@@ -78,7 +83,7 @@ export class Modal {
     }
 
     sortItems() {
-        this.items = sortItems(this.items);
+        this.items = this.sortFn(this.items);
     }
     
     getContent() {

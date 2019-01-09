@@ -1,6 +1,7 @@
 import { formatMoney, unFormatMoney, formatSlashDate } from "../helpers/_helpers";
 import Pikaday from 'pikaday';
 import { datepicker } from "../_datepicker";
+import { textSelector } from "../components/_component_helpers";
 
 
 class Cell {
@@ -231,18 +232,8 @@ class Row {
 
     makeSelectInput(cell) {
         var self = this;
-        var inputList = $(
-            `<input type="text"
-                value="${cell.columnInfo.get_column(this.item)}"
-                list="${this.item.id}-datalist-options"/>
-            <datalist id="${this.item.id}-datalist-options">
-                ${cell.columnInfo.options_func(this.item).reduce((s, option) => {
-                    return `${s}\n<option value="${option}">
-                        ${option}
-                    </option>`;
-                }, "", this)}
-            </datalist>`
-        );
+        var inputList = $(textSelector(cell.columnInfo.get_column(this.item),
+            cell.columnInfo.options_func(this.item), this.item.id));
         var input = $(inputList[0]);
 
         input.on('blur', (event) => {
@@ -307,7 +298,7 @@ export class DataGrid {
     }
 
     getItem($tr) {
-        var idx = this.rows.findIndex((row) => row.getRow() == $tr);
+        var idx = this.rows.findIndex((row) => row.getRow().get(0) == $tr.get(0));
         if(idx == -1) {
             return null;
         }

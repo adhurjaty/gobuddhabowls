@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/logic"
 	"buddhabowls/models"
+	"database/sql"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 )
@@ -70,4 +71,29 @@ func (p *Presenter) getVendorID(name string) (uuid.UUID, error) {
 	}
 
 	return vendor.ID, nil
+}
+
+func (p *Presenter) GetBlankVendorItems() (*ItemsAPI, error) {
+	vendors, err := logic.GetAllVendors(p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	items := ItemsAPI{}
+	for _, vendor := range *vendors {
+		vItem := models.VendorItem{
+			VendorID:   vendor.ID,
+			Vendor:     vendor,
+			Conversion: 1,
+			PurchasedUnit: sql.NullString{
+				String: "EA",
+				Valid:  true,
+			},
+		}
+		item := NewItemAPI(vItem)
+		item.SelectedVendor = vendor.Name
+		items = append(items, item)
+	}
+
+	return &items, err
 }

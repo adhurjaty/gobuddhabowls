@@ -72,6 +72,18 @@ func (v InventoryItemsResource) Show(c buffalo.Context) error {
 // New renders the form for creating a new InventoryItem.
 // This function is mapped to the path GET /inventory_items/new
 func (v InventoryItemsResource) New(c buffalo.Context) error {
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	vendorItems, err := presenter.GetBlankVendorItems()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("vendorItems", vendorItems)
 	return c.Render(200, r.Auto(c, &models.InventoryItem{}))
 }
 

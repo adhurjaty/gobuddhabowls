@@ -1,8 +1,13 @@
 <%= f.InputTag("Name") %>
-<%= f.InputTag("Category") %>
+<%= f.SelectTag("Category") %>
 <%= f.InputTag("CountUnit") %>
 <%= f.InputTag("RecipeUnit") %>
 <%= f.InputTag("RecipeUnitConversion") %>
 <%= f.InputTag("Yield") %>
-<%= f.InputTag("Index") %>
+<label>Vendors</label>
+<div id="add-remove-buttons"></div>
+<div id="vendor-datagrid" data='<%= vendorItems.String() %>'></div>
+<div name="modal"></div>
 <button class="btn btn-success" role="submit">Save</button>
+
+<%= javascriptTag("inventory_items/inventory_items_form.js") %>
