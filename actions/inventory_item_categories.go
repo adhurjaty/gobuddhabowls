@@ -2,6 +2,7 @@ package actions
 
 import (
 	"buddhabowls/models"
+	"buddhabowls/presentation"
 	"fmt"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -24,14 +25,8 @@ func (v InventoryItemCategoriesResource) List(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	categories := &models.InventoryItemCategories{}
-	if err := tx.Eager().All(categories); err != nil {
-		return errors.WithStack(err)
-	}
-
-	sort.Slice(*categories, func(i, j int) bool {
-		return (*categories)[i].Index < (*categories)[j].Index
-	})
+	presenter := presentation.NewPresenter(tx)
+	categories, err := presenter.GetAllCategories()
 
 	return c.Render(200, r.Auto(c, categories))
 }

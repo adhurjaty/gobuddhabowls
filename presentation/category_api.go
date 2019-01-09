@@ -14,6 +14,8 @@ type CategoryAPI struct {
 	Index      int    `json:"index"`
 }
 
+type CategoriesAPI []CategoryAPI
+
 func (c CategoryAPI) String() string {
 	jo, _ := json.Marshal(c)
 	return string(jo)
@@ -29,6 +31,15 @@ func NewCategoryAPI(category models.InventoryItemCategory) CategoryAPI {
 	c.Index = category.Index
 
 	return c
+}
+
+func NewCategoriesAPI(categories *models.InventoryItemCategories) CategoriesAPI {
+	catsAPI := CategoriesAPI{}
+	for _, category := range *categories {
+		catsAPI = append(catsAPI, NewCategoryAPI(category))
+	}
+
+	return catsAPI
 }
 
 func ConvertToModelCategory(catAPI CategoryAPI) (*models.InventoryItemCategory, error) {

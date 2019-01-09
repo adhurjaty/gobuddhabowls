@@ -77,21 +77,26 @@ func (v InventoryItemsResource) New(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
+	inventoryItem := &presentation.ItemAPI{
+		Yield: 1,
+	}
 	presenter := presentation.NewPresenter(tx)
 	vendorItems, err := presenter.GetBlankVendorItems()
 	if err != nil {
 		return errors.WithStack(err)
 	}
+	categories, err := presenter.GetAllCategories()
 
+	c.Set("inventoryItem", inventoryItem)
 	c.Set("vendorItems", vendorItems)
-	return c.Render(200, r.Auto(c, &models.InventoryItem{}))
+	return c.Render(200, r.HTML("inventory_items/new"))
 }
 
 // Create adds a InventoryItem to the DB. This function is mapped to the
 // path POST /inventory_items
 func (v InventoryItemsResource) Create(c buffalo.Context) error {
 	// Allocate an empty InventoryItem
-	inventoryItem := &models.InventoryItem{}
+	inventoryItem := &presentation.ItemAPI{}
 
 	// Bind inventoryItem to the html form elements
 	if err := c.Bind(inventoryItem); err != nil {
@@ -104,8 +109,10 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
+	presenter := presentation.NewPresenter(tx)
+
 	// Validate the data from the html form
-	verrs, err := tx.ValidateAndCreate(inventoryItem)
+	verrs, err := presenter.InsertInventoryItem(inventoryItem)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -114,9 +121,12 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
 
+		vendorItems, err := presenter.GetBlankVendorItems()
+		c.Set("vendorItems", vendorItems)
+
 		// Render again the new.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, inventoryItem))
+		return c.Render(200, r.HTML("inventory_items/new"))
 	}
 
 	// If there are no errors set a success message

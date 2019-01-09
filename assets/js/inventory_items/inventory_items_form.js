@@ -78,10 +78,12 @@ var _buttons = null;
 
 $(() => {
     _datagridContainer = $('#vendor-datagrid');
-    // _items = parseModelJSON(_datagridContainer.attr('data'));
+    var input = $('input[name="VendorItemMap"]');
+    _items = parseModelJSON(input.val()) || [];
     initDatagrid();
     initAddRemoveButtons();
     initModal();
+    setOnSubmit();
 });
 
 function initDatagrid() {
@@ -122,7 +124,11 @@ function removeItem() {
 }
 
 function initModal() {
-    var remainingItems = parseModelJSON(_datagridContainer.attr('data'));
+    var vendorItems = parseModelJSON(_datagridContainer.attr('data'));
+    var input = $('input[name="VendorItemMap"]');
+    var existingItems = parseModelJSON(input.val());
+    var remainingItems = vendorItems.filter(x => existingItems == null ||
+        Object.keys(existingItems).findIndex(key => x.selected_vendor == key));
     remainingItems.forEach(x => {
         x.name = x.selected_vendor;
         x.id = x.selected_vendor;
@@ -140,4 +146,19 @@ function addItem(item) {
     initDatagrid();
     _buttons.enableRemoveButton();
     _modal.removeItem(item);
+}
+
+function setOnSubmit() {
+    var form = $('#vendor-datagrid').closest('form');
+    form.submit(() => {
+        var vendorMap = _datagrid.rows.reduce((obj, row) => {
+            var item = row.item;
+            obj[item.selected_vendor] = item;
+            return obj;
+        }, {});
+
+        var input = $('input[name="VendorItemMap"]');
+        input.val(JSON.stringify(vendorMap));
+        debugger;        
+    });
 }
