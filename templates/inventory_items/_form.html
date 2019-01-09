@@ -1,15 +1,22 @@
-<%= f.InputTag("Name") %>
-<%= f.SelectTag("Category") %>
-<%= f.InputTag("CountUnit") %>
-<%= f.InputTag("RecipeUnit") %>
-<%= f.InputTag("RecipeUnitConversion") %>
-<%= f.InputTag("Yield") %>
-<label>Vendors</label>
-<div id="add-remove-buttons"></div>
-<div id="vendor-datagrid" data='<%= vendorItems.String() %>'></div>
-<div name="modal"></div>
-<input type="text" name="VendorItemMap" style="display: none" 
-  value='<%= inventoryItem.VendorItemMap.String() %>' />
+<div class="row">
+  <div class="col-md-6">
+    <%= f.InputTag("Name") %>
+    <%= f.SelectTag("Category", {options: categories, name: "CategoryID" }) %>
+    <%= f.InputTag("CountUnit") %>
+    <%= f.InputTag("RecipeUnit") %>
+    <%= f.InputTag("RecipeUnitConversion") %>
+    <%= f.InputTag("Yield") %>
+    <label>Vendors</label>
+    <div id="add-remove-buttons"></div>
+    <div id="vendor-datagrid" data='<%= vendorItems.String() %>'></div>
+    <div name="modal"></div>
+    <input type="text" name="VendorItemMap" style="display: none" 
+      value='<%= inventoryItem.VendorItemMap.String() %>' />
+  </div>
+  <div class="col-md-6">
+    
+  </div>
+</div>
 <button class="btn btn-success" role="submit">Save</button>
 
 <%= javascriptTag("inventory_items/inventory_items_form.js") %>

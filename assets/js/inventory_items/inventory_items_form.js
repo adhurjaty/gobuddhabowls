@@ -52,7 +52,6 @@ var _columnInfo = [
         },
         set_column: (item, value) => {
             item.price = parseFloat(value);
-            item.VendorItemMap[item.selected_vendor].price = item.price;
         }
     },
     {
@@ -65,7 +64,6 @@ var _columnInfo = [
         },
         set_column: (item, value) => {
             item.conversion = parseFloat(value);
-            item.VendorItemMap[item.selected_vendor].conversion = item.conversion;
         }
     }
 ];

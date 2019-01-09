@@ -141,6 +141,10 @@ func UpdateVendorItem(item *models.VendorItem, tx *pop.Connection) (*validate.Er
 	return tx.ValidateAndUpdate(item)
 }
 
+func InsertVendorItem(item *models.VendorItem, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndCreate(item)
+}
+
 func DeleteVendor(vendor *models.Vendor, tx *pop.Connection) error {
 	for _, item := range vendor.Items {
 		tx.Destroy(&item)

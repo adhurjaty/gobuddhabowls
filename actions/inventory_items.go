@@ -78,7 +78,8 @@ func (v InventoryItemsResource) New(c buffalo.Context) error {
 	}
 
 	inventoryItem := &presentation.ItemAPI{
-		Yield: 1,
+		Yield:                1,
+		RecipeUnitConversion: 1,
 	}
 	presenter := presentation.NewPresenter(tx)
 	vendorItems, err := presenter.GetBlankVendorItems()
@@ -89,6 +90,7 @@ func (v InventoryItemsResource) New(c buffalo.Context) error {
 
 	c.Set("inventoryItem", inventoryItem)
 	c.Set("vendorItems", vendorItems)
+	c.Set("categories", categories)
 	return c.Render(200, r.HTML("inventory_items/new"))
 }
 
@@ -122,7 +124,16 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 		c.Set("errors", verrs)
 
 		vendorItems, err := presenter.GetBlankVendorItems()
+		if err != nil {
+			return errors.WithStack(err)
+		}
+		categories, err := presenter.GetAllCategories()
+		if err != nil {
+			return errors.WithStack(err)
+		}
+
 		c.Set("vendorItems", vendorItems)
+		c.Set("categories", categories)
 
 		// Render again the new.html template that the user can
 		// correct the input.

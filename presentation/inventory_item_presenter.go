@@ -149,3 +149,36 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 
 	return logic.UpdateVendorItem(vendorItem, p.tx)
 }
+
+func (p *Presenter) InsertInventoryItem(item *ItemAPI) (*validate.Errors, error) {
+	invItem, err := ConvertToModelInventoryItem(item)
+	if err != nil {
+		return nil, err
+	}
+
+	verrs, err := logic.InsertInventoryItem(invItem, p.tx)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+
+	for selectedVendor, vItemAPI := range item.VendorItemMap {
+		vendorID, err := p.getVendorID(selectedVendor)
+		if err != nil {
+			return nil, err
+		}
+		vendorItem, err := ConvertToModelVendorItem(vItemAPI, vendorID)
+		if err != nil {
+			return nil, err
+		}
+
+		vendorItem.VendorID = vendorID
+		vendorItem.InventoryItemID = invItem.ID
+
+		verrs, err = logic.InsertVendorItem(vendorItem, p.tx)
+		if verrs.HasAny() || err != nil {
+			return verrs, err
+		}
+	}
+
+	return nil, nil
+}

@@ -452,7 +452,7 @@ export class DataGrid {
     focusNextColumn(rowIdx, colIdx) {
         var row = this.rows[rowIdx];
         var colNum = row.cells.length;
-        var i = colIdx+1 % colNum;
+        var i = (colIdx+1) % colNum;
         while(i != colIdx) {
             var cell = row.cells[i];
             if(cell.isEditable()) {

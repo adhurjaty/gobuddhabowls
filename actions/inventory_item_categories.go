@@ -7,7 +7,6 @@ import (
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/pkg/errors"
-	"sort"
 )
 
 var _ = fmt.Println
@@ -27,8 +26,12 @@ func (v InventoryItemCategoriesResource) List(c buffalo.Context) error {
 
 	presenter := presentation.NewPresenter(tx)
 	categories, err := presenter.GetAllCategories()
+	if err != nil {
+		return errors.WithStack(err)
+	}
 
-	return c.Render(200, r.Auto(c, categories))
+	c.Set("categories", categories)
+	return c.Render(200, r.HTML("categories/index"))
 }
 
 // Update updates the selected category
