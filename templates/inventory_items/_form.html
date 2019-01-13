@@ -11,8 +11,7 @@
     <div id="vendor-datagrid" data='<%= vendorItems.String() %>'></div>
     <div name="modal"></div>
     <input type="text" name="VendorItemMap" style="display: none;" 
-      value='<%= inventoryItem.VendorItemMap.String() %>' />
-    <!-- <input type="text" name="Category" style="display: none;" /> -->
+      value='<%= json(inventoryItem.VendorItemMap) %>' />
   </div>
   <div class="col-md-6">
     

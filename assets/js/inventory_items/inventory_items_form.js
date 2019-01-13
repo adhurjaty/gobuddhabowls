@@ -77,12 +77,21 @@ var _buttons = null;
 
 $(() => {
     _datagridContainer = $('#vendor-datagrid');
-    _datagridContainer.hide();
 
-    _allItems = parseModelJSON(_datagridContainer.attr('data'));
+    _allItems = parseModelJSON(_datagridContainer.attr('data')) || [];
 
     var input = $('input[name="VendorItemMap"]');
-    _items = parseModelJSON(input.val()) || [];
+    _items = JSON.parse(input.val()) || [];
+    if(_items) {
+        _items = Object.keys(_items).map(key => _items[key]);
+        _items.forEach(item => {
+            item.name = item.selected_vendor;
+            item.id = item.selected_vendor;
+        });
+        _datagridContainer.show();
+    } else {
+        _datagridContainer.hide();
+    }
 
     initDatagrid();
     initAddRemoveButtons();
@@ -103,8 +112,16 @@ function datagridUpdated(item) {
 function initAddRemoveButtons() {
     var container = $('#add-remove-buttons');
     _buttons = new ButtonGroup();
-    _buttons.enableAddButton();
-    _buttons.disableRemoveButton();
+    if(_items.length < _allItems.length) {
+        _buttons.enableAddButton();
+    } else {
+        _buttons.disableAddButton();
+    }
+    if(_items.length == 0) {
+        _buttons.disableRemoveButton();
+    } else {
+        _buttons.enableRemoveButton();
+    }
     _buttons.setRemoveListener(removeItem);
     container.html(_buttons.$content);
 }
@@ -129,9 +146,8 @@ function removeItem() {
 }
 
 function initModal() {
-    var vendorItems = parseModelJSON(_datagridContainer.attr('data'));
-    var remainingItems = vendorItems.filter(x => _allItems == null ||
-        Object.keys(_allItems).findIndex(key => x.selected_vendor == key));
+    var remainingItems = _allItems.filter(x => 
+        _items.findIndex(item => x.selected_vendor == item.selected_vendor));
     remainingItems.forEach(x => {
         x.name = x.selected_vendor;
         x.id = x.selected_vendor;
@@ -172,13 +188,6 @@ function setOnSubmit() {
 
         var input = $('input[name="VendorItemMap"]');
         input.val(JSON.stringify(vendorMap));
-
-        // var catInput = $('input[name="Category"]');
-        // var selectedCat = $('select[name="CategoryID"] option:selected');
-        // catInput.val(JSON.stringify({
-        //     name: selectedCat.html(),
-        //     category_id: selectedCat.val()
-        // }));
     });
 }
 

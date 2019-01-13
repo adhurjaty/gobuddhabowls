@@ -91,7 +91,6 @@ func (as *ActionSuite) Test_InventoryItemsResource_Create() {
 	as.NoError(err)
 	as.Equal(2, len(*vendItems))
 	for _, item := range *vendItems {
-		fmt.Println((*vendors)[0].ID.String())
 		as.True(item.VendorID.String() == (*vendors)[0].ID.String() ||
 			item.VendorID.String() == (*vendors)[1].ID.String())
 	}

@@ -3,6 +3,7 @@ package actions
 import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
+	"encoding/json"
 	"fmt"
 
 	"github.com/gobuffalo/buffalo"
@@ -108,6 +109,13 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 	catID := c.Param("CategoryID")
 	inventoryItem.Category.ID = catID
 
+	vendorItemsMap := make(map[string]presentation.ItemAPI)
+	vimStr := c.Param("VendorItemMap")
+	if err := json.Unmarshal([]byte(vimStr), &vendorItemsMap); err != nil {
+		return errors.WithStack(err)
+	}
+	inventoryItem.VendorItemMap = vendorItemsMap
+
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
@@ -138,9 +146,8 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 		c.Set("vendorItems", vendorItems)
 		c.Set("categories", categories)
 		c.Set("inventoryItem", inventoryItem)
+		fmt.Println(inventoryItem)
 
-		fmt.Println("!!!!!!!!!!!!!!!!!!!")
-		fmt.Println(verrs)
 		// Render again the new.html template that the user can
 		// correct the input.
 		return c.Render(200, r.HTML("inventory_items/new"))
