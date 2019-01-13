@@ -71,13 +71,19 @@ var _columnInfo = [
 var _datagridContainer = null;
 var _datagrid = null;
 var _items = [];
+var _allItems = [];
 var _modal = null;
 var _buttons = null;
 
 $(() => {
     _datagridContainer = $('#vendor-datagrid');
+    _datagridContainer.hide();
+
+    _allItems = parseModelJSON(_datagridContainer.attr('data'));
+
     var input = $('input[name="VendorItemMap"]');
     _items = parseModelJSON(input.val()) || [];
+
     initDatagrid();
     initAddRemoveButtons();
     initModal();
@@ -108,7 +114,7 @@ function removeItem() {
 
     // sometimes triggers multiple times from UI
     // this check ensures this function happens once
-    if(!selectedRow) {
+    if(selectedRow.length == 0) {
         return;
     }
 
@@ -118,15 +124,14 @@ function removeItem() {
     _modal.addItem(selectedItem);
     if(_items.length == 0) {
         _buttons.disableRemoveButton();
+        _datagridContainer.hide();
     }
 }
 
 function initModal() {
     var vendorItems = parseModelJSON(_datagridContainer.attr('data'));
-    var input = $('input[name="VendorItemMap"]');
-    var existingItems = parseModelJSON(input.val());
-    var remainingItems = vendorItems.filter(x => existingItems == null ||
-        Object.keys(existingItems).findIndex(key => x.selected_vendor == key));
+    var remainingItems = vendorItems.filter(x => _allItems == null ||
+        Object.keys(_allItems).findIndex(key => x.selected_vendor == key));
     remainingItems.forEach(x => {
         x.name = x.selected_vendor;
         x.id = x.selected_vendor;
@@ -140,9 +145,12 @@ function initModal() {
 }
 
 function addItem(item) {
+    _datagridContainer.show();
+    _buttons.enableRemoveButton();
+    
     _items.push(item);
     initDatagrid();
-    _buttons.enableRemoveButton();
+
     _modal.removeItem(item);
 }
 
@@ -150,13 +158,32 @@ function setOnSubmit() {
     var form = $('#vendor-datagrid').closest('form');
     form.submit(() => {
         var vendorMap = _datagrid.rows.reduce((obj, row) => {
-            var item = row.item;
+            var vendor = row.item.selected_vendor;
+            var idx = _allItems.findIndex(x => x.selected_vendor == vendor);
+            if(idx == -1) {
+                return obj;
+            }
+            var item = _allItems[idx];
+            setAttrs(item, row.item);
+
             obj[item.selected_vendor] = item;
             return obj;
         }, {});
 
         var input = $('input[name="VendorItemMap"]');
         input.val(JSON.stringify(vendorMap));
-        debugger;        
+
+        // var catInput = $('input[name="Category"]');
+        // var selectedCat = $('select[name="CategoryID"] option:selected');
+        // catInput.val(JSON.stringify({
+        //     name: selectedCat.html(),
+        //     category_id: selectedCat.val()
+        // }));
     });
+}
+
+function setAttrs(item, rowItem) {
+    item.price = rowItem.price;
+    item.conversion = rowItem.conversion;
+    item.purchased_unit = rowItem.purchased_unit;
 }

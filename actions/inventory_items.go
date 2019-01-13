@@ -105,6 +105,9 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
+	catID := c.Param("CategoryID")
+	inventoryItem.Category.ID = catID
+
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
@@ -134,7 +137,10 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 
 		c.Set("vendorItems", vendorItems)
 		c.Set("categories", categories)
+		c.Set("inventoryItem", inventoryItem)
 
+		fmt.Println("!!!!!!!!!!!!!!!!!!!")
+		fmt.Println(verrs)
 		// Render again the new.html template that the user can
 		// correct the input.
 		return c.Render(200, r.HTML("inventory_items/new"))
@@ -144,7 +150,7 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 	c.Flash().Add("success", "InventoryItem was created successfully")
 
 	// and redirect to the inventory_items index page
-	return c.Render(201, r.Auto(c, inventoryItem))
+	return c.Redirect(303, "/inventories")
 }
 
 // Edit renders a edit form for a InventoryItem. This function is

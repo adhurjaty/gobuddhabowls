@@ -2,9 +2,12 @@ package presentation
 
 import (
 	"buddhabowls/logic"
+	"fmt"
 	"github.com/gobuffalo/validate"
 	"time"
 )
+
+var _ = fmt.Println
 
 func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
 	items, err := logic.GetInventoryItems(p.tx)
@@ -166,6 +169,7 @@ func (p *Presenter) InsertInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		if err != nil {
 			return nil, err
 		}
+		vItemAPI.InventoryItemID = invItem.ID.String()
 		vendorItem, err := ConvertToModelVendorItem(vItemAPI, vendorID)
 		if err != nil {
 			return nil, err
@@ -180,5 +184,5 @@ func (p *Presenter) InsertInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		}
 	}
 
-	return nil, nil
+	return verrs, nil
 }

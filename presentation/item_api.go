@@ -112,7 +112,7 @@ func NewItemsAPI(modelItems interface{}) ItemsAPI {
 func ConvertToModelInventoryItem(item *ItemAPI) (*models.InventoryItem, error) {
 	id, err := uuid.FromString(item.InventoryItemID)
 	if err != nil {
-		return nil, err
+		id = uuid.UUID{}
 	}
 
 	category, err := ConvertToModelCategory(item.Category)
