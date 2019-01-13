@@ -96,6 +96,9 @@ $(() => {
     initDatagrid();
     initAddRemoveButtons();
     initModal();
+    removeDragHandles();
+    addItemToOrderList();
+    setOnChangeCategoryOrName();
     setOnSubmit();
 });
 
@@ -170,6 +173,43 @@ function addItem(item) {
     _modal.removeItem(item);
 }
 
+function removeDragHandles() {
+    $('.drag-handle').remove();
+}
+
+function addItemToOrderList() {
+    var category = $('select[name="CategoryID"] option:selected').html();
+    var name = $('input[name="Name"]').val();
+
+    var li = $(
+        `<li class="list-group-item d-flex justify-content-between align-items-center">
+            <span>${name}</span>
+            <span class="drag-handle" style="font-size: 20px;">☰</span>
+        </li>`
+    );
+
+    var catLabel = $('.category-label').filter((i, el) => {
+        return $(el).text().trim() == category
+    }).first();
+    li.insertAfter(catLabel);
+}
+
+function setOnChangeCategoryOrName() {
+    $('select[name="CategoryID"]').change((option) => {
+        removeItemFromOrderList();
+        addItemToOrderList();
+    });
+    $('input[name="Name"]').change(() => {
+        var input = $('input[name="Name"]');
+        $('.drag-handle').first().closest('li').find('span')
+            .first().html(input.val());
+    });
+}
+
+function removeItemFromOrderList() {
+    $('.drag-handle').closest('li').remove();
+}
+
 function setOnSubmit() {
     var form = $('#vendor-datagrid').closest('form');
     form.submit(() => {
@@ -188,6 +228,10 @@ function setOnSubmit() {
 
         var input = $('input[name="VendorItemMap"]');
         input.val(JSON.stringify(vendorMap));
+
+        var indexInput = $('input[name="Index"]');
+        var index = findItemIndex();
+        indexInput.val(index);
     });
 }
 
@@ -195,4 +239,10 @@ function setAttrs(item, rowItem) {
     item.price = rowItem.price;
     item.conversion = rowItem.conversion;
     item.purchased_unit = rowItem.purchased_unit;
+}
+
+function findItemIndex() {
+    var lis = $('#categories-movable li').not('.category-label');
+    return lis.toArray().findIndex(x => 
+        $(x).find('span.drag-handle').length > 0);
 }

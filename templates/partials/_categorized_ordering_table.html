@@ -1,0 +1,16 @@
+<div class="row">
+    <ul class="list-group" id="categories-movable" style="width: 80%;" 
+      data='<%= items.String() %>'>
+        <%= for (item) in items { %>
+            <li itemid="<%= item.ID %>" class="list-group-item d-flex justify-content-between align-items-center">
+                <span>
+                    <%= item.Name %>
+                </span>
+                      
+                <span class="drag-handle" style="font-size: 20px;">☰</span>
+            </li>
+        <% } %>
+    </ul>
+</div>
+
+<%= javascriptTag("components/categorized_ordering_table.js") %>

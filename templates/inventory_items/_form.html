@@ -12,9 +12,12 @@
     <div name="modal"></div>
     <input type="text" name="VendorItemMap" style="display: none;" 
       value='<%= json(inventoryItem.VendorItemMap) %>' />
+    <input type="text" name="Index" style="display: none;" 
+      value='<%= inventoryItem.Index %>' />
   </div>
   <div class="col-md-6">
-    
+    <%= partial("partials/categorized_ordering_table",
+      {items: inventoryItems }) %>
   </div>
 </div>
 <button class="btn btn-success" role="submit">Save</button>

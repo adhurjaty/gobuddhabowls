@@ -87,9 +87,19 @@ func (v InventoryItemsResource) New(c buffalo.Context) error {
 	if err != nil {
 		return errors.WithStack(err)
 	}
+
 	categories, err := presenter.GetAllCategories()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	inventoryItems, err := presenter.GetInventoryItems()
+	if err != nil {
+		return errors.WithStack(err)
+	}
 
 	c.Set("inventoryItem", inventoryItem)
+	c.Set("inventoryItems", inventoryItems)
 	c.Set("vendorItems", vendorItems)
 	c.Set("categories", categories)
 	return c.Render(200, r.HTML("inventory_items/new"))
@@ -142,10 +152,15 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 		if err != nil {
 			return errors.WithStack(err)
 		}
+		inventoryItems, err := presenter.GetInventoryItems()
+		if err != nil {
+			return errors.WithStack(err)
+		}
 
 		c.Set("vendorItems", vendorItems)
 		c.Set("categories", categories)
 		c.Set("inventoryItem", inventoryItem)
+		c.Set("inventoryItems", inventoryItems)
 		fmt.Println(inventoryItem)
 
 		// Render again the new.html template that the user can
