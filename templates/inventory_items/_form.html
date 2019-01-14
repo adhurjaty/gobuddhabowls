@@ -16,7 +16,8 @@
       value='<%= inventoryItem.Index %>' />
   </div>
   <div class="col-md-6">
-    <%= partial("partials/categorized_ordering_table",
+    <div id="inventory-items-display" data='<%= inventoryItems.String() %>'></div>
+    <%#= partial("partials/categorized_ordering_table",
       {items: inventoryItems }) %>
   </div>
 </div>

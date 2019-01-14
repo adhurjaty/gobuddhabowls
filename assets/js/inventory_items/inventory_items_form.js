@@ -1,7 +1,9 @@
 import { DataGrid } from "../datagrid/_datagrid";
-import { parseModelJSON, formatMoney } from "../helpers/_helpers";
+import { parseModelJSON, formatMoney, groupByCategory } from "../helpers/_helpers";
 import { ButtonGroup } from "../components/_button_group";
 import { Modal } from "../components/_modal";
+import { SingleOrderingTable } from "../components/_single_ordering_table";
+import { showError } from "../helpers/index_helpers";
 
 var _columnInfo = [
     {
@@ -74,6 +76,7 @@ var _items = [];
 var _allItems = [];
 var _modal = null;
 var _buttons = null;
+var _orderingTable = null;
 
 $(() => {
     _datagridContainer = $('#vendor-datagrid');
@@ -82,7 +85,7 @@ $(() => {
 
     var input = $('input[name="VendorItemMap"]');
     _items = JSON.parse(input.val()) || [];
-    if(_items) {
+    if(_items.length > 0) {
         _items = Object.keys(_items).map(key => _items[key]);
         _items.forEach(item => {
             item.name = item.selected_vendor;
@@ -96,8 +99,7 @@ $(() => {
     initDatagrid();
     initAddRemoveButtons();
     initModal();
-    removeDragHandles();
-    addItemToOrderList();
+    createOrderingTable();
     setOnChangeCategoryOrName();
     setOnSubmit();
 });
@@ -173,46 +175,55 @@ function addItem(item) {
     _modal.removeItem(item);
 }
 
-function removeDragHandles() {
-    $('.drag-handle').remove();
+function createOrderingTable() {
+    var container = $('#inventory-items-display');
+    var invItems = parseModelJSON(container.attr('data'));
+    var item = getItem();
+    
+    var catItems = groupByCategory(invItems);
+    var selectedCat = catItems.find(x => x.name == item.category);
+    if(selectedCat) {
+        var selectedCatItems = selectedCat.value;
+        _orderingTable = new SingleOrderingTable(selectedCatItems, item);
+        _orderingTable.attach(container);
+    }
 }
 
-function addItemToOrderList() {
+function getItem() {
     var category = $('select[name="CategoryID"] option:selected').html();
     var name = $('input[name="Name"]').val();
+    var index = parseInt($('input[name="Index"]').val());
 
-    var li = $(
-        `<li class="list-group-item d-flex justify-content-between align-items-center">
-            <span>${name}</span>
-            <span class="drag-handle" style="font-size: 20px;">☰</span>
-        </li>`
-    );
-
-    var catLabel = $('.category-label').filter((i, el) => {
-        return $(el).text().trim() == category
-    }).first();
-    li.insertAfter(catLabel);
+    return {
+        name: name,
+        category: category,
+        index: index,
+        id: ''
+    };
 }
 
 function setOnChangeCategoryOrName() {
     $('select[name="CategoryID"]').change((option) => {
-        removeItemFromOrderList();
-        addItemToOrderList();
+        clearInvItemsTable();
+        createOrderingTable();
     });
     $('input[name="Name"]').change(() => {
-        var input = $('input[name="Name"]');
-        $('.drag-handle').first().closest('li').find('span')
-            .first().html(input.val());
+        var name = $('input[name="Name"]').val();
+        _orderingTable.updateItemName(name);
     });
 }
 
-function removeItemFromOrderList() {
-    $('.drag-handle').closest('li').remove();
+function clearInvItemsTable() {
+    $('#inventory-items-display').html('');
 }
 
 function setOnSubmit() {
     var form = $('#vendor-datagrid').closest('form');
     form.submit(() => {
+        if(!validateNewItem()) {
+            return false;
+        }
+
         var vendorMap = _datagrid.rows.reduce((obj, row) => {
             var vendor = row.item.selected_vendor;
             var idx = _allItems.findIndex(x => x.selected_vendor == vendor);
@@ -230,9 +241,19 @@ function setOnSubmit() {
         input.val(JSON.stringify(vendorMap));
 
         var indexInput = $('input[name="Index"]');
+        debugger;
         var index = findItemIndex();
         indexInput.val(index);
     });
+}
+
+function validateNewItem() {
+    if(_datagrid.rows.length == 0) {
+        showError('Must add vendors');
+        return false;
+    }
+
+    return true;
 }
 
 function setAttrs(item, rowItem) {
@@ -242,7 +263,11 @@ function setAttrs(item, rowItem) {
 }
 
 function findItemIndex() {
-    var lis = $('#categories-movable li').not('.category-label');
-    return lis.toArray().findIndex(x => 
-        $(x).find('span.drag-handle').length > 0);
+    var lis = _orderingTable.ul.find('li');
+    var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == '');
+    if(idx == _orderingTable.items.length) {
+        return _orderingTable.items[idx - 1].index;
+    }
+
+    return _orderingTable.items[idx].index;
 }

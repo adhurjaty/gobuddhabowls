@@ -71,7 +71,7 @@
             <%= partial("flash.html") %>
             <%= yield %>
             <%= if (errors) { %>
-              <div class="alert alert-danger">
+              <div id="error-container" class="alert alert-danger">
                   <%= errors.Error() %>
               </div>
             <% } %>

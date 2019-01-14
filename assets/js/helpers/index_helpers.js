@@ -60,3 +60,8 @@ export function sendAjax($form) {
         data: data
     });
 }
+
+export function showError(msg) {
+    var errContainer = $('#error-container');
+    errContainer.html(msg);
+}
