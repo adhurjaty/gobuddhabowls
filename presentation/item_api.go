@@ -129,6 +129,7 @@ func ConvertToModelInventoryItem(item *ItemAPI) (*models.InventoryItem, error) {
 		CountUnit:            item.CountUnit,
 		RecipeUnit:           item.RecipeUnit,
 		RecipeUnitConversion: item.RecipeUnitConversion,
+		Yield:                item.Yield,
 		IsActive:             true,
 	}, nil
 }
@@ -168,13 +169,9 @@ func ConvertToModelOrderItems(items ItemsAPI, orderID uuid.UUID) (*models.OrderI
 }
 
 func ConvertToModelVendorItem(item ItemAPI, vendorID uuid.UUID) (*models.VendorItem, error) {
-	id := uuid.UUID{}
-	if len(item.ID) > 0 {
-		var err error
-		id, err = uuid.FromString(item.ID)
-		if err != nil {
-			return nil, err
-		}
+	id, err := uuid.FromString(item.ID)
+	if err != nil {
+		id = uuid.UUID{}
 	}
 
 	invID, err := uuid.FromString(item.InventoryItemID)

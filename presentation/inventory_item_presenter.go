@@ -107,11 +107,21 @@ func (p *Presenter) populateSelectedVendors(items *ItemsAPI) {
 	for i := 0; i < len(*items); i++ {
 		item := &(*items)[i]
 		vendor, err := logic.GetLatestVendor(item.InventoryItemID, p.tx)
+		fmt.Println(vendor)
 		if err != nil {
-			continue
+			var vendorName string
+			fmt.Println(item.VendorItemMap)
+			for k := range item.VendorItemMap {
+				vendorName = k
+				break
+			}
+			if vendorName != "" {
+				item.SetSelectedVendor(vendorName)
+			}
+		} else {
+			item.SetSelectedVendor(vendor.Name)
 		}
 
-		item.SetSelectedVendor(vendor.Name)
 	}
 }
 

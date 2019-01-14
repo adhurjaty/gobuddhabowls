@@ -241,7 +241,6 @@ function setOnSubmit() {
         input.val(JSON.stringify(vendorMap));
 
         var indexInput = $('input[name="Index"]');
-        debugger;
         var index = findItemIndex();
         indexInput.val(index);
     });

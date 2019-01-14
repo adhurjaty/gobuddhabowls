@@ -63,5 +63,9 @@ export function sendAjax($form) {
 
 export function showError(msg) {
     var errContainer = $('#error-container');
+    if(errContainer.length == 0) {
+        errContainer = $('<div id="error-container" class="alert alert-danger"></div>');
+        $('main').append(errContainer);
+    }
     errContainer.html(msg);
 }
