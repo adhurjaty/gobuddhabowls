@@ -26,25 +26,25 @@ func (p *Presenter) GetMasterInventoryList() (*ItemsAPI, error) {
 		return nil, err
 	}
 
-	if err = p.populateInventoryItemDetails(items); err != nil {
-		return nil, err
+	for i := 0; i < len(*items); i++ {
+		item := &(*items)[i]
+		if err = p.populateInventoryItemDetails(item); err != nil {
+			return nil, err
+		}
 	}
 
 	return items, nil
 }
 
-func (p *Presenter) populateInventoryItemDetails(items *ItemsAPI) error {
-	for i := 0; i < len(*items); i++ {
-		item := &(*items)[i]
-		invItem, err := logic.GetInventoryItem(item.InventoryItemID, p.tx)
-		if err != nil {
-			return err
-		}
-
-		item.ID = invItem.ID.String()
-		item.RecipeUnit = invItem.RecipeUnit
-		item.RecipeUnitConversion = invItem.RecipeUnitConversion
+func (p *Presenter) populateInventoryItemDetails(item *ItemAPI) error {
+	invItem, err := logic.GetInventoryItem(item.InventoryItemID, p.tx)
+	if err != nil {
+		return err
 	}
+
+	item.ID = invItem.ID.String()
+	item.RecipeUnit = invItem.RecipeUnit
+	item.RecipeUnitConversion = invItem.RecipeUnitConversion
 
 	return nil
 }
@@ -139,6 +139,20 @@ func (p *Presenter) GetInventoryItem(id string) (*ItemAPI, error) {
 
 	apiItem := NewItemAPI(item)
 	return &apiItem, nil
+}
+
+func (p *Presenter) GetFullInventoryItem(id string) (*ItemAPI, error) {
+	item, err := p.GetInventoryItem(id)
+	if err != nil {
+		return nil, err
+	}
+	vendors, err := p.GetVendors()
+	if err != nil {
+		return nil, err
+	}
+
+	item.VendorItemMap = GetVendorMap(item.InventoryItemID, vendors)
+	return item, nil
 }
 
 func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error) {

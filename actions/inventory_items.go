@@ -184,14 +184,45 @@ func (v InventoryItemsResource) Edit(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty InventoryItem
-	inventoryItem := &models.InventoryItem{}
-
-	if err := tx.Find(inventoryItem, c.Param("inventory_item_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	inventoryItem, err := presenter.GetFullInventoryItem(c.Param("inventory_item_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
+	vendorItems, err := presenter.GetBlankVendorItems()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+	for i, item := range *vendorItems {
+		for vendorName, vendItem := range inventoryItem.VendorItemMap {
+			if vendorName == item.SelectedVendor {
+				(*vendorItems)[i] = vendItem
+				break
+			}
+		}
+	}
 
-	return c.Render(200, r.Auto(c, inventoryItem))
+	categories, err := presenter.GetAllCategories()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+	inventoryItems, err := presenter.GetInventoryItems()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+	for i, item := range *inventoryItems {
+		if item.ID == inventoryItem.ID {
+			*inventoryItems = append((*inventoryItems)[:i],
+				(*inventoryItems)[i+1:]...)
+		}
+	}
+
+	c.Set("inventoryItem", inventoryItem)
+	c.Set("inventoryItems", inventoryItems)
+	c.Set("categories", categories)
+	c.Set("vendorItems", vendorItems)
+
+	return c.Render(200, r.HTML("inventory_items/edit"))
 }
 
 // Update changes a InventoryItem in the DB. This function is mapped to

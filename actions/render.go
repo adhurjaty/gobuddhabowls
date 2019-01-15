@@ -2,6 +2,8 @@ package actions
 
 import (
 	"buddhabowls/helpers"
+	"buddhabowls/presentation"
+	"encoding/json"
 	"fmt"
 	"github.com/gobuffalo/buffalo/render"
 	"github.com/gobuffalo/packr"
@@ -47,6 +49,14 @@ func init() {
 					return nil
 				}
 				return lst[0]
+			},
+			"jsonMap": func(m map[string]presentation.ItemAPI) string {
+				b, err := json.Marshal(m)
+				if err != nil {
+					return ""
+				}
+				fmt.Println(string(b))
+				return string(b)
 			},
 		},
 	})

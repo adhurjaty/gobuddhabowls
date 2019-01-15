@@ -83,6 +83,7 @@ $(() => {
     _allItems = parseModelJSON(_datagridContainer.attr('data')) || [];
 
     var input = $('input[name="VendorItemMap"]');
+    debugger;
     _items = JSON.parse(input.val());
     if(_items) {
         _items = Object.keys(_items).map(key => _items[key]);
