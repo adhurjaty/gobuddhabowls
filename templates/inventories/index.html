@@ -17,7 +17,9 @@
     </div>
   </div>
 </div>
-<div id="categorized-items-display" class="row" 
+<div id="categorized-items-display" class="row"
+  edit-path='<%= editInventoryItemPath({inventory_item_id: "{inventory_item_id}"}) %>'
+  delete-path='<%= inventoryItemPath({inventory_item_id: "{inventory_item_id}"}) %>'
   data='<%= inventory.Items.String() %>'></div>
 
 <%= javascriptTag("inventory/inventories_index.js") %>

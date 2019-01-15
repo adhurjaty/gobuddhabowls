@@ -1,5 +1,5 @@
-import { parseModelJSON, getObjectDiff, replaceUrlId, formatMoney, toGoName } from '../helpers/_helpers';
-import { sendAjax, sendUpdate } from '../helpers/index_helpers';
+import { parseModelJSON, replaceUrlId, formatMoney, toGoName } from '../helpers/_helpers';
+import { sendAjax } from '../helpers/index_helpers';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
 import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
 
@@ -131,6 +131,28 @@ var _columns = [
         }
     },
     {
+        name: 'dropdown',
+        get_column: (item) => {
+            var editPath = replaceUrlId(_editPathBase, item.id);
+            var deletePath = replaceUrlId(_deletePathBase, item.id);
+            return `
+            <div class="dropdown show">
+                <button type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    ...
+                </button>
+                <div class="dropdown-menu">
+                    <a href="${editPath}" class="dropdown-item">Edit</a>
+                    <a href="${deletePath}" class="dropdown-item text-danger"
+                        data-method="DELETE" data-confirm="Are you sure?">
+                        Delete
+                    </a>
+                </div>
+            </div>
+            `
+        }
+    },
+    {
         name: 'recipe_unit',
         hidden: true,
         get_column: (item) => {
@@ -153,8 +175,13 @@ var _columns = [
     }
 ];
 
+var _editPathBase = "";
+var _deletePathBase = "";
+
 $(() => {
     var container = $('#categorized-items-display');
+    _editPathBase = container.attr('edit-path');
+    _deletePathBase = container.attr('delete-path');
     createMasterDatagrid(container);
     var bdContainer = $('#category-breakdown');
     createBreakdown(bdContainer)
