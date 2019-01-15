@@ -53,9 +53,9 @@ func (i *InventoryItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 		&validators.FuncValidator{
 			Field:   "",
 			Name:    "Yield",
-			Message: "Yield must be between 0 and 1",
+			Message: "Yield must be greater than 1",
 			Fn: func() bool {
-				return i.Yield > 0 && i.Yield <= 1
+				return i.Yield > 0
 			},
 		},
 		&validators.FuncValidator{
