@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"strings"
 	"time"
 
 	"database/sql"
@@ -49,7 +50,20 @@ func (v *Vendor) Validate(tx *pop.Connection) (*validate.Errors, error) {
 // ValidateCreate gets run every time you call "pop.ValidateAndCreate" method.
 // This method is not required and may be deleted.
 func (v *Vendor) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
-	return validate.NewErrors(), nil
+	verrs := validate.NewErrors()
+	vendors := &Vendors{}
+	if err := tx.All(vendors); err != nil {
+		return verrs, err
+	}
+
+	for _, vendor := range *vendors {
+		if strings.ToLower(v.Name) == strings.ToLower(vendor.Name) {
+			verrs.Add("Name", "Vendor name already exists")
+			break
+		}
+	}
+
+	return verrs, nil
 }
 
 // ValidateUpdate gets run every time you call "pop.ValidateAndUpdate" method.

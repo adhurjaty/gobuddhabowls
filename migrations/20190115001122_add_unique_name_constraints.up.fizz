@@ -1,0 +1,2 @@
+add_index("inventory_items", "name", {"unique": true})
+add_index("vendors", "name", {"unique": true})

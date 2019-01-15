@@ -3,6 +3,7 @@ package models
 import (
 	"encoding/json"
 	"sort"
+	"strings"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -49,13 +50,42 @@ func (i *InventoryItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 		&validators.StringIsPresent{Field: i.CountUnit, Name: "CountUnit"},
 		&validators.StringIsPresent{Field: i.RecipeUnit, Name: "RecipeUnit"},
 		&validators.IntIsPresent{Field: i.Index, Name: "Index"},
+		&validators.FuncValidator{
+			Field:   "",
+			Name:    "Yield",
+			Message: "Yield must be between 0 and 1",
+			Fn: func() bool {
+				return i.Yield > 0 && i.Yield <= 1
+			},
+		},
+		&validators.FuncValidator{
+			Field:   "",
+			Name:    "RecipeUnitConversion",
+			Message: "Recipe Unit Conversion must be greater than 0",
+			Fn: func() bool {
+				return i.RecipeUnitConversion > 0
+			},
+		},
 	), nil
 }
 
 // ValidateCreate gets run every time you call "pop.ValidateAndCreate" method.
 // This method is not required and may be deleted.
 func (i *InventoryItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
-	return validate.NewErrors(), nil
+	verrs := validate.NewErrors()
+	items := &InventoryItems{}
+	if err := tx.All(items); err != nil {
+		return verrs, err
+	}
+
+	for _, item := range *items {
+		if strings.ToLower(i.Name) == strings.ToLower(item.Name) {
+			verrs.Add("Name", "Item name already exists")
+			break
+		}
+	}
+
+	return verrs, nil
 }
 
 // ValidateUpdate gets run every time you call "pop.ValidateAndUpdate" method.

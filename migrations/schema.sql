@@ -387,10 +387,24 @@ ALTER TABLE ONLY public.vendors
 
 
 --
+-- Name: inventory_items_name_idx; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX inventory_items_name_idx ON public.inventory_items USING btree (name);
+
+
+--
 -- Name: users_email_idx; Type: INDEX; Schema: public; Owner: postgres
 --
 
 CREATE UNIQUE INDEX users_email_idx ON public.users USING btree (email);
+
+
+--
+-- Name: vendors_name_idx; Type: INDEX; Schema: public; Owner: postgres
+--
+
+CREATE UNIQUE INDEX vendors_name_idx ON public.vendors USING btree (name);
 
 
 --

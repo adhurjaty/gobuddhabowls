@@ -1,0 +1,2 @@
+drop_index("inventory_items", "inventory_items_name_idx")
+drop_index("vendors", "vendors_name_idx")

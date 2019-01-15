@@ -80,12 +80,11 @@ var _orderingTable = null;
 
 $(() => {
     _datagridContainer = $('#vendor-datagrid');
-
     _allItems = parseModelJSON(_datagridContainer.attr('data')) || [];
 
     var input = $('input[name="VendorItemMap"]');
-    _items = JSON.parse(input.val()) || [];
-    if(_items.length > 0) {
+    _items = JSON.parse(input.val());
+    if(_items) {
         _items = Object.keys(_items).map(key => _items[key]);
         _items.forEach(item => {
             item.name = item.selected_vendor;
@@ -93,6 +92,7 @@ $(() => {
         });
         _datagridContainer.show();
     } else {
+        _items = [];
         _datagridContainer.hide();
     }
 
