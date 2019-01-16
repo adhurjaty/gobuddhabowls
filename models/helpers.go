@@ -1,6 +1,7 @@
 package models
 
 import (
+	"buddhabowls/helpers"
 	"database/sql"
 	"github.com/gobuffalo/pop"
 )
@@ -56,6 +57,10 @@ func GetYears(tx *pop.Connection) ([]int, error) {
 		if val > 2000 {
 			years = append(years, val)
 		}
+	}
+	thisYear := helpers.Today().Year()
+	if len(years) > 0 && years[len(years)-1] < thisYear {
+		years = append(years, thisYear)
 	}
 
 	return years, nil
