@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/validate"
 	"github.com/pkg/errors"
 )
 
@@ -46,16 +47,28 @@ func (v InventoryItemCategoriesResource) Update(c buffalo.Context) error {
 	// Allocate an empty InventoryItemCategory
 	category := &models.InventoryItemCategory{}
 
+	newItem := false
+
 	if err := tx.Find(category, c.Param("inventory_item_category_id")); err != nil {
-		return c.Error(404, err)
+		newItem = true
 	}
 
 	// Bind InventoryItemCategory to the html form elements
-	if err := c.Bind(category); err != nil {
+	err := c.Bind(category)
+	if err != nil {
 		return errors.WithStack(err)
 	}
 
-	verrs, err := tx.ValidateAndUpdate(category)
+	fmt.Println("!!!!!!!!!!!!!!!!!!!")
+	fmt.Println(category)
+	fmt.Println(newItem)
+
+	var verrs *validate.Errors
+	if newItem {
+		verrs, err = tx.ValidateAndCreate(category)
+	} else {
+		verrs, err = tx.ValidateAndUpdate(category)
+	}
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -94,5 +107,30 @@ func (v InventoryItemCategoriesResource) Edit(c buffalo.Context) error {
 }
 
 func (v InventoryItemCategoriesResource) Destroy(c buffalo.Context) error {
-	return c.Render(404, r.String("Not implemented"))
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	// Allocate an empty InventoryItemCategory
+	category := &models.InventoryItemCategory{}
+
+	err := tx.Find(category, c.Param("inventory_item_category_id"))
+
+	if err == nil {
+		err = tx.Destroy(category)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	categories, err := presenter.GetAllCategories()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("inventoryItemCategories", categories)
+	return c.Render(200, r.HTML("inventory_item_categories/index"))
 }

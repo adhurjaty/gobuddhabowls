@@ -7,7 +7,8 @@ $(() => {
     setupEditName();
     setupColorPicker();
     setupAddButton();
-    setupDeleteButton();
+    // delete would destroy the data as implemented
+    // setupDeleteButton();
     setupSubmitButton();
 });
 
@@ -75,10 +76,10 @@ function setupAddButton() {
 function makeLi() {
     // var input = $('<input type="text" />');
     var li = $(`
-        <li itemid="<%= category.ID %>"
+        <li itemid="00000000-0000-0000-0000-000000000000"
             class="list-group-item d-flex justify-content-between 
             align-items-center">
-            <span>New Category</span>
+            <span>NewCategory</span>
             <input name="color" type="text" value="" />
                     
             <span class="drag-handle" style="font-size: 20px;">☰</span>
@@ -118,7 +119,7 @@ function setupDeleteButton() {
 
 function makeDeleteLink(id) {
     var url = $('#delete-category-button').attr('data-link');
-    return $(`<a href=${replaceUrlId(url, id)}" data-method="DELETE"
+    return $(`<a href="${replaceUrlId(url, id)}" data-method="DELETE"
         data-confirm="Are you sure?">
             <span class="fa fa-minus-circle"
                 style="font-size: 20px; color: rgb(200, 0, 0);"></span>
@@ -136,7 +137,7 @@ function saveInvItemsCategories() {
         var data = {};
         data['id'] = $(el).attr('itemid');
         data['background'] = $(el).find('input[name="color"]').val();
-        data['name'] = $(el).find('span:first-child').first().html();
+        data['name'] = $(el).find('span:first-child').first().html().trim();
         data['index'] = i;
 
         sendUpdate($form, data, sendAjax);
