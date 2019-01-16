@@ -20,5 +20,6 @@ $.fn.currencyInput = function() {
 
 $(() => {
     $('input.currency').attr('type', 'number');
+    $('input.currency').attr('step', .01);
     $('input.currency').currencyInput();
 });
