@@ -155,22 +155,31 @@ func (p *Presenter) GetFullInventoryItem(id string) (*ItemAPI, error) {
 	return item, nil
 }
 
-func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error) {
-	invItem, err := ConvertToModelInventoryItem(item)
-	if err != nil {
-		return nil, err
-	}
-
-	verrs, err := logic.UpdateInventoryItem(invItem, p.tx)
+func (p *Presenter) UpdateFullInventoryItem(item *ItemAPI) (*validate.Errors, error) {
+	verrs, err := p.updateBaseInventoryItem(item)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
 
-	if item.VendorItemMap == nil {
-		return p.updateVendorItem(item)
+	return p.updateVendorItems(item)
+}
+
+func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error) {
+	verrs, err := p.updateBaseInventoryItem(item)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
 	}
 
-	return p.updateVendorItems(item)
+	return p.updateVendorItem(item)
+}
+
+func (p *Presenter) updateBaseInventoryItem(item *ItemAPI) (*validate.Errors, error) {
+	invItem, err := ConvertToModelInventoryItem(item)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	return logic.UpdateInventoryItem(invItem, p.tx)
 }
 
 func (p *Presenter) InsertInventoryItem(item *ItemAPI) (*validate.Errors, error) {

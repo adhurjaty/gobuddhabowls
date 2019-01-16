@@ -62,8 +62,13 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 		app.GET("/routes", RoutesHandler)
+
+		app.PUT("/inventory_items/{inventory_item_id}/inline", UpdateInventoryItem)
 		app.Resource("/inventory_items", InventoryItemsResource{})
+
+		app.GET("/inventories/history", InventoryHistory)
 		app.Resource("/inventories", InventoriesResource{})
+
 		app.Resource("/vendors", VendorsResource{})
 		app.Resource("/count_inventory_items", CountInventoryItemsResource{})
 

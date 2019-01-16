@@ -57,7 +57,7 @@ func (v InventoriesResource) List(c buffalo.Context) error {
 
 // History gets all Inventories. This function is mapped to the path
 // GET /inventories/history
-func (v InventoriesResource) History(c buffalo.Context) error {
+func InventoryHistory(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {

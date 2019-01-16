@@ -4,7 +4,7 @@
 
 <%= partial("inventories/master_toggle.html", {page: "master"}) %>
 
-<%= form({action: inventoryItemPath({inventory_item_id: "{item_id}"}), 
+<%= form({action: inventoryItemInlinePath({inventory_item_id: "{item_id}"}), 
   method: "PUT", id: "inventory-item-form", data-remote: "true",
   style: "display: none;"}) { %> <% } %>
 

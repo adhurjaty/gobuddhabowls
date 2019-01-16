@@ -2,7 +2,7 @@
   <h1 class="text-center">Inventory</h1>
 </div>
 
-<%= partial("inventory/master_toggle.html", {page: "history"}) %>
+<%= partial("inventories/master_toggle.html", {page: "history"}) %>
 
 <div id="period-selector-component" onchange-href="<%= inventoriesPath() %>">
   <%= partial("partials/period_selector.html", {changePath: inventoriesPath()}) %>

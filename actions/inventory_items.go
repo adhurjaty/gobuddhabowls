@@ -83,25 +83,12 @@ func (v InventoryItemsResource) New(c buffalo.Context) error {
 		RecipeUnitConversion: 1,
 	}
 	presenter := presentation.NewPresenter(tx)
-	vendorItems, err := presenter.GetBlankVendorItems()
-	if err != nil {
-		return errors.WithStack(err)
-	}
-
-	categories, err := presenter.GetAllCategories()
-	if err != nil {
-		return errors.WithStack(err)
-	}
-
-	inventoryItems, err := presenter.GetInventoryItems()
+	err := setNewInvItemsViewVars(c, presenter)
 	if err != nil {
 		return errors.WithStack(err)
 	}
 
 	c.Set("inventoryItem", inventoryItem)
-	c.Set("inventoryItems", inventoryItems)
-	c.Set("vendorItems", vendorItems)
-	c.Set("categories", categories)
 	return c.Render(200, r.HTML("inventory_items/new"))
 }
 
@@ -134,24 +121,11 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
 
-		vendorItems, err := presenter.GetBlankVendorItems()
+		err = setNewInvItemsViewVars(c, presenter)
 		if err != nil {
 			return errors.WithStack(err)
 		}
-		categories, err := presenter.GetAllCategories()
-		if err != nil {
-			return errors.WithStack(err)
-		}
-		inventoryItems, err := presenter.GetInventoryItems()
-		if err != nil {
-			return errors.WithStack(err)
-		}
-
-		c.Set("vendorItems", vendorItems)
-		c.Set("categories", categories)
 		c.Set("inventoryItem", inventoryItem)
-		c.Set("inventoryItems", inventoryItems)
-		fmt.Println(inventoryItem)
 
 		// Render again the new.html template that the user can
 		// correct the input.
@@ -187,6 +161,27 @@ func bindInventoryItem(c buffalo.Context, inventoryItem *presentation.ItemAPI) e
 	return nil
 }
 
+func setNewInvItemsViewVars(c buffalo.Context, presenter *presentation.Presenter) error {
+	vendorItems, err := presenter.GetBlankVendorItems()
+	if err != nil {
+		return err
+	}
+	categories, err := presenter.GetAllCategories()
+	if err != nil {
+		return err
+	}
+	inventoryItems, err := presenter.GetInventoryItems()
+	if err != nil {
+		return err
+	}
+
+	c.Set("vendorItems", vendorItems)
+	c.Set("categories", categories)
+	c.Set("inventoryItems", inventoryItems)
+
+	return nil
+}
+
 // Edit renders a edit form for a InventoryItem. This function is
 // mapped to the path GET /inventory_items/{inventory_item_id}/edit
 func (v InventoryItemsResource) Edit(c buffalo.Context) error {
@@ -201,6 +196,58 @@ func (v InventoryItemsResource) Edit(c buffalo.Context) error {
 	if err != nil {
 		return c.Error(404, err)
 	}
+
+	if err = setEditInvItemsViewVars(c, presenter, inventoryItem); err != nil {
+		return errors.WithStack(err)
+	}
+
+	return c.Render(200, r.HTML("inventory_items/edit"))
+}
+
+// Update changes a InventoryItem in the DB. This function is mapped to
+// the path PUT /inventory_items/{inventory_item_id}
+func (v InventoryItemsResource) Update(c buffalo.Context) error {
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	item, err := presenter.GetInventoryItem(c.Param("inventory_item_id"))
+	if err != nil {
+		return c.Error(404, err)
+	}
+
+	// Bind InventoryItem to the html form elements
+	if err := bindInventoryItem(c, item); err != nil {
+		return errors.WithStack(err)
+	}
+
+	verrs, err := presenter.UpdateFullInventoryItem(item)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	if verrs.HasAny() {
+		// Make the errors available inside the html template
+		c.Set("errors", verrs)
+
+		if err = setEditInvItemsViewVars(c, presenter, item); err != nil {
+			return errors.WithStack(err)
+		}
+
+		// TODO: send error to page
+		return c.Render(422, r.HTML("/inventories/edit"))
+	}
+
+	// and redirect to the inventory_items index page
+	return c.Redirect(303, "/inventories")
+}
+
+func setEditInvItemsViewVars(c buffalo.Context, presenter *presentation.Presenter,
+	inventoryItem *presentation.ItemAPI) error {
+
 	vendorItems, err := presenter.GetBlankVendorItems()
 	if err != nil {
 		return errors.WithStack(err)
@@ -229,17 +276,15 @@ func (v InventoryItemsResource) Edit(c buffalo.Context) error {
 		}
 	}
 
-	c.Set("inventoryItem", inventoryItem)
 	c.Set("inventoryItems", inventoryItems)
 	c.Set("categories", categories)
 	c.Set("vendorItems", vendorItems)
+	c.Set("inventoryItem", inventoryItem)
 
-	return c.Render(200, r.HTML("inventory_items/edit"))
+	return nil
 }
 
-// Update changes a InventoryItem in the DB. This function is mapped to
-// the path PUT /inventory_items/{inventory_item_id}
-func (v InventoryItemsResource) Update(c buffalo.Context) error {
+func UpdateInventoryItem(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
@@ -253,7 +298,7 @@ func (v InventoryItemsResource) Update(c buffalo.Context) error {
 	}
 
 	// Bind InventoryItem to the html form elements
-	if err := bindInventoryItem(c, item); err != nil {
+	if err := c.Bind(item); err != nil {
 		return errors.WithStack(err)
 	}
 
