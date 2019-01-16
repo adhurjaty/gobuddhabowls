@@ -158,3 +158,7 @@ func DeleteVendor(vendor *models.Vendor, tx *pop.Connection) error {
 	}
 	return tx.Destroy(vendor)
 }
+
+func DestroyVendorItem(item *models.VendorItem, tx *pop.Connection) error {
+	return tx.Destroy(item)
+}

@@ -328,15 +328,13 @@ func (v InventoryItemsResource) Destroy(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty InventoryItem
-	inventoryItem := &models.InventoryItem{}
-
-	// To find the InventoryItem the parameter inventory_item_id is used.
-	if err := tx.Find(inventoryItem, c.Param("inventory_item_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	inventoryItem, err := presenter.GetFullInventoryItem(c.Param("inventory_item_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
-	if err := tx.Destroy(inventoryItem); err != nil {
+	if err = presenter.DestroyOrDeactivateInventoryItem(inventoryItem); err != nil {
 		return errors.WithStack(err)
 	}
 
@@ -344,5 +342,5 @@ func (v InventoryItemsResource) Destroy(c buffalo.Context) error {
 	c.Flash().Add("success", "InventoryItem was destroyed successfully")
 
 	// Redirect to the inventory_items index page
-	return c.Render(200, r.Auto(c, inventoryItem))
+	return c.Redirect(303, "/inventories")
 }

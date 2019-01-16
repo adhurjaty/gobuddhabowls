@@ -9,7 +9,8 @@ import (
 func GetInventoryItems(tx *pop.Connection) (*models.InventoryItems, error) {
 	factory := models.ModelFactory{}
 	items := &models.InventoryItems{}
-	err := factory.CreateModelSlice(items, tx.Eager().Q())
+	q := tx.Eager().Where("is_active = true")
+	err := factory.CreateModelSlice(items, q)
 
 	if err != nil {
 		return nil, err
@@ -29,6 +30,16 @@ func GetInventoryItem(id string, tx *pop.Connection) (*models.InventoryItem, err
 	}
 
 	return item, nil
+}
+
+func HistoricalItemExists(inventoryItemID string, tx *pop.Connection) bool {
+	orderItem := &models.OrderItem{}
+	countItem := &models.CountInventoryItem{}
+
+	q := tx.Where("inventory_item_id = ?", inventoryItemID)
+
+	return q.First(orderItem) == nil ||
+		q.First(countItem) == nil
 }
 
 func UpdateInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
@@ -63,4 +74,14 @@ func updateIndices(index int, tx *pop.Connection) (*validate.Errors, error) {
 	}
 
 	return validate.NewErrors(), nil
+}
+
+func DeactivateInventoryItem(item *models.InventoryItem, tx *pop.Connection) error {
+	item.IsActive = false
+	_, err := tx.ValidateAndUpdate(item)
+	return err
+}
+
+func DestroyInventoryItem(item *models.InventoryItem, tx *pop.Connection) error {
+	return tx.Destroy(item)
 }

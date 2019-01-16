@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/logic"
 	"fmt"
+	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 	"time"
 )
@@ -156,7 +157,7 @@ func (p *Presenter) GetFullInventoryItem(id string) (*ItemAPI, error) {
 }
 
 func (p *Presenter) UpdateFullInventoryItem(item *ItemAPI) (*validate.Errors, error) {
-	verrs, err := p.updateBaseInventoryItem(item)
+	verrs, err := p.UpdateBaseInventoryItem(item)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
@@ -165,7 +166,7 @@ func (p *Presenter) UpdateFullInventoryItem(item *ItemAPI) (*validate.Errors, er
 }
 
 func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error) {
-	verrs, err := p.updateBaseInventoryItem(item)
+	verrs, err := p.UpdateBaseInventoryItem(item)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
@@ -173,7 +174,7 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 	return p.updateVendorItem(item)
 }
 
-func (p *Presenter) updateBaseInventoryItem(item *ItemAPI) (*validate.Errors, error) {
+func (p *Presenter) UpdateBaseInventoryItem(item *ItemAPI) (*validate.Errors, error) {
 	invItem, err := ConvertToModelInventoryItem(item)
 	if err != nil {
 		return validate.NewErrors(), err
@@ -214,4 +215,36 @@ func (p *Presenter) InsertInventoryItem(item *ItemAPI) (*validate.Errors, error)
 	}
 
 	return verrs, nil
+}
+
+func (p *Presenter) DestroyOrDeactivateInventoryItem(item *ItemAPI) error {
+	inventoryItem, err := ConvertToModelInventoryItem(item)
+	if err != nil {
+		return err
+	}
+	if logic.HistoricalItemExists(item.ID, p.tx) {
+		err = logic.DeactivateInventoryItem(inventoryItem, p.tx)
+	} else {
+		err = logic.DestroyInventoryItem(inventoryItem, p.tx)
+	}
+	if err != nil {
+		return err
+	}
+
+	return p.destroyVendorMap(item.VendorItemMap)
+}
+
+func (p *Presenter) destroyVendorMap(vendorMap map[string]ItemAPI) error {
+	for _, item := range vendorMap {
+		vendorItem, err := ConvertToModelVendorItem(item, uuid.UUID{})
+		if err != nil {
+			return err
+		}
+		err = logic.DestroyVendorItem(vendorItem, p.tx)
+		if err != nil {
+			return err
+		}
+	}
+
+	return nil
 }
