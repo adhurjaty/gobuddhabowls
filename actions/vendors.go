@@ -201,6 +201,36 @@ func (v VendorsResource) Update(c buffalo.Context) error {
 	return c.Redirect(303, "/vendors")
 }
 
+func UpdateVendorInline(c buffalo.Context) error {
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	vendor, err := presenter.GetVendor(c.Param("vendor_id"))
+	if err != nil {
+		return c.Error(404, err)
+	}
+
+	// Bind Vendor to the html form elements
+	if err := c.Bind(vendor); err != nil {
+		return errors.WithStack(err)
+	}
+
+	verrs, err := presenter.UpdateVendorNoItems(vendor)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	if verrs.HasAny() {
+		return c.Render(422, r.String("failure"))
+	}
+
+	return c.Render(200, r.String("success"))
+}
+
 // Destroy deletes a Vendor from the DB. This function is mapped
 // to the path DELETE /vendors/{vendor_id}
 func (v VendorsResource) Destroy(c buffalo.Context) error {

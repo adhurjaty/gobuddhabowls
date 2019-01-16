@@ -133,6 +133,10 @@ func UpdateVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, 
 	return verrs, nil
 }
 
+func UpdateVendorNoItems(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndUpdate(vendor)
+}
+
 func UpdateVendorItems(items *models.VendorItems, tx *pop.Connection) (*validate.Errors, error) {
 	for _, item := range *items {
 		verrs, err := UpdateVendorItem(&item, tx)

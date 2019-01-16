@@ -45,6 +45,15 @@ func (p *Presenter) UpdateVendor(vendAPI *VendorAPI) (*validate.Errors, error) {
 	return logic.UpdateVendor(vendor, p.tx)
 }
 
+func (p *Presenter) UpdateVendorNoItems(vendorAPI *VendorAPI) (*validate.Errors, error) {
+	vendor, err := ConvertToModelVendor(vendorAPI)
+	if err != nil {
+		return nil, err
+	}
+
+	return logic.UpdateVendorNoItems(vendor, p.tx)
+}
+
 func (p *Presenter) updateVendorItem(item *ItemAPI) (*validate.Errors, error) {
 	vendorItem, err := p.getVendorItem(item)
 	if err != nil {

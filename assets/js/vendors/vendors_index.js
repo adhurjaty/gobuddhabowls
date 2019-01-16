@@ -1,6 +1,6 @@
 import { formatMoney, replaceUrlId, parseModelJSON } from '../helpers/_helpers';
 import { DataGrid } from '../datagrid/_datagrid';
-import { sendUpdate } from '../helpers/index_helpers';
+import { sendUpdate, sendAjax } from '../helpers/index_helpers';
 import { CollapsibleDatagrid } from '../datagrid/_collapsible_datagrid';
 
 $(() => {
@@ -94,7 +94,12 @@ $(() => {
 
 // TODO: repeated code from purchase_orders_datagrid.js - refactor
 function sendDatagridUpdate(updateObj) {
-    sendUpdate($('#update-vendor-form'), updateObj);
+    delete updateObj["Items"];
+    var form = $('#update-vendor-form');
+    debugger;
+    sendUpdate($('#update-vendor-form'), updateObj, ((form) => {
+        return () => sendAjax(form)
+    })(form));
 }
 
 function getHiddenRow(vendor) {
