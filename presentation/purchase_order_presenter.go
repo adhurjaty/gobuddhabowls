@@ -34,6 +34,12 @@ func (p *Presenter) InsertPurchaseOrder(poAPI *PurchaseOrderAPI) (*validate.Erro
 	if err != nil {
 		return nil, err
 	}
+
+	verrs, err := p.updateVendorItemsFromPO(poAPI)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+
 	return logic.InsertPurchaseOrder(purchaseOrder, p.tx)
 }
 
@@ -42,7 +48,40 @@ func (p *Presenter) UpdatePurchaseOrder(poAPI *PurchaseOrderAPI) (*validate.Erro
 	if err != nil {
 		return nil, err
 	}
+
+	verrs, err := p.updateVendorItemsFromPO(poAPI)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+
 	return logic.UpdatePurchaseOrder(purchaseOrder, p.tx)
+}
+
+func (p *Presenter) updateVendorItemsFromPO(po *PurchaseOrderAPI) (*validate.Errors, error) {
+	verrs := validate.NewErrors()
+	for _, item := range po.Items {
+		latestOrder, err := logic.GetLatestOrder(item.InventoryItemID,
+			po.Vendor.ID, p.tx)
+		if err != nil {
+			return verrs, err
+		}
+
+		if po.OrderDate.Time.Unix() > latestOrder.OrderDate.Time.Unix() {
+			vendorItem, err := logic.GetVendorItemByInvItem(item.InventoryItemID,
+				po.Vendor.ID, p.tx)
+			if err != nil {
+				return verrs, err
+			}
+
+			vendorItem.Price = item.Price
+			verrs, err = logic.UpdateVendorItem(vendorItem, p.tx)
+			if verrs.HasAny() || err != nil {
+				return verrs, err
+			}
+		}
+	}
+
+	return verrs, nil
 }
 
 func (p *Presenter) DestroyPurchaseOrder(poAPI *PurchaseOrderAPI) error {
@@ -50,5 +89,35 @@ func (p *Presenter) DestroyPurchaseOrder(poAPI *PurchaseOrderAPI) error {
 	if err != nil {
 		return err
 	}
-	return logic.DeletePurchaseOrder(purchaseOrder, p.tx)
+
+	err = logic.DeletePurchaseOrder(purchaseOrder, p.tx)
+	if err != nil {
+		return err
+	}
+
+	return p.restoreVendorPrevPrices(poAPI)
+}
+
+func (p *Presenter) restoreVendorPrevPrices(po *PurchaseOrderAPI) error {
+	for _, item := range po.Items {
+		latestOrderItem, err := logic.GetLatestOrderItem(item.InventoryItemID,
+			po.Vendor.ID, p.tx)
+		if err != nil {
+			return err
+		}
+
+		vendorItem, err := logic.GetVendorItemByInvItem(item.InventoryItemID,
+			po.Vendor.ID, p.tx)
+		if err != nil {
+			return err
+		}
+
+		vendorItem.Price = latestOrderItem.Price
+		_, err = logic.UpdateVendorItem(vendorItem, p.tx)
+		if err != nil {
+			return err
+		}
+	}
+
+	return nil
 }
