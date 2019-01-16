@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
+	"strings"
 	"time"
 )
 
@@ -108,10 +109,8 @@ func (p *Presenter) populateSelectedVendors(items *ItemsAPI) {
 	for i := 0; i < len(*items); i++ {
 		item := &(*items)[i]
 		vendor, err := logic.GetLatestVendor(item.InventoryItemID, p.tx)
-		fmt.Println(vendor)
 		if err != nil {
 			var vendorName string
-			fmt.Println(item.VendorItemMap)
 			for k := range item.VendorItemMap {
 				vendorName = k
 				break
@@ -190,6 +189,10 @@ func (p *Presenter) InsertInventoryItem(item *ItemAPI) (*validate.Errors, error)
 	}
 
 	verrs, err := logic.InsertInventoryItem(invItem, p.tx)
+	if verrs.HasAny() && strings.Contains(verrs.Error(), "already exists") {
+		verrs = validate.NewErrors()
+		invItem, err = logic.ResurrectInventoryItem(invItem.Name, p.tx)
+	}
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}

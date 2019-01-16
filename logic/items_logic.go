@@ -85,3 +85,14 @@ func DeactivateInventoryItem(item *models.InventoryItem, tx *pop.Connection) err
 func DestroyInventoryItem(item *models.InventoryItem, tx *pop.Connection) error {
 	return tx.Destroy(item)
 }
+
+func ResurrectInventoryItem(name string, tx *pop.Connection) (*models.InventoryItem, error) {
+	item := &models.InventoryItem{}
+	err := tx.Where("name = ?", name).First(item)
+	if err != nil {
+		return nil, err
+	}
+	item.IsActive = true
+	_, err = tx.ValidateAndUpdate(item)
+	return item, err
+}
