@@ -3,6 +3,7 @@ import 'spectrum-colorpicker';
 
 $(() => {
     setupSortable();
+    setupEditName();
     setupColorPicker();
     setupSubmitButton();
 });
@@ -24,6 +25,28 @@ function setupSortable() {
             handle: '.drag-handle'
         });
     }
+}
+
+function setupEditName() {
+    var nameSpans = $('#categories-movable').find('li span:first-child');
+    nameSpans.on('click', (e) => {
+        var span = $(e.target);
+        var text = span.html().trim();
+        var input = $(`<input type="text" value="${text}"></input>`);
+        var li = span.parent();
+        li.prepend(input);
+        span.hide();
+        
+        input.on('blur', ((span) => {
+            return (e) => {
+                var el = $(e.target)
+                var text = el.val();
+                el.remove();
+                span.html(text);
+                span.show();
+            }
+        })(span));
+    });
 }
 
 function setupColorPicker() {
@@ -51,6 +74,7 @@ function saveInvItemsCategories() {
         var data = {};
         data['id'] = $(el).attr('itemid');
         data['background'] = $(el).find('input[name="color"]').val();
+        data['name'] = $(el).find('span:first-child').first().html();
         data['index'] = i;
 
         sendUpdate($form, data, sendAjax);

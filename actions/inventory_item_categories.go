@@ -30,8 +30,8 @@ func (v InventoryItemCategoriesResource) List(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	c.Set("categories", categories)
-	return c.Render(200, r.HTML("categories/index"))
+	c.Set("inventoryItemCategories", categories)
+	return c.Render(200, r.HTML("inventory_item_categories/index"))
 }
 
 // Update updates the selected category
@@ -61,12 +61,11 @@ func (v InventoryItemCategoriesResource) Update(c buffalo.Context) error {
 	}
 
 	if verrs.HasAny() {
-		// Make the errors available inside the html template
-		c.Set("errors", verrs)
 
 		// Render again the edit.html template that the user can
 		// correct the input.
-		return c.Error(500, errors.New(fmt.Sprintf("Validation errors on categories: %v", verrs)))
+		return c.Error(422, errors.New(
+			fmt.Sprintf("Validation errors on categories: %v", verrs)))
 	}
 
 	// If there are no errors set a success message
