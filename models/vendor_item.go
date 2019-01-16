@@ -123,15 +123,11 @@ func (v *VendorItems) ToOrderItems() *OrderItems {
 	return &items
 }
 
-func LoadVendorItem(tx *pop.Connection, id string) (*VendorItem, error) {
-	vendorItem := VendorItem{}
-	if err := tx.Find(&vendorItem, id); err != nil {
-		return nil, err
+func LoadVendorItem(vendorItem *VendorItem, tx *pop.Connection, id string) error {
+	if err := tx.Find(vendorItem, id); err != nil {
+		return err
 	}
 
-	if err := tx.Eager().Find(&vendorItem.InventoryItem, vendorItem.InventoryItemID); err != nil {
-		return nil, err
-	}
-
-	return &vendorItem, nil
+	return tx.Eager().Find(&vendorItem.InventoryItem,
+		vendorItem.InventoryItemID)
 }

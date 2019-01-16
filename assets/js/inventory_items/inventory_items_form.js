@@ -83,10 +83,15 @@ $(() => {
     _allItems = parseModelJSON(_datagridContainer.attr('data')) || [];
 
     var input = $('input[name="VendorItemMap"]');
-    debugger;
     _items = JSON.parse(input.val());
     if(_items) {
-        _items = Object.keys(_items).map(key => _items[key]);
+        _items = Object.keys(_items).map(key => {
+            var val = _items[key];
+            replaceAllItemSelectedVendor(key, val.selected_vendor);
+
+            val.selected_vendor = key;
+            return val;
+        });
         _items.forEach(item => {
             item.name = item.selected_vendor;
             item.id = item.selected_vendor;
@@ -104,6 +109,13 @@ $(() => {
     setOnChangeCategoryOrName();
     setOnSubmit();
 });
+
+function replaceAllItemSelectedVendor(name, id) {
+    var idx = _allItems.findIndex(x => x.selected_vendor == id);
+    if(idx > -1) {
+        _allItems[idx].selected_vendor = name;
+    }
+}
 
 function initDatagrid() {
     _datagrid = new DataGrid(_items, _columnInfo, datagridUpdated);
@@ -142,7 +154,8 @@ function removeItem() {
     }
 
     var selectedItem = _datagrid.getItem(selectedRow);
-    _items = _items.filter(x => x.selected_vendor != selectedItem.selected_vendor);
+    _items = _items.filter(x => x.selected_vendor 
+        != selectedItem.selected_vendor);
     initDatagrid();
     _modal.addItem(selectedItem);
     if(_items.length == 0) {
@@ -153,7 +166,8 @@ function removeItem() {
 
 function initModal() {
     var remainingItems = _allItems.filter(x => 
-        _items.findIndex(item => x.selected_vendor == item.selected_vendor));
+        _items.findIndex(item => x.selected_vendor 
+            == item.selected_vendor) == -1);
     remainingItems.forEach(x => {
         x.name = x.selected_vendor;
         x.id = x.selected_vendor;
@@ -227,7 +241,8 @@ function setOnSubmit() {
 
         var vendorMap = _datagrid.rows.reduce((obj, row) => {
             var vendor = row.item.selected_vendor;
-            var idx = _allItems.findIndex(x => x.selected_vendor == vendor);
+            var idx = _allItems.findIndex(x => x.selected_vendor 
+                == vendor);
             if(idx == -1) {
                 return obj;
             }
@@ -240,6 +255,7 @@ function setOnSubmit() {
 
         var input = $('input[name="VendorItemMap"]');
         input.val(JSON.stringify(vendorMap));
+        debugger;
 
         var indexInput = $('input[name="Index"]');
         var index = findItemIndex();

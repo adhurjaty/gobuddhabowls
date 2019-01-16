@@ -112,19 +112,9 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 	inventoryItem := &presentation.ItemAPI{}
 
 	// Bind inventoryItem to the html form elements
-	if err := c.Bind(inventoryItem); err != nil {
+	if err := bindInventoryItem(c, inventoryItem); err != nil {
 		return errors.WithStack(err)
 	}
-
-	catID := c.Param("CategoryID")
-	inventoryItem.Category.ID = catID
-
-	vendorItemsMap := make(map[string]presentation.ItemAPI)
-	vimStr := c.Param("VendorItemMap")
-	if err := json.Unmarshal([]byte(vimStr), &vendorItemsMap); err != nil {
-		return errors.WithStack(err)
-	}
-	inventoryItem.VendorItemMap = vendorItemsMap
 
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
@@ -173,6 +163,28 @@ func (v InventoryItemsResource) Create(c buffalo.Context) error {
 
 	// and redirect to the inventory_items index page
 	return c.Redirect(303, "/inventories")
+}
+
+func bindInventoryItem(c buffalo.Context, inventoryItem *presentation.ItemAPI) error {
+	if err := c.Bind(inventoryItem); err != nil {
+		return err
+	}
+
+	catID := c.Param("CategoryID")
+	if catID != "" {
+		inventoryItem.Category.ID = catID
+	}
+
+	vimStr := c.Param("VendorItemMap")
+	if vimStr != "" {
+		vendorItemsMap := make(map[string]presentation.ItemAPI)
+		if err := json.Unmarshal([]byte(vimStr), &vendorItemsMap); err != nil {
+			return err
+		}
+		inventoryItem.VendorItemMap = vendorItemsMap
+	}
+
+	return nil
 }
 
 // Edit renders a edit form for a InventoryItem. This function is
@@ -241,7 +253,7 @@ func (v InventoryItemsResource) Update(c buffalo.Context) error {
 	}
 
 	// Bind InventoryItem to the html form elements
-	if err := c.Bind(item); err != nil {
+	if err := bindInventoryItem(c, item); err != nil {
 		return errors.WithStack(err)
 	}
 

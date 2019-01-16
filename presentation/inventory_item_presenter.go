@@ -137,7 +137,7 @@ func (p *Presenter) GetInventoryItem(id string) (*ItemAPI, error) {
 		return nil, err
 	}
 
-	apiItem := NewItemAPI(item)
+	apiItem := NewItemAPI(*item)
 	return &apiItem, nil
 }
 
@@ -161,20 +161,16 @@ func (p *Presenter) UpdateInventoryItem(item *ItemAPI) (*validate.Errors, error)
 		return nil, err
 	}
 
-	vendorItem, err := p.getVendorItem(item)
-	if err != nil {
-		return nil, err
-	}
-
-	selectedItem, _ := item.VendorItemMap[item.SelectedVendor]
-	(&selectedItem).SelectedVendor = vendorItem.VendorID.String()
-
 	verrs, err := logic.UpdateInventoryItem(invItem, p.tx)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
 
-	return logic.UpdateVendorItem(vendorItem, p.tx)
+	if item.VendorItemMap == nil {
+		return p.updateVendorItem(item)
+	}
+
+	return p.updateVendorItems(item)
 }
 
 func (p *Presenter) InsertInventoryItem(item *ItemAPI) (*validate.Errors, error) {

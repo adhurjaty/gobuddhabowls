@@ -55,7 +55,6 @@ func init() {
 				if err != nil {
 					return ""
 				}
-				fmt.Println(string(b))
 				return string(b)
 			},
 		},

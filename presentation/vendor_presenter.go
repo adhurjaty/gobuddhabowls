@@ -45,6 +45,55 @@ func (p *Presenter) UpdateVendor(vendAPI *VendorAPI) (*validate.Errors, error) {
 	return logic.UpdateVendor(vendor, p.tx)
 }
 
+func (p *Presenter) updateVendorItem(item *ItemAPI) (*validate.Errors, error) {
+	vendorItem, err := p.getVendorItem(item)
+	if err != nil {
+		return nil, err
+	}
+
+	return logic.UpdateVendorItem(vendorItem, p.tx)
+}
+
+func (p *Presenter) updateVendorItems(item *ItemAPI) (*validate.Errors, error) {
+	for vendorName, vItem := range item.VendorItemMap {
+		vItem.InventoryItemID = item.ID
+		vItem.SelectedVendor = vendorName
+
+		dbVendorItem, err := logic.GetVendorItem(vItem.ID, p.tx)
+		if err != nil {
+			verrs, err := p.insertVendorItem(&vItem)
+			if verrs.HasAny() || err != nil {
+				return verrs, err
+			}
+		}
+
+		vendorItem, err := ConvertToModelVendorItem(vItem, dbVendorItem.VendorID)
+
+		verrs, err := logic.UpdateVendorItem(vendorItem, p.tx)
+		if err != nil {
+		}
+		if verrs.HasAny() || err != nil {
+			return verrs, err
+		}
+	}
+
+	return validate.NewErrors(), nil
+}
+
+func (p *Presenter) insertVendorItem(item *ItemAPI) (*validate.Errors, error) {
+	vendor, err := logic.GetVendorByName(item.SelectedVendor, p.tx)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	vendorItem, err := ConvertToModelVendorItem(*item, vendor.ID)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	return logic.InsertVendorItem(vendorItem, p.tx)
+}
+
 func (p *Presenter) getVendorItem(item *ItemAPI) (*models.VendorItem, error) {
 	vendorID, err := p.getVendorID(item.SelectedVendor)
 	if err != nil {

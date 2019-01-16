@@ -51,6 +51,13 @@ func GetLatestVendor(invItemId string, tx *pop.Connection) (*models.Vendor, erro
 	return vendor, err
 }
 
+func GetVendorItem(id string, tx *pop.Connection) (*models.VendorItem, error) {
+	factory := models.ModelFactory{}
+	vendorItem := &models.VendorItem{}
+	err := factory.CreateModel(vendorItem, tx, id)
+	return vendorItem, err
+}
+
 func GetVendorItemByInvItem(invItemID string, vendorID string, tx *pop.Connection) (*models.VendorItem, error) {
 	vendorItem := &models.VendorItem{}
 	query := tx.Eager().Where("inventory_item_id = ?", invItemID).

@@ -37,6 +37,8 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 			return err
 		}
 		return nil
+	case *VendorItem:
+		return LoadVendorItem(m.(*VendorItem), tx, id)
 	}
 
 	return errors.New("unimplemented type")
