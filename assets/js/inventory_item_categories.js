@@ -1,10 +1,13 @@
 import { sendUpdate, sendAjax } from './helpers/index_helpers';
 import 'spectrum-colorpicker';
+import { replaceUrlId } from './helpers/_helpers';
 
 $(() => {
     setupSortable();
     setupEditName();
     setupColorPicker();
+    setupAddButton();
+    setupDeleteButton();
     setupSubmitButton();
 });
 
@@ -61,6 +64,65 @@ function setupColorPicker() {
     components.on('hide.spectrum', (e, color) => {
         $(e.currentTarget).attr('value', color.toHexString());
     });
+}
+
+function setupAddButton() {
+    $('#add-category-button').click(() => {
+        makeLi();
+    });
+}
+
+function makeLi() {
+    // var input = $('<input type="text" />');
+    var li = $(`
+        <li itemid="<%= category.ID %>"
+            class="list-group-item d-flex justify-content-between 
+            align-items-center">
+            <span>New Category</span>
+            <input name="color" type="text" value="" />
+                    
+            <span class="drag-handle" style="font-size: 20px;">☰</span>
+        </li>`
+    );
+    var ul = $('#categories-movable');
+    ul.prepend(li);
+
+    setupEditName();
+    setupColorPicker();
+    setupSortable();
+}
+
+function setupDeleteButton() {
+    var button = $('#delete-category-button');
+    button.click(() => {
+        var listEls = $('#categories-movable').find('li');
+        if(button.hasClass('active')) {
+            button.removeClass('active');
+            listEls.each((i, el) => {
+                var li = $(el);
+                li.find('a').remove();
+                li.find('span:last-child').show();
+            });
+        } else {
+            button.addClass('active');
+            listEls.each((i, el) => {
+                var li = $(el);
+                var span = li.find('span:last-child');
+                span.hide();
+                var delLink = makeDeleteLink(li.attr('itemid'));
+                li.append(delLink);
+            });
+        }
+    });
+}
+
+function makeDeleteLink(id) {
+    var url = $('#delete-category-button').attr('data-link');
+    return $(`<a href=${replaceUrlId(url, id)}" data-method="DELETE"
+        data-confirm="Are you sure?">
+            <span class="fa fa-minus-circle"
+                style="font-size: 20px; color: rgb(200, 0, 0);"></span>
+        </a>`);
 }
 
 function setupSubmitButton() {
