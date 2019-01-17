@@ -2,6 +2,7 @@ import { parseModelJSON, formatSlashDate, formatMoney, replaceUrlId } from '../h
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
 import { datepicker } from '../_datepicker';
 import { createInventoryDatagrid } from './_inventory_datagrid';
+import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
 
 var _selectedInventory = null;
 
@@ -16,6 +17,7 @@ $(() => {
 
     var container = $('#categorized-items-display');
     createInventoryDatagrid(container, onDataGridEdit);
+    createBreakdown()
 });
 
 function setClickInventory() {
@@ -46,11 +48,33 @@ function setSelectedInventory() {
     deleteLink.attr('href', url);
 
     var table = createInventoryDatagrid(container, onDataGridEdit);
+    createBreakdown();
 }
 
 function clearItemsInput() {
     var input = $('input[name="Items"]');
     input.val("");
+}
+
+function createBreakdown() {
+    var container = $('#category-breakdown');
+    var title = 'Inventory Breakdown';
+    var items = parseModelJSON($('#categorized-items-display').attr('data'));
+    items.forEach(item => {
+        if(item.conversion > 0) {
+            item.price = item.price / item.conversion;
+        } else {
+            item.price = 0;
+        }
+    });
+    var total = items.reduce((total, item) => {
+        return total + item.price * item.count;
+    }, 0);
+    if(total != 0) {
+        container.html(horizontalPercentageChart(title, items, total));
+    } else {
+        bdContainer.html('');
+    }
 }
 
 function setOnSubmit() {

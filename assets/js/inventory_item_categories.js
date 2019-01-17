@@ -1,11 +1,13 @@
 import { sendUpdate, sendAjax } from './helpers/index_helpers';
 import 'spectrum-colorpicker';
-import { replaceUrlId } from './helpers/_helpers';
+import { replaceUrlId, blankUUID } from './helpers/_helpers';
 
 $(() => {
     setupSortable();
     setupEditName();
     setupColorPicker();
+    // really should only allow category addition when creating a new 
+    // inventory item
     setupAddButton();
     // delete would destroy the data as implemented
     // setupDeleteButton();
@@ -76,7 +78,7 @@ function setupAddButton() {
 function makeLi() {
     // var input = $('<input type="text" />');
     var li = $(`
-        <li itemid="00000000-0000-0000-0000-000000000000"
+        <li itemid="${blankUUID()}"
             class="list-group-item d-flex justify-content-between 
             align-items-center">
             <span>NewCategory</span>

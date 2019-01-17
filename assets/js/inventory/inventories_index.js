@@ -1,7 +1,6 @@
 import { parseModelJSON, replaceUrlId, formatMoney, toGoName } from '../helpers/_helpers';
 import { sendAjax } from '../helpers/index_helpers';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
-import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
 
 var _categorizedOptions = {
     breakdown: false
@@ -118,16 +117,10 @@ var _columns = [
         }
     },
     {
-        header: 'Count',
-        editable: false,
+        name: 'count',
+        hidden: true,
         get_column: (item) => {
             return item.count;
-        }
-    },
-    {
-        header: 'Extension',
-        get_column: (item) => {
-            return formatMoney(item.count * item.price / item.conversion);
         }
     },
     {
@@ -183,8 +176,6 @@ $(() => {
     _editPathBase = container.attr('edit-path');
     _deletePathBase = container.attr('delete-path');
     createMasterDatagrid(container);
-    var bdContainer = $('#category-breakdown');
-    createBreakdown(bdContainer)
 });
 
 function createMasterDatagrid(container) {
@@ -236,24 +227,4 @@ function submitForm(form, id) {
     sendAjax(form);
 
     form.attr('action', templatePath);
-}
-
-function createBreakdown(container) {
-    var title = 'Inventory Breakdown';
-    var items = parseModelJSON($('#categorized-items-display').attr('data'));
-    items.forEach(item => {
-        if(item.conversion > 0) {
-            item.price = item.price / item.conversion;
-        } else {
-            item.price = 0;
-        }
-    });
-    var total = items.reduce((total, item) => {
-        return total + item.price * item.count;
-    }, 0);
-    if(total != 0) {
-        container.html(horizontalPercentageChart(title, items, total));
-    } else {
-        bdContainer.html('');
-    }
 }

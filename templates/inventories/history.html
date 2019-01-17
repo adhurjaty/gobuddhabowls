@@ -21,6 +21,7 @@
     </ul>
   </div>
   <div class="col-9">
+    <div id="category-breakdown" class="row"></div>
     <%= form({action: inventoryPath({ inventory_id: "{inventory_id}" }), method: "PUT", id: "inventory-form"}) { %>
       <%= partial("inventories/form.html", {inventory: defaultInventory}) %>
       <a href="<%= inventoryPath({inventory_id: defaultInventory.ID}) %>" 
