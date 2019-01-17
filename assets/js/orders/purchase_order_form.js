@@ -78,10 +78,22 @@ var _columnInfo = [
     }
 ];
 
+var _startDate = null;
+var _endDate = null;
 
 function setDateRange() {
     var $inputs = $('#new-order-date, #new-received-date');
-    daterange($inputs);
+    var dates = daterange($inputs, onDateChanged);
+    _startDate = dates[0];
+    _endDate = dates[1];
+}
+
+function onDateChanged(date) {
+    if(_startDate == null || _endDate == null) {
+        return;
+    }
+
+    _endDate.setMinDate(_startDate.getDate());
 }
 
 function setDropdown(vendorItemsMap) {
