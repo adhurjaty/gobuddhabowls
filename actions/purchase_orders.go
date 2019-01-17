@@ -242,19 +242,6 @@ func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
 		return c.Render(422, r.Auto(c, models.PurchaseOrder{}))
 	}
 
-	// need to check whether this is the most recent order from this vendor
-	// TODO: move this to when order is received
-	// selectedVendor, err := models.LoadVendor(tx, purchaseOrder.VendorID.String())
-	// for _, vendorItem := range selectedVendor.Items {
-	// 	if vendorItem.InventoryItemID == item.InventoryItemID {
-	// 		if vendorItem.Price != item.Price { // && this is the most recent order from them
-	// 			vendorItem.Price = item.Price
-	// 			tx.ValidateAndUpdate(vendorItem)
-	// 		}
-	// 		break
-	// 	}
-	// }
-
 	// // If there are no errors set a success message
 	c.Flash().Add("success", "PurchaseOrder was updated successfully")
 
