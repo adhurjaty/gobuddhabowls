@@ -59,7 +59,7 @@ func (p *Presenter) UpdatePurchaseOrder(poAPI *PurchaseOrderAPI) (*validate.Erro
 		return validate.NewErrors(), err
 	}
 
-	if !oldPO.ReceivedDate.Valid && poAPI.ReceivedDate.Valid {
+	if poAPI.ReceivedDate.Valid {
 		verrs, err := p.updateVendorItemsFromPO(poAPI)
 		if verrs.HasAny() || err != nil {
 			return verrs, err
@@ -102,7 +102,7 @@ func (p *Presenter) updateVendorItemOnReceive(item *ItemAPI, po *PurchaseOrderAP
 		return verrs, nil
 	}
 
-	if po.ReceivedDate.Time.Unix() > latestOrder.ReceivedDate.Time.Unix() {
+	if po.ReceivedDate.Time.Unix() >= latestOrder.ReceivedDate.Time.Unix() {
 		vendorItem, err := logic.GetVendorItemByInvItem(item.InventoryItemID,
 			po.Vendor.ID, p.tx)
 		if err != nil {
