@@ -36,72 +36,36 @@ var _columns = [
     {
         name: 'selected_vendor',
         header: 'Vendor',
-        editable: true,
-        data_type: 'selector',
         get_column: (item) => {
             return item.selected_vendor;
-        },
-        options_func: (item) => {
-            return Object.keys(item.VendorItemMap);
-        },
-        set_column: (item, value) => {
-            var vendorItem = item.VendorItemMap[value];
-            if(vendorItem != null) {
-                item.purchased_unit = vendorItem.purchased_unit;
-                item.price = vendorItem.price;
-                item.conversion = vendorItem.conversion;
-                item.selected_vendor = value;
-            } else {
-                item.selected_vendor = "";
-            }
         }
     },
     {
         name: 'purchased_unit',
         header: 'Purchased Unit',
-        editable: true,
         get_column: (item) => {
             return item.purchased_unit;
         },
-        set_column: (item, value) => {
-            item.purchased_unit = value;
-        }
     },
     {
         name: 'price',
         header: 'Purchased Price',
-        editable: true,
-        data_type: 'money',
         get_column: (item) => {
             return formatMoney(item.price);
-        },
-        set_column: (item, value) => {
-            item.price = parseFloat(value);
-            item.VendorItemMap[item.selected_vendor].price = item.price;
         }
     },
     {
         name: 'conversion',
         header: 'Conversion',
-        editable: true,
-        data_type: 'number',
         get_column: (item) => {
             return item.conversion;
-        },
-        set_column: (item, value) => {
-            item.conversion = parseFloat(value);
-            item.VendorItemMap[item.selected_vendor].conversion = item.conversion;
         }
     },
     {
         name: 'count_unit',
         header: 'Count Unit',
-        editable: true,
         get_column: (item) => {
             return item.count_unit;
-        },
-        set_column: (item, value) => {
-            item.count_unit = value;
         }
     },
     {
