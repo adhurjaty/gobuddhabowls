@@ -43,9 +43,9 @@ func NewPurchaseOrderAPI(purchaseOrder *models.PurchaseOrder) PurchaseOrderAPI {
 
 // NewPurchaseOrdersAPI converts a purchase order slice to an api purchase order slice
 func NewPurchaseOrdersAPI(purchaseOrders *models.PurchaseOrders) PurchaseOrdersAPI {
-	apis := make([]PurchaseOrderAPI, len(*purchaseOrders))
-	for i, po := range *purchaseOrders {
-		apis[i] = NewPurchaseOrderAPI(&po)
+	apis := PurchaseOrdersAPI{}
+	for _, po := range *purchaseOrders {
+		apis = append(apis, NewPurchaseOrderAPI(&po))
 	}
 
 	return apis

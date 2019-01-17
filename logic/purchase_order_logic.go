@@ -14,7 +14,7 @@ func GetPurchaseOrders(startTime, endTime time.Time, tx *pop.Connection) (*model
 	endVal := endTime.Format(time.RFC3339)
 
 	q := tx.Eager().Where("order_date >= ? AND order_date <= ?",
-		startVal, endVal).Order("order_date DESC")
+		startVal, endVal).Order("received_date DESC, order_date DESC")
 
 	pos := &models.PurchaseOrders{}
 	factory := models.ModelFactory{}
