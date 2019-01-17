@@ -225,7 +225,12 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 		if err != nil {
 			return errors.WithStack(err)
 		}
+	} else {
+		invAPI.Items = presentation.ItemsAPI{}
 	}
+
+	fmt.Println("!!!!!!!!!!!!!!!!!")
+	fmt.Println(invAPI)
 
 	verrs, err := presenter.UpdateInventory(invAPI)
 	if err != nil {
@@ -250,7 +255,6 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 
 	// and redirect to the inventories index page
 	return c.Redirect(303, "/inventories")
-	// return nil
 }
 
 // Destroy deletes a Inventory from the DB. This function is mapped

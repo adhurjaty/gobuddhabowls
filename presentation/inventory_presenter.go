@@ -70,9 +70,11 @@ func (p *Presenter) UpdateInventory(invAPI *InventoryAPI) (*validate.Errors, err
 		return nil, err
 	}
 
-	verrs, err := p.updateInvVendorItems(invAPI.Items)
-	if err != nil || verrs.HasAny() {
-		return verrs, err
+	if invAPI.Items != nil && len(invAPI.Items) > 0 {
+		verrs, err := p.updateInvVendorItems(invAPI.Items)
+		if err != nil || verrs.HasAny() {
+			return verrs, err
+		}
 	}
 
 	return logic.UpdateInventory(inventory, p.tx)

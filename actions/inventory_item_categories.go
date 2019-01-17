@@ -59,10 +59,6 @@ func (v InventoryItemCategoriesResource) Update(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	fmt.Println("!!!!!!!!!!!!!!!!!!!")
-	fmt.Println(category)
-	fmt.Println(newItem)
-
 	var verrs *validate.Errors
 	if newItem {
 		verrs, err = tx.ValidateAndCreate(category)

@@ -155,10 +155,6 @@ func (p *Presenter) restoreVendorItemPrice(item *ItemAPI,
 		return nil
 	}
 
-	fmt.Println("!!!!!!!!!!!!!!!!!!!!")
-	fmt.Println(latestOrder)
-	fmt.Println("!!!!!!!!!!!!!!!!!!!!")
-	fmt.Println(po)
 	if latestOrder.ReceivedDate.Time.Unix() < po.ReceivedDate.Time.Unix() {
 		vendorItem, err := logic.GetVendorItemByInvItem(item.InventoryItemID,
 			po.Vendor.ID, p.tx)
