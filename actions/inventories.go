@@ -34,30 +34,6 @@ type InventoriesResource struct {
 // List gets master inventory
 // This function is mapped to the path GET /inventories
 func (v InventoriesResource) List(c buffalo.Context) error {
-	tx, ok := c.Value("tx").(*pop.Connection)
-	if !ok {
-		return errors.WithStack(errors.New("no transaction found"))
-	}
-
-	presenter := presentation.NewPresenter(tx)
-	items, err := presenter.GetMasterInventoryList()
-	if err != nil {
-		return err
-	}
-
-	inventory := &presentation.InventoryAPI{
-		Date:  helpers.Today(),
-		Items: *items,
-	}
-
-	c.Set("inventory", inventory)
-
-	return c.Render(200, r.HTML("inventories/index"))
-}
-
-// History gets all Inventories. This function is mapped to the path
-// GET /inventories/history
-func InventoryHistory(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
@@ -69,7 +45,7 @@ func InventoryHistory(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	return c.Render(200, r.HTML("inventories/history"))
+	return c.Render(200, r.HTML("inventories/index"))
 }
 
 func setInventoryListVars(c buffalo.Context, presenter *presentation.Presenter) error {

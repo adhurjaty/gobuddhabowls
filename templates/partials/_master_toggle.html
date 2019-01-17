@@ -1,11 +1,11 @@
 <div class="text-center toggle-button-group">
     <div class="btn-group">
-       <a href="<%= inventoriesPath() %>" class="btn btn-secondary btn-lg"
+       <a href="<%= inventoryItemsPath() %>" class="btn btn-secondary btn-lg"
           <%= if (page != "master") { %> disabled <% } %>
           role="button" aria-pressed="true">
           Master
         </a>
-       <a href="<%= inventoriesHistoryPath() %>" class="btn btn-secondary btn-lg" 
+       <a href="<%= inventoriesPath() %>" class="btn btn-secondary btn-lg" 
           <%= if (page != "history") { %> disabled <% } %>
           role="button" aria-pressed="true">
           History

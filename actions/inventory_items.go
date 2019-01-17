@@ -1,6 +1,7 @@
 package actions
 
 import (
+	"buddhabowls/helpers"
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"encoding/json"
@@ -33,19 +34,23 @@ type InventoryItemsResource struct {
 // List gets all InventoryItems. This function is mapped to the path
 // GET /inventory_items
 func (v InventoryItemsResource) List(c buffalo.Context) error {
-	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
 	presenter := presentation.NewPresenter(tx)
-	itemsAPI, err := presenter.GetInventoryItems()
+	items, err := presenter.GetMasterInventoryList()
 	if err != nil {
-		return errors.WithStack(err)
+		return err
 	}
 
-	c.Set("items", itemsAPI)
+	inventory := &presentation.InventoryAPI{
+		Date:  helpers.Today(),
+		Items: *items,
+	}
+
+	c.Set("inventory", inventory)
 
 	return c.Render(200, r.HTML("inventory_items/index"))
 }

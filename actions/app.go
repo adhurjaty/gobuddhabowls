@@ -66,7 +66,6 @@ func App() *buffalo.App {
 		app.PUT("/inventory_items/{inventory_item_id}/inline", UpdateInventoryItem)
 		app.Resource("/inventory_items", InventoryItemsResource{})
 
-		app.GET("/inventories/history", InventoryHistory)
 		app.Resource("/inventories", InventoriesResource{})
 
 		app.PUT("/vendors/{vendor_id}/inline", UpdateVendorInline)
