@@ -1,0 +1,7 @@
+<div class="page-header">
+    <h1>Sales</h1>
+  </div>
+  <div class="row" id="period-selector-component" onchange-href="<%= salesPath() %>">
+      <%= partial("partials/period_selector.html", {changePath: salesPath()}) %>
+  </div>
+<div id="sales-datagrid"></div>
