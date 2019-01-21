@@ -84,6 +84,7 @@ function setOnSubmit() {
 }
 
 function onDataGridEdit(item) {
+    debugger;
     var form = $('#inventory-form');
     var itemsInput = form.find('input[name="Items"]');
     var editedItems = [item];
