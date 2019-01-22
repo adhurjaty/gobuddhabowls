@@ -35,9 +35,16 @@ function getTransactionAjax(url, token) {
         success: (data, status, xhr) => {
             populateDatagrid(data);
         },
+        complete: () => {
+            removeLoader();
+        }
     });
 }
 
 function populateDatagrid(data) {
-    
+
+}
+
+function removeLoader() {
+    $('#loading-container').remove();
 }
