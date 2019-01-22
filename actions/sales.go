@@ -19,5 +19,8 @@ func ListSales(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
+	locationID := "69VJ030ANYAGV"
+	c.Set("locationID", locationID)
+	c.Set("squareToken", "sq0atp-Zo5ieRMqg6UpcSsAzSLEJQ")
 	return c.Render(200, r.HTML("sales/index"))
 }
