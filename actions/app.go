@@ -78,6 +78,9 @@ func App() *buffalo.App {
 
 		app.GET("/sales", ListSales)
 
+		app.GET("/users/square", UsersSquare)
+		app.PUT("/users/square", UpdateUsersSquare)
+
 		app.Resource("/order_items", OrderItemsResource{})
 		app.Resource("/prep_items", PrepItemsResource{})
 		app.Resource("/recipes", RecipesResource{})

@@ -44,7 +44,7 @@ function addSummaryRows(datagrid, summary) {
     datagrid.addTotalRow("Refunds", formatMoney(summary.refunds));
 
     var salesTotal = summary.Sales.reduce((sum, x) => sum + x.amount, 0)
-     + summary.tips;
+        + summary.tips;
     datagrid.addTotalRow("Total", formatMoney(salesTotal));
     var net = salesTotal - summary.tax - summary.fees - summary.refunds;
     datagrid.addTotalRow("Net", formatMoney(net));

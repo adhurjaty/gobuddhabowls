@@ -38,6 +38,56 @@ func UsersCreate(c buffalo.Context) error {
 	return c.Redirect(302, "/")
 }
 
+// GET /users/square
+func UsersSquare(c buffalo.Context) error {
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	user := &models.User{}
+	if err := tx.Find(user, c.Session().Get("current_user_id")); err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("user", user)
+
+	return c.Render(200, r.HTML("users/square_settings"))
+}
+
+// PUT to /users/square
+func UpdateUsersSquare(c buffalo.Context) error {
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	user := &models.User{}
+	if err := tx.Find(user, c.Session().Get("current_user_id")); err != nil {
+		return errors.WithStack(err)
+	}
+
+	if err := c.Bind(user); err != nil {
+		return errors.WithStack(err)
+	}
+
+	verrs, err := tx.ValidateAndUpdate(user)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	if verrs.HasAny() {
+		c.Set("errors", verrs)
+		c.Set("user", user)
+
+		return c.Render(200, r.HTML("users/square_settings"))
+	}
+
+	c.Flash().Add("success", "Successfully updated Square settings")
+
+	return c.Redirect(303, "/sales")
+}
+
 // SetCurrentUser attempts to find a user based on the current_user_id
 // in the session. If one is found it is set on the context.
 func SetCurrentUser(next buffalo.Handler) buffalo.Handler {

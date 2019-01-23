@@ -3,6 +3,7 @@ package actions
 import (
 	"buddhabowls/helpers"
 	"buddhabowls/logic"
+	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"encoding/json"
 	"fmt"
@@ -77,11 +78,17 @@ func ListSales(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	offsetStart := logic.OffsetStart(startTime)
-	offsetEnd := logic.OffsetEnd(endTime)
-	sales, err := getSquareSales(offsetStart, offsetEnd)
+	user := &models.User{}
+	if err := tx.Find(user, c.Session().Get("current_user_id")); err != nil {
+		return c.Error(404, err)
+	}
+
+	sales, err := getSquareSales(user, startTime, endTime)
 	if err != nil {
-		return errors.WithStack(err)
+		sales = &SalesSummary{
+			Sales: SquareSales{},
+		}
+		c.Set("errors", err.Error())
 	}
 
 	c.Set("sales", *sales)
@@ -120,16 +127,20 @@ func sendGetRequest(url string, token string) (*http.Response, error) {
 	return client.Do(req)
 }
 
-func getSquareSales(startTime time.Time, endTime time.Time) (*SalesSummary, error) {
+func getSquareSales(user *models.User, startTime time.Time, endTime time.Time) (*SalesSummary, error) {
 
-	locationID := "69VJ030ANYAGV"
-	// remember to change the token when pushing to remote
-	squareToken := "sq0atp-Zo5ieRMqg6UpcSsAzSLEJQ"
+	if !user.SquareLocation.Valid {
+		return nil, errors.New("Must set Square location in Settings")
+	}
 
-	transactionURL := getTransactionURL(locationID, startTime, endTime)
-	fmt.Println(transactionURL)
+	if !user.SquareToken.Valid {
+		return nil, errors.New("Must set Square token in Settings")
+	}
 
-	resp, err := sendGetRequest(transactionURL, squareToken)
+	transactionURL := getTransactionURL(user.SquareLocation.String,
+		startTime, endTime)
+
+	resp, err := sendGetRequest(transactionURL, user.SquareToken.String)
 	if err != nil {
 		return nil, err
 	}
