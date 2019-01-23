@@ -2,10 +2,15 @@ package actions
 
 import (
 	"buddhabowls/models"
+	"buddhabowls/presentation"
+	"fmt"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/uuid"
 	"github.com/pkg/errors"
 )
+
+var _ = fmt.Println
 
 func UsersNew(c buffalo.Context) error {
 	u := models.User{}
@@ -33,9 +38,66 @@ func UsersCreate(c buffalo.Context) error {
 	}
 
 	c.Session().Set("current_user_id", u.ID)
-	c.Flash().Add("success", "Welcome to Buffalo!")
+	c.Flash().Add("success", "Welcome to Buddha Bowls!")
 
 	return c.Redirect(302, "/")
+}
+
+// GET /users/square
+func UsersSquare(c buffalo.Context) error {
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	user, err := presenter.GetUser(c.Session().
+		Get("current_user_id").(uuid.UUID).String())
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("user", user)
+
+	return c.Render(200, r.HTML("users/square_settings"))
+}
+
+// PUT to /users/square
+func UpdateUsersSquare(c buffalo.Context) error {
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	user, err := presenter.GetUser(c.Session().
+		Get("current_user_id").(uuid.UUID).String())
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	if err := c.Bind(user); err != nil {
+		return errors.WithStack(err)
+	}
+
+	fmt.Println(user)
+	fmt.Println(c.Session().Get("current_user_id").(uuid.UUID).String())
+
+	verrs, err := presenter.UpdateUser(user)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	if verrs.HasAny() {
+		c.Set("errors", verrs)
+		c.Set("user", user)
+
+		return c.Render(200, r.HTML("users/square_settings"))
+	}
+
+	c.Flash().Add("success", "Successfully updated Square settings")
+
+	return c.Redirect(303, "/sales")
 }
 
 // SetCurrentUser attempts to find a user based on the current_user_id

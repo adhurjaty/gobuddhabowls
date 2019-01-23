@@ -1,0 +1,11 @@
+<div class="page-header">
+  <h1>Square Settings</h1>
+</div>
+
+<%= form_for(user, {action: usersSquarePath(), method: "PUT"}) { %>
+  <%= f.InputTag("SquareLocation") %>
+  <%= f.InputTag("SquareToken") %>
+  <%= f.InputTag("Timezone") %>
+  <button class="btn btn-success" role="submit">Save</button>
+  <a href="<%= settingsPath() %>" class="btn btn-warning">Cancel</a>
+<% } %>

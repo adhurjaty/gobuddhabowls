@@ -240,7 +240,10 @@ CREATE TABLE public.users (
     email character varying(255) NOT NULL,
     password_hash character varying(255) NOT NULL,
     created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
+    updated_at timestamp without time zone NOT NULL,
+    square_location character varying(255),
+    square_token character varying(255),
+    timezone character varying(255) DEFAULT 'America/Los_Angeles'::character varying NOT NULL
 );
 
 
