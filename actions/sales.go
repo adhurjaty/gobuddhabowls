@@ -10,57 +10,59 @@ import (
 	"github.com/pkg/errors"
 	"io/ioutil"
 	"net/http"
+	"strconv"
 	"time"
 )
 
 type transactionResult struct {
-	Errors       []apiError    `json:"errors,omitempty"`
-	Transactions []transaction `json:"transactions"`
-	Cursor       string        `json:"cursor,omitempty"`
+	TransactionTime time.Time     `json:"created_at"`
+	Tax             money         `json:"tax_money"`
+	Tip             money         `json:"tip_money"`
+	Discount        money         `json:"discount_money"`
+	Fee             money         `json:"processing_fee_money"`
+	Refund          money         `json:"refunded_money"`
+	Items           []itemization `json:"itemizations"`
 }
 
-type apiError struct {
-	Field  string `json:"field"`
-	Detail string `json:"detail`
+type itemization struct {
+	Name   string     `json:"name"`
+	Count  string     `json:"quantity"`
+	Amount money      `json:"single_quantity_money"`
+	Extras []modifier `json:"modifiers"`
 }
 
-type transaction struct {
-	TransactionTime time.Time `json:"created_at"`
-	Tenders         []tender  `json:"tenders,omitempty"`
-	Refunds         []refund  `json:"refunds,omitempty"`
-}
-
-type tender struct {
-	Amount money `json:"amount_money"`
-	Tip    money `json:"tip_money"`
-	Fee    money `json:"processing_fee_money"`
+type modifier struct {
+	Name   string `json:"name"`
+	Amount money  `json:"applied_money"`
 }
 
 type money struct {
 	Amount   int    `json:"amount"`
-	Currency string `json:"currency"`
+	Currency string `json:"currency_code"`
 }
 
-type refund struct {
-	Amount money `json:"amount_money"`
-	Fee    money `json:"processing_fee_money"`
+type SalesSummary struct {
+	Tips    float64
+	Fees    float64
+	Tax     float64
+	Refunds float64
+	Sales   SquareSales
 }
 
 type SquareSale struct {
-	TransactionTime time.Time
-	Amount          float64
-	Tip             float64
-	Fee             float64
+	Name   string
+	Count  int
+	Amount float64
 }
 
 type SquareSales []SquareSale
 
-func (s SquareSales) String() string {
+func (s SalesSummary) String() string {
 	sj, _ := json.Marshal(s)
 	return string(sj)
 }
 
-const squareURLBase = "https://connect.squareup.com/v2/locations/"
+const squareURLBase = "https://connect.squareup.com/v1/"
 
 func ListSales(c buffalo.Context) error {
 	tx, ok := c.Value("tx").(*pop.Connection)
@@ -88,15 +90,8 @@ func getTransactionURL(locationID string, startTime time.Time, endTime time.Time
 	startParam := helpers.RFC3339Date(startTime)
 	endParam := helpers.RFC3339Date(endTime)
 
-	return fmt.Sprintf("%s%s/transactions?begin_time=%s&end_time=%s",
+	return fmt.Sprintf("%s%s/payments?begin_time=%s&end_time=%s",
 		squareURLBase, locationID, startParam, endParam)
-}
-
-func addCursorToURL(url string, cursor string) string {
-	if cursor == "" {
-		return url
-	}
-	return url + "&cursor=" + cursor
 }
 
 func sendGetRequest(url string, token string) (*http.Response, error) {
@@ -110,67 +105,81 @@ func sendGetRequest(url string, token string) (*http.Response, error) {
 	return client.Do(req)
 }
 
-func getSquareSales(startTime time.Time, endTime time.Time) (*SquareSales, error) {
+func getSquareSales(startTime time.Time, endTime time.Time) (*SalesSummary, error) {
 
 	locationID := "69VJ030ANYAGV"
 	// remember to change the token when pushing to remote
 	squareToken := "sq0atp-Zo5ieRMqg6UpcSsAzSLEJQ"
-	cursor := ""
-	allTransactions := &[]transaction{}
 
-	for {
-		transactionURL := getTransactionURL(locationID, startTime, endTime)
-		transactionURL = addCursorToURL(transactionURL, cursor)
+	transactionURL := getTransactionURL(locationID, startTime, endTime)
 
-		resp, err := sendGetRequest(transactionURL, squareToken)
-		if err != nil {
-			return nil, err
-		}
-		jsonBytes, err := ioutil.ReadAll(resp.Body)
-		if err != nil {
-			return nil, err
-		}
-
-		results := &transactionResult{}
-		json.Unmarshal(jsonBytes, results)
-		if results.Errors != nil {
-			return nil, errors.New(fmt.Sprintf("%s: %s",
-				results.Errors[0].Field, results.Errors[0].Detail))
-		}
-
-		*allTransactions = append(*allTransactions, results.Transactions...)
-
-		cursor = results.Cursor
-		if cursor == "" {
-			break
-		}
+	resp, err := sendGetRequest(transactionURL, squareToken)
+	if err != nil {
+		return nil, err
+	}
+	jsonBytes, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return nil, err
 	}
 
-	allSales := toSales(allTransactions)
+	results := &[]transactionResult{}
+	err = json.Unmarshal(jsonBytes, results)
+	if err != nil {
+		return nil, err
+	}
 
-	return allSales, nil
+	salesSummary := &SalesSummary{
+		Sales: SquareSales{},
+	}
+	for _, result := range *results {
+		for _, item := range result.Items {
+			sale := itemizationToSale(item)
+			addItemToSummary(sale, &salesSummary.Sales)
+
+			for _, extra := range item.Extras {
+				sale = extraToSale(extra)
+				addItemToSummary(sale, &salesSummary.Sales)
+			}
+		}
+
+		// fees are negative. want a positive number
+		salesSummary.Fees -= float64(result.Fee.Amount) / 100.0
+		salesSummary.Tax += float64(result.Tax.Amount) / 100.0
+		salesSummary.Refunds += float64(result.Refund.Amount) / 100.0
+		salesSummary.Tips += float64(result.Tip.Amount) / 100.0
+	}
+
+	return salesSummary, nil
 }
 
-func toSales(transactions *[]transaction) *SquareSales {
-	sales := &SquareSales{}
-	for _, transaction := range *transactions {
-		sale := SquareSale{
-			TransactionTime: transaction.TransactionTime,
-		}
+func itemizationToSale(item itemization) SquareSale {
+	count, err := strconv.ParseFloat(item.Count, 64)
+	if err != nil {
+		count = 1
+	}
+	return SquareSale{
+		Name:   item.Name,
+		Amount: float64(item.Amount.Amount) / 100.0,
+		Count:  int(count),
+	}
+}
 
-		for _, tender := range transaction.Tenders {
-			sale.Amount += float64(tender.Amount.Amount) / 100.0
-			sale.Fee += float64(tender.Fee.Amount) / 100.0
-			sale.Tip += float64(tender.Tip.Amount) / 100.0
-		}
+func extraToSale(extra modifier) SquareSale {
+	return SquareSale{
+		Name:   "Extra: " + extra.Name,
+		Amount: float64(extra.Amount.Amount) / 100.0,
+		Count:  1,
+	}
+}
 
-		for _, refund := range transaction.Refunds {
-			sale.Amount -= float64(refund.Amount.Amount) / 100.0
-			sale.Fee += float64(refund.Fee.Amount) / 100.
+func addItemToSummary(sale SquareSale, allSales *SquareSales) {
+	for i, prevSale := range *allSales {
+		if sale.Name == prevSale.Name {
+			(*allSales)[i].Count += sale.Count
+			(*allSales)[i].Amount += sale.Amount
+			return
 		}
-
-		*sales = append(*sales, sale)
 	}
 
-	return sales
+	*allSales = append(*allSales, sale)
 }
