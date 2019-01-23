@@ -42,17 +42,17 @@ type money struct {
 }
 
 type SalesSummary struct {
-	Tips    float64
-	Fees    float64
-	Tax     float64
-	Refunds float64
-	Sales   SquareSales
+	Tips    float64     `json:"tips"`
+	Fees    float64     `json:"fees"`
+	Tax     float64     `json:"tax"`
+	Refunds float64     `json:"refunds"`
+	Sales   SquareSales `json:"Sales"`
 }
 
 type SquareSale struct {
-	Name   string
-	Count  int
-	Amount float64
+	Name   string  `json:"name"`
+	Count  int     `json:"count"`
+	Amount float64 `json:"amount"`
 }
 
 type SquareSales []SquareSale
