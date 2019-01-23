@@ -2,6 +2,7 @@ package actions
 
 import (
 	"buddhabowls/helpers"
+	"buddhabowls/logic"
 	"buddhabowls/presentation"
 	"encoding/json"
 	"fmt"
@@ -76,7 +77,9 @@ func ListSales(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	sales, err := getSquareSales(startTime, endTime)
+	offsetStart := logic.OffsetStart(startTime)
+	offsetEnd := logic.OffsetEnd(endTime)
+	sales, err := getSquareSales(offsetStart, offsetEnd)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -87,11 +90,23 @@ func ListSales(c buffalo.Context) error {
 }
 
 func getTransactionURL(locationID string, startTime time.Time, endTime time.Time) string {
-	startParam := helpers.RFC3339Date(startTime)
-	endParam := helpers.RFC3339Date(endTime)
+	startParam := getDateString(startTime)
+	endParam := getDateString(endTime)
 
 	return fmt.Sprintf("%s%s/payments?begin_time=%s&end_time=%s",
 		squareURLBase, locationID, startParam, endParam)
+}
+
+func getDateString(d time.Time) string {
+	offsetTime := logic.OffsetStart(d)
+	location, err := time.LoadLocation("America/Los_Angeles")
+	if err != nil {
+		location = &time.Location{}
+	}
+	locationTime := time.Date(offsetTime.Year(), offsetTime.Month(),
+		offsetTime.Day(), offsetTime.Hour(), offsetTime.Minute(),
+		offsetTime.Second(), offsetTime.Nanosecond(), location)
+	return helpers.RFC3339Date(locationTime)
 }
 
 func sendGetRequest(url string, token string) (*http.Response, error) {
@@ -112,6 +127,7 @@ func getSquareSales(startTime time.Time, endTime time.Time) (*SalesSummary, erro
 	squareToken := "sq0atp-Zo5ieRMqg6UpcSsAzSLEJQ"
 
 	transactionURL := getTransactionURL(locationID, startTime, endTime)
+	fmt.Println(transactionURL)
 
 	resp, err := sendGetRequest(transactionURL, squareToken)
 	if err != nil {
