@@ -3,12 +3,12 @@ package actions
 import (
 	"buddhabowls/helpers"
 	"buddhabowls/logic"
-	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"encoding/json"
 	"fmt"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/uuid"
 	"github.com/pkg/errors"
 	"io/ioutil"
 	"net/http"
@@ -78,8 +78,9 @@ func ListSales(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	user := &models.User{}
-	if err := tx.Find(user, c.Session().Get("current_user_id")); err != nil {
+	user, err := presenter.GetUser(c.Session().
+		Get("current_user_id").(uuid.UUID).String())
+	if err != nil {
 		return c.Error(404, err)
 	}
 
@@ -88,7 +89,7 @@ func ListSales(c buffalo.Context) error {
 		sales = &SalesSummary{
 			Sales: SquareSales{},
 		}
-		c.Set("errors", err.Error())
+		c.Set("errors", "Invalid Square token or location ID")
 	}
 
 	c.Set("sales", *sales)
@@ -127,20 +128,12 @@ func sendGetRequest(url string, token string) (*http.Response, error) {
 	return client.Do(req)
 }
 
-func getSquareSales(user *models.User, startTime time.Time, endTime time.Time) (*SalesSummary, error) {
+func getSquareSales(user *presentation.UserAPI, startTime time.Time, endTime time.Time) (*SalesSummary, error) {
 
-	if !user.SquareLocation.Valid {
-		return nil, errors.New("Must set Square location in Settings")
-	}
-
-	if !user.SquareToken.Valid {
-		return nil, errors.New("Must set Square token in Settings")
-	}
-
-	transactionURL := getTransactionURL(user.SquareLocation.String,
+	transactionURL := getTransactionURL(user.SquareLocation,
 		startTime, endTime)
 
-	resp, err := sendGetRequest(transactionURL, user.SquareToken.String)
+	resp, err := sendGetRequest(transactionURL, user.SquareToken)
 	if err != nil {
 		return nil, err
 	}
