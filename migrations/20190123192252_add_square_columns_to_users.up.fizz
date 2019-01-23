@@ -1,0 +1,3 @@
+add_column("users", "square_location", "string", {"null": true})
+add_column("users", "square_token", "string", {"null": true})
+add_column("users", "timezone", "string", {"default": "America/Los_Angeles"})

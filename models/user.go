@@ -1,6 +1,7 @@
 package models
 
 import (
+	"database/sql"
 	"encoding/json"
 	"strings"
 	"time"
@@ -14,13 +15,16 @@ import (
 )
 
 type User struct {
-	ID                   uuid.UUID `json:"id" db:"id"`
-	CreatedAt            time.Time `json:"created_at" db:"created_at"`
-	UpdatedAt            time.Time `json:"updated_at" db:"updated_at"`
-	Email                string    `json:"email" db:"email"`
-	PasswordHash         string    `json:"-" db:"password_hash"`
-	Password             string    `json:"-" db:"-"`
-	PasswordConfirmation string    `json:"-" db:"-"`
+	ID                   uuid.UUID      `json:"id" db:"id"`
+	CreatedAt            time.Time      `json:"created_at" db:"created_at"`
+	UpdatedAt            time.Time      `json:"updated_at" db:"updated_at"`
+	Email                string         `json:"email" db:"email"`
+	PasswordHash         string         `json:"-" db:"password_hash"`
+	Password             string         `json:"-" db:"-"`
+	PasswordConfirmation string         `json:"-" db:"-"`
+	SquareLocation       sql.NullString `json:"square_location" db:"square_location"`
+	SquareToken          sql.NullString `json:"square_token" db:"square_token"`
+	Timezone             string         `json:"timezone" db:"timezone"`
 }
 
 // String is not required by pop and may be deleted
