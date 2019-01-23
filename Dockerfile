@@ -30,7 +30,7 @@ WORKDIR /bin/
 COPY --from=builder /go/src/buddhabowls/bin/app .
 
 EXPOSE 3000
-CMD /bin/app
+# CMD /bin/app
 # # Comment out to run the migrations before running the binary:
-# CMD /bin/app migrate; sh /bin/app
+CMD /bin/app migrate; sh /bin/app
 # CMD sh /bin/app
