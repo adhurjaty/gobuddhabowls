@@ -229,6 +229,9 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 		invAPI.Items = presentation.ItemsAPI{}
 	}
 
+	fmt.Println("!!!!!!!!!!!!!!!!!")
+	fmt.Println(invAPI)
+
 	verrs, err := presenter.UpdateInventory(invAPI)
 	if err != nil {
 		return errors.WithStack(err)
