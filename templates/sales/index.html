@@ -4,14 +4,7 @@
   <div class="row" id="period-selector-component" onchange-href="<%= salesPath() %>">
       <%= partial("partials/period_selector.html", {changePath: salesPath()}) %>
   </div>
-<div id="loading-container" class="text-center">
-  <div class="loader center-block"></div>
-  <div>
-    Loading Square data...
-  </div>
-</div>
-<div id="square-info" square-token="<%= squareToken %>"
-  square-location="<%= locationID %>"></div>
-<div id="sales-datagrid"></div>
+
+<div id="sales-datagrid" data='<%= sales.String() %>'></div>
 
 <%= javascriptTag("sales/sales_index.js") %>
