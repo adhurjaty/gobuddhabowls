@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"sort"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -19,7 +20,7 @@ type Recipe struct {
 	CategoryID uuid.UUID      `json:"category_id" db:"recipe_category_id"`
 	RecipeUnit string         `json:"recipe_unit" db:"recipe_unit"`
 	// RecipeUnitConversion is the number of recipe units in a yield
-	//of a recipe
+	// of a recipe
 	RecipeUnitConversion float64     `json:"recipe_unit_conversion" db:"recipe_unit_conversion"`
 	Items                RecipeItems `has_many:"recipe_items" db:"-"`
 	Index                int         `json:"index" db:"index"`
@@ -45,7 +46,6 @@ func (r Recipes) String() string {
 func (r *Recipe) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
 		&validators.StringIsPresent{Field: r.Name, Name: "Name"},
-		&validators.StringIsPresent{Field: r.RecipeUnit, Name: "RecipeUnit"},
 		&validators.IntIsPresent{Field: r.Index, Name: "Index"},
 	), nil
 }
@@ -60,4 +60,14 @@ func (r *Recipe) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
 // This method is not required and may be deleted.
 func (r *Recipe) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+func (r Recipe) GetSortValue() int {
+	return r.Category.Index*1000 + r.Index
+}
+
+func (r *Recipes) Sort() {
+	sort.Slice(*r, func(i, j int) bool {
+		return (*r)[i].GetSortValue() < (*r)[j].GetSortValue()
+	})
 }
