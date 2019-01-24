@@ -97,17 +97,17 @@ func ListSales(c buffalo.Context) error {
 	return c.Render(200, r.HTML("sales/index"))
 }
 
-func getTransactionURL(locationID string, startTime time.Time, endTime time.Time) string {
-	startParam := getDateString(startTime)
-	endParam := getDateString(endTime)
+func getTransactionURL(locationID string, timezone string, startTime time.Time, endTime time.Time) string {
+	startParam := getDateString(startTime, timezone)
+	endParam := getDateString(endTime, timezone)
 
 	return fmt.Sprintf("%s%s/payments?begin_time=%s&end_time=%s",
 		squareURLBase, locationID, startParam, endParam)
 }
 
-func getDateString(d time.Time) string {
+func getDateString(d time.Time, timezone string) string {
 	offsetTime := logic.OffsetStart(d)
-	location, err := time.LoadLocation("America/Los_Angeles")
+	location, err := time.LoadLocation(timezone)
 	if err != nil {
 		location = &time.Location{}
 	}
@@ -130,7 +130,7 @@ func sendGetRequest(url string, token string) (*http.Response, error) {
 
 func getSquareSales(user *presentation.UserAPI, startTime time.Time, endTime time.Time) (*SalesSummary, error) {
 
-	transactionURL := getTransactionURL(user.SquareLocation,
+	transactionURL := getTransactionURL(user.SquareLocation, user.Timezone,
 		startTime, endTime)
 
 	resp, err := sendGetRequest(transactionURL, user.SquareToken)
