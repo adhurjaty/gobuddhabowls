@@ -54,3 +54,19 @@ func (i *RecipeCategory) ValidateCreate(tx *pop.Connection) (*validate.Errors, e
 func (i *RecipeCategory) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
 }
+
+func (c RecipeCategory) GetID() uuid.UUID {
+	return c.ID
+}
+
+func (c RecipeCategory) GetName() string {
+	return c.Name
+}
+
+func (c RecipeCategory) GetBackground() string {
+	return c.Background
+}
+
+func (c RecipeCategory) GetIndex() int {
+	return c.Index
+}

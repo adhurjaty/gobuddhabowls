@@ -54,3 +54,19 @@ func (i *InventoryItemCategory) ValidateCreate(tx *pop.Connection) (*validate.Er
 func (i *InventoryItemCategory) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
 }
+
+func (c InventoryItemCategory) GetID() uuid.UUID {
+	return c.ID
+}
+
+func (c InventoryItemCategory) GetName() string {
+	return c.Name
+}
+
+func (c InventoryItemCategory) GetBackground() string {
+	return c.Background
+}
+
+func (c InventoryItemCategory) GetIndex() int {
+	return c.Index
+}

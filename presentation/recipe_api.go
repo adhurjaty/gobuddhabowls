@@ -39,7 +39,7 @@ func NewRecipeAPI(recipe *models.Recipe) RecipeAPI {
 	return RecipeAPI{
 		ID:       recipe.ID.String(),
 		Name:     recipe.Name,
-		Category: NewCategoriesAPI(recipe.Category),
+		Category: NewCategoryAPI(recipe.Category),
 		Index:    recipe.Index,
 		Items:    NewItemsAPI(recipe.Items),
 	}

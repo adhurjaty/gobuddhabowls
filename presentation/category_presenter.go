@@ -10,6 +10,6 @@ func (p *Presenter) GetAllCategories() (*CategoriesAPI, error) {
 		return nil, err
 	}
 
-	catAPI := NewCategoriesAPI(categories)
+	catAPI := NewCategoriesAPI(logic.InvCategoryIntSlice(categories))
 	return &catAPI, nil
 }

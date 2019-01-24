@@ -18,3 +18,21 @@ func GetAllCategories(tx *pop.Connection) (*models.InventoryItemCategories, erro
 
 	return categories, nil
 }
+
+func InvCategoryIntSlice(categories *models.InventoryItemCategories) *models.Categories {
+	outCats := &models.Categories{}
+	for _, cat := range *categories {
+		*outCats = append(*outCats, cat)
+	}
+
+	return outCats
+}
+
+func RecCategoryIntSlice(categories *models.RecipeCategories) *models.Categories {
+	outCats := &models.Categories{}
+	for _, cat := range *categories {
+		*outCats = append(*outCats, cat)
+	}
+
+	return outCats
+}

@@ -22,18 +22,18 @@ func (c CategoryAPI) String() string {
 }
 
 // NewCategoryAPI converts a category to an api category
-func NewCategoryAPI(category models.InventoryItemCategory) CategoryAPI {
+func NewCategoryAPI(category models.Category) CategoryAPI {
 	c := CategoryAPI{}
 
-	c.ID = category.ID.String()
-	c.Name = category.Name
-	c.Background = category.Background
-	c.Index = category.Index
+	c.ID = category.GetID().String()
+	c.Name = category.GetName()
+	c.Background = category.GetBackground()
+	c.Index = category.GetIndex()
 
 	return c
 }
 
-func NewCategoriesAPI(categories *models.InventoryItemCategories) CategoriesAPI {
+func NewCategoriesAPI(categories *models.Categories) CategoriesAPI {
 	catsAPI := CategoriesAPI{}
 	for _, category := range *categories {
 		catsAPI = append(catsAPI, NewCategoryAPI(category))
