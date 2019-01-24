@@ -19,6 +19,7 @@ type Recipe struct {
 	Category   RecipeCategory `belongs_to:"recipe_categories" db:"-"`
 	CategoryID uuid.UUID      `json:"category_id" db:"recipe_category_id"`
 	RecipeUnit string         `json:"recipe_unit" db:"recipe_unit"`
+	IsBatch    bool           `json:"is_batch" db:"is_batch"`
 	// RecipeUnitConversion is the number of recipe units in a yield
 	// of a recipe
 	RecipeUnitConversion float64     `json:"recipe_unit_conversion" db:"recipe_unit_conversion"`

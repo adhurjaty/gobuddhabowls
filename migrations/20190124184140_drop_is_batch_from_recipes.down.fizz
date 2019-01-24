@@ -1,1 +1,0 @@
-add_column("recipes", "is_batch", "bool", {"default": true})

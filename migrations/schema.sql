@@ -229,7 +229,8 @@ CREATE TABLE public.recipes (
     index integer NOT NULL,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
-    recipe_category_id uuid
+    recipe_category_id uuid,
+    is_batch boolean DEFAULT true NOT NULL
 );
 
 
