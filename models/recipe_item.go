@@ -64,7 +64,8 @@ func (r RecipeItem) GetSortValue() int {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.GetSortValue()
 	}
-	return r.BatchRecipe.GetSortValue()
+	// HACK: bit of a hack - want recipes to always be after inv items
+	return r.BatchRecipe.GetSortValue() + 100000
 }
 
 // Sort sorts the items based on category then inventory item indices

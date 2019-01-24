@@ -1,5 +1,9 @@
 package presentation
 
+import (
+	"buddhabowls/logic"
+)
+
 func (p *Presenter) GetRecipes() (*RecipesAPI, error) {
 	recipes, err := logic.GetRecipes(p.tx)
 	if err != nil {
