@@ -226,7 +226,6 @@ CREATE TABLE public.recipes (
     name character varying(255) NOT NULL,
     recipe_unit character varying(255) NOT NULL,
     recipe_unit_conversion character varying(255) NOT NULL,
-    is_batch boolean NOT NULL,
     index integer NOT NULL,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
