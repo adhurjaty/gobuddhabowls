@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"sort"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -57,4 +58,18 @@ func (r *RecipeItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, error
 // This method is not required and may be deleted.
 func (r *RecipeItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+func (r RecipeItem) GetSortValue() int {
+	if r.InventoryItemID.Valid {
+		return r.InventoryItem.GetSortValue()
+	}
+	return r.BatchRecipe.GetSortValue()
+}
+
+// Sort sorts the items based on category then inventory item indices
+func (r *RecipeItems) Sort() {
+	sort.Slice(*r, func(i, j int) bool {
+		return (*r)[i].GetSortValue() < (*r)[j].GetSortValue()
+	})
 }
