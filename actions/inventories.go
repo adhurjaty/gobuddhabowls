@@ -68,7 +68,6 @@ func setInventoryListVars(c buffalo.Context, presenter *presentation.Presenter) 
 		*inventories = append(*inventories, *latestInv)
 	}
 
-	// fmt.Println(inventories)
 	c.Set("inventories", inventories)
 	c.Set("defaultInventory", (*inventories)[0])
 
@@ -228,9 +227,6 @@ func (v InventoriesResource) Update(c buffalo.Context) error {
 	} else {
 		invAPI.Items = presentation.ItemsAPI{}
 	}
-
-	fmt.Println("!!!!!!!!!!!!!!!!!")
-	fmt.Println(invAPI)
 
 	verrs, err := presenter.UpdateInventory(invAPI)
 	if err != nil {

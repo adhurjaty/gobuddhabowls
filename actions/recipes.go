@@ -44,6 +44,8 @@ func (v RecipesResource) List(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
+	fmt.Println(recipes)
+
 	c.Set("recipes", recipes)
 
 	return c.Render(200, r.HTML("recipes/index"))
