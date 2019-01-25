@@ -86,6 +86,18 @@ func (r RecipeItem) GetCountUnit() string {
 func (r RecipeItem) GetIndex() int {
 	return r.getBaseItem().GetIndex()
 }
+func (r RecipeItem) GetRecipeUnit() string {
+	if r.InventoryItemID.Valid {
+		return r.InventoryItem.RecipeUnit
+	}
+	return r.BatchRecipe.RecipeUnit
+}
+func (r RecipeItem) GetRecipeUnitConversion() float64 {
+	if r.InventoryItemID.Valid {
+		return r.InventoryItem.RecipeUnitConversion
+	}
+	return r.BatchRecipe.RecipeUnitConversion
+}
 
 func (r RecipeItem) GetSortValue() int {
 	if r.InventoryItemID.Valid {
