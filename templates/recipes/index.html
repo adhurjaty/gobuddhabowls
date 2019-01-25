@@ -1,40 +1,19 @@
 <div class="page-header">
-  <h1>Recipes</h1>
+  <h1 class="text-center">Recipes</h1>
 </div>
-<ul class="list-unstyled list-inline">
-  <li><a href="<%= newRecipesPath() %>" class="btn btn-primary">Create New Recipe</a></li>
-</ul>
+<div class="row">
+  <div class="col-12 float-right">
+    <a href="<%= newRecipesPath() %>" class="btn btn-primary">
+      New Recipe
+    </a>
+  </div>
+</div>
 
-<table class="table table-striped">
-  <thead>
-  <th>Name</th>
-    <th>RecipeUnit</th>
-    <th>RecipeUnitConversion</th>
-    <th>Category</th>
-    <th>IsBatch</th>
-    <th>Index</th>
-    <th>Items</th>
-    <th>&nbsp;</th>
-  </thead>
-  <tbody>
-    <%= for (recipe) in recipes { %>
-      <tr>
-      <td><%= recipe.Name %></td>
-        <td><%= recipe.RecipeUnit %></td>
-        <td><%= recipe.RecipeUnitConversion %></td>
-        <td><%= recipe.Category %></td>
-        <td><%= recipe.IsBatch %></td>
-        <td><%= recipe.Index %></td>
-        <td><%= recipe.Items %></td>
-        <td>
-          <div class="pull-right">
-            <a href="<%= recipePath({ recipe_id: recipe.ID }) %>" class="btn btn-info">View</a>
-            <a href="<%= editRecipePath({ recipe_id: recipe.ID }) %>" class="btn btn-warning">Edit</a>
-            <a href="<%= recipePath({ recipe_id: recipe.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
-          </div>
-        </td>
-      </tr>
-    <% } %>
-  </tbody>
-</table>
+<div id="datagrid-holder" data-url='<%= editRecipePath({recipe_id: "{recipe_id}"}) %>'
+  update-url='<%= recipePath({recipe_id: "{recipe_id}"}) %>'
+  data="<%= recipes.String() %>"></div>
 
+<%= form({action: recipePath({recipe_id: "{recipe_id}"}), method: "PUT",
+  id: "update-vendor-form", style: "display: none;"}) { %> <% } %>
+
+<%= javascriptTag("recipes/recipes_index.js") %>
