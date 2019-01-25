@@ -225,12 +225,12 @@ CREATE TABLE public.recipes (
     id uuid NOT NULL,
     name character varying(255) NOT NULL,
     recipe_unit character varying(255) NOT NULL,
-    recipe_unit_conversion character varying(255) NOT NULL,
     index integer NOT NULL,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
     recipe_category_id uuid,
-    is_batch boolean DEFAULT true NOT NULL
+    is_batch boolean DEFAULT true NOT NULL,
+    recipe_unit_conversion numeric
 );
 
 
