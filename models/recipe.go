@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"fmt"
 	"sort"
 	"time"
 
@@ -61,6 +62,25 @@ func (r *Recipe) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
 // This method is not required and may be deleted.
 func (r *Recipe) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+func (r Recipe) GetID() uuid.UUID {
+	return r.ID
+}
+func (r Recipe) GetInventoryItemID() uuid.UUID {
+	return r.ID
+}
+func (r Recipe) GetName() string {
+	return r.Name
+}
+func (r Recipe) GetCategory() Category {
+	return r.Category
+}
+func (r Recipe) GetCountUnit() string {
+	return fmt.Sprintf("%d x %s", r.RecipeUnitConversion, r.RecipeUnit)
+}
+func (r Recipe) GetIndex() int {
+	return r.Index
 }
 
 func (r Recipe) GetSortValue() int {

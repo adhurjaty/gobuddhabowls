@@ -60,6 +60,33 @@ func (r *RecipeItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 	return validate.NewErrors(), nil
 }
 
+func (r RecipeItem) getBaseItem() GenericItem {
+	if r.InventoryItemID.Valid {
+		return r.InventoryItem
+	}
+
+	return r.BatchRecipe
+}
+
+func (r RecipeItem) GetID() uuid.UUID {
+	return r.ID
+}
+func (r RecipeItem) GetInventoryItemID() uuid.UUID {
+	return r.getBaseItem().GetID()
+}
+func (r RecipeItem) GetName() string {
+	return r.getBaseItem().GetName()
+}
+func (r RecipeItem) GetCategory() Category {
+	return r.getBaseItem().GetCategory()
+}
+func (r RecipeItem) GetCountUnit() string {
+	return r.getBaseItem().GetCountUnit()
+}
+func (r RecipeItem) GetIndex() int {
+	return r.getBaseItem().GetIndex()
+}
+
 func (r RecipeItem) GetSortValue() int {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.GetSortValue()
