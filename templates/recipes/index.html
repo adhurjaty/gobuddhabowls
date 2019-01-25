@@ -2,16 +2,25 @@
   <h1 class="text-center">Recipes</h1>
 </div>
 <div class="row">
-  <div class="col-12 float-right">
-    <a href="<%= newRecipesPath() %>" class="btn btn-primary">
+  <div class="col-12">
+    <a href="<%= newRecipesPath() %>" class="btn btn-primary float-right">
       New Recipe
     </a>
   </div>
 </div>
 
-<div id="datagrid-holder" data-url='<%= editRecipePath({recipe_id: "{recipe_id}"}) %>'
-  update-url='<%= recipePath({recipe_id: "{recipe_id}"}) %>'
-  data="<%= recipes.String() %>"></div>
+<div id="data-holder" class="row" data="<%= recipes.String() %>"
+    data-url='<%= editRecipePath({recipe_id: "{recipe_id}"}) %>'
+    update-url='<%= recipePath({recipe_id: "{recipe_id}"}) %>'>
+  <div class="col-md-6">
+    <h2 class="text-center">Batch Recipes</h2>
+    <div id="batch-datagrid" ></div>
+  </div>
+  <div class="col-md-6">
+      <h2 class="text-center">Menu Recipes</h2>
+      <div id="menu-datagrid"></div>
+    </div>
+</div>
 
 <%= form({action: recipePath({recipe_id: "{recipe_id}"}), method: "PUT",
   id: "update-vendor-form", style: "display: none;"}) { %> <% } %>

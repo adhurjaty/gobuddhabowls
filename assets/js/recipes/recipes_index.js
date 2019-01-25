@@ -25,12 +25,6 @@ var _columnInfo = [
         }
     },
     {
-        header: 'Category',
-        get_column: (recipe) => {
-            return recipe.Category.name;
-        },
-    },
-    {
         name: 'recipe_unit',
         header: 'RU',
         editable: true,
@@ -67,9 +61,18 @@ $(() => {
 });
 
 function createDatagrid() {
-    var container = $('#datagrid-holder');
-    // var items = parseModelJSON(container.attr('data'));
-    new CategorizedItemsDisplay(container, _columnInfo, null, _options);
+    var dataHolder = $('#data-holder');
+    var items = parseModelJSON(dataHolder.attr('data'));
+    var batchContainer = $('#batch-datagrid');
+    var menuContainer = $('#menu-datagrid');
+
+    [batchContainer, menuContainer].forEach((container, i) => {
+        var isBatch = i == 0;
+        $(container).attr('data', JSON.stringify(items.filter(x =>
+            x.is_batch == isBatch)));
+        new CategorizedItemsDisplay($(container), _columnInfo, null,
+            _options);
+    });
 }
 
 function calculateRecipeCost(items, ruc) {
