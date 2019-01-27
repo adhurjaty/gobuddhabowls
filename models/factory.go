@@ -27,6 +27,8 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 			return err
 		}
 		return nil
+	case *Recipe:
+		return LoadRecipe(m.(*Recipe), tx, id)
 	case *InventoryItem:
 		if err := LoadInventoryItem(m.(*InventoryItem), tx, id); err != nil {
 			return err
@@ -215,6 +217,14 @@ func LoadInventoryItems(itemList *InventoryItems, q *pop.Query) error {
 	return nil
 }
 
+func LoadRecipe(recipe *Recipe, tx *pop.Connection, id string) error {
+	if err := tx.Eager().Find(recipe, id); err != nil {
+		return err
+	}
+
+	return PopulateRecipeItems(&recipe.Items, tx)
+}
+
 func LoadRecipes(recipes *Recipes, q *pop.Query) error {
 	if err := q.All(recipes); err != nil {
 		return err
@@ -230,11 +240,13 @@ func LoadRecipes(recipes *Recipes, q *pop.Query) error {
 }
 
 func PopulateRecipeItems(items *RecipeItems, tx *pop.Connection) error {
-	for i, item := range *items {
+	for i, _ := range *items {
+		item := &(*items)[i]
 		count := item.Count
-		if err := LoadRecipeItem(&item, tx, item.ID.String()); err != nil {
+		if err := LoadRecipeItem(item, tx, item.ID.String()); err != nil {
 			return err
 		}
+
 		(*items)[i].Count = count
 	}
 

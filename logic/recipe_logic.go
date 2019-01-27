@@ -16,3 +16,11 @@ func GetRecipes(tx *pop.Connection) (*models.Recipes, error) {
 
 	return recipes, nil
 }
+
+func GetRecipe(id string, tx *pop.Connection) (*models.Recipe, error) {
+	factory := models.ModelFactory{}
+	recipe := &models.Recipe{}
+	err := factory.CreateModel(recipe, tx, id)
+
+	return recipe, err
+}

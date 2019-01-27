@@ -66,6 +66,26 @@ func GetVendorItemByInvItem(invItemID string, vendorID string, tx *pop.Connectio
 	return vendorItem, err
 }
 
+func GetSelectedVendorItem(invItemID string, tx *pop.Connection) (*models.VendorItem, error) {
+	vendor, err := GetLatestVendor(invItemID, tx)
+	if err != nil {
+		vendor, err = getAnyVendorThatSellsItem(invItemID, tx)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	return GetVendorItemByInvItem(invItemID, vendor.ID.String(), tx)
+}
+
+func getAnyVendorThatSellsItem(invItemID string, tx *pop.Connection) (*models.Vendor, error) {
+	vendor := &models.Vendor{}
+	query := tx.Where("vi.inventory_item_id = ?", invItemID).
+		Join("vendor_items vi", "vi.vendor_id=vendors.id")
+	err := query.First(vendor)
+	return vendor, err
+}
+
 func GetAllVendorItemsByInvItem(invItemID string, tx *pop.Connection) (*models.VendorItems, error) {
 	vendorItems := &models.VendorItems{}
 	err := tx.Where("inventory_item_id = ?", invItemID).All(vendorItems)

@@ -76,5 +76,7 @@ function createDatagrid() {
 }
 
 function calculateRecipeCost(items, ruc) {
-    return 0;
+    return items.reduce((total, item) => {
+        return total + item.price;
+    }, 0)
 }
