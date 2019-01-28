@@ -1,9 +1,13 @@
-import { formatMoney, parseModelJSON } from "../helpers/_helpers";
-import { CategorizedItemsDisplay } from "../components/_categorized_items_display";
+import { formatMoney, parseModelJSON, replaceUrlId, dblclickEdit } from "../helpers/_helpers";
+import { CollapseCategorizedDatagrid } from "../datagrid/_collapse_categorized_datagrid";
+import { CategorizedDatagrid } from "../datagrid/_categorized_datagrid";
 
 var _options = {
     breakdown: false
 };
+
+var _editPath = $('#data-holder').attr('data-url');
+var _recipePath = $('#update-recipe-form').attr('action');
 
 var _columnInfo = [
     {
@@ -53,8 +57,77 @@ var _columnInfo = [
             return formatMoney(calculateRecipeCost(recipe.Items),
                 recipe.recipe_unit_conversion);
         }
+    },
+    {
+        name: 'dropdown',
+        get_column: ((editPath, recipePath) => {
+            return (recipe) => {
+                return `<div class="dropdown show">
+                    <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        ...
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="${replaceUrlId(editPath, recipe.id)}"
+                            class="dropdown-item">Edit</a>
+                        <a name="delete" class="dropdown-item text-danger"
+                            data-method="DELETE"
+                            href="${replaceUrlId(recipePath, recipe.id)}">
+                            Delete
+                            </a>
+                    </div>
+                </div>`
+            };
+        })(_editPath, _recipePath)
+    }
+];
+
+var _subColumnInfo = [
+    {
+        name: 'id',
+        hidden: true,
+        get_column: (item) => {
+            return item.id;
+        }
+    },
+    {
+        header: 'Name',
+        get_column: (item) => {
+            return item.name;
+        }
+    },
+    {
+        header: 'RU',
+        get_column: (item) => {
+            return item.recipe_unit;
+        }
+    },
+    {
+        header: 'Count',
+        get_column: (item) => {
+            return item.count;
+        }
+    },
+    {
+        header: 'RU Cost',
+        get_column: (item) => {
+            return formatMoney(item.price);
+        }
+    },
+    {
+        header: 'Ext',
+        get_column: (item) => {
+            return formatMoney(item.price * item.count);
+        }
     }
 ]
+
+var _collapseInfo = (recipe) => {
+    var dg = new CategorizedDatagrid(recipe.Items, _subColumnInfo);
+    var row = `<tr><td colspan="100"><div>
+            ${dg.$table.prop('outerHTML')}
+        </div></td></tr>`;
+    return row;
+};
 
 $(() => {
     createDatagrid()
@@ -68,15 +141,15 @@ function createDatagrid() {
 
     [batchContainer, menuContainer].forEach((container, i) => {
         var isBatch = i == 0;
-        $(container).attr('data', JSON.stringify(items.filter(x =>
-            x.is_batch == isBatch)));
-        new CategorizedItemsDisplay($(container), _columnInfo, null,
-            _options);
+        var recItems = items.filter(x => x.is_batch == isBatch);
+        var dg = new CollapseCategorizedDatagrid(recItems, _columnInfo,
+            _collapseInfo);
+        $(container).html(dg.$table);
     });
 }
 
 function calculateRecipeCost(items, ruc) {
     return items.reduce((total, item) => {
-        return total + item.price;
+        return total + (item.price * item.count);
     }, 0)
 }

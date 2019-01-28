@@ -41,7 +41,7 @@ func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
 	cost := 0.0
 	if err == nil {
 		cost = vendorItem.Price / vendorItem.Conversion /
-			item.RecipeUnitConversion * item.Count
+			item.RecipeUnitConversion
 	} else {
 		recipe, err := logic.GetRecipe(item.InventoryItemID, p.tx)
 		if err != nil {
@@ -53,8 +53,10 @@ func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
 			if err != nil {
 				return 0, err
 			}
-			cost += incCost
+			cost += incCost * item.Count
 		}
+
+		cost /= recAPI.RecipeUnitConversion
 	}
 
 	return cost, nil

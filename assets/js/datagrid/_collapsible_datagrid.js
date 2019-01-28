@@ -16,7 +16,9 @@ export class CollapsibleDatagrid extends DataGrid {
         this.$table.find('thead').prepend('<th>&nbsp;</th>');
         this.rows.forEach((row) => {
             var $row = row.getRow();
-            $row.prepend(`<td class="expander"><span class="fa ${collapsedCaret}"></span></td>`);
+            $row.prepend(`<td class="expander">
+                <span class="fa ${collapsedCaret}"></span>
+            </td>`);
         });
     }
 
