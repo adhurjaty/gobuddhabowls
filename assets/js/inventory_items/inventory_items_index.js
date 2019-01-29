@@ -1,6 +1,7 @@
-import { parseModelJSON, replaceUrlId, formatMoney, toGoName } from '../helpers/_helpers';
-import { sendAjax } from '../helpers/index_helpers';
+import { parseModelJSON, replaceUrlId, formatMoney, toGoName, categorize } from '../helpers/_helpers';
+import { sendAjax, sendUpdate } from '../helpers/index_helpers';
 import { CategorizedItemsDisplay } from '../components/_categorized_items_display';
+import { CategorizedOrderingTable } from '../components/_categorized_ordering_table';
 
 var _categorizedOptions = {
     breakdown: false
@@ -170,12 +171,15 @@ var _columns = [
 
 var _editPathBase = "";
 var _deletePathBase = "";
+var _items = [];
 
 $(() => {
     var container = $('#categorized-items-display');
     _editPathBase = container.attr('edit-path');
     _deletePathBase = container.attr('delete-path');
     createMasterDatagrid(container);
+    enableChangeOrderButton();
+    setupSubmitButton();
 });
 
 function createMasterDatagrid(container) {
@@ -227,4 +231,39 @@ function submitForm(form, id) {
     sendAjax(form);
 
     form.attr('action', templatePath);
+}
+
+function enableChangeOrderButton() {
+    var itemsDiv = $('#categorized-items-display');
+    _items = parseModelJSON(itemsDiv.attr('data'));
+    
+    var table = new CategorizedOrderingTable(_items);
+    var container = $('#re-order-display');
+    table.attach(container);
+
+    var button = $('#change-order-button');
+    button.click(() => {
+        $('#re-order-section').toggle();
+        itemsDiv.toggle();
+    });
+}
+
+function setupSubmitButton() {
+    $('#save-order-button').click(saveInvItemsOrder);
+}
+
+function saveInvItemsOrder() {
+    var $form = $('#inventory-item-form');
+
+    $('#re-order-display').find('li[name="reorder-li"] li').each(
+        function(i, el) {
+            var id = $(el).attr('itemid');
+            var item = _items.find(x => x.id == id);
+            item.index = i;
+
+            sendUpdate($form, item, (form) => sendAjax(form, true));
+        }
+    );
+    
+    location.reload();
 }

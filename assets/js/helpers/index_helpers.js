@@ -48,7 +48,8 @@ function resetFormAction($form, id) {
     $form.attr('action', resetUrl);
 }
 
-export function sendAjax($form) {
+export function sendAjax($form, isSync) {
+    isSync = isSync || false;
     var data = {};
     $form.find('input').each((i, el) => {
         data[$(el).attr('name')] = $(el).val();
@@ -57,6 +58,7 @@ export function sendAjax($form) {
     $.ajax({
         url: $form.attr('action'),
         method: 'POST',
+        async: !isSync,
         data: data
     });
 }

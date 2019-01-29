@@ -6,7 +6,7 @@ export class OrderingTable {
     }
 
     initTable() {
-        this.ul = $(`<ul class="list-group" id="categories-movable"></ul>`);
+        this.ul = $(`<ul class="list-group" name="movable-list"></ul>`);
         this.items.forEach(item => {
             var li = this.getListElement(item);
             this.ul.append(li);
