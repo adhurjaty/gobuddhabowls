@@ -51,7 +51,8 @@ var _columnInfo = [
 ];
 
 function setupTable() {
-    var allItemsText = $('#inventory-items').attr('data');
+    debugger;
+    var allItemsText = $('#all-inv-items').attr('data');
     if(allItemsText) {
         var allItems = JSON.parse(allItemsText);
         var container = $('#categorized-items-display');

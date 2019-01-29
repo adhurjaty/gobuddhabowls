@@ -21,4 +21,9 @@
   delete-path='<%= inventoryItemPath({inventory_item_id: "{inventory_item_id}"}) %>'
   data='<%= inventory.Items.String() %>'></div>
 
+<div id="re-order-section" style="display: none;">
+  <div id="re-order-display"></div>
+  <button id="save-order-button" class="btn btn-primary">Save</button>
+</div>
+
 <%= javascriptTag("inventory_items/inventory_items_index.js") %>

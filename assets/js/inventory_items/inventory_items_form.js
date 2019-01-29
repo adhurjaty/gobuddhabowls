@@ -1,5 +1,5 @@
 import { DataGrid } from "../datagrid/_datagrid";
-import { parseModelJSON, formatMoney, groupByCategory } from "../helpers/_helpers";
+import { parseModelJSON, formatMoney, groupByCategory, blankUUID } from "../helpers/_helpers";
 import { ButtonGroup } from "../components/_button_group";
 import { Modal } from "../components/_modal";
 import { SingleOrderingTable } from "../components/_single_ordering_table";
@@ -275,6 +275,9 @@ function setAttrs(item, rowItem) {
     item.price = rowItem.price;
     item.conversion = rowItem.conversion;
     item.purchased_unit = rowItem.purchased_unit;
+    if(item.id == rowItem.name) {
+        item.id = blankUUID();
+    }
 }
 
 function findItemIndex() {
