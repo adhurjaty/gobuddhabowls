@@ -161,6 +161,11 @@ func (p *Presenter) UpdateFullInventoryItem(item *ItemAPI) (*validate.Errors, er
 		return verrs, err
 	}
 
+	err = p.deleteVendorItems(item)
+	if err != nil {
+		return verrs, err
+	}
+
 	return p.updateVendorItems(item)
 }
 
@@ -179,7 +184,31 @@ func (p *Presenter) UpdateBaseInventoryItem(item *ItemAPI) (*validate.Errors, er
 		return validate.NewErrors(), err
 	}
 
+	verrs, err := p.updateInventoryItemIndices(item)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+
 	return logic.UpdateInventoryItem(invItem, p.tx)
+}
+
+func (p *Presenter) updateInventoryItemIndices(item *ItemAPI) (*validate.Errors, error) {
+	nextItems, err := logic.GetInvItemsAfter(item.ID, item.Index, p.tx)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	for i, otherItem := range *nextItems {
+		if otherItem.Index <= i+item.Index {
+			otherItem.Index = i + item.Index + 1
+			verrs, err := logic.UpdateInventoryItem(&otherItem, p.tx)
+			if verrs.HasAny() || err != nil {
+				return verrs, err
+			}
+		}
+	}
+
+	return validate.NewErrors(), nil
 }
 
 func (p *Presenter) InsertInventoryItem(item *ItemAPI) (*validate.Errors, error) {

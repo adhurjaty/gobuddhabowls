@@ -66,6 +66,12 @@ func GetVendorItemByInvItem(invItemID string, vendorID string, tx *pop.Connectio
 	return vendorItem, err
 }
 
+func GetAllVendorItemsByInvItem(invItemID string, tx *pop.Connection) (*models.VendorItems, error) {
+	vendorItems := &models.VendorItems{}
+	err := tx.Where("inventory_item_id = ?", invItemID).All(vendorItems)
+	return vendorItems, err
+}
+
 func InsertVendor(vendor *models.Vendor, tx *pop.Connection) (*validate.Errors, error) {
 	verrs, err := tx.ValidateAndCreate(vendor)
 	if err != nil || verrs.HasAny() {

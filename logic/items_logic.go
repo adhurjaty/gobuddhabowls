@@ -32,6 +32,15 @@ func GetInventoryItem(id string, tx *pop.Connection) (*models.InventoryItem, err
 	return item, nil
 }
 
+func GetInvItemsAfter(id string, idx int, tx *pop.Connection) (*models.InventoryItems, error) {
+	items := &models.InventoryItems{}
+	query := tx.Where("id != ?", id).Where("index >= ?", idx).
+		Order("index")
+	err := query.All(items)
+
+	return items, err
+}
+
 func HistoricalItemExists(inventoryItemID string, tx *pop.Connection) bool {
 	orderItem := &models.OrderItem{}
 	countItem := &models.CountInventoryItem{}

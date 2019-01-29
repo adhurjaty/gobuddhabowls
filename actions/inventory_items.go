@@ -247,7 +247,8 @@ func (v InventoryItemsResource) Update(c buffalo.Context) error {
 	}
 
 	// and redirect to the inventory_items index page
-	return c.Redirect(303, "/inventories")
+	return c.Redirect(303, "/inventory_items")
+	// return c.Render(200, r.String("SFEe"))
 }
 
 func setEditInvItemsViewVars(c buffalo.Context, presenter *presentation.Presenter,

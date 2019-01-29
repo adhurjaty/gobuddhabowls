@@ -4,6 +4,7 @@ import (
 	"buddhabowls/logic"
 	"buddhabowls/models"
 	"database/sql"
+	"fmt"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 )
@@ -129,6 +130,33 @@ func (p *Presenter) getVendorID(name string) (uuid.UUID, error) {
 	}
 
 	return vendor.ID, nil
+}
+
+func (p *Presenter) deleteVendorItems(item *ItemAPI) error {
+	vendorItems, err := logic.GetAllVendorItemsByInvItem(item.InventoryItemID, p.tx)
+	if err != nil {
+		return err
+	}
+
+	for _, vItem := range *vendorItems {
+		exists := false
+		for _, v := range item.VendorItemMap {
+			if v.ID == vItem.ID.String() {
+				exists = true
+				break
+			}
+		}
+		if !exists {
+			fmt.Println("!!!!!!!!!!!!!!!!!!!!!!")
+			fmt.Println(vItem)
+			err = logic.DestroyVendorItem(&vItem, p.tx)
+			if err != nil {
+				return err
+			}
+		}
+	}
+
+	return nil
 }
 
 func (p *Presenter) GetBlankVendorItems() (*ItemsAPI, error) {
