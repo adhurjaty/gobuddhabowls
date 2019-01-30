@@ -49,13 +49,16 @@ func (p *Presenter) populateReciepItemCosts(items *ItemsAPI) error {
 }
 
 func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
-	vendorItem, err := logic.GetSelectedVendorItem(item.InventoryItemID, p.tx)
 	cost := 0.0
-	if err == nil {
+	if item.InventoryItemID != "" {
+		vendorItem, err := logic.GetSelectedVendorItem(item.InventoryItemID, p.tx)
+		if err != nil {
+			return 0, err
+		}
 		cost = vendorItem.Price / vendorItem.Conversion /
 			item.RecipeUnitConversion
 	} else {
-		recipe, err := logic.GetRecipe(item.InventoryItemID, p.tx)
+		recipe, err := logic.GetRecipe(item.BatchRecipeID, p.tx)
 		if err != nil {
 			return 0, err
 		}

@@ -1,7 +1,7 @@
 import { formatMoney, parseModelJSON, replaceUrlId, dblclickEdit } from "../helpers/_helpers";
 import { CollapseCategorizedDatagrid } from "../datagrid/_collapse_categorized_datagrid";
 import { CategorizedDatagrid } from "../datagrid/_categorized_datagrid";
-import { sendUpdate } from "../helpers/index_helpers";
+import { sendUpdate, sendAjax } from "../helpers/index_helpers";
 
 var _options = {
     breakdown: false
@@ -16,6 +16,13 @@ var _columnInfo = [
         hidden: true,
         get_column: (recipe) => {
             return recipe.id;
+        }
+    },
+    {
+        name: 'index',
+        hidden: true,
+        get_column: (recipe) => {
+            return recipe.index;
         }
     },
     {
@@ -156,6 +163,13 @@ function calculateRecipeCost(items, ruc) {
 }
 
 function onRecipeUpdated(updateObj) {
-    debugger;
-    sendUpdate($('#update-recipe-form'), updateObj)
+    if(updateObj.Items) {
+        delete updateObj["Items"];
+    }
+    if(updateObj.Category) {
+        updateObj['category_id'] = updateObj.Category.id;
+        delete updateObj["Category"];
+    }
+
+    sendUpdate($('#update-recipe-form'), updateObj, sendAjax);
 }

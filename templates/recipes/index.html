@@ -22,7 +22,7 @@
     </div>
 </div>
 
-<%= form({action: recipePath({recipe_id: "{recipe_id}"}), method: "PUT",
+<%= form({action: recipeInlinePath({recipe_id: "{recipe_id}"}), method: "PUT",
   id: "update-recipe-form", style: "display: none;"}) { %> <% } %>
 
 <%= javascriptTag("recipes/recipes_index.js") %>

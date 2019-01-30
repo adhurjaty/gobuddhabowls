@@ -185,7 +185,7 @@ func (v RecipesResource) Update(c buffalo.Context) error {
 	return c.Redirect(303, "/recipes")
 }
 
-func UpdateRecipesInline(c buffalo.Context) error {
+func UpdateRecipeInline(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {

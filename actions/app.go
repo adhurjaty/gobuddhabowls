@@ -83,7 +83,10 @@ func App() *buffalo.App {
 
 		app.Resource("/order_items", OrderItemsResource{})
 		app.Resource("/prep_items", PrepItemsResource{})
+
+		app.PUT("/recipes/{recipe_id}/inline", UpdateRecipeInline)
 		app.Resource("/recipes", RecipesResource{})
+
 		app.Resource("/recipe_items", RecipeItemsResource{})
 		app.Resource("/vendor_items", VendorItemsResource{})
 		app.Resource("/count_prep_items", CountPrepItemsResource{})
