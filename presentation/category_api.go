@@ -56,6 +56,20 @@ func ConvertToModelCategory(catAPI CategoryAPI) (*models.InventoryItemCategory, 
 	}, nil
 }
 
+func ConvertToModelRecipeCategory(catAPI CategoryAPI) (*models.RecipeCategory, error) {
+	id, err := uuid.FromString(catAPI.ID)
+	if err != nil {
+		return nil, err
+	}
+
+	return &models.RecipeCategory{
+		ID:         id,
+		Name:       catAPI.Name,
+		Background: catAPI.Background,
+		Index:      catAPI.Index,
+	}, nil
+}
+
 // SelectValue returns the ID for select input tags
 func (c CategoryAPI) SelectValue() interface{} {
 	return c.ID

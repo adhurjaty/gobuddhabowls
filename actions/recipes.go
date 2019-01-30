@@ -72,6 +72,16 @@ func (v RecipesResource) Show(c buffalo.Context) error {
 // New renders the form for creating a new Recipe.
 // This function is mapped to the path GET /recipes/new
 func (v RecipesResource) New(c buffalo.Context) error {
+	// tx, ok := c.Value("tx").(*pop.Connection)
+	// if !ok {
+	// 	return errors.WithStack(errors.New("no transaction found"))
+	// }
+
+	// recipe := &presentation.RecipeAPI{
+	// 	RecipeUnitConversion: 1,
+	// 	IsBatch:              true,
+	// }
+
 	return c.Render(200, r.Auto(c, &models.Recipe{}))
 }
 
@@ -142,10 +152,9 @@ func (v RecipesResource) Update(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty Recipe
-	recipe := &models.Recipe{}
-
-	if err := tx.Find(recipe, c.Param("recipe_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	recipe, err := presenter.GetRecipe(c.Param("recipe_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
@@ -154,7 +163,7 @@ func (v RecipesResource) Update(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	verrs, err := tx.ValidateAndUpdate(recipe)
+	verrs, err := presenter.UpdateRecipe(recipe)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -162,17 +171,54 @@ func (v RecipesResource) Update(c buffalo.Context) error {
 	if verrs.HasAny() {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
+		c.Set("recipe", recipe)
 
 		// Render again the edit.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, recipe))
+		return c.Render(422, r.HTML("recipes/edit"))
 	}
 
 	// If there are no errors set a success message
 	c.Flash().Add("success", "Recipe was updated successfully")
 
 	// and redirect to the recipes index page
-	return c.Render(200, r.Auto(c, recipe))
+	return c.Redirect(303, "/recipes")
+}
+
+func UpdateRecipesInline(c buffalo.Context) error {
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	recipe, err := presenter.GetRecipe(c.Param("recipe_id"))
+	if err != nil {
+		return c.Error(404, err)
+	}
+
+	// Bind Recipe to the html form elements
+	if err := c.Bind(recipe); err != nil {
+		return errors.WithStack(err)
+	}
+
+	verrs, err := presenter.UpdateRecipeNoItems(recipe)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	if verrs.HasAny() {
+		// Make the errors available inside the html template
+		c.Set("errors", verrs)
+		c.Set("recipe", recipe)
+
+		// Render again the edit.html template that the user can
+		// correct the input.
+		return c.Render(422, r.String(fmt.Sprintf("Error: %v", verrs)))
+	}
+
+	return c.Render(200, r.String("success"))
 }
 
 // Destroy deletes a Recipe from the DB. This function is mapped

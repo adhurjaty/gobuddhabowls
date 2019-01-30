@@ -1,6 +1,7 @@
 import { formatMoney, parseModelJSON, replaceUrlId, dblclickEdit } from "../helpers/_helpers";
 import { CollapseCategorizedDatagrid } from "../datagrid/_collapse_categorized_datagrid";
 import { CategorizedDatagrid } from "../datagrid/_categorized_datagrid";
+import { sendUpdate } from "../helpers/index_helpers";
 
 var _options = {
     breakdown: false
@@ -119,7 +120,7 @@ var _subColumnInfo = [
             return formatMoney(item.price * item.count);
         }
     }
-]
+];
 
 var _collapseInfo = (recipe) => {
     var dg = new CategorizedDatagrid(recipe.Items, _subColumnInfo);
@@ -143,7 +144,7 @@ function createDatagrid() {
         var isBatch = i == 0;
         var recItems = items.filter(x => x.is_batch == isBatch);
         var dg = new CollapseCategorizedDatagrid(recItems, _columnInfo,
-            _collapseInfo);
+            _collapseInfo, onRecipeUpdated);
         $(container).html(dg.$table);
     });
 }
@@ -152,4 +153,9 @@ function calculateRecipeCost(items, ruc) {
     return items.reduce((total, item) => {
         return total + (item.price * item.count);
     }, 0)
+}
+
+function onRecipeUpdated(updateObj) {
+    debugger;
+    sendUpdate($('#update-recipe-form'), updateObj)
 }

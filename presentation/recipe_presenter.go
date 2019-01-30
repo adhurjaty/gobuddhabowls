@@ -2,7 +2,19 @@ package presentation
 
 import (
 	"buddhabowls/logic"
+	"github.com/gobuffalo/validate"
 )
+
+func (p *Presenter) GetRecipe(id string) (*RecipeAPI, error) {
+	recipe, err := logic.GetRecipe(id, p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	recAPI := NewRecipeAPI(recipe)
+	err = p.populateReciepItemCosts(&recAPI.Items)
+	return &recAPI, err
+}
 
 func (p *Presenter) GetRecipes() (*RecipesAPI, error) {
 	recipes, err := logic.GetRecipes(p.tx)
@@ -60,4 +72,22 @@ func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
 	}
 
 	return cost, nil
+}
+
+func (p *Presenter) UpdateRecipe(recAPI *RecipeAPI) (*validate.Errors, error) {
+	recipe, err := ConvertToModelRecipe(recAPI)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	return logic.UpdateRecipe(recipe, p.tx)
+}
+
+func (p *Presenter) UpdateRecipeNoItems(recAPI *RecipeAPI) (*validate.Errors, error) {
+	recipe, err := ConvertToModelRecipe(recAPI)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	return logic.UpdateRecipeNoItems(recipe, p.tx)
 }

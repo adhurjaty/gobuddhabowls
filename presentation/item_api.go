@@ -23,6 +23,8 @@ type ItemAPI struct {
 	RecipeUnit           string             `json:"recipe_unit,omitempty"`
 	RecipeUnitConversion float64            `json:"recipe_unit_conversion,omitempty"`
 	Yield                float64            `json:"yield,omitempty"`
+	Measure              string             `json:"measure,omitempty"`
+	BatchRecipeID        string             `json:"batch_recipe_id,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
@@ -75,6 +77,11 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		itemAPI.RecipeUnit = recipeItem.GetRecipeUnit()
 		itemAPI.RecipeUnitConversion = recipeItem.GetRecipeUnitConversion()
 		itemAPI.Count = recipeItem.Count
+		itemAPI.Measure = recipeItem.Measure
+		if recipeItem.BatchRecipeID.Valid {
+			itemAPI.BatchRecipeID = recipeItem.BatchRecipeID.UUID.String()
+			itemAPI.InventoryItemID = ""
+		}
 	}
 
 	return itemAPI
@@ -275,6 +282,50 @@ func ConvertToModelCountInventoryItem(item ItemAPI, inventoryID uuid.UUID) (*mod
 		InventoryItemID:  invID,
 		Count:            item.Count,
 		SelectedVendorID: vendorID,
+	}, nil
+}
+
+func ConvertToModelRecipeItems(items ItemsAPI, recID uuid.UUID) (*models.RecipeItems, error) {
+	outItems := &models.RecipeItems{}
+	for _, item := range items {
+		recItem, err := ConvertToModelRecipeItem(item, recID)
+		if err != nil {
+			return nil, err
+		}
+		*outItems = append(*outItems, *recItem)
+	}
+
+	return outItems, nil
+}
+
+func ConvertToModelRecipeItem(item ItemAPI, recID uuid.UUID) (*models.RecipeItem, error) {
+	id, err := uuid.FromString(item.ID)
+	if err != nil {
+		id = uuid.UUID{}
+	}
+
+	batchRecID := uuid.NullUUID{}
+	invItemID := uuid.NullUUID{}
+	iid, err := uuid.FromString(item.InventoryItemID)
+	if err != nil {
+		bid, err := uuid.FromString(item.BatchRecipeID)
+		if err != nil {
+			return nil, err
+		}
+		batchRecID.UUID = bid
+		batchRecID.Valid = true
+	} else {
+		invItemID.UUID = iid
+		invItemID.Valid = true
+	}
+
+	return &models.RecipeItem{
+		ID:              id,
+		RecipeID:        recID,
+		InventoryItemID: invItemID,
+		BatchRecipeID:   batchRecID,
+		Count:           item.Count,
+		Measure:         item.Measure,
 	}, nil
 }
 

@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/models"
 	"encoding/json"
+	"github.com/gobuffalo/uuid"
 )
 
 type RecipeAPI struct {
@@ -48,4 +49,39 @@ func NewRecipeAPI(recipe *models.Recipe) RecipeAPI {
 		Items:                NewItemsAPI(recipe.Items),
 		IsBatch:              recipe.IsBatch,
 	}
+}
+
+func ConvertToModelRecipe(recAPI *RecipeAPI) (*models.Recipe, error) {
+	id, err := uuid.FromString(recAPI.ID)
+	if err != nil {
+		id = uuid.UUID{}
+	}
+
+	// filter out 0 count items
+	recItems := ItemsAPI{}
+	for _, item := range recAPI.Items {
+		if item.Count > 0 {
+			recItems = append(recItems, item)
+		}
+	}
+	items, err := ConvertToModelRecipeItems(recItems, id)
+	if err != nil {
+		return nil, err
+	}
+	category, err := ConvertToModelRecipeCategory(recAPI.Category)
+	if err != nil {
+		return nil, err
+	}
+
+	return &models.Recipe{
+		ID:                   id,
+		Name:                 recAPI.Name,
+		CategoryID:           category.ID,
+		Category:             *category,
+		RecipeUnit:           recAPI.RecipeUnit,
+		RecipeUnitConversion: recAPI.RecipeUnitConversion,
+		IsBatch:              recAPI.IsBatch,
+		Items:                *items,
+		Index:                recAPI.Index,
+	}, nil
 }
