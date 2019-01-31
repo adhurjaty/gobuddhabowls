@@ -163,13 +163,14 @@ function calculateRecipeCost(items, ruc) {
 }
 
 function onRecipeUpdated(updateObj) {
-    if(updateObj.Items) {
-        delete updateObj["Items"];
+    var copyObj = JSON.parse(JSON.stringify(updateObj));
+    if(copyObj.Items) {
+        delete copyObj["Items"];
     }
-    if(updateObj.Category) {
-        updateObj['category_id'] = updateObj.Category.id;
-        delete updateObj["Category"];
+    if(copyObj.Category) {
+        copyObj['category_id'] = copyObj.Category.id;
+        delete copyObj["Category"];
     }
 
-    sendUpdate($('#update-recipe-form'), updateObj, sendAjax);
+    sendUpdate($('#update-recipe-form'), copyObj, sendAjax);
 }

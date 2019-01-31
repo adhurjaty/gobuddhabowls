@@ -48,7 +48,11 @@ func (r Recipes) String() string {
 func (r *Recipe) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
 		&validators.StringIsPresent{Field: r.Name, Name: "Name"},
-		&validators.IntIsPresent{Field: r.Index, Name: "Index"},
+		&validators.IntIsGreaterThan{
+			Field:    r.Index,
+			Name:     "Index",
+			Compared: -1,
+		},
 	), nil
 }
 

@@ -49,7 +49,11 @@ func (i *InventoryItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 		&validators.StringIsPresent{Field: i.Name, Name: "Name"},
 		&validators.StringIsPresent{Field: i.CountUnit, Name: "CountUnit"},
 		&validators.StringIsPresent{Field: i.RecipeUnit, Name: "RecipeUnit"},
-		&validators.IntIsPresent{Field: i.Index, Name: "Index"},
+		&validators.IntIsGreaterThan{
+			Field:    i.Index,
+			Name:     "Index",
+			Compared: -1,
+		},
 		&validators.FuncValidator{
 			Field:   "",
 			Name:    "Yield",

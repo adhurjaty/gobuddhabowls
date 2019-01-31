@@ -94,10 +94,10 @@ $(() => {
 
 // TODO: repeated code from purchase_orders_datagrid.js - refactor
 function sendDatagridUpdate(updateObj) {
-    delete updateObj["Items"];
+    var copyObj = JSON.parse(JSON.stringify(updateObj));
+    delete copyObj["Items"];
     var form = $('#update-vendor-form');
-    debugger;
-    sendUpdate($('#update-vendor-form'), updateObj, ((form) => {
+    sendUpdate($('#update-vendor-form'), copyObj, ((form) => {
         return () => sendAjax(form)
     })(form));
 }
