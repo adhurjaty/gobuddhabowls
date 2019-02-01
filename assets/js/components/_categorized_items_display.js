@@ -100,7 +100,7 @@ export class CategorizedItemsDisplay {
 
     initBreakdown() {
         var bdContainer = this.$container.find('div[name="breakdown"]');
-        var title = 'Order Breakdown';
+        var title = 'Category Breakdown';
         var total = this.items.reduce((total, item) => total + item.count * item.price, 0);
         if(total != 0) {
             bdContainer.html(horizontalPercentageChart(title, this.items, total));

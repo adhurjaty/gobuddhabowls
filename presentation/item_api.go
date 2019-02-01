@@ -82,6 +82,13 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 			itemAPI.BatchRecipeID = recipeItem.BatchRecipeID.UUID.String()
 			itemAPI.InventoryItemID = ""
 		}
+	case models.Recipe:
+		recipe, _ := item.(models.Recipe)
+		itemAPI.RecipeUnit = recipe.RecipeUnit
+		itemAPI.RecipeUnitConversion = recipe.RecipeUnitConversion
+		itemAPI.InventoryItemID = ""
+		itemAPI.BatchRecipeID = recipe.ID.String()
+		itemAPI.Measure = recipe.RecipeUnit
 	}
 
 	return itemAPI
@@ -119,6 +126,12 @@ func NewItemsAPI(modelItems interface{}) ItemsAPI {
 		}
 	case models.RecipeItems:
 		modelSlice := modelItems.(models.RecipeItems)
+		apis = make([]ItemAPI, len(modelSlice))
+		for i, modelItem := range modelSlice {
+			apis[i] = NewItemAPI(modelItem)
+		}
+	case models.Recipes:
+		modelSlice := modelItems.(models.Recipes)
 		apis = make([]ItemAPI, len(modelSlice))
 		for i, modelItem := range modelSlice {
 			apis[i] = NewItemAPI(modelItem)

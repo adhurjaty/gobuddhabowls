@@ -12,10 +12,14 @@
 </div> 
 <div>
   <label>Ingredients</label>
-  <div id="recipe-items-display" all-items='<%= allItems.String() %>'></div>
+  <div id="recipe-items-display" class="row"
+       data='<%= recipe.Items.String() %>'
+       all-items='<%= allItems.String() %>'></div>
   <input type="text" name="Items" style="display: none;"
-         value='<%= recipe.Items.String() %>' />
-</div> 
+          value='<%= recipe.Items.String() %>' />
+</div>
+
+<br/>
 <button class="btn btn-success" role="submit">Save</button>
 
 <%= javascriptTag("recipes/recipes_form.js") %>
