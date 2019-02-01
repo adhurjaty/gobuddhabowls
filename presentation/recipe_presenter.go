@@ -77,6 +77,23 @@ func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
 	return cost, nil
 }
 
+func (p *Presenter) GetAllItemsForRecipe() (*ItemsAPI, error) {
+	batchRecipes, err := logic.GetBatchRecipes(p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	batchItems := NewItemsAPI(batchRecipes)
+
+	items, err := p.GetInventoryItems()
+	if err != nil {
+		return nil, err
+	}
+
+	*items = append(*items, batchItems...)
+	return items, nil
+}
+
 func (p *Presenter) UpdateRecipe(recAPI *RecipeAPI) (*validate.Errors, error) {
 	recipe, err := ConvertToModelRecipe(recAPI)
 	if err != nil {

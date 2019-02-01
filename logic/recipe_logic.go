@@ -18,6 +18,19 @@ func GetRecipes(tx *pop.Connection) (*models.Recipes, error) {
 	return recipes, nil
 }
 
+func GetBatchRecipes(tx *pop.Connection) (*models.Recipes, error) {
+	factory := models.ModelFactory{}
+	recipes := &models.Recipes{}
+	query := tx.Eager().Where("is_batch = true")
+	if err := factory.CreateModelSlice(recipes, query); err != nil {
+		return nil, err
+	}
+
+	recipes.Sort()
+
+	return recipes, nil
+}
+
 func GetRecipe(id string, tx *pop.Connection) (*models.Recipe, error) {
 	factory := models.ModelFactory{}
 	recipe := &models.Recipe{}

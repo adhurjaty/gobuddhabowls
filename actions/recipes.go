@@ -72,17 +72,38 @@ func (v RecipesResource) Show(c buffalo.Context) error {
 // New renders the form for creating a new Recipe.
 // This function is mapped to the path GET /recipes/new
 func (v RecipesResource) New(c buffalo.Context) error {
-	// tx, ok := c.Value("tx").(*pop.Connection)
-	// if !ok {
-	// 	return errors.WithStack(errors.New("no transaction found"))
-	// }
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
 
-	// recipe := &presentation.RecipeAPI{
-	// 	RecipeUnitConversion: 1,
-	// 	IsBatch:              true,
-	// }
+	presenter := presentation.NewPresenter(tx)
+	categories, err := presenter.GetAllRecCategories()
+	if err != nil {
+		return errors.WithStack(err)
+	}
 
-	return c.Render(200, r.Auto(c, &models.Recipe{}))
+	recipe := &presentation.RecipeAPI{
+		RecipeUnitConversion: 1,
+		IsBatch:              true,
+	}
+	recipes, err := presenter.GetRecipes()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	// re-querying recipes - could be more efficient
+	allItems, err := presenter.GetAllItemsForRecipe()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("recipe", recipe)
+	c.Set("recipes", recipes)
+	c.Set("allItems", allItems)
+	c.Set("categories", categories)
+
+	return c.Render(200, r.HTML("recipes/new"))
 }
 
 // Create adds a Recipe to the DB. This function is mapped to the
