@@ -78,32 +78,42 @@ func (v RecipesResource) New(c buffalo.Context) error {
 	}
 
 	presenter := presentation.NewPresenter(tx)
-	categories, err := presenter.GetAllRecCategories()
-	if err != nil {
-		return errors.WithStack(err)
-	}
 
 	recipe := &presentation.RecipeAPI{
 		RecipeUnitConversion: 1,
 		IsBatch:              true,
 	}
-	recipes, err := presenter.GetRecipes()
+	c.Set("recipe", recipe)
+	err := setRecipeFormViewVars(presenter, c)
 	if err != nil {
 		return errors.WithStack(err)
+	}
+
+	return c.Render(200, r.HTML("recipes/new"))
+}
+
+func setRecipeFormViewVars(presenter *presentation.Presenter, c buffalo.Context) error {
+	categories, err := presenter.GetAllRecCategories()
+	if err != nil {
+		return err
+	}
+
+	recipes, err := presenter.GetRecipesNoItems()
+	if err != nil {
+		return err
 	}
 
 	// re-querying recipes - could be more efficient
 	allItems, err := presenter.GetAllItemsForRecipe()
 	if err != nil {
-		return errors.WithStack(err)
+		return err
 	}
 
-	c.Set("recipe", recipe)
 	c.Set("recipes", recipes)
 	c.Set("allItems", allItems)
 	c.Set("categories", categories)
 
-	return c.Render(200, r.HTML("recipes/new"))
+	return nil
 }
 
 // Create adds a Recipe to the DB. This function is mapped to the
@@ -154,14 +164,20 @@ func (v RecipesResource) Edit(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty Recipe
-	recipe := &models.Recipe{}
+	presenter := presentation.NewPresenter(tx)
 
-	if err := tx.Find(recipe, c.Param("recipe_id")); err != nil {
+	recipe, err := presenter.GetRecipe(c.Param("recipe_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
+	c.Set("recipe", recipe)
 
-	return c.Render(200, r.Auto(c, recipe))
+	err = setRecipeFormViewVars(presenter, c)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	return c.Render(200, r.HTML("recipes/edit"))
 }
 
 // Update changes a Recipe in the DB. This function is mapped to

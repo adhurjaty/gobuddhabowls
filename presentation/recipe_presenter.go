@@ -78,6 +78,16 @@ func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
 	return cost, nil
 }
 
+func (p *Presenter) GetRecipesNoItems() (*RecipesAPI, error) {
+	recipes, err := logic.GetRecipesNoItems(p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	recipesAPI := NewRecipesAPI(recipes)
+	return &recipesAPI, nil
+}
+
 func (p *Presenter) GetAllItemsForRecipe() (*ItemsAPI, error) {
 	batchRecipes, err := logic.GetBatchRecipes(p.tx)
 	if err != nil {

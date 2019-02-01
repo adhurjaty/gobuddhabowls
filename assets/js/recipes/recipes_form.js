@@ -1,5 +1,6 @@
-import { parseModelJSON, formatMoney } from "../helpers/_helpers";
+import { parseModelJSON, formatMoney, groupByCategory } from "../helpers/_helpers";
 import { CategorizedItemsDisplay } from "../components/_categorized_items_display";
+import { SingleOrderingTable } from "../components/_single_ordering_table";
 
 var _datagridOptions = {
     breakdown: true
@@ -41,15 +42,17 @@ var _columnInfo = [
         }
     },
     {
+        name: 'recipe_unit',
         header: 'Recipe Unit',
         get_column: (item) => {
             return item.recipe_unit;
         }
     },
     {
+        name: 'recipe_unit_conversion',
         header: 'RU Conversion',
         get_column: (item) => {
-            return item.recipe_unit;
+            return item.recipe_unit_conversion;
         }
     },
     {
@@ -78,9 +81,12 @@ var _columnInfo = [
     }
 ];
 
+var _orderingTable = null;
+
 $(() => {
     initDatagrid();
     initOrderingTable();
+    setOnChangeCategoryOrName();
 });
 
 function initDatagrid() {
@@ -91,5 +97,48 @@ function initDatagrid() {
 }
 
 function initOrderingTable() {
+    var container = $('#recipe-item-ordering');
+    var invItems = parseModelJSON(container.attr('data'));
+    var item = getItem();
+    
+    var catItems = groupByCategory(invItems);
+    var selectedCat = catItems.find(x => x.name == item.category);
+    if(selectedCat) {
+        var selectedCatItems = selectedCat.value;
+        var idx = selectedCatItems.findIndex(x => x.id == item.id);
+        if(idx > -1) {
+            selectedCatItems.splice(idx, 1)
+        }
+        _orderingTable = new SingleOrderingTable(selectedCatItems, item);
+        _orderingTable.attach(container);
+    }
+}
 
+function getItem() {
+    var category = $('select[name="CategoryID"] option:selected').html();
+    var name = $('input[name="Name"]').val();
+    var index = parseInt($('input[name="Index"]').val());
+    var id = $('input[name="ID"]').val();
+
+    return {
+        name: name,
+        category: category,
+        index: index,
+        id: id
+    };
+}
+
+function setOnChangeCategoryOrName() {
+    $('select[name="CategoryID"]').change((option) => {
+        clearInvItemsTable();
+        initOrderingTable();
+    });
+    $('input[name="Name"]').change(() => {
+        var name = $('input[name="Name"]').val();
+        _orderingTable.updateItemName(name);
+    });
+}
+
+function clearInvItemsTable() {
+    $('#recipe-item-ordering').html('');
 }

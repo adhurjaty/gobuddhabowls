@@ -18,6 +18,12 @@ func GetRecipes(tx *pop.Connection) (*models.Recipes, error) {
 	return recipes, nil
 }
 
+func GetRecipesNoItems(tx *pop.Connection) (*models.Recipes, error) {
+	recipes := &models.Recipes{}
+	err := tx.Eager().All(recipes)
+	return recipes, err
+}
+
 func GetBatchRecipes(tx *pop.Connection) (*models.Recipes, error) {
 	factory := models.ModelFactory{}
 	recipes := &models.Recipes{}
