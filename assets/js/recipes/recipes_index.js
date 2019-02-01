@@ -202,7 +202,6 @@ function onRecipeItemUpdate(updateObj) {
 }
 
 function updateRecipeRowCost(recipe) {
-    debugger;
     _recipeGrids.forEach(grid => {
         grid.rows.forEach(row => {
             if(row.item.id == recipe.id) {

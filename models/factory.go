@@ -29,6 +29,8 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 		return nil
 	case *Recipe:
 		return LoadRecipe(m.(*Recipe), tx, id)
+	case *RecipeItem:
+		return LoadRecipeItem(m.(*RecipeItem), tx, id)
 	case *InventoryItem:
 		if err := LoadInventoryItem(m.(*InventoryItem), tx, id); err != nil {
 			return err

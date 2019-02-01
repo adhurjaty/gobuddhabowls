@@ -2,6 +2,7 @@ package actions
 
 import (
 	"buddhabowls/models"
+	"fmt"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -162,19 +163,10 @@ func (v RecipeItemsResource) Update(c buffalo.Context) error {
 	}
 
 	if verrs.HasAny() {
-		// Make the errors available inside the html template
-		c.Set("errors", verrs)
-
-		// Render again the edit.html template that the user can
-		// correct the input.
-		return c.Render(422, r.Auto(c, recipeItem))
+		return c.Render(422, r.String(fmt.Sprintf("Errors: %v", verrs)))
 	}
 
-	// If there are no errors set a success message
-	c.Flash().Add("success", "RecipeItem was updated successfully")
-
-	// and redirect to the recipe_items index page
-	return c.Render(200, r.Auto(c, recipeItem))
+	return c.Render(200, r.String("success"))
 }
 
 // Destroy deletes a RecipeItem from the DB. This function is mapped
