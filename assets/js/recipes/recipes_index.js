@@ -89,53 +89,74 @@ var _columnInfo = [
     }
 ];
 
-var _subColumnInfo = [
-    {
-        name: 'id',
-        hidden: true,
-        get_column: (item) => {
-            return item.id;
+var _subColumnInfoFn = (recipe) => {
+    return [
+        {
+            name: 'id',
+            hidden: true,
+            get_column: (item) => {
+                return item.id;
+            }
+        },
+        {
+            header: 'Name',
+            get_column: (item) => {
+                return item.name;
+            }
+        },
+        {
+            header: 'RU',
+            get_column: (item) => {
+                return item.recipe_unit;
+            }
+        },
+        {
+            name: 'measure',
+            header: 'Meas.',
+            editable: true,
+            get_column: (item) => {
+                return item.measure;
+            },
+            set_column: (item, measure) => {
+                item.measure = measure;
+            }
+        },
+        {
+            header: 'RU Cost',
+            get_column: (item) => {
+                return formatMoney(item.price);
+            }
+        },
+        {
+            name: 'count',
+            header: 'Count',
+            editable: true,
+            get_column: (item) => {
+                return item.count;
+            },
+            set_column: (item, count) => {
+                item.count = count;
+                updateRecipeRowCost(recipe);
+            }
+        },
+        {
+            header: 'Ext',
+            get_column: (item) => {
+                return formatMoney(item.price * item.count);
+            }
         }
-    },
-    {
-        header: 'Name',
-        get_column: (item) => {
-            return item.name;
-        }
-    },
-    {
-        header: 'RU',
-        get_column: (item) => {
-            return item.recipe_unit;
-        }
-    },
-    {
-        header: 'Count',
-        get_column: (item) => {
-            return item.count;
-        }
-    },
-    {
-        header: 'RU Cost',
-        get_column: (item) => {
-            return formatMoney(item.price);
-        }
-    },
-    {
-        header: 'Ext',
-        get_column: (item) => {
-            return formatMoney(item.price * item.count);
-        }
-    }
-];
+    ];
+}
 
 var _collapseInfo = (recipe) => {
-    var dg = new CategorizedDatagrid(recipe.Items, _subColumnInfo);
-    var row = `<tr><td colspan="100"><div>
-            ${dg.$table.prop('outerHTML')}
-        </div></td></tr>`;
+    var dg = new CategorizedDatagrid(recipe.Items, 
+        _subColumnInfoFn(recipe), onRecipeItemUpdate);
+    var row = $('<tr><td colspan="100"><div></div></td></tr>');
+    row.find('div').append(dg.$table);
     return row;
 };
+
+var _recipeGrids = [null, null];
 
 $(() => {
     createDatagrid()
@@ -152,6 +173,7 @@ function createDatagrid() {
         var recItems = items.filter(x => x.is_batch == isBatch);
         var dg = new CollapseCategorizedDatagrid(recItems, _columnInfo,
             _collapseInfo, onRecipeUpdated);
+        _recipeGrids[i] = dg;
         $(container).html(dg.$table);
     });
 }
@@ -173,4 +195,20 @@ function onRecipeUpdated(updateObj) {
     }
 
     sendUpdate($('#update-recipe-form'), copyObj, sendAjax);
+}
+
+function onRecipeItemUpdate(updateObj) {
+    sendUpdate($('#update-recipe-item-form'), updateObj, sendAjax);
+}
+
+function updateRecipeRowCost(recipe) {
+    debugger;
+    _recipeGrids.forEach(grid => {
+        grid.rows.forEach(row => {
+            if(row.item.id == recipe.id) {
+                row.updateRow();
+                return;
+            }
+        });
+    });
 }
