@@ -199,6 +199,13 @@ func (v RecipesResource) Update(c buffalo.Context) error {
 	if err := c.Bind(recipe); err != nil {
 		return errors.WithStack(err)
 	}
+	itemsParamJSON := c.Request().Form.Get("Items")
+	if itemsParamJSON != "" {
+		recipe.Items, err = getItemsFromParams(itemsParamJSON)
+		if err != nil {
+			return err
+		}
+	}
 
 	verrs, err := presenter.UpdateRecipe(recipe)
 	if err != nil {
