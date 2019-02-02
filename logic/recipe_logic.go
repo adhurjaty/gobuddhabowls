@@ -21,6 +21,7 @@ func GetRecipes(tx *pop.Connection) (*models.Recipes, error) {
 func GetRecipesNoItems(tx *pop.Connection) (*models.Recipes, error) {
 	recipes := &models.Recipes{}
 	err := tx.Eager().All(recipes)
+	recipes.Sort()
 	return recipes, err
 }
 
@@ -89,5 +90,35 @@ func UpdateRecipe(recipe *models.Recipe, tx *pop.Connection) (*validate.Errors, 
 }
 
 func UpdateRecipeNoItems(recipe *models.Recipe, tx *pop.Connection) (*validate.Errors, error) {
+	verrs, err := updateRecIndices(recipe, tx)
+	if err != nil || verrs.HasAny() {
+		return verrs, err
+	}
 	return tx.ValidateAndUpdate(recipe)
+}
+
+func updateRecIndices(recItem *models.Recipe, tx *pop.Connection) (*validate.Errors, error) {
+	items, err := GetRecipes(tx)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	offset := 0
+	for i, item := range *items {
+		if item.ID.String() == recItem.ID.String() {
+			offset = -1
+			continue
+		}
+		if item.Index == recItem.Index {
+			offset = 1
+		}
+
+		item.Index = i + offset
+		verrs, err := tx.ValidateAndUpdate(&item)
+		if verrs.HasAny() || err != nil {
+			return verrs, err
+		}
+	}
+
+	return validate.NewErrors(), nil
 }

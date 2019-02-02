@@ -209,6 +209,10 @@ func (v RecipesResource) Update(c buffalo.Context) error {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
 		c.Set("recipe", recipe)
+		err = setRecipeFormViewVars(presenter, c)
+		if err != nil {
+			return errors.WithStack(err)
+		}
 
 		// Render again the edit.html template that the user can
 		// correct the input.

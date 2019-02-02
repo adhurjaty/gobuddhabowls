@@ -52,11 +52,15 @@ func HistoricalItemExists(inventoryItemID string, tx *pop.Connection) bool {
 }
 
 func UpdateInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
+	verrs, err := updateIndices(item, tx)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
 	return tx.ValidateAndUpdate(item)
 }
 
 func InsertInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
-	verrs, err := updateIndices(item.Index, tx)
+	verrs, err := updateIndices(item, tx)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
@@ -64,18 +68,23 @@ func InsertInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*valid
 	return tx.ValidateAndCreate(item)
 }
 
-func updateIndices(index int, tx *pop.Connection) (*validate.Errors, error) {
+func updateIndices(invItem *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
 	items, err := GetInventoryItems(tx)
 	if err != nil {
 		return validate.NewErrors(), err
 	}
 
-	for _, item := range *items {
-		if item.Index < index {
+	offset := 0
+	for i, item := range *items {
+		if item.ID.String() == invItem.ID.String() {
+			offset = -1
 			continue
 		}
+		if item.Index == invItem.Index {
+			offset = 1
+		}
 
-		item.Index++
+		item.Index = i + offset
 		verrs, err := tx.ValidateAndUpdate(&item)
 		if verrs.HasAny() || err != nil {
 			return verrs, err

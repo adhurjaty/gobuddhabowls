@@ -156,6 +156,8 @@ export class CategorizedItemsDisplay {
         var modalContainer = $(`<div name="modal"></div>`);
         modalContainer.html(this.modal.$content);
         this.$container.append(modalContainer);
+
+        this.modal.setSortFn(sortItems);
     }
     
     getRemainingItems() {

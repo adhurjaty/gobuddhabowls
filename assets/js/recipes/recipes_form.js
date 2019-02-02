@@ -1,6 +1,7 @@
 import { parseModelJSON, formatMoney, groupByCategory } from "../helpers/_helpers";
 import { CategorizedItemsDisplay } from "../components/_categorized_items_display";
 import { SingleOrderingTable } from "../components/_single_ordering_table";
+import { showError } from "../helpers/index_helpers";
 
 var _datagridOptions = {
     breakdown: true
@@ -62,6 +63,17 @@ var _columnInfo = [
         }
     },
     {
+        name: 'measure',
+        header: 'Meas.',
+        editable: true,
+        get_column: (item) => {
+            return item.measure;
+        },
+        set_column: (item, measure) => {
+            item.measure = measure;
+        }
+    },
+    {
         name: 'count',
         header: 'Count',
         editable: true,
@@ -81,26 +93,28 @@ var _columnInfo = [
     }
 ];
 
+var _itemsDisplay = null;
 var _orderingTable = null;
 
 $(() => {
     initDatagrid();
-    initOrderingTable();
+    setOrderingTable();
     setOnChangeCategoryOrName();
+    setOnFormSubmit();
 });
 
 function initDatagrid() {
     var container = $('#recipe-items-display');
     var allItems = parseModelJSON(container.attr('all-items'));
-    new CategorizedItemsDisplay(container, _columnInfo, allItems,
-        _datagridOptions)
+    _itemsDisplay = new CategorizedItemsDisplay(container, _columnInfo,
+        allItems, _datagridOptions)
 }
 
-function initOrderingTable() {
+function setOrderingTable() {
     var container = $('#recipe-item-ordering');
     var invItems = parseModelJSON(container.attr('data'));
     var item = getItem();
-    
+
     var catItems = groupByCategory(invItems);
     var selectedCat = catItems.find(x => x.name == item.category);
     if(selectedCat) {
@@ -131,7 +145,7 @@ function getItem() {
 function setOnChangeCategoryOrName() {
     $('select[name="CategoryID"]').change((option) => {
         clearInvItemsTable();
-        initOrderingTable();
+        setOrderingTable();
     });
     $('input[name="Name"]').change(() => {
         var name = $('input[name="Name"]').val();
@@ -141,4 +155,46 @@ function setOnChangeCategoryOrName() {
 
 function clearInvItemsTable() {
     $('#recipe-item-ordering').html('');
+}
+
+function setOnFormSubmit() {
+    var form = $('#recipe-items-display').closest('form');
+    form.submit(() => {
+        if(!validateItem()) {
+            return false;
+        }
+
+        setIndex();
+        setRecipeItems();
+    });
+}
+
+function validateItem() {
+    if(_itemsDisplay.datagrid.rows.length == 0) {
+        showError('Must add recipe items');
+        return false;
+    }
+
+    return true;
+}
+
+function setIndex() {
+    var idx = findItemIndex();
+    $('input[name="Index"]').val(idx);
+}
+
+function findItemIndex() {
+    var id = $('input[name="ID"]').val();
+    var lis = _orderingTable.ul.find('li');
+    var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == id);
+    if(idx == _orderingTable.items.length) {
+        return _orderingTable.items[idx - 1].index;
+    }
+
+    return _orderingTable.items[idx].index;
+}
+
+function setRecipeItems() {
+    var items = _itemsDisplay.datagrid.rows.map(x => x.item);
+    $('input[name="Items"]').val(JSON.stringify(items));
 }
