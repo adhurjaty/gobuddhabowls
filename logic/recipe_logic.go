@@ -122,3 +122,20 @@ func updateRecIndices(recItem *models.Recipe, tx *pop.Connection) (*validate.Err
 
 	return validate.NewErrors(), nil
 }
+
+func InsertRecipe(recipe *models.Recipe, tx *pop.Connection) (*validate.Errors, error) {
+	verrs, err := tx.ValidateAndCreate(recipe)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+
+	for _, item := range recipe.Items {
+		item.RecipeID = recipe.ID
+		verrs, err = tx.ValidateAndCreate(&item)
+		if verrs.HasAny() || err != nil {
+			return verrs, err
+		}
+	}
+
+	return validate.NewErrors(), nil
+}

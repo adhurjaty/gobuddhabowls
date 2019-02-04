@@ -4,6 +4,7 @@ import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"fmt"
+	"github.com/gobuffalo/uuid"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -80,6 +81,7 @@ func (v RecipesResource) New(c buffalo.Context) error {
 	presenter := presentation.NewPresenter(tx)
 
 	recipe := &presentation.RecipeAPI{
+		ID:                   uuid.UUID{}.String(),
 		RecipeUnitConversion: 1,
 		IsBatch:              true,
 	}
@@ -120,11 +122,19 @@ func setRecipeFormViewVars(presenter *presentation.Presenter, c buffalo.Context)
 // path POST /recipes
 func (v RecipesResource) Create(c buffalo.Context) error {
 	// Allocate an empty Recipe
-	recipe := &models.Recipe{}
+	recipe := &presentation.RecipeAPI{}
 
 	// Bind recipe to the html form elements
-	if err := c.Bind(recipe); err != nil {
+	err := c.Bind(recipe)
+	if err != nil {
 		return errors.WithStack(err)
+	}
+	itemsParamJSON := c.Request().Form.Get("Items")
+	if itemsParamJSON != "" {
+		recipe.Items, err = getItemsFromParams(itemsParamJSON)
+		if err != nil {
+			return err
+		}
 	}
 
 	// Get the DB connection from the context
@@ -133,8 +143,9 @@ func (v RecipesResource) Create(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Validate the data from the html form
-	verrs, err := tx.ValidateAndCreate(recipe)
+	presenter := presentation.NewPresenter(tx)
+
+	verrs, err := presenter.InsertRecipe(recipe)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -142,17 +153,22 @@ func (v RecipesResource) Create(c buffalo.Context) error {
 	if verrs.HasAny() {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
+		c.Set("recipe", recipe)
+		err = setRecipeFormViewVars(presenter, c)
+		if err != nil {
+			return errors.WithStack(err)
+		}
 
-		// Render again the new.html template that the user can
+		// Render again the edit.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, recipe))
+		return c.Render(422, r.HTML("recipes/new"))
 	}
 
 	// If there are no errors set a success message
 	c.Flash().Add("success", "Recipe was created successfully")
 
 	// and redirect to the recipes index page
-	return c.Render(201, r.Auto(c, recipe))
+	return c.Redirect(303, "/recipes")
 }
 
 // Edit renders a edit form for a Recipe. This function is

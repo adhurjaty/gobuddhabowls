@@ -95,6 +95,7 @@ var _columnInfo = [
 
 var _itemsDisplay = null;
 var _orderingTable = null;
+var _items = [];
 
 $(() => {
     initDatagrid();
@@ -160,6 +161,9 @@ function clearInvItemsTable() {
 function setOnFormSubmit() {
     var form = $('#recipe-items-display').closest('form');
     form.submit(() => {
+        _items = _itemsDisplay.datagrid.rows.map(x => x.item);
+        _items = _items.filter(x => x.count > 0);
+        
         if(!validateItem()) {
             return false;
         }
@@ -170,7 +174,7 @@ function setOnFormSubmit() {
 }
 
 function validateItem() {
-    if(_itemsDisplay.datagrid.rows.length == 0) {
+    if(_items.length == 0) {
         showError('Must add recipe items');
         return false;
     }
@@ -195,6 +199,5 @@ function findItemIndex() {
 }
 
 function setRecipeItems() {
-    var items = _itemsDisplay.datagrid.rows.map(x => x.item);
-    $('input[name="Items"]').val(JSON.stringify(items));
+    $('input[name="Items"]').val(JSON.stringify(_items));
 }

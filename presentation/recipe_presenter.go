@@ -124,3 +124,12 @@ func (p *Presenter) UpdateRecipeNoItems(recAPI *RecipeAPI) (*validate.Errors, er
 
 	return logic.UpdateRecipeNoItems(recipe, p.tx)
 }
+
+func (p *Presenter) InsertRecipe(recAPI *RecipeAPI) (*validate.Errors, error) {
+	recipe, err := ConvertToModelRecipe(recAPI)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	return logic.InsertRecipe(recipe, p.tx)
+}

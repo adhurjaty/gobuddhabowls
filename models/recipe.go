@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"sort"
+	"strings"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -59,13 +60,31 @@ func (r *Recipe) Validate(tx *pop.Connection) (*validate.Errors, error) {
 // ValidateCreate gets run every time you call "pop.ValidateAndCreate" method.
 // This method is not required and may be deleted.
 func (r *Recipe) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
-	return validate.NewErrors(), nil
+	return r.validateUniqueName(tx.Q())
 }
 
 // ValidateUpdate gets run every time you call "pop.ValidateAndUpdate" method.
 // This method is not required and may be deleted.
 func (r *Recipe) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
-	return validate.NewErrors(), nil
+	query := tx.Where("id != ?", r.ID)
+	return r.validateUniqueName(query)
+}
+
+func (r *Recipe) validateUniqueName(query *pop.Query) (*validate.Errors, error) {
+	verrs := validate.NewErrors()
+	items := &Recipes{}
+	if err := query.All(items); err != nil {
+		return verrs, err
+	}
+
+	for _, item := range *items {
+		if strings.ToLower(r.Name) == strings.ToLower(item.Name) {
+			verrs.Add("Name", "Recipe name already exists")
+			break
+		}
+	}
+
+	return verrs, nil
 }
 
 func (r Recipe) GetID() uuid.UUID {
