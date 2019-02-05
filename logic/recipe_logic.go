@@ -139,3 +139,13 @@ func InsertRecipe(recipe *models.Recipe, tx *pop.Connection) (*validate.Errors, 
 
 	return validate.NewErrors(), nil
 }
+
+func DestroyRecipe(recipe *models.Recipe, tx *pop.Connection) error {
+	for _, item := range recipe.Items {
+		if err := tx.Destroy(&item); err != nil {
+			return err
+		}
+	}
+
+	return tx.Destroy(recipe)
+}

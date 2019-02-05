@@ -136,6 +136,7 @@ func (v RecipesResource) Create(c buffalo.Context) error {
 			return err
 		}
 	}
+	recipe.Category.ID = c.Param("CategoryID")
 
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
@@ -294,15 +295,13 @@ func (v RecipesResource) Destroy(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty Recipe
-	recipe := &models.Recipe{}
-
-	// To find the Recipe the parameter recipe_id is used.
-	if err := tx.Find(recipe, c.Param("recipe_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	recipe, err := presenter.GetRecipe(c.Param("recipe_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
-	if err := tx.Destroy(recipe); err != nil {
+	if err := presenter.DestroyRecipe(recipe); err != nil {
 		return errors.WithStack(err)
 	}
 
@@ -310,5 +309,5 @@ func (v RecipesResource) Destroy(c buffalo.Context) error {
 	c.Flash().Add("success", "Recipe was destroyed successfully")
 
 	// Redirect to the recipes index page
-	return c.Render(200, r.Auto(c, recipe))
+	return c.Redirect(303, "/recipes")
 }

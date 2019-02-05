@@ -8,7 +8,7 @@ var _options = {
 };
 
 var _editPath = $('#data-holder').attr('data-url');
-var _recipePath = $('#update-recipe-form').attr('action');
+var _recipePath = $('#data-holder').attr('update-url');
 
 var _columnInfo = [
     {

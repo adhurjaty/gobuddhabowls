@@ -133,3 +133,12 @@ func (p *Presenter) InsertRecipe(recAPI *RecipeAPI) (*validate.Errors, error) {
 
 	return logic.InsertRecipe(recipe, p.tx)
 }
+
+func (p *Presenter) DestroyRecipe(recAPI *RecipeAPI) error {
+	recipe, err := ConvertToModelRecipe(recAPI)
+	if err != nil {
+		return err
+	}
+
+	return logic.DestroyRecipe(recipe, p.tx)
+}

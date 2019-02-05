@@ -66,7 +66,8 @@ func (r *Recipe) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
 // ValidateUpdate gets run every time you call "pop.ValidateAndUpdate" method.
 // This method is not required and may be deleted.
 func (r *Recipe) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
-	query := tx.Where("id != ?", r.ID)
+	query := tx.Where("id != ?", r.ID.String()).
+		Where("is_batch = ?", r.IsBatch)
 	return r.validateUniqueName(query)
 }
 
