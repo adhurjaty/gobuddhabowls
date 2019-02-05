@@ -7,7 +7,7 @@ $(() => {
     setupEditName();
     setupColorPicker();
     // really should only allow category addition when creating a new 
-    // inventory item
+    // item
     setupAddButton();
     // delete would destroy the data as implemented
     // setupDeleteButton();
@@ -129,10 +129,10 @@ function makeDeleteLink(id) {
 }
 
 function setupSubmitButton() {
-    $('#save-inv-item-categories').click(saveInvItemsCategories);
+    $('#save-inv-item-categories').click(saveCategories);
 }
 
-function saveInvItemsCategories() {
+function saveCategories() {
     var $form = $('#update-category-form');
 
     $('#categories-movable').find('li').each(function(i, el) {

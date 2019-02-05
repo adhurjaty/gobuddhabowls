@@ -86,10 +86,9 @@ func (p PurchaseOrder) GetCost() float64 {
 
 // GetCategoryCosts gets a map of category -> cost map for the order
 func (p PurchaseOrder) GetCategoryCosts() CategoryBreakdown {
-	catCosts := map[InventoryItemCategory]float64{}
+	catCosts := map[Category]float64{}
 
 	for _, item := range p.Items {
-		// fmt.Println(item)
 		catCosts = AddToCategoryMap(catCosts, item.InventoryItem.Category, item.Price*item.Count)
 	}
 

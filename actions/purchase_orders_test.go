@@ -22,7 +22,6 @@ func (as *ActionSuite) Test_ListPO_View() {
 	login(as.DB, as.Session)
 	res := as.HTML(fmt.Sprintf("/purchase_orders?StartTime=%s", orderTime.Format(time.RFC3339))).Get()
 
-	fmt.Println(res.Result().StatusCode)
 	as.Contains(res.Body.String(), purchaseOrder.ID.String())
 }
 

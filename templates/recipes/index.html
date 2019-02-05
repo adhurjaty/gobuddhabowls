@@ -1,43 +1,32 @@
 <div class="page-header">
-  <h1>Recipes</h1>
+  <h1 class="text-center">Recipes</h1>
 </div>
-<ul class="list-unstyled list-inline">
-  <li><a href="<%= newRecipesPath() %>" class="btn btn-primary">Create New Recipe</a></li>
-</ul>
-
-<table class="table table-striped">
-  <thead>
-  <th>Name</th>
-    <th>RecipeUnit</th>
-    <th>RecipeUnitConversion</th>
-    <th>Category</th>
-    <th>IsBatch</th>
-    <th>Index</th>
-    <th>Items</th>
-    <th>&nbsp;</th>
-  </thead>
-  <tbody>
-    <%= for (recipe) in recipes { %>
-      <tr>
-      <td><%= recipe.Name %></td>
-        <td><%= recipe.RecipeUnit %></td>
-        <td><%= recipe.RecipeUnitConversion %></td>
-        <td><%= recipe.Category %></td>
-        <td><%= recipe.IsBatch %></td>
-        <td><%= recipe.Index %></td>
-        <td><%= recipe.Items %></td>
-        <td>
-          <div class="pull-right">
-            <a href="<%= recipePath({ recipe_id: recipe.ID }) %>" class="btn btn-info">View</a>
-            <a href="<%= editRecipePath({ recipe_id: recipe.ID }) %>" class="btn btn-warning">Edit</a>
-            <a href="<%= recipePath({ recipe_id: recipe.ID }) %>" data-method="DELETE" data-confirm="Are you sure?" class="btn btn-danger">Destroy</a>
-          </div>
-        </td>
-      </tr>
-    <% } %>
-  </tbody>
-</table>
-
-<div class="text-center">
-  <%= paginator(pagination) %>
+<div class="row">
+  <div class="col-12">
+    <a href="<%= newRecipesPath() %>" class="btn btn-primary float-right">
+      New Recipe
+    </a>
+  </div>
 </div>
+
+<div id="data-holder" class="row" data="<%= recipes.String() %>"
+    data-url='<%= editRecipePath({recipe_id: "{recipe_id}"}) %>'
+    update-url='<%= recipePath({recipe_id: "{recipe_id}"}) %>'>
+  <div class="col-md-6">
+    <h2 class="text-center">Batch Recipes</h2>
+    <div id="batch-datagrid" ></div>
+  </div>
+  <div class="col-md-6">
+      <h2 class="text-center">Menu Recipes</h2>
+      <div id="menu-datagrid"></div>
+    </div>
+</div>
+
+<%= form({action: recipeInlinePath({recipe_id: "{recipe_id}"}), method: "PUT",
+  id: "update-recipe-form", style: "display: none;"}) { %> <% } %>
+
+<%= form({action: recipeItemPath({recipe_item_id: "{recipe_item_id}"}),
+  method: "PUT", id: "update-recipe-item-form", style: "display: none;"}) { %> 
+<% } %>
+
+<%= javascriptTag("recipes/recipes_index.js") %>

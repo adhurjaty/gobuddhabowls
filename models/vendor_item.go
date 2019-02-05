@@ -73,7 +73,7 @@ func (v VendorItem) GetName() string {
 }
 
 // GetCategory returns the inventory item category of the vendor item
-func (v VendorItem) GetCategory() InventoryItemCategory {
+func (v VendorItem) GetCategory() Category {
 	return v.InventoryItem.Category
 }
 

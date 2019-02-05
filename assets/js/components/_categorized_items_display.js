@@ -100,7 +100,7 @@ export class CategorizedItemsDisplay {
 
     initBreakdown() {
         var bdContainer = this.$container.find('div[name="breakdown"]');
-        var title = 'Order Breakdown';
+        var title = 'Category Breakdown';
         var total = this.items.reduce((total, item) => total + item.count * item.price, 0);
         if(total != 0) {
             bdContainer.html(horizontalPercentageChart(title, this.items, total));
@@ -156,6 +156,8 @@ export class CategorizedItemsDisplay {
         var modalContainer = $(`<div name="modal"></div>`);
         modalContainer.html(this.modal.$content);
         this.$container.append(modalContainer);
+
+        this.modal.setSortFn(sortItems);
     }
     
     getRemainingItems() {

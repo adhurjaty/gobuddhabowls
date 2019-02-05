@@ -143,8 +143,9 @@ function initDropdownActions(datagrid) {
 }
 
 function sendDatagridUpdate(updateObj) {
-    if('Items' in updateObj) {
-        delete updateObj['Items'];
+    var copyObj = JSON.parse(JSON.stringify(updateObj));
+    if('Items' in copyObj) {
+        delete copyObj['Items'];
     }
-    sendUpdate($('#update-po-form'), updateObj);
+    sendUpdate($('#update-po-form'), copyObj);
 }

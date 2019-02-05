@@ -49,7 +49,11 @@ func (i *InventoryItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 		&validators.StringIsPresent{Field: i.Name, Name: "Name"},
 		&validators.StringIsPresent{Field: i.CountUnit, Name: "CountUnit"},
 		&validators.StringIsPresent{Field: i.RecipeUnit, Name: "RecipeUnit"},
-		&validators.IntIsPresent{Field: i.Index, Name: "Index"},
+		&validators.IntIsGreaterThan{
+			Field:    i.Index,
+			Name:     "Index",
+			Compared: -1,
+		},
 		&validators.FuncValidator{
 			Field:   "",
 			Name:    "Yield",
@@ -72,9 +76,20 @@ func (i *InventoryItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 // ValidateCreate gets run every time you call "pop.ValidateAndCreate" method.
 // This method is not required and may be deleted.
 func (i *InventoryItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
+	return i.validateUniqueName(tx.Q())
+}
+
+// ValidateUpdate gets run every time you call "pop.ValidateAndUpdate" method.
+// This method is not required and may be deleted.
+func (i *InventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
+	query := tx.Where("id != ?", i.ID)
+	return i.validateUniqueName(query)
+}
+
+func (i *InventoryItem) validateUniqueName(query *pop.Query) (*validate.Errors, error) {
 	verrs := validate.NewErrors()
 	items := &InventoryItems{}
-	if err := tx.All(items); err != nil {
+	if err := query.All(items); err != nil {
 		return verrs, err
 	}
 
@@ -86,12 +101,6 @@ func (i *InventoryItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, er
 	}
 
 	return verrs, nil
-}
-
-// ValidateUpdate gets run every time you call "pop.ValidateAndUpdate" method.
-// This method is not required and may be deleted.
-func (i *InventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
-	return validate.NewErrors(), nil
 }
 
 func (i InventoryItem) GetID() uuid.UUID {
@@ -106,7 +115,7 @@ func (i InventoryItem) GetName() string {
 	return i.Name
 }
 
-func (i InventoryItem) GetCategory() InventoryItemCategory {
+func (i InventoryItem) GetCategory() Category {
 	return i.Category
 }
 

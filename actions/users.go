@@ -80,9 +80,6 @@ func UpdateUsersSquare(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	fmt.Println(user)
-	fmt.Println(c.Session().Get("current_user_id").(uuid.UUID).String())
-
 	verrs, err := presenter.UpdateUser(user)
 	if err != nil {
 		return errors.WithStack(err)

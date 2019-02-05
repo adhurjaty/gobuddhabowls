@@ -27,6 +27,10 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 			return err
 		}
 		return nil
+	case *Recipe:
+		return LoadRecipe(m.(*Recipe), tx, id)
+	case *RecipeItem:
+		return LoadRecipeItem(m.(*RecipeItem), tx, id)
 	case *InventoryItem:
 		if err := LoadInventoryItem(m.(*InventoryItem), tx, id); err != nil {
 			return err
@@ -48,25 +52,15 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
 	switch s.(type) {
 	case *PurchaseOrders:
-		if err := LoadPurchaseOrders(s.(*PurchaseOrders), q); err != nil {
-			return err
-		}
-		return nil
+		return LoadPurchaseOrders(s.(*PurchaseOrders), q)
 	case *Vendors:
-		if err := LoadVendors(s.(*Vendors), q); err != nil {
-			return err
-		}
-		return nil
+		return LoadVendors(s.(*Vendors), q)
 	case *InventoryItems:
-		if err := LoadInventoryItems(s.(*InventoryItems), q); err != nil {
-			return err
-		}
-		return nil
+		return LoadInventoryItems(s.(*InventoryItems), q)
 	case *Inventories:
-		if err := LoadInventories(s.(*Inventories), q); err != nil {
-			return err
-		}
-		return nil
+		return LoadInventories(s.(*Inventories), q)
+	case *Recipes:
+		return LoadRecipes(s.(*Recipes), q)
 	}
 
 	return errors.New("unimplemented type")
@@ -223,4 +217,56 @@ func LoadInventoryItems(itemList *InventoryItems, q *pop.Query) error {
 	itemList.Sort()
 
 	return nil
+}
+
+func LoadRecipe(recipe *Recipe, tx *pop.Connection, id string) error {
+	if err := tx.Eager().Find(recipe, id); err != nil {
+		return err
+	}
+
+	return PopulateRecipeItems(&recipe.Items, tx)
+}
+
+func LoadRecipes(recipes *Recipes, q *pop.Query) error {
+	if err := q.All(recipes); err != nil {
+		return err
+	}
+
+	for _, recipe := range *recipes {
+		if err := PopulateRecipeItems(&recipe.Items, q.Connection); err != nil {
+			return err
+		}
+	}
+
+	return nil
+}
+
+func PopulateRecipeItems(items *RecipeItems, tx *pop.Connection) error {
+	for i, _ := range *items {
+		item := &(*items)[i]
+		count := item.Count
+		if err := LoadRecipeItem(item, tx, item.ID.String()); err != nil {
+			return err
+		}
+
+		(*items)[i].Count = count
+	}
+
+	items.Sort()
+
+	return nil
+}
+
+func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
+	err := tx.Eager().Find(item, id)
+	if err != nil {
+		return err
+	}
+	if item.InventoryItemID.Valid {
+		err = tx.Eager().Find(&item.InventoryItem, item.InventoryItemID.UUID)
+	} else if item.BatchRecipeID.Valid {
+		err = tx.Eager().Find(&item.BatchRecipe, item.BatchRecipeID.UUID)
+	}
+
+	return err
 }

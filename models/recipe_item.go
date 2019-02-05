@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"sort"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -57,4 +58,58 @@ func (r *RecipeItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, error
 // This method is not required and may be deleted.
 func (r *RecipeItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+func (r RecipeItem) getBaseItem() GenericItem {
+	if r.InventoryItemID.Valid {
+		return r.InventoryItem
+	}
+
+	return r.BatchRecipe
+}
+
+func (r RecipeItem) GetID() uuid.UUID {
+	return r.ID
+}
+func (r RecipeItem) GetInventoryItemID() uuid.UUID {
+	return r.getBaseItem().GetID()
+}
+func (r RecipeItem) GetName() string {
+	return r.getBaseItem().GetName()
+}
+func (r RecipeItem) GetCategory() Category {
+	return r.getBaseItem().GetCategory()
+}
+func (r RecipeItem) GetCountUnit() string {
+	return r.getBaseItem().GetCountUnit()
+}
+func (r RecipeItem) GetIndex() int {
+	return r.getBaseItem().GetIndex()
+}
+func (r RecipeItem) GetRecipeUnit() string {
+	if r.InventoryItemID.Valid {
+		return r.InventoryItem.RecipeUnit
+	}
+	return r.BatchRecipe.RecipeUnit
+}
+func (r RecipeItem) GetRecipeUnitConversion() float64 {
+	if r.InventoryItemID.Valid {
+		return r.InventoryItem.RecipeUnitConversion
+	}
+	return r.BatchRecipe.RecipeUnitConversion
+}
+
+func (r RecipeItem) GetSortValue() int {
+	if r.InventoryItemID.Valid {
+		return r.InventoryItem.GetSortValue()
+	}
+	// HACK: bit of a hack - want recipes to always be after inv items
+	return r.BatchRecipe.GetSortValue() + 100000
+}
+
+// Sort sorts the items based on category then inventory item indices
+func (r *RecipeItems) Sort() {
+	sort.Slice(*r, func(i, j int) bool {
+		return (*r)[i].GetSortValue() < (*r)[j].GetSortValue()
+	})
 }

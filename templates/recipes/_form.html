@@ -1,8 +1,27 @@
-<%= f.InputTag("Name") %>
-<%= f.InputTag("RecipeUnit") %>
-<%= f.InputTag("RecipeUnitConversion") %>
-<%= f.InputTag("Category") %>
-<%= f.CheckboxTag("IsBatch", {unchecked: false}) %>
-<%= f.InputTag("Index") %>
-<%= f.InputTag("Items") %>
+<div class="row">
+    <div class="col-md-6">
+      <input type="hidden" name="ID" value="<%= recipe.ID %>" />
+      <input type="hidden" name="Index" value="<%= recipe.Index %>" />
+      <%= f.CheckboxTag("IsBatch", {unchecked: false, label: "Batch Recipe"}) %>
+      <%= f.InputTag("Name") %>
+      <%= f.SelectTag("Category", {options: categories, name: "CategoryID", value: recipe.Category }) %>
+      <%= f.InputTag("RecipeUnit") %>
+      <%= f.InputTag("RecipeUnitConversion", {label: "Recipe Yield"}) %>
+    </div>
+    <div class="col-md-6">
+      <div id="recipe-item-ordering" data='<%= recipes.String() %>'></div>
+    </div>
+</div> 
+<div>
+  <label>Ingredients</label>
+  <div id="recipe-items-display" class="row"
+       data='<%= recipe.Items.String() %>'
+       all-items='<%= allItems.String() %>'></div>
+  <input type="text" name="Items" style="display: none;"
+          value='<%= recipe.Items.String() %>' />
+</div>
+
+<br/>
 <button class="btn btn-success" role="submit">Save</button>
+
+<%= javascriptTag("recipes/recipes_form.js") %>

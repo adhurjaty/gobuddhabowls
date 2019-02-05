@@ -4,7 +4,6 @@ import (
 	"encoding/json"
 	"time"
 
-	"database/sql"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
@@ -12,16 +11,16 @@ import (
 )
 
 type PrepItem struct {
-	ID              uuid.UUID      `json:"id" db:"id"`
-	CreatedAt       time.Time      `json:"created_at" db:"created_at"`
-	UpdatedAt       time.Time      `json:"updated_at" db:"updated_at"`
-	InventoryItemID uuid.NullUUID  `json:"inventory_item_id" db:"inventory_item_id"`
-	InventoryItem   InventoryItem  `belongs_to:"inventory_items" db:"-"`
-	BatchRecipeID   uuid.NullUUID  `json:"batch_recipe_id" db:"batch_recipe_id"`
-	BatchRecipe     Recipe         `belongs_to:"recipes" db:"-"`
-	Conversion      float64        `json:"conversion" db:"conversion"`
-	CountUnit       sql.NullString `json:"count_unit" db:"count_unit"`
-	Index           int            `json:"index" db:"index"`
+	ID          uuid.UUID `json:"id" db:"id"`
+	CreatedAt   time.Time `json:"created_at" db:"created_at"`
+	UpdatedAt   time.Time `json:"updated_at" db:"updated_at"`
+	InventoryID uuid.UUID `json:"inventory_id" db:"inventory_id"`
+	Inventory   Inventory `belongs_to:"inventories" db:"-"`
+	Count       float64   `json:"count" db:"count"`
+	RecipeID    uuid.UUID `json:"recipe_id" db:"recipe_id"`
+	Recipe      Recipe    `belongs_to:"recipes" db:"-"`
+	// Conversion is the number of recipe units in a prep item count
+	Conversion float64 `json:"conversion" db:"conversion"`
 }
 
 // String is not required by pop and may be deleted
@@ -43,7 +42,13 @@ func (p PrepItems) String() string {
 // This method is not required and may be deleted.
 func (p *PrepItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
-		&validators.IntIsPresent{Field: p.Index, Name: "Index"},
+		&validators.FuncValidator{
+			Field: "Conversion",
+			Name:  "Conversion",
+			Fn: func() bool {
+				return p.Conversion > 0
+			},
+		},
 	), nil
 }
 
