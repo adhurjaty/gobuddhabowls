@@ -79,6 +79,7 @@ var _columnInfo = [
                             class="dropdown-item">Edit</a>
                         <a name="delete" class="dropdown-item text-danger"
                             data-method="DELETE"
+                            data-confirm="Are you sure?"
                             href="${replaceUrlId(recipePath, recipe.id)}">
                             Delete
                             </a>
