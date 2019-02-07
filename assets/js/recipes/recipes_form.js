@@ -108,7 +108,7 @@ function initDatagrid() {
     var container = $('#recipe-items-display');
     var allItems = parseModelJSON(container.attr('all-items'));
     _itemsDisplay = new CategorizedItemsDisplay(container, _columnInfo,
-        allItems, _datagridOptions)
+        allItems, _datagridOptions);
 }
 
 function setOrderingTable() {
