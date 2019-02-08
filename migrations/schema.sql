@@ -109,7 +109,7 @@ CREATE TABLE public.inventory_items (
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
     is_active boolean DEFAULT true NOT NULL,
-    inventory_item_category_id uuid
+    category_id uuid
 );
 
 
@@ -212,7 +212,7 @@ CREATE TABLE public.recipes (
     index integer NOT NULL,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
-    recipe_category_id uuid,
+    category_id uuid,
     is_batch boolean DEFAULT true NOT NULL,
     recipe_unit_conversion numeric
 );
