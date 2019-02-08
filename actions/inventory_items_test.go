@@ -29,7 +29,7 @@ func (as *ActionSuite) Test_InventoryItemsResource_New() {
 func (as *ActionSuite) Test_InventoryItemsResource_Create() {
 	itemName := "TestItem"
 
-	category := &models.InventoryItemCategory{
+	category := &models.ItemCategory{
 		Name:  "Dairy",
 		Index: 1,
 	}

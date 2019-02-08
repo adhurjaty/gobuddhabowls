@@ -117,7 +117,7 @@ func createVendor(db *pop.Connection) (*models.Vendor, error) {
 }
 
 func createInventoryItem(db *pop.Connection, name string) (*models.InventoryItem, error) {
-	category := &models.InventoryItemCategory{
+	category := &models.ItemCategory{
 		Name:  "test_category",
 		Index: 0,
 	}

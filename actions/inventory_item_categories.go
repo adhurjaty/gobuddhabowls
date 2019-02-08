@@ -13,13 +13,13 @@ import (
 var _ = fmt.Println
 
 // InventoryItemCategoriesResource is a resource for managing InventoryItemCategories
-type InventoryItemCategoriesResource struct {
+type ItemCategoriesResource struct {
 	buffalo.Resource
 }
 
 // List serves the page for editing the categories for inventory items (color, order)
 // GET /inventory_item_categories
-func (v InventoryItemCategoriesResource) List(c buffalo.Context) error {
+func (v ItemCategoriesResource) List(c buffalo.Context) error {
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
@@ -31,29 +31,29 @@ func (v InventoryItemCategoriesResource) List(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	c.Set("inventoryItemCategories", categories)
+	c.Set("itemCategories", categories)
 	return c.Render(200, r.HTML("inventory_item_categories/index"))
 }
 
 // Update updates the selected category
-// PUT /inventory_item_categories/{inventory_item_category_id}
-func (v InventoryItemCategoriesResource) Update(c buffalo.Context) error {
+// PUT /inventory_item_categories/{item_category_id}
+func (v ItemCategoriesResource) Update(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty InventoryItemCategory
-	category := &models.InventoryItemCategory{}
+	// Allocate an empty ItemCategory
+	category := &models.ItemCategory{}
 
 	newItem := false
 
-	if err := tx.Find(category, c.Param("inventory_item_category_id")); err != nil {
+	if err := tx.Find(category, c.Param("item_category_id")); err != nil {
 		newItem = true
 	}
 
-	// Bind InventoryItemCategory to the html form elements
+	// Bind ItemCategory to the html form elements
 	err := c.Bind(category)
 	if err != nil {
 		return errors.WithStack(err)
@@ -86,33 +86,33 @@ func (v InventoryItemCategoriesResource) Update(c buffalo.Context) error {
 
 // Show gets the data for one category. Probably won't be used This function is mapped to
 // the path GET /inventory_item_categories/{purchase_order_id}
-func (v InventoryItemCategoriesResource) Show(c buffalo.Context) error {
+func (v ItemCategoriesResource) Show(c buffalo.Context) error {
 	return c.Render(404, r.String("Not implemented"))
 }
 
-func (v InventoryItemCategoriesResource) New(c buffalo.Context) error {
+func (v ItemCategoriesResource) New(c buffalo.Context) error {
 	return c.Render(404, r.String("Not implemented"))
 }
 
-func (v InventoryItemCategoriesResource) Create(c buffalo.Context) error {
+func (v ItemCategoriesResource) Create(c buffalo.Context) error {
 	return c.Render(404, r.String("Not implemented"))
 }
 
-func (v InventoryItemCategoriesResource) Edit(c buffalo.Context) error {
+func (v ItemCategoriesResource) Edit(c buffalo.Context) error {
 	return c.Render(404, r.String("Not implemented"))
 }
 
-func (v InventoryItemCategoriesResource) Destroy(c buffalo.Context) error {
+func (v ItemCategoriesResource) Destroy(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty InventoryItemCategory
-	category := &models.InventoryItemCategory{}
+	// Allocate an empty ItemCategory
+	category := &models.ItemCategory{}
 
-	err := tx.Find(category, c.Param("inventory_item_category_id"))
+	err := tx.Find(category, c.Param("item_category_id"))
 
 	if err == nil {
 		err = tx.Destroy(category)
@@ -127,6 +127,6 @@ func (v InventoryItemCategoriesResource) Destroy(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 
-	c.Set("inventoryItemCategories", categories)
+	c.Set("itemCategories", categories)
 	return c.Render(200, r.HTML("inventory_item_categories/index"))
 }

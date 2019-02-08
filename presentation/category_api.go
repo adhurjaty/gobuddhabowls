@@ -42,27 +42,13 @@ func NewCategoriesAPI(categories *models.Categories) CategoriesAPI {
 	return catsAPI
 }
 
-func ConvertToModelCategory(catAPI CategoryAPI) (*models.InventoryItemCategory, error) {
+func ConvertToModelCategory(catAPI CategoryAPI) (*models.ItemCategory, error) {
 	id, err := uuid.FromString(catAPI.ID)
 	if err != nil {
 		return nil, err
 	}
 
-	return &models.InventoryItemCategory{
-		ID:         id,
-		Name:       catAPI.Name,
-		Background: catAPI.Background,
-		Index:      catAPI.Index,
-	}, nil
-}
-
-func ConvertToModelRecipeCategory(catAPI CategoryAPI) (*models.RecipeCategory, error) {
-	id, err := uuid.FromString(catAPI.ID)
-	if err != nil {
-		return nil, err
-	}
-
-	return &models.RecipeCategory{
+	return &models.ItemCategory{
 		ID:         id,
 		Name:       catAPI.Name,
 		Background: catAPI.Background,
