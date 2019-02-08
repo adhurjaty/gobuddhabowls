@@ -1,5 +1,5 @@
 <div class="page-header">
-    <h2>Recipe Categories</h2>
+    <h2>Item Categories</h2>
 </div>
 
 
@@ -12,7 +12,7 @@
         </button>
       </div>
       <ul class="list-group" id="categories-movable">
-          <%= for (category) in recipeCategories { %>
+          <%= for (category) in itemCategories { %>
               <li itemid="<%= category.ID %>"
                 class="list-group-item d-flex justify-content-between 
                 align-items-center">
@@ -28,7 +28,7 @@
   </div>
 </div>
 
-<%= form({action: "/recipe_categories/{category_id}", method: "PUT",
+<%= form({action: "/item_categories/{category_id}", method: "PUT",
   data-remote: "true", id: "update-category-form", style: "display: none;"})
   { %> <% } %>
 
