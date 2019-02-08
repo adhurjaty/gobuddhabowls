@@ -12,7 +12,7 @@ import (
 
 var _ = fmt.Println
 
-// InventoryItemCategoriesResource is a resource for managing InventoryItemCategories
+// ItemCategoriesResource is a resource for managing ItemCategories
 type ItemCategoriesResource struct {
 	buffalo.Resource
 }

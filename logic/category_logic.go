@@ -6,8 +6,8 @@ import (
 	"sort"
 )
 
-func GetAllCategories(tx *pop.Connection) (*models.InventoryItemCategories, error) {
-	categories := &models.InventoryItemCategories{}
+func GetAllCategories(tx *pop.Connection) (*models.ItemCategories, error) {
+	categories := &models.ItemCategories{}
 	if err := tx.Eager().All(categories); err != nil {
 		return nil, err
 	}
@@ -19,8 +19,8 @@ func GetAllCategories(tx *pop.Connection) (*models.InventoryItemCategories, erro
 	return categories, nil
 }
 
-func GetAllRecCategories(tx *pop.Connection) (*models.RecipeCategories, error) {
-	categories := &models.RecipeCategories{}
+func GetRecCategories(tx *pop.Connection) (*models.RecipeCategories, error) {
+	categories := &models.ItemCategories{}
 	if err := tx.Eager().All(categories); err != nil {
 		return nil, err
 	}
@@ -32,7 +32,7 @@ func GetAllRecCategories(tx *pop.Connection) (*models.RecipeCategories, error) {
 	return categories, nil
 }
 
-func InvCategoryIntSlice(categories *models.InventoryItemCategories) *models.Categories {
+func InvCategoryIntSlice(categories *models.ItemCategories) *models.Categories {
 	outCats := &models.Categories{}
 	for _, cat := range *categories {
 		*outCats = append(*outCats, cat)

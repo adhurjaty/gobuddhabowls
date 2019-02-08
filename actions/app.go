@@ -92,8 +92,7 @@ func App() *buffalo.App {
 		app.Resource("/count_prep_items", CountPrepItemsResource{})
 
 		app.GET("/settings", SettingsHandler)
-		app.Resource("/inventory_item_categories", InventoryItemCategoriesResource{})
-		app.Resource("/recipe_categories", RecipeCategoriesResource{})
+		app.Resource("/item_categories", ItemCategoriesResource{})
 
 		app.GET("/signin", AuthNew)
 		app.POST("/signin", AuthCreate)

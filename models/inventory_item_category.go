@@ -29,7 +29,7 @@ func (i ItemCategory) String() string {
 type ItemCategories []ItemCategory
 
 // String is not required by pop and may be deleted
-func (i InventoryItemCategories) String() string {
+func (i ItemCategories) String() string {
 	ji, _ := json.Marshal(i)
 	return string(ji)
 }
