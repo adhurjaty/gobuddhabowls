@@ -95,7 +95,7 @@ func (v RecipesResource) New(c buffalo.Context) error {
 }
 
 func setRecipeFormViewVars(presenter *presentation.Presenter, c buffalo.Context) error {
-	categories, err := presenter.GetAllRecCategories()
+	categories, err := presenter.GetRecCategories()
 	if err != nil {
 		return err
 	}

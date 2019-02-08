@@ -171,7 +171,7 @@ func setNewInvItemsViewVars(c buffalo.Context, presenter *presentation.Presenter
 	if err != nil {
 		return err
 	}
-	categories, err := presenter.GetAllCategories()
+	categories, err := presenter.GetInvItemCategories()
 	if err != nil {
 		return err
 	}
@@ -267,7 +267,7 @@ func setEditInvItemsViewVars(c buffalo.Context, presenter *presentation.Presente
 		}
 	}
 
-	categories, err := presenter.GetAllCategories()
+	categories, err := presenter.GetInvItemCategories()
 	if err != nil {
 		return errors.WithStack(err)
 	}

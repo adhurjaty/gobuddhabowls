@@ -10,16 +10,26 @@ func (p *Presenter) GetAllCategories() (*CategoriesAPI, error) {
 		return nil, err
 	}
 
-	catAPI := NewCategoriesAPI(logic.InvCategoryIntSlice(categories))
+	catAPI := NewCategoriesAPI(categories)
 	return &catAPI, nil
 }
 
-func (p *Presenter) GetAllRecCategories() (*CategoriesAPI, error) {
-	categories, err := logic.GetAllRecCategories(p.tx)
+func (p *Presenter) GetInvItemCategories() (*CategoriesAPI, error) {
+	categories, err := logic.GetInvItemCategories(p.tx)
 	if err != nil {
 		return nil, err
 	}
 
-	catAPI := NewCategoriesAPI(logic.RecCategoryIntSlice(categories))
+	catAPI := NewCategoriesAPI(categories)
+	return &catAPI, nil
+}
+
+func (p *Presenter) GetRecCategories() (*CategoriesAPI, error) {
+	categories, err := logic.GetRecCategories(p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	catAPI := NewCategoriesAPI(categories)
 	return &catAPI, nil
 }

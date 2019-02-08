@@ -22,7 +22,7 @@ func (c CategoryAPI) String() string {
 }
 
 // NewCategoryAPI converts a category to an api category
-func NewCategoryAPI(category models.Category) CategoryAPI {
+func NewCategoryAPI(category models.ItemCategory) CategoryAPI {
 	c := CategoryAPI{}
 
 	c.ID = category.GetID().String()
@@ -33,7 +33,7 @@ func NewCategoryAPI(category models.Category) CategoryAPI {
 	return c
 }
 
-func NewCategoriesAPI(categories *models.Categories) CategoriesAPI {
+func NewCategoriesAPI(categories *models.ItemCategories) CategoriesAPI {
 	catsAPI := CategoriesAPI{}
 	for _, category := range *categories {
 		catsAPI = append(catsAPI, NewCategoryAPI(category))
