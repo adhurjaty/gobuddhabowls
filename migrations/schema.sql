@@ -48,6 +48,17 @@ SET default_tablespace = '';
 SET default_with_oids = false;
 
 --
+-- Name: category_to_remove; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.category_to_remove (
+    id uuid
+);
+
+
+ALTER TABLE public.category_to_remove OWNER TO postgres;
+
+--
 -- Name: count_inventory_items; Type: TABLE; Schema: public; Owner: postgres
 --
 
