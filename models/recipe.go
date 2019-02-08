@@ -18,8 +18,8 @@ type Recipe struct {
 	CreatedAt  time.Time    `json:"created_at" db:"created_at"`
 	UpdatedAt  time.Time    `json:"updated_at" db:"updated_at"`
 	Name       string       `json:"name" db:"name"`
-	Category   ItemCategory `belongs_to:"recipe_categories" db:"-"`
-	CategoryID uuid.UUID    `json:"category_id" db:"recipe_category_id"`
+	Category   ItemCategory `belongs_to:"item_categories" db:"-"`
+	CategoryID uuid.UUID    `json:"category_id" db:"category_id"`
 	RecipeUnit string       `json:"recipe_unit" db:"recipe_unit"`
 	IsBatch    bool         `json:"is_batch" db:"is_batch"`
 	// RecipeUnitConversion is the number of recipe units in a yield

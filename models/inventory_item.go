@@ -18,7 +18,7 @@ type InventoryItem struct {
 	UpdatedAt            time.Time    `json:"updated_at" db:"updated_at"`
 	Name                 string       `json:"name" db:"name"`
 	Category             ItemCategory `belongs_to:"item_categories" db:"-"`
-	CategoryID           uuid.UUID    `json:"inventory_item_category_id" db:"inventory_item_category_id"`
+	CategoryID           uuid.UUID    `json:"category_id" db:"category_id"`
 	CountUnit            string       `json:"count_unit" db:"count_unit"`
 	RecipeUnit           string       `json:"recipe_unit" db:"recipe_unit"`
 	RecipeUnitConversion float64      `json:"recipe_unit_conversion" db:"recipe_unit_conversion"`

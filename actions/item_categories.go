@@ -18,7 +18,7 @@ type ItemCategoriesResource struct {
 }
 
 // List serves the page for editing the categories for inventory items (color, order)
-// GET /inventory_item_categories
+// GET /item_categories
 func (v ItemCategoriesResource) List(c buffalo.Context) error {
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
@@ -32,11 +32,11 @@ func (v ItemCategoriesResource) List(c buffalo.Context) error {
 	}
 
 	c.Set("itemCategories", categories)
-	return c.Render(200, r.HTML("inventory_item_categories/index"))
+	return c.Render(200, r.HTML("item_categories/index"))
 }
 
 // Update updates the selected category
-// PUT /inventory_item_categories/{item_category_id}
+// PUT /item_categories/{item_category_id}
 func (v ItemCategoriesResource) Update(c buffalo.Context) error {
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
@@ -85,7 +85,7 @@ func (v ItemCategoriesResource) Update(c buffalo.Context) error {
 }
 
 // Show gets the data for one category. Probably won't be used This function is mapped to
-// the path GET /inventory_item_categories/{purchase_order_id}
+// the path GET /item_categories/{purchase_order_id}
 func (v ItemCategoriesResource) Show(c buffalo.Context) error {
 	return c.Render(404, r.String("Not implemented"))
 }
@@ -128,5 +128,5 @@ func (v ItemCategoriesResource) Destroy(c buffalo.Context) error {
 	}
 
 	c.Set("itemCategories", categories)
-	return c.Render(200, r.HTML("inventory_item_categories/index"))
+	return c.Render(200, r.HTML("item_categories/index"))
 }
