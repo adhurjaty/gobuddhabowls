@@ -2,6 +2,7 @@ package logic
 
 import (
 	"buddhabowls/models"
+	"fmt"
 	"github.com/gobuffalo/pop"
 	"sort"
 )
@@ -11,13 +12,20 @@ func GetAllCategories(tx *pop.Connection) (*models.ItemCategories, error) {
 }
 
 func GetInvItemCategories(tx *pop.Connection) (*models.ItemCategories, error) {
-	query := tx.Eager().Where()
+	queryString := createCategoryTypeQueryString("inventory_items")
+	query := tx.Eager().RawQuery(queryString)
 	return getCategoriesFromQuery(query)
 }
 
 func GetRecCategories(tx *pop.Connection) (*models.ItemCategories, error) {
-	query := tx.Eager().Where()
+	queryString := createCategoryTypeQueryString("recipes")
+	query := tx.Eager().RawQuery(queryString)
 	return getCategoriesFromQuery(query)
+}
+
+func createCategoryTypeQueryString(tableName string) string {
+	return fmt.Sprintf("SELECT DISTINCT ci.* FROM item_categories AS ci"+
+		" INNER JOIN %s AS t ON ci.id = t.category_id", tableName)
 }
 
 func getCategoriesFromQuery(query *pop.Query) (*models.ItemCategories, error) {
