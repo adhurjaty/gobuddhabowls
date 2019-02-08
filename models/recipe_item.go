@@ -77,7 +77,7 @@ func (r RecipeItem) GetInventoryItemID() uuid.UUID {
 func (r RecipeItem) GetName() string {
 	return r.getBaseItem().GetName()
 }
-func (r RecipeItem) GetCategory() Category {
+func (r RecipeItem) GetCategory() ItemCategory {
 	return r.getBaseItem().GetCategory()
 }
 func (r RecipeItem) GetCountUnit() string {

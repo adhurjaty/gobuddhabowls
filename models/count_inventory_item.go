@@ -62,7 +62,7 @@ func (c CountInventoryItem) GetName() string {
 	return c.InventoryItem.Name
 }
 
-func (c CountInventoryItem) GetCategory() Category {
+func (c CountInventoryItem) GetCategory() ItemCategory {
 	return c.InventoryItem.Category
 }
 

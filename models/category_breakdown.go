@@ -14,7 +14,7 @@ type CategoryBreakdown struct {
 // CategoryBreakdownItem is an item with the breakdown
 type CategoryBreakdownItem struct {
 	Value    float64
-	Category Category
+	Category ItemCategory
 }
 
 // Add adds CategoryBreakdown by combining the totals for each category
@@ -25,8 +25,8 @@ func (cb *CategoryBreakdown) Add(otherCb CategoryBreakdown) {
 }
 
 // ToCategoryMap converts the breakdown to a map of category to value
-func (cb CategoryBreakdown) ToCategoryMap() map[Category]float64 {
-	cbMap := make(map[Category]float64)
+func (cb CategoryBreakdown) ToCategoryMap() map[ItemCategory]float64 {
+	cbMap := make(map[ItemCategory]float64)
 	for _, item := range cb.Categories {
 		cbMap = AddToCategoryMap(cbMap, item.Category, item.Value)
 	}
@@ -35,7 +35,7 @@ func (cb CategoryBreakdown) ToCategoryMap() map[Category]float64 {
 }
 
 // FromCategoryMap converts a map of categories to aggregate value into a CategoryBreakdown
-func FromCategoryMap(m map[Category]float64) CategoryBreakdown {
+func FromCategoryMap(m map[ItemCategory]float64) CategoryBreakdown {
 	returnBreakdown := CategoryBreakdown{Categories: []CategoryBreakdownItem{}}
 	var total float64
 	for cat, value := range m {

@@ -115,7 +115,7 @@ func (i InventoryItem) GetName() string {
 	return i.Name
 }
 
-func (i InventoryItem) GetCategory() Category {
+func (i InventoryItem) GetCategory() ItemCategory {
 	return i.Category
 }
 
