@@ -95,22 +95,6 @@ CREATE TABLE public.inventories (
 ALTER TABLE public.inventories OWNER TO postgres;
 
 --
--- Name: inventory_item_categories; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.inventory_item_categories (
-    id uuid NOT NULL,
-    name character varying(255) NOT NULL,
-    background character varying(255) NOT NULL,
-    index integer NOT NULL,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
-);
-
-
-ALTER TABLE public.inventory_item_categories OWNER TO postgres;
-
---
 -- Name: inventory_items; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -130,6 +114,22 @@ CREATE TABLE public.inventory_items (
 
 
 ALTER TABLE public.inventory_items OWNER TO postgres;
+
+--
+-- Name: item_categories; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.item_categories (
+    id uuid NOT NULL,
+    name character varying(255) NOT NULL,
+    background character varying(255) NOT NULL,
+    index integer NOT NULL,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
+
+ALTER TABLE public.item_categories OWNER TO postgres;
 
 --
 -- Name: order_items; Type: TABLE; Schema: public; Owner: postgres
@@ -182,22 +182,6 @@ CREATE TABLE public.purchase_orders (
 
 
 ALTER TABLE public.purchase_orders OWNER TO postgres;
-
---
--- Name: recipe_categories; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.recipe_categories (
-    id uuid NOT NULL,
-    name character varying(255) NOT NULL,
-    background character varying(255) NOT NULL,
-    index integer NOT NULL,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL
-);
-
-
-ALTER TABLE public.recipe_categories OWNER TO postgres;
 
 --
 -- Name: recipe_items; Type: TABLE; Schema: public; Owner: postgres
@@ -326,10 +310,10 @@ ALTER TABLE ONLY public.inventories
 
 
 --
--- Name: inventory_item_categories inventory_item_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: item_categories inventory_item_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.inventory_item_categories
+ALTER TABLE ONLY public.item_categories
     ADD CONSTRAINT inventory_item_categories_pkey PRIMARY KEY (id);
 
 
@@ -363,14 +347,6 @@ ALTER TABLE ONLY public.prep_items
 
 ALTER TABLE ONLY public.purchase_orders
     ADD CONSTRAINT purchase_orders_pkey PRIMARY KEY (id);
-
-
---
--- Name: recipe_categories recipe_categories_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.recipe_categories
-    ADD CONSTRAINT recipe_categories_pkey PRIMARY KEY (id);
 
 
 --
