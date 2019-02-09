@@ -1,5 +1,5 @@
 import { DataGrid } from "../datagrid/_datagrid";
-import { parseModelJSON, formatMoney, groupByCategory, blankUUID } from "../helpers/_helpers";
+import { parseModelJSON, formatMoney, groupByCategory, blankUUID, isEmptyOrSpaces } from "../helpers/_helpers";
 import { ButtonGroup } from "../components/_button_group";
 import { Modal } from "../components/_modal";
 import { SingleOrderingTable } from "../components/_single_ordering_table";
@@ -205,7 +205,7 @@ function createOrderingTable() {
 }
 
 function getItem() {
-    var category = $('select[name="CategoryID"] option:selected').html();
+    var category = $('input[name="CategoryID"]').val();
     var name = $('input[name="Name"]').val();
     var index = parseInt($('input[name="Index"]').val());
 
@@ -218,13 +218,15 @@ function getItem() {
 }
 
 function setOnChangeCategoryOrName() {
-    $('select[name="CategoryID"]').change((option) => {
+    $('input[name="CategoryID"]').change((option) => {
         clearInvItemsTable();
         createOrderingTable();
     });
     $('input[name="Name"]').change(() => {
         var name = $('input[name="Name"]').val();
-        _orderingTable.updateItemName(name);
+        if(_orderingTable) {
+            _orderingTable.updateItemName(name);
+        }
     });
 }
 
@@ -239,36 +241,50 @@ function setOnSubmit() {
             return false;
         }
 
-        var vendorMap = _datagrid.rows.reduce((obj, row) => {
-            var vendor = row.item.selected_vendor;
-            var idx = _allItems.findIndex(x => x.selected_vendor 
-                == vendor);
-            if(idx == -1) {
-                return obj;
-            }
-            var item = _allItems[idx];
-            setAttrs(item, row.item);
-
-            obj[item.selected_vendor] = item;
-            return obj;
-        }, {});
-
-        var input = $('input[name="VendorItemMap"]');
-        input.val(JSON.stringify(vendorMap));
-
-        var indexInput = $('input[name="Index"]');
-        var index = findItemIndex();
-        indexInput.val(index);
+        setVendorMapInput();
+        setIndexInput();
+        setCategoryInput();
     });
 }
 
 function validateNewItem() {
+    if(isEmptyOrSpaces($('input[name="Name"]').val())) {
+        showError('Must enter non-blank name');
+        return false;
+    }
+    if(isEmptyOrSpaces($('input[name="CategoryID"]').val())) {
+        showError('Must enter non-blank category');
+        return false;
+    }
     if(_datagrid.rows.length == 0) {
         showError('Must add vendors');
         return false;
     }
 
     return true;
+}
+
+function setVendorMapInput() {
+    var vendorMap = getVendorMapFromDatagrid();
+
+    var input = $('input[name="VendorItemMap"]');
+    input.val(JSON.stringify(vendorMap));
+}
+
+function getVendorMapFromDatagrid() {
+    return _datagrid.rows.reduce((obj, row) => {
+        var vendor = row.item.selected_vendor;
+        var idx = _allItems.findIndex(x => x.selected_vendor 
+            == vendor);
+        if(idx == -1) {
+            return obj;
+        }
+        var item = _allItems[idx];
+        setAttrs(item, row.item);
+
+        obj[item.selected_vendor] = item;
+        return obj;
+    }, {});
 }
 
 function setAttrs(item, rowItem) {
@@ -280,6 +296,12 @@ function setAttrs(item, rowItem) {
     }
 }
 
+function setIndexInput() {
+    var indexInput = $('input[name="Index"]');
+    var index = findItemIndex();
+    indexInput.val(index);
+}
+
 function findItemIndex() {
     var lis = _orderingTable.ul.find('li');
     var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == '');
@@ -288,4 +310,21 @@ function findItemIndex() {
     }
 
     return _orderingTable.items[idx].index;
+}
+
+function setCategoryInput() {
+    var input = $('input[name="CategoryID"]');
+    var selectedName = input.val();
+    var selectedOption = $(`#category-datalist-options option:contains(${selectedName})`);
+    debugger;
+    if(selectedOption.length == 0) {
+        var category = {
+            name: selectedName,
+            id: blankUUID()
+        };
+        input.attr('name', 'Cateogry');
+        input.val(JSON.stringify(category));
+    }
+    var id = selectedOption.attr('data-value');
+    input.val(id);
 }

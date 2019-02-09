@@ -1,7 +1,17 @@
 <div class="row">
   <div class="col-md-6">
     <%= f.InputTag("Name") %>
-    <%= f.SelectTag("Category", {options: categories, name: "CategoryID", value: inventoryItem.Category }) %>
+    <div class="form-group">
+      <label>Category</label><br/>
+      <input type="text" name="CategoryID" class="form-control"
+            value='<%= inventoryItem.Category.Name %>'
+            list="category-datalist-options" />
+      <datalist id="category-datalist-options">
+        <%= for (category) in categories { %>
+          <option data-value='<%= category.ID %>'><%= category.Name %></option>
+        <% } %>
+      </datalist>
+    </div>
     <%= f.InputTag("CountUnit") %>
     <%= f.InputTag("RecipeUnit") %>
     <%= f.InputTag("RecipeUnitConversion") %>

@@ -46,6 +46,7 @@ func (i *ItemCategory) Validate(tx *pop.Connection) (*validate.Errors, error) {
 // ValidateCreate gets run every time you call "pop.ValidateAndCreate" method.
 // This method is not required and may be deleted.
 func (i *ItemCategory) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
+	// TODO: unique name checker
 	return validate.NewErrors(), nil
 }
 
