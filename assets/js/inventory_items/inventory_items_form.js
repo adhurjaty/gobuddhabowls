@@ -1,8 +1,7 @@
 import { DataGrid } from "../datagrid/_datagrid";
-import { parseModelJSON, formatMoney, groupByCategory, blankUUID, isEmptyOrSpaces } from "../helpers/_helpers";
+import { parseModelJSON, formatMoney, blankUUID, isEmptyOrSpaces } from "../helpers/_helpers";
 import { ButtonGroup } from "../components/_button_group";
 import { Modal } from "../components/_modal";
-import { SingleOrderingTable } from "../components/_single_ordering_table";
 import { showError } from "../helpers/index_helpers";
 
 var _columnInfo = [
@@ -105,8 +104,6 @@ $(() => {
     initDatagrid();
     initAddRemoveButtons();
     initModal();
-    createOrderingTable();
-    setOnChangeCategoryOrName();
     setOnSubmit();
 });
 
@@ -190,50 +187,6 @@ function addItem(item) {
     _modal.removeItem(item);
 }
 
-function createOrderingTable() {
-    var container = $('#inventory-items-display');
-    var invItems = parseModelJSON(container.attr('data'));
-    var item = getItem();
-    
-    var catItems = groupByCategory(invItems);
-    var selectedCat = catItems.find(x => x.name == item.category);
-    if(selectedCat) {
-        var selectedCatItems = selectedCat.value;
-        _orderingTable = new SingleOrderingTable(selectedCatItems, item);
-        _orderingTable.attach(container);
-    }
-}
-
-function getItem() {
-    var category = $('input[name="CategoryID"]').val();
-    var name = $('input[name="Name"]').val();
-    var index = parseInt($('input[name="Index"]').val());
-
-    return {
-        name: name,
-        category: category,
-        index: index,
-        id: ''
-    };
-}
-
-function setOnChangeCategoryOrName() {
-    $('input[name="CategoryID"]').change((option) => {
-        clearInvItemsTable();
-        createOrderingTable();
-    });
-    $('input[name="Name"]').change(() => {
-        var name = $('input[name="Name"]').val();
-        if(_orderingTable) {
-            _orderingTable.updateItemName(name);
-        }
-    });
-}
-
-function clearInvItemsTable() {
-    $('#inventory-items-display').html('');
-}
-
 function setOnSubmit() {
     var form = $('#vendor-datagrid').closest('form');
     form.submit(() => {
@@ -242,8 +195,6 @@ function setOnSubmit() {
         }
 
         setVendorMapInput();
-        setIndexInput();
-        setCategoryInput();
     });
 }
 
@@ -294,36 +245,4 @@ function setAttrs(item, rowItem) {
     if(item.id == rowItem.name) {
         item.id = blankUUID();
     }
-}
-
-function setIndexInput() {
-    var indexInput = $('input[name="Index"]');
-    var index = findItemIndex();
-    indexInput.val(index);
-}
-
-function findItemIndex() {
-    var lis = _orderingTable.ul.find('li');
-    var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == '');
-    if(idx == _orderingTable.items.length) {
-        return _orderingTable.items[idx - 1].index;
-    }
-
-    return _orderingTable.items[idx].index;
-}
-
-function setCategoryInput() {
-    var input = $('input[name="CategoryID"]');
-    var selectedName = input.val();
-    var selectedOption = $(`#category-datalist-options option:contains(${selectedName})`);
-    if(selectedOption.length == 0) {
-        var category = {
-            name: selectedName,
-            id: blankUUID()
-        };
-        input.attr('name', 'Cateogry');
-        input.val(JSON.stringify(category));
-    }
-    var id = selectedOption.attr('data-value');
-    input.val(id);
 }

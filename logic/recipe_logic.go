@@ -22,8 +22,8 @@ func GetBatchRecipes(tx *pop.Connection) (*models.Recipes, error) {
 	return getRecipesHelper(query)
 }
 
-func GetRecipesOfCategory(catID string, tx *pop.Connection) (*models.Recipes, error) {
-	query := tx.Eager().Where("category_id = ?", catID)
+func GetRecipesOfCategory(id string, catID string, tx *pop.Connection) (*models.Recipes, error) {
+	query := tx.Eager().Where("category_id = ?", catID).Where("id != ?", id)
 	return getRecipesHelper(query)
 }
 
@@ -99,16 +99,14 @@ func UpdateRecipeNoItems(recipe *models.Recipe, tx *pop.Connection) (*validate.E
 }
 
 func updateRecIndices(recItem *models.Recipe, tx *pop.Connection) (*validate.Errors, error) {
-	items, err := GetRecipesOfCategory(recItem.CategoryID.String(), tx)
+	items, err := GetRecipesOfCategory(recItem.ID.String(),
+		recItem.CategoryID.String(), tx)
 	if err != nil {
 		return validate.NewErrors(), err
 	}
 
 	offset := 0
 	for i, item := range *items {
-		if item.ID.String() == recItem.ID.String() {
-			continue
-		}
 		if item.Index == recItem.Index {
 			offset = 1
 		}
