@@ -34,11 +34,13 @@ function getItem() {
     var category = _categoryInput.val();
     var name = $('input[name="Name"]').val();
     var index = parseInt($('input[name="Index"]').val());
+    var id = $('input[name="ID"]').val();
 
     return {
         name: name,
         category: category,
         index: index,
+        id: id
     };
 }
 

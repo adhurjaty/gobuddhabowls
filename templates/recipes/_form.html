@@ -1,6 +1,7 @@
 <div class="row">
     <div class="col-md-6">
       <input type="hidden" name="Index" value="<%= recipe.Index %>" />
+      <input type="hidden" name="ID" value="<%= recipe.ID %>" />
       <%= f.CheckboxTag("IsBatch", {unchecked: false, label: "Batch Recipe"}) %>
       <%= f.InputTag("Name") %>
       <%= partial("partials/category_input", {item: recipe}) %>

@@ -7,15 +7,7 @@ import (
 )
 
 func GetRecipes(tx *pop.Connection) (*models.Recipes, error) {
-	factory := models.ModelFactory{}
-	recipes := &models.Recipes{}
-	if err := factory.CreateModelSlice(recipes, tx.Eager().Q()); err != nil {
-		return nil, err
-	}
-
-	recipes.Sort()
-
-	return recipes, nil
+	return getRecipesHelper(tx.Eager().Q())
 }
 
 func GetRecipesNoItems(tx *pop.Connection) (*models.Recipes, error) {
@@ -26,9 +18,18 @@ func GetRecipesNoItems(tx *pop.Connection) (*models.Recipes, error) {
 }
 
 func GetBatchRecipes(tx *pop.Connection) (*models.Recipes, error) {
+	query := tx.Eager().Where("is_batch = true")
+	return getRecipesHelper(query)
+}
+
+func GetRecipesOfCategory(catID string, tx *pop.Connection) (*models.Recipes, error) {
+	query := tx.Eager().Where("category_id = ?", catID)
+	return getRecipesHelper(query)
+}
+
+func getRecipesHelper(query *pop.Query) (*models.Recipes, error) {
 	factory := models.ModelFactory{}
 	recipes := &models.Recipes{}
-	query := tx.Eager().Where("is_batch = true")
 	if err := factory.CreateModelSlice(recipes, query); err != nil {
 		return nil, err
 	}
@@ -98,7 +99,7 @@ func UpdateRecipeNoItems(recipe *models.Recipe, tx *pop.Connection) (*validate.E
 }
 
 func updateRecIndices(recItem *models.Recipe, tx *pop.Connection) (*validate.Errors, error) {
-	items, err := GetRecipes(tx)
+	items, err := GetRecipesOfCategory(recItem.CategoryID.String(), tx)
 	if err != nil {
 		return validate.NewErrors(), err
 	}
@@ -106,7 +107,6 @@ func updateRecIndices(recItem *models.Recipe, tx *pop.Connection) (*validate.Err
 	offset := 0
 	for i, item := range *items {
 		if item.ID.String() == recItem.ID.String() {
-			offset = -1
 			continue
 		}
 		if item.Index == recItem.Index {
