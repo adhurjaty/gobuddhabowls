@@ -316,7 +316,6 @@ function setCategoryInput() {
     var input = $('input[name="CategoryID"]');
     var selectedName = input.val();
     var selectedOption = $(`#category-datalist-options option:contains(${selectedName})`);
-    debugger;
     if(selectedOption.length == 0) {
         var category = {
             name: selectedName,

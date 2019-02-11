@@ -59,6 +59,10 @@ func UpdateInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*valid
 	return tx.ValidateAndUpdate(item)
 }
 
+func UpdateBaseInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndUpdate(item)
+}
+
 func InsertInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
 	verrs, err := updateIndices(item, tx)
 	if verrs.HasAny() || err != nil {

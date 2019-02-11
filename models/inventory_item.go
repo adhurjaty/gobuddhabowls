@@ -82,8 +82,15 @@ func (i *InventoryItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, er
 // ValidateUpdate gets run every time you call "pop.ValidateAndUpdate" method.
 // This method is not required and may be deleted.
 func (i *InventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
-	query := tx.Where("id != ?", i.ID)
-	return i.validateUniqueName(query)
+	item := &InventoryItem{}
+	if err := tx.Find(item, i.ID); err != nil {
+		return validate.NewErrors(), err
+	}
+	if item.Name != i.Name {
+		query := tx.Where("id != ?", i.ID)
+		return i.validateUniqueName(query)
+	}
+	return validate.NewErrors(), nil
 }
 
 func (i *InventoryItem) validateUniqueName(query *pop.Query) (*validate.Errors, error) {
