@@ -40,7 +40,7 @@ export class OrderingTable {
             },
             animation: 150,
             handle: '.drag-handle',
-            onChange: this.onChange
+            onEnd: this.onChange
         });
     }
 

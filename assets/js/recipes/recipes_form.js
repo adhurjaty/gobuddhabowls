@@ -99,8 +99,6 @@ var _items = [];
 
 $(() => {
     initDatagrid();
-    setOrderingTable();
-    setOnChangeCategoryOrName();
     setOnFormSubmit();
 });
 
@@ -109,53 +107,6 @@ function initDatagrid() {
     var allItems = parseModelJSON(container.attr('all-items'));
     _itemsDisplay = new CategorizedItemsDisplay(container, _columnInfo,
         allItems, _datagridOptions)
-}
-
-function setOrderingTable() {
-    var container = $('#recipe-item-ordering');
-    var invItems = parseModelJSON(container.attr('data'));
-    var item = getItem();
-
-    var catItems = groupByCategory(invItems);
-    var selectedCat = catItems.find(x => x.name == item.category);
-    if(selectedCat) {
-        var selectedCatItems = selectedCat.value;
-        var idx = selectedCatItems.findIndex(x => x.id == item.id);
-        if(idx > -1) {
-            selectedCatItems.splice(idx, 1)
-        }
-        _orderingTable = new SingleOrderingTable(selectedCatItems, item);
-        _orderingTable.attach(container);
-    }
-}
-
-function getItem() {
-    var category = $('select[name="CategoryID"] option:selected').html();
-    var name = $('input[name="Name"]').val();
-    var index = parseInt($('input[name="Index"]').val());
-    var id = $('input[name="ID"]').val();
-
-    return {
-        name: name,
-        category: category,
-        index: index,
-        id: id
-    };
-}
-
-function setOnChangeCategoryOrName() {
-    $('select[name="CategoryID"]').change((option) => {
-        clearInvItemsTable();
-        setOrderingTable();
-    });
-    $('input[name="Name"]').change(() => {
-        var name = $('input[name="Name"]').val();
-        _orderingTable.updateItemName(name);
-    });
-}
-
-function clearInvItemsTable() {
-    $('#recipe-item-ordering').html('');
 }
 
 function setOnFormSubmit() {
@@ -168,7 +119,7 @@ function setOnFormSubmit() {
             return false;
         }
 
-        setIndex();
+        // setIndex();
         setRecipeItems();
     });
 }
@@ -182,21 +133,21 @@ function validateItem() {
     return true;
 }
 
-function setIndex() {
-    var idx = findItemIndex();
-    $('input[name="Index"]').val(idx);
-}
+// function setIndex() {
+//     var idx = findItemIndex();
+//     $('input[name="Index"]').val(idx);
+// }
 
-function findItemIndex() {
-    var id = $('input[name="ID"]').val();
-    var lis = _orderingTable.ul.find('li');
-    var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == id);
-    if(idx == _orderingTable.items.length) {
-        return _orderingTable.items[idx - 1].index;
-    }
+// function findItemIndex() {
+//     var id = $('input[name="ID"]').val();
+//     var lis = _orderingTable.ul.find('li');
+//     var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == id);
+//     if(idx == _orderingTable.items.length) {
+//         return _orderingTable.items[idx - 1].index;
+//     }
 
-    return _orderingTable.items[idx].index;
-}
+//     return _orderingTable.items[idx].index;
+// }
 
 function setRecipeItems() {
     $('input[name="Items"]').val(JSON.stringify(_items));

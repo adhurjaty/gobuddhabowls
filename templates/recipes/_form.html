@@ -4,12 +4,12 @@
       <input type="hidden" name="Index" value="<%= recipe.Index %>" />
       <%= f.CheckboxTag("IsBatch", {unchecked: false, label: "Batch Recipe"}) %>
       <%= f.InputTag("Name") %>
-      <%= f.SelectTag("Category", {options: categories, name: "CategoryID", value: recipe.Category }) %>
+      <%= partial("partials/category_input", {item: recipe}) %>
       <%= f.InputTag("RecipeUnit") %>
       <%= f.InputTag("RecipeUnitConversion", {label: "Recipe Yield"}) %>
     </div>
     <div class="col-md-6">
-      <div id="recipe-item-ordering" data='<%= recipes.String() %>'></div>
+      <div id="item-ordering-table" data='<%= recipes.String() %>'></div>
     </div>
 </div> 
 <div>
@@ -24,4 +24,5 @@
 <br/>
 <button class="btn btn-success" role="submit">Save</button>
 
+<%= javascriptTag("components/categorized_item_form.js") %>
 <%= javascriptTag("recipes/recipes_form.js") %>
