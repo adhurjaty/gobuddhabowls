@@ -94,7 +94,6 @@ var _columnInfo = [
 ];
 
 var _itemsDisplay = null;
-var _orderingTable = null;
 var _items = [];
 
 $(() => {
@@ -112,14 +111,13 @@ function initDatagrid() {
 function setOnFormSubmit() {
     var form = $('#recipe-items-display').closest('form');
     form.submit(() => {
-        _items = _itemsDisplay.datagrid.rows.map(x => x.item);
-        _items = _items.filter(x => x.count > 0);
+        _items = _itemsDisplay.datagrid.rows.map(x => x.item)
+            .filter(x => x.count > 0);
         
         if(!validateItem()) {
             return false;
         }
 
-        // setIndex();
         setRecipeItems();
     });
 }
@@ -132,22 +130,6 @@ function validateItem() {
 
     return true;
 }
-
-// function setIndex() {
-//     var idx = findItemIndex();
-//     $('input[name="Index"]').val(idx);
-// }
-
-// function findItemIndex() {
-//     var id = $('input[name="ID"]').val();
-//     var lis = _orderingTable.ul.find('li');
-//     var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == id);
-//     if(idx == _orderingTable.items.length) {
-//         return _orderingTable.items[idx - 1].index;
-//     }
-
-//     return _orderingTable.items[idx].index;
-// }
 
 function setRecipeItems() {
     $('input[name="Items"]').val(JSON.stringify(_items));

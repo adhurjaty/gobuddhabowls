@@ -8,5 +8,7 @@
       <option data-value='<%= category.ID %>'><%= category.Name %></option>
     <% } %>
   </datalist>
-  <input type="hidden" name="CategoryID" value="item.Category.ID" />
+  <input type="hidden" name="CategoryID" value="<%= item.Category.ID %>" />
 </div>
+
+<%= javascriptTag("components/category_input.js") %>

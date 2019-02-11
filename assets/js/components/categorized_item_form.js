@@ -34,16 +34,13 @@ function getItem() {
     var category = _categoryInput.val();
     var name = $('input[name="Name"]').val();
     var index = parseInt($('input[name="Index"]').val());
-    var id = $('input[name="ID"]').val();
 
     return {
         name: name,
         category: category,
         index: index,
-        id: id
     };
 }
-
 
 function setOnChangeCategoryOrName() {
     _categoryInput.change((option) => {
@@ -52,7 +49,9 @@ function setOnChangeCategoryOrName() {
     });
     $('input[name="Name"]').change(() => {
         var name = $('input[name="Name"]').val();
-        _orderingTable.updateItemName(name);
+        if(_orderingTable) {
+            _orderingTable.updateItemName(name);
+        }
     });
 }
 
@@ -61,22 +60,5 @@ function clearInvItemsTable() {
 }
 
 function onIndexChanged(evt) {
-    debugger;
+    $('input[name="Index"]').val(evt.newIndex);
 }
-
-// function setIndex() {
-//     var idx = findItemIndex();
-//     $('input[name="Index"]').val(idx);
-// }
-
-// function findItemIndex() {
-//     var id = $('input[name="ID"]').val();
-//     var lis = _orderingTable.ul.find('li');
-//     var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == id);
-//     if(idx == _orderingTable.items.length) {
-//         return _orderingTable.items[idx - 1].index;
-//     }
-
-//     return _orderingTable.items[idx].index;
-// }
-
