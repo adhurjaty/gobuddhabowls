@@ -204,3 +204,7 @@ export function getObjectDiff(a, b) {
 export function blankUUID() {
     return "00000000-0000-0000-0000-000000000000";
 }
+
+export function isEmptyOrSpaces(str){
+    return str === null || str.match(/^ *$/) !== null;
+}

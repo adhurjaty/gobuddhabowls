@@ -1,8 +1,8 @@
 import { OrderingTable } from "./_ordering_table";
 
 export class SingleOrderingTable extends OrderingTable {
-    constructor(items, movingItem) {
-        super(items);
+    constructor(items, movingItem, onChange) {
+        super(items, onChange);
         this.itemElement = this.insertItem(movingItem);
     }
 

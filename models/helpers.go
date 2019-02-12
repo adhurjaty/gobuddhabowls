@@ -7,7 +7,7 @@ import (
 )
 
 // AddToCategoryMap adds to map the key and value and returns map
-func AddToCategoryMap(m map[Category]float64, key Category, value float64) map[Category]float64 {
+func AddToCategoryMap(m map[ItemCategory]float64, key ItemCategory, value float64) map[ItemCategory]float64 {
 	if v, ok := m[key]; ok {
 		m[key] = v + value
 	} else {
@@ -17,7 +17,7 @@ func AddToCategoryMap(m map[Category]float64, key Category, value float64) map[C
 }
 
 // CombineCategoryMaps adds 2 maps together by combining values for each key
-func CombineCategoryMaps(m1 map[Category]float64, m2 map[Category]float64) map[Category]float64 {
+func CombineCategoryMaps(m1 map[ItemCategory]float64, m2 map[ItemCategory]float64) map[ItemCategory]float64 {
 	for k, v := range m2 {
 		m1 = AddToCategoryMap(m1, k, v)
 	}
@@ -26,8 +26,8 @@ func CombineCategoryMaps(m1 map[Category]float64, m2 map[Category]float64) map[C
 }
 
 // GetCategoryGroups sections items by category and returns a category-indexed map
-func GetCategoryGroups(items GenericItems) map[Category]GenericItems {
-	outMap := make(map[Category]GenericItems)
+func GetCategoryGroups(items GenericItems) map[ItemCategory]GenericItems {
+	outMap := make(map[ItemCategory]GenericItems)
 
 	for _, item := range items {
 		itemList, ok := outMap[item.GetCategory()]

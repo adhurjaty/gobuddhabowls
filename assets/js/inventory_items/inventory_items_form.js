@@ -1,8 +1,7 @@
 import { DataGrid } from "../datagrid/_datagrid";
-import { parseModelJSON, formatMoney, groupByCategory, blankUUID } from "../helpers/_helpers";
+import { parseModelJSON, formatMoney, blankUUID, isEmptyOrSpaces } from "../helpers/_helpers";
 import { ButtonGroup } from "../components/_button_group";
 import { Modal } from "../components/_modal";
-import { SingleOrderingTable } from "../components/_single_ordering_table";
 import { showError } from "../helpers/index_helpers";
 
 var _columnInfo = [
@@ -105,8 +104,6 @@ $(() => {
     initDatagrid();
     initAddRemoveButtons();
     initModal();
-    createOrderingTable();
-    setOnChangeCategoryOrName();
     setOnSubmit();
 });
 
@@ -190,48 +187,6 @@ function addItem(item) {
     _modal.removeItem(item);
 }
 
-function createOrderingTable() {
-    var container = $('#inventory-items-display');
-    var invItems = parseModelJSON(container.attr('data'));
-    var item = getItem();
-    
-    var catItems = groupByCategory(invItems);
-    var selectedCat = catItems.find(x => x.name == item.category);
-    if(selectedCat) {
-        var selectedCatItems = selectedCat.value;
-        _orderingTable = new SingleOrderingTable(selectedCatItems, item);
-        _orderingTable.attach(container);
-    }
-}
-
-function getItem() {
-    var category = $('select[name="CategoryID"] option:selected').html();
-    var name = $('input[name="Name"]').val();
-    var index = parseInt($('input[name="Index"]').val());
-
-    return {
-        name: name,
-        category: category,
-        index: index,
-        id: ''
-    };
-}
-
-function setOnChangeCategoryOrName() {
-    $('select[name="CategoryID"]').change((option) => {
-        clearInvItemsTable();
-        createOrderingTable();
-    });
-    $('input[name="Name"]').change(() => {
-        var name = $('input[name="Name"]').val();
-        _orderingTable.updateItemName(name);
-    });
-}
-
-function clearInvItemsTable() {
-    $('#inventory-items-display').html('');
-}
-
 function setOnSubmit() {
     var form = $('#vendor-datagrid').closest('form');
     form.submit(() => {
@@ -239,36 +194,48 @@ function setOnSubmit() {
             return false;
         }
 
-        var vendorMap = _datagrid.rows.reduce((obj, row) => {
-            var vendor = row.item.selected_vendor;
-            var idx = _allItems.findIndex(x => x.selected_vendor 
-                == vendor);
-            if(idx == -1) {
-                return obj;
-            }
-            var item = _allItems[idx];
-            setAttrs(item, row.item);
-
-            obj[item.selected_vendor] = item;
-            return obj;
-        }, {});
-
-        var input = $('input[name="VendorItemMap"]');
-        input.val(JSON.stringify(vendorMap));
-
-        var indexInput = $('input[name="Index"]');
-        var index = findItemIndex();
-        indexInput.val(index);
+        setVendorMapInput();
     });
 }
 
 function validateNewItem() {
+    if(isEmptyOrSpaces($('input[name="Name"]').val())) {
+        showError('Must enter non-blank name');
+        return false;
+    }
+    if(isEmptyOrSpaces($('input[name="CategoryID"]').val())) {
+        showError('Must enter non-blank category');
+        return false;
+    }
     if(_datagrid.rows.length == 0) {
         showError('Must add vendors');
         return false;
     }
 
     return true;
+}
+
+function setVendorMapInput() {
+    var vendorMap = getVendorMapFromDatagrid();
+
+    var input = $('input[name="VendorItemMap"]');
+    input.val(JSON.stringify(vendorMap));
+}
+
+function getVendorMapFromDatagrid() {
+    return _datagrid.rows.reduce((obj, row) => {
+        var vendor = row.item.selected_vendor;
+        var idx = _allItems.findIndex(x => x.selected_vendor 
+            == vendor);
+        if(idx == -1) {
+            return obj;
+        }
+        var item = _allItems[idx];
+        setAttrs(item, row.item);
+
+        obj[item.selected_vendor] = item;
+        return obj;
+    }, {});
 }
 
 function setAttrs(item, rowItem) {
@@ -278,14 +245,4 @@ function setAttrs(item, rowItem) {
     if(item.id == rowItem.name) {
         item.id = blankUUID();
     }
-}
-
-function findItemIndex() {
-    var lis = _orderingTable.ul.find('li');
-    var idx = lis.toArray().findIndex(x =>  $(x).attr('itemid') == '');
-    if(idx == _orderingTable.items.length) {
-        return _orderingTable.items[idx - 1].index;
-    }
-
-    return _orderingTable.items[idx].index;
 }

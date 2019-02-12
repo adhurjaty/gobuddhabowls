@@ -9,7 +9,7 @@ type GenericItem interface {
 	GetID() uuid.UUID
 	GetInventoryItemID() uuid.UUID
 	GetName() string
-	GetCategory() Category
+	GetCategory() ItemCategory
 	GetCountUnit() string
 	GetIndex() int
 }

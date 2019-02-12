@@ -1,0 +1,2 @@
+rename_column("inventory_items", "inventory_item_category_id", "category_id")
+rename_column("recipes", "recipe_category_id", "category_id")

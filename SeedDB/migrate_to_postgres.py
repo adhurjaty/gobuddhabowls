@@ -115,7 +115,7 @@ def insert_inventory_items():
         'background'
     ]
 
-    insert_df_contents(category_df, 'inventory_item_categories', category_schema)
+    insert_df_contents(category_df, 'item_categories', category_schema)
 
     inv_items_mapping = {
         'Id': 'id',
@@ -129,7 +129,7 @@ def insert_inventory_items():
 
     inv_item_schema = [
         'name',
-        'inventory_item_category_id',
+        'category_id',
         'count_unit',
         'recipe_unit',
         'recipe_unit_conversion',
@@ -145,7 +145,7 @@ def insert_inventory_items():
     db_inv_item_df['index'] = db_inv_item_df.apply(get_index, axis=1)
     db_inv_item_df['new_id'] = create_new_id(db_inv_item_df)
     db_inv_item_df['yield'] = db_inv_item_df['yield'].fillna(1)
-    db_inv_item_df['inventory_item_category_id'] = db_inv_item_df.apply(lambda a: category_df.loc[category_df['name'] == a['category'],
+    db_inv_item_df['category_id'] = db_inv_item_df.apply(lambda a: category_df.loc[category_df['name'] == a['category'],
                                                                                  'new_id'].item(), axis=1)
 
     insert_df_contents(db_inv_item_df, 'inventory_items', inv_item_schema)
@@ -427,7 +427,7 @@ def insert_login():
 
 def truncate_all_tables():
     cursor = conn.cursor()
-    tables = ('count_inventory_items count_prep_items inventories inventory_item_categories inventory_items '
+    tables = ('count_inventory_items count_prep_items inventories item_categories inventory_items '
               + 'order_items prep_items purchase_orders recipe_items recipes users vendor_items vendors').split()
     for table in tables:
         query = f'TRUNCATE {table};'

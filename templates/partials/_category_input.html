@@ -1,0 +1,14 @@
+<div class="form-group">
+  <label>Category</label><br/>
+  <input id="category-input" type="text" class="form-control"
+        value='<%= item.Category.Name %>'
+        list="category-datalist-options" />
+  <datalist id="category-datalist-options">
+    <%= for (category) in categories { %>
+      <option data-value='<%= category.ID %>'><%= category.Name %></option>
+    <% } %>
+  </datalist>
+  <input type="hidden" name="CategoryID" value="<%= item.Category.ID %>" />
+</div>
+
+<%= javascriptTag("components/category_input.js") %>

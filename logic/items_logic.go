@@ -7,10 +7,20 @@ import (
 )
 
 func GetInventoryItems(tx *pop.Connection) (*models.InventoryItems, error) {
+	return getInventoryItemsHelper(tx.Eager().Q())
+}
+
+func GetInventoryItemsOfCategory(id string, catID string, tx *pop.Connection) (*models.InventoryItems, error) {
+	query := tx.Eager().Where("category_id = ?", catID).
+		Where("id != ?", id)
+	return getInventoryItemsHelper(query)
+}
+
+func getInventoryItemsHelper(query *pop.Query) (*models.InventoryItems, error) {
+	query = query.Where("is_active = true")
 	factory := models.ModelFactory{}
 	items := &models.InventoryItems{}
-	q := tx.Eager().Where("is_active = true")
-	err := factory.CreateModelSlice(items, q)
+	err := factory.CreateModelSlice(items, query)
 
 	if err != nil {
 		return nil, err
@@ -59,6 +69,10 @@ func UpdateInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*valid
 	return tx.ValidateAndUpdate(item)
 }
 
+func UpdateBaseInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndUpdate(item)
+}
+
 func InsertInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
 	verrs, err := updateIndices(item, tx)
 	if verrs.HasAny() || err != nil {
@@ -69,18 +83,15 @@ func InsertInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*valid
 }
 
 func updateIndices(invItem *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
-	items, err := GetInventoryItems(tx)
+	items, err := GetInventoryItemsOfCategory(invItem.ID.String(),
+		invItem.CategoryID.String(), tx)
 	if err != nil {
 		return validate.NewErrors(), err
 	}
 
 	offset := 0
 	for i, item := range *items {
-		if item.ID.String() == invItem.ID.String() {
-			offset = -1
-			continue
-		}
-		if item.Index == invItem.Index {
+		if i == invItem.Index {
 			offset = 1
 		}
 

@@ -1,7 +1,10 @@
 <div class="row">
   <div class="col-md-6">
+    <input type="hidden" name="ID" value="<%= inventoryItem.ID %>" />
+    <input type="text" name="Index" style="display: none;" 
+      value='<%= inventoryItem.Index %>' />
     <%= f.InputTag("Name") %>
-    <%= f.SelectTag("Category", {options: categories, name: "CategoryID", value: inventoryItem.Category }) %>
+    <%= partial("partials/category_input", {item: inventoryItem}) %>
     <%= f.InputTag("CountUnit") %>
     <%= f.InputTag("RecipeUnit") %>
     <%= f.InputTag("RecipeUnitConversion") %>
@@ -12,13 +15,12 @@
     <div name="modal"></div>
     <input type="text" name="VendorItemMap" style="display: none;" 
       value='<%= jsonMap(inventoryItem.VendorItemMap) %>' />
-    <input type="text" name="Index" style="display: none;" 
-      value='<%= inventoryItem.Index %>' />
   </div>
   <div class="col-md-6">
-    <div id="inventory-items-display" data='<%= inventoryItems.String() %>'></div>
+    <div id="item-ordering-table" data='<%= inventoryItems.String() %>'></div>
   </div>
 </div>
 <button class="btn btn-success" role="submit">Save</button>
 
+<%= javascriptTag("components/categorized_item_form.js") %>
 <%= javascriptTag("inventory_items/inventory_items_form.js") %>

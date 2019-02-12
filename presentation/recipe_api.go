@@ -68,7 +68,7 @@ func ConvertToModelRecipe(recAPI *RecipeAPI) (*models.Recipe, error) {
 	if err != nil {
 		return nil, err
 	}
-	category, err := ConvertToModelRecipeCategory(recAPI.Category)
+	category, err := ConvertToModelCategory(recAPI.Category)
 	if err != nil {
 		return nil, err
 	}

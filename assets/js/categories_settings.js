@@ -142,8 +142,8 @@ function saveCategories() {
         data['name'] = $(el).find('span:first-child').first().html().trim();
         data['index'] = i;
 
-        sendUpdate($form, data, sendAjax);
+        sendUpdate($form, data, (form) => sendAjax(form, true));
     });
 
-    location.replace('/settings');
+    location.reload();
 }

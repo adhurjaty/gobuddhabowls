@@ -1,7 +1,8 @@
 export class OrderingTable {
-    constructor(items) {
+    constructor(items, onChange) {
         this.items = items;
         this.ul = null;
+        this.onChange = onChange || ((e) => {});
         this.initTable();
     }
 
@@ -38,7 +39,8 @@ export class OrderingTable {
                 }
             },
             animation: 150,
-            handle: '.drag-handle'
+            handle: '.drag-handle',
+            onEnd: this.onChange
         });
     }
 

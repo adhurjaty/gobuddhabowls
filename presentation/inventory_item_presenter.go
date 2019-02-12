@@ -201,7 +201,7 @@ func (p *Presenter) updateInventoryItemIndices(item *ItemAPI) (*validate.Errors,
 	for i, otherItem := range *nextItems {
 		if otherItem.Index <= i+item.Index {
 			otherItem.Index = i + item.Index + 1
-			verrs, err := logic.UpdateInventoryItem(&otherItem, p.tx)
+			verrs, err := logic.UpdateBaseInventoryItem(&otherItem, p.tx)
 			if verrs.HasAny() || err != nil {
 				return verrs, err
 			}
