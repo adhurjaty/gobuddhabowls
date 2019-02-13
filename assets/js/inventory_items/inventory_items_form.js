@@ -203,7 +203,7 @@ function validateNewItem() {
         showError('Must enter non-blank name');
         return false;
     }
-    if(isEmptyOrSpaces($('input[name="CategoryID"]').val())) {
+    if(isEmptyOrSpaces($('#category-input').val())) {
         showError('Must enter non-blank category');
         return false;
     }

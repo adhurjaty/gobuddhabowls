@@ -1,6 +1,5 @@
-import { parseModelJSON, formatMoney, groupByCategory } from "../helpers/_helpers";
+import { parseModelJSON, formatMoney, isEmptyOrSpaces } from "../helpers/_helpers";
 import { CategorizedItemsDisplay } from "../components/_categorized_items_display";
-import { SingleOrderingTable } from "../components/_single_ordering_table";
 import { showError } from "../helpers/index_helpers";
 
 var _datagridOptions = {
@@ -125,6 +124,10 @@ function setOnFormSubmit() {
 function validateItem() {
     if(_items.length == 0) {
         showError('Must add recipe items');
+        return false;
+    }
+    if(isEmptyOrSpaces($('#category-input').val())) {
+        showError('Must enter non-blank category');
         return false;
     }
 
