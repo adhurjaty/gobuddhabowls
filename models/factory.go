@@ -21,17 +21,33 @@ type ModelFactory struct{}
 func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string) error {
 	switch m.(type) {
 	case *PurchaseOrder:
+		err := populateInvItemCache(tx)
+		if err != nil {
+			return err
+		}
 		return LoadPurchaseOrder(m.(*PurchaseOrder), tx, id)
 	case *Vendor:
+		err := populateInvItemCache(tx)
+		if err != nil {
+			return err
+		}
 		return LoadVendor(m.(*Vendor), tx, id)
 	case *Recipe:
+		err := populateInvItemCache(tx)
+		if err != nil {
+			return err
+		}
 		return LoadRecipe(m.(*Recipe), tx, id)
+	case *Inventory:
+		err := populateInvItemCache(tx)
+		if err != nil {
+			return err
+		}
+		return LoadInventory(m.(*Inventory), tx, id)
 	case *RecipeItem:
 		return LoadRecipeItem(m.(*RecipeItem), tx, id)
 	case *InventoryItem:
 		return LoadInventoryItem(m.(*InventoryItem), tx, id)
-	case *Inventory:
-		return LoadInventory(m.(*Inventory), tx, id)
 	case *VendorItem:
 		return LoadVendorItem(m.(*VendorItem), tx, id)
 	}
@@ -106,7 +122,7 @@ func LoadOrderItem(item *OrderItem, tx *pop.Connection, id string) error {
 	if err := tx.Eager().Find(item, id); err != nil {
 		return err
 	}
-	err := tx.Eager().Find(&item.InventoryItem, item.InventoryItemID)
+	err := getInventoryItem(&item.InventoryItem, item.InventoryItemID)
 
 	return err
 }
@@ -136,7 +152,7 @@ func LoadVendor(vendor *Vendor, tx *pop.Connection, id string) error {
 		if err := tx.Eager().Find(&vendor.Items[i], vendor.Items[i].ID); err != nil {
 			return err
 		}
-		if err := tx.Eager().Find(&vendor.Items[i].InventoryItem, vendor.Items[i].InventoryItemID); err != nil {
+		if err := getInventoryItem(&vendor.Items[i].InventoryItem, vendor.Items[i].InventoryItemID); err != nil {
 			return err
 		}
 	}
@@ -159,7 +175,7 @@ func LoadVendors(vendList *Vendors, q *pop.Query) error {
 			if err := q.Connection.Eager().Find(&v.Items[i], v.Items[i].ID); err != nil {
 				return err
 			}
-			if err := q.Connection.Eager().Find(&v.Items[i].InventoryItem, v.Items[i].InventoryItemID); err != nil {
+			if err := getInventoryItem(&v.Items[i].InventoryItem, v.Items[i].InventoryItemID); err != nil {
 				return err
 			}
 		}
@@ -179,7 +195,7 @@ func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
 		if err := tx.Eager().Find(&inventory.Items[i], inventory.Items[i].ID); err != nil {
 			return err
 		}
-		if err := tx.Eager().Find(&inventory.Items[i].InventoryItem, inventory.Items[i].InventoryItemID); err != nil {
+		if err := getInventoryItem(&inventory.Items[i].InventoryItem, inventory.Items[i].InventoryItemID); err != nil {
 			return err
 		}
 	}
@@ -201,7 +217,7 @@ func LoadInventories(invList *Inventories, q *pop.Query) error {
 			if err := q.Connection.Eager().Find(&inv.Items[i], inv.Items[i].ID); err != nil {
 				return err
 			}
-			if err := q.Connection.Eager().Find(&inv.Items[i].InventoryItem, inv.Items[i].InventoryItemID); err != nil {
+			if err := getInventoryItem(&inv.Items[i].InventoryItem, inv.Items[i].InventoryItemID); err != nil {
 				return err
 			}
 		}
