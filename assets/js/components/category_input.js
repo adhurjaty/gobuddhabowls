@@ -56,6 +56,6 @@ function setupColorPicker() {
         var input = $('input[name="Category"]');
         var category = JSON.parse(input.val());
         category.Background = color.toHexString();
-        input.val(category);
+        input.val(JSON.stringify(category));
     });
 }

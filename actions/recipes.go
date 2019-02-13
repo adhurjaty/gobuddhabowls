@@ -3,8 +3,10 @@ package actions
 import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
+	"encoding/json"
 	"fmt"
 	"github.com/gobuffalo/uuid"
+	"github.com/gobuffalo/validate"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -123,6 +125,13 @@ func setRecipeFormViewVars(presenter *presentation.Presenter, c buffalo.Context)
 func (v RecipesResource) Create(c buffalo.Context) error {
 	// Allocate an empty Recipe
 	recipe := &presentation.RecipeAPI{}
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
 
 	// Bind recipe to the html form elements
 	err := c.Bind(recipe)
@@ -136,19 +145,16 @@ func (v RecipesResource) Create(c buffalo.Context) error {
 			return err
 		}
 	}
-	recipe.Category.ID = c.Param("CategoryID")
 
-	// Get the DB connection from the context
-	tx, ok := c.Value("tx").(*pop.Connection)
-	if !ok {
-		return errors.WithStack(errors.New("no transaction found"))
-	}
-
-	presenter := presentation.NewPresenter(tx)
-
-	verrs, err := presenter.InsertRecipe(recipe)
+	verrs, err := setRecipeCategoryID(recipe, c, presenter)
 	if err != nil {
 		return errors.WithStack(err)
+	}
+	if !verrs.HasAny() {
+		verrs, err = presenter.InsertRecipe(recipe)
+		if err != nil {
+			return errors.WithStack(err)
+		}
 	}
 
 	if verrs.HasAny() {
@@ -170,6 +176,30 @@ func (v RecipesResource) Create(c buffalo.Context) error {
 
 	// and redirect to the recipes index page
 	return c.Redirect(303, "/recipes")
+}
+
+func setRecipeCategoryID(recipe *presentation.RecipeAPI,
+	c buffalo.Context, presenter *presentation.Presenter) (*validate.Errors, error) {
+
+	if len(c.Param("CategoryID")) > 0 {
+		recipe.Category.ID = c.Param("CategoryID")
+		return validate.NewErrors(), nil
+	}
+	if len(c.Param("Category")) > 0 {
+		category := &presentation.CategoryAPI{}
+		err := json.Unmarshal([]byte(c.Param("Category")), category)
+		if err != nil {
+			return nil, err
+		}
+		verrs, err := presenter.InsertCategory(category)
+		if err != nil || verrs.HasAny() {
+			return verrs, err
+		}
+		recipe.Category.ID = category.ID
+		return validate.NewErrors(), nil
+	}
+
+	return validate.NewErrors(), errors.New("Must send Category or CategoryID parameter")
 }
 
 // Edit renders a edit form for a Recipe. This function is

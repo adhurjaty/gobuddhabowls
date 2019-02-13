@@ -4,6 +4,7 @@ import (
 	"buddhabowls/models"
 	"fmt"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/validate"
 	"sort"
 )
 
@@ -39,4 +40,8 @@ func getCategoriesFromQuery(query *pop.Query) (*models.ItemCategories, error) {
 	})
 
 	return categories, nil
+}
+
+func InsertCategory(category *models.ItemCategory, tx *pop.Connection) (*validate.Errors, error) {
+	return tx.ValidateAndCreate(category)
 }

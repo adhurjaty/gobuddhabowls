@@ -103,6 +103,7 @@ func (p *Presenter) GetAllItemsForRecipe() (*ItemsAPI, error) {
 
 	*items = append(*items, batchItems...)
 	err = p.populateReciepItemCosts(items)
+	clearItemIds(items)
 
 	return items, err
 }

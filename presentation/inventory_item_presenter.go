@@ -126,8 +126,8 @@ func (p *Presenter) populateSelectedVendors(items *ItemsAPI) {
 }
 
 func clearItemIds(items *ItemsAPI) {
-	for _, item := range *items {
-		item.ID = ""
+	for i := range *items {
+		(*items)[i].ID = ""
 	}
 }
 
