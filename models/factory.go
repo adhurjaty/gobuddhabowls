@@ -3,7 +3,10 @@ package models
 import (
 	"errors"
 	"github.com/gobuffalo/pop"
+	"github.com/gobuffalo/uuid"
 )
+
+var _invItemCache *InventoryItems
 
 // Factory describes an abstract factory for creating model objects
 type Factory interface {
@@ -18,29 +21,17 @@ type ModelFactory struct{}
 func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string) error {
 	switch m.(type) {
 	case *PurchaseOrder:
-		if err := LoadPurchaseOrder(m.(*PurchaseOrder), tx, id); err != nil {
-			return err
-		}
-		return nil
+		return LoadPurchaseOrder(m.(*PurchaseOrder), tx, id)
 	case *Vendor:
-		if err := LoadVendor(m.(*Vendor), tx, id); err != nil {
-			return err
-		}
-		return nil
+		return LoadVendor(m.(*Vendor), tx, id)
 	case *Recipe:
 		return LoadRecipe(m.(*Recipe), tx, id)
 	case *RecipeItem:
 		return LoadRecipeItem(m.(*RecipeItem), tx, id)
 	case *InventoryItem:
-		if err := LoadInventoryItem(m.(*InventoryItem), tx, id); err != nil {
-			return err
-		}
-		return nil
+		return LoadInventoryItem(m.(*InventoryItem), tx, id)
 	case *Inventory:
-		if err := LoadInventory(m.(*Inventory), tx, id); err != nil {
-			return err
-		}
-		return nil
+		return LoadInventory(m.(*Inventory), tx, id)
 	case *VendorItem:
 		return LoadVendorItem(m.(*VendorItem), tx, id)
 	}
@@ -50,6 +41,14 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 
 // CreateModelSlice loads a full model slice based on the type s given
 func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
+	_, ok := s.(*InventoryItems)
+	if !ok {
+		err := populateInvItemCache(q.Connection)
+		if err != nil {
+			return err
+		}
+	}
+
 	switch s.(type) {
 	case *PurchaseOrders:
 		return LoadPurchaseOrders(s.(*PurchaseOrders), q)
@@ -64,6 +63,14 @@ func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
 	}
 
 	return errors.New("unimplemented type")
+}
+
+func populateInvItemCache(tx *pop.Connection) error {
+	if _invItemCache != nil {
+		return nil
+	}
+	_invItemCache = &InventoryItems{}
+	return LoadInventoryItems(_invItemCache, tx.Eager().Q())
 }
 
 // LoadPurchaseOrder gets purchase order and sub-components matching the given ID
@@ -263,10 +270,22 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 		return err
 	}
 	if item.InventoryItemID.Valid {
-		err = tx.Eager().Find(&item.InventoryItem, item.InventoryItemID.UUID)
+		// err = tx.Eager().Find(&item.InventoryItem, item.InventoryItemID.UUID)
+		err = getInventoryItem(&item.InventoryItem, item.InventoryItemID.UUID)
 	} else if item.BatchRecipeID.Valid {
 		err = tx.Eager().Find(&item.BatchRecipe, item.BatchRecipeID.UUID)
 	}
 
 	return err
+}
+
+func getInventoryItem(invItemProp *InventoryItem, id uuid.UUID) error {
+	for _, item := range *_invItemCache {
+		if item.ID.String() == id.String() {
+			invItemProp = &item
+			return nil
+		}
+	}
+
+	return errors.New("no inventory item ID matches")
 }
