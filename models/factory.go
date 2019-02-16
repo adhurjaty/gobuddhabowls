@@ -5,9 +5,6 @@ import (
 	"github.com/gobuffalo/pop"
 )
 
-var _invItemCache *InventoryItems
-var _orderItemsCache *OrderItems
-
 // Factory describes an abstract factory for creating model objects
 type Factory interface {
 	CreateModel(m interface{}, tx *pop.Connection, id string) error
@@ -25,10 +22,6 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 	case *PurchaseOrder:
 		return LoadPurchaseOrder(m.(*PurchaseOrder), tx, id)
 	case *Vendor:
-		err := populateInvItemCache(tx)
-		if err != nil {
-			return err
-		}
 		return LoadVendor(m.(*Vendor), tx, id)
 	case *Recipe:
 		err := populateInvItemCache(tx)
@@ -136,16 +129,43 @@ func LoadVendor(vendor *Vendor, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	for i := 0; i < len(vendor.Items); i++ {
-		if err := tx.Eager().Find(&vendor.Items[i], vendor.Items[i].ID); err != nil {
-			return err
-		}
-		if err := getInventoryItem(&vendor.Items[i].InventoryItem, vendor.Items[i].InventoryItemID); err != nil {
-			return err
-		}
+	return PopulateVendorItems(&Vendors{*vendor}, tx)
+
+	// for i := 0; i < len(vendor.Items); i++ {
+	// 	if err := tx.Eager().Find(&vendor.Items[i], vendor.Items[i].ID); err != nil {
+	// 		return err
+	// 	}
+	// 	if err := getInventoryItem(&vendor.Items[i].InventoryItem, vendor.Items[i].InventoryItemID); err != nil {
+	// 		return err
+	// 	}
+	// }
+
+	// vendor.Items.Sort()
+
+	// return nil
+}
+
+func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
+	ids := make([]string, len(*vendors))
+	for i := range *vendors {
+		ids[i] = (*vendors)[i].ID.String()
 	}
 
-	vendor.Items.Sort()
+	if err := populateVendorItemsCache(tx, ids); err != nil {
+		return err
+	}
+	if _orderItemsCache == nil {
+		return nil
+	}
+
+	for _, vendor := range *vendors {
+		for i := 0; i < len(vendor.Items); i++ {
+			if err := getVendorItem(&vendor.Items[i]); err != nil {
+				return err
+			}
+		}
+		vendor.Items.Sort()
+	}
 
 	return nil
 }
@@ -156,22 +176,7 @@ func LoadVendors(vendList *Vendors, q *pop.Query) error {
 		return err
 	}
 
-	// I don't love the fact that I need to load the nested models manually
-	// TODO: look for a solution to eager loading nested objects
-	for _, v := range *vendList {
-		for i := 0; i < len(v.Items); i++ {
-			if err := q.Connection.Eager().Find(&v.Items[i], v.Items[i].ID); err != nil {
-				return err
-			}
-			if err := getInventoryItem(&v.Items[i].InventoryItem, v.Items[i].InventoryItemID); err != nil {
-				return err
-			}
-		}
-
-		v.Items.Sort()
-	}
-
-	return nil
+	return PopulateVendorItems(vendList, q.Connection)
 }
 
 func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
