@@ -2,11 +2,13 @@ package models
 
 import (
 	"errors"
+	"fmt"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 )
 
 var _invItemCache *InventoryItems
+var _orderItemsCache *OrderItems
 
 // Factory describes an abstract factory for creating model objects
 type Factory interface {
@@ -19,12 +21,10 @@ type ModelFactory struct{}
 
 // CreateModel loads a full model based on the type m given
 func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string) error {
+	// maybe split this according to compound vs. item type
+
 	switch m.(type) {
 	case *PurchaseOrder:
-		err := populateInvItemCache(tx)
-		if err != nil {
-			return err
-		}
 		return LoadPurchaseOrder(m.(*PurchaseOrder), tx, id)
 	case *Vendor:
 		err := populateInvItemCache(tx)
@@ -85,8 +85,39 @@ func populateInvItemCache(tx *pop.Connection) error {
 	if _invItemCache != nil {
 		return nil
 	}
+
 	_invItemCache = &InventoryItems{}
 	return LoadInventoryItems(_invItemCache, tx.Eager().Q())
+}
+
+func createOrderItemsCache(tx *pop.Connection, ids []string) error {
+	if _orderItemsCache != nil || len(ids) == 0 {
+		return nil
+	}
+
+	if err := populateInvItemCache(tx); err != nil {
+		return err
+	}
+
+	_orderItemsCache = &OrderItems{}
+	idsInt := toIntefaceList(ids)
+	err := tx.Eager().Where("order_id IN (?)", idsInt...).
+		All(_orderItemsCache)
+	if err != nil {
+		return err
+	}
+
+	for i := range *_orderItemsCache {
+		item := &(*_orderItemsCache)[i]
+		err = getInventoryItem(&item.InventoryItem, item.InventoryItemID)
+		if err != nil {
+			return err
+		}
+		fmt.Println("!!!!!!!!!!!!!!!!")
+		fmt.Println(item)
+	}
+
+	return nil
 }
 
 // LoadPurchaseOrder gets purchase order and sub-components matching the given ID
@@ -95,8 +126,7 @@ func LoadPurchaseOrder(po *PurchaseOrder, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	err := PopulateOrderItems(&po.Items, tx)
-	return err
+	return PopulateOrderItems(&PurchaseOrders{*po}, tx)
 }
 
 // LoadPurchaseOrders gets the purchase orders with the specified query
@@ -106,38 +136,55 @@ func LoadPurchaseOrders(poList *PurchaseOrders, q *pop.Query) error {
 		return err
 	}
 
-	// I don't love the fact that I need to load the nested models manually
-	// TODO: look for a solution to eager loading nested objects
-	for _, po := range *poList {
-		if err := PopulateOrderItems(&po.Items, q.Connection); err != nil {
-			return err
-		}
+	if err := PopulateOrderItems(poList, q.Connection); err != nil {
+		return err
 	}
 
 	return nil
 }
 
 // LoadOrderItem fully loads the order item
-func LoadOrderItem(item *OrderItem, tx *pop.Connection, id string) error {
-	if err := tx.Eager().Find(item, id); err != nil {
-		return err
-	}
-	err := getInventoryItem(&item.InventoryItem, item.InventoryItemID)
+func LoadOrderItem(item *OrderItem, tx *pop.Connection, id string) (*OrderItem, error) {
+	return getOrderItem(item)
+}
 
-	return err
+func getOrderItem(orderItem *OrderItem) (*OrderItem, error) {
+	for _, item := range *_orderItemsCache {
+		if item.ID.String() == orderItem.ID.String() {
+			return &item, nil
+		}
+	}
+
+	return nil, errors.New("No matching order item")
 }
 
 // PopulateOrderItems populates the existing order items slice
-func PopulateOrderItems(items *OrderItems, tx *pop.Connection) error {
-	for i := 0; i < len(*items); i++ {
-		count := (*items)[i].Count
-		if err := LoadOrderItem(&(*items)[i], tx, (*items)[i].ID.String()); err != nil {
-			return err
-		}
-		(*items)[i].Count = count
+func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
+	ids := make([]string, len(*pos))
+	for i := range *pos {
+		ids[i] = (*pos)[i].ID.String()
 	}
 
-	items.Sort()
+	err := createOrderItemsCache(tx, ids)
+	if err != nil {
+		return err
+	}
+	if _orderItemsCache == nil {
+		return nil
+	}
+
+	for _, po := range *pos {
+		for i := 0; i < len(po.Items); i++ {
+			count := po.Items[i].Count
+			orderItem, err := getOrderItem(&po.Items[i])
+			if err != nil {
+				return err
+			}
+			po.Items[i] = *orderItem
+			po.Items[i].Count = count
+		}
+		po.Items.Sort()
+	}
 
 	return nil
 }
@@ -298,10 +345,19 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 func getInventoryItem(invItemProp *InventoryItem, id uuid.UUID) error {
 	for _, item := range *_invItemCache {
 		if item.ID.String() == id.String() {
-			invItemProp = &item
+			*invItemProp = item
 			return nil
 		}
 	}
 
 	return errors.New("no inventory item ID matches")
+}
+
+func toIntefaceList(lst []string) []interface{} {
+	out := make([]interface{}, len(lst))
+	for i := range lst {
+		out[i] = lst[i]
+	}
+
+	return out
 }
