@@ -54,14 +54,15 @@ func getInventoryItem(invItemProp *InventoryItem, id uuid.UUID) error {
 	return errors.New("no inventory item ID matches")
 }
 
-func getOrderItem(orderItem *OrderItem) (*OrderItem, error) {
+func getOrderItem(orderItem *OrderItem) error {
 	for _, item := range *_orderItemsCache {
 		if item.ID.String() == orderItem.ID.String() {
-			return &item, nil
+			*orderItem = item
+			return nil
 		}
 	}
 
-	return nil, errors.New("No matching order item")
+	return errors.New("No matching order item")
 }
 
 func toIntefaceList(lst []string) []interface{} {

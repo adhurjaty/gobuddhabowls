@@ -102,11 +102,6 @@ func LoadPurchaseOrders(poList *PurchaseOrders, q *pop.Query) error {
 	return nil
 }
 
-// LoadOrderItem fully loads the order item
-func LoadOrderItem(item *OrderItem, tx *pop.Connection, id string) (*OrderItem, error) {
-	return getOrderItem(item)
-}
-
 // PopulateOrderItems populates the existing order items slice
 func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
 	ids := make([]string, len(*pos))
@@ -114,8 +109,7 @@ func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
 		ids[i] = (*pos)[i].ID.String()
 	}
 
-	err := populateOrderItemsCache(tx, ids)
-	if err != nil {
+	if err := populateOrderItemsCache(tx, ids); err != nil {
 		return err
 	}
 	if _orderItemsCache == nil {
@@ -125,11 +119,9 @@ func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
 	for _, po := range *pos {
 		for i := 0; i < len(po.Items); i++ {
 			count := po.Items[i].Count
-			orderItem, err := getOrderItem(&po.Items[i])
-			if err != nil {
+			if err := getOrderItem(&po.Items[i]); err != nil {
 				return err
 			}
-			po.Items[i] = *orderItem
 			po.Items[i].Count = count
 		}
 		po.Items.Sort()
