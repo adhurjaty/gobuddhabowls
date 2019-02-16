@@ -2,9 +2,7 @@ package models
 
 import (
 	"errors"
-	"fmt"
 	"github.com/gobuffalo/pop"
-	"github.com/gobuffalo/uuid"
 )
 
 var _invItemCache *InventoryItems
@@ -81,45 +79,6 @@ func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
 	return errors.New("unimplemented type")
 }
 
-func populateInvItemCache(tx *pop.Connection) error {
-	if _invItemCache != nil {
-		return nil
-	}
-
-	_invItemCache = &InventoryItems{}
-	return LoadInventoryItems(_invItemCache, tx.Eager().Q())
-}
-
-func createOrderItemsCache(tx *pop.Connection, ids []string) error {
-	if _orderItemsCache != nil || len(ids) == 0 {
-		return nil
-	}
-
-	if err := populateInvItemCache(tx); err != nil {
-		return err
-	}
-
-	_orderItemsCache = &OrderItems{}
-	idsInt := toIntefaceList(ids)
-	err := tx.Eager().Where("order_id IN (?)", idsInt...).
-		All(_orderItemsCache)
-	if err != nil {
-		return err
-	}
-
-	for i := range *_orderItemsCache {
-		item := &(*_orderItemsCache)[i]
-		err = getInventoryItem(&item.InventoryItem, item.InventoryItemID)
-		if err != nil {
-			return err
-		}
-		fmt.Println("!!!!!!!!!!!!!!!!")
-		fmt.Println(item)
-	}
-
-	return nil
-}
-
 // LoadPurchaseOrder gets purchase order and sub-components matching the given ID
 func LoadPurchaseOrder(po *PurchaseOrder, tx *pop.Connection, id string) error {
 	if err := tx.Eager().Find(po, id); err != nil {
@@ -148,16 +107,6 @@ func LoadOrderItem(item *OrderItem, tx *pop.Connection, id string) (*OrderItem, 
 	return getOrderItem(item)
 }
 
-func getOrderItem(orderItem *OrderItem) (*OrderItem, error) {
-	for _, item := range *_orderItemsCache {
-		if item.ID.String() == orderItem.ID.String() {
-			return &item, nil
-		}
-	}
-
-	return nil, errors.New("No matching order item")
-}
-
 // PopulateOrderItems populates the existing order items slice
 func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
 	ids := make([]string, len(*pos))
@@ -165,7 +114,7 @@ func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
 		ids[i] = (*pos)[i].ID.String()
 	}
 
-	err := createOrderItemsCache(tx, ids)
+	err := populateOrderItemsCache(tx, ids)
 	if err != nil {
 		return err
 	}
@@ -340,24 +289,4 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 	}
 
 	return err
-}
-
-func getInventoryItem(invItemProp *InventoryItem, id uuid.UUID) error {
-	for _, item := range *_invItemCache {
-		if item.ID.String() == id.String() {
-			*invItemProp = item
-			return nil
-		}
-	}
-
-	return errors.New("no inventory item ID matches")
-}
-
-func toIntefaceList(lst []string) []interface{} {
-	out := make([]interface{}, len(lst))
-	for i := range lst {
-		out[i] = lst[i]
-	}
-
-	return out
 }
