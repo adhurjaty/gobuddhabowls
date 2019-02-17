@@ -133,6 +133,15 @@ func LoadVendor(vendor *Vendor, tx *pop.Connection, id string) error {
 	return PopulateVendorItems(&Vendors{*vendor}, tx)
 }
 
+// LoadVendors loads vendors and sub-models
+func LoadVendors(vendList *Vendors, q *pop.Query) error {
+	if err := q.All(vendList); err != nil {
+		return err
+	}
+
+	return PopulateVendorItems(vendList, q.Connection)
+}
+
 func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
 	ids := make([]string, len(*vendors))
 	for i := range *vendors {
@@ -158,32 +167,12 @@ func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
 	return nil
 }
 
-// LoadVendors loads vendors and sub-models
-func LoadVendors(vendList *Vendors, q *pop.Query) error {
-	if err := q.All(vendList); err != nil {
-		return err
-	}
-
-	return PopulateVendorItems(vendList, q.Connection)
-}
-
 func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
 	if err := tx.Eager().Find(inventory, id); err != nil {
 		return err
 	}
 
-	for i := 0; i < len(inventory.Items); i++ {
-		if err := tx.Eager().Find(&inventory.Items[i], inventory.Items[i].ID); err != nil {
-			return err
-		}
-		if err := getInventoryItem(&inventory.Items[i].InventoryItem, inventory.Items[i].InventoryItemID); err != nil {
-			return err
-		}
-	}
-
-	inventory.Items.Sort()
-
-	return nil
+	return PopulateCountInvItems(&Inventories{*inventory}, tx)
 }
 
 func LoadInventories(invList *Inventories, q *pop.Query) error {
@@ -191,19 +180,29 @@ func LoadInventories(invList *Inventories, q *pop.Query) error {
 		return err
 	}
 
-	// I don't love the fact that I need to load the nested models manually
-	// TODO: look for a solution to eager loading nested objects
-	for _, inv := range *invList {
-		for i := 0; i < len(inv.Items); i++ {
-			if err := q.Connection.Eager().Find(&inv.Items[i], inv.Items[i].ID); err != nil {
-				return err
-			}
-			if err := getInventoryItem(&inv.Items[i].InventoryItem, inv.Items[i].InventoryItemID); err != nil {
+	return PopulateCountInvItems(invList, q.Connection)
+}
+
+func PopulateCountInvItems(inventories *Inventories, tx *pop.Connection) error {
+	ids := make([]string, len(*inventories))
+	for i := range *inventories {
+		ids[i] = (*inventories)[i].ID.String()
+	}
+
+	if err := populateCountInvItemsCache(tx, ids); err != nil {
+		return err
+	}
+	if _countInvItemsCache == nil {
+		return nil
+	}
+
+	for _, inventory := range *inventories {
+		for i := 0; i < len(inventory.Items); i++ {
+			if err := getCountInvItem(&inventory.Items[i]); err != nil {
 				return err
 			}
 		}
-
-		inv.Items.Sort()
+		inventory.Items.Sort()
 	}
 
 	return nil
