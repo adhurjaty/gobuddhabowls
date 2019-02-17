@@ -14,4 +14,6 @@ type GenericItem interface {
 	GetIndex() int
 }
 
-type GenericItems []GenericItem
+type GenericItems interface {
+	ToGenericItems() *[]GenericItem
+}

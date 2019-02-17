@@ -96,14 +96,14 @@ func (v *VendorItem) ToOrderItem() *OrderItem {
 }
 
 // ToGenericItems converts the VendorItems to a CountItem slice
-// func (v *VendorItems) ToGenericItems() GenericItems {
-// 	items := make([]GenericItem, len(*v))
-// 	for i := 0; i < len(*v); i++ {
-// 		items[i] = &(*v)[i]
-// 	}
+func (v *VendorItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*v))
+	for i := 0; i < len(*v); i++ {
+		items[i] = &(*v)[i]
+	}
 
-// 	return items
-// }
+	return &items
+}
 
 // Sort sorts the items based on category then inventory item indices
 func (v *VendorItems) Sort() {

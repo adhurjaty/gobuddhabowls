@@ -80,15 +80,15 @@ func (o OrderItem) GetIndex() int {
 	return o.InventoryItem.Index
 }
 
-// ToCountItems converts the VendorItems to a CountItem slice
-// func (o *OrderItems) ToGenericItems() GenericItems {
-// 	items := make([]GenericItem, len(*o))
-// 	for i := 0; i < len(*o); i++ {
-// 		items[i] = &(*o)[i]
-// 	}
+// ToGenericItems converts the VendorItems to a GenericItems slice
+func (o *OrderItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*o))
+	for i := 0; i < len(*o); i++ {
+		items[i] = &(*o)[i]
+	}
 
-// 	return items
-// }
+	return &items
+}
 
 // Extension returns the total cost (price * count) of item
 func (o *OrderItem) Extension() float64 {

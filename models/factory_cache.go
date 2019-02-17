@@ -80,6 +80,26 @@ func populateVendorItemsCache(tx *pop.Connection, ids []string) error {
 	return nil
 }
 
+func initCache(initVal interface{}, tx *pop.Connection) error {
+	var cache interface{}
+	var idCol string
+
+	switch initVal.(type) {
+	case *OrderItems:
+		_orderItemsCache = 
+		idCol = "order_id"
+	case *VendorItems:
+		cache = _vendorItemsCache
+		idCol = "vendor_id"
+	default:
+		return errors.New("unimplemented type")
+	}
+
+	cache = initVal
+
+	return nil
+}
+
 func getInventoryItem(invItemProp *InventoryItem, id uuid.UUID) error {
 	for _, item := range *_invItemCache {
 		if item.ID.String() == id.String() {
