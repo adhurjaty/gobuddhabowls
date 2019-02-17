@@ -2,6 +2,7 @@ package models
 
 import (
 	"errors"
+	"fmt"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 )
@@ -80,24 +81,56 @@ func populateVendorItemsCache(tx *pop.Connection, ids []string) error {
 	return nil
 }
 
-func initCache(initVal interface{}, tx *pop.Connection) error {
-	var cache interface{}
+func initCache(initVal *GenericItems, tx *pop.Connection, ids []string) error {
+	var cache *GenericItems
 	var idCol string
 
-	switch initVal.(type) {
-	case *OrderItems:
-		_orderItemsCache = 
+	switch (*initVal).(type) {
+	case OrderItems:
+		*cache = *_orderItemsCache
 		idCol = "order_id"
-	case *VendorItems:
-		cache = _vendorItemsCache
+	case VendorItems:
+		*cache = *_vendorItemsCache
 		idCol = "vendor_id"
 	default:
 		return errors.New("unimplemented type")
 	}
 
-	cache = initVal
+	*cache = *initVal
+
+	if err := populateInvItemCache(tx); err != nil {
+		return err
+	}
+
+	idsInt := toIntefaceList(ids)
+	if err := tx.Eager().Where(fmt.Sprintf("%s IN (?)", idCol), idsInt...).
+		All(cache); err != nil {
+		return err
+	}
+
+	cacheItems := (*cache).ToGenericItems()
+	for i := range *cacheItems {
+		item := &(*cacheItems)[i]
+		invItem := (*item).GetBaseItem()
+		if err := getBaseItem(&invItem,
+			(*item).GetInventoryItemID()); err != nil {
+			return err
+		}
+	}
 
 	return nil
+}
+
+func getBaseItem(item *GenericItem, id uuid.UUID) error {
+	switch (*item).(type) {
+	case InventoryItem:
+		invItem := (*item).(InventoryItem)
+		return getInventoryItem(&invItem, id)
+	case Recipe:
+		return errors.New("recipes not implemented")
+	}
+
+	return errors.New("unimplemented type")
 }
 
 func getInventoryItem(invItemProp *InventoryItem, id uuid.UUID) error {
