@@ -10,6 +10,12 @@ var _invItemCache *InventoryItems
 var _orderItemsCache *OrderItems
 var _vendorItemsCache *VendorItems
 
+func resetCache() {
+	_invItemCache = nil
+	_orderItemsCache = nil
+	_vendorItemsCache = nil
+}
+
 func populateInvItemCache(tx *pop.Connection) error {
 	if _invItemCache != nil {
 		return nil

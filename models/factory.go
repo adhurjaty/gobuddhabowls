@@ -17,7 +17,7 @@ type ModelFactory struct{}
 // CreateModel loads a full model based on the type m given
 func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string) error {
 	// maybe split this according to compound vs. item type
-
+	resetCache()
 	switch m.(type) {
 	case *PurchaseOrder:
 		return LoadPurchaseOrder(m.(*PurchaseOrder), tx, id)
@@ -48,6 +48,7 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 
 // CreateModelSlice loads a full model slice based on the type s given
 func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
+	resetCache()
 	_, ok := s.(*InventoryItems)
 	if !ok {
 		err := populateInvItemCache(q.Connection)
@@ -130,19 +131,6 @@ func LoadVendor(vendor *Vendor, tx *pop.Connection, id string) error {
 	}
 
 	return PopulateVendorItems(&Vendors{*vendor}, tx)
-
-	// for i := 0; i < len(vendor.Items); i++ {
-	// 	if err := tx.Eager().Find(&vendor.Items[i], vendor.Items[i].ID); err != nil {
-	// 		return err
-	// 	}
-	// 	if err := getInventoryItem(&vendor.Items[i].InventoryItem, vendor.Items[i].InventoryItemID); err != nil {
-	// 		return err
-	// 	}
-	// }
-
-	// vendor.Items.Sort()
-
-	// return nil
 }
 
 func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
@@ -154,7 +142,7 @@ func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
 	if err := populateVendorItemsCache(tx, ids); err != nil {
 		return err
 	}
-	if _orderItemsCache == nil {
+	if _vendorItemsCache == nil {
 		return nil
 	}
 
