@@ -94,6 +94,11 @@ func (r Recipe) GetID() uuid.UUID {
 func (r Recipe) GetInventoryItemID() uuid.UUID {
 	return r.ID
 }
+
+func (r Recipe) GetBaseItem() GenericItem {
+	return r
+}
+
 func (r Recipe) GetName() string {
 	return r.Name
 }

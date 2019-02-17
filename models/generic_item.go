@@ -8,6 +8,7 @@ import (
 type GenericItem interface {
 	GetID() uuid.UUID
 	GetInventoryItemID() uuid.UUID
+	GetBaseItem() GenericItem
 	GetName() string
 	GetCategory() ItemCategory
 	GetCountUnit() string

@@ -63,6 +63,10 @@ func (o OrderItem) GetInventoryItemID() uuid.UUID {
 	return o.InventoryItemID
 }
 
+func (o OrderItem) GetBaseItem() GenericItem {
+	return o.InventoryItem
+}
+
 func (o OrderItem) GetName() string {
 	return o.InventoryItem.Name
 }
@@ -81,10 +85,10 @@ func (o OrderItem) GetIndex() int {
 }
 
 // ToGenericItems converts the VendorItems to a GenericItems slice
-func (o *OrderItems) ToGenericItems() *[]GenericItem {
-	items := make([]GenericItem, len(*o))
-	for i := 0; i < len(*o); i++ {
-		items[i] = &(*o)[i]
+func (o OrderItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(o))
+	for i := 0; i < len(o); i++ {
+		items[i] = &o[i]
 	}
 
 	return &items

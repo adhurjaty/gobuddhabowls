@@ -60,7 +60,7 @@ func (r *RecipeItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 	return validate.NewErrors(), nil
 }
 
-func (r RecipeItem) getBaseItem() GenericItem {
+func (r RecipeItem) GetBaseItem() GenericItem {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem
 	}
@@ -72,19 +72,20 @@ func (r RecipeItem) GetID() uuid.UUID {
 	return r.ID
 }
 func (r RecipeItem) GetInventoryItemID() uuid.UUID {
-	return r.getBaseItem().GetID()
+	return r.GetBaseItem().GetID()
 }
+
 func (r RecipeItem) GetName() string {
-	return r.getBaseItem().GetName()
+	return r.GetBaseItem().GetName()
 }
 func (r RecipeItem) GetCategory() ItemCategory {
-	return r.getBaseItem().GetCategory()
+	return r.GetBaseItem().GetCategory()
 }
 func (r RecipeItem) GetCountUnit() string {
-	return r.getBaseItem().GetCountUnit()
+	return r.GetBaseItem().GetCountUnit()
 }
 func (r RecipeItem) GetIndex() int {
-	return r.getBaseItem().GetIndex()
+	return r.GetBaseItem().GetIndex()
 }
 func (r RecipeItem) GetRecipeUnit() string {
 	if r.InventoryItemID.Valid {
@@ -103,8 +104,8 @@ func (r RecipeItem) GetSortValue() int {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.GetSortValue()
 	}
-	// HACK: bit of a hack - want recipes to always be after inv items
-	return r.BatchRecipe.GetSortValue() + 100000
+
+	return r.BatchRecipe.GetSortValue()
 }
 
 // Sort sorts the items based on category then inventory item indices
