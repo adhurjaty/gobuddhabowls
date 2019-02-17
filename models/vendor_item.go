@@ -69,7 +69,7 @@ func (v VendorItem) GetInventoryItemID() uuid.UUID {
 }
 
 func (v VendorItem) GetBaseItem() GenericItem {
-	return v.InventoryItem
+	return &v.InventoryItem
 }
 
 func (v VendorItem) GetName() string {

@@ -62,7 +62,7 @@ func (r *RecipeItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 
 func (r RecipeItem) GetBaseItem() GenericItem {
 	if r.InventoryItemID.Valid {
-		return r.InventoryItem
+		return &r.InventoryItem
 	}
 
 	return r.BatchRecipe

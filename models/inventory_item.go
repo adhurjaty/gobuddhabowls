@@ -110,31 +110,31 @@ func (i *InventoryItem) validateUniqueName(query *pop.Query) (*validate.Errors, 
 	return verrs, nil
 }
 
-func (i InventoryItem) GetID() uuid.UUID {
+func (i *InventoryItem) GetID() uuid.UUID {
 	return i.ID
 }
 
-func (i InventoryItem) GetInventoryItemID() uuid.UUID {
+func (i *InventoryItem) GetInventoryItemID() uuid.UUID {
 	return i.ID
 }
 
-func (i InventoryItem) GetBaseItem() GenericItem {
+func (i *InventoryItem) GetBaseItem() GenericItem {
 	return i
 }
 
-func (i InventoryItem) GetName() string {
+func (i *InventoryItem) GetName() string {
 	return i.Name
 }
 
-func (i InventoryItem) GetCategory() ItemCategory {
+func (i *InventoryItem) GetCategory() ItemCategory {
 	return i.Category
 }
 
-func (i InventoryItem) GetCountUnit() string {
+func (i *InventoryItem) GetCountUnit() string {
 	return i.CountUnit
 }
 
-func (i InventoryItem) GetIndex() int {
+func (i *InventoryItem) GetIndex() int {
 	return i.Index
 }
 

@@ -50,31 +50,31 @@ func (c *CountInventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Error
 	return validate.NewErrors(), nil
 }
 
-func (c CountInventoryItem) GetID() uuid.UUID {
+func (c *CountInventoryItem) GetID() uuid.UUID {
 	return c.ID
 }
 
-func (c CountInventoryItem) GetInventoryItemID() uuid.UUID {
+func (c *CountInventoryItem) GetInventoryItemID() uuid.UUID {
 	return c.InventoryItemID
 }
 
-func (c CountInventoryItem) GetBaseItem() GenericItem {
-	return c.InventoryItem
+func (c *CountInventoryItem) GetBaseItem() GenericItem {
+	return &c.InventoryItem
 }
 
-func (c CountInventoryItem) GetName() string {
+func (c *CountInventoryItem) GetName() string {
 	return c.InventoryItem.Name
 }
 
-func (c CountInventoryItem) GetCategory() ItemCategory {
+func (c *CountInventoryItem) GetCategory() ItemCategory {
 	return c.InventoryItem.Category
 }
 
-func (c CountInventoryItem) GetCountUnit() string {
+func (c *CountInventoryItem) GetCountUnit() string {
 	return c.InventoryItem.CountUnit
 }
 
-func (c CountInventoryItem) GetIndex() int {
+func (c *CountInventoryItem) GetIndex() int {
 	return c.InventoryItem.Index
 }
 
