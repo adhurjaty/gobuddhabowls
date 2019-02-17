@@ -60,40 +60,49 @@ func (r *RecipeItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 	return validate.NewErrors(), nil
 }
 
-func (r RecipeItem) GetBaseItem() GenericItem {
+func (r *RecipeItem) GetBaseItem() GenericItem {
 	if r.InventoryItemID.Valid {
-		return r.InventoryItem
+		return &r.InventoryItem
 	}
 
-	return r.BatchRecipe
+	return &r.BatchRecipe
 }
 
-func (r RecipeItem) GetID() uuid.UUID {
+func (r *RecipeItem) SetBaseItem(item GenericItem) {
+	switch item.(type) {
+	case *InventoryItem:
+		r.InventoryItem = *item.(*InventoryItem)
+	case *Recipe:
+		r.BatchRecipe = *item.(*Recipe)
+	}
+}
+
+func (r *RecipeItem) GetID() uuid.UUID {
 	return r.ID
 }
-func (r RecipeItem) GetInventoryItemID() uuid.UUID {
+func (r *RecipeItem) GetBaseItemID() uuid.UUID {
 	return r.GetBaseItem().GetID()
 }
 
-func (r RecipeItem) GetName() string {
+func (r *RecipeItem) GetName() string {
 	return r.GetBaseItem().GetName()
 }
-func (r RecipeItem) GetCategory() ItemCategory {
+func (r *RecipeItem) GetCategory() ItemCategory {
 	return r.GetBaseItem().GetCategory()
 }
-func (r RecipeItem) GetCountUnit() string {
+func (r *RecipeItem) GetCountUnit() string {
 	return r.GetBaseItem().GetCountUnit()
 }
-func (r RecipeItem) GetIndex() int {
+func (r *RecipeItem) GetIndex() int {
 	return r.GetBaseItem().GetIndex()
 }
-func (r RecipeItem) GetRecipeUnit() string {
+func (r *RecipeItem) GetRecipeUnit() string {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.RecipeUnit
 	}
 	return r.BatchRecipe.RecipeUnit
 }
-func (r RecipeItem) GetRecipeUnitConversion() float64 {
+func (r *RecipeItem) GetRecipeUnitConversion() float64 {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.RecipeUnitConversion
 	}
@@ -113,4 +122,22 @@ func (r *RecipeItems) Sort() {
 	sort.Slice(*r, func(i, j int) bool {
 		return (*r)[i].GetSortValue() < (*r)[j].GetSortValue()
 	})
+}
+
+func (r *RecipeItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*r))
+	for i := 0; i < len(*r); i++ {
+		items[i] = &(*r)[i]
+	}
+
+	return &items
+}
+
+func (r *RecipeItems) ToCompoundItems() *[]CompoundItem {
+	items := make([]CompoundItem, len(*r))
+	for i := 0; i < len(*r); i++ {
+		items[i] = &(*r)[i]
+	}
+
+	return &items
 }

@@ -4,11 +4,13 @@ import (
 	"github.com/gobuffalo/uuid"
 )
 
+type Model interface {
+	GetID() uuid.UUID
+}
+
 // GenericItem is an interface for any item whose lifecycle includes inventory
 type GenericItem interface {
-	GetID() uuid.UUID
-	GetInventoryItemID() uuid.UUID
-	GetBaseItem() GenericItem
+	Model
 	GetName() string
 	GetCategory() ItemCategory
 	GetCountUnit() string
@@ -17,4 +19,15 @@ type GenericItem interface {
 
 type GenericItems interface {
 	ToGenericItems() *[]GenericItem
+}
+
+type CompoundItem interface {
+	GenericItem
+	GetBaseItemID() uuid.UUID
+	GetBaseItem() GenericItem
+	SetBaseItem(GenericItem)
+}
+
+type CompoundItems interface {
+	ToCompoundItems() *[]CompoundItem
 }

@@ -55,32 +55,36 @@ func (o *OrderItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error)
 	return validate.NewErrors(), nil
 }
 
-func (o OrderItem) GetID() uuid.UUID {
+func (o *OrderItem) GetID() uuid.UUID {
 	return o.ID
 }
 
-func (o OrderItem) GetInventoryItemID() uuid.UUID {
+func (o *OrderItem) GetBaseItemID() uuid.UUID {
 	return o.InventoryItemID
 }
 
-func (o OrderItem) GetBaseItem() GenericItem {
-	return o.InventoryItem
+func (o *OrderItem) GetBaseItem() GenericItem {
+	return &o.InventoryItem
 }
 
-func (o OrderItem) GetName() string {
+func (o *OrderItem) SetBaseItem(item GenericItem) {
+	o.InventoryItem = *item.(*InventoryItem)
+}
+
+func (o *OrderItem) GetName() string {
 	return o.InventoryItem.Name
 }
 
 // GetCategory returns the inventory item category of the vendor item
-func (o OrderItem) GetCategory() ItemCategory {
+func (o *OrderItem) GetCategory() ItemCategory {
 	return o.InventoryItem.Category
 }
 
-func (o OrderItem) GetCountUnit() string {
+func (o *OrderItem) GetCountUnit() string {
 	return o.InventoryItem.CountUnit
 }
 
-func (o OrderItem) GetIndex() int {
+func (o *OrderItem) GetIndex() int {
 	return o.InventoryItem.Index
 }
 
@@ -89,6 +93,15 @@ func (o OrderItems) ToGenericItems() *[]GenericItem {
 	items := make([]GenericItem, len(o))
 	for i := 0; i < len(o); i++ {
 		items[i] = &o[i]
+	}
+
+	return &items
+}
+
+func (o *OrderItems) ToCompoundItems() *[]CompoundItem {
+	items := make([]CompoundItem, len(*o))
+	for i := 0; i < len(*o); i++ {
+		items[i] = &(*o)[i]
 	}
 
 	return &items

@@ -43,37 +43,42 @@ func (items ItemsAPI) String() string {
 func NewItemAPI(item models.GenericItem) ItemAPI {
 	itemAPI := ItemAPI{
 		ID:              item.GetID().String(),
-		InventoryItemID: item.GetInventoryItemID().String(),
+		InventoryItemID: item.GetID().String(),
 		Name:            item.GetName(),
 		Category:        NewCategoryAPI(item.GetCategory()),
 		Index:           item.GetIndex(),
 		CountUnit:       item.GetCountUnit(),
 	}
 
+	cItem, ok := item.(models.CompoundItem)
+	if ok {
+		itemAPI.InventoryItemID = cItem.GetBaseItemID().String()
+	}
+
 	switch item.(type) {
-	case models.InventoryItem:
-		invItem, _ := item.(models.InventoryItem)
+	case *models.InventoryItem:
+		invItem, _ := item.(*models.InventoryItem)
 		itemAPI.RecipeUnit = invItem.RecipeUnit
 		itemAPI.RecipeUnitConversion = invItem.RecipeUnitConversion
 		itemAPI.Yield = invItem.Yield
 
-	case models.OrderItem:
-		orderItem, _ := item.(models.OrderItem)
+	case *models.OrderItem:
+		orderItem, _ := item.(*models.OrderItem)
 		itemAPI.Count = orderItem.Count
 		itemAPI.Price = orderItem.Price
 
-	case models.VendorItem:
-		vendorItem, _ := item.(models.VendorItem)
+	case *models.VendorItem:
+		vendorItem, _ := item.(*models.VendorItem)
 		itemAPI.Price = vendorItem.Price
 		itemAPI.PurchasedUnit = vendorItem.PurchasedUnit.String
 		itemAPI.Conversion = vendorItem.Conversion
 
-	case models.CountInventoryItem:
-		countItem, _ := item.(models.CountInventoryItem)
+	case *models.CountInventoryItem:
+		countItem, _ := item.(*models.CountInventoryItem)
 		itemAPI.Count = countItem.Count
 
-	case models.RecipeItem:
-		recipeItem, _ := item.(models.RecipeItem)
+	case *models.RecipeItem:
+		recipeItem, _ := item.(*models.RecipeItem)
 		itemAPI.RecipeUnit = recipeItem.GetRecipeUnit()
 		itemAPI.RecipeUnitConversion = recipeItem.GetRecipeUnitConversion()
 		itemAPI.Count = recipeItem.Count
@@ -82,8 +87,8 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 			itemAPI.BatchRecipeID = recipeItem.BatchRecipeID.UUID.String()
 			itemAPI.InventoryItemID = ""
 		}
-	case models.Recipe:
-		recipe, _ := item.(models.Recipe)
+	case *models.Recipe:
+		recipe, _ := item.(*models.Recipe)
 		itemAPI.RecipeUnit = recipe.RecipeUnit
 		itemAPI.RecipeUnitConversion = recipe.RecipeUnitConversion
 		itemAPI.InventoryItemID = ""
@@ -95,47 +100,13 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 }
 
 // NewItemsAPI converts an order/vendor/inventory item slice to an api item slice
-func NewItemsAPI(modelItems interface{}) ItemsAPI {
-	var apis []ItemAPI
+func NewItemsAPI(modelItems models.GenericItems) ItemsAPI {
+	// var apis []ItemAPI
 
-	// TODO: gotta be a better way to do this
-	switch modelItems.(type) {
-	case models.OrderItems:
-		modelSlice := modelItems.(models.OrderItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
-	case models.VendorItems:
-		modelSlice := modelItems.(models.VendorItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
-	case models.CountInventoryItems:
-		modelSlice := modelItems.(models.CountInventoryItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
-	case models.InventoryItems:
-		modelSlice := modelItems.(models.InventoryItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
-	case models.RecipeItems:
-		modelSlice := modelItems.(models.RecipeItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
-	case models.Recipes:
-		modelSlice := modelItems.(models.Recipes)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
+	modelSlice := modelItems.ToGenericItems()
+	apis := make([]ItemAPI, len(*modelSlice))
+	for i, modelItem := range *modelSlice {
+		apis[i] = NewItemAPI(modelItem)
 	}
 
 	return apis
