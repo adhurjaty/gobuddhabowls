@@ -72,6 +72,10 @@ func (v *VendorItem) GetBaseItem() GenericItem {
 	return &v.InventoryItem
 }
 
+func (v *VendorItem) SetBaseItem(item GenericItem) {
+	v.InventoryItem = *item.(*InventoryItem)
+}
+
 func (v *VendorItem) GetName() string {
 	return v.InventoryItem.Name
 }

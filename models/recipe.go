@@ -99,6 +99,10 @@ func (r *Recipe) GetBaseItem() GenericItem {
 	return r
 }
 
+func (r *Recipe) SetBaseItem(item GenericItem) {
+	r = item.(*Recipe)
+}
+
 func (r *Recipe) GetName() string {
 	return r.Name
 }

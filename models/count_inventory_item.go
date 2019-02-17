@@ -62,6 +62,10 @@ func (c *CountInventoryItem) GetBaseItem() GenericItem {
 	return &c.InventoryItem
 }
 
+func (c *CountInventoryItem) SetBaseItem(item GenericItem) {
+	c.InventoryItem = *item.(*InventoryItem)
+}
+
 func (c *CountInventoryItem) GetName() string {
 	return c.InventoryItem.Name
 }

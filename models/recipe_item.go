@@ -68,6 +68,15 @@ func (r *RecipeItem) GetBaseItem() GenericItem {
 	return &r.BatchRecipe
 }
 
+func (r *RecipeItem) SetBaseItem(item GenericItem) {
+	switch item.(type) {
+	case *InventoryItem:
+		r.InventoryItem = *item.(*InventoryItem)
+	case *Recipe:
+		r.BatchRecipe = *item.(*Recipe)
+	}
+}
+
 func (r *RecipeItem) GetID() uuid.UUID {
 	return r.ID
 }

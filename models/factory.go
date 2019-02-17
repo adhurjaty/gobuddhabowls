@@ -113,9 +113,11 @@ func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
 	for _, po := range *pos {
 		for i := 0; i < len(po.Items); i++ {
 			count := po.Items[i].Count
-			if err := getOrderItem(&po.Items[i]); err != nil {
+			cacheItem, err := getCacheItem(&po.Items[i], po.Items[i].ID)
+			if err != nil {
 				return err
 			}
+			po.Items[i] = *cacheItem.(*OrderItem)
 			po.Items[i].Count = count
 		}
 		po.Items.Sort()
@@ -157,9 +159,11 @@ func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
 
 	for _, vendor := range *vendors {
 		for i := 0; i < len(vendor.Items); i++ {
-			if err := getVendorItem(&vendor.Items[i]); err != nil {
+			cacheItem, err := getCacheItem(&vendor.Items[i], vendor.Items[i].ID)
+			if err != nil {
 				return err
 			}
+			vendor.Items[i] = *cacheItem.(*VendorItem)
 		}
 		vendor.Items.Sort()
 	}
