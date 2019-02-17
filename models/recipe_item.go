@@ -80,7 +80,7 @@ func (r *RecipeItem) SetBaseItem(item GenericItem) {
 func (r *RecipeItem) GetID() uuid.UUID {
 	return r.ID
 }
-func (r *RecipeItem) GetInventoryItemID() uuid.UUID {
+func (r *RecipeItem) GetBaseItemID() uuid.UUID {
 	return r.GetBaseItem().GetID()
 }
 
@@ -126,6 +126,15 @@ func (r *RecipeItems) Sort() {
 
 func (r *RecipeItems) ToGenericItems() *[]GenericItem {
 	items := make([]GenericItem, len(*r))
+	for i := 0; i < len(*r); i++ {
+		items[i] = &(*r)[i]
+	}
+
+	return &items
+}
+
+func (r *RecipeItems) ToCompoundItems() *[]CompoundItem {
+	items := make([]CompoundItem, len(*r))
 	for i := 0; i < len(*r); i++ {
 		items[i] = &(*r)[i]
 	}

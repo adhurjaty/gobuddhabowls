@@ -114,18 +114,6 @@ func (i *InventoryItem) GetID() uuid.UUID {
 	return i.ID
 }
 
-func (i *InventoryItem) GetInventoryItemID() uuid.UUID {
-	return i.ID
-}
-
-func (i *InventoryItem) GetBaseItem() GenericItem {
-	return i
-}
-
-func (i *InventoryItem) SetBaseItem(item GenericItem) {
-	i = item.(*InventoryItem)
-}
-
 func (i *InventoryItem) GetName() string {
 	return i.Name
 }

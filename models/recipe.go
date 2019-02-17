@@ -91,18 +91,6 @@ func (r *Recipe) validateUniqueName(query *pop.Query) (*validate.Errors, error) 
 func (r *Recipe) GetID() uuid.UUID {
 	return r.ID
 }
-func (r *Recipe) GetInventoryItemID() uuid.UUID {
-	return r.ID
-}
-
-func (r *Recipe) GetBaseItem() GenericItem {
-	return r
-}
-
-func (r *Recipe) SetBaseItem(item GenericItem) {
-	r = item.(*Recipe)
-}
-
 func (r *Recipe) GetName() string {
 	return r.Name
 }

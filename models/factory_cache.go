@@ -42,8 +42,8 @@ func populateVendorItemsCache(tx *pop.Connection, ids []string) error {
 	return initCache(&VendorItems{}, tx, ids)
 }
 
-func initCache(initVal GenericItems, tx *pop.Connection, ids []string) error {
-	var cache GenericItems
+func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
+	var cache CompoundItems
 	var idCol string
 
 	switch initVal.(type) {
@@ -69,10 +69,10 @@ func initCache(initVal GenericItems, tx *pop.Connection, ids []string) error {
 		return err
 	}
 
-	cacheItems := cache.ToGenericItems()
+	cacheItems := cache.ToCompoundItems()
 	for i := range *cacheItems {
 		item := (*cacheItems)[i]
-		invItem, err := getCacheItem(item.GetBaseItem(), item.GetInventoryItemID())
+		invItem, err := getCacheItem(item.GetBaseItem(), item.GetBaseItemID())
 		if err != nil {
 			return err
 		}

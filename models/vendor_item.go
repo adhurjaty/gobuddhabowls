@@ -64,7 +64,7 @@ func (v *VendorItem) GetID() uuid.UUID {
 	return v.ID
 }
 
-func (v *VendorItem) GetInventoryItemID() uuid.UUID {
+func (v *VendorItem) GetBaseItemID() uuid.UUID {
 	return v.InventoryItemID
 }
 
@@ -106,6 +106,15 @@ func (v *VendorItem) ToOrderItem() *OrderItem {
 // ToGenericItems converts the VendorItems to a CountItem slice
 func (v *VendorItems) ToGenericItems() *[]GenericItem {
 	items := make([]GenericItem, len(*v))
+	for i := 0; i < len(*v); i++ {
+		items[i] = &(*v)[i]
+	}
+
+	return &items
+}
+
+func (v *VendorItems) ToCompoundItems() *[]CompoundItem {
+	items := make([]CompoundItem, len(*v))
 	for i := 0; i < len(*v); i++ {
 		items[i] = &(*v)[i]
 	}

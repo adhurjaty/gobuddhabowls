@@ -54,7 +54,7 @@ func (c *CountInventoryItem) GetID() uuid.UUID {
 	return c.ID
 }
 
-func (c *CountInventoryItem) GetInventoryItemID() uuid.UUID {
+func (c *CountInventoryItem) GetBaseItemID() uuid.UUID {
 	return c.InventoryItemID
 }
 
@@ -90,6 +90,15 @@ func (ci *CountInventoryItems) Sort() {
 
 func (ci *CountInventoryItems) ToGenericItems() *[]GenericItem {
 	items := make([]GenericItem, len(*ci))
+	for i := 0; i < len(*ci); i++ {
+		items[i] = &(*ci)[i]
+	}
+
+	return &items
+}
+
+func (ci *CountInventoryItems) ToCompoundItems() *[]CompoundItem {
+	items := make([]CompoundItem, len(*ci))
 	for i := 0; i < len(*ci); i++ {
 		items[i] = &(*ci)[i]
 	}

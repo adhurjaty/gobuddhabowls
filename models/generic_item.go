@@ -11,9 +11,6 @@ type Model interface {
 // GenericItem is an interface for any item whose lifecycle includes inventory
 type GenericItem interface {
 	Model
-	GetInventoryItemID() uuid.UUID
-	GetBaseItem() GenericItem
-	SetBaseItem(GenericItem)
 	GetName() string
 	GetCategory() ItemCategory
 	GetCountUnit() string
@@ -22,4 +19,15 @@ type GenericItem interface {
 
 type GenericItems interface {
 	ToGenericItems() *[]GenericItem
+}
+
+type CompoundItem interface {
+	GenericItem
+	GetBaseItemID() uuid.UUID
+	GetBaseItem() GenericItem
+	SetBaseItem(GenericItem)
+}
+
+type CompoundItems interface {
+	ToCompoundItems() *[]CompoundItem
 }

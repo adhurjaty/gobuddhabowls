@@ -43,11 +43,16 @@ func (items ItemsAPI) String() string {
 func NewItemAPI(item models.GenericItem) ItemAPI {
 	itemAPI := ItemAPI{
 		ID:              item.GetID().String(),
-		InventoryItemID: item.GetInventoryItemID().String(),
+		InventoryItemID: item.GetID().String(),
 		Name:            item.GetName(),
 		Category:        NewCategoryAPI(item.GetCategory()),
 		Index:           item.GetIndex(),
 		CountUnit:       item.GetCountUnit(),
+	}
+
+	cItem, ok := item.(models.CompoundItem)
+	if ok {
+		itemAPI.InventoryItemID = cItem.GetBaseItemID().String()
 	}
 
 	switch item.(type) {
