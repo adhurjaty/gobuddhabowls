@@ -94,3 +94,16 @@ func (p PurchaseOrder) GetCategoryCosts() CategoryBreakdown {
 
 	return FromCategoryMap(catCosts)
 }
+
+func (p *PurchaseOrder) GetID() uuid.UUID {
+	return p.ID
+}
+
+func (p *PurchaseOrders) ToModels() *[]Model {
+	models := make([]Model, len(*p))
+	for idx, item := range *p {
+		models[idx] = &item
+	}
+
+	return &models
+}

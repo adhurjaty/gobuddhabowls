@@ -8,6 +8,10 @@ type Model interface {
 	GetID() uuid.UUID
 }
 
+type Models interface {
+	ToModels() *[]Model
+}
+
 // GenericItem is an interface for any item whose lifecycle includes inventory
 type GenericItem interface {
 	Model

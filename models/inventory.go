@@ -52,3 +52,16 @@ func (i *Inventory) ValidateCreate(tx *pop.Connection) (*validate.Errors, error)
 func (i *Inventory) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
 }
+
+func (i *Inventory) GetID() uuid.UUID {
+	return i.ID
+}
+
+func (i *Inventories) ToModels() *[]Model {
+	models := make([]Model, len(*i))
+	for idx, item := range *i {
+		models[idx] = &item
+	}
+
+	return &models
+}
