@@ -167,7 +167,7 @@ func (p *Presenter) GetBlankVendorItems() (*ItemsAPI, error) {
 
 	items := ItemsAPI{}
 	for _, vendor := range *vendors {
-		vItem := models.VendorItem{
+		vItem := &models.VendorItem{
 			VendorID:   vendor.ID,
 			Vendor:     vendor,
 			Conversion: 1,

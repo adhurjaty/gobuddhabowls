@@ -83,3 +83,12 @@ func (ci *CountInventoryItems) Sort() {
 		return (*ci)[i].InventoryItem.GetSortValue() < (*ci)[j].InventoryItem.GetSortValue()
 	})
 }
+
+func (ci *CountInventoryItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*ci))
+	for i := 0; i < len(*ci); i++ {
+		items[i] = &(*ci)[i]
+	}
+
+	return &items
+}

@@ -121,3 +121,12 @@ func (r *Recipes) Sort() {
 		return (*r)[i].GetSortValue() < (*r)[j].GetSortValue()
 	})
 }
+
+func (r *Recipes) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*r))
+	for i := 0; i < len(*r); i++ {
+		items[i] = &(*r)[i]
+	}
+
+	return &items
+}

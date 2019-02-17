@@ -46,7 +46,7 @@ func NewRecipeAPI(recipe *models.Recipe) RecipeAPI {
 		Index:                recipe.Index,
 		RecipeUnit:           recipe.RecipeUnit,
 		RecipeUnitConversion: recipe.RecipeUnitConversion,
-		Items:                NewItemsAPI(recipe.Items),
+		Items:                NewItemsAPI(&recipe.Items),
 		IsBatch:              recipe.IsBatch,
 	}
 }

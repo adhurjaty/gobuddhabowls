@@ -26,7 +26,7 @@ func (inv InventoriesAPI) String() string {
 }
 
 func NewInventoryAPI(inventory *models.Inventory, vendors *VendorsAPI) InventoryAPI {
-	items := NewItemsAPI(inventory.Items)
+	items := NewItemsAPI(&inventory.Items)
 	populateVendorItems(&items, &inventory.Items, vendors)
 
 	return InventoryAPI{

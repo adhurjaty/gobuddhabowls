@@ -150,3 +150,12 @@ func (inv *InventoryItems) Sort() {
 		return (*inv)[i].GetSortValue() < (*inv)[j].GetSortValue()
 	})
 }
+
+func (inv *InventoryItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*inv))
+	for i := 0; i < len(*inv); i++ {
+		items[i] = &(*inv)[i]
+	}
+
+	return &items
+}

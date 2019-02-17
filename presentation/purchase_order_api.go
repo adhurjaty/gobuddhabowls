@@ -37,7 +37,7 @@ func NewPurchaseOrderAPI(purchaseOrder *models.PurchaseOrder) PurchaseOrderAPI {
 		OrderDate:    purchaseOrder.OrderDate,
 		ReceivedDate: purchaseOrder.ReceivedDate,
 		ShippingCost: purchaseOrder.ShippingCost,
-		Items:        NewItemsAPI(purchaseOrder.Items),
+		Items:        NewItemsAPI(&purchaseOrder.Items),
 	}
 }
 

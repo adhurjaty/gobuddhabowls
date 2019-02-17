@@ -94,7 +94,7 @@ func (p *Presenter) GetAllItemsForRecipe() (*ItemsAPI, error) {
 		return nil, err
 	}
 
-	batchItems := NewItemsAPI(*batchRecipes)
+	batchItems := NewItemsAPI(batchRecipes)
 
 	items, err := p.GetInventoryItems()
 	if err != nil {
