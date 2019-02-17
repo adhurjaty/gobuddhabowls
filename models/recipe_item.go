@@ -60,40 +60,40 @@ func (r *RecipeItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 	return validate.NewErrors(), nil
 }
 
-func (r RecipeItem) GetBaseItem() GenericItem {
+func (r *RecipeItem) GetBaseItem() GenericItem {
 	if r.InventoryItemID.Valid {
 		return &r.InventoryItem
 	}
 
-	return r.BatchRecipe
+	return &r.BatchRecipe
 }
 
-func (r RecipeItem) GetID() uuid.UUID {
+func (r *RecipeItem) GetID() uuid.UUID {
 	return r.ID
 }
-func (r RecipeItem) GetInventoryItemID() uuid.UUID {
+func (r *RecipeItem) GetInventoryItemID() uuid.UUID {
 	return r.GetBaseItem().GetID()
 }
 
-func (r RecipeItem) GetName() string {
+func (r *RecipeItem) GetName() string {
 	return r.GetBaseItem().GetName()
 }
-func (r RecipeItem) GetCategory() ItemCategory {
+func (r *RecipeItem) GetCategory() ItemCategory {
 	return r.GetBaseItem().GetCategory()
 }
-func (r RecipeItem) GetCountUnit() string {
+func (r *RecipeItem) GetCountUnit() string {
 	return r.GetBaseItem().GetCountUnit()
 }
-func (r RecipeItem) GetIndex() int {
+func (r *RecipeItem) GetIndex() int {
 	return r.GetBaseItem().GetIndex()
 }
-func (r RecipeItem) GetRecipeUnit() string {
+func (r *RecipeItem) GetRecipeUnit() string {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.RecipeUnit
 	}
 	return r.BatchRecipe.RecipeUnit
 }
-func (r RecipeItem) GetRecipeUnitConversion() float64 {
+func (r *RecipeItem) GetRecipeUnitConversion() float64 {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.RecipeUnitConversion
 	}

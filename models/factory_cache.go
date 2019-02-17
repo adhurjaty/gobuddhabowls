@@ -125,7 +125,7 @@ func getBaseItem(item GenericItem, id uuid.UUID) error {
 	case *InventoryItem:
 		invItem := item.(*InventoryItem)
 		return getInventoryItem(invItem, id)
-	case Recipe:
+	case *Recipe:
 		return errors.New("recipes not implemented")
 	}
 

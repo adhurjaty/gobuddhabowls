@@ -60,32 +60,32 @@ func (v *VendorItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 	return validate.NewErrors(), nil
 }
 
-func (v VendorItem) GetID() uuid.UUID {
+func (v *VendorItem) GetID() uuid.UUID {
 	return v.ID
 }
 
-func (v VendorItem) GetInventoryItemID() uuid.UUID {
+func (v *VendorItem) GetInventoryItemID() uuid.UUID {
 	return v.InventoryItemID
 }
 
-func (v VendorItem) GetBaseItem() GenericItem {
+func (v *VendorItem) GetBaseItem() GenericItem {
 	return &v.InventoryItem
 }
 
-func (v VendorItem) GetName() string {
+func (v *VendorItem) GetName() string {
 	return v.InventoryItem.Name
 }
 
 // GetCategory returns the inventory item category of the vendor item
-func (v VendorItem) GetCategory() ItemCategory {
+func (v *VendorItem) GetCategory() ItemCategory {
 	return v.InventoryItem.Category
 }
 
-func (v VendorItem) GetCountUnit() string {
+func (v *VendorItem) GetCountUnit() string {
 	return v.InventoryItem.CountUnit
 }
 
-func (v VendorItem) GetIndex() int {
+func (v *VendorItem) GetIndex() int {
 	return v.InventoryItem.Index
 }
 
@@ -100,10 +100,10 @@ func (v *VendorItem) ToOrderItem() *OrderItem {
 }
 
 // ToGenericItems converts the VendorItems to a CountItem slice
-func (v VendorItems) ToGenericItems() *[]GenericItem {
-	items := make([]GenericItem, len(v))
-	for i := 0; i < len(v); i++ {
-		items[i] = &v[i]
+func (v *VendorItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*v))
+	for i := 0; i < len(*v); i++ {
+		items[i] = &(*v)[i]
 	}
 
 	return &items

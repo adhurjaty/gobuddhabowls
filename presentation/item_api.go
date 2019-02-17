@@ -95,48 +95,54 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 }
 
 // NewItemsAPI converts an order/vendor/inventory item slice to an api item slice
-func NewItemsAPI(modelItems interface{}) ItemsAPI {
-	var apis []ItemAPI
+func NewItemsAPI(modelItems models.GenericItems) ItemsAPI {
+	// var apis []ItemAPI
+
+	modelSlice := modelItems.ToGenericItems()
+	apis := make([]ItemAPI, len(*modelSlice))
+	for i, modelItem := range *modelSlice {
+		apis[i] = NewItemAPI(modelItem)
+	}
 
 	// TODO: gotta be a better way to do this
-	switch modelItems.(type) {
-	case models.OrderItems:
-		modelSlice := modelItems.(models.OrderItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(&modelItem)
-		}
-	case models.VendorItems:
-		modelSlice := modelItems.(models.VendorItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
-	case models.CountInventoryItems:
-		modelSlice := modelItems.(models.CountInventoryItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(&modelItem)
-		}
-	case models.InventoryItems:
-		modelSlice := modelItems.(models.InventoryItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(&modelItem)
-		}
-	case models.RecipeItems:
-		modelSlice := modelItems.(models.RecipeItems)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
-	case models.Recipes:
-		modelSlice := modelItems.(models.Recipes)
-		apis = make([]ItemAPI, len(modelSlice))
-		for i, modelItem := range modelSlice {
-			apis[i] = NewItemAPI(modelItem)
-		}
-	}
+	// switch modelItems.(type) {
+	// case *models.OrderItems:
+	// 	modelSlice := modelItems.(*models.OrderItems)
+	// 	apis = make([]ItemAPI, len(*modelSlice))
+	// 	for i, modelItem := range *modelSlice {
+	// 		apis[i] = NewItemAPI(&modelItem)
+	// 	}
+	// case *models.VendorItems:
+	// 	modelSlice := modelItems.(*models.VendorItems)
+	// 	apis = make([]ItemAPI, len(*modelSlice))
+	// 	for i, modelItem := range *modelSlice {
+	// 		apis[i] = NewItemAPI(&modelItem)
+	// 	}
+	// case *models.CountInventoryItems:
+	// 	modelSlice := modelItems.(*models.CountInventoryItems)
+	// 	apis = make([]ItemAPI, len(*modelSlice))
+	// 	for i, modelItem := range *modelSlice {
+	// 		apis[i] = NewItemAPI(&modelItem)
+	// 	}
+	// case *models.InventoryItems:
+	// 	modelSlice := modelItems.(*models.InventoryItems)
+	// 	apis = make([]ItemAPI, len(*modelSlice))
+	// 	for i, modelItem := range modelSlice {
+	// 		apis[i] = NewItemAPI(&modelItem)
+	// 	}
+	// case models.RecipeItems:
+	// 	modelSlice := modelItems.(models.RecipeItems)
+	// 	apis = make([]ItemAPI, len(modelSlice))
+	// 	for i, modelItem := range modelSlice {
+	// 		apis[i] = NewItemAPI(modelItem)
+	// 	}
+	// case models.Recipes:
+	// 	modelSlice := modelItems.(models.Recipes)
+	// 	apis = make([]ItemAPI, len(modelSlice))
+	// 	for i, modelItem := range modelSlice {
+	// 		apis[i] = NewItemAPI(modelItem)
+	// 	}
+	// }
 
 	return apis
 }
