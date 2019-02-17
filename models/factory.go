@@ -189,21 +189,21 @@ func PopulateCountInvItems(inventories *Inventories, tx *pop.Connection) error {
 		ids[i] = (*inventories)[i].ID.String()
 	}
 
-	if err := populateCountInvItemsCache(tx, ids); err != nil {
-		return err
-	}
-	if _countInvItemsCache == nil {
-		return nil
-	}
+	// if err := populateCountInvItemsCache(tx, ids); err != nil {
+	// 	return err
+	// }
+	// if _countInvItemsCache == nil {
+	// 	return nil
+	// }
 
-	for _, inventory := range *inventories {
-		for i := 0; i < len(inventory.Items); i++ {
-			if err := getCountInvItem(&inventory.Items[i]); err != nil {
-				return err
-			}
-		}
-		inventory.Items.Sort()
-	}
+	// for _, inventory := range *inventories {
+	// 	for i := 0; i < len(inventory.Items); i++ {
+	// 		if err := getCountInvItem(&inventory.Items[i]); err != nil {
+	// 			return err
+	// 		}
+	// 	}
+	// 	inventory.Items.Sort()
+	// }
 
 	return nil
 }

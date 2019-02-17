@@ -59,44 +59,44 @@ func populateVendorItemsCache(tx *pop.Connection, ids []string) error {
 		return nil
 	}
 
-	if err := populateInvItemCache(tx); err != nil {
-		return err
-	}
+	return initCache(&VendorItems{}, tx, ids)
+	// if err := populateInvItemCache(tx); err != nil {
+	// 	return err
+	// }
 
-	_vendorItemsCache = &VendorItems{}
-	idsInt := toIntefaceList(ids)
-	if err := tx.Eager().Where("vendor_id IN (?)", idsInt...).
-		All(_vendorItemsCache); err != nil {
-		return err
-	}
+	// _vendorItemsCache = &VendorItems{}
+	// idsInt := toIntefaceList(ids)
+	// if err := tx.Eager().Where("vendor_id IN (?)", idsInt...).
+	// 	All(_vendorItemsCache); err != nil {
+	// 	return err
+	// }
 
-	for i := range *_vendorItemsCache {
-		item := &(*_vendorItemsCache)[i]
-		if err := getInventoryItem(&item.InventoryItem,
-			item.InventoryItemID); err != nil {
-			return err
-		}
-	}
+	// for i := range *_vendorItemsCache {
+	// 	item := &(*_vendorItemsCache)[i]
+	// 	if err := getInventoryItem(&item.InventoryItem,
+	// 		item.InventoryItemID); err != nil {
+	// 		return err
+	// 	}
+	// }
 
-	return nil
+	// return nil
 }
 
-func initCache(initVal *GenericItems, tx *pop.Connection, ids []string) error {
-	var cache *GenericItems
+func initCache(initVal GenericItems, tx *pop.Connection, ids []string) error {
+	var cache GenericItems
 	var idCol string
 
-	switch (*initVal).(type) {
+	switch initVal.(type) {
 	case OrderItems:
-		*cache = *_orderItemsCache
+		_orderItemsCache = &initVal
+		cache = *_orderItemsCache
 		idCol = "order_id"
 	case VendorItems:
-		*cache = *_vendorItemsCache
+		cache = *_vendorItemsCache
 		idCol = "vendor_id"
 	default:
 		return errors.New("unimplemented type")
 	}
-
-	*cache = *initVal
 
 	if err := populateInvItemCache(tx); err != nil {
 		return err
