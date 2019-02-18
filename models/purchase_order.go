@@ -101,8 +101,8 @@ func (p *PurchaseOrder) GetID() uuid.UUID {
 
 func (p *PurchaseOrders) ToModels() *[]Model {
 	models := make([]Model, len(*p))
-	for idx, item := range *p {
-		models[idx] = &item
+	for idx := range *p {
+		models[idx] = &(*p)[idx]
 	}
 
 	return &models

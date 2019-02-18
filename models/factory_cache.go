@@ -10,11 +10,13 @@ import (
 var _invItemCache *InventoryItems
 var _orderItemsCache *OrderItems
 var _vendorItemsCache *VendorItems
+var _countInvItemsCache *CountInventoryItems
 
 func resetCache() {
 	_invItemCache = nil
 	_orderItemsCache = nil
 	_vendorItemsCache = nil
+	_countInvItemsCache = nil
 }
 
 func populateInvItemCache(tx *pop.Connection) error {
@@ -42,6 +44,14 @@ func populateVendorItemsCache(tx *pop.Connection, ids []string) error {
 	return initCache(&VendorItems{}, tx, ids)
 }
 
+func populateCountInvItemsCache(tx *pop.Connection, ids []string) error {
+	if _countInvItemsCache != nil || len(ids) == 0 {
+		return nil
+	}
+
+	return initCache(&CountInventoryItems{}, tx, ids)
+}
+
 func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 	var cache CompoundItems
 	var idCol string
@@ -55,6 +65,10 @@ func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 		_vendorItemsCache = initVal.(*VendorItems)
 		cache = _vendorItemsCache
 		idCol = "vendor_id"
+	case *CountInventoryItems:
+		_countInvItemsCache = initVal.(*CountInventoryItems)
+		cache = _countInvItemsCache
+		idCol = "inventory_id"
 	default:
 		return errors.New("unimplemented type")
 	}
@@ -68,6 +82,9 @@ func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 		All(cache); err != nil {
 		return err
 	}
+
+	fmt.Println(cache)
+	fmt.Println(_countInvItemsCache)
 
 	cacheItems := cache.ToCompoundItems()
 	for i := range *cacheItems {
@@ -91,6 +108,8 @@ func getCacheItem(itemProp GenericItem, id uuid.UUID) (GenericItem, error) {
 		cache = _orderItemsCache
 	case *VendorItem:
 		cache = _vendorItemsCache
+	case *CountInventoryItem:
+		cache = _countInvItemsCache
 	default:
 		return nil, errors.New("unimplemented type")
 	}
@@ -105,27 +124,15 @@ func getCacheItem(itemProp GenericItem, id uuid.UUID) (GenericItem, error) {
 	return nil, errors.New("no item ID matches")
 }
 
-func getBaseItem(item *GenericItem, id uuid.UUID) error {
-	switch (*item).(type) {
-	case InventoryItem:
-		invItem := (*item).(InventoryItem)
-		return getInventoryItem(&invItem, id)
-	case Recipe:
-		return errors.New("recipes not implemented")
+func toIDList(m Models) []string {
+	lst := m.ToModels()
+
+	ids := make([]string, len(*lst))
+	for i, item := range *lst {
+		ids[i] = item.GetID().String()
 	}
 
-	return errors.New("unimplemented type")
-}
-
-func getInventoryItem(invItemProp *InventoryItem, id uuid.UUID) error {
-	for _, item := range *_invItemCache {
-		if item.ID.String() == id.String() {
-			*invItemProp = item
-			return nil
-		}
-	}
-
-	return errors.New("no inventory item ID matches")
+	return ids
 }
 
 func toIntefaceList(lst []string) []interface{} {

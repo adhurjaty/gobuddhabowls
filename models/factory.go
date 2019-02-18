@@ -30,10 +30,6 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 		}
 		return LoadRecipe(m.(*Recipe), tx, id)
 	case *Inventory:
-		err := populateInvItemCache(tx)
-		if err != nil {
-			return err
-		}
 		return LoadInventory(m.(*Inventory), tx, id)
 	case *RecipeItem:
 		return LoadRecipeItem(m.(*RecipeItem), tx, id)
@@ -98,10 +94,7 @@ func LoadPurchaseOrders(poList *PurchaseOrders, q *pop.Query) error {
 
 // PopulateOrderItems populates the existing order items slice
 func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
-	ids := make([]string, len(*pos))
-	for i := range *pos {
-		ids[i] = (*pos)[i].ID.String()
-	}
+	ids := toIDList(pos)
 
 	if err := populateOrderItemsCache(tx, ids); err != nil {
 		return err
@@ -145,10 +138,7 @@ func LoadVendors(vendList *Vendors, q *pop.Query) error {
 }
 
 func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
-	ids := make([]string, len(*vendors))
-	for i := range *vendors {
-		ids[i] = (*vendors)[i].ID.String()
-	}
+	ids := toIDList(vendors)
 
 	if err := populateVendorItemsCache(tx, ids); err != nil {
 		return err
@@ -188,26 +178,25 @@ func LoadInventories(invList *Inventories, q *pop.Query) error {
 }
 
 func PopulateCountInvItems(inventories *Inventories, tx *pop.Connection) error {
-	ids := make([]string, len(*inventories))
-	for i := range *inventories {
-		ids[i] = (*inventories)[i].ID.String()
+	ids := toIDList(inventories)
+
+	if err := populateCountInvItemsCache(tx, ids); err != nil {
+		return err
+	}
+	if _countInvItemsCache == nil {
+		return nil
 	}
 
-	// if err := populateCountInvItemsCache(tx, ids); err != nil {
-	// 	return err
-	// }
-	// if _countInvItemsCache == nil {
-	// 	return nil
-	// }
-
-	// for _, inventory := range *inventories {
-	// 	for i := 0; i < len(inventory.Items); i++ {
-	// 		if err := getCountInvItem(&inventory.Items[i]); err != nil {
-	// 			return err
-	// 		}
-	// 	}
-	// 	inventory.Items.Sort()
-	// }
+	for _, inv := range *inventories {
+		for i := 0; i < len(inv.Items); i++ {
+			cacheItem, err := getCacheItem(&inv.Items[i], inv.Items[i].ID)
+			if err != nil {
+				return err
+			}
+			inv.Items[i] = *cacheItem.(*CountInventoryItem)
+		}
+		inv.Items.Sort()
+	}
 
 	return nil
 }
@@ -269,12 +258,12 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 	if err != nil {
 		return err
 	}
-	if item.InventoryItemID.Valid {
-		// err = tx.Eager().Find(&item.InventoryItem, item.InventoryItemID.UUID)
-		err = getInventoryItem(&item.InventoryItem, item.InventoryItemID.UUID)
-	} else if item.BatchRecipeID.Valid {
-		err = tx.Eager().Find(&item.BatchRecipe, item.BatchRecipeID.UUID)
-	}
+	// if item.InventoryItemID.Valid {
+	// 	// err = tx.Eager().Find(&item.InventoryItem, item.InventoryItemID.UUID)
+	// 	err = getInventoryItem(&item.InventoryItem, item.InventoryItemID.UUID)
+	// } else if item.BatchRecipeID.Valid {
+	// 	err = tx.Eager().Find(&item.BatchRecipe, item.BatchRecipeID.UUID)
+	// }
 
 	return err
 }

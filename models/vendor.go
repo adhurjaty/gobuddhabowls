@@ -78,8 +78,8 @@ func (v *Vendor) GetID() uuid.UUID {
 
 func (v *Vendors) ToModels() *[]Model {
 	models := make([]Model, len(*v))
-	for idx, item := range *v {
-		models[idx] = &item
+	for idx := range *v {
+		models[idx] = &(*v)[idx]
 	}
 
 	return &models

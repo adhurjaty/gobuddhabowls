@@ -59,8 +59,8 @@ func (i *Inventory) GetID() uuid.UUID {
 
 func (i *Inventories) ToModels() *[]Model {
 	models := make([]Model, len(*i))
-	for idx, item := range *i {
-		models[idx] = &item
+	for idx := range *i {
+		models[idx] = &(*i)[idx]
 	}
 
 	return &models
