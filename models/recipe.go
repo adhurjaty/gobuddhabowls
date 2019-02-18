@@ -108,6 +108,10 @@ func (r *Recipe) GetItems() CompoundItems {
 	return &r.Items
 }
 
+func (r *Recipe) SetItems(items CompoundItems) {
+	r.Items = *items.(*RecipeItems)
+}
+
 func (r Recipe) GetSortValue() int {
 	return r.Category.Index*1000 + r.Index
 }

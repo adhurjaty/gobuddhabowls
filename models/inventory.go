@@ -61,6 +61,10 @@ func (i *Inventory) GetItems() CompoundItems {
 	return &i.Items
 }
 
+func (i *Inventory) SetItems(items CompoundItems) {
+	i.Items = *items.(*CountInventoryItems)
+}
+
 func (i *Inventories) ToModels() *[]Model {
 	models := make([]Model, len(*i))
 	for idx := range *i {

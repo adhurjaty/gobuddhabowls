@@ -147,18 +147,20 @@ func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
 		return nil
 	}
 
-	for _, vendor := range *vendors {
-		for i := 0; i < len(vendor.Items); i++ {
-			cacheItem, err := getCacheItem(&vendor.Items[i], vendor.Items[i].ID)
-			if err != nil {
-				return err
-			}
-			vendor.Items[i] = *cacheItem.(*VendorItem)
-		}
-		vendor.Items.Sort()
-	}
+	return setModelItemsFromCache(vendors)
 
-	return nil
+	// for _, vendor := range *vendors {
+	// 	for i := 0; i < len(vendor.Items); i++ {
+	// 		cacheItem, err := getCacheItem(&vendor.Items[i], vendor.Items[i].ID)
+	// 		if err != nil {
+	// 			return err
+	// 		}
+	// 		vendor.Items[i] = *cacheItem.(*VendorItem)
+	// 	}
+	// 	vendor.Items.Sort()
+	// }
+
+	// return nil
 }
 
 func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
@@ -266,4 +268,23 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 	// }
 
 	return err
+}
+
+func setModelItemsFromCache(models CompoundModels) error {
+	modelList := models.ToCompoundModels()
+	for _, m := range *modelList {
+		items := m.GetItems().ToCompoundItems()
+		for i := 0; i < len(*items); i++ {
+			genItem := (*items)[i].(GenericItem)
+			cacheItem, err := getCacheItem(genItem, (*items)[i].GetID())
+			if err != nil {
+				return err
+			}
+			(*items)[i] = cacheItem.(CompoundItem)
+		}
+		m.SetItems(items)
+		m.GetItems().Sort()
+	}
+
+	return nil
 }

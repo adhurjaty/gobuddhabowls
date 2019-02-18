@@ -103,6 +103,10 @@ func (p *PurchaseOrder) GetItems() CompoundItems {
 	return &p.Items
 }
 
+func (p *PurchaseOrder) SetItems(items CompoundItems) {
+	p.Items = *items.(*OrderItems)
+}
+
 func (p *PurchaseOrders) ToModels() *[]Model {
 	models := make([]Model, len(*p))
 	for idx := range *p {

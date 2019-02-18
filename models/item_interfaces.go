@@ -34,11 +34,13 @@ type CompoundItem interface {
 
 type CompoundItems interface {
 	ToCompoundItems() *[]CompoundItem
+	Sort()
 }
 
 type CompoundModel interface {
 	Model
 	GetItems() CompoundItems
+	SetItems(CompoundItems)
 }
 
 type CompoundModels interface {
