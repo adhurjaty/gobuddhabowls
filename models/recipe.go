@@ -134,6 +134,15 @@ func (r *Recipes) ToGenericItems() *[]GenericItem {
 	return &items
 }
 
+func (r *Recipes) ToModels() *[]Model {
+	models := make([]Model, len(*r))
+	for idx := range *r {
+		models[idx] = &(*r)[idx]
+	}
+
+	return &models
+}
+
 func (r *Recipes) ToCompoundModels() *[]CompoundModel {
 	models := make([]CompoundModel, len(*r))
 	for idx := range *r {

@@ -11,12 +11,14 @@ var _invItemCache *InventoryItems
 var _orderItemsCache *OrderItems
 var _vendorItemsCache *VendorItems
 var _countInvItemsCache *CountInventoryItems
+var _recipeItemsCache *RecipeItems
 
 func resetCache() {
 	_invItemCache = nil
 	_orderItemsCache = nil
 	_vendorItemsCache = nil
 	_countInvItemsCache = nil
+	_recipeItemsCache = nil
 }
 
 func populateInvItemCache(tx *pop.Connection) error {
@@ -52,6 +54,11 @@ func populateCountInvItemsCache(tx *pop.Connection, ids []string) error {
 	return initCache(&CountInventoryItems{}, tx, ids)
 }
 
+func populateRecipeItemsCache(tx *pop.Connection, ids []string) error {
+
+	return nil
+}
+
 func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 	var cache CompoundItems
 	var idCol string
@@ -69,6 +76,10 @@ func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 		_countInvItemsCache = initVal.(*CountInventoryItems)
 		cache = _countInvItemsCache
 		idCol = "inventory_id"
+	case *RecipeItems:
+		_recipeItemsCache = initVal.(*RecipeItems)
+		cache = _recipeItemsCache
+		idCol = "recipe_id"
 	default:
 		return errors.New("unimplemented type")
 	}
@@ -110,6 +121,8 @@ func getCacheItem(itemProp GenericItem, id uuid.UUID) (GenericItem, error) {
 		cache = _vendorItemsCache
 	case *CountInventoryItem:
 		cache = _countInvItemsCache
+	case *RecipeItem:
+		cache = _recipeItemsCache
 	default:
 		return nil, errors.New("unimplemented type")
 	}
