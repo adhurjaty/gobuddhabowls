@@ -223,22 +223,3 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 
 	return err
 }
-
-func setModelItemsFromCache(models CompoundModels) error {
-	modelList := models.ToCompoundModels()
-	for _, m := range *modelList {
-		items := m.GetItems().ToCompoundItems()
-		for i := 0; i < len(*items); i++ {
-			genItem := (*items)[i].(GenericItem)
-			cacheItem, err := getCacheItem(genItem, (*items)[i].GetID())
-			if err != nil {
-				return err
-			}
-			(*items)[i] = cacheItem.(CompoundItem)
-		}
-		m.SetItems(items)
-		m.GetItems().Sort()
-	}
-
-	return nil
-}
