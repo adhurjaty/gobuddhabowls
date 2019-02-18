@@ -108,8 +108,11 @@ func (r *Recipe) GetItems() CompoundItems {
 	return &r.Items
 }
 
-func (r *Recipe) SetItems(items CompoundItems) {
-	r.Items = *items.(*RecipeItems)
+func (r *Recipe) SetItems(items *[]CompoundItem) {
+	r.Items = RecipeItems{}
+	for _, item := range *items {
+		r.Items = append(r.Items, *item.(*RecipeItem))
+	}
 }
 
 func (r Recipe) GetSortValue() int {

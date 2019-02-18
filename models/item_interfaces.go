@@ -40,7 +40,7 @@ type CompoundItems interface {
 type CompoundModel interface {
 	Model
 	GetItems() CompoundItems
-	SetItems(CompoundItems)
+	SetItems(*[]CompoundItem)
 }
 
 type CompoundModels interface {

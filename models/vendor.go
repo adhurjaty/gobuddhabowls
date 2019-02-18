@@ -80,8 +80,11 @@ func (v *Vendor) GetItems() CompoundItems {
 	return &v.Items
 }
 
-func (v *Vendor) SetItems(items CompoundItems) {
-	v.Items = *items.(*VendorItems)
+func (v *Vendor) SetItems(items *[]CompoundItem) {
+	v.Items = VendorItems{}
+	for _, item := range *items {
+		v.Items = append(v.Items, *item.(*VendorItem))
+	}
 }
 
 func (v *Vendors) ToModels() *[]Model {
