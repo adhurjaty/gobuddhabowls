@@ -104,6 +104,10 @@ func (r *Recipe) GetIndex() int {
 	return r.Index
 }
 
+func (r *Recipe) GetItems() CompoundItems {
+	return &r.Items
+}
+
 func (r Recipe) GetSortValue() int {
 	return r.Category.Index*1000 + r.Index
 }
@@ -121,4 +125,13 @@ func (r *Recipes) ToGenericItems() *[]GenericItem {
 	}
 
 	return &items
+}
+
+func (r *Recipes) ToCompoundModels() *[]CompoundModel {
+	models := make([]CompoundModel, len(*r))
+	for idx := range *r {
+		models[idx] = &(*r)[idx]
+	}
+
+	return &models
 }

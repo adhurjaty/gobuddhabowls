@@ -57,8 +57,21 @@ func (i *Inventory) GetID() uuid.UUID {
 	return i.ID
 }
 
+func (i *Inventory) GetItems() CompoundItems {
+	return &i.Items
+}
+
 func (i *Inventories) ToModels() *[]Model {
 	models := make([]Model, len(*i))
+	for idx := range *i {
+		models[idx] = &(*i)[idx]
+	}
+
+	return &models
+}
+
+func (i *Inventories) ToCompoundModels() *[]CompoundModel {
+	models := make([]CompoundModel, len(*i))
 	for idx := range *i {
 		models[idx] = &(*i)[idx]
 	}

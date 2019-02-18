@@ -35,3 +35,12 @@ type CompoundItem interface {
 type CompoundItems interface {
 	ToCompoundItems() *[]CompoundItem
 }
+
+type CompoundModel interface {
+	Model
+	GetItems() CompoundItems
+}
+
+type CompoundModels interface {
+	ToCompoundModels() *[]CompoundModel
+}
