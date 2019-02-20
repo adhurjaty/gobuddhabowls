@@ -7,19 +7,8 @@ import (
 	"github.com/gobuffalo/uuid"
 )
 
-type recipeBaseItems []GenericItem
-
-func (r *recipeBaseItems) ToGenericItems() *[]GenericItem {
-	model := make([]GenericItem, len(*r))
-	for idx, item := range *r {
-		model[idx] = item
-	}
-
-	return &model
-}
-
 var _invItemCache *InventoryItems
-var _recipeBaseItemCache *recipeBaseItems
+var _recipesCache *Recipes
 var _orderItemsCache *OrderItems
 var _vendorItemsCache *VendorItems
 var _countInvItemsCache *CountInventoryItems
@@ -27,11 +16,11 @@ var _recipeItemsCache *RecipeItems
 
 func resetCache() {
 	_invItemCache = nil
+	_recipesCache = nil
 	_orderItemsCache = nil
 	_vendorItemsCache = nil
 	_countInvItemsCache = nil
 	_recipeItemsCache = nil
-	_recipeBaseItemCache = nil
 }
 
 func populateInvItemCache(tx *pop.Connection) error {
@@ -73,50 +62,61 @@ func populateCountInvItemsCache(tx *pop.Connection, ids []string) error {
 	return initCache(&CountInventoryItems{}, tx, ids)
 }
 
-func populateRecipeBaseItemsCache(tx *pop.Connection) error {
-	_recipeBaseItemCache = &recipeBaseItems{}
-	*_recipeBaseItemCache = append(*_recipeBaseItemCache,
-		*_invItemCache.ToGenericItems()...)
-
-	batchRecipes, err := getFullBatchRecipes(tx)
-	if err != nil {
-		return err
-	}
-
-	*_recipeBaseItemCache = append(*_recipeBaseItemCache,
-		*batchRecipes.ToGenericItems()...)
-
-	return nil
-}
-
 func populateRecipeItemsCache(tx *pop.Connection, ids []string) error {
-	if len(ids) == 0 {
+	if _recipeItemsCache != nil || len(ids) == 0 {
 		return nil
 	}
 
-	if _recipeItemsCache == nil {
-		_recipeItemsCache = &RecipeItems{}
-	}
-
-	return initCache(_recipeItemsCache, tx, ids)
+	return initCache(&RecipeItems{}, tx, ids)
 }
 
-func getFullBatchRecipes(tx *pop.Connection) (*Recipes, error) {
-	batchRecipes := &Recipes{}
-	if err := tx.Eager().Where("is_batch = true").All(batchRecipes); err != nil {
-		return nil, err
-	}
-
-	ids := toIDList(batchRecipes)
+func populateRecipesCache(tx *pop.Connection, ids []string) error {
+	_recipesCache = &Recipes{}
 	_recipeItemsCache = &RecipeItems{}
-	if err := tx.Eager().Where("recipe_id IN (?)", toIntefaceList(ids)...).
-		All(_recipeItemsCache); err != nil {
-		return nil, err
+
+	prevLen := -1
+
+	for true {
+		if prevLen == len(ids) {
+		}
+		prevLen = len(ids)
+
+		addRecItems := &RecipeItems{}
+		if err := tx.Eager().Where("recipe_id IN (?)", toIntefaceList(ids)...).
+			All(addRecItems); err != nil {
+			return err
+		}
+
+		ids = []string{}
+
+		cacheItems := addRecItems.ToCompoundItems()
+		for i := range *cacheItems {
+			item := (*cacheItems)[i]
+			baseItem, err := getCacheItem(item.GetBaseItem(), item.GetBaseItemID())
+			if err != nil {
+				ids = append(ids, item.GetBaseItemID().String())
+			}
+			item.SetBaseItem(baseItem)
+		}
+		*_recipeItemsCache = append(*_recipeItemsCache, (*addRecItems)...)
+
+		if len(ids) == 0 {
+			break
+		}
+		if len(ids) == prevLen {
+			return errors.New(fmt.Sprintf("could not find recipe IDs: %v", ids))
+		}
+
+		additionalRecipes := &Recipes{}
+		if err := tx.Eager().Where("id IN (?)", toIntefaceList(ids)...).
+			All(additionalRecipes); err != nil {
+			return err
+		}
+
+		*_recipesCache = append(*_recipesCache, (*additionalRecipes)...)
 	}
 
-	err := setModelItemsFromCache(batchRecipes)
-
-	return batchRecipes, err
+	return nil
 }
 
 func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
@@ -141,12 +141,7 @@ func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 		cache = _countInvItemsCache
 		idCol = "inventory_id"
 	case *RecipeItems:
-		_recipeItemsCache = initVal.(*RecipeItems)
-		cache = _recipeItemsCache
-		idCol = "recipe_id"
-		if err := populateRecipeBaseItemsCache(tx); err != nil {
-			return err
-		}
+		return populateRecipesCache(tx, ids)
 	default:
 		return errors.New("unimplemented type")
 	}
@@ -160,34 +155,15 @@ func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 	return populateBaseItems(cache)
 }
 
-func setModelItemsFromCache(models CompoundModels) error {
-	modelList := models.ToCompoundModels()
-	for _, m := range *modelList {
-		items := m.GetItems().ToCompoundItems()
-		for i := 0; i < len(*items); i++ {
-			genItem := (*items)[i].(GenericItem)
-			cacheItem, err := getCacheItem(genItem, (*items)[i].GetID())
-			if err != nil {
-				return err
-			}
-			(*items)[i] = cacheItem.(CompoundItem)
-		}
-		m.SetItems(items)
-		m.GetItems().Sort()
-	}
-
-	return nil
-}
-
 func populateBaseItems(cache CompoundItems) error {
 	cacheItems := cache.ToCompoundItems()
 	for i := range *cacheItems {
 		item := (*cacheItems)[i]
-		invItem, err := getCacheItem(item.GetBaseItem(), item.GetBaseItemID())
+		baseItem, err := getCacheItem(item.GetBaseItem(), item.GetBaseItemID())
 		if err != nil {
 			return err
 		}
-		item.SetBaseItem(invItem)
+		item.SetBaseItem(baseItem)
 	}
 
 	return nil
@@ -212,6 +188,8 @@ func getCacheFromType(itemProp GenericItem) (GenericItems, error) {
 	switch itemProp.(type) {
 	case *InventoryItem:
 		return _invItemCache, nil
+	case *Recipe:
+		return _recipesCache, nil
 	case *OrderItem:
 		return _orderItemsCache, nil
 	case *VendorItem:
@@ -242,4 +220,23 @@ func toIntefaceList(lst []string) []interface{} {
 	}
 
 	return out
+}
+
+func setModelItemsFromCache(models CompoundModels) error {
+	modelList := models.ToCompoundModels()
+	for _, m := range *modelList {
+		items := m.GetItems().ToCompoundItems()
+		for i := 0; i < len(*items); i++ {
+			genItem := (*items)[i].(GenericItem)
+			cacheItem, err := getCacheItem(genItem, (*items)[i].GetID())
+			if err != nil {
+				return err
+			}
+			(*items)[i] = cacheItem.(CompoundItem)
+		}
+		m.SetItems(items)
+		m.GetItems().Sort()
+	}
+
+	return nil
 }
