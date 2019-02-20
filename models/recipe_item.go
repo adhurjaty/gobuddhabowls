@@ -44,7 +44,18 @@ func (r RecipeItems) String() string {
 // This method is not required and may be deleted.
 func (r *RecipeItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
-		&validators.StringIsPresent{Field: r.Measure, Name: "Measure"},
+		&validators.StringIsPresent{
+			Field: r.Measure, 
+			Name: "Measure",
+		},
+		&validators.FuncValidator{
+			Field: r.BatchRecipeID.String(),
+			Name: "BatchRecipeID",
+			Message: "Recipe cannot contain itself... moron",
+			Fn: func() bool {
+				return r.ID != r.BatchRecipeID
+			},
+		}
 	), nil
 }
 
