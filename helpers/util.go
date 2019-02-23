@@ -2,6 +2,7 @@ package helpers
 
 import (
 	"fmt"
+	"github.com/gobuffalo/uuid"
 	"time"
 )
 
@@ -31,4 +32,8 @@ func Today() time.Time {
 	nowTime := time.Now()
 	return time.Date(nowTime.Year(), nowTime.Month(), nowTime.Day(),
 		0, 0, 0, 0, nowTime.Location())
+}
+
+func IsBlankUUID(id uuid.UUID) bool {
+	return id.String() == uuid.UUID{}.String()
 }

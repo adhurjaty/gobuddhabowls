@@ -1,6 +1,7 @@
 package models
 
 import (
+	"buddhabowls/helpers"
 	"errors"
 	"fmt"
 	"github.com/gobuffalo/pop"
@@ -93,10 +94,11 @@ func populateRecipesCache(tx *pop.Connection, ids []string) error {
 		for i := range *cacheItems {
 			item := (*cacheItems)[i]
 			baseItem, err := getCacheItem(item.GetBaseItem(), item.GetBaseItemID())
-			if err != nil {
+			if err == nil {
+				item.SetBaseItem(baseItem)
+			} else if !helpers.IsBlankUUID(item.GetBaseItemID()) {
 				ids = append(ids, item.GetBaseItemID().String())
 			}
-			item.SetBaseItem(baseItem)
 		}
 		*_recipeItemsCache = append(*_recipeItemsCache, (*addRecItems)...)
 

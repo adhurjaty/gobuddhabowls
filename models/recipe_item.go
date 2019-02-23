@@ -45,17 +45,20 @@ func (r RecipeItems) String() string {
 func (r *RecipeItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
 		&validators.StringIsPresent{
-			Field: r.Measure, 
-			Name: "Measure",
+			Field: r.Measure,
+			Name:  "Measure",
 		},
 		&validators.FuncValidator{
-			Field: r.BatchRecipeID.String(),
-			Name: "BatchRecipeID",
+			Field:   "BatchRecipeID",
+			Name:    "BatchRecipeID",
 			Message: "Recipe cannot contain itself... moron",
 			Fn: func() bool {
-				return r.ID != r.BatchRecipeID
+				if !r.BatchRecipeID.Valid {
+					return true
+				}
+				return r.ID.String() != r.BatchRecipeID.UUID.String()
 			},
-		}
+		},
 	), nil
 }
 
