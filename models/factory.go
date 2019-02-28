@@ -75,7 +75,12 @@ func LoadPurchaseOrder(po *PurchaseOrder, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	return PopulateOrderItems(&PurchaseOrders{*po}, tx)
+	pos := &PurchaseOrders{*po}
+	if err := PopulateOrderItems(pos, tx); err != nil {
+		return err
+	}
+	*po = (*pos)[0]
+	return nil
 }
 
 // LoadPurchaseOrders gets the purchase orders with the specified query
@@ -112,7 +117,12 @@ func LoadVendor(vendor *Vendor, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	return PopulateVendorItems(&Vendors{*vendor}, tx)
+	vendorSlice := &Vendors{*vendor}
+	if err := PopulateVendorItems(vendorSlice, tx); err != nil {
+		return err
+	}
+	*vendor = (*vendorSlice)[0]
+	return nil
 }
 
 // LoadVendors loads vendors and sub-models
@@ -142,7 +152,12 @@ func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	return PopulateCountInvItems(&Inventories{*inventory}, tx)
+	invs := &Inventories{*inventory}
+	if err := PopulateCountInvItems(invs, tx); err != nil {
+		return err
+	}
+	*inventory = (*invs)[0]
+	return nil
 }
 
 func LoadInventories(invList *Inventories, q *pop.Query) error {
@@ -185,7 +200,12 @@ func LoadRecipe(recipe *Recipe, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	return PopulateRecipeItems(&Recipes{*recipe}, tx)
+	recs := &Recipes{*recipe}
+	if err := PopulateRecipeItems(recs, tx); err != nil {
+		return err
+	}
+	*recipe = (*recs)[0]
+	return nil
 }
 
 func LoadRecipes(recipes *Recipes, q *pop.Query) error {

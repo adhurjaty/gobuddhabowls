@@ -106,7 +106,7 @@ func populateRecipesCache(tx *pop.Connection, ids []string) error {
 			break
 		}
 		if len(ids) == prevLen {
-			return errors.New(fmt.Sprintf("could not find recipe IDs: %v", ids))
+			return fmt.Errorf("could not find recipe IDs: %v", ids)
 		}
 
 		additionalRecipes := &Recipes{}
@@ -154,7 +154,9 @@ func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 		return err
 	}
 
-	return populateBaseItems(cache)
+	err := populateBaseItems(cache)
+
+	return err
 }
 
 func populateBaseItems(cache CompoundItems) error {
