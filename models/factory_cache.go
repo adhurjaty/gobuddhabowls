@@ -8,6 +8,7 @@ import (
 	"github.com/gobuffalo/uuid"
 )
 
+var _categoriesCache *ItemCategories
 var _invItemCache *InventoryItems
 var _recipesCache *Recipes
 var _orderItemsCache *OrderItems
@@ -16,6 +17,7 @@ var _countInvItemsCache *CountInventoryItems
 var _recipeItemsCache *RecipeItems
 
 func resetCache() {
+	_categoriesCache = nil
 	_invItemCache = nil
 	_recipesCache = nil
 	_orderItemsCache = nil
@@ -29,9 +31,32 @@ func populateInvItemCache(tx *pop.Connection) error {
 		return nil
 	}
 
+	_categoriesCache = &ItemCategories{}
+	if err := tx.All(_categoriesCache); err != nil {
+		return err
+	}
+
 	_invItemCache = &InventoryItems{}
 	if err := tx.All(_invItemCache); err != nil {
 		return err
+	}
+
+	getCategory := func(id uuid.UUID) (*ItemCategory, error) {
+		for i, category := range *_categoriesCache {
+			if id.String() == category.ID.String() {
+				return &(*_categoriesCache)[i], nil
+			}
+		}
+
+		return nil, errors.New("no matching category ID")
+	}
+
+	for i, item := range *_invItemCache {
+		category, err := getCategory(item.CategoryID)
+		if err != nil {
+			return err
+		}
+		(*_invItemCache)[i].Category = *category
 	}
 
 	_invItemCache.Sort()
