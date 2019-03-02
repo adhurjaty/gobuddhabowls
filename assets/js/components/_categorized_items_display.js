@@ -152,7 +152,7 @@ export class CategorizedItemsDisplay {
 
     insertModal() {
         var remainingItems = this.getRemainingItems();
-        this.modal = new Modal(remainingItems, this.addItem);
+        this.modal = new Modal(remainingItems, this.addItem, 'inventory_item_id');
         var modalContainer = $(`<div name="modal"></div>`);
         modalContainer.html(this.modal.$content);
         this.$container.append(modalContainer);
