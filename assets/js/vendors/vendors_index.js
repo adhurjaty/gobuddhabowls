@@ -2,6 +2,29 @@ import { formatMoney, replaceUrlId, parseModelJSON } from '../helpers/_helpers';
 import { DataGrid } from '../datagrid/_datagrid';
 import { sendUpdate, sendAjax } from '../helpers/index_helpers';
 import { CollapsibleDatagrid } from '../datagrid/_collapsible_datagrid';
+import { CategorizedDatagrid } from '../datagrid/_categorized_datagrid';
+
+var _subColumnInfo = [
+    {
+        name: 'id',
+        hidden: true,
+        get_column: (item) => {
+            return item.id;
+        }
+    },
+    {
+        header: 'Name',
+        get_column: (item) => {
+            return item.name;
+        }
+    },
+    {
+        header: 'Cost',
+        get_column: (item) => {
+            return formatMoney(item.price);
+        }
+    }
+];
 
 $(() => {
     var $container = $('#datagrid-holder');
@@ -88,7 +111,7 @@ $(() => {
     var dataStr = $container.attr('data');
     var data = parseModelJSON(dataStr) || [];
 
-    var datagrid = new CollapsibleDatagrid(data, columnObjects, getHiddenRow, sendDatagridUpdate);
+    var datagrid = new CollapsibleDatagrid(data, columnObjects, getHiddenRow,       sendDatagridUpdate);
     $container.html(datagrid.getTable());
 });
 
@@ -103,16 +126,9 @@ function sendDatagridUpdate(updateObj) {
 }
 
 function getHiddenRow(vendor) {
-    return `<tr class="items-list">
-            <td colspan="100">
-                <table>
-                    ${vendor.Items.map((item) => {
-                        return `<tr>
-                            <td>${item.name}</td>
-                            <td>${formatMoney(item.price)}</td>
-                        </tr>`
-                    }).join('\n')}
-                </table>
-            </td>
-        </tr>`
+    var dg = new CategorizedDatagrid(vendor.Items, 
+        _subColumnInfo);
+    var row = $('<tr><td colspan="100"><div></div></td></tr>');
+    row.find('div').append(dg.$table);
+    return row;
 }
