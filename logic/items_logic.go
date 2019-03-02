@@ -7,11 +7,11 @@ import (
 )
 
 func GetInventoryItems(tx *pop.Connection) (*models.InventoryItems, error) {
-	return getInventoryItemsHelper(tx.Eager().Q())
+	return getInventoryItemsHelper(tx.Q())
 }
 
 func GetInventoryItemsOfCategory(id string, catID string, tx *pop.Connection) (*models.InventoryItems, error) {
-	query := tx.Eager().Where("category_id = ?", catID).
+	query := tx.Where("category_id = ?", catID).
 		Where("id != ?", id)
 	return getInventoryItemsHelper(query)
 }

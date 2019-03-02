@@ -190,6 +190,12 @@ func LoadInventoryItems(itemList *InventoryItems, q *pop.Query) error {
 		return err
 	}
 
+	for i := range *itemList {
+		if err := populateCategories(&(*itemList)[i], q.Connection); err != nil {
+			return err
+		}
+	}
+
 	itemList.Sort()
 
 	return nil

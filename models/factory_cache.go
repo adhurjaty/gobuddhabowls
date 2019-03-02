@@ -26,14 +26,27 @@ func resetCache() {
 	_recipeItemsCache = nil
 }
 
+func populateCategories(item *InventoryItem, tx *pop.Connection) error {
+	if _categoriesCache == nil {
+		_categoriesCache = &ItemCategories{}
+		if err := tx.All(_categoriesCache); err != nil {
+			return err
+		}
+	}
+
+	for i, category := range *_categoriesCache {
+		if item.CategoryID.String() == category.ID.String() {
+			item.Category = (*_categoriesCache)[i]
+			return nil
+		}
+	}
+
+	return errors.New("no matching category ID")
+}
+
 func populateInvItemCache(tx *pop.Connection) error {
 	if _invItemCache != nil {
 		return nil
-	}
-
-	_categoriesCache = &ItemCategories{}
-	if err := tx.All(_categoriesCache); err != nil {
-		return err
 	}
 
 	_invItemCache = &InventoryItems{}
@@ -41,22 +54,10 @@ func populateInvItemCache(tx *pop.Connection) error {
 		return err
 	}
 
-	getCategory := func(id uuid.UUID) (*ItemCategory, error) {
-		for i, category := range *_categoriesCache {
-			if id.String() == category.ID.String() {
-				return &(*_categoriesCache)[i], nil
-			}
-		}
-
-		return nil, errors.New("no matching category ID")
-	}
-
-	for i, item := range *_invItemCache {
-		category, err := getCategory(item.CategoryID)
-		if err != nil {
+	for i := range *_invItemCache {
+		if err := populateCategories(&(*_invItemCache)[i], tx); err != nil {
 			return err
 		}
-		(*_invItemCache)[i].Category = *category
 	}
 
 	_invItemCache.Sort()
