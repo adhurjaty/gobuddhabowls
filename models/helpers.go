@@ -25,22 +25,6 @@ func CombineCategoryMaps(m1 map[ItemCategory]float64, m2 map[ItemCategory]float6
 	return m1
 }
 
-// GetCategoryGroups sections items by category and returns a category-indexed map
-func GetCategoryGroups(items GenericItems) map[ItemCategory]GenericItems {
-	outMap := make(map[ItemCategory]GenericItems)
-
-	for _, item := range items {
-		itemList, ok := outMap[item.GetCategory()]
-		if ok {
-			outMap[item.GetCategory()] = append(itemList, item)
-		} else {
-			outMap[item.GetCategory()] = GenericItems{item}
-		}
-
-	}
-	return outMap
-}
-
 // GetYears gets the years for which there is company data
 func GetYears(tx *pop.Connection) ([]int, error) {
 	yearResult := make([]int, 50)

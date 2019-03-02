@@ -4,7 +4,6 @@ import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"fmt"
-	"sort"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -261,9 +260,9 @@ func (v VendorsResource) Destroy(c buffalo.Context) error {
 
 func setVendorFormVars(c buffalo.Context, presenter *presentation.Presenter, vendor *presentation.VendorAPI) error {
 	inventoryItems, err := presenter.GetInventoryItems()
-	sort.Slice(*inventoryItems, func(i, j int) bool {
-		return (*inventoryItems)[i].Name < (*inventoryItems)[j].Name
-	})
+	// sort.Slice(*inventoryItems, func(i, j int) bool {
+	// 	return (*inventoryItems)[i].Name < (*inventoryItems)[j].Name
+	// })
 	if err != nil {
 		return errors.WithStack(err)
 	}

@@ -71,3 +71,36 @@ func (v *Vendor) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) {
 func (v *Vendor) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
 }
+
+func (v *Vendor) GetID() uuid.UUID {
+	return v.ID
+}
+
+func (v *Vendor) GetItems() CompoundItems {
+	return &v.Items
+}
+
+func (v *Vendor) SetItems(items *[]CompoundItem) {
+	v.Items = VendorItems{}
+	for _, item := range *items {
+		v.Items = append(v.Items, *item.(*VendorItem))
+	}
+}
+
+func (v *Vendors) ToModels() *[]Model {
+	models := make([]Model, len(*v))
+	for idx := range *v {
+		models[idx] = &(*v)[idx]
+	}
+
+	return &models
+}
+
+func (v *Vendors) ToCompoundModels() *[]CompoundModel {
+	models := make([]CompoundModel, len(*v))
+	for idx := range *v {
+		models[idx] = &(*v)[idx]
+	}
+
+	return &models
+}

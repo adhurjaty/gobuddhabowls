@@ -51,7 +51,6 @@ var _columnInfo = [
 ];
 
 function setupTable() {
-    debugger;
     var allItemsText = $('#all-inv-items').attr('data');
     if(allItemsText) {
         var allItems = JSON.parse(allItemsText);

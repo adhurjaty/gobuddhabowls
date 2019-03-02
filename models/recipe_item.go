@@ -44,7 +44,21 @@ func (r RecipeItems) String() string {
 // This method is not required and may be deleted.
 func (r *RecipeItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.Validate(
-		&validators.StringIsPresent{Field: r.Measure, Name: "Measure"},
+		&validators.StringIsPresent{
+			Field: r.Measure,
+			Name:  "Measure",
+		},
+		&validators.FuncValidator{
+			Field:   "BatchRecipeID",
+			Name:    "BatchRecipeID",
+			Message: "Recipe cannot contain itself... moron",
+			Fn: func() bool {
+				if !r.BatchRecipeID.Valid {
+					return true
+				}
+				return r.ID.String() != r.BatchRecipeID.UUID.String()
+			},
+		},
 	), nil
 }
 
@@ -60,39 +74,49 @@ func (r *RecipeItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error
 	return validate.NewErrors(), nil
 }
 
-func (r RecipeItem) getBaseItem() GenericItem {
+func (r *RecipeItem) GetBaseItem() GenericItem {
 	if r.InventoryItemID.Valid {
-		return r.InventoryItem
+		return &r.InventoryItem
 	}
 
-	return r.BatchRecipe
+	return &r.BatchRecipe
 }
 
-func (r RecipeItem) GetID() uuid.UUID {
+func (r *RecipeItem) SetBaseItem(item GenericItem) {
+	switch item.(type) {
+	case *InventoryItem:
+		r.InventoryItem = *item.(*InventoryItem)
+	case *Recipe:
+		r.BatchRecipe = *item.(*Recipe)
+	}
+}
+
+func (r *RecipeItem) GetID() uuid.UUID {
 	return r.ID
 }
-func (r RecipeItem) GetInventoryItemID() uuid.UUID {
-	return r.getBaseItem().GetID()
+func (r *RecipeItem) GetBaseItemID() uuid.UUID {
+	return r.GetBaseItem().GetID()
 }
-func (r RecipeItem) GetName() string {
-	return r.getBaseItem().GetName()
+
+func (r *RecipeItem) GetName() string {
+	return r.GetBaseItem().GetName()
 }
-func (r RecipeItem) GetCategory() ItemCategory {
-	return r.getBaseItem().GetCategory()
+func (r *RecipeItem) GetCategory() ItemCategory {
+	return r.GetBaseItem().GetCategory()
 }
-func (r RecipeItem) GetCountUnit() string {
-	return r.getBaseItem().GetCountUnit()
+func (r *RecipeItem) GetCountUnit() string {
+	return r.GetBaseItem().GetCountUnit()
 }
-func (r RecipeItem) GetIndex() int {
-	return r.getBaseItem().GetIndex()
+func (r *RecipeItem) GetIndex() int {
+	return r.GetBaseItem().GetIndex()
 }
-func (r RecipeItem) GetRecipeUnit() string {
+func (r *RecipeItem) GetRecipeUnit() string {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.RecipeUnit
 	}
 	return r.BatchRecipe.RecipeUnit
 }
-func (r RecipeItem) GetRecipeUnitConversion() float64 {
+func (r *RecipeItem) GetRecipeUnitConversion() float64 {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.RecipeUnitConversion
 	}
@@ -103,8 +127,8 @@ func (r RecipeItem) GetSortValue() int {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.GetSortValue()
 	}
-	// HACK: bit of a hack - want recipes to always be after inv items
-	return r.BatchRecipe.GetSortValue() + 100000
+
+	return r.BatchRecipe.GetSortValue()
 }
 
 // Sort sorts the items based on category then inventory item indices
@@ -112,4 +136,22 @@ func (r *RecipeItems) Sort() {
 	sort.Slice(*r, func(i, j int) bool {
 		return (*r)[i].GetSortValue() < (*r)[j].GetSortValue()
 	})
+}
+
+func (r *RecipeItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*r))
+	for i := 0; i < len(*r); i++ {
+		items[i] = &(*r)[i]
+	}
+
+	return &items
+}
+
+func (r *RecipeItems) ToCompoundItems() *[]CompoundItem {
+	items := make([]CompoundItem, len(*r))
+	for i := 0; i < len(*r); i++ {
+		items[i] = &(*r)[i]
+	}
+
+	return &items
 }

@@ -110,27 +110,23 @@ func (i *InventoryItem) validateUniqueName(query *pop.Query) (*validate.Errors, 
 	return verrs, nil
 }
 
-func (i InventoryItem) GetID() uuid.UUID {
+func (i *InventoryItem) GetID() uuid.UUID {
 	return i.ID
 }
 
-func (i InventoryItem) GetInventoryItemID() uuid.UUID {
-	return i.ID
-}
-
-func (i InventoryItem) GetName() string {
+func (i *InventoryItem) GetName() string {
 	return i.Name
 }
 
-func (i InventoryItem) GetCategory() ItemCategory {
+func (i *InventoryItem) GetCategory() ItemCategory {
 	return i.Category
 }
 
-func (i InventoryItem) GetCountUnit() string {
+func (i *InventoryItem) GetCountUnit() string {
 	return i.CountUnit
 }
 
-func (i InventoryItem) GetIndex() int {
+func (i *InventoryItem) GetIndex() int {
 	return i.Index
 }
 
@@ -145,4 +141,13 @@ func (inv *InventoryItems) Sort() {
 	sort.Slice(*inv, func(i, j int) bool {
 		return (*inv)[i].GetSortValue() < (*inv)[j].GetSortValue()
 	})
+}
+
+func (inv *InventoryItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*inv))
+	for i := 0; i < len(*inv); i++ {
+		items[i] = &(*inv)[i]
+	}
+
+	return &items
 }

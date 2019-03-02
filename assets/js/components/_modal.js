@@ -1,12 +1,13 @@
 import { sortItems } from "../helpers/_helpers";
 
 export class Modal {
-    constructor(items, addFn) {
+    constructor(items, addFn, column) {
         this.items = items;
         this.$content = null;
         this.$select = null;
         this.addFn = addFn;
         this.sortFn = sortItems;
+        this.column = column || "id";
 
         this.initModal();
     }
@@ -45,7 +46,7 @@ export class Modal {
         this.$select = $(
             `<select>
                 ${this.items.map(item => {
-                    return `<option value="${item.id}">${item.name}</option>`;
+                    return `<option value="${item[this.column]}">${item.name}</option>`;
                 })}
             </select>`
         );
@@ -75,7 +76,7 @@ export class Modal {
     }
 
     removeItem(id) {
-        var index = this.items.findIndex(x => x.id == id);
+        var index = this.items.findIndex(x => x[this.column] == id);
         var item = this.items[index];
         this.items.splice(index, 1);
         this.setSelect();

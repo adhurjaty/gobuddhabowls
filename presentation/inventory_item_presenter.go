@@ -17,7 +17,7 @@ func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
 		return nil, err
 	}
 
-	apiItems := NewItemsAPI(*items)
+	apiItems := NewItemsAPI(items)
 
 	return &apiItems, err
 }
@@ -137,7 +137,7 @@ func (p *Presenter) GetInventoryItem(id string) (*ItemAPI, error) {
 		return nil, err
 	}
 
-	apiItem := NewItemAPI(*item)
+	apiItem := NewItemAPI(item)
 	return &apiItem, nil
 }
 

@@ -16,31 +16,25 @@ type ModelFactory struct{}
 
 // CreateModel loads a full model based on the type m given
 func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string) error {
+	// maybe split this according to compound vs. item type
+	resetCache()
 	switch m.(type) {
 	case *PurchaseOrder:
-		if err := LoadPurchaseOrder(m.(*PurchaseOrder), tx, id); err != nil {
-			return err
-		}
-		return nil
+		return LoadPurchaseOrder(m.(*PurchaseOrder), tx, id)
 	case *Vendor:
-		if err := LoadVendor(m.(*Vendor), tx, id); err != nil {
+		return LoadVendor(m.(*Vendor), tx, id)
+	case *Recipe:
+		err := populateInvItemCache(tx)
+		if err != nil {
 			return err
 		}
-		return nil
-	case *Recipe:
 		return LoadRecipe(m.(*Recipe), tx, id)
+	case *Inventory:
+		return LoadInventory(m.(*Inventory), tx, id)
 	case *RecipeItem:
 		return LoadRecipeItem(m.(*RecipeItem), tx, id)
 	case *InventoryItem:
-		if err := LoadInventoryItem(m.(*InventoryItem), tx, id); err != nil {
-			return err
-		}
-		return nil
-	case *Inventory:
-		if err := LoadInventory(m.(*Inventory), tx, id); err != nil {
-			return err
-		}
-		return nil
+		return LoadInventoryItem(m.(*InventoryItem), tx, id)
 	case *VendorItem:
 		return LoadVendorItem(m.(*VendorItem), tx, id)
 	}
@@ -50,6 +44,15 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 
 // CreateModelSlice loads a full model slice based on the type s given
 func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
+	resetCache()
+	_, ok := s.(*InventoryItems)
+	if !ok {
+		err := populateInvItemCache(q.Connection)
+		if err != nil {
+			return err
+		}
+	}
+
 	switch s.(type) {
 	case *PurchaseOrders:
 		return LoadPurchaseOrders(s.(*PurchaseOrders), q)
@@ -72,8 +75,12 @@ func LoadPurchaseOrder(po *PurchaseOrder, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	err := PopulateOrderItems(&po.Items, tx)
-	return err
+	pos := &PurchaseOrders{*po}
+	if err := PopulateOrderItems(pos, tx); err != nil {
+		return err
+	}
+	*po = (*pos)[0]
+	return nil
 }
 
 // LoadPurchaseOrders gets the purchase orders with the specified query
@@ -83,40 +90,25 @@ func LoadPurchaseOrders(poList *PurchaseOrders, q *pop.Query) error {
 		return err
 	}
 
-	// I don't love the fact that I need to load the nested models manually
-	// TODO: look for a solution to eager loading nested objects
-	for _, po := range *poList {
-		if err := PopulateOrderItems(&po.Items, q.Connection); err != nil {
-			return err
-		}
+	if err := PopulateOrderItems(poList, q.Connection); err != nil {
+		return err
 	}
 
 	return nil
-}
-
-// LoadOrderItem fully loads the order item
-func LoadOrderItem(item *OrderItem, tx *pop.Connection, id string) error {
-	if err := tx.Eager().Find(item, id); err != nil {
-		return err
-	}
-	err := tx.Eager().Find(&item.InventoryItem, item.InventoryItemID)
-
-	return err
 }
 
 // PopulateOrderItems populates the existing order items slice
-func PopulateOrderItems(items *OrderItems, tx *pop.Connection) error {
-	for i := 0; i < len(*items); i++ {
-		count := (*items)[i].Count
-		if err := LoadOrderItem(&(*items)[i], tx, (*items)[i].ID.String()); err != nil {
-			return err
-		}
-		(*items)[i].Count = count
+func PopulateOrderItems(pos *PurchaseOrders, tx *pop.Connection) error {
+	ids := toIDList(pos)
+
+	if err := populateOrderItemsCache(tx, ids); err != nil {
+		return err
+	}
+	if _orderItemsCache == nil {
+		return nil
 	}
 
-	items.Sort()
-
-	return nil
+	return setModelItemsFromCache(pos)
 }
 
 // LoadVendor gets a vendor given ID
@@ -125,17 +117,11 @@ func LoadVendor(vendor *Vendor, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	for i := 0; i < len(vendor.Items); i++ {
-		if err := tx.Eager().Find(&vendor.Items[i], vendor.Items[i].ID); err != nil {
-			return err
-		}
-		if err := tx.Eager().Find(&vendor.Items[i].InventoryItem, vendor.Items[i].InventoryItemID); err != nil {
-			return err
-		}
+	vendorSlice := &Vendors{*vendor}
+	if err := PopulateVendorItems(vendorSlice, tx); err != nil {
+		return err
 	}
-
-	vendor.Items.Sort()
-
+	*vendor = (*vendorSlice)[0]
 	return nil
 }
 
@@ -145,22 +131,20 @@ func LoadVendors(vendList *Vendors, q *pop.Query) error {
 		return err
 	}
 
-	// I don't love the fact that I need to load the nested models manually
-	// TODO: look for a solution to eager loading nested objects
-	for _, v := range *vendList {
-		for i := 0; i < len(v.Items); i++ {
-			if err := q.Connection.Eager().Find(&v.Items[i], v.Items[i].ID); err != nil {
-				return err
-			}
-			if err := q.Connection.Eager().Find(&v.Items[i].InventoryItem, v.Items[i].InventoryItemID); err != nil {
-				return err
-			}
-		}
+	return PopulateVendorItems(vendList, q.Connection)
+}
 
-		v.Items.Sort()
+func PopulateVendorItems(vendors *Vendors, tx *pop.Connection) error {
+	ids := toIDList(vendors)
+
+	if err := populateVendorItemsCache(tx, ids); err != nil {
+		return err
+	}
+	if _vendorItemsCache == nil {
+		return nil
 	}
 
-	return nil
+	return setModelItemsFromCache(vendors)
 }
 
 func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
@@ -168,17 +152,11 @@ func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	for i := 0; i < len(inventory.Items); i++ {
-		if err := tx.Eager().Find(&inventory.Items[i], inventory.Items[i].ID); err != nil {
-			return err
-		}
-		if err := tx.Eager().Find(&inventory.Items[i].InventoryItem, inventory.Items[i].InventoryItemID); err != nil {
-			return err
-		}
+	invs := &Inventories{*inventory}
+	if err := PopulateCountInvItems(invs, tx); err != nil {
+		return err
 	}
-
-	inventory.Items.Sort()
-
+	*inventory = (*invs)[0]
 	return nil
 }
 
@@ -187,22 +165,20 @@ func LoadInventories(invList *Inventories, q *pop.Query) error {
 		return err
 	}
 
-	// I don't love the fact that I need to load the nested models manually
-	// TODO: look for a solution to eager loading nested objects
-	for _, inv := range *invList {
-		for i := 0; i < len(inv.Items); i++ {
-			if err := q.Connection.Eager().Find(&inv.Items[i], inv.Items[i].ID); err != nil {
-				return err
-			}
-			if err := q.Connection.Eager().Find(&inv.Items[i].InventoryItem, inv.Items[i].InventoryItemID); err != nil {
-				return err
-			}
-		}
+	return PopulateCountInvItems(invList, q.Connection)
+}
 
-		inv.Items.Sort()
+func PopulateCountInvItems(inventories *Inventories, tx *pop.Connection) error {
+	ids := toIDList(inventories)
+
+	if err := populateCountInvItemsCache(tx, ids); err != nil {
+		return err
+	}
+	if _countInvItemsCache == nil {
+		return nil
 	}
 
-	return nil
+	return setModelItemsFromCache(inventories)
 }
 
 func LoadInventoryItem(item *InventoryItem, tx *pop.Connection, id string) error {
@@ -212,6 +188,12 @@ func LoadInventoryItem(item *InventoryItem, tx *pop.Connection, id string) error
 func LoadInventoryItems(itemList *InventoryItems, q *pop.Query) error {
 	if err := q.All(itemList); err != nil {
 		return err
+	}
+
+	for i := range *itemList {
+		if err := populateCategories(&(*itemList)[i], q.Connection); err != nil {
+			return err
+		}
 	}
 
 	itemList.Sort()
@@ -224,7 +206,12 @@ func LoadRecipe(recipe *Recipe, tx *pop.Connection, id string) error {
 		return err
 	}
 
-	return PopulateRecipeItems(&recipe.Items, tx)
+	recs := &Recipes{*recipe}
+	if err := PopulateRecipeItems(recs, tx); err != nil {
+		return err
+	}
+	*recipe = (*recs)[0]
+	return nil
 }
 
 func LoadRecipes(recipes *Recipes, q *pop.Query) error {
@@ -232,29 +219,20 @@ func LoadRecipes(recipes *Recipes, q *pop.Query) error {
 		return err
 	}
 
-	for _, recipe := range *recipes {
-		if err := PopulateRecipeItems(&recipe.Items, q.Connection); err != nil {
-			return err
-		}
-	}
-
-	return nil
+	return PopulateRecipeItems(recipes, q.Connection)
 }
 
-func PopulateRecipeItems(items *RecipeItems, tx *pop.Connection) error {
-	for i, _ := range *items {
-		item := &(*items)[i]
-		count := item.Count
-		if err := LoadRecipeItem(item, tx, item.ID.String()); err != nil {
-			return err
-		}
+func PopulateRecipeItems(recipes *Recipes, tx *pop.Connection) error {
+	ids := toIDList(recipes)
 
-		(*items)[i].Count = count
+	if err := populateRecipeItemsCache(tx, ids); err != nil {
+		return err
+	}
+	if _recipeItemsCache == nil {
+		return nil
 	}
 
-	items.Sort()
-
-	return nil
+	return setModelItemsFromCache(recipes)
 }
 
 func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
@@ -262,6 +240,7 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 	if err != nil {
 		return err
 	}
+
 	if item.InventoryItemID.Valid {
 		err = tx.Eager().Find(&item.InventoryItem, item.InventoryItemID.UUID)
 	} else if item.BatchRecipeID.Valid {

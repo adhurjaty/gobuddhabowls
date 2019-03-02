@@ -88,23 +88,31 @@ func (r *Recipe) validateUniqueName(query *pop.Query) (*validate.Errors, error) 
 	return verrs, nil
 }
 
-func (r Recipe) GetID() uuid.UUID {
+func (r *Recipe) GetID() uuid.UUID {
 	return r.ID
 }
-func (r Recipe) GetInventoryItemID() uuid.UUID {
-	return r.ID
-}
-func (r Recipe) GetName() string {
+func (r *Recipe) GetName() string {
 	return r.Name
 }
-func (r Recipe) GetCategory() ItemCategory {
+func (r *Recipe) GetCategory() ItemCategory {
 	return r.Category
 }
-func (r Recipe) GetCountUnit() string {
+func (r *Recipe) GetCountUnit() string {
 	return fmt.Sprintf("%d x %s", r.RecipeUnitConversion, r.RecipeUnit)
 }
-func (r Recipe) GetIndex() int {
+func (r *Recipe) GetIndex() int {
 	return r.Index
+}
+
+func (r *Recipe) GetItems() CompoundItems {
+	return &r.Items
+}
+
+func (r *Recipe) SetItems(items *[]CompoundItem) {
+	r.Items = RecipeItems{}
+	for _, item := range *items {
+		r.Items = append(r.Items, *item.(*RecipeItem))
+	}
 }
 
 func (r Recipe) GetSortValue() int {
@@ -115,4 +123,31 @@ func (r *Recipes) Sort() {
 	sort.Slice(*r, func(i, j int) bool {
 		return (*r)[i].GetSortValue() < (*r)[j].GetSortValue()
 	})
+}
+
+func (r *Recipes) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*r))
+	for i := 0; i < len(*r); i++ {
+		items[i] = &(*r)[i]
+	}
+
+	return &items
+}
+
+func (r *Recipes) ToModels() *[]Model {
+	models := make([]Model, len(*r))
+	for idx := range *r {
+		models[idx] = &(*r)[idx]
+	}
+
+	return &models
+}
+
+func (r *Recipes) ToCompoundModels() *[]CompoundModel {
+	models := make([]CompoundModel, len(*r))
+	for idx := range *r {
+		models[idx] = &(*r)[idx]
+	}
+
+	return &models
 }

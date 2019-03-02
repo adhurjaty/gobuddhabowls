@@ -38,7 +38,7 @@ func NewVendorAPI(vendor *models.Vendor) VendorAPI {
 		PhoneNumber:  vendor.PhoneNumber.String,
 		Contact:      vendor.Contact.String,
 		ShippingCost: vendor.ShippingCost,
-		Items:        NewItemsAPI(vendor.Items),
+		Items:        NewItemsAPI(&vendor.Items),
 	}
 }
 

@@ -94,3 +94,36 @@ func (p PurchaseOrder) GetCategoryCosts() CategoryBreakdown {
 
 	return FromCategoryMap(catCosts)
 }
+
+func (p *PurchaseOrder) GetID() uuid.UUID {
+	return p.ID
+}
+
+func (p *PurchaseOrder) GetItems() CompoundItems {
+	return &p.Items
+}
+
+func (p *PurchaseOrder) SetItems(items *[]CompoundItem) {
+	p.Items = OrderItems{}
+	for _, item := range *items {
+		p.Items = append(p.Items, *item.(*OrderItem))
+	}
+}
+
+func (p *PurchaseOrders) ToModels() *[]Model {
+	models := make([]Model, len(*p))
+	for idx := range *p {
+		models[idx] = &(*p)[idx]
+	}
+
+	return &models
+}
+
+func (p *PurchaseOrders) ToCompoundModels() *[]CompoundModel {
+	models := make([]CompoundModel, len(*p))
+	for idx := range *p {
+		models[idx] = &(*p)[idx]
+	}
+
+	return &models
+}

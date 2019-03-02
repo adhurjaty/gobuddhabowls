@@ -52,3 +52,36 @@ func (i *Inventory) ValidateCreate(tx *pop.Connection) (*validate.Errors, error)
 func (i *Inventory) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
 }
+
+func (i *Inventory) GetID() uuid.UUID {
+	return i.ID
+}
+
+func (i *Inventory) GetItems() CompoundItems {
+	return &i.Items
+}
+
+func (i *Inventory) SetItems(items *[]CompoundItem) {
+	i.Items = CountInventoryItems{}
+	for _, item := range *items {
+		i.Items = append(i.Items, *item.(*CountInventoryItem))
+	}
+}
+
+func (i *Inventories) ToModels() *[]Model {
+	models := make([]Model, len(*i))
+	for idx := range *i {
+		models[idx] = &(*i)[idx]
+	}
+
+	return &models
+}
+
+func (i *Inventories) ToCompoundModels() *[]CompoundModel {
+	models := make([]CompoundModel, len(*i))
+	for idx := range *i {
+		models[idx] = &(*i)[idx]
+	}
+
+	return &models
+}

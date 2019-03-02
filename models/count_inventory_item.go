@@ -50,27 +50,35 @@ func (c *CountInventoryItem) ValidateUpdate(tx *pop.Connection) (*validate.Error
 	return validate.NewErrors(), nil
 }
 
-func (c CountInventoryItem) GetID() uuid.UUID {
+func (c *CountInventoryItem) GetID() uuid.UUID {
 	return c.ID
 }
 
-func (c CountInventoryItem) GetInventoryItemID() uuid.UUID {
+func (c *CountInventoryItem) GetBaseItemID() uuid.UUID {
 	return c.InventoryItemID
 }
 
-func (c CountInventoryItem) GetName() string {
+func (c *CountInventoryItem) GetBaseItem() GenericItem {
+	return &c.InventoryItem
+}
+
+func (c *CountInventoryItem) SetBaseItem(item GenericItem) {
+	c.InventoryItem = *item.(*InventoryItem)
+}
+
+func (c *CountInventoryItem) GetName() string {
 	return c.InventoryItem.Name
 }
 
-func (c CountInventoryItem) GetCategory() ItemCategory {
+func (c *CountInventoryItem) GetCategory() ItemCategory {
 	return c.InventoryItem.Category
 }
 
-func (c CountInventoryItem) GetCountUnit() string {
+func (c *CountInventoryItem) GetCountUnit() string {
 	return c.InventoryItem.CountUnit
 }
 
-func (c CountInventoryItem) GetIndex() int {
+func (c *CountInventoryItem) GetIndex() int {
 	return c.InventoryItem.Index
 }
 
@@ -78,4 +86,22 @@ func (ci *CountInventoryItems) Sort() {
 	sort.Slice(*ci, func(i, j int) bool {
 		return (*ci)[i].InventoryItem.GetSortValue() < (*ci)[j].InventoryItem.GetSortValue()
 	})
+}
+
+func (ci *CountInventoryItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*ci))
+	for i := 0; i < len(*ci); i++ {
+		items[i] = &(*ci)[i]
+	}
+
+	return &items
+}
+
+func (ci *CountInventoryItems) ToCompoundItems() *[]CompoundItem {
+	items := make([]CompoundItem, len(*ci))
+	for i := 0; i < len(*ci); i++ {
+		items[i] = &(*ci)[i]
+	}
+
+	return &items
 }
