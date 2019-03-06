@@ -6,3 +6,4 @@ aws_connect.sh
 .vscode/launch.json
 debug.sh
 bin/
+*.pem
