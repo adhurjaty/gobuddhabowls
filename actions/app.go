@@ -6,13 +6,13 @@ import (
 	"github.com/gobuffalo/envy"
 	"github.com/gobuffalo/mw-forcessl"
 	"github.com/gobuffalo/mw-paramlogger"
+	"github.com/gobuffalo/packr/v2"
 	"github.com/unrolled/secure"
 
 	"buddhabowls/models"
 
 	"github.com/gobuffalo/mw-csrf"
 	"github.com/gobuffalo/mw-i18n"
-	"github.com/gobuffalo/packr"
 )
 
 // ENV is used to help switch settings based on where the
@@ -55,7 +55,7 @@ func App() *buffalo.App {
 
 		// Setup and use translations:
 		var err error
-		if T, err = i18n.New(packr.NewBox("../locales"), "en-US"); err != nil {
+		if T, err = i18n.New(packr.New("../locales", "../locales"), "en-US"); err != nil {
 			app.Stop(err)
 		}
 		app.Use(T.Middleware())

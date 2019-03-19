@@ -1,6 +1,6 @@
 # This is a multi-stage Dockerfile and requires >= Docker 17.05
 # https://docs.docker.com/engine/userguide/eng-image/multistage-build/
-FROM gobuffalo/buffalo:v0.13.4 as builder
+FROM gobuffalo/buffalo:v0.14.1 as builder
 
 ENV GO_ENV=development
 
@@ -12,7 +12,7 @@ ADD ./package.json .
 RUN npm install
 ADD . .
 RUN sed -i "s|host: .*$|host: postgres|g" database.yml
-RUN buffalo build --static -o bin/app
+RUN buffalo build -o bin/app
 
 # We need to use an older version of gobuffalo here for the migrations to succeed
 #FROM gobuffalo/buffalo:v0.11.0 as migrate
