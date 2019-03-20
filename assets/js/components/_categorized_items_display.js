@@ -65,7 +65,7 @@ export class CategorizedItemsDisplay {
 
         var colDiv = this.$container.find('> div').first();
         var buttonContainer = $('<div></div>');
-        buttonContainer.append(this.buttonGroup.$content);
+        buttonContainer.html(this.buttonGroup.$content);
         colDiv.prepend(buttonContainer);
     }
 
