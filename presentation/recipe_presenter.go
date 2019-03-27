@@ -37,18 +37,17 @@ func (p *Presenter) GetRecipes() (*RecipesAPI, error) {
 
 func (p *Presenter) populateReciepItemCosts(items *ItemsAPI) error {
 	for i := 0; i < len(*items); i++ {
-		item := &((*items)[i])
-		cost, err := p.getItemRecipeCost(item)
+		cost, err := p.getItemRecipeCost((*items)[i])
 		if err != nil {
 			return err
 		}
-		item.Price = cost
+		(*items)[i].Price = cost
 	}
 
 	return nil
 }
 
-func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
+func (p *Presenter) getItemRecipeCost(item ItemAPI) (float64, error) {
 	cost := 0.0
 	if item.InventoryItemID != "" {
 		vendorItem, err := logic.GetSelectedVendorItem(item.InventoryItemID, p.tx)
@@ -56,33 +55,26 @@ func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
 			// if there's no matching vendor item - just say price is 0
 			return 0, nil
 		}
-		if item.RecipeUnitConversion > 0 {
-			cost = vendorItem.Price / vendorItem.Conversion /
-				item.RecipeUnitConversion
-		} else {
-			cost = 0
-		}
+		return vendorItem.Price / vendorItem.Conversion /
+			item.RecipeUnitConversion, nil
 	} else {
 		recipe, err := logic.GetRecipe(item.BatchRecipeID, p.tx)
 		if err != nil {
 			return 0, err
 		}
 		recAPI := NewRecipeAPI(recipe)
-		for _, item := range recAPI.Items {
-			incCost, err := p.getItemRecipeCost(&item)
+		for _, rItem := range recAPI.Items {
+			incCost, err := p.getItemRecipeCost(rItem)
 			if err != nil {
 				return 0, err
 			}
-			cost += incCost * item.Count
+			cost += incCost * rItem.Count
 		}
 
-		if recAPI.RecipeUnitConversion > 0 {
-			cost /= recAPI.RecipeUnitConversion
-		} else {
-			cost = 0
-		}
+		return cost / recAPI.RecipeUnitConversion, nil
 	}
 
+	// shouldn't get here
 	return cost, nil
 }
 
