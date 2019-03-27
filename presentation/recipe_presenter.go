@@ -36,8 +36,8 @@ func (p *Presenter) GetRecipes() (*RecipesAPI, error) {
 }
 
 func (p *Presenter) populateReciepItemCosts(items *ItemsAPI) error {
-	for i := range *items {
-		item := &(*items)[i]
+	for i := 0; i < len(*items); i++ {
+		item := &((*items)[i])
 		cost, err := p.getItemRecipeCost(item)
 		if err != nil {
 			return err
@@ -56,8 +56,12 @@ func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
 			// if there's no matching vendor item - just say price is 0
 			return 0, nil
 		}
-		cost = vendorItem.Price / vendorItem.Conversion /
-			item.RecipeUnitConversion
+		if item.RecipeUnitConversion > 0 {
+			cost = vendorItem.Price / vendorItem.Conversion /
+				item.RecipeUnitConversion
+		} else {
+			cost = 0
+		}
 	} else {
 		recipe, err := logic.GetRecipe(item.BatchRecipeID, p.tx)
 		if err != nil {
@@ -72,7 +76,11 @@ func (p *Presenter) getItemRecipeCost(item *ItemAPI) (float64, error) {
 			cost += incCost * item.Count
 		}
 
-		cost /= recAPI.RecipeUnitConversion
+		if recAPI.RecipeUnitConversion > 0 {
+			cost /= recAPI.RecipeUnitConversion
+		} else {
+			cost = 0
+		}
 	}
 
 	return cost, nil
