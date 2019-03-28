@@ -57,25 +57,22 @@ func (p *Presenter) getItemRecipeCost(item ItemAPI) (float64, error) {
 		}
 		return vendorItem.Price / vendorItem.Conversion /
 			item.RecipeUnitConversion, nil
-	} else {
-		recipe, err := logic.GetRecipe(item.BatchRecipeID, p.tx)
+	}
+
+	recipe, err := logic.GetRecipe(item.BatchRecipeID, p.tx)
+	if err != nil {
+		return 0, err
+	}
+	recAPI := NewRecipeAPI(recipe)
+	for _, rItem := range recAPI.Items {
+		incCost, err := p.getItemRecipeCost(rItem)
 		if err != nil {
 			return 0, err
 		}
-		recAPI := NewRecipeAPI(recipe)
-		for _, rItem := range recAPI.Items {
-			incCost, err := p.getItemRecipeCost(rItem)
-			if err != nil {
-				return 0, err
-			}
-			cost += incCost * rItem.Count
-		}
-
-		return cost / recAPI.RecipeUnitConversion, nil
+		cost += incCost * rItem.Count
 	}
 
-	// shouldn't get here
-	return cost, nil
+	return cost / recAPI.RecipeUnitConversion, nil
 }
 
 func (p *Presenter) GetRecipesNoItems() (*RecipesAPI, error) {

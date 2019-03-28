@@ -9,7 +9,7 @@ import (
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
-	// "github.com/gobuffalo/validate/validators"
+	"github.com/gobuffalo/validate/validators"
 )
 
 type VendorItem struct {
@@ -42,11 +42,19 @@ func (v VendorItems) String() string {
 
 // Validate gets run every time you call a "pop.Validate*" (pop.ValidateAndSave, pop.ValidateAndCreate, pop.ValidateAndUpdate) method.
 // This method is not required and may be deleted.
-// func (v *VendorItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
-// 	return validate.Validate(
-// 		&validators.StringIsPresent{Field: v.PurchasedUnit, Name: "PurchasedUnit"},
-// 	), nil
-// }
+func (v *VendorItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
+	return validate.Validate(
+		&validators.StringIsPresent{Field: "PurchasedUnit", Name: "PurchasedUnit"},
+		&validators.FuncValidator{
+			Field:   "Conversion",
+			Name:    "Conversion",
+			Message: "Must have conversion greater than 0",
+			Fn: func() bool {
+				return v.Conversion > 0
+			},
+		},
+	), nil
+}
 
 // ValidateCreate gets run every time you call "pop.ValidateAndCreate" method.
 // This method is not required and may be deleted.
