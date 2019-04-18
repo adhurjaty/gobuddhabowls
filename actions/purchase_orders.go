@@ -154,6 +154,8 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 			return errors.WithStack(err)
 		}
 		c.Set("errors", verrs)
+		fmt.Println("!!!!!!!!!!!!!!!!!!!")
+		fmt.Println(poAPI)
 		return c.Render(422, r.Auto(c, models.PurchaseOrder{}))
 	}
 

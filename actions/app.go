@@ -5,7 +5,7 @@ import (
 	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	"github.com/gobuffalo/envy"
 	"github.com/gobuffalo/mw-forcessl"
-	"github.com/gobuffalo/mw-paramlogger"
+	paramlogger "github.com/gobuffalo/mw-paramlogger"
 	"github.com/gobuffalo/packr/v2"
 	"github.com/unrolled/secure"
 

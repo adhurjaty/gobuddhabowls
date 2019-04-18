@@ -5,7 +5,7 @@ export function datepicker(el, onDateSelected = (d) => {}) {
     disableAutocomplete(el);
     return new Pikaday({
         field: el,
-        format: 'MM/DD/YYYY',
+        format: 'YYYY-MM-DD',
         onSelect: onDateSelected
     });
 }
@@ -33,7 +33,7 @@ export function daterange($inputs, onDateSelected = function(d) {}) {
 
     var start = new Pikaday({
         field: $startInput.get(0),
-        format: 'MM/DD/YYYY',
+        format: 'YYYY-MM-DD',
         onSelect: onSelectStart
     });
 
@@ -42,7 +42,7 @@ export function daterange($inputs, onDateSelected = function(d) {}) {
 
     var end = new Pikaday({
         field: $endInput.get(0),
-        format: 'MM/DD/YYYY',
+        format: 'YYYY-MM-DD',
         onSelect: onDateSelected,
         minDate: startDate,
     });

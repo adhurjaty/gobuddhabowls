@@ -75,6 +75,7 @@ export function formatSlashDate(dateStr) {
     var month = date.getMonth() + 1;
     var day = date.getUTCDate();
     var year = date.getFullYear();
+    debugger;
     return `${month.pad(2)}/${day.pad(2)}/${year}`;
 }
 
