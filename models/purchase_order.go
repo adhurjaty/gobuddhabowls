@@ -2,8 +2,8 @@ package models
 
 import (
 	"encoding/json"
-	"github.com/gobuffalo/pop/nulls"
 	"github.com/gobuffalo/validate/validators"
+	"github.com/lib/pq"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -12,15 +12,15 @@ import (
 )
 
 type PurchaseOrder struct {
-	ID           uuid.UUID  `json:"id" db:"id"`
-	CreatedAt    time.Time  `json:"created_at" db:"created_at"`
-	UpdatedAt    time.Time  `json:"updated_at" db:"updated_at"`
-	VendorID     uuid.UUID  `json:"vendor_id" db:"vendor_id"`
-	Vendor       Vendor     `belongs_to:"vendors" db:"-"`
-	OrderDate    nulls.Time `json:"order_date" db:"order_date"`
-	ReceivedDate nulls.Time `json:"received_date" db:"received_date"`
-	ShippingCost float64    `json:"shipping_cost" db:"shipping_cost"`
-	Items        OrderItems `has_many:"order_items" db:"-" fk_id:"order_id"`
+	ID           uuid.UUID   `json:"id" db:"id"`
+	CreatedAt    time.Time   `json:"created_at" db:"created_at"`
+	UpdatedAt    time.Time   `json:"updated_at" db:"updated_at"`
+	VendorID     uuid.UUID   `json:"vendor_id" db:"vendor_id"`
+	Vendor       Vendor      `belongs_to:"vendors" db:"-"`
+	OrderDate    pq.NullTime `json:"order_date" db:"order_date"`
+	ReceivedDate pq.NullTime `json:"received_date" db:"received_date"`
+	ShippingCost float64     `json:"shipping_cost" db:"shipping_cost"`
+	Items        OrderItems  `has_many:"order_items" db:"-" fk_id:"order_id"`
 }
 
 // String is not required by pop and may be deleted

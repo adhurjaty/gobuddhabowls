@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
-	"github.com/gobuffalo/pop/nulls"
+	"github.com/lib/pq"
 	"time"
 )
 
@@ -30,7 +30,7 @@ func createPO(db *pop.Connection, orderTime time.Time) (*models.PurchaseOrder, e
 	purchaseOrder := &models.PurchaseOrder{
 		Vendor:    *vendor,
 		VendorID:  vendor.ID,
-		OrderDate: nulls.Time{Time: orderTime, Valid: true},
+		OrderDate: pq.NullTime{Time: orderTime, Valid: true},
 	}
 	if err = db.Create(purchaseOrder); err != nil {
 		return nil, err
@@ -78,7 +78,7 @@ func createPOMultipleItems(db *pop.Connection, orderTime time.Time) (*models.Pur
 }
 
 func receiveOrder(db *pop.Connection, purchaseOrder *models.PurchaseOrder, date time.Time) error {
-	purchaseOrder.ReceivedDate = nulls.Time{Time: date, Valid: true}
+	purchaseOrder.ReceivedDate = pq.NullTime{Time: date, Valid: true}
 	return db.Update(purchaseOrder)
 }
 
