@@ -129,7 +129,6 @@ function setDropdown(vendorItemsMap) {
 
 function setFormOnSubmit() {
     $('#purchase-order-form-submit').closest('form').submit(function(event) {
-        debugger;
         if(!isValidOptionSelected()) {
             event.preventDefault();
             showError('must select a vendor');

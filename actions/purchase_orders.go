@@ -123,6 +123,9 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 		return errors.WithStack(err)
 	}
 	vendorID := c.Request().Form.Get("VendorID")
+	if err := bindTimes(poAPI, c); err != nil {
+		return errors.WithStack(err)
+	}
 
 	// Get the DB connection from the context
 	tx, ok := c.Value("tx").(*pop.Connection)
@@ -217,12 +220,8 @@ func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
 	if err := c.Bind(poAPI); err != nil {
 		return errors.WithStack(err)
 	}
-
-	// invalidate ReceivedOrder if it is blank (default time value)
-	if poAPI.ReceivedDate.Time.Unix() <= 0 ||
-		c.Request().Form.Get("ReceivedDate") == "" {
-		poAPI.ReceivedDate.Time = poAPI.OrderDate.Time
-		poAPI.ReceivedDate.Valid = false
+	if err := bindTimes(poAPI, c); err != nil {
+		return errors.WithStack(err)
 	}
 
 	itemsParamJSON := c.Request().Form.Get("Items")
@@ -388,5 +387,28 @@ func setPurchaseOrderViewVars(c buffalo.Context, presenter *presentation.Present
 	c.Set("po", poAPI)
 	c.Set("vendors", vendors)
 	c.Set("vendorItemsMap", vendorItemsMap)
+	return nil
+}
+
+func bindTimes(po *presentation.PurchaseOrderAPI, c buffalo.Context) error {
+	var err error
+	orderTime := c.Request().Form.Get("OrderDate")
+	if orderTime != "" {
+		po.OrderDate.Valid = true
+		po.OrderDate.Time, err = time.Parse("01/02/2006", orderTime)
+		if err != nil {
+			return err
+		}
+	} else {
+		return errors.New("Must supply order date")
+	}
+	recTime := c.Request().Form.Get("ReceivedDate")
+	if recTime != "" {
+		po.ReceivedDate.Valid = true
+		po.ReceivedDate.Time, err = time.Parse("01/02/2006", recTime)
+		if err != nil {
+			return err
+		}
+	}
 	return nil
 }
