@@ -71,7 +71,8 @@ export function formatMoney(amt) {
 }
 
 export function formatSlashDate(dateStr) {
-    var date = new Date(dateStr);
+    var userTimezoneOffset = new Date().getTimezoneOffset();
+    var date = new Date(new Date(dateStr).getTime() + userTimezoneOffset * 60000);
     var month = date.getMonth() + 1;
     var day = date.getUTCDate();
     var year = date.getFullYear();

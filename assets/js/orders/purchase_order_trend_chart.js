@@ -15,7 +15,7 @@ $(() => {
 function getLineData(purchaseOrders) {
     return purchaseOrders.reduce((arr, po) => {
         arr.push(...categorize(po.Items).map((item) => {
-            item.date = getDate(po.order_date);
+            item.date = getDate(po.order_date.Time);
             return item;
         }));
         return arr;

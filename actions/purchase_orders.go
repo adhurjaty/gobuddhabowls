@@ -157,7 +157,6 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 			return errors.WithStack(err)
 		}
 		c.Set("errors", verrs)
-		fmt.Println("!!!!!!!!!!!!!!!!!!!")
 		fmt.Println(poAPI)
 		return c.Render(422, r.Auto(c, models.PurchaseOrder{}))
 	}
@@ -392,23 +391,31 @@ func setPurchaseOrderViewVars(c buffalo.Context, presenter *presentation.Present
 
 func bindTimes(po *presentation.PurchaseOrderAPI, c buffalo.Context) error {
 	var err error
+
+	type tempDateHolder struct {
+		OrderDate    time.Time `json:"order_date"`
+		ReceivedDate time.Time `json:"received_date"`
+	}
+	dateHolder := &tempDateHolder{}
+
+	if err := c.Bind(dateHolder); err != nil {
+		return err
+	}
 	orderTime := c.Request().Form.Get("OrderDate")
+	recTime := c.Request().Form.Get("ReceivedDate")
 	if orderTime != "" {
 		po.OrderDate.Valid = true
-		po.OrderDate.Time, err = time.Parse("01/02/2006", orderTime)
+
+		po.OrderDate.Time = dateHolder.OrderDate
+
+		fmt.Println()
 		if err != nil {
 			return err
 		}
-	} else {
-		return errors.New("Must supply order date")
 	}
-	recTime := c.Request().Form.Get("ReceivedDate")
 	if recTime != "" {
 		po.ReceivedDate.Valid = true
-		po.ReceivedDate.Time, err = time.Parse("01/02/2006", recTime)
-		if err != nil {
-			return err
-		}
+		po.ReceivedDate.Time = dateHolder.ReceivedDate
 	}
 	return nil
 }

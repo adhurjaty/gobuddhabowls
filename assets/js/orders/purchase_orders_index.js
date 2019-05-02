@@ -31,7 +31,7 @@ var baseColumnObjects = [
     editable: true,
     data_type: 'date',
     get_column: (purchaseOrder) => {
-        return formatSlashDate(purchaseOrder.order_date);
+        return formatSlashDate(purchaseOrder.order_date.Time);
     },
     set_column: (item, value) => {
         item.order_date = value;
@@ -68,10 +68,10 @@ function populateRecDatagrid($container) {
         editable: true,
         data_type: 'date',
         get_column: (purchaseOrder) => {
-            return formatSlashDate(purchaseOrder.received_date);
+            return formatSlashDate(purchaseOrder.received_date.Time);
         },
         set_column: (po, date) => {
-            po.received_date = date;
+            po.received_date.Time = date;
         }
     });
     createDatagrid(REC_ORDER_DG_ID, colInfo);
