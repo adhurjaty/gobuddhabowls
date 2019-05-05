@@ -222,6 +222,12 @@ func (v PurchaseOrdersResource) Update(c buffalo.Context) error {
 	if err := bindTimes(poAPI, c); err != nil {
 		return errors.WithStack(err)
 	}
+	// invalidate ReceivedOrder if it is blank (default time value)
+	if poAPI.ReceivedDate.Time.Unix() <= 0 ||
+		c.Request().Form.Get("ReceivedDate") == "" {
+		poAPI.ReceivedDate.Time = poAPI.OrderDate.Time
+		poAPI.ReceivedDate.Valid = false
+	}
 
 	itemsParamJSON := c.Request().Form.Get("Items")
 	if itemsParamJSON != "" {
