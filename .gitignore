@@ -7,3 +7,4 @@ aws_connect.sh
 debug.sh
 bin/
 *.pem
+SeedDB/Data/*
