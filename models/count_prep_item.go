@@ -15,8 +15,9 @@ type CountPrepItem struct {
 	UpdatedAt   time.Time `json:"updated_at" db:"updated_at"`
 	PrepItemID  uuid.UUID `json:"prep_item_id" db:"prep_item_id"`
 	PrepItem    PrepItem  `belongs_to:"prep_items" db:"-"`
-	LineCount   float64   `json:"line_count" db:"line_count"`
-	WalkInCount float64   `json:"walk_in_count" db:"walk_in_count"`
+	InventoryID uuid.UUID `json:"inventory_id" db:"inventory_id"`
+	Inventory   Inventory `belongs_to:"inventories" db:"-"`
+	Count       float64   `json:"count" db:"count"`
 }
 
 // String is not required by pop and may be deleted

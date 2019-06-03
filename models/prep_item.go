@@ -11,14 +11,12 @@ import (
 )
 
 type PrepItem struct {
-	ID          uuid.UUID `json:"id" db:"id"`
-	CreatedAt   time.Time `json:"created_at" db:"created_at"`
-	UpdatedAt   time.Time `json:"updated_at" db:"updated_at"`
-	InventoryID uuid.UUID `json:"inventory_id" db:"inventory_id"`
-	Inventory   Inventory `belongs_to:"inventories" db:"-"`
-	Count       float64   `json:"count" db:"count"`
-	RecipeID    uuid.UUID `json:"recipe_id" db:"recipe_id"`
-	Recipe      Recipe    `belongs_to:"recipes" db:"-"`
+	ID        uuid.UUID `json:"id" db:"id"`
+	CreatedAt time.Time `json:"created_at" db:"created_at"`
+	UpdatedAt time.Time `json:"updated_at" db:"updated_at"`
+	Count     float64   `json:"count" db:"count"`
+	RecipeID  uuid.UUID `json:"recipe_id" db:"recipe_id"`
+	Recipe    Recipe    `belongs_to:"recipes" db:"-"`
 	// Conversion is the number of recipe units in a prep item count
 	Conversion float64 `json:"conversion" db:"conversion"`
 }

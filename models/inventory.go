@@ -16,6 +16,7 @@ type Inventory struct {
 	CreatedAt time.Time           `json:"created_at" db:"created_at"`
 	UpdatedAt time.Time           `json:"updated_at" db:"updated_at"`
 	Items     CountInventoryItems `has_many:"count_inventory_items" db:"-"`
+	PrepItems CountPrepItems      `has_many:"count_prep_items" db:"-"`
 }
 
 // String is not required by pop and may be deleted
