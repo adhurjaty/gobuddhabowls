@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/models"
 	"encoding/json"
+
 	"github.com/gobuffalo/uuid"
 )
 
@@ -25,6 +26,7 @@ type ItemAPI struct {
 	Yield                float64            `json:"yield,omitempty"`
 	Measure              string             `json:"measure,omitempty"`
 	BatchRecipeID        string             `json:"batch_recipe_id,omitempty"`
+	BatchRecipe          RecipeAPI          `json:"BatchRecipe,omitempty"`
 }
 
 type ItemsAPI []ItemAPI

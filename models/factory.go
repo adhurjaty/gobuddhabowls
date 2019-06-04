@@ -258,7 +258,7 @@ func LoadPrepItems(itemList *PrepItems, q *pop.Query) error {
 		return err
 	}
 
-	if err := populatePrepItemsCache(q.Connection); err != nil {
+	if err := populatePrepItemsCache(itemList, q.Connection); err != nil {
 		return err
 	}
 

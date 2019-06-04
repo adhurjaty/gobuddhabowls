@@ -3,14 +3,16 @@ package presentation
 import (
 	"buddhabowls/models"
 	"encoding/json"
-	"github.com/gobuffalo/uuid"
 	"time"
+
+	"github.com/gobuffalo/uuid"
 )
 
 type InventoryAPI struct {
-	ID    string    `json:"id"`
-	Date  time.Time `json:"time"`
-	Items ItemsAPI  `json:"Items"`
+	ID        string    `json:"id"`
+	Date      time.Time `json:"time"`
+	Items     ItemsAPI  `json:"Items"`
+	PrepItems ItemsAPI  `json:"PrepItems"`
 }
 
 type InventoriesAPI []InventoryAPI
@@ -29,10 +31,13 @@ func NewInventoryAPI(inventory *models.Inventory, vendors *VendorsAPI) Inventory
 	items := NewItemsAPI(&inventory.Items)
 	populateVendorItems(&items, &inventory.Items, vendors)
 
+	prepItems := NewItemsAPI(&inventory.PrepItems)
+
 	return InventoryAPI{
-		ID:    inventory.ID.String(),
-		Date:  inventory.Date,
-		Items: items,
+		ID:        inventory.ID.String(),
+		Date:      inventory.Date,
+		Items:     items,
+		PrepItems: prepItems,
 	}
 }
 

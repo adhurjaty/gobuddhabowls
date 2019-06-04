@@ -50,7 +50,7 @@ func populateCategories(item *InventoryItem, tx *pop.Connection) error {
 func populateRecipe(item *PrepItem) error {
 	for i, recipe := range *_recipesCache {
 		if item.BatchRecipeID.String() == recipe.ID.String() {
-			item.BatchRecipe = recipe
+			item.BatchRecipe = (*_recipesCache)[i]
 			return nil
 		}
 	}
@@ -79,12 +79,12 @@ func populateInvItemCache(tx *pop.Connection) error {
 	return nil
 }
 
-func populatePrepItemsCache(tx *pop.Connection) error {
+func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
 	if _prepItemsCache != nil {
 		return nil
 	}
 
-	_prepItemsCache = &PrepItems{}
+	_prepItemsCache = itemList
 	if err := tx.All(_prepItemsCache); err != nil {
 		return err
 	}
