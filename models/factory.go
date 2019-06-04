@@ -2,6 +2,7 @@ package models
 
 import (
 	"errors"
+
 	"github.com/gobuffalo/pop"
 )
 
@@ -64,6 +65,8 @@ func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
 		return LoadInventories(s.(*Inventories), q)
 	case *Recipes:
 		return LoadRecipes(s.(*Recipes), q)
+	case *PrepItems:
+		return LoadPrepItems(s.(*PrepItems), q)
 	}
 
 	return errors.New("unimplemented type")
@@ -248,4 +251,18 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 	}
 
 	return err
+}
+
+func LoadPrepItems(itemList *PrepItems, q *pop.Query) error {
+	if err := q.All(itemList); err != nil {
+		return err
+	}
+
+	if err := populatePrepItemsCache(q.Connection); err != nil {
+		return err
+	}
+
+	itemList.Sort()
+
+	return nil
 }

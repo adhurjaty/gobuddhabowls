@@ -4,6 +4,7 @@ import (
 	"buddhabowls/helpers"
 	"errors"
 	"fmt"
+
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 )
@@ -15,6 +16,7 @@ var _orderItemsCache *OrderItems
 var _vendorItemsCache *VendorItems
 var _countInvItemsCache *CountInventoryItems
 var _recipeItemsCache *RecipeItems
+var _prepItemsCache *PrepItems
 
 func resetCache() {
 	_categoriesCache = nil
@@ -24,6 +26,7 @@ func resetCache() {
 	_vendorItemsCache = nil
 	_countInvItemsCache = nil
 	_recipeItemsCache = nil
+	_prepItemsCache = nil
 }
 
 func populateCategories(item *InventoryItem, tx *pop.Connection) error {
@@ -44,6 +47,17 @@ func populateCategories(item *InventoryItem, tx *pop.Connection) error {
 	return errors.New("no matching category ID")
 }
 
+func populateRecipe(item *PrepItem) error {
+	for i, recipe := range *_recipesCache {
+		if item.BatchRecipeID.String() == recipe.ID.String() {
+			item.BatchRecipe = recipe
+			return nil
+		}
+	}
+
+	return errors.New("no matching Recipe ID")
+}
+
 func populateInvItemCache(tx *pop.Connection) error {
 	if _invItemCache != nil {
 		return nil
@@ -61,6 +75,34 @@ func populateInvItemCache(tx *pop.Connection) error {
 	}
 
 	_invItemCache.Sort()
+
+	return nil
+}
+
+func populatePrepItemsCache(tx *pop.Connection) error {
+	if _prepItemsCache != nil {
+		return nil
+	}
+
+	_prepItemsCache = &PrepItems{}
+	if err := tx.All(_prepItemsCache); err != nil {
+		return err
+	}
+
+	ids := toIDListWithFunc(_prepItemsCache, func(item Model) uuid.UUID {
+		prep := item.(*PrepItem)
+		return prep.BatchRecipeID
+	})
+
+	if err := populateRecipesCache(tx, ids); err != nil {
+		return err
+	}
+
+	for i := range *_prepItemsCache {
+		if err := populateRecipe(&(*_prepItemsCache)[i]); err != nil {
+			return err
+		}
+	}
 
 	return nil
 }
@@ -233,11 +275,19 @@ func getCacheFromType(itemProp GenericItem) (GenericItems, error) {
 }
 
 func toIDList(m Models) []string {
+	return toIDListWithFunc(m, func(item Model) uuid.UUID {
+		return item.GetID()
+	})
+}
+
+type getIdFnc func(m Model) uuid.UUID
+
+func toIDListWithFunc(m Models, idGetter getIdFnc) []string {
 	lst := m.ToModels()
 
 	ids := make([]string, len(*lst))
 	for i, item := range *lst {
-		ids[i] = item.GetID().String()
+		ids[i] = idGetter(item).String()
 	}
 
 	return ids

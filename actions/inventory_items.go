@@ -40,7 +40,7 @@ func (v InventoryItemsResource) List(c buffalo.Context) error {
 	}
 
 	presenter := presentation.NewPresenter(tx)
-	items, err := presenter.GetMasterInventoryList()
+	items, err := presenter.GetMasterInvPrepList()
 	if err != nil {
 		return err
 	}

@@ -3,10 +3,11 @@ package presentation
 import (
 	"buddhabowls/logic"
 	"fmt"
-	"github.com/gobuffalo/uuid"
-	"github.com/gobuffalo/validate"
 	"strings"
 	"time"
+
+	"github.com/gobuffalo/uuid"
+	"github.com/gobuffalo/validate"
 )
 
 var _ = fmt.Println
@@ -22,20 +23,32 @@ func (p *Presenter) GetInventoryItems() (*ItemsAPI, error) {
 	return &apiItems, err
 }
 
-func (p *Presenter) GetMasterInventoryList() (*ItemsAPI, error) {
+func (p *Presenter) GetMasterInvPrepList() (*ItemsAPI, *ItemsAPI, error) {
 	items, err := p.GetNewInventoryItems()
 	if err != nil {
-		return nil, err
+		return nil, nil, err
+	}
+
+	prepItems, err := p.GetNewPrepItems()
+	if err != nil {
+		return nil, nil, err
 	}
 
 	for i := 0; i < len(*items); i++ {
 		item := &(*items)[i]
 		if err = p.populateInventoryItemDetails(item); err != nil {
-			return nil, err
+			return nil, nil, err
 		}
 	}
 
-	return items, nil
+	for i := 0; i < len(*prepItems); i++ {
+		prepItem := &(*prepItems)[i]
+		if err = p.populatePrepItemDetails(prepItem); err != nil {
+			return nil, nil, err
+		}
+	}
+
+	return items, prepItems, nil
 }
 
 func (p *Presenter) populateInventoryItemDetails(item *ItemAPI) error {
@@ -47,6 +60,23 @@ func (p *Presenter) populateInventoryItemDetails(item *ItemAPI) error {
 	item.ID = invItem.ID.String()
 	item.RecipeUnit = invItem.RecipeUnit
 	item.RecipeUnitConversion = invItem.RecipeUnitConversion
+
+	return nil
+}
+
+func (p *Presenter) populatePrepItemDetails(item *ItemAPI) error {
+	recipe, err := logic.GetRecipe(item.BatchRecipeID, p.tx)
+	if err != nil {
+		return err
+	}
+	prepItem, err := logic.GetPrepItemFromRecipeID(item.BatchRecipeID, p.tx)
+	if err != nil {
+		return err
+	}
+
+	item.ID = prepItem.id
+	item.RecipeUnit = recipe.RecipeUnit
+	item.RecipeUnitConversion = prepItem.Conversion
 
 	return nil
 }

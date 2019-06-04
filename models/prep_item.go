@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"sort"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -11,14 +12,15 @@ import (
 )
 
 type PrepItem struct {
-	ID        uuid.UUID `json:"id" db:"id"`
-	CreatedAt time.Time `json:"created_at" db:"created_at"`
-	UpdatedAt time.Time `json:"updated_at" db:"updated_at"`
-	Count     float64   `json:"count" db:"count"`
-	RecipeID  uuid.UUID `json:"recipe_id" db:"recipe_id"`
-	Recipe    Recipe    `belongs_to:"recipes" db:"-"`
+	ID            uuid.UUID `json:"id" db:"id"`
+	CreatedAt     time.Time `json:"created_at" db:"created_at"`
+	UpdatedAt     time.Time `json:"updated_at" db:"updated_at"`
+	Count         float64   `json:"count" db:"count"`
+	BatchRecipeID uuid.UUID `json:"batch_recipe_id" db:"recipe_id"`
+	BatchRecipe   Recipe    `belongs_to:"recipes" db:"-"`
 	// Conversion is the number of recipe units in a prep item count
 	Conversion float64 `json:"conversion" db:"conversion"`
+	Index      int     `json:"index" db:"index"`
 }
 
 // String is not required by pop and may be deleted
@@ -60,4 +62,31 @@ func (p *PrepItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, error) 
 // This method is not required and may be deleted.
 func (p *PrepItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+func (p *PrepItem) GetID() uuid.UUID {
+	return p.ID
+}
+
+func (p *PrepItem) GetIndex() int {
+	return p.Index
+}
+
+func (p *PrepItem) GetSortValue() int {
+	return p.BatchRecipe.Category.Index*1000 + p.Index
+}
+
+func (p *PrepItems) ToModels() *[]Model {
+	models := make([]Model, len(*p))
+	for idx := range *p {
+		models[idx] = &(*p)[idx]
+	}
+
+	return &models
+}
+
+func (p *PrepItems) Sort() {
+	sort.Slice(*p, func(i, j int) bool {
+		return (*p)[i].GetSortValue() < (*p)[j].GetSortValue()
+	})
 }
