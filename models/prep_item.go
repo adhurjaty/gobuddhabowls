@@ -16,6 +16,7 @@ type PrepItem struct {
 	CreatedAt     time.Time `json:"created_at" db:"created_at"`
 	UpdatedAt     time.Time `json:"updated_at" db:"updated_at"`
 	Count         float64   `json:"count" db:"count"`
+	CountUnit     string    `json:"count_unit" db:"count_unit"`
 	BatchRecipeID uuid.UUID `json:"batch_recipe_id" db:"recipe_id"`
 	BatchRecipe   Recipe    `belongs_to:"recipes" db:"-"`
 	// Conversion is the number of recipe units in a prep item count
@@ -72,8 +73,32 @@ func (p *PrepItem) GetIndex() int {
 	return p.Index
 }
 
+func (p *PrepItem) GetBaseItemID() uuid.UUID {
+	return p.BatchRecipeID
+}
+
+func (p *PrepItem) GetBaseItem() GenericItem {
+	return &p.BatchRecipe
+}
+
+func (p *PrepItem) SetBaseItem(item GenericItem) {
+	p.BatchRecipe = *item.(*Recipe)
+}
+
 func (p *PrepItem) GetSortValue() int {
 	return p.BatchRecipe.Category.Index*1000 + p.Index
+}
+
+func (p *PrepItem) GetName() string {
+	return p.BatchRecipe.Name
+}
+
+func (p *PrepItem) GetCategory() ItemCategory {
+	return p.BatchRecipe.Category
+}
+
+func (p *PrepItem) GetCountUnit() string {
+	return p.CountUnit
 }
 
 func (p *PrepItems) ToModels() *[]Model {

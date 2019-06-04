@@ -44,7 +44,7 @@ func (p *Presenter) populateLatestPrepItems(items *ItemsAPI) error {
 				item.Count = latestItem.Count
 				break
 			}
-			item.BatchRecipe = latestItem.BatchRecpie
+			item.BatchRecipe = latestItem.BatchRecipe
 		}
 	}
 

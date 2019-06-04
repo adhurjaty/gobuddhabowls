@@ -26,7 +26,6 @@ type ItemAPI struct {
 	Yield                float64            `json:"yield,omitempty"`
 	Measure              string             `json:"measure,omitempty"`
 	BatchRecipeID        string             `json:"batch_recipe_id,omitempty"`
-	BatchRecipe          RecipeAPI          `json:"BatchRecipe,omitempty"`
 }
 
 type ItemsAPI []ItemAPI
@@ -96,6 +95,12 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		itemAPI.InventoryItemID = ""
 		itemAPI.BatchRecipeID = recipe.ID.String()
 		itemAPI.Measure = recipe.RecipeUnit
+	case *models.PrepItem:
+		prepItem, _ := item.(*models.PrepItem)
+		itemAPI.BatchRecipeID = prepItem.BatchRecipeID.String()
+		itemAPI.RecipeUnit = prepItem.BatchRecipe.RecipeUnit
+		itemAPI.RecipeUnitConversion = prepItem.BatchRecipe.RecipeUnitConversion
+		itemAPI.InventoryItemID = ""
 	}
 
 	return itemAPI
