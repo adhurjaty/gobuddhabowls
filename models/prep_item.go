@@ -15,9 +15,8 @@ type PrepItem struct {
 	ID            uuid.UUID `json:"id" db:"id"`
 	CreatedAt     time.Time `json:"created_at" db:"created_at"`
 	UpdatedAt     time.Time `json:"updated_at" db:"updated_at"`
-	Count         float64   `json:"count" db:"count"`
 	CountUnit     string    `json:"count_unit" db:"count_unit"`
-	BatchRecipeID uuid.UUID `json:"batch_recipe_id" db:"recipe_id"`
+	BatchRecipeID uuid.UUID `json:"batch_recipe_id" db:"batch_recipe_id"`
 	BatchRecipe   Recipe    `belongs_to:"recipes" db:"-"`
 	// Conversion is the number of recipe units in a prep item count
 	Conversion float64 `json:"conversion" db:"conversion"`

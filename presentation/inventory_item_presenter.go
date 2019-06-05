@@ -74,7 +74,7 @@ func (p *Presenter) populatePrepItemDetails(item *ItemAPI) error {
 		return err
 	}
 
-	item.ID = prepItem.id
+	item.ID = prepItem.ID.String()
 	item.RecipeUnit = recipe.RecipeUnit
 	item.RecipeUnitConversion = prepItem.Conversion
 

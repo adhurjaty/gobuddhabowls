@@ -40,14 +40,15 @@ func (v InventoryItemsResource) List(c buffalo.Context) error {
 	}
 
 	presenter := presentation.NewPresenter(tx)
-	items, err := presenter.GetMasterInvPrepList()
+	items, prepItems, err := presenter.GetMasterInvPrepList()
 	if err != nil {
 		return err
 	}
 
 	inventory := &presentation.InventoryAPI{
-		Date:  helpers.Today(),
-		Items: *items,
+		Date:      helpers.Today(),
+		Items:     *items,
+		PrepItems: *prepItems,
 	}
 
 	c.Set("inventory", inventory)

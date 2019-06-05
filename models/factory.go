@@ -156,7 +156,7 @@ func LoadInventory(inventory *Inventory, tx *pop.Connection, id string) error {
 	}
 
 	invs := &Inventories{*inventory}
-	if err := PopulateCountInvItems(invs, tx); err != nil {
+	if err := PopulateCountItems(invs, tx); err != nil {
 		return err
 	}
 	*inventory = (*invs)[0]
@@ -168,10 +168,10 @@ func LoadInventories(invList *Inventories, q *pop.Query) error {
 		return err
 	}
 
-	return PopulateCountInvItems(invList, q.Connection)
+	return PopulateCountItems(invList, q.Connection)
 }
 
-func PopulateCountInvItems(inventories *Inventories, tx *pop.Connection) error {
+func PopulateCountItems(inventories *Inventories, tx *pop.Connection) error {
 	ids := toIDList(inventories)
 
 	if err := populateCountInvItemsCache(tx, ids); err != nil {
@@ -180,8 +180,12 @@ func PopulateCountInvItems(inventories *Inventories, tx *pop.Connection) error {
 	if _countInvItemsCache == nil {
 		return nil
 	}
+
 	if err := populateCountPrepItemsCache(tx, ids); err != nil {
 		return err
+	}
+	if _countPrepItemsCache == nil {
+		return nil
 	}
 
 	return setModelItemsFromCache(inventories)
@@ -261,6 +265,7 @@ func LoadPrepItems(itemList *PrepItems, q *pop.Query) error {
 		return err
 	}
 
+	return errors.New("Here")
 	if err := populatePrepItemsCache(itemList, q.Connection); err != nil {
 		return err
 	}
