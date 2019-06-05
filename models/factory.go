@@ -180,6 +180,9 @@ func PopulateCountInvItems(inventories *Inventories, tx *pop.Connection) error {
 	if _countInvItemsCache == nil {
 		return nil
 	}
+	if err := populateCountPrepItemsCache(tx, ids); err != nil {
+		return err
+	}
 
 	return setModelItemsFromCache(inventories)
 }

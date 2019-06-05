@@ -2,6 +2,7 @@ package models
 
 import (
 	"encoding/json"
+	"sort"
 	"time"
 
 	"github.com/gobuffalo/pop"
@@ -51,4 +52,69 @@ func (c *CountPrepItem) ValidateCreate(tx *pop.Connection) (*validate.Errors, er
 // This method is not required and may be deleted.
 func (c *CountPrepItem) ValidateUpdate(tx *pop.Connection) (*validate.Errors, error) {
 	return validate.NewErrors(), nil
+}
+
+func (c *CountPrepItem) GetID() uuid.UUID {
+	return c.ID
+}
+
+func (c *CountPrepItem) GetName() string {
+	return c.GetBaseItem().GetName()
+}
+
+func (c *CountPrepItem) GetCategory() ItemCategory {
+	return c.GetBaseItem().GetCategory()
+}
+
+func (c *CountPrepItem) GetCountUnit() string {
+	return c.GetBaseItem().GetCountUnit()
+}
+
+func (c *CountPrepItem) GetIndex() int {
+	return c.GetBaseItem().GetIndex()
+}
+
+func (c *CountPrepItem) GetBaseItemID() uuid.UUID {
+	return c.PrepItemID
+}
+
+func (c *CountPrepItem) GetBaseItem() GenericItem {
+	return &c.PrepItem
+}
+
+func (c *CountPrepItem) SetBaseItem(item GenericItem) {
+	c.PrepItem = *item.(*PrepItem)
+}
+
+func (c *CountPrepItems) ToModels() []Model {
+	items := make([]Model, len(*c))
+	for i := range *c {
+		items[i] = &(*c)[i]
+	}
+
+	return items
+}
+
+func (c *CountPrepItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*c))
+	for i := range *c {
+		items[i] = &(*c)[i]
+	}
+
+	return &items
+}
+
+func (c *CountPrepItems) ToCompoundItems() *[]CompoundItem {
+	items := make([]CompoundItem, len(*c))
+	for i := range *c {
+		items[i] = &(*c)[i]
+	}
+
+	return &items
+}
+
+func (c *CountPrepItems) Sort() {
+	sort.Slice(*c, func(i, j int) bool {
+		return (*c)[i].PrepItem.GetSortValue() < (*c)[j].PrepItem.GetSortValue()
+	})
 }

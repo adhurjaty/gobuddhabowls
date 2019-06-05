@@ -90,11 +90,11 @@ func (p *PrepItem) GetSortValue() int {
 }
 
 func (p *PrepItem) GetName() string {
-	return p.BatchRecipe.Name
+	return p.GetBaseItem().GetName()
 }
 
 func (p *PrepItem) GetCategory() ItemCategory {
-	return p.BatchRecipe.Category
+	return p.GetBaseItem().GetCategory()
 }
 
 func (p *PrepItem) GetCountUnit() string {
@@ -114,4 +114,13 @@ func (p *PrepItems) Sort() {
 	sort.Slice(*p, func(i, j int) bool {
 		return (*p)[i].GetSortValue() < (*p)[j].GetSortValue()
 	})
+}
+
+func (p *PrepItems) ToGenericItems() *[]GenericItem {
+	items := make([]GenericItem, len(*p))
+	for i := 0; i < len(*p); i++ {
+		items[i] = &(*p)[i]
+	}
+
+	return &items
 }
