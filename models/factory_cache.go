@@ -57,7 +57,6 @@ func populateRecipe(item *PrepItem) error {
 		}
 	}
 
-	fmt.Println(item.BatchRecipeID)
 	return errors.New("no matching Recipe ID")
 }
 
@@ -96,7 +95,6 @@ func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
 		prep := item.(*PrepItem)
 		return prep.BatchRecipeID
 	})
-	fmt.Println(ids)
 	queryIds := toIntefaceList(ids)
 
 	if _recipesCache == nil {
@@ -105,8 +103,6 @@ func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
 	if err := LoadRecipes(_recipesCache, tx.Where("id IN (?)", queryIds...)); err != nil {
 		return err
 	}
-
-	fmt.Println(_recipesCache)
 
 	for i := range *_prepItemsCache {
 		if err := populateRecipe(&(*_prepItemsCache)[i]); err != nil {
@@ -158,7 +154,9 @@ func populateRecipeItemsCache(tx *pop.Connection, ids []string) error {
 }
 
 func populateRecipesAndItemsCache(tx *pop.Connection, ids []string) error {
-	_recipesCache = &Recipes{}
+	if _recipesCache == nil {
+		_recipesCache = &Recipes{}
+	}
 	_recipeItemsCache = &RecipeItems{}
 
 	prevLen := -1

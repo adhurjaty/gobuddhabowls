@@ -2,6 +2,8 @@ package models
 
 import (
 	"errors"
+	"fmt"
+	"reflect"
 
 	"github.com/gobuffalo/pop"
 )
@@ -38,6 +40,8 @@ func (mf *ModelFactory) CreateModel(m interface{}, tx *pop.Connection, id string
 		return LoadInventoryItem(m.(*InventoryItem), tx, id)
 	case *VendorItem:
 		return LoadVendorItem(m.(*VendorItem), tx, id)
+	case *PrepItem:
+		return LoadPrepItem(m.(*PrepItem), tx, id)
 	}
 
 	return errors.New("unimplemented type")
@@ -69,7 +73,7 @@ func (mf *ModelFactory) CreateModelSlice(s interface{}, q *pop.Query) error {
 		return LoadPrepItems(s.(*PrepItems), q)
 	}
 
-	return errors.New("unimplemented type")
+	return fmt.Errorf("unimplemented type: %s", reflect.TypeOf(s))
 }
 
 // LoadPurchaseOrder gets purchase order and sub-components matching the given ID
@@ -256,6 +260,17 @@ func LoadRecipeItem(item *RecipeItem, tx *pop.Connection, id string) error {
 	} else if item.BatchRecipeID.Valid {
 		err = tx.Eager().Find(&item.BatchRecipe, item.BatchRecipeID.UUID)
 	}
+
+	return err
+}
+
+func LoadPrepItem(item *PrepItem, tx *pop.Connection, id string) error {
+	err := tx.Eager().Find(item, id)
+	if err != nil {
+		return err
+	}
+
+	err = LoadRecipe(&item.BatchRecipe, tx, item.BatchRecipeID.String())
 
 	return err
 }

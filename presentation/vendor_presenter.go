@@ -4,7 +4,7 @@ import (
 	"buddhabowls/logic"
 	"buddhabowls/models"
 	"database/sql"
-	"fmt"
+
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
 )
@@ -147,8 +147,6 @@ func (p *Presenter) deleteVendorItems(item *ItemAPI) error {
 			}
 		}
 		if !exists {
-			fmt.Println("!!!!!!!!!!!!!!!!!!!!!!")
-			fmt.Println(vItem)
 			err = logic.DestroyVendorItem(&vItem, p.tx)
 			if err != nil {
 				return err

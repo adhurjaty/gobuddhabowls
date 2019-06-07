@@ -2,7 +2,7 @@ package logic
 
 import (
 	"buddhabowls/models"
-	"errors"
+	"fmt"
 
 	"github.com/gobuffalo/pop"
 )
@@ -16,11 +16,13 @@ func GetPrepItems(tx *pop.Connection) (*models.PrepItems, error) {
 }
 
 func GetPrepItemFromRecipeID(id string, tx *pop.Connection) (*models.PrepItem, error) {
-	return nil, errors.New("HERE")
-
 	factory := models.ModelFactory{}
-	prepItem := &models.PrepItem{}
-	err := factory.CreateModelSlice(prepItem, tx.Where("batch_recipe_id = ?", id))
-
-	return prepItem, err
+	prepItems := &models.PrepItems{}
+	if err := factory.CreateModelSlice(prepItems, tx.Where("batch_recipe_id = ?", id)); err != nil {
+		return nil, err
+	}
+	if len(*prepItems) == 0 {
+		return nil, fmt.Errorf("no prep item with recipe ID: %s", id)
+	}
+	return &(*prepItems)[0], nil
 }

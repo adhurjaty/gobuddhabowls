@@ -8,11 +8,12 @@ import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 	"fmt"
+	"net/url"
+	"time"
+
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/pkg/errors"
-	"net/url"
-	"time"
 )
 
 var _ = fmt.Printf
@@ -157,7 +158,6 @@ func (v PurchaseOrdersResource) Create(c buffalo.Context) error {
 			return errors.WithStack(err)
 		}
 		c.Set("errors", verrs)
-		fmt.Println(poAPI)
 		return c.Render(422, r.Auto(c, models.PurchaseOrder{}))
 	}
 
@@ -414,7 +414,6 @@ func bindTimes(po *presentation.PurchaseOrderAPI, c buffalo.Context) error {
 
 		po.OrderDate.Time = dateHolder.OrderDate
 
-		fmt.Println()
 		if err != nil {
 			return err
 		}
