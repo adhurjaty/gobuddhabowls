@@ -97,6 +97,9 @@ func (r *Recipe) GetName() string {
 func (r *Recipe) GetCategory() ItemCategory {
 	return r.Category
 }
+func (r *Recipe) SetCategory(category ItemCategory) {
+	r.Category = category
+}
 func (r *Recipe) GetCountUnit() string {
 	return fmt.Sprintf("%d x %s", r.RecipeUnitConversion, r.RecipeUnit)
 }

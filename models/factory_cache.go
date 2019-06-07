@@ -31,7 +31,7 @@ func resetCache() {
 	_countPrepItemsCache = nil
 }
 
-func populateCategories(item *InventoryItem, tx *pop.Connection) error {
+func populateCategories(item GenericItem, tx *pop.Connection) error {
 	if _categoriesCache == nil {
 		_categoriesCache = &ItemCategories{}
 		if err := tx.All(_categoriesCache); err != nil {
@@ -40,8 +40,8 @@ func populateCategories(item *InventoryItem, tx *pop.Connection) error {
 	}
 
 	for i, category := range *_categoriesCache {
-		if item.CategoryID.String() == category.ID.String() {
-			item.Category = (*_categoriesCache)[i]
+		if item.GetCategory().ID.String() == category.ID.String() {
+			item.SetCategory((*_categoriesCache)[i])
 			return nil
 		}
 	}
@@ -106,6 +106,9 @@ func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
 
 	for i := range *_prepItemsCache {
 		if err := populateRecipe(&(*_prepItemsCache)[i]); err != nil {
+			return err
+		}
+		if err := populateCategories(&(*_prepItemsCache)[0].BatchRecipe, tx); err != nil {
 			return err
 		}
 	}

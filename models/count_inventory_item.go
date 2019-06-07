@@ -74,6 +74,10 @@ func (c *CountInventoryItem) GetCategory() ItemCategory {
 	return c.InventoryItem.Category
 }
 
+func (c *CountInventoryItem) SetCategory(category ItemCategory) {
+	c.GetBaseItem().SetCategory(category)
+}
+
 func (c *CountInventoryItem) GetCountUnit() string {
 	return c.InventoryItem.CountUnit
 }

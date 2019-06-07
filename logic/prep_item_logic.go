@@ -24,5 +24,7 @@ func GetPrepItemFromRecipeID(id string, tx *pop.Connection) (*models.PrepItem, e
 	if len(*prepItems) == 0 {
 		return nil, fmt.Errorf("no prep item with recipe ID: %s", id)
 	}
+	fmt.Println(prepItems)
+	fmt.Println("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
 	return &(*prepItems)[0], nil
 }

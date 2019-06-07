@@ -122,6 +122,10 @@ func (i *InventoryItem) GetCategory() ItemCategory {
 	return i.Category
 }
 
+func (c *InventoryItem) SetCategory(category ItemCategory) {
+	c.Category = category
+}
+
 func (i *InventoryItem) GetCountUnit() string {
 	return i.CountUnit
 }

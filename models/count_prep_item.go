@@ -66,6 +66,10 @@ func (c *CountPrepItem) GetCategory() ItemCategory {
 	return c.GetBaseItem().GetCategory()
 }
 
+func (c *CountPrepItem) SetCategory(category ItemCategory) {
+	c.GetBaseItem().SetCategory(category)
+}
+
 func (c *CountPrepItem) GetCountUnit() string {
 	return c.GetBaseItem().GetCountUnit()
 }

@@ -104,6 +104,9 @@ func (r *RecipeItem) GetName() string {
 func (r *RecipeItem) GetCategory() ItemCategory {
 	return r.GetBaseItem().GetCategory()
 }
+func (r *RecipeItem) SetCategory(category ItemCategory) {
+	r.GetBaseItem().SetCategory(category)
+}
 func (r *RecipeItem) GetCountUnit() string {
 	return r.GetBaseItem().GetCountUnit()
 }

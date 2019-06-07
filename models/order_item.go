@@ -80,6 +80,10 @@ func (o *OrderItem) GetCategory() ItemCategory {
 	return o.InventoryItem.Category
 }
 
+func (o *OrderItem) SetCategory(category ItemCategory) {
+	o.GetBaseItem().SetCategory(category)
+}
+
 func (o *OrderItem) GetCountUnit() string {
 	return o.InventoryItem.CountUnit
 }

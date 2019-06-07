@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"database/sql"
+
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
@@ -91,6 +92,10 @@ func (v *VendorItem) GetName() string {
 // GetCategory returns the inventory item category of the vendor item
 func (v *VendorItem) GetCategory() ItemCategory {
 	return v.InventoryItem.Category
+}
+
+func (v *VendorItem) SetCategory(category ItemCategory) {
+	v.GetBaseItem().SetCategory(category)
 }
 
 func (v *VendorItem) GetCountUnit() string {
