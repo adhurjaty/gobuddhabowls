@@ -97,6 +97,9 @@ func (r *Recipe) GetName() string {
 func (r *Recipe) GetCategory() ItemCategory {
 	return r.Category
 }
+func (r *Recipe) GetCategoryID() uuid.UUID {
+	return r.CategoryID
+}
 func (r *Recipe) SetCategory(category ItemCategory) {
 	r.Category = category
 }

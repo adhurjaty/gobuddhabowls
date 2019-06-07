@@ -77,7 +77,11 @@ func (o *OrderItem) GetName() string {
 
 // GetCategory returns the inventory item category of the vendor item
 func (o *OrderItem) GetCategory() ItemCategory {
-	return o.InventoryItem.Category
+	return o.GetBaseItem().GetCategory()
+}
+
+func (o *OrderItem) GetCategoryID() uuid.UUID {
+	return o.GetBaseItem().GetCategoryID()
 }
 
 func (o *OrderItem) SetCategory(category ItemCategory) {

@@ -122,6 +122,10 @@ func (i *InventoryItem) GetCategory() ItemCategory {
 	return i.Category
 }
 
+func (i *InventoryItem) GetCategoryID() uuid.UUID {
+	return i.CategoryID
+}
+
 func (c *InventoryItem) SetCategory(category ItemCategory) {
 	c.Category = category
 }

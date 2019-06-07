@@ -74,6 +74,10 @@ func (c *CountInventoryItem) GetCategory() ItemCategory {
 	return c.InventoryItem.Category
 }
 
+func (c *CountInventoryItem) GetCategoryID() uuid.UUID {
+	return c.InventoryItem.CategoryID
+}
+
 func (c *CountInventoryItem) SetCategory(category ItemCategory) {
 	c.GetBaseItem().SetCategory(category)
 }

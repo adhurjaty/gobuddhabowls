@@ -17,6 +17,7 @@ type GenericItem interface {
 	Model
 	GetName() string
 	GetCategory() ItemCategory
+	GetCategoryID() uuid.UUID
 	SetCategory(ItemCategory)
 	GetCountUnit() string
 	GetIndex() int

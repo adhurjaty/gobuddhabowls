@@ -96,6 +96,10 @@ func (p *PrepItem) GetCategory() ItemCategory {
 	return p.GetBaseItem().GetCategory()
 }
 
+func (p *PrepItem) GetCategoryID() uuid.UUID {
+	return p.GetBaseItem().GetCategoryID()
+}
+
 func (p *PrepItem) SetCategory(category ItemCategory) {
 	p.GetBaseItem().SetCategory(category)
 }

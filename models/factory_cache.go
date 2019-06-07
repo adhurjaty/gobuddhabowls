@@ -40,13 +40,13 @@ func populateCategories(item GenericItem, tx *pop.Connection) error {
 	}
 
 	for i, category := range *_categoriesCache {
-		if item.GetCategory().ID.String() == category.ID.String() {
+		if item.GetCategoryID().String() == category.ID.String() {
 			item.SetCategory((*_categoriesCache)[i])
 			return nil
 		}
 	}
 
-	return errors.New("no matching category ID")
+	return fmt.Errorf("no matching category ID: %s", item.GetCategoryID().String())
 }
 
 func populateRecipe(item *PrepItem) error {
