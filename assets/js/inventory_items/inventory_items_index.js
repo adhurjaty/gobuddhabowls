@@ -229,7 +229,8 @@ var _prepIemsColumns= [
     ...hiddenColumns
 ]
 
-var _items = [];
+var _invItems = [];
+var _prepItems = [];
 
 $(() => {
     createMasterDatagrid($('#categorized-items-display'), _invItemsColumns);
@@ -237,6 +238,8 @@ $(() => {
 
     enableChangeOrderButton();
     setupSubmitButton();
+    enableChangeOrderPrepButton();
+    setupSubmitPrepButton();
 });
 
 function createMasterDatagrid(container, columns) {
@@ -296,15 +299,45 @@ function submitForm(form, id) {
 
 function enableChangeOrderButton() {
     var itemsDiv = $('#categorized-items-display');
-    _items = parseModelJSON(itemsDiv.attr('data'));
+    _invItems = parseModelJSON(itemsDiv.attr('data'));
     
-    var table = new CategorizedOrderingTable(_items);
+    var table = new CategorizedOrderingTable(_invItems);
     var container = $('#re-order-display');
     table.attach(container);
 
     var button = $('#change-order-button');
     button.click(() => {
         $('#re-order-section').toggle();
+        itemsDiv.toggle();
+    });
+}
+
+function enableChangeOrderButton() {
+    var itemsDiv = $('#categorized-items-display');
+    _invItems = parseModelJSON(itemsDiv.attr('data'));
+    
+    var table = new CategorizedOrderingTable(_invItems);
+    var container = $('#re-order-display');
+    table.attach(container);
+
+    var button = $('#change-order-button');
+    button.click(() => {
+        $('#re-order-section').toggle();
+        itemsDiv.toggle();
+    });
+}
+
+function enableChangeOrderPrepButton() {
+    var itemsDiv = $('#categorized-prep-items-display');
+    _prepItems = parseModelJSON(itemsDiv.attr('data'));
+    
+    var table = new CategorizedOrderingTable(_prepItems);
+    var container = $('#re-order-prep-display');
+    table.attach(container);
+
+    var button = $('#change-prep-order-button');
+    button.click(() => {
+        $('#re-order-prep-section').toggle();
         itemsDiv.toggle();
     });
 }
@@ -319,7 +352,27 @@ function saveInvItemsOrder() {
     $('#re-order-display').find('li[name="reorder-li"] li').each(
         function(i, el) {
             var id = $(el).attr('itemid');
-            var item = _items.find(x => x.id == id);
+            var item = _invItems.find(x => x.id == id);
+            item.index = i;
+
+            sendUpdate($form, item, (form) => sendAjax(form, true));
+        }
+    );
+    
+    location.reload();
+}
+
+function setupSubmitPrepButton() {
+    $('#save-order-prep-button').click(savePrepItemsOrder());
+}
+
+function savePrepItemsOrder() {
+    var $form = $('#prep-item-form');
+
+    $('#re-order-prep-display').find('li[name="reorder-li"] li').each(
+        function(i, el) {
+            var id = $(el).attr('itemid');
+            var item = _prepItems.find(x => x.id == id);
             item.index = i;
 
             sendUpdate($form, item, (form) => sendAjax(form, true));
