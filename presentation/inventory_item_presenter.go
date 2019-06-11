@@ -41,13 +41,6 @@ func (p *Presenter) GetMasterInvPrepList() (*ItemsAPI, *ItemsAPI, error) {
 		}
 	}
 
-	for i := 0; i < len(*prepItems); i++ {
-		prepItem := &(*prepItems)[i]
-		if err = p.populatePrepItemDetails(prepItem); err != nil {
-			return nil, nil, err
-		}
-	}
-
 	return items, prepItems, nil
 }
 

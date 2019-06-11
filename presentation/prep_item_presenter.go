@@ -27,6 +27,7 @@ func (p *Presenter) GetPrepItems() (*ItemsAPI, error) {
 	}
 
 	apiItems := NewItemsAPI(items)
+	err = p.populatePrepItemCosts(&apiItems)
 
 	return &apiItems, err
 }
@@ -44,8 +45,19 @@ func (p *Presenter) populateLatestPrepItems(items *ItemsAPI) error {
 				item.Count = latestItem.Count
 				break
 			}
-			item.BatchRecipe = latestItem.BatchRecipe
 		}
+	}
+
+	return nil
+}
+
+func (p *Presenter) populatePrepItemCosts(items *ItemsAPI) error {
+	for i, item := range *items {
+		cost, err := p.getItemRecipeCost(item)
+		if err != nil {
+			return err
+		}
+		(*items)[i].Price = cost * item.RecipeUnitConversion
 	}
 
 	return nil

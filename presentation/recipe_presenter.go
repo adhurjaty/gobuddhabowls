@@ -2,6 +2,7 @@ package presentation
 
 import (
 	"buddhabowls/logic"
+
 	"github.com/gobuffalo/validate"
 )
 
@@ -12,7 +13,7 @@ func (p *Presenter) GetRecipe(id string) (*RecipeAPI, error) {
 	}
 
 	recAPI := NewRecipeAPI(recipe)
-	err = p.populateReciepItemCosts(&recAPI.Items)
+	err = p.populateRecipeItemCosts(&recAPI.Items)
 	return &recAPI, err
 }
 
@@ -26,7 +27,7 @@ func (p *Presenter) GetRecipes() (*RecipesAPI, error) {
 
 	for i, _ := range recipesAPI {
 		rec := &recipesAPI[i]
-		err = p.populateReciepItemCosts(&rec.Items)
+		err = p.populateRecipeItemCosts(&rec.Items)
 		if err != nil {
 			return nil, err
 		}
@@ -35,7 +36,7 @@ func (p *Presenter) GetRecipes() (*RecipesAPI, error) {
 	return &recipesAPI, nil
 }
 
-func (p *Presenter) populateReciepItemCosts(items *ItemsAPI) error {
+func (p *Presenter) populateRecipeItemCosts(items *ItemsAPI) error {
 	for i := 0; i < len(*items); i++ {
 		cost, err := p.getItemRecipeCost((*items)[i])
 		if err != nil {
@@ -99,7 +100,7 @@ func (p *Presenter) GetAllItemsForRecipe() (*ItemsAPI, error) {
 	}
 
 	*items = append(*items, batchItems...)
-	err = p.populateReciepItemCosts(items)
+	err = p.populateRecipeItemCosts(items)
 	clearItemIds(items)
 
 	return items, err

@@ -39,9 +39,9 @@ func populateCategories(item GenericItem, tx *pop.Connection) error {
 		}
 	}
 
-	for i, category := range *_categoriesCache {
+	for _, category := range *_categoriesCache {
 		if item.GetCategoryID().String() == category.ID.String() {
-			item.SetCategory((*_categoriesCache)[i])
+			item.SetCategory(category)
 			return nil
 		}
 	}
@@ -87,9 +87,6 @@ func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
 	}
 
 	_prepItemsCache = itemList
-	if err := tx.All(_prepItemsCache); err != nil {
-		return err
-	}
 
 	ids := toIDListWithFunc(_prepItemsCache, func(item Model) uuid.UUID {
 		prep := item.(*PrepItem)
@@ -100,6 +97,7 @@ func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
 	if _recipesCache == nil {
 		_recipesCache = &Recipes{}
 	}
+	fmt.Println(queryIds)
 	if err := LoadRecipes(_recipesCache, tx.Where("id IN (?)", queryIds...)); err != nil {
 		return err
 	}
@@ -108,7 +106,7 @@ func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
 		if err := populateRecipe(&(*_prepItemsCache)[i]); err != nil {
 			return err
 		}
-		if err := populateCategories(&(*_prepItemsCache)[0].BatchRecipe, tx); err != nil {
+		if err := populateCategories(&(*_prepItemsCache)[i].BatchRecipe, tx); err != nil {
 			return err
 		}
 	}
