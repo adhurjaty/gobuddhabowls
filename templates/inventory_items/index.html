@@ -8,8 +8,18 @@
   method: "PUT", id: "inventory-item-form", data-remote: "true",
   style: "display: none;"}) { %> <% } %>
 
+<%#= form({action: prepItemInlinePath({prep_item_id: "{item_id}"}), 
+  method: "PUT", id: "prep-item-form", data-remote: "true", 
+  style: "display: none;"}) { %> <%# } %>
+
 <div class="row">
-  <div class="col-md-12 text-md-right">
+  <div class="col-md-4">
+    <a href="#prep-items-header" class="btn btn-primary">Prep Items</a>
+  </div>
+  <div class="col-md-4 text-md-center">
+    <h4 id="inventory-items-header">Inventory Items</h4>
+  </div>
+  <div class="col-md-4 text-md-right">
     <div class="btn-group">
       <button id="change-order-button" class="btn btn-primary">Change Order</button>
       <a href="<%= newInventoryItemsPath() %>" class="btn btn-primary">New Item</a>
@@ -25,5 +35,30 @@
   <div id="re-order-display"></div>
   <button id="save-order-button" class="btn btn-primary">Save</button>
 </div>
+    
 
+<div class="row">
+  <div class="col-md-4">
+    <a href="#inventory-items-header" class="btn btn-primary">Inventory Items</a>
+  </div>
+  <div class="col-md-4 text-md-center">
+    <h4 id="prep-items-header">Prep Items</h4>
+  </div>
+  <div class="col-md-4 text-md-right">
+    <div class="btn-group">
+      <button id="change-prep-order-button" class="btn btn-primary">Change Order</button>
+      <a href="<%= newPrepItemsPath() %>" class="btn btn-primary">New Item</a>
+    </div>
+  </div>
+</div>
+<div id="categorized-prep-items-display" class="row"
+  edit-path='<%= editPrepItemPath({prep_item_id: "{prep_item_id}"}) %>'
+  delete-path='<%= prepItemPath({prep_item_id: "{prep_item_id}"}) %>'
+  data='<%= inventory.PrepItems.String() %>'></div>
+
+<div id="re-order-prep-section" style="display: none;">
+  <div id="re-order-prep-display"></div>
+  <button id="save-order-prep-button" class="btn btn-primary">Save</button>
+</div>
+    
 <%= javascriptTag("inventory_items/inventory_items_index.js") %>

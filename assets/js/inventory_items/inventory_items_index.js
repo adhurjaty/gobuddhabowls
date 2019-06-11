@@ -7,143 +7,152 @@ var _categorizedOptions = {
     breakdown: false
 };
 
-var _columns = [
-    {
-        name: 'id',
-        hidden: true,
-        get_column: (item) => {
-            return item.id;
-        }
+var idColumn = {
+    name: 'id',
+    hidden: true,
+    get_column: (item) => {
+        return item.id;
+    }
+};
+var inventoryItemIDColumn = {
+    name: 'inventory_item_id',
+    hidden: true,
+    get_column: (item) => {
+        return item.inventory_item_id;
+    }
+};
+var batchRecipeIDColumn = {
+    name: 'batch_recipe_id',
+    hidden: true,
+    get_column: (item) => {
+        return item.batch_recipe_id;
+    }
+};
+var indexColumn = {
+    name: 'index',
+    hidden: true,
+    get_column: (item) => {
+        return item.index;
+    }
+};
+var nameColumn = {
+    name: 'name',
+    header: 'Name',
+    editable: true,
+    get_column: (item) => {
+        return item.name;
     },
-    {
-        name: 'inventory_item_id',
-        hidden: true,
-        get_column: (item) => {
-            return item.inventory_item_id;
-        }
+    set_column: (item, name) => {
+        item.name = name;
+    }
+};
+var selectedVendorColumn = {
+    name: 'selected_vendor',
+    header: 'Vendor',
+    editable: true,
+    data_type: 'selector',
+    get_column: (item) => {
+        return item.selected_vendor;
     },
-    {
-        name: 'index',
-        hidden: true,
-        get_column: (item) => {
-            return item.index;
-        }
+    options_func: (item) => {
+        return Object.keys(item.VendorItemMap);
     },
-    {
-        name: 'name',
-        header: 'Name',
-        editable: true,
-        get_column: (item) => {
-            return item.name;
-        },
-        set_column: (item, name) => {
-            item.name = name;
+    set_column: (item, value) => {
+        var vendorItem = item.VendorItemMap[value];
+        if(vendorItem != null) {
+            item.purchased_unit = vendorItem.purchased_unit;
+            item.price = vendorItem.price;
+            item.conversion = vendorItem.conversion;
+            item.selected_vendor = value;
+        } else {
+            item.selected_vendor = "";
         }
+    }
+};
+var purchasedUnitColumn = {
+    name: 'purchased_unit',
+    header: 'Purchased Unit',
+    editable: true,
+    get_column: (item) => {
+        return item.purchased_unit;
     },
-    {
-        name: 'selected_vendor',
-        header: 'Vendor',
-        editable: true,
-        data_type: 'selector',
-        get_column: (item) => {
-            return item.selected_vendor;
-        },
-        options_func: (item) => {
-            return Object.keys(item.VendorItemMap);
-        },
-        set_column: (item, value) => {
-            var vendorItem = item.VendorItemMap[value];
-            if(vendorItem != null) {
-                item.purchased_unit = vendorItem.purchased_unit;
-                item.price = vendorItem.price;
-                item.conversion = vendorItem.conversion;
-                item.selected_vendor = value;
-            } else {
-                item.selected_vendor = "";
-            }
-        }
+    set_column: (item, value) => {
+        item.purchased_unit = value;
+    }
+};
+var recipeUnitColumn = {
+    name: 'recipe_unit',
+    header: 'Recipe Unit',
+    editable: true,
+    get_column: (item) => {
+        return item.recipe_unit;
     },
-    {
-        name: 'purchased_unit',
-        header: 'Purchased Unit',
-        editable: true,
-        get_column: (item) => {
-            return item.purchased_unit;
-        },
-        set_column: (item, value) => {
-            item.purchased_unit = value;
-        }
+    set_column: (item, value) => {
+        item.recipe_unit = value;
+    }
+};
+var priceColumn = {
+    name: 'price',
+    header: 'Purchased Price',
+    editable: true,
+    data_type: 'money',
+    get_column: (item) => {
+        return formatMoney(item.price);
     },
-    {
-        name: 'price',
-        header: 'Purchased Price',
-        editable: true,
-        data_type: 'money',
-        get_column: (item) => {
-            return formatMoney(item.price);
-        },
-        set_column: (item, value) => {
-            item.price = parseFloat(value);
-            item.VendorItemMap[item.selected_vendor].price = item.price;
-        }
+    set_column: (item, value) => {
+        item.price = parseFloat(value);
+        item.VendorItemMap[item.selected_vendor].price = item.price;
+    }
+};
+var conversionColumn = {
+    name: 'conversion',
+    header: 'Conversion',
+    editable: true,
+    data_type: 'number',
+    get_column: (item) => {
+        return item.conversion;
     },
-    {
-        name: 'conversion',
-        header: 'Conversion',
-        editable: true,
-        data_type: 'number',
-        get_column: (item) => {
-            return item.conversion;
-        },
-        set_column: (item, value) => {
-            item.conversion = parseFloat(value);
-            item.VendorItemMap[item.selected_vendor].conversion = item.conversion;
-        }
+    set_column: (item, value) => {
+        item.conversion = parseFloat(value);
+        item.VendorItemMap[item.selected_vendor].conversion = item.conversion;
+    }
+};
+var recipeUnitconversionColumn = {
+    name: 'recipe_unit_conversion',
+    header: 'RU Conv',
+    editable: true,
+    data_type: 'number',
+    get_column: (item) => {
+        return item.recipe_unit_conversion;
     },
-    {
-        name: 'count_unit',
-        header: 'Count Unit',
-        editable: true,
-        get_column: (item) => {
-            return item.count_unit;
-        },
-        set_column: (item, value) => {
-            item.count_unit = value;
-        }
+    set_column: (item, value) => {
+        item.conversion = parseFloat(value);
+        item.VendorItemMap[item.selected_vendor].conversion = item.conversion;
+    }
+};
+var countUnitColumn = {
+    name: 'count_unit',
+    header: 'Count Unit',
+    editable: true,
+    get_column: (item) => {
+        return item.count_unit;
     },
-    {
-        header: 'Count Price',
-        get_column: (item) => {
-            return formatMoney(item.price / item.conversion);
-        }
-    },
+    set_column: (item, value) => {
+        item.count_unit = value;
+    }
+};
+var countPriceColumn = {
+    header: 'Count Price',
+    get_column: (item) => {
+        return formatMoney(item.price / item.conversion);
+    }
+}
+var hiddenColumns = [ 
     {
         name: 'count',
         hidden: true,
         get_column: (item) => {
             return item.count;
-        }
-    },
-    {
-        name: 'dropdown',
-        get_column: (item) => {
-            var editPath = replaceUrlId(_editPathBase, item.id);
-            var deletePath = replaceUrlId(_deletePathBase, item.id);
-            return `
-            <div class="dropdown show">
-                <button type="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    ...
-                </button>
-                <div class="dropdown-menu">
-                    <a href="${editPath}" class="dropdown-item">Edit</a>
-                    <a href="${deletePath}" class="dropdown-item text-danger"
-                        data-method="DELETE" data-confirm="Are you sure?">
-                        Delete
-                    </a>
-                </div>
-            </div>
-            `
         }
     },
     {
@@ -167,24 +176,76 @@ var _columns = [
             return item.yield;
         }
     }
+]
+var dropdownColumn = (editPathBase, deletePathBase) => {
+    return {
+        name: 'dropdown',
+        get_column: (item) => {
+            var editPath = replaceUrlId(editPathBase, item.id);
+            var deletePath = replaceUrlId(deletePathBase, item.id);
+            return `
+            <div class="dropdown show">
+                <button type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    ...
+                </button>
+                <div class="dropdown-menu">
+                    <a href="${editPath}" class="dropdown-item">Edit</a>
+                    <a href="${deletePath}" class="dropdown-item text-danger"
+                        data-method="DELETE" data-confirm="Are you sure?">
+                        Delete
+                    </a>
+                </div>
+            </div>
+            `
+        }
+    }
+};
+
+var _invItemsColumns = [
+    idColumn,
+    inventoryItemIDColumn,
+    indexColumn,
+    nameColumn,
+    selectedVendorColumn,
+    purchasedUnitColumn,
+    priceColumn,
+    conversionColumn,
+    countUnitColumn,
+    countPriceColumn,
+    ...hiddenColumns
 ];
 
-var _editPathBase = "";
-var _deletePathBase = "";
+var _prepIemsColumns= [
+    idColumn,
+    batchRecipeIDColumn,
+    indexColumn,
+    nameColumn,
+    recipeUnitColumn,
+    priceColumn,
+    recipeUnitconversionColumn,
+    countUnitColumn,
+    countPriceColumn,
+    ...hiddenColumns
+]
+
 var _items = [];
 
 $(() => {
-    var container = $('#categorized-items-display');
-    _editPathBase = container.attr('edit-path');
-    _deletePathBase = container.attr('delete-path');
-    createMasterDatagrid(container);
+    createMasterDatagrid($('#categorized-items-display'), _invItemsColumns);
+    createMasterDatagrid($('#categorized-prep-items-display'), _prepIemsColumns);
+
     enableChangeOrderButton();
     setupSubmitButton();
 });
 
-function createMasterDatagrid(container) {
+function createMasterDatagrid(container, columns) {
+    var editPathBase = container.attr('edit-path');
+    var deletePathBase = container.attr('delete-path');
+    columns.push(dropdownColumn(editPathBase, deletePathBase));
+
     _categorizedOptions.datagridUpdated = onDataGridEdit;
-    return new CategorizedItemsDisplay(container, _columns, null,
+    return new CategorizedItemsDisplay(container, columns, null,
         _categorizedOptions);
 }
 

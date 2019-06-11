@@ -52,7 +52,6 @@ func (v InventoryItemsResource) List(c buffalo.Context) error {
 	}
 
 	c.Set("inventory", inventory)
-	fmt.Println(prepItems)
 
 	return c.Render(200, r.HTML("inventory_items/index"))
 }
