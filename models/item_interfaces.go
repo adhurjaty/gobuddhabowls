@@ -21,6 +21,7 @@ type GenericItem interface {
 	SetCategory(ItemCategory)
 	GetCountUnit() string
 	GetIndex() int
+	SetIndex(int)
 }
 
 type GenericItems interface {

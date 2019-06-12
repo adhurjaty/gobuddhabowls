@@ -109,6 +109,9 @@ func (r *Recipe) GetCountUnit() string {
 func (r *Recipe) GetIndex() int {
 	return r.Index
 }
+func (r *Recipe) SetIndex(idx int) {
+	r.Index = idx
+}
 
 func (r *Recipe) GetItems() CompoundItems {
 	return &r.Items

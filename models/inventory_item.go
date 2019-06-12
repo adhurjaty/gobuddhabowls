@@ -138,6 +138,10 @@ func (i *InventoryItem) GetIndex() int {
 	return i.Index
 }
 
+func (i *InventoryItem) SetIndex(idx int) {
+	i.Index = idx
+}
+
 // GetSortValue returns a value for sorting where Category is highest prcedence
 // and item index is second
 func (i InventoryItem) GetSortValue() int {

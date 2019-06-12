@@ -82,6 +82,10 @@ func (c *CountPrepItem) GetIndex() int {
 	return c.GetBaseItem().GetIndex()
 }
 
+func (c *CountPrepItem) SetIndex(idx int) {
+	c.PrepItem.Index = idx
+}
+
 func (c *CountPrepItem) GetBaseItemID() uuid.UUID {
 	return c.PrepItemID
 }

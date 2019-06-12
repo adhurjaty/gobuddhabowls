@@ -96,6 +96,10 @@ func (o *OrderItem) GetIndex() int {
 	return o.InventoryItem.Index
 }
 
+func (o *OrderItem) SetIndex(idx int) {
+	o.InventoryItem.Index = idx
+}
+
 // ToGenericItems converts the VendorItems to a GenericItems slice
 func (o OrderItems) ToGenericItems() *[]GenericItem {
 	items := make([]GenericItem, len(o))

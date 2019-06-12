@@ -331,11 +331,6 @@ func ConvertToModelPrepItem(item *ItemAPI) (*models.PrepItem, error) {
 		recID = uuid.UUID{}
 	}
 
-	category, err := ConvertToModelCategory(item.Category)
-	if err != nil {
-		return nil, err
-	}
-
 	return &models.PrepItem{
 		ID:            id,
 		BatchRecipeID: recID,

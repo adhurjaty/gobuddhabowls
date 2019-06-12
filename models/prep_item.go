@@ -72,6 +72,10 @@ func (p *PrepItem) GetIndex() int {
 	return p.Index
 }
 
+func (p *PrepItem) SetIndex(idx int) {
+	p.Index = idx
+}
+
 func (p *PrepItem) GetBaseItemID() uuid.UUID {
 	return p.BatchRecipeID
 }

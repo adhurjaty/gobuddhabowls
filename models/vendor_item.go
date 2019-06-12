@@ -110,6 +110,10 @@ func (v *VendorItem) GetIndex() int {
 	return v.InventoryItem.Index
 }
 
+func (v *VendorItem) SetIndex(idx int) {
+	v.InventoryItem.Index = idx
+}
+
 // ToOrderItem converts a vendor item to an order item (0 count and no order ID)
 func (v *VendorItem) ToOrderItem() *OrderItem {
 	return &OrderItem{

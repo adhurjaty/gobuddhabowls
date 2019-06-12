@@ -90,6 +90,10 @@ func (c *CountInventoryItem) GetIndex() int {
 	return c.InventoryItem.Index
 }
 
+func (c *CountInventoryItem) SetIndex(idx int) {
+	c.InventoryItem.Index = idx
+}
+
 func (ci *CountInventoryItems) Sort() {
 	sort.Slice(*ci, func(i, j int) bool {
 		return (*ci)[i].InventoryItem.GetSortValue() < (*ci)[j].InventoryItem.GetSortValue()

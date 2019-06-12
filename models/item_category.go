@@ -71,3 +71,7 @@ func (c ItemCategory) GetBackground() string {
 func (c ItemCategory) GetIndex() int {
 	return c.Index
 }
+
+func (c ItemCategory) SetIndex(idx int) {
+	c.Index = idx
+}

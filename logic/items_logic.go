@@ -91,14 +91,14 @@ func updateIndices(genItem models.GenericItem, tx *pop.Connection) (*validate.Er
 
 	switch genItem.(type) {
 	case *models.InventoryItem:
-		items, err := GetInventoryItemsOfCategory(genItem.GetID().String(),
+		items, err = GetInventoryItemsOfCategory(genItem.GetID().String(),
 			genItem.GetCategoryID().String(), tx)
 		if err != nil {
 			return verrs, err
 		}
 		break
 	case *models.PrepItem:
-		items, err := GetPrepItemsOfCategory(genItem.GetID().String(),
+		items, err = GetPrepItemsOfCategory(genItem.GetID().String(),
 			genItem.GetCategoryID().String(), tx)
 		if err != nil {
 			return verrs, err
@@ -114,7 +114,7 @@ func updateIndices(genItem models.GenericItem, tx *pop.Connection) (*validate.Er
 			offset = 1
 		}
 
-		item.SetIndex() = i + offset
+		item.SetIndex(i + offset)
 		verrs, err := tx.ValidateAndUpdate(item)
 		if verrs.HasAny() || err != nil {
 			return verrs, err

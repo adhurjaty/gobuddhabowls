@@ -116,6 +116,9 @@ func (r *RecipeItem) GetCountUnit() string {
 func (r *RecipeItem) GetIndex() int {
 	return r.GetBaseItem().GetIndex()
 }
+func (r *RecipeItem) SetIndex(idx int) {
+	r.Recipe.Index = idx
+}
 func (r *RecipeItem) GetRecipeUnit() string {
 	if r.InventoryItemID.Valid {
 		return r.InventoryItem.RecipeUnit
