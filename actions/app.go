@@ -4,15 +4,15 @@ import (
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/buffalo-pop/pop/popmw"
 	"github.com/gobuffalo/envy"
-	"github.com/gobuffalo/mw-forcessl"
+	forcessl "github.com/gobuffalo/mw-forcessl"
 	paramlogger "github.com/gobuffalo/mw-paramlogger"
 	"github.com/gobuffalo/packr/v2"
 	"github.com/unrolled/secure"
 
 	"buddhabowls/models"
 
-	"github.com/gobuffalo/mw-csrf"
-	"github.com/gobuffalo/mw-i18n"
+	csrf "github.com/gobuffalo/mw-csrf"
+	i18n "github.com/gobuffalo/mw-i18n"
 )
 
 // ENV is used to help switch settings based on where the
@@ -83,6 +83,7 @@ func App() *buffalo.App {
 
 		app.Resource("/order_items", OrderItemsResource{})
 		app.Resource("/prep_items", PrepItemsResource{})
+		app.PUT("/prep_items/{prep_item_id}/inline", UpdatePrepItem)
 
 		app.PUT("/recipes/{recipe_id}/inline", UpdateRecipeInline)
 		app.Resource("/recipes", RecipesResource{})

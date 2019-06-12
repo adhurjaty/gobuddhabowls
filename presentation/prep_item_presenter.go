@@ -3,6 +3,8 @@ package presentation
 import (
 	"buddhabowls/logic"
 	"time"
+
+	"github.com/gobuffalo/validate"
 )
 
 func (p *Presenter) GetNewPrepItems() (*ItemsAPI, error) {
@@ -61,4 +63,28 @@ func (p *Presenter) populatePrepItemCosts(items *ItemsAPI) error {
 	}
 
 	return nil
+}
+
+func (p *Presenter) GetPrepItem(id string) (*ItemAPI, error) {
+	item, err := logic.GetPrepItem(id, p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	apiItem := NewItemAPI(item)
+	return &apiItem, nil
+}
+
+func (p *Presenter) UpdatePrepItem(item *ItemAPI) (*validate.Errors, error) {
+	prepItem, err := ConvertToModelPrepItem(item)
+	if err != nil {
+		return validate.NewErrors(), err
+	}
+
+	verrs, err := p.updateItemIndices(item)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+
+	return logic.UpdatePrepItem(prepItem, p.tx)
 }

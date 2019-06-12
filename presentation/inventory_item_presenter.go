@@ -207,7 +207,7 @@ func (p *Presenter) UpdateBaseInventoryItem(item *ItemAPI) (*validate.Errors, er
 		return validate.NewErrors(), err
 	}
 
-	verrs, err := p.updateInventoryItemIndices(item)
+	verrs, err := p.updateItemIndices(item)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
@@ -215,7 +215,7 @@ func (p *Presenter) UpdateBaseInventoryItem(item *ItemAPI) (*validate.Errors, er
 	return logic.UpdateInventoryItem(invItem, p.tx)
 }
 
-func (p *Presenter) updateInventoryItemIndices(item *ItemAPI) (*validate.Errors, error) {
+func (p *Presenter) updateItemIndices(item *ItemAPI) (*validate.Errors, error) {
 	nextItems, err := logic.GetInvItemsAfter(item.ID, item.Index, p.tx)
 	if err != nil {
 		return validate.NewErrors(), err
@@ -224,7 +224,7 @@ func (p *Presenter) updateInventoryItemIndices(item *ItemAPI) (*validate.Errors,
 	for i, otherItem := range *nextItems {
 		if otherItem.Index <= i+item.Index {
 			otherItem.Index = i + item.Index + 1
-			verrs, err := logic.UpdateBaseInventoryItem(&otherItem, p.tx)
+			verrs, err := logic.UpdateBaseItem(&otherItem, p.tx)
 			if verrs.HasAny() || err != nil {
 				return verrs, err
 			}

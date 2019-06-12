@@ -2,6 +2,8 @@ package logic
 
 import (
 	"buddhabowls/models"
+	"errors"
+
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/validate"
 )
@@ -69,7 +71,7 @@ func UpdateInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*valid
 	return tx.ValidateAndUpdate(item)
 }
 
-func UpdateBaseInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
+func UpdateBaseItem(item models.GenericItem, tx *pop.Connection) (*validate.Errors, error) {
 	return tx.ValidateAndUpdate(item)
 }
 
@@ -82,21 +84,38 @@ func InsertInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*valid
 	return tx.ValidateAndCreate(item)
 }
 
-func updateIndices(invItem *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
-	items, err := GetInventoryItemsOfCategory(invItem.ID.String(),
-		invItem.CategoryID.String(), tx)
-	if err != nil {
-		return validate.NewErrors(), err
+func updateIndices(genItem models.GenericItem, tx *pop.Connection) (*validate.Errors, error) {
+	var items models.GenericItems
+	var err error
+	verrs := validate.NewErrors()
+
+	switch genItem.(type) {
+	case *models.InventoryItem:
+		items, err := GetInventoryItemsOfCategory(genItem.GetID().String(),
+			genItem.GetCategoryID().String(), tx)
+		if err != nil {
+			return verrs, err
+		}
+		break
+	case *models.PrepItem:
+		items, err := GetPrepItemsOfCategory(genItem.GetID().String(),
+			genItem.GetCategoryID().String(), tx)
+		if err != nil {
+			return verrs, err
+		}
+		break
+	default:
+		return verrs, errors.New("unimplemented type")
 	}
 
 	offset := 0
-	for i, item := range *items {
-		if i == invItem.Index {
+	for i, item := range *items.ToGenericItems() {
+		if i == genItem.GetIndex() {
 			offset = 1
 		}
 
-		item.Index = i + offset
-		verrs, err := tx.ValidateAndUpdate(&item)
+		item.SetIndex() = i + offset
+		verrs, err := tx.ValidateAndUpdate(item)
 		if verrs.HasAny() || err != nil {
 			return verrs, err
 		}

@@ -2,6 +2,7 @@ package actions
 
 import (
 	"buddhabowls/models"
+	"buddhabowls/presentation"
 
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
@@ -175,6 +176,41 @@ func (v PrepItemsResource) Update(c buffalo.Context) error {
 
 	// and redirect to the prep_items index page
 	return c.Render(200, r.Auto(c, prepItem))
+}
+
+func UpdatePrepItem(c buffalo.Context) error {
+	// Get the DB connection from the context
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+	item, err := presenter.GetPrepItem(c.Param("prep_item_id"))
+	if err != nil {
+		return c.Error(404, err)
+	}
+
+	// Bind InventoryItem to the html form elements
+	if err := c.Bind(item); err != nil {
+		return errors.WithStack(err)
+	}
+
+	verrs, err := presenter.UpdatePrepItem(item)
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	if verrs.HasAny() {
+		// Make the errors available inside the html template
+		c.Set("errors", verrs)
+
+		// TODO: send error to page
+		return c.Render(422, r.String("failure"))
+	}
+
+	// and redirect to the inventory_items index page
+	return c.Render(200, r.String("success"))
 }
 
 // Destroy deletes a PrepItem from the DB. This function is mapped
