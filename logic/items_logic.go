@@ -44,15 +44,6 @@ func GetInventoryItem(id string, tx *pop.Connection) (*models.InventoryItem, err
 	return item, nil
 }
 
-func GetInvItemsAfter(id string, idx int, tx *pop.Connection) (*models.InventoryItems, error) {
-	items := &models.InventoryItems{}
-	query := tx.Where("id != ?", id).Where("index >= ?", idx).
-		Order("index")
-	err := query.All(items)
-
-	return items, err
-}
-
 func HistoricalItemExists(inventoryItemID string, tx *pop.Connection) bool {
 	orderItem := &models.OrderItem{}
 	countItem := &models.CountInventoryItem{}
@@ -64,7 +55,7 @@ func HistoricalItemExists(inventoryItemID string, tx *pop.Connection) bool {
 }
 
 func UpdateInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
-	verrs, err := updateIndices(item, tx)
+	verrs, err := UpdateIndices(item, tx)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
@@ -76,7 +67,7 @@ func UpdateBaseItem(item models.GenericItem, tx *pop.Connection) (*validate.Erro
 }
 
 func InsertInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*validate.Errors, error) {
-	verrs, err := updateIndices(item, tx)
+	verrs, err := UpdateIndices(item, tx)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
@@ -84,7 +75,7 @@ func InsertInventoryItem(item *models.InventoryItem, tx *pop.Connection) (*valid
 	return tx.ValidateAndCreate(item)
 }
 
-func updateIndices(genItem models.GenericItem, tx *pop.Connection) (*validate.Errors, error) {
+func UpdateIndices(genItem models.GenericItem, tx *pop.Connection) (*validate.Errors, error) {
 	var items models.GenericItems
 	var err error
 	verrs := validate.NewErrors()

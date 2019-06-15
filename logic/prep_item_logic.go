@@ -38,7 +38,7 @@ func GetPrepItem(id string, tx *pop.Connection) (*models.PrepItem, error) {
 }
 
 func UpdatePrepItem(prepItem *models.PrepItem, tx *pop.Connection) (*validate.Errors, error) {
-	verrs, err := updateIndices(prepItem, tx)
+	verrs, err := UpdateIndices(prepItem, tx)
 	if verrs.HasAny() || err != nil {
 		return verrs, err
 	}
