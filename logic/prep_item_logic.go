@@ -40,8 +40,6 @@ func GetPrepItem(id string, tx *pop.Connection) (*models.PrepItem, error) {
 func UpdatePrepItem(prepItem *models.PrepItem, tx *pop.Connection) (*validate.Errors, error) {
 	verrs, err := UpdateIndices(prepItem, tx)
 	if verrs.HasAny() || err != nil {
-		fmt.Println("!!!!!!!!!!!!!!!!!!!!!")
-		fmt.Println(verrs)
 		return verrs, err
 	}
 

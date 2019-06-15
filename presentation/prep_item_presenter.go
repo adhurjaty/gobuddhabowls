@@ -59,7 +59,7 @@ func (p *Presenter) populatePrepItemCosts(items *ItemsAPI) error {
 		if err != nil {
 			return err
 		}
-		(*items)[i].Price = cost * item.RecipeUnitConversion
+		(*items)[i].Price = cost * item.Conversion
 	}
 
 	return nil

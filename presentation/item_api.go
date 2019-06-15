@@ -99,7 +99,7 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		prepItem, _ := item.(*models.PrepItem)
 		itemAPI.BatchRecipeID = prepItem.BatchRecipeID.String()
 		itemAPI.RecipeUnit = prepItem.BatchRecipe.RecipeUnit
-		itemAPI.Conversion = 1
+		itemAPI.Conversion = prepItem.Conversion
 		itemAPI.RecipeUnitConversion = prepItem.Conversion
 		itemAPI.InventoryItemID = ""
 	}
@@ -336,7 +336,7 @@ func ConvertToModelPrepItem(item *ItemAPI) (*models.PrepItem, error) {
 		BatchRecipeID: recID,
 		Index:         item.Index,
 		CountUnit:     item.CountUnit,
-		Conversion:    item.RecipeUnitConversion,
+		Conversion:    item.Conversion,
 	}, nil
 }
 

@@ -104,6 +104,13 @@ var priceColumn = {
         item.VendorItemMap[item.selected_vendor].price = item.price;
     }
 };
+var ruPriceColumn = {
+    header: 'RU Price',
+    editable: false,
+    get_column: (item) => {
+        return formatMoney(item.price);
+    }
+}
 var conversionColumn = {
     name: 'conversion',
     header: 'Conversion',
@@ -127,7 +134,6 @@ var recipeUnitconversionColumn = {
     },
     set_column: (item, value) => {
         item.conversion = parseFloat(value);
-        item.VendorItemMap[item.selected_vendor].conversion = item.conversion;
     }
 };
 var countUnitColumn = {
@@ -145,6 +151,12 @@ var countPriceColumn = {
     header: 'Count Price',
     get_column: (item) => {
         return formatMoney(item.price / item.conversion);
+    }
+}
+var countPrepPriceColumn = {
+    header: 'Count Price',
+    get_column: (item) => {
+        return formatMoney(item.price * item.conversion);
     }
 }
 var hiddenColumns = [ 
@@ -222,10 +234,10 @@ var _prepIemsColumns= [
     indexColumn,
     nameColumn,
     recipeUnitColumn,
-    priceColumn,
+    ruPriceColumn,
     recipeUnitconversionColumn,
     countUnitColumn,
-    countPriceColumn,
+    countPrepPriceColumn,
     ...hiddenColumns
 ]
 
