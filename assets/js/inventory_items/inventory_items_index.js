@@ -363,7 +363,7 @@ function saveInvItemsOrder() {
 }
 
 function setupSubmitPrepButton() {
-    $('#save-order-prep-button').click(savePrepItemsOrder());
+    $('#save-order-prep-button').click(savePrepItemsOrder);
 }
 
 function savePrepItemsOrder() {
