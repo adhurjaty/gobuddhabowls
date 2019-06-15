@@ -375,6 +375,8 @@ function savePrepItemsOrder() {
             var item = _prepItems.find(x => x.id == id);
             item.index = i;
 
+            debugger;
+
             sendUpdate($form, item, (form) => sendAjax(form, true));
         }
     );

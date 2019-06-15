@@ -40,15 +40,22 @@ func GetPrepItem(id string, tx *pop.Connection) (*models.PrepItem, error) {
 func UpdatePrepItem(prepItem *models.PrepItem, tx *pop.Connection) (*validate.Errors, error) {
 	verrs, err := UpdateIndices(prepItem, tx)
 	if verrs.HasAny() || err != nil {
+		fmt.Println("!!!!!!!!!!!!!!!!!!!!!")
+		fmt.Println(verrs)
 		return verrs, err
 	}
 
 	return tx.ValidateAndUpdate(prepItem)
 }
 
-func GetPrepItemsOfCategory(id string, catID string, tx *pop.Connection) (*models.PrepItems, error) {
-	query := tx.Where("category_id = ?", catID).
-		Where("id != ?", id)
+func GetPrepItemsOfCategory(prepItem *models.PrepItem, tx *pop.Connection) (*models.PrepItems, error) {
+	query := tx.RawQuery(fmt.Sprintf(
+		`SELECT pi.* FROM prep_items AS pi
+		JOIN recipes AS r ON r.id = pi.batch_recipe_id
+		WHERE r.category_id IN 
+			(SELECT r.category_id FROM prep_items AS pi
+			JOIN recipes AS r ON pi.batch_recipe_id = r.id
+			WHERE pi.id = '%s')`, prepItem.ID.String()))
 	return getPrepItemsHelper(query)
 }
 

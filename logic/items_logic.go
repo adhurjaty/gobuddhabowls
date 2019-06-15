@@ -89,8 +89,8 @@ func UpdateIndices(genItem models.GenericItem, tx *pop.Connection) (*validate.Er
 		}
 		break
 	case *models.PrepItem:
-		items, err = GetPrepItemsOfCategory(genItem.GetID().String(),
-			genItem.GetCategoryID().String(), tx)
+		prepItem := genItem.(*models.PrepItem)
+		items, err = GetPrepItemsOfCategory(prepItem, tx)
 		if err != nil {
 			return verrs, err
 		}
