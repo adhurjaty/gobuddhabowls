@@ -130,7 +130,7 @@ var recipeUnitconversionColumn = {
     editable: true,
     data_type: 'number',
     get_column: (item) => {
-        return item.recipe_unit_conversion;
+        return item.conversion;
     },
     set_column: (item, value) => {
         item.conversion = parseFloat(value);
@@ -245,8 +245,8 @@ var _invItems = [];
 var _prepItems = [];
 
 $(() => {
-    createMasterDatagrid($('#categorized-items-display'), _invItemsColumns);
-    createMasterDatagrid($('#categorized-prep-items-display'), _prepIemsColumns);
+    createMasterInventoryDatagrid($('#categorized-items-display'), _invItemsColumns);
+    createMasterPrepDatagrid($('#categorized-prep-items-display'), _prepIemsColumns);
 
     enableChangeOrderButton();
     setupSubmitButton();
@@ -254,22 +254,36 @@ $(() => {
     setupSubmitPrepButton();
 });
 
-function createMasterDatagrid(container, columns) {
+function createMasterInventoryDatagrid(container) {
+    createMasterDatagrid(container, _invItemsColumns, onInvDataGridEdit);
+}
+
+function createMasterPrepDatagrid(container) {
+    createMasterDatagrid(container, _prepIemsColumns, onPrepDataGridEdit);
+}
+
+function createMasterDatagrid(container, columns, editFn) {
     var editPathBase = container.attr('edit-path');
     var deletePathBase = container.attr('delete-path');
     columns.push(dropdownColumn(editPathBase, deletePathBase));
 
-    _categorizedOptions.datagridUpdated = onDataGridEdit;
     return new CategorizedItemsDisplay(container, columns, null,
-        _categorizedOptions);
+        {..._categorizedOptions, ...{datagridUpdated: editFn}});
 }
 
-function onDataGridEdit(item) {
-    var form = $('#inventory-item-form');
-    var gridContainer = $('#categorized-items-display');
+function onInvDataGridEdit(item) {
+    onDataGridEdit(item, $('#inventory-item-form'), $('#categorized-items-display'));
+}
 
+function onPrepDataGridEdit(item) {
+    onDataGridEdit(item, $('#prep-item-form'), $('#categorized-prep-items-display'));
+}
+
+function onDataGridEdit(item, form, gridContainer) {
     var allItems = parseModelJSON(gridContainer.attr('data'));
     var oldItemIdx = allItems.findIndex(x => x.id == item.id);
+
+    debugger;
     
     cleanupForm(form);
 
@@ -280,7 +294,7 @@ function onDataGridEdit(item) {
         }
     }
 
-    submitForm(form, item.inventory_item_id);
+    submitForm(form, item.id);
 
     allItems[oldItemIdx] = item;
     gridContainer.attr('data', JSON.stringify(allItems));
