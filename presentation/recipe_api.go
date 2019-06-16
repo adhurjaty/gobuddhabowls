@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/models"
 	"encoding/json"
+
 	"github.com/gobuffalo/uuid"
 )
 
@@ -84,4 +85,17 @@ func ConvertToModelRecipe(recAPI *RecipeAPI) (*models.Recipe, error) {
 		Items:                *items,
 		Index:                recAPI.Index,
 	}, nil
+}
+
+// SelectValue returns the ID for select input tags
+func (r RecipeAPI) SelectValue() interface{} {
+	return r.ID
+}
+
+// SelectLabel returs the name for select input tags
+func (r RecipeAPI) SelectLabel() string {
+	if r.ID == "" {
+		return "- Select a vendor -"
+	}
+	return r.Name
 }

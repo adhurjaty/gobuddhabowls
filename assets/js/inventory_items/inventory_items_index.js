@@ -338,21 +338,6 @@ function enableChangeOrderButton() {
     });
 }
 
-function enableChangeOrderButton() {
-    var itemsDiv = $('#categorized-items-display');
-    _invItems = parseModelJSON(itemsDiv.attr('data'));
-    
-    var table = new CategorizedOrderingTable(_invItems);
-    var container = $('#re-order-display');
-    table.attach(container);
-
-    var button = $('#change-order-button');
-    button.click(() => {
-        $('#re-order-section').toggle();
-        itemsDiv.toggle();
-    });
-}
-
 function enableChangeOrderPrepButton() {
     var itemsDiv = $('#categorized-prep-items-display');
     _prepItems = parseModelJSON(itemsDiv.attr('data'));

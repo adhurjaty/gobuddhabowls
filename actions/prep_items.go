@@ -126,14 +126,33 @@ func (v PrepItemsResource) Edit(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty PrepItem
-	prepItem := &models.PrepItem{}
-
-	if err := tx.Find(prepItem, c.Param("prep_item_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	prepItem, err := presenter.GetPrepItem(c.Param("prep_item_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
-	return c.Render(200, r.Auto(c, prepItem))
+	recipes, err := presenter.GetRecipes()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	invItems, err := presenter.GetInventoryItems()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	prepItems, err := presenter.GetPrepItems()
+	if err != nil {
+		return errors.WithStack(err)
+	}
+
+	c.Set("prepItem", prepItem)
+	c.Set("prepItems", prepItems)
+	c.Set("recipes", recipes)
+	c.Set("inventoryItems", invItems)
+
+	return c.Render(200, r.HTML("prep_items/edit"))
 }
 
 // Update changes a PrepItem in the DB. This function is mapped to

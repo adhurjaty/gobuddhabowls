@@ -7,7 +7,7 @@
         From Inventory Item
       </input>
       <%= f.SelectTag("Batch Recipe", {options: recipes, id: "recipes-selector", 
-                name="BatchRecipeID"}) %>
+                name: "BatchRecipeID"}) %>
       <%= f.SelectTag("Inventory Item", {options: inventoryItems, id: "inventory-items-selector",
                 name: "InventoryItemID", display: "none"}) %>
       <%= f.InputTag("CountUnit") %>
