@@ -1,9 +1,24 @@
-<%= f.InputTag("InventoryItemID") %>
-<%= f.InputTag("BatchRecipeID") %>
-<%= f.InputTag("BatchRecipe") %>
-<%= f.InputTag("Conversion") %>
-<%= f.InputTag("CountUnit") %>
-<%= f.InputTag("LineCount") %>
-<%= f.InputTag("WalkInCount") %>
-<%= f.InputTag("Index") %>
-<button class="btn btn-success" role="submit">Save</button>
+<div class="row">
+    <div class="col-md-6">
+      <input type="hidden" name="ID" value="<%= prepItem.ID %>" />
+      <input type="text" name="Index" style="display: none;" 
+        value='<%= prepItem.Index %>' />
+      <input type="checkbox" id="inventory-item-check" checked="false">
+        From Inventory Item
+      </input>
+      <%= f.SelectTag("Batch Recipe", {options: recipes, id: "recipes-selector", 
+                name="BatchRecipeID"}) %>
+      <%= f.SelectTag("Inventory Item", {options: inventoryItems, id: "inventory-items-selector",
+                name: "InventoryItemID", display: "none"}) %>
+      <%= f.InputTag("CountUnit") %>
+      <%= f.InputTag("RecipeUnit") %>
+      <%= f.InputTag("Conversion") %>
+    </div>
+    <div class="col-md-6">
+      <div id="item-ordering-table" data='<%= prepItems.String() %>'></div>
+    </div>
+  </div>
+  <button class="btn btn-success" role="submit">Save</button>
+  
+  <%= javascriptTag(assetPath("components/categorized_item_form.js")) %>
+  <%= javascriptTag(assetPath("prep_items/prep_items_form.js")) %>
