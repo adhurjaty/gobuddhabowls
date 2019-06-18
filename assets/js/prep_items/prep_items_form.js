@@ -1,4 +1,11 @@
+var _recipeSelector;
+var _invItemSelector;
+
 $(() => {
+    _recipeSelector = $('#recipes-selector').closest('div');
+    _invItemSelector = $('#inventory-items-selector').closest('div');
+    _invItemSelector.hide();
+
     setOnSubmit();
     setInventoryItemCheck();
 });
@@ -11,19 +18,19 @@ function setOnSubmit() {
 function removeFields() {
     var invCheck = $('#inventory-item-check');
     if(invCheck.is(':checked')) {
-        $('#recipes-selector').remove();
+        _recipeSelector.remove();
     } else {
-        $('#inventory-items-selector').remove();
+        _invItemSelector.remove();
     }
     invCheck.remove();
 }
 
 function setInventoryItemCheck() {
-    var checkbox = $('inventory-item-check');
+    var checkbox = $('#inventory-item-check');
     checkbox.change(toggleShowRecipe);
 }
 
 function toggleShowRecipe() {
-    $('#recipes-selector').toggle();
-    $('#inventory-items-selector').toggle();
+    _recipeSelector.toggle();
+    _invItemSelector.toggle();
 }

@@ -3,13 +3,13 @@
       <input type="hidden" name="ID" value="<%= prepItem.ID %>" />
       <input type="text" name="Index" style="display: none;" 
         value='<%= prepItem.Index %>' />
-      <input type="checkbox" id="inventory-item-check" checked="false">
+      <input type="checkbox" id="inventory-item-check">
         From Inventory Item
       </input>
       <%= f.SelectTag("Batch Recipe", {options: recipes, id: "recipes-selector", 
                 name: "BatchRecipeID"}) %>
       <%= f.SelectTag("Inventory Item", {options: inventoryItems, id: "inventory-items-selector",
-                name: "InventoryItemID", display: "none"}) %>
+                name: "InventoryItemID"}) %>
       <%= f.InputTag("CountUnit") %>
       <%= f.InputTag("RecipeUnit") %>
       <%= f.InputTag("Conversion") %>
