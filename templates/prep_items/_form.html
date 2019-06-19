@@ -7,9 +7,9 @@
         From Inventory Item
       </input>
       <%= f.SelectTag("Batch Recipe", {options: recipes, id: "recipes-selector", 
-                name: "BatchRecipeID"}) %>
+                name: "BatchRecipeID", data: recipes.String()}) %>
       <%= f.SelectTag("Inventory Item", {options: inventoryItems, id: "inventory-items-selector",
-                name: "InventoryItemID"}) %>
+                name: "InventoryItemID", data: inventoryItems.String()}) %>
       <%= f.InputTag("CountUnit") %>
       <%= f.InputTag("RecipeUnit") %>
       <%= f.InputTag("Conversion") %>
@@ -20,5 +20,5 @@
   </div>
   <button class="btn btn-success" role="submit">Save</button>
   
-  <%= javascriptTag(assetPath("components/categorized_item_form.js")) %>
+  <%= javascriptTag(assetPath("components/categorized_prep_item_form.js")) %>
   <%= javascriptTag(assetPath("prep_items/prep_items_form.js")) %>
