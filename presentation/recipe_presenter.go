@@ -36,6 +36,16 @@ func (p *Presenter) GetRecipes() (*RecipesAPI, error) {
 	return &recipesAPI, nil
 }
 
+func (p *Presenter) GetBatchRecipes() (*RecipesAPI, error) {
+	recipes, err := logic.GetBatchRecipes(p.tx)
+	if err != nil {
+		return nil, err
+	}
+
+	recipesAPI := NewRecipesAPI(recipes)
+	return &recipesAPI, nil
+}
+
 func (p *Presenter) populateRecipeItemCosts(items *ItemsAPI) error {
 	for i := 0; i < len(*items); i++ {
 		cost, err := p.getItemRecipeCost((*items)[i])

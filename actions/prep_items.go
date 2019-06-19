@@ -132,7 +132,7 @@ func (v PrepItemsResource) Edit(c buffalo.Context) error {
 		return c.Error(404, err)
 	}
 
-	recipes, err := presenter.GetRecipes()
+	recipes, err := presenter.GetBatchRecipes()
 	if err != nil {
 		return errors.WithStack(err)
 	}
