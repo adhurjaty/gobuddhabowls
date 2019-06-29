@@ -51,9 +51,8 @@ func GetPrepItemsOfCategory(prepItem *models.PrepItem, tx *pop.Connection) (*mod
 		`SELECT pi.* FROM prep_items AS pi
 		JOIN recipes AS r ON r.id = pi.batch_recipe_id
 		WHERE pi.id != '%s' AND r.category_id IN 
-			(SELECT r.category_id FROM prep_items AS pi
-			JOIN recipes AS r ON pi.batch_recipe_id = r.id
-			WHERE pi.id = '%s')`, prepItem.ID.String(), prepItem.ID.String()))
+			(SELECT category_id FROM recipes
+			WHERE id = '%s')`, prepItem.ID.String(), prepItem.BatchRecipeID.String()))
 	return getPrepItemsHelper(query)
 }
 
@@ -69,4 +68,13 @@ func getPrepItemsHelper(query *pop.Query) (*models.PrepItems, error) {
 	items.Sort()
 
 	return items, err
+}
+
+func InsertPrepItem(prepItem *models.PrepItem, tx *pop.Connection) (*validate.Errors, error) {
+	verrs, err := UpdateIndices(prepItem, tx)
+	if verrs.HasAny() || err != nil {
+		return verrs, err
+	}
+	fmt.Println(prepItem)
+	return tx.ValidateAndCreate(prepItem)
 }

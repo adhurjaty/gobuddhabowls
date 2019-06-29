@@ -48,6 +48,17 @@ func (p *PrepItem) Validate(tx *pop.Connection) (*validate.Errors, error) {
 			Fn: func() bool {
 				return p.Conversion > 0
 			},
+			Message: "Conversion must be greater than 0",
+		},
+		&validators.StringIsPresent{
+			Name:    "CountUnit",
+			Field:   "CountUnit",
+			Message: "Must indicate count unit",
+		},
+		&validators.StringIsPresent{
+			Name:    "RecipeUnit",
+			Field:   "RecipeUnit",
+			Message: "Must indicate recipe unit",
 		},
 	), nil
 }

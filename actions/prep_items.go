@@ -4,6 +4,8 @@ import (
 	"buddhabowls/models"
 	"buddhabowls/presentation"
 
+	"github.com/gobuffalo/uuid"
+
 	"github.com/gobuffalo/buffalo"
 	"github.com/gobuffalo/pop"
 	"github.com/pkg/errors"
@@ -75,7 +77,19 @@ func (v PrepItemsResource) Show(c buffalo.Context) error {
 // New renders the form for creating a new PrepItem.
 // This function is mapped to the path GET /prep_items/new
 func (v PrepItemsResource) New(c buffalo.Context) error {
-	return c.Render(200, r.Auto(c, &models.PrepItem{}))
+	prepItem := &presentation.ItemAPI{}
+	prepItem.ID = uuid.UUID{}.String()
+
+	tx, ok := c.Value("tx").(*pop.Connection)
+	if !ok {
+		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	if err := setPrepItemFormVars(c, presentation.NewPresenter(tx), prepItem); err != nil {
+		return errors.WithStack(err)
+	}
+
+	return c.Render(200, r.HTML("prep_items/new"))
 }
 
 // Create adds a PrepItem to the DB. This function is mapped to the
@@ -106,8 +120,7 @@ func (v PrepItemsResource) Create(c buffalo.Context) error {
 		prepItem.BatchRecipeID = recipe.ID
 	}
 
-	// Validate the data from the html form
-	verrs, err := tx.ValidateAndCreate(prepItem)
+	verrs, err := presenter.InsertPrepItem(prepItem)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -115,6 +128,10 @@ func (v PrepItemsResource) Create(c buffalo.Context) error {
 	if verrs.HasAny() {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
+
+		if err = setPrepItemFormVars(c, presenter, prepItem); err != nil {
+			return errors.WithStack(err)
+		}
 
 		// Render again the new.html template that the user can
 		// correct the input.
@@ -142,8 +159,6 @@ func (v PrepItemsResource) Edit(c buffalo.Context) error {
 	if err != nil {
 		return c.Error(404, err)
 	}
-
-	c.Set("prepItem", prepItem)
 
 	if err = setPrepItemFormVars(c, presenter, prepItem); err != nil {
 		return errors.WithStack(err)
@@ -189,6 +204,9 @@ func (v PrepItemsResource) Update(c buffalo.Context) error {
 		// Make the errors available inside the html template
 		c.Set("errors", verrs)
 
+		if err = setPrepItemFormVars(c, presenter, prepItem); err != nil {
+			return errors.WithStack(err)
+		}
 		// Render again the edit.html template that the user can
 		// correct the input.
 		return c.Render(422, r.HTML("prep_items/edit"))
@@ -312,6 +330,7 @@ func setPrepItemFormVars(c buffalo.Context, presenter *presentation.Presenter,
 
 	removeExistingRecipes(recipes, prepItems, prepItem)
 
+	c.Set("prepItem", prepItem)
 	c.Set("prepItems", prepItems)
 	c.Set("recipes", recipes)
 	c.Set("inventoryItems", invItems)

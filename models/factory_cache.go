@@ -82,7 +82,7 @@ func populateInvItemCache(tx *pop.Connection) error {
 }
 
 func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
-	if _prepItemsCache != nil {
+	if _prepItemsCache != nil || len(*itemList) == 0 {
 		return nil
 	}
 
@@ -97,7 +97,6 @@ func populatePrepItemsCache(itemList *PrepItems, tx *pop.Connection) error {
 	if _recipesCache == nil {
 		_recipesCache = &Recipes{}
 	}
-	fmt.Println(queryIds)
 	if err := LoadRecipes(_recipesCache, tx.Where("id IN (?)", queryIds...)); err != nil {
 		return err
 	}

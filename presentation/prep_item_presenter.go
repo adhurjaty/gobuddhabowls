@@ -83,3 +83,12 @@ func (p *Presenter) UpdatePrepItem(item *ItemAPI) (*validate.Errors, error) {
 
 	return logic.UpdatePrepItem(prepItem, p.tx)
 }
+
+func (p *Presenter) InsertPrepItem(item *ItemAPI) (*validate.Errors, error) {
+	prepItem, err := ConvertToModelPrepItem(item)
+	if err != nil {
+		return nil, err
+	}
+
+	return logic.InsertPrepItem(prepItem, p.tx)
+}
