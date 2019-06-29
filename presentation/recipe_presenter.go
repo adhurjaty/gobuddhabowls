@@ -140,7 +140,9 @@ func (p *Presenter) InsertRecipe(recAPI *RecipeAPI) (*validate.Errors, error) {
 		return validate.NewErrors(), err
 	}
 
-	return logic.InsertRecipe(recipe, p.tx)
+	verrs, err := logic.InsertRecipe(recipe, p.tx)
+	recAPI.ID = recipe.ID.String()
+	return verrs, err
 }
 
 func (p *Presenter) DestroyRecipe(recAPI *RecipeAPI) error {

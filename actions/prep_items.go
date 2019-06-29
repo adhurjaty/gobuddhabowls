@@ -81,8 +81,7 @@ func (v PrepItemsResource) New(c buffalo.Context) error {
 // Create adds a PrepItem to the DB. This function is mapped to the
 // path POST /prep_items
 func (v PrepItemsResource) Create(c buffalo.Context) error {
-	// Allocate an empty PrepItem
-	prepItem := &models.PrepItem{}
+	prepItem := &presentation.ItemAPI{}
 
 	// Bind prepItem to the html form elements
 	if err := c.Bind(prepItem); err != nil {
@@ -93,6 +92,18 @@ func (v PrepItemsResource) Create(c buffalo.Context) error {
 	tx, ok := c.Value("tx").(*pop.Connection)
 	if !ok {
 		return errors.WithStack(errors.New("no transaction found"))
+	}
+
+	presenter := presentation.NewPresenter(tx)
+
+	invItemID := c.Param("InventoryItemID")
+	if invItemID != "" {
+		recipe, err := createNewBatchRecipe(invItemID, presenter)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+
+		prepItem.BatchRecipeID = recipe.ID
 	}
 
 	// Validate the data from the html form
@@ -107,14 +118,14 @@ func (v PrepItemsResource) Create(c buffalo.Context) error {
 
 		// Render again the new.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, prepItem))
+		return c.Render(422, r.HTML("prep_items/new"))
 	}
 
 	// If there are no errors set a success message
 	c.Flash().Add("success", "PrepItem was created successfully")
 
 	// and redirect to the prep_items index page
-	return c.Render(201, r.Auto(c, prepItem))
+	return c.Render(201, r.HTML("inventory_items/index"))
 }
 
 // Edit renders a edit form for a PrepItem. This function is
@@ -132,25 +143,11 @@ func (v PrepItemsResource) Edit(c buffalo.Context) error {
 		return c.Error(404, err)
 	}
 
-	recipes, err := presenter.GetBatchRecipes()
-	if err != nil {
-		return errors.WithStack(err)
-	}
-
-	invItems, err := presenter.GetInventoryItems()
-	if err != nil {
-		return errors.WithStack(err)
-	}
-
-	prepItems, err := presenter.GetPrepItems()
-	if err != nil {
-		return errors.WithStack(err)
-	}
-
 	c.Set("prepItem", prepItem)
-	c.Set("prepItems", prepItems)
-	c.Set("recipes", recipes)
-	c.Set("inventoryItems", invItems)
+
+	if err = setPrepItemFormVars(c, presenter, prepItem); err != nil {
+		return errors.WithStack(err)
+	}
 
 	return c.Render(200, r.HTML("prep_items/edit"))
 }
@@ -164,19 +161,26 @@ func (v PrepItemsResource) Update(c buffalo.Context) error {
 		return errors.WithStack(errors.New("no transaction found"))
 	}
 
-	// Allocate an empty PrepItem
-	prepItem := &models.PrepItem{}
-
-	if err := tx.Find(prepItem, c.Param("prep_item_id")); err != nil {
+	presenter := presentation.NewPresenter(tx)
+	prepItem, err := presenter.GetPrepItem(c.Param("prep_item_id"))
+	if err != nil {
 		return c.Error(404, err)
 	}
 
-	// Bind PrepItem to the html form elements
 	if err := c.Bind(prepItem); err != nil {
 		return errors.WithStack(err)
 	}
 
-	verrs, err := tx.ValidateAndUpdate(prepItem)
+	invItemID := c.Param("InventoryItemID")
+	if invItemID != "" {
+		recipe, err := createNewBatchRecipe(invItemID, presenter)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+		prepItem.BatchRecipeID = recipe.ID
+	}
+
+	verrs, err := presenter.UpdatePrepItem(prepItem)
 	if err != nil {
 		return errors.WithStack(err)
 	}
@@ -187,14 +191,14 @@ func (v PrepItemsResource) Update(c buffalo.Context) error {
 
 		// Render again the edit.html template that the user can
 		// correct the input.
-		return c.Render(422, r.Auto(c, prepItem))
+		return c.Render(422, r.HTML("prep_items/edit"))
 	}
 
 	// If there are no errors set a success message
 	c.Flash().Add("success", "PrepItem was updated successfully")
 
 	// and redirect to the prep_items index page
-	return c.Render(200, r.Auto(c, prepItem))
+	return c.Render(200, r.HTML("inventory_items/index"))
 }
 
 func UpdatePrepItem(c buffalo.Context) error {
@@ -258,4 +262,85 @@ func (v PrepItemsResource) Destroy(c buffalo.Context) error {
 
 	// Redirect to the prep_items index page
 	return c.Render(200, r.Auto(c, prepItem))
+}
+
+func createNewBatchRecipe(id string, presenter *presentation.Presenter) (*presentation.RecipeAPI, error) {
+	invItem, err := presenter.GetInventoryItem(id)
+	if err != nil {
+		return nil, err
+	}
+
+	recipe := &presentation.RecipeAPI{
+		Name:                 invItem.Name,
+		IsBatch:              true,
+		Category:             invItem.Category,
+		RecipeUnit:           invItem.CountUnit,
+		RecipeUnitConversion: 1,
+		Index:                1000,
+		Items:                presentation.ItemsAPI{*invItem},
+	}
+
+	verrs, err := presenter.InsertRecipe(recipe)
+	if err != nil {
+		return nil, err
+	}
+	if verrs.HasAny() {
+		return nil, errors.New(verrs.String())
+	}
+
+	return recipe, nil
+}
+
+func setPrepItemFormVars(c buffalo.Context, presenter *presentation.Presenter,
+	prepItem *presentation.ItemAPI) error {
+	recipes, err := presenter.GetBatchRecipes()
+	if err != nil {
+		return err
+	}
+
+	invItems, err := presenter.GetInventoryItems()
+	if err != nil {
+		return err
+	}
+
+	removeExistingInvItems(invItems, recipes)
+
+	prepItems, err := presenter.GetPrepItems()
+	if err != nil {
+		return err
+	}
+
+	removeExistingRecipes(recipes, prepItems, prepItem)
+
+	c.Set("prepItems", prepItems)
+	c.Set("recipes", recipes)
+	c.Set("inventoryItems", invItems)
+
+	return nil
+}
+
+func removeExistingInvItems(invItems *presentation.ItemsAPI, recipes *presentation.RecipesAPI) {
+	for _, recipe := range *recipes {
+		for i, item := range *invItems {
+			if len(recipe.Items) == 1 && item.ID == recipe.Items[0].InventoryItemID {
+				*invItems = append((*invItems)[:i], (*invItems)[i+i:]...)
+				break
+			}
+		}
+	}
+}
+
+func removeExistingRecipes(recipes *presentation.RecipesAPI, prepItems *presentation.ItemsAPI,
+	existingItem *presentation.ItemAPI) {
+	for _, prepItem := range *prepItems {
+		if prepItem.ID == existingItem.ID {
+			continue
+		}
+		for i, recipe := range *recipes {
+			if prepItem.BatchRecipeID == recipe.ID {
+				*recipes = append((*recipes)[:i], (*recipes)[i+1:]...)
+				break
+			}
+		}
+	}
 }

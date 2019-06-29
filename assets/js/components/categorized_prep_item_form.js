@@ -20,7 +20,6 @@ function setOrderingTable() {
 
     var catItems = groupByCategory(items);
     var selectedCat = catItems.find(x => x.name == item.category);
-    debugger;
     if(selectedCat) {
         var selectedCatItems = selectedCat.value;
         var idx = selectedCatItems.findIndex(x => x.id == item.id);

@@ -283,8 +283,6 @@ function onDataGridEdit(item, form, gridContainer) {
     var allItems = parseModelJSON(gridContainer.attr('data'));
     var oldItemIdx = allItems.findIndex(x => x.id == item.id);
 
-    debugger;
-    
     cleanupForm(form);
 
     for(var key in item) {
@@ -385,8 +383,6 @@ function savePrepItemsOrder() {
             var id = $(el).attr('itemid');
             var item = _prepItems.find(x => x.id == id);
             item.index = i;
-
-            debugger;
 
             sendUpdate($form, item, (form) => sendAjax(form, true));
         }
