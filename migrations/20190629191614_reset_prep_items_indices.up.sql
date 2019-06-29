@@ -1,0 +1,1 @@
+UPDATE prep_items SET index = 0;

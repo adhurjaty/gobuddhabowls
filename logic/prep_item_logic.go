@@ -50,10 +50,10 @@ func GetPrepItemsOfCategory(prepItem *models.PrepItem, tx *pop.Connection) (*mod
 	query := tx.RawQuery(fmt.Sprintf(
 		`SELECT pi.* FROM prep_items AS pi
 		JOIN recipes AS r ON r.id = pi.batch_recipe_id
-		WHERE r.category_id IN 
+		WHERE pi.id != '%s' AND r.category_id IN 
 			(SELECT r.category_id FROM prep_items AS pi
 			JOIN recipes AS r ON pi.batch_recipe_id = r.id
-			WHERE pi.id = '%s')`, prepItem.ID.String()))
+			WHERE pi.id = '%s')`, prepItem.ID.String(), prepItem.ID.String()))
 	return getPrepItemsHelper(query)
 }
 

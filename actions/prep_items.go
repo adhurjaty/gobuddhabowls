@@ -124,8 +124,8 @@ func (v PrepItemsResource) Create(c buffalo.Context) error {
 	// If there are no errors set a success message
 	c.Flash().Add("success", "PrepItem was created successfully")
 
-	// and redirect to the prep_items index page
-	return c.Render(201, r.HTML("inventory_items/index"))
+	// and redirect to the inventory_tiems index page
+	return c.Redirect(303, "/inventory_items")
 }
 
 // Edit renders a edit form for a PrepItem. This function is
@@ -198,7 +198,7 @@ func (v PrepItemsResource) Update(c buffalo.Context) error {
 	c.Flash().Add("success", "PrepItem was updated successfully")
 
 	// and redirect to the prep_items index page
-	return c.Render(200, r.HTML("inventory_items/index"))
+	return c.Redirect(303, "/inventory_items")
 }
 
 func UpdatePrepItem(c buffalo.Context) error {

@@ -4,5 +4,5 @@
 
 <%= form_for(prepItem, {action: prepItemsPath(), method: "POST"}) { %>
   <%= partial("prep_items/form.html") %>
-  <a href="<%= prepItemsPath() %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
+  <a href="<%= inventoryItemsPath() %>" class="btn btn-warning" data-confirm="Are you sure?">Cancel</a>
 <% } %>
