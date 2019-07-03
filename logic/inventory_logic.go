@@ -2,10 +2,11 @@ package logic
 
 import (
 	"buddhabowls/models"
+	"time"
+
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
-	"time"
 )
 
 func GetAllInventories(tx *pop.Connection) (*models.Inventories, error) {
@@ -80,6 +81,14 @@ func InsertInventory(inventory *models.Inventory, tx *pop.Connection) (*validate
 		if err != nil {
 			return nil, err
 		}
+		verrs, err = tx.ValidateAndCreate(&item)
+		if err != nil || verrs.HasAny() {
+			return verrs, err
+		}
+	}
+	for _, item := range inventory.PrepItems {
+		item.InventoryID = inventory.ID
+		item.ID = uuid.UUID{}
 		verrs, err = tx.ValidateAndCreate(&item)
 		if err != nil || verrs.HasAny() {
 			return verrs, err

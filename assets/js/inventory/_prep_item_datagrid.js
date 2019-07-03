@@ -14,6 +14,13 @@ var _columns = [
         }
     },
     {
+        name: 'inventory_item_id',
+        hidden: true,
+        get_column: (item) => {
+            return item.inventory_item_id;
+        }
+    },
+    {
         name: 'batch_recipe_id',
         hidden: true,
         get_column: (item) => {

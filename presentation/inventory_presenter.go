@@ -4,9 +4,10 @@ import (
 	"buddhabowls/helpers"
 	"buddhabowls/logic"
 	"buddhabowls/models"
+	"time"
+
 	"github.com/gobuffalo/uuid"
 	"github.com/gobuffalo/validate"
-	"time"
 )
 
 func (p *Presenter) GetInventories(startTime time.Time, endTime time.Time) (*InventoriesAPI, error) {

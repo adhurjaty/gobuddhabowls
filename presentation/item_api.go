@@ -101,7 +101,7 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		itemAPI.RecipeUnit = prepItem.BatchRecipe.RecipeUnit
 		itemAPI.Conversion = prepItem.Conversion
 		itemAPI.RecipeUnitConversion = prepItem.Conversion
-		itemAPI.InventoryItemID = ""
+		itemAPI.InventoryItemID = prepItem.ID.String()
 	case *models.CountPrepItem:
 		countItem, _ := item.(*models.CountPrepItem)
 		itemAPI.Count = countItem.Count
@@ -372,10 +372,9 @@ func ConvertToModelCountPrepItem(item ItemAPI, inventoryID uuid.UUID) (*models.C
 	}
 
 	return &models.CountPrepItem{
-		ID:          id,
-		PrepItemID:  prepID,
-		Count:       item.Count,
-		InventoryID: inventoryID,
+		ID:         id,
+		PrepItemID: prepID,
+		Count:      item.Count,
 	}, nil
 }
 
