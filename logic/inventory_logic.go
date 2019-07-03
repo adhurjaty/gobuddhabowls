@@ -123,6 +123,9 @@ func DestroyInventory(inventory *models.Inventory, tx *pop.Connection) error {
 	for _, item := range inventory.Items {
 		tx.Destroy(&item)
 	}
+	for _, item := range inventory.PrepItems {
+		tx.Destroy(&item)
+	}
 	return tx.Destroy(inventory)
 }
 

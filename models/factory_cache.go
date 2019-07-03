@@ -229,9 +229,16 @@ func initCache(initVal CompoundItems, tx *pop.Connection, ids []string) error {
 	case *RecipeItems:
 		return populateRecipesAndItemsCache(tx, ids)
 	case *CountPrepItems:
+		prepItems := &PrepItems{}
+		if err := tx.All(prepItems); err != nil {
+			return err
+		}
+		if err := populatePrepItemsCache(prepItems, tx); err != nil {
+			return err
+		}
 		_countPrepItemsCache = initVal.(*CountPrepItems)
 		cache = _countPrepItemsCache
-		idCol = "prep_item_id"
+		idCol = "inventory_id"
 	default:
 		return errors.New("unimplemented type")
 	}
@@ -251,10 +258,12 @@ func populateBaseItems(cache CompoundItems) error {
 	cacheItems := cache.ToCompoundItems()
 	for i := range *cacheItems {
 		item := (*cacheItems)[i]
+
 		baseItem, err := getCacheItem(item.GetBaseItem(), item.GetBaseItemID())
 		if err != nil {
 			return err
 		}
+
 		item.SetBaseItem(baseItem)
 	}
 
@@ -340,6 +349,25 @@ func setModelItemsFromCache(models CompoundModels) error {
 		}
 		m.SetItems(items)
 		m.GetItems().Sort()
+	}
+
+	return nil
+}
+
+func setPrepItemsFromCache(inventories *Inventories) error {
+	for j, inventory := range *inventories {
+		items := &inventory.PrepItems
+		for i := 0; i < len(*items); i++ {
+			item := (*items)[i]
+			cacheItem, err := getCacheItem(&item, item.ID)
+			if err != nil {
+				return err
+			}
+			(*items)[i] = *cacheItem.(*CountPrepItem)
+		}
+		fmt.Println(items)
+		(*inventories)[j].PrepItems = *items
+		(*inventories)[j].PrepItems.Sort()
 	}
 
 	return nil

@@ -192,7 +192,10 @@ func PopulateCountItems(inventories *Inventories, tx *pop.Connection) error {
 		return nil
 	}
 
-	return setModelItemsFromCache(inventories)
+	if err := setModelItemsFromCache(inventories); err != nil {
+		return err
+	}
+	return setPrepItemsFromCache(inventories)
 }
 
 func LoadInventoryItem(item *InventoryItem, tx *pop.Connection, id string) error {

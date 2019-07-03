@@ -1,6 +1,7 @@
 import { parseModelJSON, formatSlashDate, formatMoney, replaceUrlId } from '../helpers/_helpers';
 import { createInventoryDatagrid } from './_inventory_datagrid';
 import { horizontalPercentageChart } from '../_horizontal_percentage_chart';
+import { createPrepItemDatagrid } from './_prep_item_datagrid';
 
 var _selectedInventory = null;
 
@@ -13,10 +14,17 @@ $(() => {
     setClickInventory();
     setOnSubmit();
 
-    var container = $('#categorized-items-display');
-    createInventoryDatagrid(container, onDataGridEdit);
-    createBreakdown()
+    createTables();
 });
+
+function createTables() {
+    var container = $('#categorized-items-display');
+    createInventoryDatagrid(container, onInvItemDataGridEdit);
+    var prepItemsContainer = $('#categorized-prep-items-display');
+    createPrepItemDatagrid(prepItemsContainer, onPrepItemDataGridEdit);
+
+    createBreakdown()
+}
 
 function setClickInventory() {
     var listItems = $('#date-list').find('li');
@@ -45,8 +53,7 @@ function setSelectedInventory() {
     var url = replaceUrlId(deleteLink.attr('data-link'), _selectedInventory.id);
     deleteLink.attr('href', url);
 
-    var table = createInventoryDatagrid(container, onDataGridEdit);
-    createBreakdown();
+    createTables();
 }
 
 function clearItemsInput() {
@@ -65,13 +72,15 @@ function createBreakdown() {
             item.price = 0;
         }
     });
+    var prepItems = parseModelJSON($('#categorized-prep-items-display').attr('data'));
+    items = items.concat(prepItems);
     var total = items.reduce((total, item) => {
         return total + item.price * item.count;
     }, 0);
     if(total != 0) {
         container.html(horizontalPercentageChart(title, items, total));
     } else {
-        bdContainer.html('');
+        container.html('');
     }
 }
 
@@ -83,9 +92,20 @@ function setOnSubmit() {
     });
 }
 
-function onDataGridEdit(item) {
+function onInvItemDataGridEdit(item) {
     var form = $('#inventory-form');
     var itemsInput = form.find('input[name="Items"]');
+    onDataGridEdit(itemsInput, item);
+}
+
+function onPrepItemDataGridEdit(item) {
+    var form = $('#inventory-form');
+    var itemsInput = form.find('input[name="PrepItems"]');
+    onDataGridEdit(itemsInput, item);
+}
+
+function onDataGridEdit(itemsInput, item)
+{
     var editedItems = [item];
     if(itemsInput.val()) {
         editedItems = JSON.parse(itemsInput.val());
