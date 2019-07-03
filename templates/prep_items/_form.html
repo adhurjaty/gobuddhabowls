@@ -12,7 +12,10 @@
       <%= f.SelectTag("Inventory Item", {options: inventoryItems, id: "inventory-items-selector",
                 name: "InventoryItemID", data: inventoryItems.String()}) %>
       <%= f.InputTag("CountUnit") %>
-      <%= f.InputTag("RecipeUnit") %>
+      <div class="form-group">
+          <label id="other-unit-label">Recipe Unit</label>
+          <p id="other-unit"><%= prepItem.RecipeUnit %></p>
+      </div>
       <%= f.InputTag("Conversion") %>
     </div>
     <div class="col-md-6">
