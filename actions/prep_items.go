@@ -112,7 +112,7 @@ func (v PrepItemsResource) Create(c buffalo.Context) error {
 
 	invItemID := c.Param("InventoryItemID")
 	if invItemID != "" {
-		recipe, err := createNewBatchRecipe(invItemID, presenter)
+		recipe, err := createNewBatchRecipe(invItemID, presenter, prepItem)
 		if err != nil {
 			return errors.WithStack(err)
 		}
@@ -188,7 +188,7 @@ func (v PrepItemsResource) Update(c buffalo.Context) error {
 
 	invItemID := c.Param("InventoryItemID")
 	if invItemID != "" {
-		recipe, err := createNewBatchRecipe(invItemID, presenter)
+		recipe, err := createNewBatchRecipe(invItemID, presenter, prepItem)
 		if err != nil {
 			return errors.WithStack(err)
 		}
@@ -282,11 +282,14 @@ func (v PrepItemsResource) Destroy(c buffalo.Context) error {
 	return c.Render(200, r.Auto(c, prepItem))
 }
 
-func createNewBatchRecipe(id string, presenter *presentation.Presenter) (*presentation.RecipeAPI, error) {
+func createNewBatchRecipe(id string, presenter *presentation.Presenter, prepItem *presentation.ItemAPI) (*presentation.RecipeAPI, error) {
 	invItem, err := presenter.GetInventoryItem(id)
 	if err != nil {
 		return nil, err
 	}
+
+	invItem.Measure = prepItem.CountUnit
+	invItem.Count = invItem.RecipeUnitConversion * prepItem.Conversion
 
 	recipe := &presentation.RecipeAPI{
 		Name:                 invItem.Name,

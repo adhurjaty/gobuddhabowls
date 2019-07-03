@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/models"
 	"encoding/json"
+	"errors"
 
 	"github.com/gobuffalo/uuid"
 )
@@ -64,6 +65,9 @@ func ConvertToModelRecipe(recAPI *RecipeAPI) (*models.Recipe, error) {
 		if item.Count > 0 {
 			recItems = append(recItems, item)
 		}
+	}
+	if len(recItems) == 0 {
+		return nil, errors.New("Cannot have recipe with no items")
 	}
 	items, err := ConvertToModelRecipeItems(recItems, id)
 	if err != nil {
