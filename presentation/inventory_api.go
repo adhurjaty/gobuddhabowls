@@ -102,9 +102,15 @@ func ConvertToModelInventory(invAPI *InventoryAPI) (*models.Inventory, error) {
 		return nil, err
 	}
 
+	prepItems, err := ConvertToModelCountPrepItems(invAPI.PrepItems, id)
+	if err != nil {
+		return nil, err
+	}
+
 	return &models.Inventory{
-		ID:    id,
-		Date:  invAPI.Date,
-		Items: *items,
+		ID:        id,
+		Date:      invAPI.Date,
+		Items:     *items,
+		PrepItems: *prepItems,
 	}, nil
 }

@@ -16,5 +16,9 @@ function setOnSubmit() {
         var itemsInput = form.find('input[name="Items"]');
         var datagrid = $('#categorized-items-display');
         itemsInput.val(datagrid.attr('data'));
+
+        var prepItemsInput = form.find('input[name="PrepItems"]');
+        var prepDatagrid = $('#categorized-prep-items-display');
+        prepItemsInput.val(prepDatagrid.attr('data'));
     });
 }

@@ -102,6 +102,9 @@ func NewItemAPI(item models.GenericItem) ItemAPI {
 		itemAPI.Conversion = prepItem.Conversion
 		itemAPI.RecipeUnitConversion = prepItem.Conversion
 		itemAPI.InventoryItemID = ""
+	case *models.CountPrepItem:
+		countItem, _ := item.(*models.CountPrepItem)
+		itemAPI.Count = countItem.Count
 	}
 
 	return itemAPI
@@ -337,6 +340,42 @@ func ConvertToModelPrepItem(item *ItemAPI) (*models.PrepItem, error) {
 		Index:         item.Index,
 		CountUnit:     item.CountUnit,
 		Conversion:    item.Conversion,
+	}, nil
+}
+
+func ConvertToModelCountPrepItems(items ItemsAPI, inventoryID uuid.UUID) (*models.CountPrepItems, error) {
+	prepItems := models.CountPrepItems{}
+	for _, item := range items {
+		prepItem, err := ConvertToModelCountPrepItem(item, inventoryID)
+		if err != nil {
+			return nil, err
+		}
+		prepItems = append(prepItems, *prepItem)
+	}
+	return &prepItems, nil
+}
+
+func ConvertToModelCountPrepItem(item ItemAPI, inventoryID uuid.UUID) (*models.CountPrepItem, error) {
+	id := uuid.UUID{}
+	if len(item.ID) > 0 {
+		var err error
+		id, err = uuid.FromString(item.ID)
+		if err != nil {
+			return nil, err
+		}
+	}
+
+	// HACK: using inventoryItemID for prepItemID
+	prepID, err := uuid.FromString(item.InventoryItemID)
+	if err != nil {
+		return nil, err
+	}
+
+	return &models.CountPrepItem{
+		ID:          id,
+		PrepItemID:  prepID,
+		Count:       item.Count,
+		InventoryID: inventoryID,
 	}, nil
 }
 

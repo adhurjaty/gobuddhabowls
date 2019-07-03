@@ -149,6 +149,13 @@ func (v InventoriesResource) Create(c buffalo.Context) error {
 			return errors.WithStack(err)
 		}
 	}
+	prepItemsParamJson := c.Request().Form.Get("PrepItems")
+	if prepItemsParamJson != "" {
+		invAPI.PrepItems, err = getItemsFromParams(prepItemsParamJson)
+		if err != nil {
+			return errors.WithStack(err)
+		}
+	}
 
 	presenter := presentation.NewPresenter(tx)
 	verrs, err := presenter.InsertInventory(invAPI)
