@@ -108,9 +108,15 @@ func (v InventoriesResource) New(c buffalo.Context) error {
 		return err
 	}
 
+	prepItems, err := presenter.GetNewPrepItems()
+	if err != nil {
+		return err
+	}
+
 	inventory := &presentation.InventoryAPI{
-		Date:  helpers.Today(),
-		Items: *items,
+		Date:      helpers.Today(),
+		Items:     *items,
+		PrepItems: *prepItems,
 	}
 
 	c.Set("inventory", inventory)
