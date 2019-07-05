@@ -41,13 +41,23 @@ func NewInventoryAPI(inventory *models.Inventory, vendors *VendorsAPI) Inventory
 	}
 }
 
-func NewInventoriesAPI(inventories *models.Inventories, vendors *VendorsAPI) InventoriesAPI {
-	apis := make([]InventoryAPI, len(*inventories))
-	for i, inventory := range *inventories {
-		apis[i] = NewInventoryAPI(&inventory, vendors)
+func NewInventoriesAPI(inventories *models.Inventories, presenter *Presenter) (InventoriesAPI, error) {
+	vendors, err := presenter.GetVendors()
+	if err != nil {
+		return InventoriesAPI{}, err
 	}
 
-	return apis
+	apis := make([]InventoryAPI, len(*inventories))
+	for i, inventory := range *inventories {
+		invAPI := NewInventoryAPI(&inventory, vendors)
+		err = presenter.populatePrepItemCosts(&invAPI.PrepItems)
+		if err != nil {
+			return apis, err
+		}
+		apis[i] = invAPI
+	}
+
+	return apis, nil
 }
 
 func populateVendorItems(apiItems *ItemsAPI, items *models.CountInventoryItems, vendors *VendorsAPI) {
