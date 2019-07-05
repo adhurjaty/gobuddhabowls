@@ -45,6 +45,7 @@ func (p *Presenter) populateLatestPrepItems(items *ItemsAPI) error {
 		for _, latestItem := range latestInv.PrepItems {
 			if item.BatchRecipeID == latestItem.BatchRecipeID {
 				item.Count = latestItem.Count
+				item.InventoryItemID = latestItem.InventoryItemID
 				break
 			}
 		}
