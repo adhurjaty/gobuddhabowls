@@ -32,8 +32,8 @@ func (p *Presenter) GetLatestInventory(date time.Time) (*InventoryAPI, error) {
 		return nil, err
 	}
 
-	apiInv := NewInventoryAPI(inventory, vendors)
-	return &apiInv, nil
+	apiInv, err := NewInventoryAPI(inventory, vendors, p)
+	return &apiInv, err
 }
 
 func (p *Presenter) GetInventory(id string) (*InventoryAPI, error) {
@@ -42,8 +42,8 @@ func (p *Presenter) GetInventory(id string) (*InventoryAPI, error) {
 		return nil, err
 	}
 
-	apiInv := NewInventoryAPI(inventory, nil)
-	return &apiInv, nil
+	apiInv, err := NewInventoryAPI(inventory, nil, p)
+	return &apiInv, err
 }
 
 func (p *Presenter) InsertInventory(invAPI *InventoryAPI) (*validate.Errors, error) {

@@ -60,7 +60,7 @@ func (p *Presenter) populateRecipeItemCosts(items *ItemsAPI) error {
 
 func (p *Presenter) getItemRecipeCost(item ItemAPI) (float64, error) {
 	cost := 0.0
-	if item.InventoryItemID != "" {
+	if item.InventoryItemID != "" && item.BatchRecipeID == "" {
 		vendorItem, err := logic.GetSelectedVendorItem(item.InventoryItemID, p.tx)
 		if err != nil {
 			// if there's no matching vendor item - just say price is 0

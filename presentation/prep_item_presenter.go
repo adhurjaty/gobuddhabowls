@@ -17,11 +17,7 @@ func (p *Presenter) GetNewPrepItems() (*ItemsAPI, error) {
 		return nil, err
 	}
 
-	for i := range *items {
-		item := (*items)[i]
-		item.InventoryItemID = item.ID
-		// item.ID = ""
-	}
+	clearItemIds(items)
 
 	return items, nil
 }

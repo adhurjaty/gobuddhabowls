@@ -3,6 +3,7 @@ package presentation
 import (
 	"buddhabowls/models"
 	"encoding/json"
+	"fmt"
 	"time"
 
 	"github.com/gobuffalo/uuid"
@@ -27,18 +28,20 @@ func (inv InventoriesAPI) String() string {
 	return string(jo)
 }
 
-func NewInventoryAPI(inventory *models.Inventory, vendors *VendorsAPI) InventoryAPI {
+func NewInventoryAPI(inventory *models.Inventory, vendors *VendorsAPI, presenter *Presenter) (InventoryAPI, error) {
 	items := NewItemsAPI(&inventory.Items)
 	populateVendorItems(&items, &inventory.Items, vendors)
 
 	prepItems := NewItemsAPI(&inventory.PrepItems)
+	err := presenter.populatePrepItemCosts(&prepItems)
+	fmt.Println(prepItems)
 
 	return InventoryAPI{
 		ID:        inventory.ID.String(),
 		Date:      inventory.Date,
 		Items:     items,
 		PrepItems: prepItems,
-	}
+	}, err
 }
 
 func NewInventoriesAPI(inventories *models.Inventories, presenter *Presenter) (InventoriesAPI, error) {
@@ -49,11 +52,11 @@ func NewInventoriesAPI(inventories *models.Inventories, presenter *Presenter) (I
 
 	apis := make([]InventoryAPI, len(*inventories))
 	for i, inventory := range *inventories {
-		invAPI := NewInventoryAPI(&inventory, vendors)
-		err = presenter.populatePrepItemCosts(&invAPI.PrepItems)
+		invAPI, err := NewInventoryAPI(&inventory, vendors, presenter)
 		if err != nil {
 			return apis, err
 		}
+
 		apis[i] = invAPI
 	}
 
