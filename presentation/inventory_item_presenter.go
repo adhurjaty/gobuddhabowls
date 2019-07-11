@@ -40,6 +40,9 @@ func (p *Presenter) GetMasterInvPrepList() (*ItemsAPI, *ItemsAPI, error) {
 			return nil, nil, err
 		}
 	}
+	for i := 0; i < len(*prepItems); i++ {
+		(*prepItems)[i].ID = (*prepItems)[i].InventoryItemID
+	}
 
 	return items, prepItems, nil
 }

@@ -6,5 +6,5 @@
 </div>
 <%= form_for(vendor, {action: vendorPath({ vendor_id: vendor.ID }), method: "PUT"}) { %>
   <%= partial("vendors/form.html") %>
-  <a href="<%= vendorPath({ vendor_id: vendor.ID }) %>" class="btn btn-warning">Cancel</a>
+  <a href="<%= vendorsPath() %>" class="btn btn-warning">Cancel</a>
 <% } %>
